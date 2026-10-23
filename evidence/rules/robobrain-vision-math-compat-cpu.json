@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-19T15:21:15.557597+00:00",
+  "scope": "real CPU PyTorch numerical/behavior tests; no GPU candidate execution",
+  "test_command": "python -m unittest discover -s tests -p test_robobrain_vision_math_compat.py -v",
+  "tests_run": 4,
+  "tests_passed": 4,
+  "torch_version": "2.10.0+cpu",
+  "dtypes": [
+    "float32",
+    "bfloat16"
+  ],
+  "tested": [
+    "query141 key199 batch2 GQA4/2 value_dim40 scaleNone/0.125",
+    "score budget forces query chunk13",
+    "captured actual per-image torch_sdpa_wrapper with lengths129/257",
+    "second-image perturbation leaves first image unchanged",
+    "nonhead72 and empty exact delegation",
+    "one-query-row budget overflow rejects",
+    "source hash modification rejects"
+  ],
+  "candidate_sha256": "cc6591b5c99bf3cef5090e88d8893e83e6db77e8cbc6bf97c24d42380a92c3af",
+  "gpu_numerical_verified": false,
+  "heldout_semantics_verified": false,
+  "official_accuracy": false,
+  "official_performance": false
+}

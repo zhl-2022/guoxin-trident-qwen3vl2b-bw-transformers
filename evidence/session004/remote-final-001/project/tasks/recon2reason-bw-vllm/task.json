@@ -1,0 +1,492 @@
+{
+  "schema_version": 1,
+  "slug": "recon2reason-bw-vllm",
+  "track": "T02",
+  "status": "functional_verified_with_partial_development_matrix",
+  "platform": {
+    "provider": "SCNet",
+    "region": "华中一区【A区】",
+    "resource_group": "113 / hx1hgbwnormal",
+    "card": "BW",
+    "framework": "vllm",
+    "precision": "bf16",
+    "cards": 1,
+    "instance_id": "2112186448839770114",
+    "instance_status_observed": "stopped",
+    "instance_status_source": "evidence/platform-checkpoint-20261020-003.json",
+    "instance_status_observed_at_utc": "2026-10-19T19:49:00+00:00",
+    "configured_stop_at": "2026-10-20T03:55:00+08:00",
+    "configured_stop_deadline_verified": true,
+    "actual_stop_observed": true,
+    "instance_final_state": "stopped",
+    "checkpoint": "evidence/platform-checkpoint-20261020-003.json",
+    "observation_session": "session003_final_platform_UI_snapshot",
+    "save_environment_selected": true,
+    "manual_stop_confirmed_local": "2026-10-20T03:48:43+08:00",
+    "manual_stop_before_auto_off": true
+  },
+  "model": {
+    "id": "BAAI/Recon2Reason-Reasoning-4B",
+    "scnet_url": "https://www.scnet.cn/ui/aihub/models/sugon_scnet/Recon2Reason-Reasoning-4B",
+    "expected_architecture": "Qwen3VLForConditionalGeneration",
+    "config_path": "evidence/model-config.json",
+    "remote_path": "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B"
+  },
+  "image_candidate": {
+    "platform_name": "jupyter-vllm018-ubuntu22.04-dtk26.04-qwen3.6-20260423",
+    "platform_reported_size_gb": 51.64,
+    "platform_reported_metadata": {
+      "torch": "2.9",
+      "python": "3.10",
+      "dtk": "26.04"
+    },
+    "registry_address": null,
+    "digest": null,
+    "actual_run_verified": true,
+    "actual_run_verification_scope": "Historical and session003 BF16 vLLM functional runs, completed native random-mm calibrations and11 of12 development cells across separate original/retry runs; no verified private registry ref or formal acceptance",
+    "image_identity_digest_verified": false
+  },
+  "environment_probe": {
+    "evidence": "evidence/vllm-probe-001.json",
+    "environment_verified": true,
+    "verification_scope": "metadata, bounded isolated imports/help, selected package sources; no model load/install",
+    "finished_at_utc": "2026-10-19T14:29:42.389477+00:00",
+    "python": "3.10.12",
+    "executable": "/usr/bin/python3",
+    "packages": {
+      "torch": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+      "torchvision": "0.25.0+das.opt1.dtk2604.torch2100.20260325.g860505",
+      "transformers": "5.5.0",
+      "vllm": "0.18.1+das.fa71803.dtk2604",
+      "vllm-hcu": "0.18.1+das.dtk2604",
+      "triton": "3.6.0+gitc73250c4.staging",
+      "flash-attn": "2.8.3+das.opt1.dtk2604.torch2100.20260330.g3f0061",
+      "lightop": "0.6.0+das.dtk2604.torch2100.2604101656.g193111",
+      "aiter": "0.1.2+das.opt1.dtk2604.torch2100.2604212021.gd52133"
+    },
+    "hip": "6.3.26093",
+    "current_platform": {
+      "class": "HCUPlatform",
+      "module": "vllm_hcu.platforms.hcu",
+      "device_type": "cuda",
+      "device_name": "hip",
+      "dispatch_key": "CUDA"
+    },
+    "device_count": 1,
+    "devices": [
+      {
+        "index": 0,
+        "name": "BW",
+        "total_memory_bytes": 68702699520,
+        "gcn_arch_name": "gfx936:sramecc+:xnack-",
+        "major": 9,
+        "minor": 3
+      }
+    ],
+    "imports_passed": [
+      "torch",
+      "torchvision",
+      "flash_attn",
+      "vllm"
+    ],
+    "api_server_cli_help_passed": true,
+    "official_framework_service": false,
+    "official_accuracy": false
+  },
+  "serving_observation": {
+    "state": "functional_verified",
+    "started_at": "2026-10-19T14:31:16.726989+00:00",
+    "source": "evidence/vllm-state-001.json and evidence/vllm-smoke-001.jsonl",
+    "model_load_success_verified": true,
+    "health_ready_verified": true,
+    "functional_smoke_passed": true,
+    "ready_at_utc": "2026-10-19T14:33:59.426998+00:00",
+    "functional_smoke_completed_at_utc": "2026-10-19T14:34:20.861488+00:00",
+    "run_id": "696971ccb2294c788b99840c3c6ce859",
+    "url": "http://127.0.0.1:30000",
+    "max_runtime_seconds": 4500,
+    "actual_command": [
+      "/usr/bin/python3",
+      "-m",
+      "vllm.entrypoints.openai.api_server",
+      "--model",
+      "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+      "--served-model-name",
+      "recon2reason-reasoning-4b",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "30000",
+      "--tensor-parallel-size",
+      "1",
+      "--dtype",
+      "bfloat16",
+      "--max-model-len",
+      "32768",
+      "--gpu-memory-utilization",
+      "0.85",
+      "--enforce-eager",
+      "--max-num-seqs",
+      "4",
+      "--limit-mm-per-prompt",
+      "{\"image\":2,\"video\":0}"
+    ],
+    "official_accuracy": false,
+    "official_performance": false,
+    "semantic_acceptance_verified": false,
+    "functional_smoke": {
+      "evidence": "evidence/vllm-smoke-001.jsonl",
+      "text_evidence": "evidence/vllm-smoke-001.txt",
+      "cases": [
+        {
+          "case": "health",
+          "passed": true
+        },
+        {
+          "case": "models",
+          "passed": true
+        },
+        {
+          "case": "single_image",
+          "passed": true
+        },
+        {
+          "case": "multiple_images",
+          "passed": true
+        },
+        {
+          "case": "multiturn_first",
+          "passed": true
+        },
+        {
+          "case": "multiturn_followup",
+          "passed": true
+        },
+        {
+          "case": "streaming_image",
+          "passed": true
+        }
+      ],
+      "nonstream_completion_tokens": {
+        "single_image": 9,
+        "multiple_images": 40,
+        "multiturn_first": 9,
+        "multiturn_followup": 9
+      },
+      "all_nonstream_finish_stop": true,
+      "stream_finish_reasons": [
+        "stop"
+      ],
+      "any_answer_truncated": false,
+      "semantic_caveat": "Two images distinguish red first and blue second; the position follow-up repeats the object without sufficient localization. Functional pass only."
+    }
+  },
+  "official": {
+    "image_reference": null,
+    "claim": {
+      "confirmed": false,
+      "reference": null
+    },
+    "baseline": {
+      "artifact": "official-baseline"
+    },
+    "evaluator": {
+      "artifact": "official-evaluator"
+    },
+    "dataset": {
+      "artifact": "official-dataset"
+    },
+    "image_digest": null
+  },
+  "artifacts": [],
+  "accuracy": {
+    "metric": "official-task-specific-pending",
+    "confirmed": false,
+    "configuration_note": "Metric, direction and tolerance must be replaced from the actual Recon2Reason task evaluation package; numeric defaults below are not a confirmed competition gate.",
+    "direction": "higher",
+    "drop_mode": "full_scale_points",
+    "max_drop": 2,
+    "full_scale": 1000,
+    "baseline": null
+  },
+  "budget": {
+    "cards": 1,
+    "wall_hours": 3,
+    "total_card_hours": 495.766111111,
+    "used_card_hours": 2.2605555555,
+    "snapshot_note": "session003 final visible quota snapshot; difference can include delayed settlement and is not asserted to equal wall use/final bill",
+    "snapshot_is_live": false,
+    "checkpoint": "evidence/platform-checkpoint-20261020-003.json",
+    "available_card_hours_observed": 493.5055555555
+  },
+  "evidence_files": [
+    "docs/rules-evidence.md",
+    "evidence/scnet-preflight.json",
+    "evidence/reference-gpu-002.json",
+    "evidence/vllm-probe-001.json",
+    "evidence/rules/runtime-local-validation.json",
+    "evidence/vllm-state-001.json",
+    "evidence/vllm-smoke-001.jsonl",
+    "evidence/vllm-smoke-001.txt",
+    "evidence/platform-checkpoint-20261019-002.json",
+    "evidence/recon-functional-env-003.log",
+    "evidence/recon-functional-images-heldout-003.jsonl",
+    "evidence/recon-functional-images-heldout_blue_circle-003.png",
+    "evidence/recon-functional-images-heldout_red_square-003.png",
+    "evidence/recon-functional-images-manifest-003.json",
+    "evidence/recon-functional-run-003.json",
+    "evidence/recon-functional-server-003.log",
+    "evidence/recon-functional-smoke-003.jsonl",
+    "evidence/recon-functional-state-at-functional-end-003.json",
+    "evidence/recon-functional-step0-003.log",
+    "evidence/recon-functional-step1-003.log",
+    "evidence/recon-functional-step2-003.log",
+    "evidence/recon-calibration-native-round1_4096_1024_c1-003.json",
+    "evidence/recon-calibration-round1-003.jsonl",
+    "evidence/recon-calibration-round1_4096_1024_c1-003.log",
+    "evidence/recon-calibration-round2-003.jsonl",
+    "evidence/recon-calibration-run-003.json",
+    "evidence/recon-calibration-server-maxseq4-config-142884db17fa4053a243bf2c5822ed27-003.json",
+    "evidence/recon-calibration-server-maxseq4-server-003.log",
+    "evidence/recon-calibration-server-maxseq4-state-003.json",
+    "evidence/recon-calibration-server-maxseq4-supervisor-003.log",
+    "evidence/recon-maxseq16-calibration-native-round1_4096_1024_c8-003.json",
+    "evidence/recon-maxseq16-calibration-round1-003.jsonl",
+    "evidence/recon-maxseq16-calibration-round1_4096_1024_c8-003.log",
+    "evidence/recon-maxseq16-calibration-round2-003.jsonl",
+    "evidence/recon-maxseq16-calibration-run-003.json",
+    "evidence/recon-completed-audit-003.json",
+    "docs/session003-recon-results.md",
+    "evidence/rules/session003-run-identity-cpu-004.json",
+    "evidence/local-tests-session003-final-001.log",
+    "evidence/local-validation-session003-final-001.json",
+    "evidence/local-tests-session003-final-002.log",
+    "evidence/local-validation-session003-final-002.json",
+    "evidence/community-metadata-003.json",
+    "evidence/session003/driver-logs/hg-final-recon-export-004.py",
+    "evidence/session003/driver-logs/hg-recon-matrix-003.txt",
+    "evidence/session003/driver-logs/hg-recon-matrix-retry-003.txt",
+    "evidence/session003/driver-logs/hg-recon-original-stop-003.txt",
+    "evidence/session003/driver-logs/hg-recon-retry-both-003.py",
+    "evidence/session003/driver-logs/hg-recon-retry-helper-launch-003.txt",
+    "evidence/session003/driver-logs/hg-retry-recon-last-row-003.py",
+    "evidence/session003/recon-final-export.json",
+    "evidence/session003/recon-final-runtime/cleanup-check.json",
+    "evidence/session003/recon-final-runtime/config-bb6a20bae32640c0b924511637d6a222.json",
+    "evidence/session003/recon-final-runtime/server.log",
+    "evidence/session003/recon-final-runtime/sources/scripts/recon2reason_runtime.py",
+    "evidence/session003/recon-final-runtime/sources/scripts/t02_development_bench.py",
+    "evidence/session003/recon-final-runtime/sources/tasks/recon2reason-bw-vllm/env.sh",
+    "evidence/session003/recon-final-runtime/sources/tasks/recon2reason-bw-vllm/run.sh",
+    "evidence/session003/recon-final-runtime/sources/tasks/recon2reason-bw-vllm/stop.sh",
+    "evidence/session003/recon-final-runtime/state.json",
+    "evidence/session003/recon-final-runtime/supervisor.log",
+    "evidence/session003/recon-matrix/native/round1_16384_1024_c1.json",
+    "evidence/session003/recon-matrix/native/round1_16384_1024_c8.json",
+    "evidence/session003/recon-matrix/native/round1_4096_1024_c1.json",
+    "evidence/session003/recon-matrix/native/round1_4096_1024_c64.json",
+    "evidence/session003/recon-matrix/native/round1_4096_1024_c8.json",
+    "evidence/session003/recon-matrix/native/round2_16384_1024_c1.json",
+    "evidence/session003/recon-matrix/native/round2_16384_1024_c8.json",
+    "evidence/session003/recon-matrix/native/round2_4096_1024_c1.json",
+    "evidence/session003/recon-matrix/native/round2_4096_1024_c64.json",
+    "evidence/session003/recon-matrix/native/round2_4096_1024_c8.json",
+    "evidence/session003/recon-matrix/round1.jsonl",
+    "evidence/session003/recon-matrix/round1_16384_1024_c1.log",
+    "evidence/session003/recon-matrix/round1_16384_1024_c64.log",
+    "evidence/session003/recon-matrix/round1_16384_1024_c8.log",
+    "evidence/session003/recon-matrix/round1_4096_1024_c1.log",
+    "evidence/session003/recon-matrix/round1_4096_1024_c64.log",
+    "evidence/session003/recon-matrix/round1_4096_1024_c8.log",
+    "evidence/session003/recon-matrix/round2.jsonl",
+    "evidence/session003/recon-matrix/round2_16384_1024_c1.log",
+    "evidence/session003/recon-matrix/round2_16384_1024_c8.log",
+    "evidence/session003/recon-matrix/round2_4096_1024_c1.log",
+    "evidence/session003/recon-matrix/round2_4096_1024_c64.log",
+    "evidence/session003/recon-matrix/round2_4096_1024_c8.log",
+    "evidence/session003/recon-matrix/run.json",
+    "evidence/session003/recon-matrix/summary.md",
+    "evidence/session003/recon-matrix-retry/native/round1_16384_1024_c64.json",
+    "evidence/session003/recon-matrix-retry/round1.jsonl",
+    "evidence/session003/recon-matrix-retry/round1_16384_1024_c64.log",
+    "evidence/session003/recon-matrix-retry/round2.jsonl",
+    "evidence/session003/recon-matrix-retry/round2_16384_1024_c64.log",
+    "evidence/session003/recon-matrix-retry/run.json",
+    "evidence/session003/recon-matrix-retry/summary.md",
+    "evidence/session003/recon-original-runtime/archive-manifest.json",
+    "evidence/session003/recon-original-runtime/cleanup-check.json",
+    "evidence/session003/recon-original-runtime/config-d70f7e5f590745e28488c55820169551.json",
+    "evidence/session003/recon-original-runtime/server.log",
+    "evidence/session003/recon-original-runtime/sources/scripts/recon2reason_runtime.py",
+    "evidence/session003/recon-original-runtime/state-after-stop.json",
+    "evidence/session003/recon-original-runtime/state-before-stop.json",
+    "evidence/session003/recon-original-runtime/supervisor.log",
+    "evidence/session003/recon-retry-control/cleanup-check.json",
+    "evidence/session003/recon-retry-control/control-events.json",
+    "evidence/session003/recon-retry-control/metrics-before-stop.txt",
+    "evidence/session003/recon-retry-control/ready-state.json",
+    "evidence/session003/recon-retry-control/sources/scripts/recon2reason_runtime.py",
+    "evidence/session003/recon-retry-control/sources/scripts/t02_development_bench.py",
+    "evidence/session003/recon-retry-control/sources/tasks/recon2reason-bw-vllm/env.sh",
+    "evidence/session003/recon-retry-control/sources/tasks/recon2reason-bw-vllm/run.sh",
+    "evidence/session003/recon-retry-control/sources/tasks/recon2reason-bw-vllm/stop.sh",
+    "evidence/session003/source-update-003-004.json",
+    "evidence/recon-final-zip-verification-003.json",
+    "evidence/recon-final-merge-003.json",
+    "evidence/recon-matrix-final-audit-003.json",
+    "evidence/recon-final-results-summary-003.json",
+    "evidence/platform-checkpoint-20261020-003.json",
+    "evidence/local-tests-session003-final-003.log",
+    "evidence/local-validation-session003-final-003.json",
+    "evidence/screenshots/notebooks-stopped-final-003.png",
+    "evidence/screenshots/balance-after-stop-003.png",
+    "evidence/screenshots/recon-autooff-0355-confirmed-003.png"
+  ],
+  "required_metrics": [
+    "official-task-specific-metrics-pending"
+  ],
+  "notes": "Session003功能7项通过。最终ZIP68条经CRC/manifest/逐字节SHA核验并零覆盖合并。原开发矩阵10/12格、352个完整请求；独立retry仅第一格128请求完整、第二格timeout。合计11/12格、480条可核完整请求、491520输出token，逐条1024/正文非空/errors空；原run和retry均incomplete，不能称完整性能矩阵。maxseq16原/新服务原日志均证实327168KV tokens/44.93GiB、prefix cache开启；固定seed1且重复warm状态，不能冒称独立冷启动或官方公平baseline。原runtime04/new66和独立run ID分别保存。最终自有服务stopped且token/port均关闭；checkpoint003实际UI确认3个Notebook全部关机、保存环境、余额493.5055555555为可见快照非最终账单。正式数据/GPU baseline/判分器/负载和完整可取私有镜像ref仍缺，正式验收/赛事提交均false。",
+  "session003_observation": {
+    "audit": "evidence/recon-completed-audit-003.json",
+    "functional": {
+      "source": "evidence/recon-functional-smoke-003.jsonl",
+      "state_source": "evidence/recon-functional-state-at-functional-end-003.json",
+      "environment_source": "evidence/recon-functional-env-003.log",
+      "cases_passed": 7,
+      "answer_truncated": false,
+      "finished_utc": "2026-10-19T17:17:16.554340+00:00",
+      "server_max_num_seqs": 4
+    },
+    "maxseq4_service": {
+      "ready_utc": "2026-10-19T17:13:50.498449+00:00",
+      "last_archived_status": "stopped",
+      "ended_utc": "2026-10-19T17:33:07.014122+00:00",
+      "state_source": "evidence/recon-calibration-server-maxseq4-state-003.json",
+      "server_log_source": "evidence/recon-calibration-server-maxseq4-server-003.log",
+      "kv_tokens": 327296,
+      "kv_memory_gib_display": 44.95
+    },
+    "maxseq16_service": {
+      "configuration_source": "evidence/session003/recon-final-runtime/config-bb6a20bae32640c0b924511637d6a222.json",
+      "original_configuration_source": "evidence/session003/recon-original-runtime/config-d70f7e5f590745e28488c55820169551.json",
+      "kv_tokens": 327168,
+      "kv_memory_gib_display": 44.93,
+      "profile_raw_independently_audited": true,
+      "profile_sources": [
+        "evidence/session003/recon-original-runtime/server.log",
+        "evidence/session003/recon-final-runtime/server.log"
+      ],
+      "server_max_num_batched_tokens_observed": 2048,
+      "prefix_caching_enabled_observed": true,
+      "original_run_id": "d70f7e5f590745e28488c55820169551",
+      "original_ended_utc": "2026-10-19T18:56:41.611883+00:00",
+      "final_run_id": "bb6a20bae32640c0b924511637d6a222",
+      "service_final_status": "stopped",
+      "final_ready_utc": "2026-10-19T19:01:32.498983+00:00",
+      "final_ended_utc": "2026-10-19T19:46:43.702518+00:00",
+      "final_state_source": "evidence/session003/recon-final-runtime/state.json",
+      "owned_service_cleanup_verified": true,
+      "cleanup_source": "evidence/session003/recon-final-runtime/cleanup-check.json"
+    },
+    "calibrations": [
+      {
+        "source": "evidence/recon-calibration-run-003.json",
+        "server_max_num_seqs": 4,
+        "round": 1,
+        "text_input_target": 4096,
+        "output_target": 1024,
+        "concurrency": 1,
+        "requests": 8,
+        "completed": 8,
+        "failed": 0,
+        "duration_seconds": 380.7021179809235,
+        "client_wall_seconds": 414.878568,
+        "output_tokens_per_second": 21.518136130806845,
+        "output_integrity_verified": true,
+        "full_matrix": false,
+        "official_acceptance": false
+      },
+      {
+        "source": "evidence/recon-maxseq16-calibration-run-003.json",
+        "server_max_num_seqs": 16,
+        "round": 1,
+        "text_input_target": 4096,
+        "output_target": 1024,
+        "concurrency": 8,
+        "requests": 16,
+        "completed": 16,
+        "failed": 0,
+        "duration_seconds": 107.4517349707894,
+        "client_wall_seconds": 141.348396,
+        "output_tokens_per_second": 152.477761335859,
+        "output_integrity_verified": true,
+        "full_matrix": false,
+        "official_acceptance": false
+      }
+    ],
+    "full_matrix": {
+      "status": "incomplete_original_and_separate_retry",
+      "completion_verified": false,
+      "official_performance": false,
+      "expected_cells": 12,
+      "expected_requests": 608,
+      "original": {
+        "source": "evidence/session003/recon-matrix/run.json",
+        "status": "incomplete_or_failed",
+        "verified_cells": 10,
+        "verified_requests": 352,
+        "verified_output_tokens": 360448,
+        "total_timeout_seconds": 4000.0,
+        "started_utc": "2026-10-19T17:41:41.427773+00:00",
+        "ended_utc": "2026-10-19T18:48:22.578497+00:00"
+      },
+      "retry": {
+        "source": "evidence/session003/recon-matrix-retry/run.json",
+        "status": "incomplete_or_failed",
+        "verified_cells": 1,
+        "verified_requests": 128,
+        "verified_output_tokens": 131072,
+        "total_timeout_seconds": 2697.0,
+        "started_utc": "2026-10-19T19:01:33.531802+00:00",
+        "ended_utc": "2026-10-19T19:46:31.399894+00:00",
+        "run_id": "bb6a20bae32640c0b924511637d6a222"
+      },
+      "combined_development_coverage": {
+        "expected_cells": 12,
+        "verified_cells": 11,
+        "expected_requests": 608,
+        "verified_requests": 480,
+        "expected_output_tokens": 622592,
+        "verified_output_tokens": 491520,
+        "matrix_complete_verified": false,
+        "combined_development_coverage_complete": false,
+        "missing_cells": [
+          "round2_16384_1024_c64"
+        ],
+        "unverified_request_counts_are_unknown_not_zero": true
+      },
+      "scope_note": "Fixed seed1 and persistent prefix-cached server; separate retry does not make one completed run or a cold/fair official baseline"
+    },
+    "official_accuracy": false,
+    "official_performance": false,
+    "clean_image_replay_verified": false,
+    "notebook_current_state": {
+      "state": "stopped",
+      "checkpoint": "evidence/platform-checkpoint-20261020-003.json",
+      "observed_local": "2026-10-20T03:49:00+08:00",
+      "save_environment_selected": true,
+      "all_instances_stopped": true
+    },
+    "final_audit": "evidence/recon-matrix-final-audit-003.json",
+    "final_summary": "evidence/recon-final-results-summary-003.json",
+    "zip_verification": "evidence/recon-final-zip-verification-003.json"
+  },
+  "historical_budget_snapshot_002": {
+    "cards": 1,
+    "wall_hours": 1.25,
+    "total_card_hours": 497.1058333333,
+    "used_card_hours": 0.7125,
+    "snapshot_note": "historical platform balance differences through stopped checkpoint002; refresh before future launch",
+    "snapshot_is_live": false
+  }
+}

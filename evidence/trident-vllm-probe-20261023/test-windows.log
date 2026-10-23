@@ -1,0 +1,20 @@
+{"status": "timeout", "output": "C:\\Users\\zhl\\AppData\\Local\\Temp\\tmp03llmpsq\\new-output", "official_accuracy_verified": false, "official_performance_verified": false, "submission_ready": false, "contest_baseline_available": false}
+test_all_tensor_keys_follow_vllm_mapper_without_projection (test_trident_vllm_pooling_probe_20261023.PoolingProbeTests.test_all_tensor_keys_follow_vllm_mapper_without_projection) ... ok
+test_conversion_uses_last_fp32_normalization_not_chat (test_trident_vllm_pooling_probe_20261023.PoolingProbeTests.test_conversion_uses_last_fp32_normalization_not_chat) ... ok
+test_cpu_prompt_contract_has_expected_ids_and_resized_image (test_trident_vllm_pooling_probe_20261023.PoolingProbeTests.test_cpu_prompt_contract_has_expected_ids_and_resized_image) ... ok
+test_exact_official_config_difference_is_only_registration_and_cache (test_trident_vllm_pooling_probe_20261023.PoolingProbeTests.test_exact_official_config_difference_is_only_registration_and_cache) ... ok
+test_header_is_bounded_and_exact (test_trident_vllm_pooling_probe_20261023.PoolingProbeTests.test_header_is_bounded_and_exact) ... ok
+test_no_silent_video_or_remote_image_support (test_trident_vllm_pooling_probe_20261023.PoolingProbeTests.test_no_silent_video_or_remote_image_support) ... ok
+test_plan_uses_no_heavy_import_and_flags_remain_false (test_trident_vllm_pooling_probe_20261023.PoolingProbeTests.test_plan_uses_no_heavy_import_and_flags_remain_false) ... ok
+test_reference_same_inputs_required_and_threshold_is_not_contest (test_trident_vllm_pooling_probe_20261023.PoolingProbeTests.test_reference_same_inputs_required_and_threshold_is_not_contest) ... ok
+test_reference_snapshot_hash_and_missing_runtime_image_identity_are_explicit (test_trident_vllm_pooling_probe_20261023.PoolingProbeTests.test_reference_snapshot_hash_and_missing_runtime_image_identity_are_explicit) ... ok
+test_role_instructions_and_image_text_order_match_publisher (test_trident_vllm_pooling_probe_20261023.PoolingProbeTests.test_role_instructions_and_image_text_order_match_publisher) ... ok
+test_text_truncates_before_template_not_at_image_placeholders (test_trident_vllm_pooling_probe_20261023.PoolingProbeTests.test_text_truncates_before_template_not_at_image_placeholders) ... ok
+test_timeout_records_terminal_state_and_signals_only_owned_group (test_trident_vllm_pooling_probe_20261023.PoolingProbeTests.test_timeout_records_terminal_state_and_signals_only_owned_group) ... ok
+test_worker_preflight_failure_preserves_structured_error_without_torch (test_trident_vllm_pooling_probe_20261023.PoolingProbeTests.test_worker_preflight_failure_preserves_structured_error_without_torch) ... ok
+test_wrong_reference_checkpoint_is_rejected (test_trident_vllm_pooling_probe_20261023.PoolingProbeTests.test_wrong_reference_checkpoint_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.394s
+
+OK

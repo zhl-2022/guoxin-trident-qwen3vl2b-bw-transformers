@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -uo pipefail
+cd /root/private_data/guoxin-hackathon-20261023-session004
+/root/private_data/guoxin-candidates/envs/forcedaligner-001/bin/python -B tasks/qwen3-forcedaligner-bw-transformers/entry.py run --model-dir /root/private_data/guoxin-candidates/models/forcedaligner --upstream-root /root/private_data/guoxin-candidates/source/qwen3-asr --requests tasks/qwen3-forcedaligner-bw-transformers/requests.example.json --output /root/private_data/guoxin-candidates/results/forcedaligner-pilot-001 --max-seconds 360 > evidence/session004/forcedaligner-pilot.log 2>&1
+printf 'FORCED_PILOT_EXIT=%s\n' "$?"
+/root/private_data/guoxin-candidates/envs/trident-001/bin/python -B /root/private_data/guoxin-candidate-tools-20261023/scripts/trident_vllm_pooling_probe_20261023.py run --model-dir /root/private_data/guoxin-candidates/models/trident --output /root/private_data/guoxin-candidates/results/trident-vllm-pooling-001 --max-seconds 480 > evidence/session004/trident-vllm-pilot.log 2>&1
+printf 'TRIDENT_VLLM_PILOT_EXIT=%s\n' "$?"

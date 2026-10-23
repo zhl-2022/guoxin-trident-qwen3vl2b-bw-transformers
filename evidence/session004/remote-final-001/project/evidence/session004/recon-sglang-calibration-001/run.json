@@ -1,0 +1,354 @@
+{
+  "schema_version": 1,
+  "mode": "run",
+  "official_acceptance": false,
+  "official_accuracy": false,
+  "scope": "template-shaped SGLang image performance client; image policy and official acceptance unconfirmed",
+  "client_type": "upstream_sglang",
+  "sglang_version_required": "0.5.12",
+  "source_reference": "https://github.com/sgl-project/sglang/tree/v0.5.12/python/sglang",
+  "output_length_boundary": "upstream output_lens may use stream usage or requested-length fallback; exact 1024-token output is not independently certified",
+  "exact_output_tokens_independently_verified": false,
+  "input_length_boundary": "generated text target; image/chat tokens and detokenization are separate",
+  "model_path": "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+  "served_model_name": "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+  "host": "127.0.0.1",
+  "port": 30000,
+  "client_python": "/root/private_data/sglang-client-004c/bin/python",
+  "output_dir": "/root/private_data/guoxin-hackathon-20261023-session004/evidence/session004/recon-sglang-calibration-001",
+  "rows": [
+    {
+      "name": "round1_4096_1024_c1",
+      "round": 1,
+      "scored_round": false,
+      "text_target_tokens": 4096,
+      "output_target_tokens": 1024,
+      "concurrency": 1,
+      "expected_requests": 8,
+      "warmup_requests": 1,
+      "command": [
+        "/root/private_data/sglang-client-004c/bin/python",
+        "-B",
+        "-m",
+        "sglang.bench_serving",
+        "--backend",
+        "vllm-chat",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "30000",
+        "--model",
+        "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+        "--served-model-name",
+        "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+        "--tokenizer",
+        "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+        "--dataset-name",
+        "image",
+        "--image-count",
+        "1",
+        "--image-resolution",
+        "1024x1024",
+        "--image-content",
+        "random",
+        "--image-format",
+        "jpeg",
+        "--random-input-len",
+        "4096",
+        "--random-output-len",
+        "1024",
+        "--random-range-ratio",
+        "1",
+        "--seed",
+        "1",
+        "--max-concurrency",
+        "1",
+        "--num-prompts",
+        "8",
+        "--request-rate",
+        "inf",
+        "--warmup-requests",
+        "1",
+        "--ready-check-timeout-sec",
+        "0",
+        "--extra-request-body",
+        "{\"temperature\":0,\"ignore_eos\":true,\"stream_options\":{\"include_usage\":true}}",
+        "--output-details",
+        "--output-file",
+        "/root/private_data/guoxin-hackathon-20261023-session004/evidence/session004/recon-sglang-calibration-001/native/round1_4096_1024_c1.jsonl"
+      ],
+      "native_result": "/root/private_data/guoxin-hackathon-20261023-session004/evidence/session004/recon-sglang-calibration-001/native/round1_4096_1024_c1.jsonl",
+      "log": "/root/private_data/guoxin-hackathon-20261023-session004/evidence/session004/recon-sglang-calibration-001/round1_4096_1024_c1.log",
+      "status": "missing_native_result",
+      "started_utc": "2026-10-23T10:30:54.782266+00:00",
+      "allocated_timeout_seconds": 899.2728399829939,
+      "exit_code": 1,
+      "process_status": "exited",
+      "client_wall_seconds": 33.916395,
+      "log_sha256": "41fbcd4621780891396d1c3cd4d90f384b92d8e4c6b94835f90872f10c8980b6",
+      "child_reaped": true,
+      "linux_process_group_cleanup_attempted": true,
+      "ended_utc": "2026-10-23T10:31:29.313524+00:00"
+    }
+  ],
+  "allow_client_device_discovery": true,
+  "client_device_discovery": {
+    "allowed": true,
+    "policy": "preserve_caller_exactly",
+    "compatibility_reason": "Opt-in DAS client import compatibility: native Triton autotuner can query the visible device label before benchmark CLI startup",
+    "caller_visibility": {
+      "CUDA_VISIBLE_DEVICES": {
+        "is_set": false,
+        "value": null,
+        "nonempty": false
+      },
+      "HIP_VISIBLE_DEVICES": {
+        "is_set": true,
+        "value": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+        "nonempty": true
+      },
+      "ROCR_VISIBLE_DEVICES": {
+        "is_set": false,
+        "value": null,
+        "nonempty": false
+      }
+    },
+    "effective_visibility": {
+      "CUDA_VISIBLE_DEVICES": {
+        "is_set": false,
+        "value": null,
+        "nonempty": false
+      },
+      "HIP_VISIBLE_DEVICES": {
+        "is_set": true,
+        "value": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+        "nonempty": true
+      },
+      "ROCR_VISIBLE_DEVICES": {
+        "is_set": false,
+        "value": null,
+        "nonempty": false
+      }
+    },
+    "caller_visibility_preserved_exactly": true,
+    "device_scope_expanded_by_driver": false,
+    "driver_device_enumeration_performed": false,
+    "runtime_device_availability_verified": false,
+    "client_model_inference_requested": false
+  },
+  "runtime_dir": "/root/private_data/guoxin-hackathon-20261023-session004/tasks/recon2reason-bw-vllm/runtime",
+  "expected_run_id": "4ecf16914a374d5ca91cee3dd11bfe3a",
+  "timeout_seconds": 900.0,
+  "total_timeout_seconds": 900.0,
+  "measured_requests_planned": 8,
+  "extra_warmup_requests_planned": 1,
+  "full_matrix": false,
+  "filesystem_mutated": true,
+  "client_started": true,
+  "started_utc": "2026-10-23T10:30:54.054630+00:00",
+  "driver_sha256": "22df62884147359d909bac997bd6f7cb16255f78febb6c556cc3d24a20b773ff",
+  "status": "incomplete_or_failed",
+  "client_device_discovery_at_plan": {
+    "allowed": true,
+    "policy": "preserve_caller_exactly",
+    "compatibility_reason": "Opt-in DAS client import compatibility: native Triton autotuner can query the visible device label before benchmark CLI startup",
+    "caller_visibility": {
+      "CUDA_VISIBLE_DEVICES": {
+        "is_set": false,
+        "value": null,
+        "nonempty": false
+      },
+      "HIP_VISIBLE_DEVICES": {
+        "is_set": true,
+        "value": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+        "nonempty": true
+      },
+      "ROCR_VISIBLE_DEVICES": {
+        "is_set": false,
+        "value": null,
+        "nonempty": false
+      }
+    },
+    "effective_visibility": {
+      "CUDA_VISIBLE_DEVICES": {
+        "is_set": false,
+        "value": null,
+        "nonempty": false
+      },
+      "HIP_VISIBLE_DEVICES": {
+        "is_set": true,
+        "value": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+        "nonempty": true
+      },
+      "ROCR_VISIBLE_DEVICES": {
+        "is_set": false,
+        "value": null,
+        "nonempty": false
+      }
+    },
+    "caller_visibility_preserved_exactly": true,
+    "device_scope_expanded_by_driver": false,
+    "driver_device_enumeration_performed": false,
+    "runtime_device_availability_verified": false,
+    "client_model_inference_requested": false
+  },
+  "runtime_before": {
+    "provided": true,
+    "run_id": "4ecf16914a374d5ca91cee3dd11bfe3a",
+    "server_identity_verified": true,
+    "files": [
+      {
+        "name": "state.json",
+        "bytes": 1225,
+        "sha256": "bf9b99eae848a0a1aea3d4e9494b6aec404844a19e06b88e667209c472f8b824"
+      },
+      {
+        "name": "config-4ecf16914a374d5ca91cee3dd11bfe3a.json",
+        "bytes": 1469,
+        "sha256": "cb85358357977602b2245e83031887f3072e1d60e91e2ad9ca3f45d477018187"
+      },
+      {
+        "name": "server.log",
+        "bytes": 14922,
+        "sha256": "cbec57f8fd5a6562012d38ee5e4deeac0112c3fa5faf706a7115b50a901ea358"
+      },
+      {
+        "name": "supervisor.log",
+        "bytes": 1087,
+        "sha256": "674ec181dff0881a9d9c1f62231243dbb95f3e6db9269ec540c0dd7454a7426c"
+      }
+    ]
+  },
+  "client_identity": {
+    "version": "0.5.12",
+    "root": "/root/private_data/sglang-client-004c/lib/python3.10/site-packages/sglang",
+    "python": "3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0]",
+    "native": {
+      "torch": {
+        "version": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+        "root": "/usr/local/lib/python3.10/dist-packages"
+      },
+      "transformers": {
+        "version": "5.5.0",
+        "root": "/usr/local/lib/python3.10/dist-packages"
+      },
+      "vllm": {
+        "version": "0.18.1+das.fa71803.dtk2604",
+        "root": "/usr/local/lib/python3.10/dist-packages"
+      },
+      "triton": {
+        "version": "3.6.0+gitc73250c4.staging",
+        "root": "/usr/local/lib/python3.10/dist-packages"
+      }
+    },
+    "sources": [
+      {
+        "path": "__init__.py",
+        "bytes": 2820,
+        "sha256": "ffda05a78218ed47a7fad82a86c8a1068ac6549cb0ddecf9959fe8752034b9c8"
+      },
+      {
+        "path": "bench_serving.py",
+        "bytes": 90674,
+        "sha256": "129e40b9e361be192306a9df56df41507f0397d5768696db3a9b994421daa259"
+      },
+      {
+        "path": "benchmark/datasets/image.py",
+        "bytes": 10610,
+        "sha256": "8a9a1c8cd9f1818b76b06c01aedf7283de999a84baf115f00c46caf52ed3003c"
+      },
+      {
+        "path": "benchmark/datasets/common.py",
+        "bytes": 3150,
+        "sha256": "5f00c71b31cfcc3e446eed7ce0774650c2b684f46f80cc091e995d8504900b08"
+      },
+      {
+        "path": "benchmark/utils.py",
+        "bytes": 4935,
+        "sha256": "437c615343bb4d2d006e62278fbe579022618c71d5c6f5e33581e768a9aaf2c0"
+      }
+    ],
+    "upstream_verified": true,
+    "identity_process": {
+      "exit_code": 0,
+      "process_status": "exited",
+      "client_wall_seconds": 0.218247,
+      "log_sha256": "cb19fd4213b934cc18fd6011831e6a82fb99abefa36d5dc74b4b876af63d9a66",
+      "child_reaped": true,
+      "linux_process_group_cleanup_attempted": true
+    },
+    "client_device_discovery": {
+      "allowed": true,
+      "policy": "preserve_caller_exactly",
+      "compatibility_reason": "Opt-in DAS client import compatibility: native Triton autotuner can query the visible device label before benchmark CLI startup",
+      "caller_visibility": {
+        "CUDA_VISIBLE_DEVICES": {
+          "is_set": false,
+          "value": null,
+          "nonempty": false
+        },
+        "HIP_VISIBLE_DEVICES": {
+          "is_set": true,
+          "value": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+          "nonempty": true
+        },
+        "ROCR_VISIBLE_DEVICES": {
+          "is_set": false,
+          "value": null,
+          "nonempty": false
+        }
+      },
+      "effective_visibility": {
+        "CUDA_VISIBLE_DEVICES": {
+          "is_set": false,
+          "value": null,
+          "nonempty": false
+        },
+        "HIP_VISIBLE_DEVICES": {
+          "is_set": true,
+          "value": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+          "nonempty": true
+        },
+        "ROCR_VISIBLE_DEVICES": {
+          "is_set": false,
+          "value": null,
+          "nonempty": false
+        }
+      },
+      "caller_visibility_preserved_exactly": true,
+      "device_scope_expanded_by_driver": false,
+      "driver_device_enumeration_performed": false,
+      "runtime_device_availability_verified": false,
+      "client_model_inference_requested": false
+    }
+  },
+  "runtime_after": {
+    "provided": true,
+    "run_id": "4ecf16914a374d5ca91cee3dd11bfe3a",
+    "server_identity_verified": true,
+    "files": [
+      {
+        "name": "state.json",
+        "bytes": 1225,
+        "sha256": "bf9b99eae848a0a1aea3d4e9494b6aec404844a19e06b88e667209c472f8b824"
+      },
+      {
+        "name": "config-4ecf16914a374d5ca91cee3dd11bfe3a.json",
+        "bytes": 1469,
+        "sha256": "cb85358357977602b2245e83031887f3072e1d60e91e2ad9ca3f45d477018187"
+      },
+      {
+        "name": "server.log",
+        "bytes": 14922,
+        "sha256": "cbec57f8fd5a6562012d38ee5e4deeac0112c3fa5faf706a7115b50a901ea358"
+      },
+      {
+        "name": "supervisor.log",
+        "bytes": 1087,
+        "sha256": "674ec181dff0881a9d9c1f62231243dbb95f3e6db9269ec540c0dd7454a7426c"
+      }
+    ]
+  },
+  "ended_utc": "2026-10-23T10:31:29.786332+00:00",
+  "total_wall_seconds": 35.731249
+}

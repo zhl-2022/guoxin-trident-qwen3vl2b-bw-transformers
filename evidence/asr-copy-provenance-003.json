@@ -1,0 +1,382 @@
+{
+  "schema_version": 1,
+  "audited_at_utc": "2026-10-19T18:10:19.936827+00:00",
+  "scope": "ASR session003 actual isolated prepare, publisher-derived WAV and full-file SSE functional evidence; no official scoring",
+  "source_archive": {
+    "path": "dist/session003-completed-intermediate.zip",
+    "sha256": "61dae05b974e3b0151e90885818493bfe27f461c58125f529eae1c79cbcba9fd",
+    "all_export_payloads_verified": 121
+  },
+  "copies": [
+    {
+      "source": "evidence/session003/asr-clean-prepare/ready.json",
+      "copy": "evidence/asr-clean-prepare-003.json",
+      "bytes": 2387,
+      "source_sha256": "47cfecab442ffeffa47938367fcd7e347e38dd3dcd952e4bc8f53cc3eeb51306",
+      "copy_sha256": "47cfecab442ffeffa47938367fcd7e347e38dd3dcd952e4bc8f53cc3eeb51306",
+      "identical": true
+    },
+    {
+      "source": "evidence/session003/asr-clean-prepare/native-before.json",
+      "copy": "evidence/asr-native-before-003.json",
+      "bytes": 1457,
+      "source_sha256": "7ca00986667ff850c303386ff9f0f320d325aa7a803af22e0dd8d0f95ca7f8e3",
+      "copy_sha256": "7ca00986667ff850c303386ff9f0f320d325aa7a803af22e0dd8d0f95ca7f8e3",
+      "identical": true
+    },
+    {
+      "source": "evidence/session003/asr-clean-prepare/pip-install.log",
+      "copy": "evidence/asr-audio-pip-install-003.log",
+      "bytes": 3429,
+      "source_sha256": "1de3264e118bf6409e6e4d7424f78b2879b64a20fe6d8afe6a49a13b4b961d09",
+      "copy_sha256": "1de3264e118bf6409e6e4d7424f78b2879b64a20fe6d8afe6a49a13b4b961d09",
+      "identical": true
+    },
+    {
+      "source": "evidence/session003/asr-clean-prepare/missing-wheels.lock.txt",
+      "copy": "evidence/asr-audio-missing-wheels-003.txt",
+      "bytes": 1717,
+      "source_sha256": "5e7aff09242ee59ca8233b8719c24a50a3371d2ddbd46a84b8c5dfe565ec53ef",
+      "copy_sha256": "5e7aff09242ee59ca8233b8719c24a50a3371d2ddbd46a84b8c5dfe565ec53ef",
+      "identical": true
+    },
+    {
+      "source": "evidence/session003/robo-asr/asr/env-check.log",
+      "copy": "evidence/asr-vllm-env-003.log",
+      "bytes": 2918,
+      "source_sha256": "980d2596a08e555f54cf5dfdbca8f8ed6b61ac7c53a875e8ccc946946fed31d1",
+      "copy_sha256": "980d2596a08e555f54cf5dfdbca8f8ed6b61ac7c53a875e8ccc946946fed31d1",
+      "identical": true
+    },
+    {
+      "source": "evidence/session003/robo-asr/asr/ready/runtime/state.json",
+      "copy": "evidence/asr-vllm-state-003.json",
+      "bytes": 1151,
+      "source_sha256": "e7955ecc6d1efa268ab84cfb398473b563605266c0b67e724e50dc2cf8c616e7",
+      "copy_sha256": "e7955ecc6d1efa268ab84cfb398473b563605266c0b67e724e50dc2cf8c616e7",
+      "identical": true
+    },
+    {
+      "source": "evidence/session003/robo-asr/asr/stopped/runtime/state.json",
+      "copy": "evidence/asr-vllm-stopped-state-003.json",
+      "bytes": 1264,
+      "source_sha256": "330889cd2a171950aa8820977e0f371621bb4e3f7a4588c70145e74cbd29d6bc",
+      "copy_sha256": "330889cd2a171950aa8820977e0f371621bb4e3f7a4588c70145e74cbd29d6bc",
+      "identical": true
+    },
+    {
+      "source": "evidence/session003/robo-asr/asr/stopped/runtime/config-6b00889feafc4ea1af2133b5c4a3317a.json",
+      "copy": "evidence/asr-vllm-config-003.json",
+      "bytes": 1215,
+      "source_sha256": "bf09a97ed8e6345c3d057487c119f5b34c570542df7f1470a18687c2c056823d",
+      "copy_sha256": "bf09a97ed8e6345c3d057487c119f5b34c570542df7f1470a18687c2c056823d",
+      "identical": true
+    },
+    {
+      "source": "evidence/session003/robo-asr/asr/stopped/runtime/server.log",
+      "copy": "evidence/asr-vllm-server-full-003.log",
+      "bytes": 20996,
+      "source_sha256": "26485317851afb952e2e2d91215f9125e843aba6734e4aba229cdf9ac2f86194",
+      "copy_sha256": "26485317851afb952e2e2d91215f9125e843aba6734e4aba229cdf9ac2f86194",
+      "identical": true
+    },
+    {
+      "source": "evidence/session003/robo-asr/asr/stopped/runtime/supervisor.log",
+      "copy": "evidence/asr-vllm-supervisor-003.log",
+      "bytes": 2177,
+      "source_sha256": "1fbf16537017ee19044964161ddb55a8c3ecbde198c02b9e8f94641ae22598ba",
+      "copy_sha256": "1fbf16537017ee19044964161ddb55a8c3ecbde198c02b9e8f94641ae22598ba",
+      "identical": true
+    },
+    {
+      "source": "evidence/session003/robo-asr/asr/zh.jsonl",
+      "copy": "evidence/asr-vllm-smoke-zh-003.jsonl",
+      "bytes": 2245,
+      "source_sha256": "bd3551c6ae1f1e4102661fb724b44b1ef08d13f363ccc39ece3a055478470d8f",
+      "copy_sha256": "bd3551c6ae1f1e4102661fb724b44b1ef08d13f363ccc39ece3a055478470d8f",
+      "identical": true
+    },
+    {
+      "source": "evidence/session003/robo-asr/asr/en.jsonl",
+      "copy": "evidence/asr-vllm-smoke-en-003.jsonl",
+      "bytes": 2393,
+      "source_sha256": "0469c4a8991a19ec2c8afeaa9f637920f433514692e2dc67ace442d2296d9147",
+      "copy_sha256": "0469c4a8991a19ec2c8afeaa9f637920f433514692e2dc67ace442d2296d9147",
+      "identical": true
+    },
+    {
+      "source": "evidence/session003/robo-asr/asr/long.jsonl",
+      "copy": "evidence/asr-vllm-smoke-long-003.jsonl",
+      "bytes": 2694,
+      "source_sha256": "0b69ede9d1054b55b7196aa357c4cc35ec2436d03f5fb86b6dc21f38801b6a1f",
+      "copy_sha256": "0b69ede9d1054b55b7196aa357c4cc35ec2436d03f5fb86b6dc21f38801b6a1f",
+      "identical": true
+    },
+    {
+      "source": "evidence/session003/robo-asr/asr/zh-stream.jsonl",
+      "copy": "evidence/asr-vllm-sse-zh-003.jsonl",
+      "bytes": 4426,
+      "source_sha256": "653186c26488b828c5d18e426c527c49172cc34bcc656c42fcd0a66c3c877f44",
+      "copy_sha256": "653186c26488b828c5d18e426c527c49172cc34bcc656c42fcd0a66c3c877f44",
+      "identical": true
+    },
+    {
+      "source": "evidence/session003/robo-asr/report.json",
+      "copy": "evidence/asr-session-driver-report-003.json",
+      "bytes": 39083,
+      "source_sha256": "07fc6f776169f50fdcf12cb7ce232e7e132336adb1a576a9c19924fc6685f524",
+      "copy_sha256": "07fc6f776169f50fdcf12cb7ce232e7e132336adb1a576a9c19924fc6685f524",
+      "identical": true
+    },
+    {
+      "source": "fixtures/asr/development-20261020/manifest.json",
+      "copy": "evidence/asr-fixture-manifest-003.json",
+      "bytes": 2819,
+      "source_sha256": "762461372061abac39e2593926ffb69a5e1f71ab4b138c535a9a94f9baa6b463",
+      "copy_sha256": "762461372061abac39e2593926ffb69a5e1f71ab4b138c535a9a94f9baa6b463",
+      "identical": true
+    }
+  ],
+  "original_session_files_modified": false,
+  "prepared_environment": {
+    "ready_report": "evidence/asr-clean-prepare-003.json",
+    "new_task_owned_venv": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/runtime/audio-venv/bin/python",
+    "protected_package_count": 12,
+    "native_versions_and_roots_unchanged": true,
+    "missing_wheel_count": 7,
+    "wheel_lines_match_task_lock": true,
+    "wav_samples": 1600,
+    "resampled_samples": 800,
+    "validation_stderr_bytes": 0
+  },
+  "runtime_sources": [
+    {
+      "snapshot": "evidence/session003/robo-asr/sources/scripts/session003_robo_asr_checks.py",
+      "executed_path": "scripts/session003_robo_asr_checks.py",
+      "executed_sha256": "3fdd8ee4ca4daa47993b5589367ac95a551f0fa7ebc26f8d23d8e516c4004238",
+      "workspace_sha256_at_audit": "3fdd8ee4ca4daa47993b5589367ac95a551f0fa7ebc26f8d23d8e516c4004238",
+      "workspace_matches_at_audit": true
+    },
+    {
+      "snapshot": "evidence/session003/robo-asr/sources/scripts/recon2reason_runtime.py",
+      "executed_path": "scripts/recon2reason_runtime.py",
+      "executed_sha256": "04b0c91fd0596360f142021800f1487af5a83264cb6de5971b954b45dc80b422",
+      "workspace_sha256_at_audit": "04b0c91fd0596360f142021800f1487af5a83264cb6de5971b954b45dc80b422",
+      "workspace_matches_at_audit": true
+    },
+    {
+      "snapshot": "evidence/session003/robo-asr/sources/scripts/qwen3_asr_smoke.py",
+      "executed_path": "scripts/qwen3_asr_smoke.py",
+      "executed_sha256": "da40fff4081c7873a4d276225d4ef990df9b2d666daf3c1d73ee0796def655f1",
+      "workspace_sha256_at_audit": "da40fff4081c7873a4d276225d4ef990df9b2d666daf3c1d73ee0796def655f1",
+      "workspace_matches_at_audit": true
+    },
+    {
+      "snapshot": "evidence/session003/robo-asr/sources/scripts/qwen3_asr_stream_smoke.py",
+      "executed_path": "scripts/qwen3_asr_stream_smoke.py",
+      "executed_sha256": "20df684b5c82ea8eb1ecb002ca12adc23c236d94d5e7ab089c434153d7114edf",
+      "workspace_sha256_at_audit": "20df684b5c82ea8eb1ecb002ca12adc23c236d94d5e7ab089c434153d7114edf",
+      "workspace_matches_at_audit": true
+    },
+    {
+      "snapshot": "evidence/session003/robo-asr/sources/scripts/qwen_asr_tf55_compat.py",
+      "executed_path": "scripts/qwen_asr_tf55_compat.py",
+      "executed_sha256": "84d0d5402c73d21562fb12bb649ace56d6f29b7d1fdf1d3e402b8d4a6e28820a",
+      "workspace_sha256_at_audit": "84d0d5402c73d21562fb12bb649ace56d6f29b7d1fdf1d3e402b8d4a6e28820a",
+      "workspace_matches_at_audit": true
+    },
+    {
+      "snapshot": "evidence/session003/robo-asr/sources/scripts/prepare_qwen_asr_task.py",
+      "executed_path": "scripts/prepare_qwen_asr_task.py",
+      "executed_sha256": "03101937ccf5aa4ac8cf134ac1b1821327767614a6809b39b03559928669ca52",
+      "workspace_sha256_at_audit": "03101937ccf5aa4ac8cf134ac1b1821327767614a6809b39b03559928669ca52",
+      "workspace_matches_at_audit": true
+    },
+    {
+      "snapshot": "evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/bench.sh",
+      "executed_path": "tasks/qwen3-asr-bw-vllm/bench.sh",
+      "executed_sha256": "df5a04c7bbeae4e9ccb8dfe64cb5a13a3bc809d2b4f278ebf2790a5a7132f920",
+      "workspace_sha256_at_audit": "df5a04c7bbeae4e9ccb8dfe64cb5a13a3bc809d2b4f278ebf2790a5a7132f920",
+      "workspace_matches_at_audit": true
+    },
+    {
+      "snapshot": "evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/env.sh",
+      "executed_path": "tasks/qwen3-asr-bw-vllm/env.sh",
+      "executed_sha256": "9dd7000596e42e1a0349160d7b9f94827963b7b662b9e61026c0f446f820f9f8",
+      "workspace_sha256_at_audit": "9dd7000596e42e1a0349160d7b9f94827963b7b662b9e61026c0f446f820f9f8",
+      "workspace_matches_at_audit": true
+    },
+    {
+      "snapshot": "evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/prepare.sh",
+      "executed_path": "tasks/qwen3-asr-bw-vllm/prepare.sh",
+      "executed_sha256": "41351bd3fe5ea483ba930ebfcdeae2900c8bce204a2afb939f919ceae10c4796",
+      "workspace_sha256_at_audit": "41351bd3fe5ea483ba930ebfcdeae2900c8bce204a2afb939f919ceae10c4796",
+      "workspace_matches_at_audit": true
+    },
+    {
+      "snapshot": "evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/verify.sh",
+      "executed_path": "tasks/qwen3-asr-bw-vllm/verify.sh",
+      "executed_sha256": "443f50dfe70b990a22569725d9562ba2659252ec4d87c4b65cb78a5a45299aa9",
+      "workspace_sha256_at_audit": "443f50dfe70b990a22569725d9562ba2659252ec4d87c4b65cb78a5a45299aa9",
+      "workspace_matches_at_audit": true
+    },
+    {
+      "snapshot": "evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/env_check.sh",
+      "executed_path": "tasks/qwen3-asr-bw-vllm/env_check.sh",
+      "executed_sha256": "9c436fafa353c19e4f8b22e7c0858adf4317c8ea1e1d681b90229818c7c67277",
+      "workspace_sha256_at_audit": "9c436fafa353c19e4f8b22e7c0858adf4317c8ea1e1d681b90229818c7c67277",
+      "workspace_matches_at_audit": true
+    },
+    {
+      "snapshot": "evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/run.sh",
+      "executed_path": "tasks/qwen3-asr-bw-vllm/run.sh",
+      "executed_sha256": "080c4b037beb3f0964448c419746ef3f540dba6b70cf3509beeecebbb12cc175",
+      "workspace_sha256_at_audit": "080c4b037beb3f0964448c419746ef3f540dba6b70cf3509beeecebbb12cc175",
+      "workspace_matches_at_audit": true
+    },
+    {
+      "snapshot": "evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/run_compat.sh",
+      "executed_path": "tasks/qwen3-asr-bw-vllm/run_compat.sh",
+      "executed_sha256": "aa8b00b880793d70847e5c3165a3578b6c515b75f709f2e635dca4f287ff3323",
+      "workspace_sha256_at_audit": "aa8b00b880793d70847e5c3165a3578b6c515b75f709f2e635dca4f287ff3323",
+      "workspace_matches_at_audit": true
+    },
+    {
+      "snapshot": "evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/smoke.sh",
+      "executed_path": "tasks/qwen3-asr-bw-vllm/smoke.sh",
+      "executed_sha256": "fc1f86735f7ae4c55d5f1898a0cbf612ab51176d8c8863c88279940b37ea44a3",
+      "workspace_sha256_at_audit": "fc1f86735f7ae4c55d5f1898a0cbf612ab51176d8c8863c88279940b37ea44a3",
+      "workspace_matches_at_audit": true
+    },
+    {
+      "snapshot": "evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/stop.sh",
+      "executed_path": "tasks/qwen3-asr-bw-vllm/stop.sh",
+      "executed_sha256": "d3e0b15a5bc42ca3d62a2215582ec61c47c1364f7b398898ab800a7396f4bc2c",
+      "workspace_sha256_at_audit": "d3e0b15a5bc42ca3d62a2215582ec61c47c1364f7b398898ab800a7396f4bc2c",
+      "workspace_matches_at_audit": true
+    },
+    {
+      "snapshot": "evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/task.json",
+      "executed_path": "tasks/qwen3-asr-bw-vllm/task.json",
+      "executed_sha256": "b6f93dfe5b174ea9a2fb188564a066a3f923a915de4d58527fedbb33db156ab8",
+      "workspace_sha256_at_audit": "b6f93dfe5b174ea9a2fb188564a066a3f923a915de4d58527fedbb33db156ab8",
+      "workspace_matches_at_audit": true
+    },
+    {
+      "snapshot": "evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/requirements-extra.txt",
+      "executed_path": "tasks/qwen3-asr-bw-vllm/requirements-extra.txt",
+      "executed_sha256": "58c3523b4435996e8658e85943c8fcc22c50dd6e983bf3293c938a3d85bcd9b9",
+      "workspace_sha256_at_audit": "58c3523b4435996e8658e85943c8fcc22c50dd6e983bf3293c938a3d85bcd9b9",
+      "workspace_matches_at_audit": true
+    },
+    {
+      "snapshot": "evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/native-stack.json",
+      "executed_path": "tasks/qwen3-asr-bw-vllm/native-stack.json",
+      "executed_sha256": "8c029589352faf8418cf982f6255d81e53d7cff357c78512b519cc9950dfdc4e",
+      "workspace_sha256_at_audit": "8c029589352faf8418cf982f6255d81e53d7cff357c78512b519cc9950dfdc4e",
+      "workspace_matches_at_audit": true
+    },
+    {
+      "snapshot": "evidence/session003/robo-asr/sources/fixtures/asr/development-20261020/manifest.json",
+      "executed_path": "fixtures/asr/development-20261020/manifest.json",
+      "executed_sha256": "762461372061abac39e2593926ffb69a5e1f71ab4b138c535a9a94f9baa6b463",
+      "workspace_sha256_at_audit": "762461372061abac39e2593926ffb69a5e1f71ab4b138c535a9a94f9baa6b463",
+      "workspace_matches_at_audit": true
+    }
+  ],
+  "samples": [
+    {
+      "id": "zh_16000_pcm16",
+      "path": "fixtures/asr/development-20261020/zh_16000_pcm16.wav",
+      "sha256": "46dbc998c9d1d48111267c40741dd3200f2e5bcf4075f8c4c97f4451160dce50",
+      "bytes": 134570,
+      "frames": 67263,
+      "duration_seconds": 4.2039375,
+      "http_round_trip_seconds": 4.889441492035985,
+      "returned_characters": 14,
+      "response_text_log_truncated": false,
+      "finish_reason_available": false,
+      "transcription_nonempty": true,
+      "reference_text": null,
+      "wer_cer_computed": false,
+      "official_accuracy": false
+    },
+    {
+      "id": "en_16000_pcm16",
+      "path": "fixtures/asr/development-20261020/en_16000_pcm16.wav",
+      "sha256": "64e219123047e533c1c1dbb446cb04873ff8c72a2ff20e24ae9d84664d9b455f",
+      "bytes": 481684,
+      "frames": 240820,
+      "duration_seconds": 15.05125,
+      "http_round_trip_seconds": 1.8073552479036152,
+      "returned_characters": 188,
+      "response_text_log_truncated": false,
+      "finish_reason_available": false,
+      "transcription_nonempty": true,
+      "reference_text": null,
+      "wer_cer_computed": false,
+      "official_accuracy": false
+    },
+    {
+      "id": "zh_en_repeated_39s",
+      "path": "fixtures/asr/development-20261020/zh_en_repeated_39s.wav",
+      "sha256": "b403449966b68821ea1f43d01d1399733f622201cdb57bfe3e43a98343b339c1",
+      "bytes": 1256376,
+      "frames": 628166,
+      "duration_seconds": 39.260375,
+      "http_round_trip_seconds": 4.204147764015943,
+      "returned_characters": 393,
+      "response_text_log_truncated": false,
+      "finish_reason_available": false,
+      "transcription_nonempty": true,
+      "reference_text": null,
+      "wer_cer_computed": false,
+      "official_accuracy": false
+    }
+  ],
+  "fixture_manifest": "evidence/asr-fixture-manifest-003.json",
+  "long_audio_scope": "artificial zh,en,zh,en concatenation with 0.25-second silence; not natural continuous speech",
+  "sse": {
+    "report": "evidence/asr-vllm-sse-zh-003.jsonl",
+    "audio_uploaded_as_one_file": true,
+    "events": 12,
+    "done_marker_received": true,
+    "finish_reasons": [
+      "stop"
+    ],
+    "usage": {
+      "prompt_tokens": 65,
+      "completion_tokens": 11,
+      "total_tokens": 76
+    },
+    "first_nonempty_delta_seconds": 0.07438341015949845,
+    "stream_duration_seconds": 0.42363550001755357,
+    "raw_prefix_stripped": false,
+    "raw_prefix_present": true,
+    "realtime_audio_input_verified": false,
+    "official_latency": false
+  },
+  "asr_run_id": "6b00889feafc4ea1af2133b5c4a3317a",
+  "asr_ready_utc": "2026-10-19T18:00:07.789453+00:00",
+  "asr_stopped_utc": "2026-10-19T18:00:24.020834+00:00",
+  "asr_runtime_seconds": 168.077,
+  "asr_cleanup_verified": true,
+  "combined_robo_asr_wall_seconds": 547.5722765130922,
+  "combined_wall_scope": "both model development phases, excluding earlier clean prepare and platform provisioning",
+  "server_log_notes": [
+    "ASR config compatibility installed in API and EngineCore",
+    "Generic model_type warning retained",
+    "Shutdown reports one leaked semaphore warning; owned process/port cleanup nevertheless verified by driver"
+  ],
+  "platform_shutdown": {
+    "status": "root_reported_saved_environment_and_stopped_second_instance",
+    "platform_ui_evidence_in_this_audit": null,
+    "service_cleanup_is_not_platform_billing_proof": true
+  },
+  "formal_ready": false,
+  "official_accuracy": false,
+  "official_performance": false,
+  "submitted": false,
+  "publisher_reference_invented": false,
+  "repository_commit_or_push_performed_by_this_audit": false
+}

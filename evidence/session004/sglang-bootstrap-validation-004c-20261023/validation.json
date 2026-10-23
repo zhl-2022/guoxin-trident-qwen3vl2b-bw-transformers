@@ -1,0 +1,60 @@
+{
+  "created_utc": "2026-10-23T09:49:25.581197+00:00",
+  "scope": "CPU mocks of an Ubuntu image without ensurepip and venv-creation failure; no pip or GPU commands executed by tests",
+  "before": {
+    "scripts/prepare_sglang_client.py": {
+      "bytes": 10246,
+      "sha256": "b8d82a593c94a2410e063d4757c57a2bd0b5dab8458a9b1e00e66c92fc6829e8"
+    },
+    "tests/test_prepare_sglang_client.py": {
+      "bytes": 7432,
+      "sha256": "d1c099cdeee96ee9d9a947bb28b27a47a5eb6aaf03371cf8d15ab5f241a388d8"
+    }
+  },
+  "driver_unchanged_sha256": "7318269cd4ae006c564c18b433cf3b6de852787acad9bde31947f9dfe67abead",
+  "steps": [
+    {
+      "argv": [
+        "C:\\Users\\zhl\\anaconda3\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_prepare_sglang_client.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "windows-tests.log",
+      "sha256": "9a8907a56b50674f183e428cc3e9772bae3fbac36ed1fdfb91e4fab7d6a4db2d"
+    },
+    {
+      "argv": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "bash",
+        "-lc",
+        "cd /mnt/e/hg20261019 && PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s tests -p test_prepare_sglang_client.py -v"
+      ],
+      "exit_code": 0,
+      "log": "wsl-tests.log",
+      "sha256": "b733f2ade6042b95e4a968b4d322b3a638ce3fed683286d88fa7d8a404b23172"
+    }
+  ],
+  "after": {
+    "scripts/prepare_sglang_client.py": {
+      "bytes": 10246,
+      "sha256": "b8d82a593c94a2410e063d4757c57a2bd0b5dab8458a9b1e00e66c92fc6829e8"
+    },
+    "tests/test_prepare_sglang_client.py": {
+      "bytes": 7432,
+      "sha256": "d1c099cdeee96ee9d9a947bb28b27a47a5eb6aaf03371cf8d15ab5f241a388d8"
+    }
+  },
+  "passed": true,
+  "ended_utc": "2026-10-23T09:49:29.953642+00:00"
+}

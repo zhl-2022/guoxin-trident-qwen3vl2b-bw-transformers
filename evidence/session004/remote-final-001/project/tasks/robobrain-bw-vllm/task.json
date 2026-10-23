@@ -1,0 +1,607 @@
+{
+  "schema_version": 1,
+  "slug": "robobrain-bw-vllm",
+  "track": "T02",
+  "status": "head72_compat_gpu_numerical_and_functional_revalidated_official_pending",
+  "platform": {
+    "provider": "SCNet",
+    "region": "华中一区【A区】",
+    "resource_group": "113 / hx1hgbwnormal",
+    "card": "BW",
+    "framework": "vllm",
+    "precision": "bf16",
+    "cards": 1,
+    "instance_final_state": "stopped",
+    "checkpoint": "evidence/platform-checkpoint-20261020-003.json",
+    "latest_instance_id": "2112237945233408001",
+    "latest_instance_final_state": "stopped",
+    "latest_instance_environment_saved": true,
+    "latest_state_source": "evidence/platform-checkpoint-20261020-003.json",
+    "historical_checkpoint": "evidence/platform-checkpoint-20261019-002.json",
+    "execution_policy": "session003 used authorized A Recon and B Robo-to-ASR sequential execution; all instances verified stopped; no further GPU allocation in final delivery"
+  },
+  "model": {
+    "id": "BAAI/RoboBrain2.5-8B-NV",
+    "expected_architecture": "Qwen3VLForConditionalGeneration",
+    "config_path": "evidence/robobrain-model-config.json",
+    "remote_path": "/root/private_data/SothisAI/model/Aihub/RoboBrain2.5-8B-NV/main/RoboBrain2.5-8B-NV",
+    "remote_path_status": "verified by evidence/robobrain-preflight-001.json",
+    "scnet_storage_path_reported": "/public/home/ac3p4mowhz/SothisAI/model/Aihub/RoboBrain2.5-8B-NV/main/RoboBrain2.5-8B-NV",
+    "scnet_clone_id": "2112187999273320450",
+    "clone_status_at_last_observation": "complete_reported_by_root",
+    "clone_observed_at_local": null,
+    "weights_verified": true,
+    "config_sha256": "5cd452860dc1e9c29dd71cc3cef7f39b338b7a40793f7a260655c2d3568f3661",
+    "static_preflight_created_at_utc": "2026-10-19T14:31:51.722503+00:00",
+    "weight_headers_verified": true,
+    "weight_shards_sha256_verified": true,
+    "preflight": {
+      "path": "evidence/robobrain-preflight-001.json",
+      "complete": true,
+      "tensor_count": 750,
+      "shard_count": 2,
+      "payload_bytes": 17534247392,
+      "dtypes": [
+        "BF16"
+      ],
+      "weight_content_hashed": true,
+      "inference_verified": false,
+      "hashed_report": "evidence/robobrain-preflight-hashed-001.json",
+      "shard_sha256": {
+        "model-00001-of-00002.safetensors": "ddcbb8b2c0edd0f7707b5c459c9981ef9c842293e5d520324dddc8c66996fba9",
+        "model-00002-of-00002.safetensors": "374a816964fc361fece15f7f8f661521a367181bdd3a5d6f75f59fa0b0c328b5"
+      }
+    },
+    "weight_shards_sha256_computed": true,
+    "weight_hash_verification_scope": "both complete local shard SHA256 and sizes match published upstream LFS metadata; no inference correctness assertion",
+    "weight_hash_upstream_verification": {
+      "url": "https://huggingface.co/api/models/BAAI/RoboBrain2.5-8B-NV?blobs=true",
+      "revision": "7ae187cc62e45cfa1c5904903a8f017f11b2037b",
+      "checked_at_local_date": "2026-10-19",
+      "published_files": {
+        "model-00001-of-00002.safetensors": {
+          "sha256": "ddcbb8b2c0edd0f7707b5c459c9981ef9c842293e5d520324dddc8c66996fba9",
+          "size": 9914019048
+        },
+        "model-00002-of-00002.safetensors": {
+          "sha256": "374a816964fc361fece15f7f8f661521a367181bdd3a5d6f75f59fa0b0c328b5",
+          "size": 7620320504
+        }
+      },
+      "all_shards_match": true
+    }
+  },
+  "upstream": {
+    "model_card_url": "https://huggingface.co/BAAI/RoboBrain2.5-8B-NV",
+    "public_metadata_url": "https://huggingface.co/api/models/BAAI/RoboBrain2.5-8B-NV",
+    "huggingface_revision": "7ae187cc62e45cfa1c5904903a8f017f11b2037b",
+    "architectures": [
+      "Qwen3VLForConditionalGeneration"
+    ],
+    "model_type": "qwen3_vl",
+    "safetensors_parameters": {
+      "BF16": 8767123696
+    },
+    "gated": "auto",
+    "license": "apache-2.0",
+    "inference_source_url": "https://raw.githubusercontent.com/FlagOpen/RoboBrain2.5/main/inference.py",
+    "inference_source_sha256": "69511729e252c2cc7b8ca7c24a790099139502b479a1299a66ae2260663affb5",
+    "inference_source_commit": null,
+    "inspected_at_local": "2026-10-19",
+    "inspection_method": "public metadata plus static AST parsing; no upstream code executed"
+  },
+  "upstream_protocol": {
+    "prompt_templates": {
+      "general": "{text}",
+      "pointing": "{text}. Please provide its 2D coordinates. Your answer should be formatted as a tuple, i.e. [(x, y)], where the tuple contains the x and y coordinates of a point satisfying the conditions above.",
+      "trajectory": "Please predict 3D end-effector-centric waypoints to complete the task successfully. The task is \"{text}\". Your answer should be formatted as a list of tuples, i.e., [(x1, y1, d1), (x2, y2, d2), ...], where each tuple contains the x and y coordinates and the depth of the point.",
+      "grounding": "Please provide the bounding box coordinate of the region this sentence describes: {text}."
+    },
+    "prompt_source_lines": {
+      "pointing": 52,
+      "trajectory": 55,
+      "grounding": 58
+    },
+    "structured_tasks_require_exactly_one_image": true,
+    "general_allows_multiple_images": true,
+    "return_envelope": {
+      "answer": "decoded text, not parsed coordinates"
+    },
+    "outputs": {
+      "general": {
+        "kind": "free text"
+      },
+      "grounding": {
+        "kind": "text containing [x1, y1, x2, y2]",
+        "coordinate_xy_scale": [
+          0,
+          1000
+        ]
+      },
+      "pointing": {
+        "kind": "text containing [(x, y)]",
+        "coordinate_xy_scale": [
+          0,
+          1000
+        ]
+      },
+      "trajectory": {
+        "kind": "text containing [(x1, y1, d1), (x2, y2, d2), ...]",
+        "coordinate_xy_scale": [
+          0,
+          1000
+        ],
+        "depth_units": null,
+        "depth_units_status": "not specified by the inspected inference wrapper"
+      }
+    },
+    "generation_defaults_in_upstream": {
+      "max_new_tokens": 768,
+      "do_sample": true,
+      "temperature": 0.7
+    },
+    "official_evaluation_schema_verified": false
+  },
+  "service_candidate": {
+    "served_name": "robobrain2-5-8b-nv",
+    "port": 30001,
+    "runtime_root": "tasks/robobrain-bw-vllm/runtime",
+    "actual_run_verified": true,
+    "image_digest": null,
+    "native_environment_probe": "evidence/vllm-probe-001.json",
+    "native_environment_probe_scope": "same candidate instance; imports/platform only, not RoboBrain serving",
+    "observed_device": {
+      "name": "BW",
+      "architecture": "gfx936:sramecc+:xnack-",
+      "card_suffix_verified": false
+    },
+    "actual_run_verification_scope": "Current083dc53: BW24 numerical cases (two repeats), seven synthetic heldout requests, ready/stopped identity and cleanup verified; no official accuracy or performance",
+    "adaptation_ready": false,
+    "semantic_acceptance_verified": false,
+    "current_source_gpu_verified": true,
+    "default_entrypoint": "tasks/robobrain-bw-vllm/run.sh",
+    "native_comparison_entrypoint": "tasks/robobrain-bw-vllm/run_baseline.sh",
+    "current_source_gpu_evidence": "evidence/robobrain-source-audit-003.json"
+  },
+  "official": {
+    "claim": {
+      "confirmed": false,
+      "reference": null
+    },
+    "baseline": {
+      "artifact": "official-baseline"
+    },
+    "evaluator": {
+      "artifact": "official-evaluator"
+    },
+    "dataset": {
+      "artifact": "official-dataset"
+    },
+    "image_digest": null,
+    "image_reference": null
+  },
+  "artifacts": [],
+  "accuracy": {
+    "metric": "official-task-specific-metric-pending",
+    "direction": "higher",
+    "drop_mode": "absolute",
+    "max_drop": 0,
+    "full_scale": 1,
+    "baseline": null,
+    "policy_status": "disabled pending official materials; zero-drop scaffold is not an official threshold"
+  },
+  "budget": {
+    "cards": 1,
+    "wall_hours": 2,
+    "total_card_hours": 496.9866666666,
+    "used_card_hours": 1.3623132980555555,
+    "snapshot_source": "evidence/platform-checkpoint-20261019.json",
+    "snapshot_is_live": false,
+    "used_card_hours_is_approximate": true,
+    "snapshot_note": "shared session conservative wall bound from creation through later stopped observation; includes provisioning; checkpoint002; not live and not a new allocation"
+  },
+  "evidence_files": [
+    "docs/robobrain-preparation.md",
+    "tasks/robobrain-bw-vllm/README.md",
+    "evidence/robobrain-preflight-001.json",
+    "evidence/robobrain-model-config.json",
+    "evidence/vllm-probe-001.json",
+    "evidence/vllm-native-001.txt",
+    "evidence/robobrain-preflight-hashed-001.json",
+    "evidence/robobrain-vllm-state-001.json",
+    "evidence/robobrain-vllm-smoke-001.jsonl",
+    "evidence/robobrain-protocol-smoke-001.jsonl",
+    "evidence/robobrain-vllm-stopped-state-001.json",
+    "evidence/robobrain-reference-gpu-001.json",
+    "evidence/robobrain-runtime-source-001.json",
+    "evidence/robobrain-runtime-source-002.json",
+    "evidence/robobrain-vllm-server-full-001.log",
+    "evidence/robobrain-vllm-state-math-002.json",
+    "evidence/robobrain-vllm-stopped-state-math-002.json",
+    "evidence/robobrain-vllm-server-full-math-002.log",
+    "evidence/robobrain-vllm-smoke-math-002.jsonl",
+    "evidence/robobrain-protocol-smoke-math-002.jsonl",
+    "evidence/rules/robobrain-vision-math-diagnostic-cpu.json",
+    "evidence/rules/robobrain-vision-math-compat-cpu.json",
+    "evidence/rules/robobrain-heldout-prepared-001/manifest.json",
+    "evidence/rules/robobrain-heldout-prepared-001/heldout.jsonl",
+    "evidence/robobrain-math-compat-numerical-001.json",
+    "evidence/robobrain-heldout-004.jsonl",
+    "evidence/robobrain-heldout-manifest-004.json",
+    "evidence/robobrain-vllm-state-compat-004.json",
+    "evidence/robobrain-vllm-stopped-state-compat-004.json",
+    "evidence/robobrain-vllm-server-full-compat-004.log",
+    "evidence/robobrain-vllm-profile-state-003.json",
+    "evidence/robobrain-vllm-profile-stopped-003.json",
+    "evidence/robobrain-vllm-profile-server-003.log",
+    "evidence/platform-checkpoint-20261019-002.json",
+    "evidence/rules/robobrain-vision-math-compat-cpu-002.json",
+    "evidence/robobrain-session-report-003.json",
+    "evidence/robobrain-numerical-003.json",
+    "evidence/robobrain-numerical-initial-003.json",
+    "evidence/robobrain-heldout-003.jsonl",
+    "evidence/robobrain-heldout-manifest-003.json",
+    "evidence/robobrain-heldout-red-003.png",
+    "evidence/robobrain-heldout-blue-003.png",
+    "evidence/robobrain-env-003.json",
+    "evidence/robobrain-instance-env-003.json",
+    "evidence/robobrain-ready-state-003.json",
+    "evidence/robobrain-stopped-state-003.json",
+    "evidence/robobrain-run-config-003.json",
+    "evidence/robobrain-server-full-003.log",
+    "evidence/robobrain-supervisor-full-003.log",
+    "evidence/robobrain-stop-003.log",
+    "evidence/robobrain-source-audit-003.json",
+    "docs/session003-robobrain-results.md",
+    "evidence/rules/session003-run-identity-cpu-004.json",
+    "evidence/local-tests-session003-final-001.log",
+    "evidence/local-validation-session003-final-001.json",
+    "evidence/local-tests-session003-final-002.log",
+    "evidence/local-validation-session003-final-002.json",
+    "evidence/community-metadata-003.json",
+    "evidence/platform-checkpoint-20261020-003.json",
+    "evidence/screenshots/notebooks-stopped-final-003.png",
+    "evidence/screenshots/balance-after-stop-003.png"
+  ],
+  "required_metrics": [
+    "official-task-specific-metrics-pending"
+  ],
+  "notes": "baseline001 errors, Math002 and historical cc6591 GPU numerical18/heldout7 evidence retained. Current083dc53 fixes head-broadcast budgeting, passes6 CPU tests and independently passes24 BW GPU numerical cases including6 broadcast-budget cases plus7 synthetic image requests in session003. Default run.sh enables compatibility; run_baseline.sh is native comparison. Service stopped with matching run_id and cleanup_verified. Official evaluation/performance, full image reference/tag and clean replay remain pending; digest/claim receipt are not extra development prerequisites.",
+  "adaptation_ready": false,
+  "semantic_acceptance_verified": false,
+  "official_accuracy": false,
+  "official_performance": false,
+  "serving_observation": {
+    "state_report": "evidence/robobrain-vllm-state-001.json",
+    "state_is_live": false,
+    "run_id": "fc74ef9cc0354bf5824f92eb029db631",
+    "status_at_snapshot": "ready",
+    "created_utc": "2026-10-19T14:40:34.334601+00:00",
+    "ready_utc": "2026-10-19T14:42:24.226678+00:00",
+    "command": [
+      "/usr/bin/python3",
+      "-m",
+      "vllm.entrypoints.openai.api_server",
+      "--model",
+      "/root/private_data/SothisAI/model/Aihub/RoboBrain2.5-8B-NV/main/RoboBrain2.5-8B-NV",
+      "--served-model-name",
+      "robobrain2-5-8b-nv",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "30001",
+      "--tensor-parallel-size",
+      "1",
+      "--dtype",
+      "bfloat16",
+      "--max-model-len",
+      "32768",
+      "--gpu-memory-utilization",
+      "0.85",
+      "--enforce-eager",
+      "--max-num-seqs",
+      "4",
+      "--limit-mm-per-prompt",
+      "{\"image\":2,\"video\":0}"
+    ],
+    "max_runtime_seconds_actual": 3600,
+    "stop_observed": true,
+    "kernel_backend_verified_from_this_snapshot": false,
+    "stop_reported_by_root_before_reference": true,
+    "stop_report": "evidence/robobrain-vllm-stopped-state-001.json"
+  },
+  "functional_smoke": {
+    "report": "evidence/robobrain-vllm-smoke-001.jsonl",
+    "run_id": "d412ae56765c48909eef59d291192408",
+    "functional_checks_passed": true,
+    "functional_check_count": 7,
+    "scope": "transport, served identity, multimodal request acceptance, nonempty content and streaming termination; not semantic acceptance",
+    "all_answers_complete": false,
+    "truncated_cases": [
+      {
+        "case": "multiple_images",
+        "finish_reason": "length",
+        "completion_tokens": 256
+      }
+    ],
+    "semantic_acceptance_verified": false
+  },
+  "protocol_smoke": {
+    "report": "evidence/robobrain-protocol-smoke-001.jsonl",
+    "run_id": "22f6e0231b4c4d999e35f5da50a00ca6",
+    "functional_protocol_checks_passed": true,
+    "requests_sent": 4,
+    "temperature": 0,
+    "max_tokens": 256,
+    "all_finish_reasons_stop": true,
+    "scope": "nonempty completed responses and coordinate syntax hints only; semantics failed human inspection",
+    "script_sha256_at_run": "bec36fb0c85332eb7144c479e9782d57c9b0dc2ad15b610ac81d1af2bd237486",
+    "task_sha256_at_run": "f23e51a8603437ab9c83bf7680179f2037ab8bb587abe6207a658a99de2c2189",
+    "current_task_metadata_updated_after_run": true,
+    "semantic_accuracy_verified": false
+  },
+  "semantic_observation": {
+    "status": "regression_observed_on_known_functional_fixture",
+    "fixture_sha256": "46b3dc7b5e2de94b4b35f1ed4a3947c0575186c5fe852c6d5939c60a08a9f5b7",
+    "fixture_content_expected": "red square functional fixture (known fixture, not official evaluation data)",
+    "general_observed": "The image shows a group of people standing in a line, likely at a formal or semi-formal event. They are dressed in a mix of formal and semi-formal attire, with some wearing suits and others in more casual but still presentable clothing. The individuals are positioned in a row, facing the camera, and appear to be posing for a group photo. The background is not clearly visible, but it seems to be an indoor setting, possibly a venue or a hall. The lighting is bright, highlighting the group and their attire. The overall atmosphere suggests a social or professional gathering.",
+    "grounding_observed": "[10, 10, 1000, 1000]",
+    "pointing_observed": "[(964, 966)]",
+    "trajectory_observed": "[(930, 468, 0.492), (800, 419, 0.557), (680, 430, 0.630)]",
+    "assessment": "general describes a group of people instead of the known red square; grounding and pointing disagree with the fixture according to manual inspection",
+    "trajectory_correctness_verified": false,
+    "official_metric_computed": false,
+    "root_cause": "Baseline failure localized to the vLLM vision SDPA backend path by a fixture-scoped Math intervention; exact fused implementation fault remains unproven"
+  },
+  "pending_reference_comparison": {
+    "status": "completed_functional_reference",
+    "planned_runtime": "native Transformers 5.5.0 with SDPA math",
+    "report_path": "evidence/robobrain-reference-gpu-001.json",
+    "executed": true,
+    "result": "same weights/images yield correct red-square/blue-label observations with native normal AutoProcessor plus BF16 SDPA Math; all three cases hit the configured 64-token diagnostic cap",
+    "purpose": "compare this model and same fixture before attributing behavior to model weights, preprocessing or vLLM/HCU implementation",
+    "started_reported_by_root": true,
+    "completed": true
+  },
+  "reference_comparison": {
+    "report": "evidence/robobrain-reference-gpu-001.json",
+    "status": "functional_generation_completed",
+    "created_at_utc": "2026-10-19T14:52:02.099340+00:00",
+    "finished_at_utc": "2026-10-19T14:52:54.252039+00:00",
+    "config_sha256": "5cd452860dc1e9c29dd71cc3cef7f39b338b7a40793f7a260655c2d3568f3661",
+    "image_only_processor_requested": false,
+    "sdpa_backend_requested": "math",
+    "case_count": 3,
+    "case_generated_tokens": {
+      "single_image_1": 64,
+      "single_image_2": 64,
+      "two_images": 64
+    },
+    "all_cases_reached_diagnostic_token_cap": true,
+    "official_framework_service": false,
+    "functional_fixture_semantics_observed_correct": true,
+    "official_accuracy": false,
+    "scope": "native Transformers reference only; no official evaluator/complete semantic benchmark"
+  },
+  "diagnostic_math_observation": {
+    "state_report": "evidence/robobrain-vllm-state-math-002.json",
+    "state_is_live": false,
+    "stop_report": "evidence/robobrain-vllm-stopped-state-math-002.json",
+    "status_at_last_snapshot": "stopped",
+    "run_id": "0d0043452b6c439e9c9df69631290b05",
+    "created_utc": "2026-10-19T15:05:34.562818+00:00",
+    "ready_utc": "2026-10-19T15:07:21.928472+00:00",
+    "ended_utc": "2026-10-19T15:07:45.918200+00:00",
+    "max_runtime_seconds_actual": 900,
+    "script": "scripts/robobrain_vision_math_diagnostic.py",
+    "script_sha256": "d529f5caf6625cfae6564dbeea4fb6617d5aa37c738386e8ec54f159d5d64bc3",
+    "worker_pid": 7046,
+    "head_size": 72,
+    "eligible_sequence_lengths_configured": [
+      384,
+      768
+    ],
+    "eligible_sequence_lengths_observed": [
+      384
+    ],
+    "eligible_calls": 54,
+    "completed_calls": 54,
+    "unchanged_calls": 27,
+    "server_log": "evidence/robobrain-vllm-server-full-math-002.log",
+    "functional_smoke": "evidence/robobrain-vllm-smoke-math-002.jsonl",
+    "protocol_smoke": "evidence/robobrain-protocol-smoke-math-002.jsonl",
+    "functional_checks_passed": true,
+    "functional_check_count": 7,
+    "fixture_semantics_observed_correct": true,
+    "grounding_observed": "[60, 233, 350, 780]",
+    "pointing_observed": "[(237, 516)]",
+    "trajectory_correctness_verified": false,
+    "semantic_acceptance_verified": false,
+    "official_accuracy": false,
+    "official_performance": false,
+    "scope": "fixed synthetic fixtures only; changed only matching vision SDPA calls to Math; other shapes remained unchanged"
+  },
+  "compatibility_candidate": {
+    "status": "gpu_numerical_and_heldout_functional_verified_official_pending",
+    "script": "scripts/robobrain_vision_math_compat.py",
+    "script_sha256": "083dc53f3e4f8171b774469bffa724c2269a9d289769f56a9d7a5624cd81659f",
+    "worker_extension_cls": "robobrain_vision_math_compat.VisionMathCompat",
+    "target": "nonempty head72 vision apply_sdpa with valid broadcast or GQA geometry; per-image boundaries retained",
+    "query_chunk_limit": 128,
+    "max_score_elements": 16777216,
+    "memory_limit_scope": "at most64MiB for one FP32 score tensor using conservative broadcast batch/head sizes; total allocator peak is not capped",
+    "change_from_historical_gpu_version": "Fix Hq=1/Hkv>1 score-budget undercount; validate geometry before chunking",
+    "per_image_cu_seqlens_preserved": true,
+    "cpu_numerical_tests_passed": 6,
+    "cpu_torch_version": "2.10.0+cpu",
+    "cpu_evidence": "evidence/rules/robobrain-vision-math-compat-cpu-002.json",
+    "gpu_validator": "scripts/validate_robobrain_vision_math_compat.py",
+    "gpu_numerical_verified": true,
+    "heldout_shapes_verified": true,
+    "heldout_functional_verified": true,
+    "official_accuracy": false,
+    "official_performance": false,
+    "adaptation_ready": false,
+    "historical_gpu_candidate_sha256": "cc6591b5c99bf3cef5090e88d8893e83e6db77e8cbc6bf97c24d42380a92c3af",
+    "historical_gpu_evidence_applies_to_current_sha256": false,
+    "init_profile_dummy_pixels": [
+      1024,
+      1024
+    ],
+    "profile_scope_note": "1024x1024 initialization profiling was revalidated for current083dc53 source in session003; alternative bounds and larger real inputs remain unvalidated. This is not a processor resize policy.",
+    "profile_overrides": [
+      "ROBOBRAIN_PROFILE_WIDTH",
+      "ROBOBRAIN_PROFILE_HEIGHT",
+      "ROBOBRAIN_MAX_NUM_SEQS"
+    ],
+    "reproduce": "tasks/robobrain-bw-vllm/run.sh",
+    "compatibility_alias": "tasks/robobrain-bw-vllm/run_compat.sh",
+    "native_comparison": "tasks/robobrain-bw-vllm/run_baseline.sh",
+    "limitations": [
+      "exact fused-kernel fault and performance impact remain unproven",
+      "official accuracy/image-size policy/performance/clean-image replay pending; seven synthetic requests are not model-wide semantic acceptance"
+    ],
+    "gpu_numerical_report": "evidence/robobrain-numerical-003.json",
+    "gpu_numerical_initial_report": "evidence/robobrain-numerical-initial-003.json",
+    "gpu_numerical_case_count": 24,
+    "gpu_broadcast_budget_cases": 6,
+    "gpu_broadcast_budget_verified": true,
+    "max_absolute_error_observed": 0.0009765625,
+    "heldout_report": "evidence/robobrain-heldout-003.jsonl",
+    "heldout_manifest": "evidence/robobrain-heldout-manifest-003.json",
+    "actual_vision_lengths": [
+      1120,
+      1024
+    ],
+    "successful_math_calls": 81,
+    "all_math_calls_completed": true,
+    "math_chunk_count": 1323,
+    "largest_score_elements_observed": 8388608,
+    "synthetic_bbox_iou": [
+      0.8839659402511187,
+      0.9024416623854203
+    ],
+    "both_points_inside_synthetic_bbox": true,
+    "source_audit": "evidence/robobrain-source-audit-003.json"
+  },
+  "heldout_candidate": {
+    "script": "scripts/robobrain_heldout_fixtures.py",
+    "script_sha256": "e0dba59f274a1629b53b0cf3c9c4fd3adf72220b41164c34f03e8a72778cbeb7",
+    "local_manifest": "evidence/rules/robobrain-heldout-prepared-001/manifest.json",
+    "local_dry_run_log": "evidence/rules/robobrain-heldout-prepared-001/heldout.jsonl",
+    "image_dimensions": [
+      [
+        640,
+        448
+      ],
+      [
+        512,
+        512
+      ]
+    ],
+    "expected_vision_sequence_lengths_without_resize": [
+      1120,
+      1024
+    ],
+    "actual_processor_grid_verified": true,
+    "remote_http_executed": true,
+    "local_checks": [
+      "dry-run prompts and SHA256",
+      "image dimensions and center RGB pixels",
+      "non384/768 expected patch lengths",
+      "Python compile"
+    ],
+    "semantic_acceptance_verified": false,
+    "official_accuracy": false,
+    "scope": "new synthetic sizes and coordinates; seven optional loopback requests, not official evaluation",
+    "source_version_scope": "Historical cc6591 run004 only; not proof for current updated source",
+    "session003_observation": {
+      "source_version_scope": "Current083dc53 in independent session003; historical run004 records retained above",
+      "report": "evidence/robobrain-heldout-003.jsonl",
+      "manifest": "evidence/robobrain-heldout-manifest-003.json",
+      "current_source_gpu_verified": true,
+      "requests_sent": 7,
+      "all_functional_protocol_checks_passed": true,
+      "all_answers_finished_stop": true,
+      "actual_vision_lengths_from_server_log": [
+        1120,
+        1024
+      ],
+      "processor_grid_actually_verified_in_this_manifest": false,
+      "official_accuracy": false
+    }
+  },
+  "historical_compatibility_candidate": {
+    "status": "gpu_numerical_and_heldout_functional_verified_official_pending",
+    "script": "scripts/robobrain_vision_math_compat.py",
+    "script_sha256": "cc6591b5c99bf3cef5090e88d8893e83e6db77e8cbc6bf97c24d42380a92c3af",
+    "worker_extension_cls": "robobrain_vision_math_compat.VisionMathCompat",
+    "target": "vision apply_sdpa head dimension72, all nonempty sequence lengths; no fixture-size guard",
+    "query_chunk_limit": 128,
+    "max_score_elements": 16777216,
+    "memory_limit_scope": "at most64MiB for one FP32 score tensor for current same-head/GQA geometry; total allocator peak is not capped",
+    "per_image_cu_seqlens_preserved": true,
+    "cpu_numerical_tests_passed": 4,
+    "cpu_torch_version": "2.10.0+cpu",
+    "cpu_evidence": "evidence/rules/robobrain-vision-math-compat-cpu.json",
+    "gpu_validator": "scripts/validate_robobrain_vision_math_compat.py",
+    "gpu_numerical_verified": true,
+    "heldout_shapes_verified": true,
+    "official_accuracy": false,
+    "official_performance": false,
+    "adaptation_ready": false,
+    "limitations": [
+      "head broadcasting Hq=1/Hkv>1 is outside validated current vision geometry; score budget currently counts Hq",
+      "exact fused-kernel fault and performance impact remain unproven",
+      "official accuracy/long-image limits/performance/clean-image replay pending; seven synthetic requests are not model-wide semantic acceptance"
+    ],
+    "gpu_numerical_report": "evidence/robobrain-math-compat-numerical-001.json",
+    "gpu_numerical_case_count": 18,
+    "max_absolute_error_observed": 0.0009765625,
+    "heldout_functional_verified": true,
+    "heldout_report": "evidence/robobrain-heldout-004.jsonl",
+    "heldout_manifest": "evidence/robobrain-heldout-manifest-004.json",
+    "actual_vision_lengths": [
+      1120,
+      1024
+    ],
+    "successful_math_calls": 81,
+    "all_math_calls_completed": true,
+    "init_profile_dummy_pixels": [
+      1024,
+      1024
+    ],
+    "profile_scope_note": "default65536-patch profiling run003 stopped for cost; run004 explicitly profiles1024x1024 dummy images without changing heldout images; large image/official policy pending",
+    "synthetic_bbox_iou": [
+      0.8839659402511187,
+      0.9024416623854203
+    ],
+    "both_points_inside_synthetic_bbox": true,
+    "official_accuracy_verified": false,
+    "official_performance_verified": false,
+    "reproduce": "Historical run004 command and source hash in evidence; current entrypoint uses updated source",
+    "source_version_scope": "Historical cc6591 only; not current source"
+  },
+  "session003_observation": {
+    "summary": "docs/session003-robobrain-results.md",
+    "audit": "evidence/robobrain-source-audit-003.json",
+    "run_id": "c43dadd550fb44dabd84f52df49711d5",
+    "instance_id": "2112237945233408001",
+    "ready_state": "evidence/robobrain-ready-state-003.json",
+    "stopped_state": "evidence/robobrain-stopped-state-003.json",
+    "created_utc": "2026-10-19T17:52:23.996595+00:00",
+    "ready_utc": "2026-10-19T17:56:24.539129+00:00",
+    "ended_utc": "2026-10-19T17:56:49.631522+00:00",
+    "status_at_final_snapshot": "stopped",
+    "reason": "stop requested",
+    "cleanup_verified": true,
+    "max_runtime_seconds_actual": 1800,
+    "load_timeout_seconds_actual": 600,
+    "task_sha256_at_run": "ec35ac53f1b74d75f1fc4524f7076de956d3d3e1b60e9aceecec872624e7e09b",
+    "task_metadata_updated_after_run": true,
+    "official_accuracy": false,
+    "official_performance": false,
+    "official_acceptance": false
+  },
+  "official_acceptance": false
+}

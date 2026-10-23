@@ -1,0 +1,11 @@
+IMPORT_OK torch 2.10.0 /usr/local/lib/python3.10/dist-packages/torch/__init__.py
+DEVICE True BW 6.3.26093
+IMPORT_OK torchvision 0.25.0 /usr/local/lib/python3.10/dist-packages/torchvision/__init__.py
+IMPORT_OK flash_attn 2.8.3 /usr/local/lib/python3.10/dist-packages/flash_attn/__init__.py
+IMPORT_OK vllm 0.18.1 /usr/local/lib/python3.10/dist-packages/vllm/__init__.py
+FLAGS {'VLLM_HCU_USE_PD_SPLIT': None, 'VLLM_HCU_USE_CUSTOM_FLASH_ATTN': None}
+INFO 10-19 22:27:17 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-19 22:27:17 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 10-19 22:27:17 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 10-19 22:27:17 [__init__.py:239] Platform plugin hcu is activated
+PLATFORM vllm_hcu.platforms.hcu HCUPlatform

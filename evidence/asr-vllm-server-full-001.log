@@ -1,0 +1,67 @@
+
+=== run 25822c2cda0146b5aa2e43ef884b64f7 at 2026-10-19T15:16:18.273311+00:00 ===
+["/root/private_data/venvs/qwen3-asr-audio-001/bin/python", "-m", "vllm.entrypoints.openai.api_server", "--model", "/root/private_data/SothisAI/model/Aihub/Qwen3-ASR-1.7B/main/Qwen3-ASR-1.7B", "--served-model-name", "qwen3-asr-1.7b", "--host", "127.0.0.1", "--port", "30002", "--tensor-parallel-size", "1", "--dtype", "bfloat16", "--max-model-len", "32768", "--gpu-memory-utilization", "0.85", "--enforce-eager", "--max-num-seqs", "4"]
+INFO 10-19 23:16:36 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-19 23:16:36 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 10-19 23:16:36 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 10-19 23:16:36 [__init__.py:239] Platform plugin hcu is activated
+(APIServer pid=8810) INFO 10-19 23:16:44 [utils.py:297] 
+(APIServer pid=8810) INFO 10-19 23:16:44 [utils.py:297]        █     █     █▄   ▄█
+(APIServer pid=8810) INFO 10-19 23:16:44 [utils.py:297]  ▄▄ ▄█ █     █     █ ▀▄▀ █  version 0.18.1
+(APIServer pid=8810) INFO 10-19 23:16:44 [utils.py:297]   █▄█▀ █     █     █     █  model   /root/private_data/SothisAI/model/Aihub/Qwen3-ASR-1.7B/main/Qwen3-ASR-1.7B
+(APIServer pid=8810) INFO 10-19 23:16:44 [utils.py:297]    ▀▀  ▀▀▀▀▀ ▀▀▀▀▀ ▀     ▀
+(APIServer pid=8810) INFO 10-19 23:16:44 [utils.py:297] 
+(APIServer pid=8810) INFO 10-19 23:16:44 [utils.py:233] non-default args: {'host': '127.0.0.1', 'port': 30002, 'model': '/root/private_data/SothisAI/model/Aihub/Qwen3-ASR-1.7B/main/Qwen3-ASR-1.7B', 'dtype': 'bfloat16', 'max_model_len': 32768, 'enforce_eager': True, 'served_model_name': ['qwen3-asr-1.7b'], 'gpu_memory_utilization': 0.85, 'max_num_seqs': 4}
+(APIServer pid=8810) Traceback (most recent call last):
+(APIServer pid=8810)   File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+(APIServer pid=8810)     return _run_code(code, main_globals, None,
+(APIServer pid=8810)   File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+(APIServer pid=8810)     exec(code, run_globals)
+(APIServer pid=8810)   File "/usr/local/lib/python3.10/dist-packages/vllm/entrypoints/openai/api_server.py", line 696, in <module>
+(APIServer pid=8810)     uvloop.run(run_server(args))
+(APIServer pid=8810)   File "/usr/local/lib/python3.10/dist-packages/uvloop/__init__.py", line 69, in run
+(APIServer pid=8810)     return loop.run_until_complete(wrapper())
+(APIServer pid=8810)   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+(APIServer pid=8810)   File "/usr/local/lib/python3.10/dist-packages/uvloop/__init__.py", line 48, in wrapper
+(APIServer pid=8810)     return await main
+(APIServer pid=8810)   File "/usr/local/lib/python3.10/dist-packages/vllm/entrypoints/openai/api_server.py", line 656, in run_server
+(APIServer pid=8810)     await run_server_worker(listen_address, sock, args, **uvicorn_kwargs)
+(APIServer pid=8810)   File "/usr/local/lib/python3.10/dist-packages/vllm/entrypoints/openai/api_server.py", line 670, in run_server_worker
+(APIServer pid=8810)     async with build_async_engine_client(
+(APIServer pid=8810)   File "/usr/lib/python3.10/contextlib.py", line 199, in __aenter__
+(APIServer pid=8810)     return await anext(self.gen)
+(APIServer pid=8810)   File "/usr/local/lib/python3.10/dist-packages/vllm/entrypoints/openai/api_server.py", line 103, in build_async_engine_client
+(APIServer pid=8810)     async with build_async_engine_client_from_engine_args(
+(APIServer pid=8810)   File "/usr/lib/python3.10/contextlib.py", line 199, in __aenter__
+(APIServer pid=8810)     return await anext(self.gen)
+(APIServer pid=8810)   File "/usr/local/lib/python3.10/dist-packages/vllm/entrypoints/openai/api_server.py", line 129, in build_async_engine_client_from_engine_args
+(APIServer pid=8810)     vllm_config = engine_args.create_engine_config(usage_context=usage_context)
+(APIServer pid=8810)   File "/usr/local/lib/python3.10/dist-packages/vllm/engine/arg_utils.py", line 1508, in create_engine_config
+(APIServer pid=8810)     model_config = self.create_model_config()
+(APIServer pid=8810)   File "/usr/local/lib/python3.10/dist-packages/vllm/engine/arg_utils.py", line 1360, in create_model_config
+(APIServer pid=8810)     return ModelConfig(
+(APIServer pid=8810)   File "/usr/local/lib/python3.10/dist-packages/pydantic/_internal/_dataclasses.py", line 121, in __init__
+(APIServer pid=8810)     s.__pydantic_validator__.validate_python(ArgsKwargs(args, kwargs), self_instance=s)
+(APIServer pid=8810)   File "/usr/local/lib/python3.10/dist-packages/vllm/config/model.py", line 476, in __post_init__
+(APIServer pid=8810)     hf_config = get_config(
+(APIServer pid=8810)   File "/usr/local/lib/python3.10/dist-packages/vllm/transformers_utils/config.py", line 679, in get_config
+(APIServer pid=8810)     config_dict, config = config_parser.parse(
+(APIServer pid=8810)   File "/usr/local/lib/python3.10/dist-packages/vllm/transformers_utils/config.py", line 196, in parse
+(APIServer pid=8810)     config = config_class.from_pretrained(
+(APIServer pid=8810)   File "/usr/local/lib/python3.10/dist-packages/transformers/configuration_utils.py", line 647, in from_pretrained
+(APIServer pid=8810)     return cls.from_dict(config_dict, **kwargs)
+(APIServer pid=8810)   File "/usr/local/lib/python3.10/dist-packages/transformers/configuration_utils.py", line 824, in from_dict
+(APIServer pid=8810)     config = cls(**config_dict)
+(APIServer pid=8810)   File "/usr/local/lib/python3.10/dist-packages/vllm/transformers_utils/configs/qwen3_asr.py", line 411, in __init__
+(APIServer pid=8810)     super().__init__(**kwargs)
+(APIServer pid=8810)   File "/usr/local/lib/python3.10/dist-packages/huggingface_hub/dataclasses.py", line 276, in init_with_validate
+(APIServer pid=8810)     cls.validate(self)  # type: ignore [attr-defined]
+(APIServer pid=8810)   File "/usr/local/lib/python3.10/dist-packages/huggingface_hub/dataclasses.py", line 251, in validate
+(APIServer pid=8810)     validator(self)
+(APIServer pid=8810)   File "/usr/local/lib/python3.10/dist-packages/transformers/configuration_utils.py", line 443, in validate_token_ids
+(APIServer pid=8810)     text_config = self.get_text_config(decoder=True)
+(APIServer pid=8810)   File "/usr/local/lib/python3.10/dist-packages/vllm/transformers_utils/configs/qwen3_asr.py", line 433, in get_text_config
+(APIServer pid=8810)     return self.thinker_config.get_text_config()
+(APIServer pid=8810)   File "/usr/local/lib/python3.10/dist-packages/transformers/configuration_utils.py", line 419, in __getattribute__
+(APIServer pid=8810)     return super().__getattribute__(key)
+(APIServer pid=8810) AttributeError: 'Qwen3ASRConfig' object has no attribute 'thinker_config'

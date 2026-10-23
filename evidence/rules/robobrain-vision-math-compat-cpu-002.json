@@ -1,0 +1,397 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-19T16:30:32.175189+00:00",
+  "scope": "CPU numerical tests and WSL shell syntax/dry-run only; no platform interaction, env_check, GPU, model load or submission",
+  "candidate_sha256": "083dc53f3e4f8171b774469bffa724c2269a9d289769f56a9d7a5624cd81659f",
+  "historical_gpu_candidate_sha256": "cc6591b5c99bf3cef5090e88d8893e83e6db77e8cbc6bf97c24d42380a92c3af",
+  "historical_gpu_evidence_is_reused_for_new_source": false,
+  "tests_run": 6,
+  "tests_passed": 6,
+  "torch_version": "2.10.0+cpu",
+  "test_command": [
+    "C:\\Users\\zhl\\anaconda3\\python.exe",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_robobrain_vision_math_compat.py",
+    "-v"
+  ],
+  "cpu_test_output": "test_broadcast_single_row_limit_and_invalid_geometry_fail_before_sdpa (test_robobrain_vision_math_compat.VisionMathCompatTests.test_broadcast_single_row_limit_and_invalid_geometry_fail_before_sdpa) ... ok\ntest_captured_per_image_wrapper_retains_boundaries (test_robobrain_vision_math_compat.VisionMathCompatTests.test_captured_per_image_wrapper_retains_boundaries) ... ok\ntest_head_and_batch_broadcast_math_parity_obeys_score_budget (test_robobrain_vision_math_compat.VisionMathCompatTests.test_head_and_batch_broadcast_math_parity_obeys_score_budget) ... ok\ntest_non_target_and_empty_delegate_and_single_row_limit_fails (test_robobrain_vision_math_compat.VisionMathCompatTests.test_non_target_and_empty_delegate_and_single_row_limit_fails) ... ok\ntest_numerical_parity_for_nondivisible_cross_batch_gqa_and_budget (test_robobrain_vision_math_compat.VisionMathCompatTests.test_numerical_parity_for_nondivisible_cross_batch_gqa_and_budget) ... ok\ntest_source_guard_rejects_altered_installed_source (test_robobrain_vision_math_compat.VisionMathCompatTests.test_source_guard_rejects_altered_installed_source) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.154s\n\nOK\n",
+  "dtypes": [
+    "float32",
+    "bfloat16"
+  ],
+  "tested": [
+    "GQA4/2 q141 k199 batch2 Vdim40 scaleNone/0.125",
+    "head broadcast1/4/4,1/1/4,4/1/1; batch1/2/1",
+    "every real SDPA chunk score budget, chunk7 and final remainder",
+    "broadcast one-row overflow rejects before SDPA",
+    "invalid head/batch/QK-feature/KV-length geometry rejects",
+    "captured per-image split and cross-image isolation",
+    "nonhead72 and empty delegation; source hash mismatch refusal"
+  ],
+  "gpu_numerical_verified": false,
+  "heldout_shapes_verified": false,
+  "official_accuracy": false,
+  "official_performance": false,
+  "shell_syntax": [
+    {
+      "path": "tasks/robobrain-bw-vllm/bench.sh",
+      "exit_code": 0
+    },
+    {
+      "path": "tasks/robobrain-bw-vllm/env.sh",
+      "exit_code": 0
+    },
+    {
+      "path": "tasks/robobrain-bw-vllm/env_check.sh",
+      "exit_code": 0
+    },
+    {
+      "path": "tasks/robobrain-bw-vllm/protocol_smoke.sh",
+      "exit_code": 0
+    },
+    {
+      "path": "tasks/robobrain-bw-vllm/run.sh",
+      "exit_code": 0
+    },
+    {
+      "path": "tasks/robobrain-bw-vllm/run_baseline.sh",
+      "exit_code": 0
+    },
+    {
+      "path": "tasks/robobrain-bw-vllm/run_compat.sh",
+      "exit_code": 0
+    },
+    {
+      "path": "tasks/robobrain-bw-vllm/smoke.sh",
+      "exit_code": 0
+    },
+    {
+      "path": "tasks/robobrain-bw-vllm/stop.sh",
+      "exit_code": 0
+    },
+    {
+      "path": "tasks/robobrain-bw-vllm/verify.sh",
+      "exit_code": 0
+    }
+  ],
+  "launcher_dry_runs": [
+    {
+      "name": "default_compat",
+      "command": [
+        "wsl",
+        "--cd",
+        "/mnt/e/hg20261019",
+        "-e",
+        "env",
+        "bash",
+        "tasks/robobrain-bw-vllm/run.sh",
+        "--dry-run"
+      ],
+      "expected_exit_code": 0,
+      "exit_code": 0,
+      "configuration": {
+        "dry_run": true,
+        "task": "/mnt/e/hg20261019/tasks/robobrain-bw-vllm",
+        "framework": "vllm",
+        "precision": "bf16",
+        "model_id": "BAAI/RoboBrain2.5-8B-NV",
+        "model_path": "/root/private_data/SothisAI/model/Aihub/RoboBrain2.5-8B-NV/main/RoboBrain2.5-8B-NV",
+        "served_name": "robobrain2-5-8b-nv",
+        "host": "127.0.0.1",
+        "port": 30001,
+        "tp": 1,
+        "max_len": 32768,
+        "mem_frac": 0.85,
+        "load_timeout": 1800,
+        "max_runtime": 7200,
+        "stop_grace": 30,
+        "extra": [
+          "--enforce-eager",
+          "--max-num-seqs",
+          "4",
+          "--limit-mm-per-prompt",
+          "{\"image\":{\"count\":2,\"width\":1024,\"height\":1024},\"video\":0}",
+          "--worker-extension-cls",
+          "robobrain_vision_math_compat.VisionMathCompat"
+        ],
+        "command": [
+          "/usr/bin/python3",
+          "-m",
+          "vllm.entrypoints.openai.api_server",
+          "--model",
+          "/root/private_data/SothisAI/model/Aihub/RoboBrain2.5-8B-NV/main/RoboBrain2.5-8B-NV",
+          "--served-model-name",
+          "robobrain2-5-8b-nv",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "30001",
+          "--tensor-parallel-size",
+          "1",
+          "--dtype",
+          "bfloat16",
+          "--max-model-len",
+          "32768",
+          "--gpu-memory-utilization",
+          "0.85",
+          "--enforce-eager",
+          "--max-num-seqs",
+          "4",
+          "--limit-mm-per-prompt",
+          "{\"image\":{\"count\":2,\"width\":1024,\"height\":1024},\"video\":0}",
+          "--worker-extension-cls",
+          "robobrain_vision_math_compat.VisionMathCompat"
+        ],
+        "url": "http://127.0.0.1:30001"
+      }
+    },
+    {
+      "name": "compat_alias",
+      "command": [
+        "wsl",
+        "--cd",
+        "/mnt/e/hg20261019",
+        "-e",
+        "env",
+        "bash",
+        "tasks/robobrain-bw-vllm/run_compat.sh",
+        "--dry-run"
+      ],
+      "expected_exit_code": 0,
+      "exit_code": 0,
+      "configuration": {
+        "dry_run": true,
+        "task": "/mnt/e/hg20261019/tasks/robobrain-bw-vllm",
+        "framework": "vllm",
+        "precision": "bf16",
+        "model_id": "BAAI/RoboBrain2.5-8B-NV",
+        "model_path": "/root/private_data/SothisAI/model/Aihub/RoboBrain2.5-8B-NV/main/RoboBrain2.5-8B-NV",
+        "served_name": "robobrain2-5-8b-nv",
+        "host": "127.0.0.1",
+        "port": 30001,
+        "tp": 1,
+        "max_len": 32768,
+        "mem_frac": 0.85,
+        "load_timeout": 1800,
+        "max_runtime": 7200,
+        "stop_grace": 30,
+        "extra": [
+          "--enforce-eager",
+          "--max-num-seqs",
+          "4",
+          "--limit-mm-per-prompt",
+          "{\"image\":{\"count\":2,\"width\":1024,\"height\":1024},\"video\":0}",
+          "--worker-extension-cls",
+          "robobrain_vision_math_compat.VisionMathCompat"
+        ],
+        "command": [
+          "/usr/bin/python3",
+          "-m",
+          "vllm.entrypoints.openai.api_server",
+          "--model",
+          "/root/private_data/SothisAI/model/Aihub/RoboBrain2.5-8B-NV/main/RoboBrain2.5-8B-NV",
+          "--served-model-name",
+          "robobrain2-5-8b-nv",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "30001",
+          "--tensor-parallel-size",
+          "1",
+          "--dtype",
+          "bfloat16",
+          "--max-model-len",
+          "32768",
+          "--gpu-memory-utilization",
+          "0.85",
+          "--enforce-eager",
+          "--max-num-seqs",
+          "4",
+          "--limit-mm-per-prompt",
+          "{\"image\":{\"count\":2,\"width\":1024,\"height\":1024},\"video\":0}",
+          "--worker-extension-cls",
+          "robobrain_vision_math_compat.VisionMathCompat"
+        ],
+        "url": "http://127.0.0.1:30001"
+      }
+    },
+    {
+      "name": "native_baseline",
+      "command": [
+        "wsl",
+        "--cd",
+        "/mnt/e/hg20261019",
+        "-e",
+        "env",
+        "bash",
+        "tasks/robobrain-bw-vllm/run_baseline.sh",
+        "--dry-run"
+      ],
+      "expected_exit_code": 0,
+      "exit_code": 0,
+      "configuration": {
+        "dry_run": true,
+        "task": "/mnt/e/hg20261019/tasks/robobrain-bw-vllm",
+        "framework": "vllm",
+        "precision": "bf16",
+        "model_id": "BAAI/RoboBrain2.5-8B-NV",
+        "model_path": "/root/private_data/SothisAI/model/Aihub/RoboBrain2.5-8B-NV/main/RoboBrain2.5-8B-NV",
+        "served_name": "robobrain2-5-8b-nv",
+        "host": "127.0.0.1",
+        "port": 30001,
+        "tp": 1,
+        "max_len": 32768,
+        "mem_frac": 0.85,
+        "load_timeout": 1800,
+        "max_runtime": 7200,
+        "stop_grace": 30,
+        "extra": [
+          "--enforce-eager",
+          "--max-num-seqs",
+          "4",
+          "--limit-mm-per-prompt",
+          "{\"image\":2,\"video\":0}"
+        ],
+        "command": [
+          "/usr/bin/python3",
+          "-m",
+          "vllm.entrypoints.openai.api_server",
+          "--model",
+          "/root/private_data/SothisAI/model/Aihub/RoboBrain2.5-8B-NV/main/RoboBrain2.5-8B-NV",
+          "--served-model-name",
+          "robobrain2-5-8b-nv",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "30001",
+          "--tensor-parallel-size",
+          "1",
+          "--dtype",
+          "bfloat16",
+          "--max-model-len",
+          "32768",
+          "--gpu-memory-utilization",
+          "0.85",
+          "--enforce-eager",
+          "--max-num-seqs",
+          "4",
+          "--limit-mm-per-prompt",
+          "{\"image\":2,\"video\":0}"
+        ],
+        "url": "http://127.0.0.1:30001"
+      }
+    },
+    {
+      "name": "profile_override",
+      "command": [
+        "wsl",
+        "--cd",
+        "/mnt/e/hg20261019",
+        "-e",
+        "env",
+        "ROBOBRAIN_PROFILE_WIDTH=1536",
+        "ROBOBRAIN_PROFILE_HEIGHT=768",
+        "ROBOBRAIN_MAX_NUM_SEQS=2",
+        "bash",
+        "tasks/robobrain-bw-vllm/run.sh",
+        "--dry-run"
+      ],
+      "expected_exit_code": 0,
+      "exit_code": 0,
+      "configuration": {
+        "dry_run": true,
+        "task": "/mnt/e/hg20261019/tasks/robobrain-bw-vllm",
+        "framework": "vllm",
+        "precision": "bf16",
+        "model_id": "BAAI/RoboBrain2.5-8B-NV",
+        "model_path": "/root/private_data/SothisAI/model/Aihub/RoboBrain2.5-8B-NV/main/RoboBrain2.5-8B-NV",
+        "served_name": "robobrain2-5-8b-nv",
+        "host": "127.0.0.1",
+        "port": 30001,
+        "tp": 1,
+        "max_len": 32768,
+        "mem_frac": 0.85,
+        "load_timeout": 1800,
+        "max_runtime": 7200,
+        "stop_grace": 30,
+        "extra": [
+          "--enforce-eager",
+          "--max-num-seqs",
+          "2",
+          "--limit-mm-per-prompt",
+          "{\"image\":{\"count\":2,\"width\":1536,\"height\":768},\"video\":0}",
+          "--worker-extension-cls",
+          "robobrain_vision_math_compat.VisionMathCompat"
+        ],
+        "command": [
+          "/usr/bin/python3",
+          "-m",
+          "vllm.entrypoints.openai.api_server",
+          "--model",
+          "/root/private_data/SothisAI/model/Aihub/RoboBrain2.5-8B-NV/main/RoboBrain2.5-8B-NV",
+          "--served-model-name",
+          "robobrain2-5-8b-nv",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "30001",
+          "--tensor-parallel-size",
+          "1",
+          "--dtype",
+          "bfloat16",
+          "--max-model-len",
+          "32768",
+          "--gpu-memory-utilization",
+          "0.85",
+          "--enforce-eager",
+          "--max-num-seqs",
+          "2",
+          "--limit-mm-per-prompt",
+          "{\"image\":{\"count\":2,\"width\":1536,\"height\":768},\"video\":0}",
+          "--worker-extension-cls",
+          "robobrain_vision_math_compat.VisionMathCompat"
+        ],
+        "url": "http://127.0.0.1:30001"
+      }
+    },
+    {
+      "name": "invalid_profile",
+      "command": [
+        "wsl",
+        "--cd",
+        "/mnt/e/hg20261019",
+        "-e",
+        "env",
+        "ROBOBRAIN_PROFILE_WIDTH=0",
+        "bash",
+        "tasks/robobrain-bw-vllm/run.sh",
+        "--dry-run"
+      ],
+      "expected_exit_code": 1,
+      "exit_code": 1,
+      "rejection": "\u0000ROBOBRAIN_PROFILE_WIDTH must be a positive integer"
+    },
+    {
+      "name": "reserved_worker_override",
+      "command": [
+        "wsl",
+        "--cd",
+        "/mnt/e/hg20261019",
+        "-e",
+        "env",
+        "ROBOBRAIN_EXTRA_ARGS_JSON=[\"--worker-extension-cls\",\"unexpected.Worker\"]",
+        "bash",
+        "tasks/robobrain-bw-vllm/run.sh",
+        "--dry-run"
+      ],
+      "expected_exit_code": 1,
+      "exit_code": 1,
+      "rejection": "\u0000Use ROBOBRAIN_MAX_NUM_SEQS / ROBOBRAIN_PROFILE_WIDTH / ROBOBRAIN_PROFILE_HEIGHT; the default worker extension is fixed. Use run_baseline.sh for native framework comparisons."
+    }
+  ]
+}

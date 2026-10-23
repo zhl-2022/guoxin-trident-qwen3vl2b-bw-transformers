@@ -1,0 +1,94 @@
+{
+  "kind": "synthetic_heldout_sizes",
+  "created_at_utc": "2026-10-19T15:21:15.980450+00:00",
+  "pillow": "11.3.0",
+  "official_accuracy": false,
+  "official_performance": false,
+  "semantic_acceptance_verified": false,
+  "fixtures": [
+    {
+      "name": "heldout_red_square",
+      "size": [
+        640,
+        448
+      ],
+      "bbox_pixels": [
+        400,
+        112,
+        560,
+        272
+      ],
+      "color": [
+        230,
+        25,
+        25
+      ],
+      "shape": "square",
+      "target": "the red square",
+      "label": "HELDOUT A - RED SQUARE",
+      "path": "E:\\hg20261019\\evidence\\rules\\robobrain-heldout-prepared-001\\heldout_red_square.png",
+      "sha256": "8a5abb3c78c4beeb3773389c4f93e0cda42734b5c9f8f9fed20fb90e8c1dd3e6",
+      "bytes": 2903,
+      "bbox_xyxy_0_1000": [
+        625.0,
+        250.0,
+        875.0,
+        607.1428571428571
+      ],
+      "center_xy_0_1000": [
+        750.0,
+        428.57142857142856
+      ],
+      "patch_grid_if_no_processor_resize": [
+        1,
+        28,
+        40
+      ],
+      "vision_sequence_length_if_no_resize": 1120,
+      "processor_grid_actually_verified": false
+    },
+    {
+      "name": "heldout_blue_circle",
+      "size": [
+        512,
+        512
+      ],
+      "bbox_pixels": [
+        64,
+        280,
+        208,
+        424
+      ],
+      "color": [
+        25,
+        75,
+        230
+      ],
+      "shape": "circle",
+      "target": "the blue circle",
+      "label": "HELDOUT B - BLUE CIRCLE",
+      "path": "E:\\hg20261019\\evidence\\rules\\robobrain-heldout-prepared-001\\heldout_blue_circle.png",
+      "sha256": "0345cee5bb2abcf8c5faa191144b3dadedefb7f9bc7d24ac57eff224bb973eed",
+      "bytes": 3380,
+      "bbox_xyxy_0_1000": [
+        125.0,
+        546.875,
+        406.25,
+        828.125
+      ],
+      "center_xy_0_1000": [
+        265.625,
+        687.5
+      ],
+      "patch_grid_if_no_processor_resize": [
+        1,
+        32,
+        32
+      ],
+      "vision_sequence_length_if_no_resize": 1024,
+      "processor_grid_actually_verified": false
+    }
+  ],
+  "script_sha256": "e0dba59f274a1629b53b0cf3c9c4fd3adf72220b41164c34f03e8a72778cbeb7",
+  "task_sha256": "c8cf8f62c8aad25514a958aed3c74fa04f088f2c85a37438982468c054c14a81"
+}

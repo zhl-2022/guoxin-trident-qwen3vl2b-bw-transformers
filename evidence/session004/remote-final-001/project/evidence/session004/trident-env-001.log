@@ -1,0 +1,7 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "/root/private_data/guoxin-candidate-tools-20261023/scripts/bootstrap_candidate_envs_20261023.py", line 258, in <module>
+    raise SystemExit(main())
+  File "/root/private_data/guoxin-candidate-tools-20261023/scripts/bootstrap_candidate_envs_20261023.py", line 242, in main
+    raise RuntimeError("Candidate CPU imports failed; inspect preserved logs")
+RuntimeError: Candidate CPU imports failed; inspect preserved logs

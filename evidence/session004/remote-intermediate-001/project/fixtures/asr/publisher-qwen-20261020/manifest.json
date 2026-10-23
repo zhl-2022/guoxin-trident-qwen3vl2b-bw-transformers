@@ -1,0 +1,40 @@
+{
+  "downloaded_at_utc": "2026-10-19T17:00:35.153390+00:00",
+  "source": "Qwen3-ASR publisher README examples",
+  "samples": [
+    {
+      "id": "qwen-publisher-zh",
+      "url": "https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-ASR-Repo/asr_zh.wav",
+      "path": "fixtures/asr/publisher-qwen-20261020/asr_zh.wav",
+      "sha256": "46dbc998c9d1d48111267c40741dd3200f2e5bcf4075f8c4c97f4451160dce50",
+      "bytes": 134570,
+      "channels": 1,
+      "rate": 16000,
+      "width": 2,
+      "frames": 67263,
+      "compression": "NONE",
+      "seconds": 4.2039375,
+      "reference_text": null,
+      "official_contest_data": false,
+      "natural_recording_verified": false
+    },
+    {
+      "id": "qwen-publisher-en",
+      "url": "https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-ASR-Repo/asr_en.wav",
+      "path": "fixtures/asr/publisher-qwen-20261020/asr_en.wav",
+      "sha256": "f9b4440ac8393e47c14a6240e9739dea09b645bb1592b8f2dd48feb9666cea7f",
+      "bytes": 2172458,
+      "channels": 1,
+      "rate": 48000,
+      "width": 3,
+      "frames": 722459,
+      "compression": "NONE",
+      "seconds": 15.051229166666667,
+      "reference_text": null,
+      "official_contest_data": false,
+      "natural_recording_verified": false
+    }
+  ],
+  "modified": false,
+  "initial_limit_note": "English sample exceeds short diagnostic 2MiB limit; original bytes retained for separate explicit long-audio development test."
+}

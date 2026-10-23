@@ -1,0 +1,4 @@
+Metadata-Version: 2.1
+Name: qwen-asr-compat
+Version: 0.0.1
+Summary: Project-local opt-in native ASR TF5.5 initialization compatibility

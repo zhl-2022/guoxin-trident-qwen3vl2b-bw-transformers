@@ -1,0 +1,3 @@
+Processing /root/private_data/guoxin-candidates/cpu-wheels/audioread-3.0.1-py3-none-any.whl (from -r /root/private_data/guoxin-candidates/envs/forcedaligner-001/partial-repair-evidence/attempt-4077e664e7904ffdb05da4a3289c1b6a/repair-requirements.lock (line 1))
+Installing collected packages: audioread
+Successfully installed audioread-3.0.1

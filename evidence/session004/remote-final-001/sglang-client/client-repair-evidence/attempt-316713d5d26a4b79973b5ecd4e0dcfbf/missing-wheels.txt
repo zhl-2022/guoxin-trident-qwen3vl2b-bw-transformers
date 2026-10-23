@@ -1,0 +1,1 @@
+orjson @ https://files.pythonhosted.org/packages/44/1d/ca2230fd55edbd87b58a43a19032d63a4b180389a97520cc62c535b726f9/orjson-3.11.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl --hash=sha256:d7d18dd34ea2e860553a579df02041845dee0af8985dff7f8661306f95504ddf

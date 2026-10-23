@@ -1,0 +1,388 @@
+{
+  "scope": "Windows CPU/unit suite only",
+  "command": [
+    "C:\\Users\\zhl\\anaconda3\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "process_environment": {
+    "PYTHONPATH": "src;scripts",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "cwd": "E:\\hg20261019",
+  "log": "evidence/local-tests-session003-final-001.log",
+  "log_sha256": "dff1259d2c393f82a6dffe3e28d6858578cf74783a544758c9d47da5c1d5e3dc",
+  "exit_code": 0,
+  "tests_run": 165,
+  "elapsed_test_seconds": 43.84,
+  "terminal_summary": [
+    "test_malicious_manifest_git_path_and_symlink_target_are_refused (test_update_task_repositories.RepositoryUpdateTests.test_malicious_manifest_git_path_and_symlink_target_are_refused) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 165 tests in 43.840s",
+    "",
+    "OK (skipped=6)",
+    "{\"ended_utc\": \"2026-10-19T18:26:35.042600+00:00\", \"exit_code\": 0}"
+  ],
+  "gpu_checks_run": false,
+  "official_evaluation": false,
+  "stage_or_repository_manifest_modified": false,
+  "passed_tests": 159,
+  "skipped_tests": 6,
+  "skip_lines": [
+    "test_selfcheck_timeout_kills_its_child_process_group (test_official_bridge.OfficialBridgeTests.test_selfcheck_timeout_kills_its_child_process_group) ... skipped 'Linux process-group cleanup'",
+    "test_core_override_in_extra_array_fails_before_any_launch (test_recon_task_entry.ReconTaskEntryTests.test_core_override_in_extra_array_fails_before_any_launch) ... skipped 'Linux Bash entry; run in WSL'",
+    "test_default_command_matches_recorded_success_despite_other_task_environment (test_recon_task_entry.ReconTaskEntryTests.test_default_command_matches_recorded_success_despite_other_task_environment) ... skipped 'Linux Bash entry; run in WSL'",
+    "test_explicit_task_overrides_work_without_mutating_historical_defaults (test_recon_task_entry.ReconTaskEntryTests.test_explicit_task_overrides_work_without_mutating_historical_defaults) ... skipped 'Linux Bash entry; run in WSL'",
+    "test_other_tasks_official_paths_and_image_identity_are_not_inherited (test_recon_task_entry.ReconTaskEntryTests.test_other_tasks_official_paths_and_image_identity_are_not_inherited) ... skipped 'Linux Bash entry; run in WSL'",
+    "test_runtime_control_lock_refuses_concurrent_controller (test_session003_robo_asr_checks.SessionChecksTests.test_runtime_control_lock_refuses_concurrent_controller) ... skipped 'fcntl locking requires native Linux or WSL'"
+  ],
+  "compilation": {
+    "method": "compile(path.read_bytes(), path, exec) for source Python; no bytecode files written",
+    "files": 44,
+    "paths": [
+      "src/guoxin/__init__.py",
+      "src/guoxin/__main__.py",
+      "src/guoxin/config.py",
+      "src/guoxin/gates.py",
+      "src/guoxin/runtime.py",
+      "scripts/asr_development_eval.py",
+      "scripts/make_bundle.py",
+      "scripts/prepare_asr_development_fixtures.py",
+      "scripts/prepare_qwen_asr_task.py",
+      "scripts/prepare_task_repositories.py",
+      "scripts/qwen3_asr_smoke.py",
+      "scripts/qwen3_asr_stream_smoke.py",
+      "scripts/qwen_asr_tf55_compat.py",
+      "scripts/recon2reason_reference.py",
+      "scripts/recon2reason_runtime.py",
+      "scripts/recon2reason_smoke.py",
+      "scripts/robobrain_heldout_fixtures.py",
+      "scripts/robobrain_protocol_smoke.py",
+      "scripts/robobrain_vision_math_compat.py",
+      "scripts/robobrain_vision_math_diagnostic.py",
+      "scripts/scnet_asr_probe.py",
+      "scripts/scnet_preflight.py",
+      "scripts/scnet_vllm_probe.py",
+      "scripts/session003_recon_checks.py",
+      "scripts/session003_robo_asr_checks.py",
+      "scripts/t02_development_bench.py",
+      "scripts/update_task_repositories.py",
+      "scripts/validate_robobrain_vision_math_compat.py",
+      "tests/test_asr_development_eval.py",
+      "tests/test_asr_task_prepare.py",
+      "tests/test_guoxin.py",
+      "tests/test_official_bridge.py",
+      "tests/test_qwen3_asr_smoke.py",
+      "tests/test_qwen3_asr_stream_smoke.py",
+      "tests/test_qwen_asr_tf55_compat.py",
+      "tests/test_recon_task_entry.py",
+      "tests/test_robobrain_protocol_smoke.py",
+      "tests/test_robobrain_vision_math_compat.py",
+      "tests/test_robobrain_vision_math_diagnostic.py",
+      "tests/test_scnet_preflight.py",
+      "tests/test_session003_robo_asr_checks.py",
+      "tests/test_t02_development_bench.py",
+      "tests/test_task_repositories.py",
+      "tests/test_update_task_repositories.py"
+    ],
+    "passed": true
+  },
+  "cli_checks": [
+    {
+      "command": [
+        "C:\\Users\\zhl\\anaconda3\\python.exe",
+        "-B",
+        "-m",
+        "guoxin",
+        "inspect-config",
+        "--task",
+        "tasks/recon2reason-bw-vllm/task.json"
+      ],
+      "exit_code": 0,
+      "expected_result": true,
+      "result": {
+        "valid": true,
+        "schema_version": 1,
+        "task": "recon2reason-bw-vllm",
+        "artifact_count": 0,
+        "evidence_file_count": 37,
+        "note": "schema validation does not establish readiness or official acceptance"
+      }
+    },
+    {
+      "command": [
+        "C:\\Users\\zhl\\anaconda3\\python.exe",
+        "-B",
+        "-m",
+        "guoxin",
+        "plan",
+        "--task",
+        "tasks/recon2reason-bw-vllm/task.json"
+      ],
+      "exit_code": 2,
+      "expected_result": true,
+      "result": {
+        "task": "recon2reason-bw-vllm",
+        "ready": false,
+        "readiness_scope": "local prerequisites only; remote launch and official scoring are separate",
+        "official_evaluation": "not_run",
+        "blockers": [
+          "official_baseline_artifact_not_verified",
+          "official_evaluator_artifact_not_verified",
+          "official_dataset_artifact_not_verified",
+          "delivery_image_reference_missing_or_invalid",
+          "required_artifacts_not_verified",
+          "official_baseline_metric_missing"
+        ],
+        "advisories": [
+          "task_priority_not_independently_verified",
+          "optional_image_digest_missing"
+        ],
+        "image": {
+          "reference": null,
+          "reference_syntax_valid": false,
+          "digest": null,
+          "registry_access_verified": false,
+          "note": "The template requires a complete image address and tag; digest and claim receipt are not mandatory gates."
+        },
+        "model": {
+          "valid": true,
+          "path": "evidence/model-config.json",
+          "sha256": "cbc47621e35c7a9e65aa888432bcc6ffd38e0cab6d751d2fa21ed2ed2b06ddcf",
+          "expected_architecture": "Qwen3VLForConditionalGeneration",
+          "architectures": [
+            "Qwen3VLForConditionalGeneration"
+          ],
+          "model_type": "qwen3_vl",
+          "dtype": "bfloat16",
+          "weights_loaded": false
+        },
+        "artifacts": {
+          "verified": false,
+          "files": []
+        },
+        "accuracy": {
+          "metric": "official-task-specific-pending",
+          "direction": "higher",
+          "drop_mode": "full_scale_points",
+          "max_drop": 2,
+          "full_scale": 1000,
+          "baseline": null
+        },
+        "budget": {
+          "cards": 1,
+          "wall_hours": "1.25",
+          "estimated_card_hours": "1.25",
+          "total_card_hours": "497.1058333333",
+          "used_card_hours": "0.7125",
+          "remaining_card_hours": "496.3933333333",
+          "remaining_after_run": "495.1433333333",
+          "within_budget": true,
+          "billing_basis": "cards multiplied by allocated wall-clock hours; platform billing may differ"
+        }
+      }
+    },
+    {
+      "command": [
+        "C:\\Users\\zhl\\anaconda3\\python.exe",
+        "-B",
+        "-m",
+        "guoxin",
+        "inspect-config",
+        "--task",
+        "tasks/robobrain-bw-vllm/task.json"
+      ],
+      "exit_code": 0,
+      "expected_result": true,
+      "result": {
+        "valid": true,
+        "schema_version": 1,
+        "task": "robobrain-bw-vllm",
+        "artifact_count": 0,
+        "evidence_file_count": 52,
+        "note": "schema validation does not establish readiness or official acceptance"
+      }
+    },
+    {
+      "command": [
+        "C:\\Users\\zhl\\anaconda3\\python.exe",
+        "-B",
+        "-m",
+        "guoxin",
+        "plan",
+        "--task",
+        "tasks/robobrain-bw-vllm/task.json"
+      ],
+      "exit_code": 2,
+      "expected_result": true,
+      "result": {
+        "task": "robobrain-bw-vllm",
+        "ready": false,
+        "readiness_scope": "local prerequisites only; remote launch and official scoring are separate",
+        "official_evaluation": "not_run",
+        "blockers": [
+          "official_baseline_artifact_not_verified",
+          "official_evaluator_artifact_not_verified",
+          "official_dataset_artifact_not_verified",
+          "delivery_image_reference_missing_or_invalid",
+          "required_artifacts_not_verified",
+          "official_baseline_metric_missing"
+        ],
+        "advisories": [
+          "task_priority_not_independently_verified",
+          "optional_image_digest_missing"
+        ],
+        "image": {
+          "reference": null,
+          "reference_syntax_valid": false,
+          "digest": null,
+          "registry_access_verified": false,
+          "note": "The template requires a complete image address and tag; digest and claim receipt are not mandatory gates."
+        },
+        "model": {
+          "valid": true,
+          "path": "evidence/robobrain-model-config.json",
+          "sha256": "5cd452860dc1e9c29dd71cc3cef7f39b338b7a40793f7a260655c2d3568f3661",
+          "expected_architecture": "Qwen3VLForConditionalGeneration",
+          "architectures": [
+            "Qwen3VLForConditionalGeneration"
+          ],
+          "model_type": "qwen3_vl",
+          "dtype": null,
+          "weights_loaded": false
+        },
+        "artifacts": {
+          "verified": false,
+          "files": []
+        },
+        "accuracy": {
+          "metric": "official-task-specific-metric-pending",
+          "direction": "higher",
+          "drop_mode": "absolute",
+          "max_drop": 0,
+          "full_scale": 1,
+          "baseline": null
+        },
+        "budget": {
+          "cards": 1,
+          "wall_hours": "2",
+          "estimated_card_hours": "2",
+          "total_card_hours": "496.9866666666",
+          "used_card_hours": "1.3623132980555555",
+          "remaining_card_hours": "495.6243533685444445",
+          "remaining_after_run": "493.6243533685444445",
+          "within_budget": true,
+          "billing_basis": "cards multiplied by allocated wall-clock hours; platform billing may differ"
+        }
+      }
+    },
+    {
+      "command": [
+        "C:\\Users\\zhl\\anaconda3\\python.exe",
+        "-B",
+        "-m",
+        "guoxin",
+        "inspect-config",
+        "--task",
+        "tasks/qwen3-asr-bw-vllm/task.json"
+      ],
+      "exit_code": 0,
+      "expected_result": true,
+      "result": {
+        "valid": true,
+        "schema_version": 1,
+        "task": "qwen3-asr-bw-vllm",
+        "artifact_count": 0,
+        "evidence_file_count": 58,
+        "note": "schema validation does not establish readiness or official acceptance"
+      }
+    },
+    {
+      "command": [
+        "C:\\Users\\zhl\\anaconda3\\python.exe",
+        "-B",
+        "-m",
+        "guoxin",
+        "plan",
+        "--task",
+        "tasks/qwen3-asr-bw-vllm/task.json"
+      ],
+      "exit_code": 2,
+      "expected_result": true,
+      "result": {
+        "task": "qwen3-asr-bw-vllm",
+        "ready": false,
+        "readiness_scope": "local prerequisites only; remote launch and official scoring are separate",
+        "official_evaluation": "not_run",
+        "blockers": [
+          "official_baseline_artifact_not_verified",
+          "official_evaluator_artifact_not_verified",
+          "official_dataset_artifact_not_verified",
+          "delivery_image_reference_missing_or_invalid",
+          "required_artifacts_not_verified",
+          "official_baseline_metric_missing"
+        ],
+        "advisories": [
+          "task_priority_not_independently_verified",
+          "optional_image_digest_missing"
+        ],
+        "image": {
+          "reference": null,
+          "reference_syntax_valid": false,
+          "digest": null,
+          "registry_access_verified": false,
+          "note": "The template requires a complete image address and tag; digest and claim receipt are not mandatory gates."
+        },
+        "model": {
+          "valid": true,
+          "path": "evidence/asr-model-config.json",
+          "sha256": "2e74a751548b8ad7d7526d29365ad8144c345d8b412b1152d25dc6698452712f",
+          "expected_architecture": "Qwen3ASRForConditionalGeneration",
+          "architectures": [
+            "Qwen3ASRForConditionalGeneration"
+          ],
+          "model_type": "qwen3_asr",
+          "dtype": null,
+          "weights_loaded": false
+        },
+        "artifacts": {
+          "verified": false,
+          "files": []
+        },
+        "accuracy": {
+          "metric": "official-WER-or-CER-pending",
+          "direction": "lower",
+          "drop_mode": "relative",
+          "max_drop": 0,
+          "full_scale": null,
+          "baseline": null
+        },
+        "budget": {
+          "cards": 1,
+          "wall_hours": "0.25",
+          "estimated_card_hours": "0.25",
+          "total_card_hours": "2",
+          "used_card_hours": "1.3623132980555555",
+          "remaining_card_hours": "0.6376867019444445",
+          "remaining_after_run": "0.3876867019444445",
+          "within_budget": true,
+          "billing_basis": "cards multiplied by allocated wall-clock hours; platform billing may differ"
+        }
+      }
+    }
+  ],
+  "validated_source_sha256": {
+    "scripts/session003_robo_asr_checks.py": "20f358fa199f4e18db08072aa6ccf1a21019fff197233c335ab2555d50491345",
+    "scripts/recon2reason_runtime.py": "66e9a97c63469698bfc09fbc1158a28fbd7a48f52877abb21156785a33ab1221",
+    "scripts/qwen3_asr_stream_smoke.py": "3ae83568801ff05787cef6b959d3cfc28b63d3014e04049d8803cb3cd35a7f05"
+  },
+  "updated_at_utc": "2026-10-19T18:27:08.162068+00:00",
+  "sse_integrity_cpu_record": "evidence/rules/asr-sse-integrity-cpu-004.json",
+  "sse_integrity_cpu_test_count": 12
+}

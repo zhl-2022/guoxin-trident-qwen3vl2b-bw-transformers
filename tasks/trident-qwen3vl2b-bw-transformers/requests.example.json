@@ -1,0 +1,9 @@
+{
+  "queries": [{"text": "a red rectangle", "images": []}],
+  "documents": [
+    {"text": "a red rectangle", "images": []},
+    {"text": "a blue circle", "images": []},
+    {"text": null, "images": ["fixtures/red-rectangle.png"]},
+    {"text": "a red rectangle", "images": ["fixtures/red-rectangle.png"]}
+  ]
+}

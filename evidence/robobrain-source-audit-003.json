@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "kind": "session003_robobrain_evidence_and_source_audit",
+  "audited_at_utc": "2026-10-19T18:11:16.781190+00:00",
+  "scope": "read-only original evidence audit and byte-identical flat copies; no GPU execution by this audit",
+  "archive": {
+    "path": "dist/session003-completed-intermediate.zip",
+    "sha256": "61dae05b974e3b0151e90885818493bfe27f461c58125f529eae1c79cbcba9fd",
+    "bytes": 1842310,
+    "payload_manifest_validation": "parent reported completed before extraction; archive SHA256 independently rechecked here"
+  },
+  "run_id": "c43dadd550fb44dabd84f52df49711d5",
+  "ready_to_stopped_same_identity": true,
+  "cleanup_verified": true,
+  "stop_reason": "stop requested",
+  "numerical": {
+    "report": "evidence/robobrain-numerical-003.json",
+    "repeat_report": "evidence/robobrain-numerical-initial-003.json",
+    "case_count_per_run": 24,
+    "all_passed": true,
+    "broadcast_cases_per_run": 6,
+    "broadcast_chunk_budget_verified": true,
+    "max_abs_error": 0.0009765625,
+    "candidate_sha256": "083dc53f3e4f8171b774469bffa724c2269a9d289769f56a9d7a5624cd81659f",
+    "two_runs_are_repeats_not_48_distinct_cases": true
+  },
+  "heldout": {
+    "request_count": 7,
+    "all_finished_stop_nonempty_untruncated": true,
+    "synthetic_bbox_iou": [
+      0.8839659402511187,
+      0.9024416623854203
+    ],
+    "points_inside_synthetic_bbox": [
+      true,
+      true
+    ],
+    "actual_vision_sequence_lengths_from_server_log": [
+      1120,
+      1024
+    ],
+    "processor_grid_actually_verified_by_manifest": false,
+    "semantic_acceptance_verified": false
+  },
+  "server_math_counts": {
+    "chunks": 1323,
+    "completed": 81,
+    "eligible": 81,
+    "largest_score_elements": 8388608,
+    "seen": 81,
+    "unchanged": 0
+  },
+  "source_checks": [
+    {
+      "path": "scripts/session003_robo_asr_checks.py",
+      "recorded_sha256": "3fdd8ee4ca4daa47993b5589367ac95a551f0fa7ebc26f8d23d8e516c4004238",
+      "snapshot_sha256": "3fdd8ee4ca4daa47993b5589367ac95a551f0fa7ebc26f8d23d8e516c4004238",
+      "current_sha256_before_results_registration": "3fdd8ee4ca4daa47993b5589367ac95a551f0fa7ebc26f8d23d8e516c4004238",
+      "matches_at_audit": true
+    },
+    {
+      "path": "scripts/recon2reason_runtime.py",
+      "recorded_sha256": "04b0c91fd0596360f142021800f1487af5a83264cb6de5971b954b45dc80b422",
+      "snapshot_sha256": "04b0c91fd0596360f142021800f1487af5a83264cb6de5971b954b45dc80b422",
+      "current_sha256_before_results_registration": "04b0c91fd0596360f142021800f1487af5a83264cb6de5971b954b45dc80b422",
+      "matches_at_audit": true
+    },
+    {
+      "path": "scripts/robobrain_vision_math_compat.py",
+      "recorded_sha256": "083dc53f3e4f8171b774469bffa724c2269a9d289769f56a9d7a5624cd81659f",
+      "snapshot_sha256": "083dc53f3e4f8171b774469bffa724c2269a9d289769f56a9d7a5624cd81659f",
+      "current_sha256_before_results_registration": "083dc53f3e4f8171b774469bffa724c2269a9d289769f56a9d7a5624cd81659f",
+      "matches_at_audit": true
+    },
+    {
+      "path": "scripts/validate_robobrain_vision_math_compat.py",
+      "recorded_sha256": "ba6a94283fa63418948c466eac7fc8949a56cf244eb6f9c3be8dcd78ef673dd1",
+      "snapshot_sha256": "ba6a94283fa63418948c466eac7fc8949a56cf244eb6f9c3be8dcd78ef673dd1",
+      "current_sha256_before_results_registration": "ba6a94283fa63418948c466eac7fc8949a56cf244eb6f9c3be8dcd78ef673dd1",
+      "matches_at_audit": true
+    },
+    {
+      "path": "scripts/robobrain_heldout_fixtures.py",
+      "recorded_sha256": "e0dba59f274a1629b53b0cf3c9c4fd3adf72220b41164c34f03e8a72778cbeb7",
+      "snapshot_sha256": "e0dba59f274a1629b53b0cf3c9c4fd3adf72220b41164c34f03e8a72778cbeb7",
+      "current_sha256_before_results_registration": "e0dba59f274a1629b53b0cf3c9c4fd3adf72220b41164c34f03e8a72778cbeb7",
+      "matches_at_audit": true
+    },
+    {
+      "path": "tasks/robobrain-bw-vllm/bench.sh",
+      "recorded_sha256": "8cceca62de7945b77a01565659ffc2e5173da31be3a21f0feb019f0d62850d36",
+      "snapshot_sha256": "8cceca62de7945b77a01565659ffc2e5173da31be3a21f0feb019f0d62850d36",
+      "current_sha256_before_results_registration": "8cceca62de7945b77a01565659ffc2e5173da31be3a21f0feb019f0d62850d36",
+      "matches_at_audit": true
+    },
+    {
+      "path": "tasks/robobrain-bw-vllm/protocol_smoke.sh",
+      "recorded_sha256": "a8f39babf3d514f3e02a9f43b6b13a892eb32fe8ff4442a9ce7a76eef337586d",
+      "snapshot_sha256": "a8f39babf3d514f3e02a9f43b6b13a892eb32fe8ff4442a9ce7a76eef337586d",
+      "current_sha256_before_results_registration": "a8f39babf3d514f3e02a9f43b6b13a892eb32fe8ff4442a9ce7a76eef337586d",
+      "matches_at_audit": true
+    },
+    {
+      "path": "tasks/robobrain-bw-vllm/stop.sh",
+      "recorded_sha256": "d3e0b15a5bc42ca3d62a2215582ec61c47c1364f7b398898ab800a7396f4bc2c",
+      "snapshot_sha256": "d3e0b15a5bc42ca3d62a2215582ec61c47c1364f7b398898ab800a7396f4bc2c",
+      "current_sha256_before_results_registration": "d3e0b15a5bc42ca3d62a2215582ec61c47c1364f7b398898ab800a7396f4bc2c",
+      "matches_at_audit": true
+    },
+    {
+      "path": "tasks/robobrain-bw-vllm/env.sh",
+      "recorded_sha256": "877065b93e2159f8b42cebc19c49f7180ae5bca3ceffbabb2cefa4491bc53c69",
+      "snapshot_sha256": "877065b93e2159f8b42cebc19c49f7180ae5bca3ceffbabb2cefa4491bc53c69",
+      "current_sha256_before_results_registration": "877065b93e2159f8b42cebc19c49f7180ae5bca3ceffbabb2cefa4491bc53c69",
+      "matches_at_audit": true
+    },
+    {
+      "path": "tasks/robobrain-bw-vllm/env_check.sh",
+      "recorded_sha256": "9e488292aff6cda8a4897a6acb8462a4fe56064968d6c4038326e20b628ded13",
+      "snapshot_sha256": "9e488292aff6cda8a4897a6acb8462a4fe56064968d6c4038326e20b628ded13",
+      "current_sha256_before_results_registration": "9e488292aff6cda8a4897a6acb8462a4fe56064968d6c4038326e20b628ded13",
+      "matches_at_audit": true
+    },
+    {
+      "path": "tasks/robobrain-bw-vllm/run.sh",
+      "recorded_sha256": "d365d8d68fb87b6e1ed39005aaae008d4123f1cbdf9059525ceb5ffd4cd248cc",
+      "snapshot_sha256": "d365d8d68fb87b6e1ed39005aaae008d4123f1cbdf9059525ceb5ffd4cd248cc",
+      "current_sha256_before_results_registration": "d365d8d68fb87b6e1ed39005aaae008d4123f1cbdf9059525ceb5ffd4cd248cc",
+      "matches_at_audit": true
+    },
+    {
+      "path": "tasks/robobrain-bw-vllm/run_baseline.sh",
+      "recorded_sha256": "49588964645def78a7e09f8b1e98611720a20bf1567c132e12b6955a94a5aba3",
+      "snapshot_sha256": "49588964645def78a7e09f8b1e98611720a20bf1567c132e12b6955a94a5aba3",
+      "current_sha256_before_results_registration": "49588964645def78a7e09f8b1e98611720a20bf1567c132e12b6955a94a5aba3",
+      "matches_at_audit": true
+    },
+    {
+      "path": "tasks/robobrain-bw-vllm/run_compat.sh",
+      "recorded_sha256": "79b29bd4f31db7bc9ce4d2fc618d9a2f7f4dcc421f1f1ad34850faad208edbcd",
+      "snapshot_sha256": "79b29bd4f31db7bc9ce4d2fc618d9a2f7f4dcc421f1f1ad34850faad208edbcd",
+      "current_sha256_before_results_registration": "79b29bd4f31db7bc9ce4d2fc618d9a2f7f4dcc421f1f1ad34850faad208edbcd",
+      "matches_at_audit": true
+    },
+    {
+      "path": "tasks/robobrain-bw-vllm/smoke.sh",
+      "recorded_sha256": "236346e896c597adf0051e92e5dc98da85f8552d3bd5a933e2467b75d22128a4",
+      "snapshot_sha256": "236346e896c597adf0051e92e5dc98da85f8552d3bd5a933e2467b75d22128a4",
+      "current_sha256_before_results_registration": "236346e896c597adf0051e92e5dc98da85f8552d3bd5a933e2467b75d22128a4",
+      "matches_at_audit": true
+    },
+    {
+      "path": "tasks/robobrain-bw-vllm/verify.sh",
+      "recorded_sha256": "7f134fcb6d12f8756ac885af198b250d24d2d002095925e0d1eabd0247f986f0",
+      "snapshot_sha256": "7f134fcb6d12f8756ac885af198b250d24d2d002095925e0d1eabd0247f986f0",
+      "current_sha256_before_results_registration": "7f134fcb6d12f8756ac885af198b250d24d2d002095925e0d1eabd0247f986f0",
+      "matches_at_audit": true
+    },
+    {
+      "path": "tasks/robobrain-bw-vllm/task.json",
+      "recorded_sha256": "ec35ac53f1b74d75f1fc4524f7076de956d3d3e1b60e9aceecec872624e7e09b",
+      "snapshot_sha256": "ec35ac53f1b74d75f1fc4524f7076de956d3d3e1b60e9aceecec872624e7e09b",
+      "current_sha256_before_results_registration": "ec35ac53f1b74d75f1fc4524f7076de956d3d3e1b60e9aceecec872624e7e09b",
+      "matches_at_audit": true
+    }
+  ],
+  "task_metadata_updated_after_run": true,
+  "task_sha256_at_run": "ec35ac53f1b74d75f1fc4524f7076de956d3d3e1b60e9aceecec872624e7e09b",
+  "task_change_scope": "Results metadata and documentation only; runtime scripts and task launch files unmodified",
+  "copies": [
+    {
+      "source": "evidence/session003/robo-asr/report.json",
+      "copy": "evidence/robobrain-session-report-003.json",
+      "source_sha256": "07fc6f776169f50fdcf12cb7ce232e7e132336adb1a576a9c19924fc6685f524",
+      "copy_sha256": "07fc6f776169f50fdcf12cb7ce232e7e132336adb1a576a9c19924fc6685f524",
+      "bytes": 39083,
+      "byte_identical": true
+    },
+    {
+      "source": "evidence/session003/robo-asr/robo/numerical.json",
+      "copy": "evidence/robobrain-numerical-003.json",
+      "source_sha256": "6f39982d1345abe4892b79d58b420db42767739fa13da6eaf6583eb77688e713",
+      "copy_sha256": "6f39982d1345abe4892b79d58b420db42767739fa13da6eaf6583eb77688e713",
+      "bytes": 14440,
+      "byte_identical": true
+    },
+    {
+      "source": "evidence/session003/second-instance/robobrain-numerical.json",
+      "copy": "evidence/robobrain-numerical-initial-003.json",
+      "source_sha256": "b9ae23c8bda5443ce64dc82072c511a91b3153cf6aa9afdcb4014c26cf8b2ed1",
+      "copy_sha256": "b9ae23c8bda5443ce64dc82072c511a91b3153cf6aa9afdcb4014c26cf8b2ed1",
+      "bytes": 14441,
+      "byte_identical": true
+    },
+    {
+      "source": "evidence/session003/robo-asr/robo/heldout/heldout.jsonl",
+      "copy": "evidence/robobrain-heldout-003.jsonl",
+      "source_sha256": "8668ef6e0991ed7516631095b949ac33cdd43cbf477c8db0c34eb1c677dcfa47",
+      "copy_sha256": "8668ef6e0991ed7516631095b949ac33cdd43cbf477c8db0c34eb1c677dcfa47",
+      "bytes": 8146,
+      "byte_identical": true
+    },
+    {
+      "source": "evidence/session003/robo-asr/robo/heldout/manifest.json",
+      "copy": "evidence/robobrain-heldout-manifest-003.json",
+      "source_sha256": "fd100b8822cc7f2c1d8f27bfcabb0b633eb4bcc4d2b19969a7ee3d865db46602",
+      "copy_sha256": "fd100b8822cc7f2c1d8f27bfcabb0b633eb4bcc4d2b19969a7ee3d865db46602",
+      "bytes": 2321,
+      "byte_identical": true
+    },
+    {
+      "source": "evidence/session003/robo-asr/robo/heldout/heldout_red_square.png",
+      "copy": "evidence/robobrain-heldout-red-003.png",
+      "source_sha256": "d51437c5bb459fb25f47a9e52e650b3f815d1d9900ec63b651f338e6e73c7165",
+      "copy_sha256": "d51437c5bb459fb25f47a9e52e650b3f815d1d9900ec63b651f338e6e73c7165",
+      "bytes": 2915,
+      "byte_identical": true
+    },
+    {
+      "source": "evidence/session003/robo-asr/robo/heldout/heldout_blue_circle.png",
+      "copy": "evidence/robobrain-heldout-blue-003.png",
+      "source_sha256": "13588c097bf637a09c571e441392c40f406b81ca0a50e30b3ee2f336585fec2f",
+      "copy_sha256": "13588c097bf637a09c571e441392c40f406b81ca0a50e30b3ee2f336585fec2f",
+      "bytes": 3463,
+      "byte_identical": true
+    },
+    {
+      "source": "evidence/session003/robo-asr/robo/env-check.log",
+      "copy": "evidence/robobrain-env-003.json",
+      "source_sha256": "ac46568c5032b421882dfbfd3d27d033d44235a9210191471738c345c4c7a3cd",
+      "copy_sha256": "ac46568c5032b421882dfbfd3d27d033d44235a9210191471738c345c4c7a3cd",
+      "bytes": 2783,
+      "byte_identical": true
+    },
+    {
+      "source": "evidence/session003/second-instance/environment.json",
+      "copy": "evidence/robobrain-instance-env-003.json",
+      "source_sha256": "3c8b07567fd692c778e3dae8ba0dc6e1a0f2fb1c96490237fa6b2285fc5ba454",
+      "copy_sha256": "3c8b07567fd692c778e3dae8ba0dc6e1a0f2fb1c96490237fa6b2285fc5ba454",
+      "bytes": 196,
+      "byte_identical": true
+    },
+    {
+      "source": "evidence/session003/robo-asr/robo/ready/runtime/state.json",
+      "copy": "evidence/robobrain-ready-state-003.json",
+      "source_sha256": "3493b113992c3e63a76840bfe588ee1b4e838f9ae128dfdabc0d5f35480ea8a4",
+      "copy_sha256": "3493b113992c3e63a76840bfe588ee1b4e838f9ae128dfdabc0d5f35480ea8a4",
+      "bytes": 1258,
+      "byte_identical": true
+    },
+    {
+      "source": "evidence/session003/robo-asr/robo/stopped/runtime/state.json",
+      "copy": "evidence/robobrain-stopped-state-003.json",
+      "source_sha256": "38293c87dddc5075e51301dd2b44ae8a5bed05226e26d0cbd3524f260e647994",
+      "copy_sha256": "38293c87dddc5075e51301dd2b44ae8a5bed05226e26d0cbd3524f260e647994",
+      "bytes": 1371,
+      "byte_identical": true
+    },
+    {
+      "source": "evidence/session003/robo-asr/robo/stopped/runtime/config-c43dadd550fb44dabd84f52df49711d5.json",
+      "copy": "evidence/robobrain-run-config-003.json",
+      "source_sha256": "02d40ee4af08c8d03e42f2d099fdeaa3d0e3da8a10493aefe6d6d63ebec2dc5a",
+      "copy_sha256": "02d40ee4af08c8d03e42f2d099fdeaa3d0e3da8a10493aefe6d6d63ebec2dc5a",
+      "bytes": 1526,
+      "byte_identical": true
+    },
+    {
+      "source": "evidence/session003/robo-asr/robo/stopped/runtime/server.log",
+      "copy": "evidence/robobrain-server-full-003.log",
+      "source_sha256": "42de72080a9af21ff9fc7b3ef610eb69bda54e065c58374257715960ea73ced1",
+      "copy_sha256": "42de72080a9af21ff9fc7b3ef610eb69bda54e065c58374257715960ea73ced1",
+      "bytes": 19627,
+      "byte_identical": true
+    },
+    {
+      "source": "evidence/session003/robo-asr/robo/stopped/runtime/supervisor.log",
+      "copy": "evidence/robobrain-supervisor-full-003.log",
+      "source_sha256": "7c8192ac6bdf7fc8ea0e74ad21defc86124be68afa4833a7afa69585341cdc51",
+      "copy_sha256": "7c8192ac6bdf7fc8ea0e74ad21defc86124be68afa4833a7afa69585341cdc51",
+      "bytes": 2359,
+      "byte_identical": true
+    },
+    {
+      "source": "evidence/session003/robo-asr/robo/stop.log",
+      "copy": "evidence/robobrain-stop-003.log",
+      "source_sha256": "f876dd5029a62e13517e28fa6e32b074ea9cf830a09182054467451c7c866cb1",
+      "copy_sha256": "f876dd5029a62e13517e28fa6e32b074ea9cf830a09182054467451c7c866cb1",
+      "bytes": 67,
+      "byte_identical": true
+    }
+  ],
+  "official_accuracy": false,
+  "official_performance": false,
+  "official_acceptance": false,
+  "platform_shutdown": {
+    "instance_id": "2112237945233408001",
+    "state": "stopped",
+    "environment_saved": true,
+    "source": "root agent actual UI observation relayed to this agent; not independently observed in this audit"
+  }
+}

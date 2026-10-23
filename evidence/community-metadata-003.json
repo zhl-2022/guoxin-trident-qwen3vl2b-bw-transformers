@@ -1,0 +1,401 @@
+{
+  "schema_version": 1,
+  "kind": "community_metadata_preparation_003",
+  "created_at_utc": "2026-10-19T18:43:23.233205+00:00",
+  "scope": "Required ModelZoo engineering metadata and fixed upstream assets prepared locally; repository root promotion plan only, no final remote-content verification",
+  "source_standard": {
+    "url": "https://developer.sourcefind.cn/codes/modelzoo/template/-/blob/88a5074ab8b2c88bbf24de306ffcab97ee9e87a4/ModelZooStd.md",
+    "local_file": "evidence/official-materials/20261020-round2/modelzoo-template/ModelZooStd.md",
+    "sha256": "634783fddb44be8d23909906fa2ae7c3b144275336e5563acf4e50cb438d3e78",
+    "requirements": "model.properties with actual Project ID, root LICENSE/icon/requirements and preserved original README; mini fixtures already included separately"
+  },
+  "assembler": {
+    "path": "scripts/prepare_task_repositories.py",
+    "sha256": "9894061f04b969d984d1f6ea939fcb34f9acc3c72a4c96d8db7b7a5686cdfee5",
+    "root_promotion_allowlist": [
+      "model.properties",
+      "LICENSE",
+      "icon.png",
+      "README_origin.md",
+      "requirements.txt"
+    ],
+    "safety_checks": [
+      "required nonempty sources",
+      "byte count and SHA256",
+      "actual task/model/Project ID",
+      "category/framework/observed accelerator identity",
+      "nonzero PNG dimensions",
+      "HTTPS upstream provenance",
+      "formal/submitted false",
+      "comment-only root requirements"
+    ],
+    "source_code_changed_by_this_record": false
+  },
+  "validation": {
+    "community_all_promoted_hashes_match": true,
+    "fixed_upstream_hashes_match": true,
+    "icon_dimensions_verified_from_ihdr": [
+      410,
+      410
+    ],
+    "earlier_verbal_400x400_corrected": true,
+    "prior_code_test_suites": {
+      "test_task_repositories.py": {
+        "Windows": {
+          "passed": 13,
+          "failed": 0
+        },
+        "WSL": {
+          "passed": 13,
+          "failed": 0
+        }
+      },
+      "test_update_task_repositories.py": {
+        "Windows": {
+          "passed": 8,
+          "failed": 0
+        },
+        "WSL": {
+          "passed": 8,
+          "failed": 0
+        }
+      }
+    },
+    "this_followup_modified_code": false,
+    "license_heading_only_changed_and_provenance_updated": false,
+    "license_scope_reflects_explicit_user_choice": true,
+    "license_scope_wording_and_provenance_updated_without_code_change": true
+  },
+  "tasks": [
+    {
+      "task": "recon2reason-bw-vllm",
+      "sourcefind_project_id": 15915,
+      "sourcefind_project_url": "https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-recon2reason-bw-vllm",
+      "project_id_source": "root agent actual Sourcefind UI observation relayed on2026-10-20",
+      "model_id": "BAAI/Recon2Reason-Reasoning-4B",
+      "model_revision": "f8faf41a1d5fe392f2d1ee31884f79398da59c99",
+      "app_category": "多模态",
+      "frameworks": [
+        "pytorch",
+        "vllm"
+      ],
+      "observed_accelerator": "BW",
+      "accelerator_suffix_verified": false,
+      "icon": {
+        "dimensions_from_png_ihdr": [
+          410,
+          410
+        ],
+        "metadata_dimensions_match": true,
+        "source_project": "modelzoo/qwen3-vl_pytorch",
+        "commit": "22d21e877cf30728e879117787ee2e0f6f6547bc",
+        "sha256": "beb9bc510a5ea55298238a9d931951e8239d694f2484b56736b67cd17fb47a47",
+        "bytes": 51507,
+        "unchanged_from_fixed_upstream_source": true
+      },
+      "metadata_file": "tasks/recon2reason-bw-vllm/community/metadata.json",
+      "metadata_sha256": "43b226e52d85786af994ffcca0bdd180fa1ed2d28b90e4e8e32d2060762f5bf0",
+      "upstream_sources": [
+        {
+          "path": "README_origin.md",
+          "url": "https://huggingface.co/BAAI/Recon2Reason-Reasoning-4B/resolve/f8faf41a1d5fe392f2d1ee31884f79398da59c99/README.md",
+          "scope": "original publisher model-card README at fixed model revision; preserved bytes, not executed",
+          "sha256": "2e992a1bc2051bef1596283b9f00aa4298e784fef913a822f43564ba58267034",
+          "bytes": 3515
+        },
+        {
+          "path": "upstream/weights-LICENSE.txt",
+          "url": "https://huggingface.co/BAAI/Recon2Reason-Reasoning-4B/resolve/f8faf41a1d5fe392f2d1ee31884f79398da59c99/LICENSE",
+          "scope": "original model repository license; not a repository-wide license grant for newly authored adaptation code",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "bytes": 11357
+        },
+        {
+          "path": "icon.png",
+          "url": "https://developer.sourcefind.cn/codes/api/v4/projects/modelzoo%2Fqwen3-vl_pytorch/repository/files/icon.png/raw?ref=22d21e877cf30728e879117787ee2e0f6f6547bc",
+          "scope": "official ModelZoo category icon reused unchanged for 多模态",
+          "sha256": "beb9bc510a5ea55298238a9d931951e8239d694f2484b56736b67cd17fb47a47",
+          "bytes": 51507
+        },
+        {
+          "path": "upstream/category-model.properties",
+          "url": "https://developer.sourcefind.cn/codes/api/v4/projects/modelzoo%2Fqwen3-vl_pytorch/repository/files/model.properties/raw?ref=22d21e877cf30728e879117787ee2e0f6f6547bc",
+          "scope": "official category label source at same fixed commit as icon; IDs/card SKUs belong to that example and are not copied",
+          "sha256": "62c9c93b9a7d31a72d63c16ffc28927933a358f6503391dc16b0b375368a8f84",
+          "bytes": 387
+        }
+      ],
+      "planned_root_files": [
+        {
+          "root_destination": "model.properties",
+          "canonical_source": "tasks/recon2reason-bw-vllm/community/model.properties",
+          "bytes": 425,
+          "sha256": "423a130d65800ac58ac8a3061b29f5e342bb2a5b4703e8a173b5b875005bcbff",
+          "plan": "promote byte-preserved source to repository root; explicit transport normalization is recorded separately by assembler"
+        },
+        {
+          "root_destination": "LICENSE",
+          "canonical_source": "tasks/recon2reason-bw-vllm/community/LICENSE",
+          "bytes": 1336,
+          "sha256": "7453f4d7a8be579a7699a2c28132d7b6011708fc01661bb94fcdea3c20920006",
+          "plan": "promote byte-preserved source to repository root; explicit transport normalization is recorded separately by assembler"
+        },
+        {
+          "root_destination": "icon.png",
+          "canonical_source": "tasks/recon2reason-bw-vllm/community/icon.png",
+          "bytes": 51507,
+          "sha256": "beb9bc510a5ea55298238a9d931951e8239d694f2484b56736b67cd17fb47a47",
+          "plan": "promote byte-preserved source to repository root; explicit transport normalization is recorded separately by assembler"
+        },
+        {
+          "root_destination": "README_origin.md",
+          "canonical_source": "tasks/recon2reason-bw-vllm/community/README_origin.md",
+          "bytes": 3515,
+          "sha256": "2e992a1bc2051bef1596283b9f00aa4298e784fef913a822f43564ba58267034",
+          "plan": "promote byte-preserved source to repository root; explicit transport normalization is recorded separately by assembler"
+        },
+        {
+          "root_destination": "requirements.txt",
+          "canonical_source": "tasks/recon2reason-bw-vllm/community/requirements.txt",
+          "bytes": 583,
+          "sha256": "025664bf65cd3b8d8121a69f9a929132f41d39c08650b4f0f11a32ec8cf9f454",
+          "plan": "promote byte-preserved source to repository root; explicit transport normalization is recorded separately by assembler"
+        }
+      ],
+      "root_report_policy": "Keep generated target task README.md; README_origin.md is original fixed publisher model README",
+      "requirements_policy": "Comment-only native environment declaration; use isolated ASR prepare for task extras; do not pip-install or overwrite native Torch",
+      "original_adaptation_code_license_status": "user_chose_scope_notice_no_repositorywide_license",
+      "license_scope_notice_title": "License scope and upstream notices",
+      "weights_license_scope_separate": true,
+      "weights_included": false,
+      "full_actual_image_reference": null,
+      "formal_ready": false,
+      "submitted": false,
+      "license_choice_source": "root relayed direct user answer: retain copyright/scope notice for now"
+    },
+    {
+      "task": "robobrain-bw-vllm",
+      "sourcefind_project_id": 15916,
+      "sourcefind_project_url": "https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-robobrain-bw-vllm",
+      "project_id_source": "root agent actual Sourcefind UI observation relayed on2026-10-20",
+      "model_id": "BAAI/RoboBrain2.5-8B-NV",
+      "model_revision": "7ae187cc62e45cfa1c5904903a8f017f11b2037b",
+      "app_category": "多模态",
+      "frameworks": [
+        "pytorch",
+        "vllm"
+      ],
+      "observed_accelerator": "BW",
+      "accelerator_suffix_verified": false,
+      "icon": {
+        "dimensions_from_png_ihdr": [
+          410,
+          410
+        ],
+        "metadata_dimensions_match": true,
+        "source_project": "modelzoo/qwen3-vl_pytorch",
+        "commit": "22d21e877cf30728e879117787ee2e0f6f6547bc",
+        "sha256": "beb9bc510a5ea55298238a9d931951e8239d694f2484b56736b67cd17fb47a47",
+        "bytes": 51507,
+        "unchanged_from_fixed_upstream_source": true
+      },
+      "metadata_file": "tasks/robobrain-bw-vllm/community/metadata.json",
+      "metadata_sha256": "ed8ee647c2baffaac130cc3583ef68e3640428c5cd7b261dc6113b6be0024765",
+      "upstream_sources": [
+        {
+          "path": "README_origin.md",
+          "url": "https://huggingface.co/BAAI/RoboBrain2.5-8B-NV/resolve/7ae187cc62e45cfa1c5904903a8f017f11b2037b/README.md",
+          "scope": "original publisher model-card README at fixed model revision; preserved bytes, not executed",
+          "sha256": "2bd973711e170c8fb43e8001a532e5ff06fd90ac7e83f592a806bd7080bd16b0",
+          "bytes": 8555
+        },
+        {
+          "path": "upstream/code-LICENSE.txt",
+          "url": "https://raw.githubusercontent.com/FlagOpen/RoboBrain2.5/af98c932aac9ff715d70da177088d7bb95573ff7/LICENSE",
+          "scope": "FlagOpen/RoboBrain2.5 upstream code repository only; model weights licensing is separate",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "bytes": 11357
+        },
+        {
+          "path": "icon.png",
+          "url": "https://developer.sourcefind.cn/codes/api/v4/projects/modelzoo%2Fqwen3-vl_pytorch/repository/files/icon.png/raw?ref=22d21e877cf30728e879117787ee2e0f6f6547bc",
+          "scope": "official ModelZoo category icon reused unchanged for 多模态",
+          "sha256": "beb9bc510a5ea55298238a9d931951e8239d694f2484b56736b67cd17fb47a47",
+          "bytes": 51507
+        },
+        {
+          "path": "upstream/category-model.properties",
+          "url": "https://developer.sourcefind.cn/codes/api/v4/projects/modelzoo%2Fqwen3-vl_pytorch/repository/files/model.properties/raw?ref=22d21e877cf30728e879117787ee2e0f6f6547bc",
+          "scope": "official category label source at same fixed commit as icon; IDs/card SKUs belong to that example and are not copied",
+          "sha256": "62c9c93b9a7d31a72d63c16ffc28927933a358f6503391dc16b0b375368a8f84",
+          "bytes": 387
+        }
+      ],
+      "planned_root_files": [
+        {
+          "root_destination": "model.properties",
+          "canonical_source": "tasks/robobrain-bw-vllm/community/model.properties",
+          "bytes": 412,
+          "sha256": "399bdf6e6e22aaf92b0fdc3121712d4f666d1864efc048ba21780b93decf5645",
+          "plan": "promote byte-preserved source to repository root; explicit transport normalization is recorded separately by assembler"
+        },
+        {
+          "root_destination": "LICENSE",
+          "canonical_source": "tasks/robobrain-bw-vllm/community/LICENSE",
+          "bytes": 1303,
+          "sha256": "24b57940be7745eac6f3a1fa910f3f7de38faee14ce423501bfa6e795f73bbf2",
+          "plan": "promote byte-preserved source to repository root; explicit transport normalization is recorded separately by assembler"
+        },
+        {
+          "root_destination": "icon.png",
+          "canonical_source": "tasks/robobrain-bw-vllm/community/icon.png",
+          "bytes": 51507,
+          "sha256": "beb9bc510a5ea55298238a9d931951e8239d694f2484b56736b67cd17fb47a47",
+          "plan": "promote byte-preserved source to repository root; explicit transport normalization is recorded separately by assembler"
+        },
+        {
+          "root_destination": "README_origin.md",
+          "canonical_source": "tasks/robobrain-bw-vllm/community/README_origin.md",
+          "bytes": 8555,
+          "sha256": "2bd973711e170c8fb43e8001a532e5ff06fd90ac7e83f592a806bd7080bd16b0",
+          "plan": "promote byte-preserved source to repository root; explicit transport normalization is recorded separately by assembler"
+        },
+        {
+          "root_destination": "requirements.txt",
+          "canonical_source": "tasks/robobrain-bw-vllm/community/requirements.txt",
+          "bytes": 583,
+          "sha256": "025664bf65cd3b8d8121a69f9a929132f41d39c08650b4f0f11a32ec8cf9f454",
+          "plan": "promote byte-preserved source to repository root; explicit transport normalization is recorded separately by assembler"
+        }
+      ],
+      "root_report_policy": "Keep generated target task README.md; README_origin.md is original fixed publisher model README",
+      "requirements_policy": "Comment-only native environment declaration; use isolated ASR prepare for task extras; do not pip-install or overwrite native Torch",
+      "original_adaptation_code_license_status": "user_chose_scope_notice_no_repositorywide_license",
+      "license_scope_notice_title": "License scope and upstream notices",
+      "weights_license_scope_separate": true,
+      "weights_included": false,
+      "full_actual_image_reference": null,
+      "formal_ready": false,
+      "submitted": false,
+      "license_choice_source": "root relayed direct user answer: retain copyright/scope notice for now"
+    },
+    {
+      "task": "qwen3-asr-bw-vllm",
+      "sourcefind_project_id": 15917,
+      "sourcefind_project_url": "https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-qwen3-asr-bw-vllm",
+      "project_id_source": "root agent actual Sourcefind UI observation relayed on2026-10-20",
+      "model_id": "Qwen/Qwen3-ASR-1.7B",
+      "model_revision": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+      "app_category": "语音识别",
+      "frameworks": [
+        "pytorch",
+        "vllm"
+      ],
+      "observed_accelerator": "BW",
+      "accelerator_suffix_verified": false,
+      "icon": {
+        "dimensions_from_png_ihdr": [
+          410,
+          410
+        ],
+        "metadata_dimensions_match": true,
+        "source_project": "modelzoo/qwen3-asr_pytorch",
+        "commit": "baae2d0d52e4d4aac2476d0960bb62f0d0076609",
+        "sha256": "1d03c2e3020a779122fd4e7ea69c08ebcf37e48dd0ca619ed1c6f6563e968a26",
+        "bytes": 70013,
+        "unchanged_from_fixed_upstream_source": true
+      },
+      "metadata_file": "tasks/qwen3-asr-bw-vllm/community/metadata.json",
+      "metadata_sha256": "06d821f4f81de1382becdca79da454bf2da7f3209f15ad28ea95144a69cc8d41",
+      "upstream_sources": [
+        {
+          "path": "README_origin.md",
+          "url": "https://huggingface.co/Qwen/Qwen3-ASR-1.7B/resolve/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md",
+          "scope": "original publisher model-card README at fixed model revision; preserved bytes, not executed",
+          "sha256": "5058416891bc47a2051557765997e8c42f8eb78a0e33c3e775bd17d4b0ba4d50",
+          "bytes": 57456
+        },
+        {
+          "path": "upstream/code-LICENSE.txt",
+          "url": "https://raw.githubusercontent.com/QwenLM/Qwen3-ASR/7c6daf77a2421100f5fb066495372c00129d39ff/LICENSE",
+          "scope": "QwenLM/Qwen3-ASR upstream code repository only; model weights licensing is separate",
+          "sha256": "a44a6081c73ad75f0255bb2bb5cab74ef1829565a895a24e53a4f11290ab7655",
+          "bytes": 11343
+        },
+        {
+          "path": "icon.png",
+          "url": "https://developer.sourcefind.cn/codes/api/v4/projects/modelzoo%2Fqwen3-asr_pytorch/repository/files/icon.png/raw?ref=baae2d0d52e4d4aac2476d0960bb62f0d0076609",
+          "scope": "official ModelZoo category icon reused unchanged for 语音识别",
+          "sha256": "1d03c2e3020a779122fd4e7ea69c08ebcf37e48dd0ca619ed1c6f6563e968a26",
+          "bytes": 70013
+        },
+        {
+          "path": "upstream/category-model.properties",
+          "url": "https://developer.sourcefind.cn/codes/api/v4/projects/modelzoo%2Fqwen3-asr_pytorch/repository/files/model.properties/raw?ref=baae2d0d52e4d4aac2476d0960bb62f0d0076609",
+          "scope": "official category label source at same fixed commit as icon; IDs/card SKUs belong to that example and are not copied",
+          "sha256": "d0320f2bee7bec168a4d32c4981a7ff2330097c25a743205c53bbb050d9a7492",
+          "bytes": 346
+        }
+      ],
+      "planned_root_files": [
+        {
+          "root_destination": "model.properties",
+          "canonical_source": "tasks/qwen3-asr-bw-vllm/community/model.properties",
+          "bytes": 421,
+          "sha256": "7bc280a885618d1b0fd2146d52e29d182f5581d7de17054872fdd5ffd07da8b3",
+          "plan": "promote byte-preserved source to repository root; explicit transport normalization is recorded separately by assembler"
+        },
+        {
+          "root_destination": "LICENSE",
+          "canonical_source": "tasks/qwen3-asr-bw-vllm/community/LICENSE",
+          "bytes": 1294,
+          "sha256": "59c5957752d8d52466d4f9e8f161165188f5f04781c6d17722be477a88ad48f2",
+          "plan": "promote byte-preserved source to repository root; explicit transport normalization is recorded separately by assembler"
+        },
+        {
+          "root_destination": "icon.png",
+          "canonical_source": "tasks/qwen3-asr-bw-vllm/community/icon.png",
+          "bytes": 70013,
+          "sha256": "1d03c2e3020a779122fd4e7ea69c08ebcf37e48dd0ca619ed1c6f6563e968a26",
+          "plan": "promote byte-preserved source to repository root; explicit transport normalization is recorded separately by assembler"
+        },
+        {
+          "root_destination": "README_origin.md",
+          "canonical_source": "tasks/qwen3-asr-bw-vllm/community/README_origin.md",
+          "bytes": 57456,
+          "sha256": "5058416891bc47a2051557765997e8c42f8eb78a0e33c3e775bd17d4b0ba4d50",
+          "plan": "promote byte-preserved source to repository root; explicit transport normalization is recorded separately by assembler"
+        },
+        {
+          "root_destination": "requirements.txt",
+          "canonical_source": "tasks/qwen3-asr-bw-vllm/community/requirements.txt",
+          "bytes": 810,
+          "sha256": "f90c4b73b473ef3f91ca3f942e937de3b9d72eeab9389c1ee43a46f02f3fc2ec",
+          "plan": "promote byte-preserved source to repository root; explicit transport normalization is recorded separately by assembler"
+        }
+      ],
+      "root_report_policy": "Keep generated target task README.md; README_origin.md is original fixed publisher model README",
+      "requirements_policy": "Comment-only native environment declaration; use isolated ASR prepare for task extras; do not pip-install or overwrite native Torch",
+      "original_adaptation_code_license_status": "user_chose_scope_notice_no_repositorywide_license",
+      "license_scope_notice_title": "License scope and upstream notices",
+      "weights_license_scope_separate": true,
+      "weights_included": false,
+      "full_actual_image_reference": null,
+      "formal_ready": false,
+      "submitted": false,
+      "license_choice_source": "root relayed direct user answer: retain copyright/scope notice for now"
+    }
+  ],
+  "license_ready": false,
+  "original_adaptation_code_license_status": "user_chose_scope_notice_no_repositorywide_license",
+  "official_accuracy": false,
+  "official_performance": false,
+  "formal_ready": false,
+  "contest_submitted": false,
+  "gpu_used": false,
+  "stage_modified": false,
+  "remote_modified": false,
+  "next_boundary": "Root/ASR agent synchronizes final repository payloads and verifies strict archives. Preserve user-chosen scope notice; no repository-wide license or contest submission is implied.",
+  "updated_at_utc": "2026-10-19T18:49:04.567956+00:00",
+  "license_choice_source": "root relayed direct user answer: retain copyright/scope notice for now"
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/root/private_data/guoxin-candidate-tools-20261023/scripts/bootstrap_candidate_envs_20261023.py", line 258, in <module>
+    raise SystemExit(main())
+  File "/root/private_data/guoxin-candidate-tools-20261023/scripts/bootstrap_candidate_envs_20261023.py", line 178, in main
+    result = validate_current(record["plan"], record["native_before"])
+  File "/root/private_data/guoxin-candidate-tools-20261023/scripts/bootstrap_candidate_envs_20261023.py", line 160, in validate_current
+    raise ValueError("CPU-only import validation initialized GPU unexpectedly")
+ValueError: CPU-only import validation initialized GPU unexpectedly

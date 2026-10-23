@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "/root/private_data/guoxin-candidates/envs/forcedaligner-001/bin/python",
+    "-B",
+    "/root/repair_candidate_partial_002_20261023.py",
+    "--record",
+    "/root/private_data/guoxin-candidates/envs/forcedaligner-001/candidate-environment.json",
+    "--record-sha256",
+    "697abea16ff86f5991429b20785366e6d566cf417ca3b26696265a9884800e39",
+    "--pool",
+    "/root/private_data/guoxin-candidate-tools-20261023/scripts/candidate_cpu_wheels_20261023.json",
+    "--pool-sha256",
+    "8daa740106938d69d0f1256d43a009afa190dd3f3b337cac996fb594c767af71",
+    "--_child",
+    "imports",
+    "--allow-device-discovery"
+  ],
+  "timeout_seconds": 240
+}

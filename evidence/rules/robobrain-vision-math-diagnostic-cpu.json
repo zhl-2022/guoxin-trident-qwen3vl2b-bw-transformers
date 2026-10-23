@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-19T15:03:44.4235977Z",
+  "scope": "CPU stub behavior only; no GPU/vLLM model execution",
+  "diagnostic_file": "scripts/robobrain_vision_math_diagnostic.py",
+  "diagnostic_sha256": "d529f5caf6625cfae6564dbeea4fb6617d5aa37c738386e8ec54f159d5d64bc3",
+  "captured_source_evidence": [
+    "evidence/robobrain-runtime-source-001.json",
+    "evidence/robobrain-runtime-source-002.json"
+  ],
+  "test_command": "python -m unittest discover -s tests -p test_robobrain_vision_math_diagnostic.py -v",
+  "tests_run": 2,
+  "tests_passed": 2,
+  "compile_command": "python -m py_compile scripts/robobrain_vision_math_diagnostic.py",
+  "compile_passed": true,
+  "behavior_verified": [
+    "head72 seq384/768 uses MATH context",
+    "head72 seq32768 and head64 seq384 retain original context",
+    "original q/k/v/cu arguments and output identity retained",
+    "context restored after eligible calls",
+    "source digest mismatch raises RuntimeError"
+  ],
+  "actual_gpu_diagnostic_verified": false,
+  "official_accuracy_verified": false,
+  "official_performance_verified": false
+}

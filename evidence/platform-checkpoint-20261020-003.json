@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "session": "session003",
+  "observed_at_utc": "2026-10-19 19:49:39 UTC",
+  "timezone": "Asia/Shanghai",
+  "provider": "SCNet",
+  "region": "华中一区【A区】",
+  "resource_group": "113 / hx1hgbwnormal",
+  "instances": [
+    {
+      "label": "A",
+      "instance_id": "2112186448839770114",
+      "instance_name": "2610192217464264",
+      "state": "stopped",
+      "save_environment_selected": true,
+      "manual_stop_confirmed_local": "2026-10-20T03:48:43+08:00",
+      "stopped_observed_local": "2026-10-20T03:49:00+08:00",
+      "time_precision": "minute observation; confirmation second approximately from tool clock",
+      "auto_off_configured_local": "2026-10-20T03:55:00+08:00",
+      "manual_stop_before_auto_off": true,
+      "maximum_card_hours_this_round": 3,
+      "resumed_approximately_local": "2026-10-20T01:03:32+08:00",
+      "conservative_wall_card_hours_upper_bound": 2.82,
+      "upper_bound_basis": "one card from approximately01:03:32 through03:52, later than verified stopped observation; not a billing conversion",
+      "persistent_project": "/root/private_data/guoxin-hackathon-20261020-session003"
+    },
+    {
+      "label": "B",
+      "instance_id": "2112237945233408001",
+      "instance_name": "2610200142242903",
+      "state": "stopped",
+      "save_environment_selected": true,
+      "stop_reported_local": "2026-10-20T02:03:00+08:00",
+      "final_stopped_observation": true
+    },
+    {
+      "label": "reference",
+      "instance_id": "2097876209970565121",
+      "state": "stopped",
+      "not_started_in_this_session": true
+    }
+  ],
+  "all_instances_stopped": true,
+  "recharged_or_purchased": false,
+  "official_materials_received": false,
+  "contest_submitted": false,
+  "balance": {
+    "before_session_card_hours": "495.766111111",
+    "after_stop_visible_card_hours": "493.5055555555",
+    "visible_snapshot_difference": "2.2605555555",
+    "note": "Visible quota snapshot after reload; settlement may lag. Not asserted to equal wall clock card usage or final bill."
+  },
+  "service_cleanup": {
+    "recon_state": "stopped",
+    "retry_run_id": "bb6a20bae32640c0b924511637d6a222",
+    "owned_service_cleanup_verified_in_export": true,
+    "server_supervisor_identity_not_alive": true,
+    "port_30000_open": false,
+    "archive": "dist/session003-recon-final.zip",
+    "archive_sha256": "e120e32c0d00c67545c7a50c7a572ba3d8a828152cabbad180821ac7e5114bef",
+    "raw_archive_requires_independent_local_validation": true
+  },
+  "screenshots": {
+    "stopped": "evidence/screenshots/notebooks-stopped-final-003.png",
+    "balance": "evidence/screenshots/balance-after-stop-003.png",
+    "auto_off_backend": "evidence/screenshots/recon-autooff-0355-confirmed-003.png"
+  }
+}

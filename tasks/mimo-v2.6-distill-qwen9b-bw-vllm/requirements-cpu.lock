@@ -1,0 +1,4 @@
+# Mandatory/publisher-pinned fallback references; bootstrap resolves the full reviewed CPU closure.
+# Do not install directly into native Python. Use bootstrap_candidate_envs_20261023.py.
+# Actual chosen wheel subset is written as requirements-effective.lock inside the new venv.
+# MiMo reuses the captured native stack; no CPU replacement is prescribed.

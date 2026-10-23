@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "kind": "full_file_asr_sse_integrity_cpu_followup",
+  "scope": "Windows CPU/loopback/unit tests only; not the source executed in session003 GPU evidence",
+  "created_at_utc": "2026-10-19T18:27:40.285657+00:00",
+  "source_sha256": {
+    "scripts/qwen3_asr_stream_smoke.py": "3ae83568801ff05787cef6b959d3cfc28b63d3014e04049d8803cb3cd35a7f05",
+    "tests/test_qwen3_asr_stream_smoke.py": "780b65a78c28f0ed11b553225c1a76e7284e31c9ce9a3fa38bed4fad551ac2b7"
+  },
+  "executed_in_full_suite_command": [
+    "C:\\Users\\zhl\\anaconda3\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "process_environment": {
+    "PYTHONPATH": "src;scripts",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "suite_log": "evidence/local-tests-session003-final-001.log",
+  "suite_log_sha256": "dff1259d2c393f82a6dffe3e28d6858578cf74783a544758c9d47da5c1d5e3dc",
+  "module_test_count": 12,
+  "module_passed": 12,
+  "module_skipped": 0,
+  "module_failed": 0,
+  "module_result_lines": [
+    "test_default_plan_performs_no_network_and_no_writes (test_qwen3_asr_stream_smoke.AsrStreamSmokeTests.test_default_plan_performs_no_network_and_no_writes) ... ok",
+    "test_error_after_partial_text_is_never_success (test_qwen3_asr_stream_smoke.AsrStreamSmokeTests.test_error_after_partial_text_is_never_success) ... ok",
+    "test_explicit_run_uses_real_loopback_http_and_preserves_sse_evidence (test_qwen3_asr_stream_smoke.AsrStreamSmokeTests.test_explicit_run_uses_real_loopback_http_and_preserves_sse_evidence) ... ok",
+    "test_late_done_read_and_record_cannot_bypass_absolute_deadline (test_qwen3_asr_stream_smoke.AsrStreamSmokeTests.test_late_done_read_and_record_cannot_bypass_absolute_deadline) ... ok",
+    "test_malformed_model_and_byte_limits_are_rejected (test_qwen3_asr_stream_smoke.AsrStreamSmokeTests.test_malformed_model_and_byte_limits_are_rejected) ... ok",
+    "test_missing_done_empty_text_and_length_finish_are_rejected (test_qwen3_asr_stream_smoke.AsrStreamSmokeTests.test_missing_done_empty_text_and_length_finish_are_rejected) ... ok",
+    "test_multipart_has_stream_flags_without_audio_text_prompt (test_qwen3_asr_stream_smoke.AsrStreamSmokeTests.test_multipart_has_stream_flags_without_audio_text_prompt) ... ok",
+    "test_nonloopback_missing_log_and_existing_log_fail_before_network (test_qwen3_asr_stream_smoke.AsrStreamSmokeTests.test_nonloopback_missing_log_and_existing_log_fail_before_network) ... ok",
+    "test_prefix_only_is_not_a_transcript (test_qwen3_asr_stream_smoke.AsrStreamSmokeTests.test_prefix_only_is_not_a_transcript) ... ok",
+    "test_real_loopback_late_done_and_slow_trickle_stop_at_wall_deadline (test_qwen3_asr_stream_smoke.AsrStreamSmokeTests.test_real_loopback_late_done_and_slow_trickle_stop_at_wall_deadline) ... ok",
+    "test_real_sse_framing_preserves_split_prefix_text_usage_and_stop (test_qwen3_asr_stream_smoke.AsrStreamSmokeTests.test_real_sse_framing_preserves_split_prefix_text_usage_and_stop) ... ok",
+    "test_terminal_finish_cannot_be_reused_for_later_choices (test_qwen3_asr_stream_smoke.AsrStreamSmokeTests.test_terminal_finish_cannot_be_reused_for_later_choices) ... ok"
+  ],
+  "fix_scope": [
+    "Prefix-only ASR protocol output is not accepted as a transcript",
+    "Absolute deadline includes late DONE reads and slow trickle; final record cannot bypass it",
+    "Terminal finish reason from an earlier choice cannot validate later unfinished content"
+  ],
+  "gpu_executed": false,
+  "official_accuracy": false,
+  "official_performance": false,
+  "original_session003_snapshots_modified": false
+}

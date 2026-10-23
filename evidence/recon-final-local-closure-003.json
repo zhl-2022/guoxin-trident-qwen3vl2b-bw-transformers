@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-19T19:57:08.517276+00:00",
+  "scope": "Read-only task config, local Markdown links, raw merge hashes and source collector closure; no stage/Git/GPU/runtime actions",
+  "task_load": "valid",
+  "task_evidence_count": 121,
+  "all_task_evidence_present": true,
+  "new_raw_files": 68,
+  "new_raw_files_all_original_hashes_match": true,
+  "new_raw_files_all_registered_and_collected": true,
+  "markdown_local_links_checked": 75,
+  "collector_files": 372,
+  "collector_bytes": 22671578,
+  "collector_missing": [],
+  "formal_ready": false,
+  "official_accuracy": false,
+  "official_performance": false,
+  "matrix_complete_verified": false,
+  "combined_development_coverage_complete": false,
+  "changed_report_sources": {
+    "README.md": "69745b34285d6205c487a2cba4bcc884dbe0bcdd5b61f895a03694af78625cf2",
+    "tasks/recon2reason-bw-vllm/README.md": "5e0ba7d586b4d74f4210cce0afe3625ba265e93839e883c95e1241688d940b47",
+    "tasks/recon2reason-bw-vllm/task.json": "3b1b9ef4f725aa4cab4d8c0008e36a47771567b00e81f202a5e76a7a589dffd0",
+    "docs/session003-recon-results.md": "df4f595fda8597156e84044d6a7758d805ea8d90e826ddf7af3c73588b70076a"
+  },
+  "old_audit_not_rewritten": "evidence/recon-completed-audit-003.json",
+  "collector_scope_note": "Read-only collection includes this derived report; no report self-hash is recorded. Byte count is iterated to a stable serialized report size."
+}

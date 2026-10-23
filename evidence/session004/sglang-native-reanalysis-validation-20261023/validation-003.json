@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "revision_reason": "Support explicit independently SHA-verified exporter manifest for intentionally hash-only Python sources; do not fabricate missing source payloads",
+  "actual_cpu_checks": [
+    {
+      "environment": "Windows",
+      "tests_run": 13,
+      "passed": 13,
+      "exit_code": 0,
+      "unittest_seconds": 3.832
+    },
+    {
+      "environment": "WSL Ubuntu",
+      "tests_run": 13,
+      "passed": 13,
+      "exit_code": 0,
+      "unittest_seconds": 0.464
+    }
+  ],
+  "cpu_output_location": "Actual raw 003 regression outputs are in tool transcript; old captured raw logs remain bound to earlier SHA",
+  "source_files": [
+    {
+      "path": "scripts/analyze_sglang_results_004.py",
+      "sha256": "d73ecca728b47b8f58fed407f13c9a496e73ba8e165ee08b740afd9065efdaa8"
+    },
+    {
+      "path": "tests/test_analyze_sglang_results_004.py",
+      "sha256": "4e4c394af8e970aa9833bbe072afd3739659830e88e3aed552811d2f90ae28bb"
+    },
+    {
+      "path": "scripts/t02_sglang_bench.py",
+      "sha256": "ff8eef852e19f336e99884cc031353627ca304c6a7534c22375116758a850000"
+    }
+  ],
+  "actual_gpu_archive_analyzed": true,
+  "archive_scope": "intermediate snapshot only",
+  "source_zip_sha256": "8b4481d5fcc8d1080cd5ffa8cf14509ab9577d8ea4b30089eb5b1f049ce702d5",
+  "local_extraction_verification_sha256": "8347a1a889f47fd485679b84062c0ac45fccedad7dde5596be9da7a6b9e2ebd2",
+  "export_manifest_sha256": "2b1543b7bb12c95f3a0aa041e8e3db605f6189921f2819316c5fcfc7ea86ecb2",
+  "run_analysis": {
+    "path": "evidence/session004/remote-intermediate-001-analysis-sealed/analysis.json",
+    "sha256": "9ffe780de7437db6fe51eb629fa45a430275fb28275877291b0ca253b7cc1149",
+    "exit_code": 1,
+    "eligible_client_reports": 5,
+    "eligible_client_reported_requests": 304,
+    "eligible_client_reported_output_tokens": 311296,
+    "full_matrix_complete": false,
+    "notes": "6 native files; R2_16384_c8 has empty sample8, running/planned rows do not count"
+  },
+  "artifact_audit": {
+    "path": "evidence/session004/remote-intermediate-001-audit.json",
+    "sha256": "815cd64e5ecafe772c607d50c797616a1102d8e323e8660ef3f8c96826dcac93"
+  },
+  "source_zip_run_native_modified": false,
+  "producer_driver_modified": false,
+  "official_accuracy_or_performance_accepted": false
+}

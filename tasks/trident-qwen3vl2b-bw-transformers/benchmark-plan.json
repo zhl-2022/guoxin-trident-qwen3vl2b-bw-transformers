@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "status": "plan_only_not_downloaded_or_executed",
+  "dataset_id": "openbmb/Trident-Eval",
+  "revision": "15c41335843f8880e24778843b462234b6427e4f",
+  "source_url": "https://huggingface.co/api/datasets/openbmb/Trident-Eval/revision/15c41335843f8880e24778843b462234b6427e4f?blobs=true",
+  "benchmark": "DocVQA",
+  "setting": "Origin only; not paper full Mix",
+  "files": [
+    {
+      "path": "DocVQA/corpus.jsonl",
+      "size": 1470333,
+      "git_blob_sha1": "80104e4b5fbc4d4b5b360fd178a541783df809c6"
+    },
+    {
+      "path": "DocVQA/images.tar.gz",
+      "size": 1100624783,
+      "sha256": "f7786cc63c605174670a4f4f9d7ac61c53c321b2ce81d1dbeaaf2796b9757bb2"
+    },
+    {
+      "path": "DocVQA/mix_corpus.jsonl",
+      "size": 848841,
+      "git_blob_sha1": "d38e9f354279fe9813150039b6e8e0ada255aa54"
+    },
+    {
+      "path": "DocVQA/origin_corpus.jsonl",
+      "size": 31645,
+      "git_blob_sha1": "0e3533d2f884950e6c0c2fa0962e3d3afa77dddc"
+    },
+    {
+      "path": "DocVQA/qrels.jsonl",
+      "size": 29335,
+      "git_blob_sha1": "6e6f76159baa4feb30717b4699f193d02e46d8d2"
+    },
+    {
+      "path": "DocVQA/queries.jsonl",
+      "size": 73201,
+      "git_blob_sha1": "412bbb0123caff78e70e59cda08f5c1a278a57b2"
+    }
+  ],
+  "bytes": 1103078138,
+  "training_data_required": false,
+  "publisher_evaluation_entry": "scripts/eval.sh trident_qwen3vl CHECKPOINT vdoc --datasets DocVQA --gpus 0 --batch_size 1 --no_mix --data_root DATA_ROOT --embed_root NEW_EMBED_ROOT --eval_root NEW_EVAL_ROOT",
+  "contest_correspondence_verified": false,
+  "official_gpu_baseline": null,
+  "formal_acceptance": false
+}

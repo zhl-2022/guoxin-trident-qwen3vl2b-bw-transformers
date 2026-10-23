@@ -1,0 +1,81 @@
+{
+  "complete": true,
+  "model_id": "openbmb/Trident-Qwen3VL-2B",
+  "revision": "a5aedf8733f2107ab75b42214c78496d85759077",
+  "directory": "/root/private_data/guoxin-candidates/models/trident",
+  "weights_hashed": true,
+  "files": [
+    {
+      "path": "added_tokens.json",
+      "size_ok": true,
+      "identity_ok": true,
+      "git_blob_sha1": "b54f9135e44c1e81047e8d05cb027af8bc039eed"
+    },
+    {
+      "path": "chat_template.jinja",
+      "size_ok": true,
+      "identity_ok": true,
+      "git_blob_sha1": "124386803f142761528f710e77ae483f5f8c4fc4"
+    },
+    {
+      "path": "config.json",
+      "size_ok": true,
+      "identity_ok": true,
+      "git_blob_sha1": "d23cb908bf7206f048c846a31b3d12ac217111a4"
+    },
+    {
+      "path": "merges.txt",
+      "size_ok": true,
+      "identity_ok": true,
+      "git_blob_sha1": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7"
+    },
+    {
+      "path": "mmemb_model.json",
+      "size_ok": true,
+      "identity_ok": true,
+      "git_blob_sha1": "a94febd44e6e73bacfcf05d2e1f5bbd66ca3fa47"
+    },
+    {
+      "path": "model.safetensors",
+      "size_ok": true,
+      "identity_ok": true,
+      "sha256": "984c6dad40e50c68497764e363b4980634a3c82ea9396d395e81e0668e62ea2f"
+    },
+    {
+      "path": "preprocessor_config.json",
+      "size_ok": true,
+      "identity_ok": true,
+      "git_blob_sha1": "2fa6553554f69b4e3a6b742a75264ff9dff90ad0"
+    },
+    {
+      "path": "special_tokens_map.json",
+      "size_ok": true,
+      "identity_ok": true,
+      "git_blob_sha1": "ac23c0aaa2434523c494330aeb79c58395378103"
+    },
+    {
+      "path": "tokenizer.json",
+      "size_ok": true,
+      "identity_ok": true,
+      "sha256": "8d15a42a4361d0b9ba8768bfc32102f5745102ec6fe5c3de45835088195d9468"
+    },
+    {
+      "path": "tokenizer_config.json",
+      "size_ok": true,
+      "identity_ok": true,
+      "git_blob_sha1": "35d32052b3bc1bc9493b6cc3d8b0f22acf33dc83"
+    },
+    {
+      "path": "video_preprocessor_config.json",
+      "size_ok": true,
+      "identity_ok": true,
+      "git_blob_sha1": "e32b1d90356f74457edbfca27aa1e121dab7cdc7"
+    },
+    {
+      "path": "vocab.json",
+      "size_ok": true,
+      "identity_ok": true,
+      "git_blob_sha1": "4783fe10ac3adce15ac8f358ef5462739852c569"
+    }
+  ]
+}

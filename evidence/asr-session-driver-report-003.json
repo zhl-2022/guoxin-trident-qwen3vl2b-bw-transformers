@@ -1,0 +1,771 @@
+{
+  "schema_version": 1,
+  "session": "session003",
+  "mode": "run",
+  "project": "/root/private_data/guoxin-hackathon-20261020-session003",
+  "output": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr",
+  "base_python": "/usr/bin/python3",
+  "asr_venv": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/runtime/audio-venv",
+  "ports": {
+    "robo": 30001,
+    "asr": 30002
+  },
+  "total_timeout_seconds": 3600,
+  "model_runtime_seconds": 1800,
+  "load_timeout": 600,
+  "cleanup_reserve_seconds": 120,
+  "official_accuracy": false,
+  "official_performance": false,
+  "official_acceptance": false,
+  "scope": "development:24 numerical cases,7 synthetic image requests,3 publisher-derived WAVs,SSE output",
+  "realtime_audio_input_verified": false,
+  "network": "explicit --run only; clients use127.0.0.1",
+  "filesystem_mutated": true,
+  "phases": [
+    {
+      "name": "robo",
+      "port": 30001,
+      "status": "development_checks_completed",
+      "steps": [
+        {
+          "name": "env-check",
+          "command": [
+            "bash",
+            "/root/private_data/guoxin-hackathon-20261020-session003/tasks/robobrain-bw-vllm/env_check.sh"
+          ],
+          "started_utc": "2026-10-19T17:51:21.546324+00:00",
+          "status": "complete",
+          "exit_code": 0,
+          "ended_utc": "2026-10-19T17:51:41.929750+00:00",
+          "log": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/robo/env-check.log",
+          "log_sha256": "ac46568c5032b421882dfbfd3d27d033d44235a9210191471738c345c4c7a3cd"
+        },
+        {
+          "name": "numerical",
+          "command": [
+            "/usr/bin/python3",
+            "-B",
+            "scripts/validate_robobrain_vision_math_compat.py",
+            "--max-length",
+            "2049",
+            "--output",
+            "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/robo/numerical.json"
+          ],
+          "started_utc": "2026-10-19T17:51:41.941311+00:00",
+          "status": "complete",
+          "exit_code": 0,
+          "ended_utc": "2026-10-19T17:52:13.700885+00:00",
+          "log": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/robo/numerical.log",
+          "log_sha256": "e49959b6581c7051d9d5589e09cc4be4b6fd7a52608fd3b3ee999e6eec958575"
+        },
+        {
+          "name": "launch",
+          "started_utc": "2026-10-19T17:52:13.714134+00:00",
+          "status": "ready",
+          "log": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/robo/launch.log",
+          "exit_code": 0,
+          "ended_utc": "2026-10-19T17:56:24.848692+00:00",
+          "log_sha256": "d233e0793d9923af83885826b594624bfe9810c93818427db1bf05526ccc5290"
+        },
+        {
+          "name": "heldout",
+          "command": [
+            "/usr/bin/python3",
+            "-B",
+            "scripts/robobrain_heldout_fixtures.py",
+            "--output-dir",
+            "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/robo/heldout",
+            "--base-url",
+            "http://127.0.0.1:30001",
+            "--model",
+            "robobrain2-5-8b-nv",
+            "--timeout",
+            "120",
+            "--run"
+          ],
+          "started_utc": "2026-10-19T17:56:24.860074+00:00",
+          "status": "complete",
+          "exit_code": 0,
+          "ended_utc": "2026-10-19T17:56:39.609251+00:00",
+          "log": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/robo/heldout.log",
+          "log_sha256": "8668ef6e0991ed7516631095b949ac33cdd43cbf477c8db0c34eb1c677dcfa47"
+        },
+        {
+          "name": "stop",
+          "command": [
+            "bash",
+            "/root/private_data/guoxin-hackathon-20261020-session003/tasks/robobrain-bw-vllm/stop.sh"
+          ],
+          "started_utc": "2026-10-19T17:56:39.621025+00:00",
+          "status": "complete",
+          "exit_code": 0,
+          "ended_utc": "2026-10-19T17:56:49.715949+00:00",
+          "log": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/robo/stop.log",
+          "log_sha256": "f876dd5029a62e13517e28fa6e32b074ea9cf830a09182054467451c7c866cb1"
+        }
+      ],
+      "started_utc": "2026-10-19T17:51:21.329415+00:00",
+      "official_acceptance": false,
+      "previous_snapshots": [],
+      "previous_run_id": null,
+      "launch_attempted": true,
+      "launcher_pid": 2064,
+      "owned_run_id": "c43dadd550fb44dabd84f52df49711d5",
+      "ready_state": {
+        "run_id": "c43dadd550fb44dabd84f52df49711d5",
+        "status": "ready",
+        "created_utc": "2026-10-19T17:52:23.996595+00:00",
+        "supervisor_pid": 2070,
+        "supervisor_token": "245971759",
+        "config_path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/robobrain-bw-vllm/runtime/config-c43dadd550fb44dabd84f52df49711d5.json",
+        "url": "http://127.0.0.1:30001",
+        "max_runtime_seconds": 1800,
+        "framework": "vllm",
+        "precision": "bf16",
+        "command": [
+          "/usr/bin/python3",
+          "-m",
+          "vllm.entrypoints.openai.api_server",
+          "--model",
+          "/root/private_data/SothisAI/model/Aihub/RoboBrain2.5-8B-NV/main/RoboBrain2.5-8B-NV",
+          "--served-model-name",
+          "robobrain2-5-8b-nv",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "30001",
+          "--tensor-parallel-size",
+          "1",
+          "--dtype",
+          "bfloat16",
+          "--max-model-len",
+          "32768",
+          "--gpu-memory-utilization",
+          "0.85",
+          "--enforce-eager",
+          "--max-num-seqs",
+          "4",
+          "--limit-mm-per-prompt",
+          "{\"image\":{\"count\":2,\"width\":1024,\"height\":1024},\"video\":0}",
+          "--worker-extension-cls",
+          "robobrain_vision_math_compat.VisionMathCompat"
+        ],
+        "server_pid": 2073,
+        "server_token": "245972772",
+        "ready_utc": "2026-10-19T17:56:24.539129+00:00"
+      },
+      "ready_snapshot": [
+        {
+          "source": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/robobrain-bw-vllm/env.log",
+          "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/robo/ready/env.log",
+          "sha256": "ac46568c5032b421882dfbfd3d27d033d44235a9210191471738c345c4c7a3cd",
+          "bytes": 2783
+        },
+        {
+          "source": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/robobrain-bw-vllm/runtime/state.json",
+          "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/robo/ready/runtime/state.json",
+          "sha256": "3493b113992c3e63a76840bfe588ee1b4e838f9ae128dfdabc0d5f35480ea8a4",
+          "bytes": 1258
+        },
+        {
+          "source": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/robobrain-bw-vllm/runtime/server.log",
+          "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/robo/ready/runtime/server.log",
+          "sha256": "292d6ac194c58c64575ac73475f686b96c28e640d9dc98593414431895a9c6d4",
+          "bytes": 16274
+        },
+        {
+          "source": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/robobrain-bw-vllm/runtime/supervisor.log",
+          "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/robo/ready/runtime/supervisor.log",
+          "sha256": "1821d5c7796d3ee69737e94e83306fe0398577a8cdf95e7655bcb1341ffc0eb9",
+          "bytes": 1111
+        },
+        {
+          "source": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/robobrain-bw-vllm/runtime/config-c43dadd550fb44dabd84f52df49711d5.json",
+          "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/robo/ready/runtime/config-c43dadd550fb44dabd84f52df49711d5.json",
+          "sha256": "02d40ee4af08c8d03e42f2d099fdeaa3d0e3da8a10493aefe6d6d63ebec2dc5a",
+          "bytes": 1526
+        }
+      ],
+      "cleanup_started_utc": "2026-10-19T17:56:39.621000+00:00",
+      "cleanup_verified": true,
+      "final_state": {
+        "run_id": "c43dadd550fb44dabd84f52df49711d5",
+        "status": "stopped",
+        "created_utc": "2026-10-19T17:52:23.996595+00:00",
+        "supervisor_pid": 2070,
+        "supervisor_token": "245971759",
+        "config_path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/robobrain-bw-vllm/runtime/config-c43dadd550fb44dabd84f52df49711d5.json",
+        "url": "http://127.0.0.1:30001",
+        "max_runtime_seconds": 1800,
+        "framework": "vllm",
+        "precision": "bf16",
+        "command": [
+          "/usr/bin/python3",
+          "-m",
+          "vllm.entrypoints.openai.api_server",
+          "--model",
+          "/root/private_data/SothisAI/model/Aihub/RoboBrain2.5-8B-NV/main/RoboBrain2.5-8B-NV",
+          "--served-model-name",
+          "robobrain2-5-8b-nv",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "30001",
+          "--tensor-parallel-size",
+          "1",
+          "--dtype",
+          "bfloat16",
+          "--max-model-len",
+          "32768",
+          "--gpu-memory-utilization",
+          "0.85",
+          "--enforce-eager",
+          "--max-num-seqs",
+          "4",
+          "--limit-mm-per-prompt",
+          "{\"image\":{\"count\":2,\"width\":1024,\"height\":1024},\"video\":0}",
+          "--worker-extension-cls",
+          "robobrain_vision_math_compat.VisionMathCompat"
+        ],
+        "server_pid": 2073,
+        "server_token": "245972772",
+        "ready_utc": "2026-10-19T17:56:24.539129+00:00",
+        "reason": "stop requested",
+        "ended_utc": "2026-10-19T17:56:49.631522+00:00",
+        "elapsed_seconds": 265.635
+      },
+      "final_snapshots": [
+        {
+          "source": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/robobrain-bw-vllm/env.log",
+          "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/robo/stopped/env.log",
+          "sha256": "ac46568c5032b421882dfbfd3d27d033d44235a9210191471738c345c4c7a3cd",
+          "bytes": 2783
+        },
+        {
+          "source": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/robobrain-bw-vllm/runtime/state.json",
+          "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/robo/stopped/runtime/state.json",
+          "sha256": "38293c87dddc5075e51301dd2b44ae8a5bed05226e26d0cbd3524f260e647994",
+          "bytes": 1371
+        },
+        {
+          "source": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/robobrain-bw-vllm/runtime/server.log",
+          "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/robo/stopped/runtime/server.log",
+          "sha256": "42de72080a9af21ff9fc7b3ef610eb69bda54e065c58374257715960ea73ced1",
+          "bytes": 19627
+        },
+        {
+          "source": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/robobrain-bw-vllm/runtime/supervisor.log",
+          "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/robo/stopped/runtime/supervisor.log",
+          "sha256": "7c8192ac6bdf7fc8ea0e74ad21defc86124be68afa4833a7afa69585341cdc51",
+          "bytes": 2359
+        },
+        {
+          "source": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/robobrain-bw-vllm/runtime/config-c43dadd550fb44dabd84f52df49711d5.json",
+          "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/robo/stopped/runtime/config-c43dadd550fb44dabd84f52df49711d5.json",
+          "sha256": "02d40ee4af08c8d03e42f2d099fdeaa3d0e3da8a10493aefe6d6d63ebec2dc5a",
+          "bytes": 1526
+        }
+      ],
+      "cleanup_ended_utc": "2026-10-19T17:56:50.602933+00:00",
+      "ended_utc": "2026-10-19T17:56:50.614558+00:00"
+    },
+    {
+      "name": "asr",
+      "port": 30002,
+      "status": "development_checks_completed",
+      "steps": [
+        {
+          "name": "venv-check",
+          "command": [
+            "bash",
+            "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/prepare.sh",
+            "--check-existing",
+            "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/runtime/audio-venv"
+          ],
+          "started_utc": "2026-10-19T17:56:50.653839+00:00",
+          "status": "complete",
+          "exit_code": 0,
+          "ended_utc": "2026-10-19T17:57:12.864711+00:00",
+          "log": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/asr/venv-check.log",
+          "log_sha256": "47cfecab442ffeffa47938367fcd7e347e38dd3dcd952e4bc8f53cc3eeb51306"
+        },
+        {
+          "name": "env-check",
+          "command": [
+            "bash",
+            "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/env_check.sh"
+          ],
+          "started_utc": "2026-10-19T17:57:12.877120+00:00",
+          "status": "complete",
+          "exit_code": 0,
+          "ended_utc": "2026-10-19T17:57:31.882470+00:00",
+          "log": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/asr/env-check.log",
+          "log_sha256": "980d2596a08e555f54cf5dfdbca8f8ed6b61ac7c53a875e8ccc946946fed31d1"
+        },
+        {
+          "name": "launch",
+          "started_utc": "2026-10-19T17:57:31.894626+00:00",
+          "status": "ready",
+          "log": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/asr/launch.log",
+          "exit_code": 0,
+          "ended_utc": "2026-10-19T18:00:08.100495+00:00",
+          "log_sha256": "4c51bea24522829ffdb03653bf4bb1a4760ccf1f93ee014011b0df1f28ce8b49"
+        },
+        {
+          "name": "zh",
+          "command": [
+            "bash",
+            "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/smoke.sh",
+            "--audio",
+            "/root/private_data/guoxin-hackathon-20261020-session003/fixtures/asr/development-20261020/zh_16000_pcm16.wav",
+            "--timeout",
+            "180",
+            "--log",
+            "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/asr/zh.jsonl"
+          ],
+          "started_utc": "2026-10-19T18:00:08.112702+00:00",
+          "status": "complete",
+          "exit_code": 0,
+          "ended_utc": "2026-10-19T18:00:13.149823+00:00",
+          "log": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/asr/zh.log",
+          "log_sha256": "bd3551c6ae1f1e4102661fb724b44b1ef08d13f363ccc39ece3a055478470d8f"
+        },
+        {
+          "name": "en",
+          "command": [
+            "bash",
+            "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/smoke.sh",
+            "--audio",
+            "/root/private_data/guoxin-hackathon-20261020-session003/fixtures/asr/development-20261020/en_16000_pcm16.wav",
+            "--timeout",
+            "180",
+            "--log",
+            "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/asr/en.jsonl"
+          ],
+          "started_utc": "2026-10-19T18:00:13.161052+00:00",
+          "status": "complete",
+          "exit_code": 0,
+          "ended_utc": "2026-10-19T18:00:15.093682+00:00",
+          "log": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/asr/en.log",
+          "log_sha256": "0469c4a8991a19ec2c8afeaa9f637920f433514692e2dc67ace442d2296d9147"
+        },
+        {
+          "name": "long",
+          "command": [
+            "bash",
+            "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/smoke.sh",
+            "--audio",
+            "/root/private_data/guoxin-hackathon-20261020-session003/fixtures/asr/development-20261020/zh_en_repeated_39s.wav",
+            "--timeout",
+            "180",
+            "--log",
+            "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/asr/long.jsonl",
+            "--long-audio"
+          ],
+          "started_utc": "2026-10-19T18:00:15.105185+00:00",
+          "status": "complete",
+          "exit_code": 0,
+          "ended_utc": "2026-10-19T18:00:19.440993+00:00",
+          "log": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/asr/long.log",
+          "log_sha256": "0b69ede9d1054b55b7196aa357c4cc35ec2436d03f5fb86b6dc21f38801b6a1f"
+        },
+        {
+          "name": "stream",
+          "command": [
+            "/usr/bin/python3",
+            "-B",
+            "scripts/qwen3_asr_stream_smoke.py",
+            "--audio",
+            "/root/private_data/guoxin-hackathon-20261020-session003/fixtures/asr/development-20261020/zh_16000_pcm16.wav",
+            "--base-url",
+            "http://127.0.0.1:30002",
+            "--model",
+            "qwen3-asr-1.7b",
+            "--timeout",
+            "180",
+            "--run",
+            "--log",
+            "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/asr/zh-stream.jsonl"
+          ],
+          "started_utc": "2026-10-19T18:00:19.454073+00:00",
+          "status": "complete",
+          "exit_code": 0,
+          "ended_utc": "2026-10-19T18:00:20.033557+00:00",
+          "log": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/asr/stream.log",
+          "log_sha256": "653186c26488b828c5d18e426c527c49172cc34bcc656c42fcd0a66c3c877f44"
+        },
+        {
+          "name": "stop",
+          "command": [
+            "bash",
+            "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/stop.sh"
+          ],
+          "started_utc": "2026-10-19T18:00:20.046303+00:00",
+          "status": "complete",
+          "exit_code": 0,
+          "ended_utc": "2026-10-19T18:00:24.082371+00:00",
+          "log": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/asr/stop.log",
+          "log_sha256": "f876dd5029a62e13517e28fa6e32b074ea9cf830a09182054467451c7c866cb1"
+        }
+      ],
+      "started_utc": "2026-10-19T17:56:50.625417+00:00",
+      "official_acceptance": false,
+      "previous_snapshots": [],
+      "audio_inputs": [
+        {
+          "path": "/root/private_data/guoxin-hackathon-20261020-session003/fixtures/asr/development-20261020/zh_16000_pcm16.wav",
+          "sha256": "46dbc998c9d1d48111267c40741dd3200f2e5bcf4075f8c4c97f4451160dce50"
+        },
+        {
+          "path": "/root/private_data/guoxin-hackathon-20261020-session003/fixtures/asr/development-20261020/en_16000_pcm16.wav",
+          "sha256": "64e219123047e533c1c1dbb446cb04873ff8c72a2ff20e24ae9d84664d9b455f"
+        },
+        {
+          "path": "/root/private_data/guoxin-hackathon-20261020-session003/fixtures/asr/development-20261020/zh_en_repeated_39s.wav",
+          "sha256": "b403449966b68821ea1f43d01d1399733f622201cdb57bfe3e43a98343b339c1"
+        }
+      ],
+      "previous_run_id": null,
+      "launch_attempted": true,
+      "launcher_pid": 4605,
+      "owned_run_id": "6b00889feafc4ea1af2133b5c4a3317a",
+      "ready_state": {
+        "run_id": "6b00889feafc4ea1af2133b5c4a3317a",
+        "status": "ready",
+        "created_utc": "2026-10-19T17:57:35.943807+00:00",
+        "supervisor_pid": 4746,
+        "supervisor_token": "246003956",
+        "config_path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/runtime/config-6b00889feafc4ea1af2133b5c4a3317a.json",
+        "url": "http://127.0.0.1:30002",
+        "max_runtime_seconds": 1800,
+        "framework": "vllm",
+        "precision": "bf16",
+        "command": [
+          "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/runtime/audio-venv/bin/python",
+          "-m",
+          "vllm.entrypoints.openai.api_server",
+          "--model",
+          "/root/private_data/SothisAI/model/Aihub/Qwen3-ASR-1.7B/main/Qwen3-ASR-1.7B",
+          "--served-model-name",
+          "qwen3-asr-1.7b",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "30002",
+          "--tensor-parallel-size",
+          "1",
+          "--dtype",
+          "bfloat16",
+          "--max-model-len",
+          "32768",
+          "--gpu-memory-utilization",
+          "0.85",
+          "--enforce-eager",
+          "--max-num-seqs",
+          "4"
+        ],
+        "server_pid": 4747,
+        "server_token": "246003970",
+        "ready_utc": "2026-10-19T18:00:07.789453+00:00"
+      },
+      "ready_snapshot": [
+        {
+          "source": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/env.log",
+          "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/asr/ready/env.log",
+          "sha256": "980d2596a08e555f54cf5dfdbca8f8ed6b61ac7c53a875e8ccc946946fed31d1",
+          "bytes": 2918
+        },
+        {
+          "source": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/runtime/state.json",
+          "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/asr/ready/runtime/state.json",
+          "sha256": "e7955ecc6d1efa268ab84cfb398473b563605266c0b67e724e50dc2cf8c616e7",
+          "bytes": 1151
+        },
+        {
+          "source": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/runtime/server.log",
+          "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/asr/ready/runtime/server.log",
+          "sha256": "d4a57f630ae4799c786dc40ea091a0fb3bd97fdc2947364fd6a06d211c2ac1c2",
+          "bytes": 19400
+        },
+        {
+          "source": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/runtime/supervisor.log",
+          "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/asr/ready/runtime/supervisor.log",
+          "sha256": "e79b93100f775b8e2b43ca1c6cd862e90fa012a303762ebb982c254f3abb2772",
+          "bytes": 1020
+        },
+        {
+          "source": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/runtime/config-6b00889feafc4ea1af2133b5c4a3317a.json",
+          "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/asr/ready/runtime/config-6b00889feafc4ea1af2133b5c4a3317a.json",
+          "sha256": "bf09a97ed8e6345c3d057487c119f5b34c570542df7f1470a18687c2c056823d",
+          "bytes": 1215
+        }
+      ],
+      "cleanup_started_utc": "2026-10-19T18:00:20.046281+00:00",
+      "cleanup_verified": true,
+      "final_state": {
+        "run_id": "6b00889feafc4ea1af2133b5c4a3317a",
+        "status": "stopped",
+        "created_utc": "2026-10-19T17:57:35.943807+00:00",
+        "supervisor_pid": 4746,
+        "supervisor_token": "246003956",
+        "config_path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/runtime/config-6b00889feafc4ea1af2133b5c4a3317a.json",
+        "url": "http://127.0.0.1:30002",
+        "max_runtime_seconds": 1800,
+        "framework": "vllm",
+        "precision": "bf16",
+        "command": [
+          "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/runtime/audio-venv/bin/python",
+          "-m",
+          "vllm.entrypoints.openai.api_server",
+          "--model",
+          "/root/private_data/SothisAI/model/Aihub/Qwen3-ASR-1.7B/main/Qwen3-ASR-1.7B",
+          "--served-model-name",
+          "qwen3-asr-1.7b",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "30002",
+          "--tensor-parallel-size",
+          "1",
+          "--dtype",
+          "bfloat16",
+          "--max-model-len",
+          "32768",
+          "--gpu-memory-utilization",
+          "0.85",
+          "--enforce-eager",
+          "--max-num-seqs",
+          "4"
+        ],
+        "server_pid": 4747,
+        "server_token": "246003970",
+        "ready_utc": "2026-10-19T18:00:07.789453+00:00",
+        "reason": "stop requested",
+        "ended_utc": "2026-10-19T18:00:24.020834+00:00",
+        "elapsed_seconds": 168.077
+      },
+      "final_snapshots": [
+        {
+          "source": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/env.log",
+          "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/asr/stopped/env.log",
+          "sha256": "980d2596a08e555f54cf5dfdbca8f8ed6b61ac7c53a875e8ccc946946fed31d1",
+          "bytes": 2918
+        },
+        {
+          "source": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/runtime/state.json",
+          "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/asr/stopped/runtime/state.json",
+          "sha256": "330889cd2a171950aa8820977e0f371621bb4e3f7a4588c70145e74cbd29d6bc",
+          "bytes": 1264
+        },
+        {
+          "source": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/runtime/server.log",
+          "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/asr/stopped/runtime/server.log",
+          "sha256": "26485317851afb952e2e2d91215f9125e843aba6734e4aba229cdf9ac2f86194",
+          "bytes": 20996
+        },
+        {
+          "source": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/runtime/supervisor.log",
+          "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/asr/stopped/runtime/supervisor.log",
+          "sha256": "1fbf16537017ee19044964161ddb55a8c3ecbde198c02b9e8f94641ae22598ba",
+          "bytes": 2177
+        },
+        {
+          "source": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/runtime/config-6b00889feafc4ea1af2133b5c4a3317a.json",
+          "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/asr/stopped/runtime/config-6b00889feafc4ea1af2133b5c4a3317a.json",
+          "sha256": "bf09a97ed8e6345c3d057487c119f5b34c570542df7f1470a18687c2c056823d",
+          "bytes": 1215
+        }
+      ],
+      "cleanup_ended_utc": "2026-10-19T18:00:24.136478+00:00",
+      "ended_utc": "2026-10-19T18:00:24.147243+00:00"
+    }
+  ],
+  "steps_planned": {
+    "robo": [
+      "env_check",
+      "24-case GPU numerical",
+      "launch/readiness",
+      "7 heldout requests",
+      "stop/archive"
+    ],
+    "asr": [
+      "check existing isolated venv",
+      "env_check",
+      "launch/readiness",
+      "zh/en/39s WAV",
+      "zh SSE",
+      "stop/archive"
+    ]
+  },
+  "started_utc": "2026-10-19T17:51:16.590590+00:00",
+  "status": "development_checks_completed",
+  "sources": [
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/scripts/session003_robo_asr_checks.py",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/scripts/session003_robo_asr_checks.py",
+      "sha256": "3fdd8ee4ca4daa47993b5589367ac95a551f0fa7ebc26f8d23d8e516c4004238"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/scripts/recon2reason_runtime.py",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/scripts/recon2reason_runtime.py",
+      "sha256": "04b0c91fd0596360f142021800f1487af5a83264cb6de5971b954b45dc80b422"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/scripts/robobrain_vision_math_compat.py",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/scripts/robobrain_vision_math_compat.py",
+      "sha256": "083dc53f3e4f8171b774469bffa724c2269a9d289769f56a9d7a5624cd81659f"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/scripts/validate_robobrain_vision_math_compat.py",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/scripts/validate_robobrain_vision_math_compat.py",
+      "sha256": "ba6a94283fa63418948c466eac7fc8949a56cf244eb6f9c3be8dcd78ef673dd1"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/scripts/robobrain_heldout_fixtures.py",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/scripts/robobrain_heldout_fixtures.py",
+      "sha256": "e0dba59f274a1629b53b0cf3c9c4fd3adf72220b41164c34f03e8a72778cbeb7"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/scripts/qwen3_asr_smoke.py",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/scripts/qwen3_asr_smoke.py",
+      "sha256": "da40fff4081c7873a4d276225d4ef990df9b2d666daf3c1d73ee0796def655f1"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/scripts/qwen3_asr_stream_smoke.py",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/scripts/qwen3_asr_stream_smoke.py",
+      "sha256": "20df684b5c82ea8eb1ecb002ca12adc23c236d94d5e7ab089c434153d7114edf"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/scripts/qwen_asr_tf55_compat.py",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/scripts/qwen_asr_tf55_compat.py",
+      "sha256": "84d0d5402c73d21562fb12bb649ace56d6f29b7d1fdf1d3e402b8d4a6e28820a"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/scripts/prepare_qwen_asr_task.py",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/scripts/prepare_qwen_asr_task.py",
+      "sha256": "03101937ccf5aa4ac8cf134ac1b1821327767614a6809b39b03559928669ca52"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/robobrain-bw-vllm/bench.sh",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/tasks/robobrain-bw-vllm/bench.sh",
+      "sha256": "8cceca62de7945b77a01565659ffc2e5173da31be3a21f0feb019f0d62850d36"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/robobrain-bw-vllm/protocol_smoke.sh",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/tasks/robobrain-bw-vllm/protocol_smoke.sh",
+      "sha256": "a8f39babf3d514f3e02a9f43b6b13a892eb32fe8ff4442a9ce7a76eef337586d"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/robobrain-bw-vllm/stop.sh",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/tasks/robobrain-bw-vllm/stop.sh",
+      "sha256": "d3e0b15a5bc42ca3d62a2215582ec61c47c1364f7b398898ab800a7396f4bc2c"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/robobrain-bw-vllm/env.sh",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/tasks/robobrain-bw-vllm/env.sh",
+      "sha256": "877065b93e2159f8b42cebc19c49f7180ae5bca3ceffbabb2cefa4491bc53c69"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/robobrain-bw-vllm/env_check.sh",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/tasks/robobrain-bw-vllm/env_check.sh",
+      "sha256": "9e488292aff6cda8a4897a6acb8462a4fe56064968d6c4038326e20b628ded13"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/robobrain-bw-vllm/run.sh",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/tasks/robobrain-bw-vllm/run.sh",
+      "sha256": "d365d8d68fb87b6e1ed39005aaae008d4123f1cbdf9059525ceb5ffd4cd248cc"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/robobrain-bw-vllm/run_baseline.sh",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/tasks/robobrain-bw-vllm/run_baseline.sh",
+      "sha256": "49588964645def78a7e09f8b1e98611720a20bf1567c132e12b6955a94a5aba3"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/robobrain-bw-vllm/run_compat.sh",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/tasks/robobrain-bw-vllm/run_compat.sh",
+      "sha256": "79b29bd4f31db7bc9ce4d2fc618d9a2f7f4dcc421f1f1ad34850faad208edbcd"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/robobrain-bw-vllm/smoke.sh",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/tasks/robobrain-bw-vllm/smoke.sh",
+      "sha256": "236346e896c597adf0051e92e5dc98da85f8552d3bd5a933e2467b75d22128a4"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/robobrain-bw-vllm/verify.sh",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/tasks/robobrain-bw-vllm/verify.sh",
+      "sha256": "7f134fcb6d12f8756ac885af198b250d24d2d002095925e0d1eabd0247f986f0"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/robobrain-bw-vllm/task.json",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/tasks/robobrain-bw-vllm/task.json",
+      "sha256": "ec35ac53f1b74d75f1fc4524f7076de956d3d3e1b60e9aceecec872624e7e09b"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/bench.sh",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/bench.sh",
+      "sha256": "df5a04c7bbeae4e9ccb8dfe64cb5a13a3bc809d2b4f278ebf2790a5a7132f920"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/env.sh",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/env.sh",
+      "sha256": "9dd7000596e42e1a0349160d7b9f94827963b7b662b9e61026c0f446f820f9f8"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/prepare.sh",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/prepare.sh",
+      "sha256": "41351bd3fe5ea483ba930ebfcdeae2900c8bce204a2afb939f919ceae10c4796"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/verify.sh",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/verify.sh",
+      "sha256": "443f50dfe70b990a22569725d9562ba2659252ec4d87c4b65cb78a5a45299aa9"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/env_check.sh",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/env_check.sh",
+      "sha256": "9c436fafa353c19e4f8b22e7c0858adf4317c8ea1e1d681b90229818c7c67277"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/run.sh",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/run.sh",
+      "sha256": "080c4b037beb3f0964448c419746ef3f540dba6b70cf3509beeecebbb12cc175"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/run_compat.sh",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/run_compat.sh",
+      "sha256": "aa8b00b880793d70847e5c3165a3578b6c515b75f709f2e635dca4f287ff3323"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/smoke.sh",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/smoke.sh",
+      "sha256": "fc1f86735f7ae4c55d5f1898a0cbf612ab51176d8c8863c88279940b37ea44a3"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/stop.sh",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/stop.sh",
+      "sha256": "d3e0b15a5bc42ca3d62a2215582ec61c47c1364f7b398898ab800a7396f4bc2c"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/task.json",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/task.json",
+      "sha256": "b6f93dfe5b174ea9a2fb188564a066a3f923a915de4d58527fedbb33db156ab8"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/requirements-extra.txt",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/requirements-extra.txt",
+      "sha256": "58c3523b4435996e8658e85943c8fcc22c50dd6e983bf3293c938a3d85bcd9b9"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/native-stack.json",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/native-stack.json",
+      "sha256": "8c029589352faf8418cf982f6255d81e53d7cff357c78512b519cc9950dfdc4e"
+    },
+    {
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/fixtures/asr/development-20261020/manifest.json",
+      "snapshot": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/robo-asr/sources/fixtures/asr/development-20261020/manifest.json",
+      "sha256": "762461372061abac39e2593926ffb69a5e1f71ab4b138c535a9a94f9baa6b463"
+    }
+  ],
+  "ended_utc": "2026-10-19T18:00:24.158534+00:00",
+  "wall_seconds": 547.5722765130922
+}

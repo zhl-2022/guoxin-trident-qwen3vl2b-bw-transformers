@@ -1,0 +1,34 @@
+{
+  "model": "/root/private_data/guoxin-candidates/models/trident",
+  "tokenizer": "/root/private_data/guoxin-candidates/models/trident",
+  "runner": "pooling",
+  "convert": "embed",
+  "dtype": "bfloat16",
+  "tensor_parallel_size": 1,
+  "max_model_len": 8192,
+  "max_num_seqs": 4,
+  "max_num_batched_tokens": 8192,
+  "gpu_memory_utilization": 0.45,
+  "enforce_eager": true,
+  "enable_prefix_caching": false,
+  "trust_remote_code": false,
+  "hf_overrides": {
+    "architectures": [
+      "Qwen3VLForConditionalGeneration"
+    ],
+    "head_dtype": "float32",
+    "use_cache": false
+  },
+  "pooler_config": {
+    "seq_pooling_type": "LAST",
+    "use_activation": true
+  },
+  "limit_mm_per_prompt": {
+    "image": 2,
+    "video": 0
+  },
+  "mm_processor_kwargs": {
+    "do_resize": false
+  },
+  "seed": 0
+}

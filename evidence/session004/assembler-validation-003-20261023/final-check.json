@@ -1,0 +1,70 @@
+{
+  "recorded_utc": "2026-10-23T12:21:24.447248+00:00",
+  "test_counts": {
+    "windows": {
+      "run": 15,
+      "passed": 14,
+      "skipped": 1,
+      "failures": 0,
+      "errors": 0,
+      "successful": true
+    },
+    "wsl": {
+      "run": 15,
+      "passed": 15,
+      "skipped": 0,
+      "failures": 0,
+      "errors": 0,
+      "successful": true
+    }
+  },
+  "source_snapshot_stable": true,
+  "validation": {
+    "path": "evidence/session004/assembler-validation-003-20261023/validation.json",
+    "bytes": 4023,
+    "sha256": "b52f18b7027c56b7d956758be1403c71b6f589fbb54cabc1735d2a15101570f1"
+  },
+  "logs": [
+    {
+      "path": "evidence/session004/assembler-validation-003-20261023/windows.stderr.log",
+      "bytes": 2954,
+      "sha256": "c58530256278d703d52e740f2c73723bf2bf4c3a4e01ee6185c47019df93d2f2"
+    },
+    {
+      "path": "evidence/session004/assembler-validation-003-20261023/windows.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/session004/assembler-validation-003-20261023/wsl.stderr.log",
+      "bytes": 3001,
+      "sha256": "6fc0256ea91618152af455ce48e23f343460a0ed59c6500e5fdc5f2dc82ba15b"
+    },
+    {
+      "path": "evidence/session004/assembler-validation-003-20261023/wsl.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "prior_failures": {
+    "path": "evidence/session004/assembler-validation-003-20261023/prior-failures-summary.json",
+    "bytes": 1469,
+    "sha256": "e92bb2ea48a87806391a46e17d659bef6c165b42fe409d48be8c31e7ce7615c6"
+  },
+  "github_latest": {
+    "path": "evidence/session004/assembler-validation-003-20261023/github-repositories-002.json",
+    "bytes": 3688,
+    "sha256": "5a11be662bcd442ee2cd3f39a632c75fe1b875ebb4e14d0df24381e430c65ba3"
+  },
+  "github_first_round_superseded": {
+    "path": "evidence/session004/assembler-validation-003-20261023/github-repositories.json",
+    "bytes": 2947,
+    "sha256": "fb3277ec49d53421e7f2f235447b3108fe4204389a5d6078d7d16b22c418cfa0"
+  },
+  "github_network_error_classification": "Use github-repositories-002.json; first-round EOF/TLS failures did not show repository absence",
+  "production_assembler_change_by_this_reviewer": false,
+  "test_effectiveness_fix": "Negative policy build tests validate baseline and propagate archived_names; new real tree test admits six ASR metadata leaves and rejects pyvenv.cfg",
+  "actual_stage_created_by_this_review": false,
+  "current_default_stage_exists": false,
+  "remote_writes": false
+}

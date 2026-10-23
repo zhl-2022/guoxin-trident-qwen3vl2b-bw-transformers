@@ -1,0 +1,85 @@
+{
+  "development_only": true,
+  "official_evaluation": "not_run",
+  "sources": [
+    {
+      "id": "qwen-publisher-zh",
+      "url": "https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-ASR-Repo/asr_zh.wav",
+      "path": "fixtures/asr/publisher-qwen-20261020/asr_zh.wav",
+      "sha256": "46dbc998c9d1d48111267c40741dd3200f2e5bcf4075f8c4c97f4451160dce50",
+      "bytes": 134570,
+      "channels": 1,
+      "rate": 16000,
+      "width": 2,
+      "frames": 67263,
+      "compression": "NONE",
+      "seconds": 4.2039375,
+      "reference_text": null,
+      "official_contest_data": false,
+      "natural_recording_verified": false
+    },
+    {
+      "id": "qwen-publisher-en",
+      "url": "https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-ASR-Repo/asr_en.wav",
+      "path": "fixtures/asr/publisher-qwen-20261020/asr_en.wav",
+      "sha256": "f9b4440ac8393e47c14a6240e9739dea09b645bb1592b8f2dd48feb9666cea7f",
+      "bytes": 2172458,
+      "channels": 1,
+      "rate": 48000,
+      "width": 3,
+      "frames": 722459,
+      "compression": "NONE",
+      "seconds": 15.051229166666667,
+      "reference_text": null,
+      "official_contest_data": false,
+      "natural_recording_verified": false
+    }
+  ],
+  "transformations": {
+    "zh": "decode and write same PCM16 samples without resampling",
+    "en": "PCM24 signed samples / 2**23, scipy.signal.resample_poly(1,3), round/clip PCM16",
+    "long": "zh,en,zh,en with 0.25s silence between segments; artificial concatenation"
+  },
+  "numpy": "1.25.0",
+  "scipy": "1.15.3",
+  "samples": [
+    {
+      "id": "zh_16000_pcm16",
+      "path": "fixtures/asr/development-20261020/zh_16000_pcm16.wav",
+      "sha256": "46dbc998c9d1d48111267c40741dd3200f2e5bcf4075f8c4c97f4451160dce50",
+      "bytes": 134570,
+      "seconds": 4.2039375,
+      "sample_rate": 16000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "reference_text": null,
+      "official_contest_data": false
+    },
+    {
+      "id": "en_16000_pcm16",
+      "path": "fixtures/asr/development-20261020/en_16000_pcm16.wav",
+      "sha256": "64e219123047e533c1c1dbb446cb04873ff8c72a2ff20e24ae9d84664d9b455f",
+      "bytes": 481684,
+      "seconds": 15.05125,
+      "sample_rate": 16000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "reference_text": null,
+      "official_contest_data": false
+    },
+    {
+      "id": "zh_en_repeated_39s",
+      "path": "fixtures/asr/development-20261020/zh_en_repeated_39s.wav",
+      "sha256": "b403449966b68821ea1f43d01d1399733f622201cdb57bfe3e43a98343b339c1",
+      "bytes": 1256376,
+      "seconds": 39.260375,
+      "sample_rate": 16000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "reference_text": null,
+      "official_contest_data": false
+    }
+  ],
+  "natural_continuous_recording": false,
+  "source_files_modified": false
+}

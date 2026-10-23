@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "session": "session004",
+  "created_utc": "2026-10-23T12:34:47.199194+00:00",
+  "source": "Fresh SCNet visible UI; screenshot timestamps are capture times, not backend stop timestamps",
+  "all_instances_stopped": true,
+  "all_stopped_evidence": {
+    "path": "evidence/session004/screenshots/all-notebooks-stopped-20261023.png",
+    "bytes": 72900,
+    "sha256": "8bb1411be69da7fb3bb15d55bee7e30ff64c59d3ebb737c031801af1f7246e27",
+    "captured_utc": "2026-10-23T12:22:20.179036+00:00"
+  },
+  "intermediate_platform": {
+    "path": "evidence/session004/screenshots/B-stopped-A-running-20261023.png",
+    "bytes": 74293,
+    "sha256": "65de4ce3385b8194fbfaed318215b838fcd1145ab614f511d75bcc77ff20e898",
+    "captured_utc": "2026-10-23T11:47:14.398566+00:00"
+  },
+  "automatic_stop_configuration": {
+    "path": "evidence/session004/screenshots/notebooks-autooff-20261023.png",
+    "bytes": 74869,
+    "sha256": "6b1b9ee7174a4653adb00db3d1a6d462776e7858b3825738f36c63f6f06ee01b",
+    "captured_utc": "2026-10-23T09:43:08.207429+00:00"
+  },
+  "instances": [
+    {
+      "id": "2112186448839770114",
+      "scope": "Recon",
+      "state": "stopped",
+      "allocated_start_observed_utc": "2026-10-23T09:38:49+00:00",
+      "configured_auto_off_utc": "2026-10-23T12:30:00+00:00",
+      "manual_stop_confirmed": true,
+      "save_environment_selected": true,
+      "observed_stopped_by_utc": "2026-10-23T12:22:20.179036+00:00",
+      "round_budget_cardhours": 3
+    },
+    {
+      "id": "2112237945233408001",
+      "scope": "Robo/ASR/MiMo/Forced/Trident",
+      "state": "stopped",
+      "allocated_start_observed_utc": "2026-10-23T09:36:59+00:00",
+      "configured_auto_off_utc": "2026-10-23T11:35:00+00:00",
+      "manual_stop_confirmed": false,
+      "stop_method": "platform_automatic_deadline",
+      "observed_stopped_by_utc": "2026-10-23T11:47:14.398566+00:00",
+      "round_budget_cardhours": 2
+    },
+    {
+      "id": "2097876209970565121",
+      "scope": "historical reference",
+      "state": "stopped",
+      "started_in_session004": false
+    }
+  ],
+  "resource": {
+    "region": "华中一区【A区】",
+    "group": "113 / hx1hgbwnormal",
+    "card": "BW 64GB",
+    "cards_per_active_instance": 1,
+    "cpu_cores": 15,
+    "memory_gb": 59
+  },
+  "image": {
+    "id": "2071293281204580354",
+    "version_id": "2082674417745739777",
+    "tag": "jupyter-vllm018-ubuntu22.04-dtk26.04-qwen3.6-20260423",
+    "full_actual_registry_reference": null,
+    "access": "Account image is selectable in SCNet Notebook; reviewer access not independently verified"
+  },
+  "balance": {
+    "before_visible_cardhours": "492.6924999999",
+    "after_visible_cardhours": "488.0238888888",
+    "visible_delta_cardhours": "4.6686111111",
+    "after_evidence": {
+      "path": "evidence/session004/screenshots/remaining-cardhours-20261023.png",
+      "bytes": 69694,
+      "sha256": "e982191b4f7392bbb48b3c15f0f24af94dcfaf14a2034894c93d210654cd2c12",
+      "captured_utc": "2026-10-23T12:28:49.526923+00:00"
+    },
+    "final_settled_bill": false,
+    "read_only_start_dialog_cancelled": true,
+    "notebook_restarted_to_read_balance": false
+  },
+  "recharged_or_purchased": false,
+  "contest_form_submitted": false,
+  "scope_boundary": "Platform stop observation is separate from service-process cleanup and official acceptance"
+}

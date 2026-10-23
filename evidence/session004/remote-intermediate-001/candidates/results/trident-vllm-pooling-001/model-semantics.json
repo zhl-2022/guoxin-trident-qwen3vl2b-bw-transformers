@@ -1,0 +1,51 @@
+{
+  "original_architecture": [
+    "Qwen3VLForEmbedding"
+  ],
+  "model_config_unchanged": true,
+  "mmemb": {
+    "type": "qwen3_vl_embedding",
+    "pooling": "last_token",
+    "normalize": true,
+    "embed_dim": null,
+    "dtype": "bfloat16",
+    "attn_implementation": "sdpa",
+    "gradient_checkpointing": true,
+    "hidden_states_from": "inner",
+    "drop_lm_head": true,
+    "max_text_tokens": 4096,
+    "padding_side": "right",
+    "freeze_vision": true,
+    "lora": {
+      "enable": false
+    },
+    "image": {
+      "min_pixels": 262144,
+      "max_pixels": 1310720
+    },
+    "prompt": {
+      "query_instruction": "Represent the query for retrieving relevant content.",
+      "doc_instruction": "Represent the candidate content for retrieval.",
+      "use_system_role": true,
+      "add_generation_prompt": true,
+      "suffix": null
+    },
+    "pretrained_model_name_or_path": "Qwen/Qwen3-VL-2B-Instruct",
+    "add_generation_prompt": true,
+    "max_length": 8192,
+    "use_qwen_vl_utils": true,
+    "video": {
+      "fps": 1,
+      "max_frames": 64,
+      "total_pixels": 7864320
+    }
+  },
+  "header": {
+    "tensor_count": 625,
+    "header_sha256": "a4c22c14e0d987dd572a283e92643374babeccc2f86cf2f8020e6144389c3f4d",
+    "all_keys_match_qwen3_vl_mapper": true,
+    "additional_projection": false,
+    "lm_head_present": false,
+    "full_weight_load_tested": false
+  }
+}

@@ -1,0 +1,37 @@
+nohup: ignoring input
+{"event": "checkpoint_file_verified", "task": "forcedaligner", "path": "chat_template.json", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 1161, "sha256": "75a8cfca24f00de72d796fbfed6858fc9614ef3dabd8696684cc3bc03a9c58ff"}
+{"event": "checkpoint_file_verified", "task": "forcedaligner", "path": "config.json", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 5982, "sha256": "d616c65d46c4b90bdc651b0a0963ea932732241140f337f9bb6b0335a9c8ef09"}
+{"event": "checkpoint_file_verified", "task": "forcedaligner", "path": "generation_config.json", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 115, "sha256": "948d089b23bca1d214e768d59c4438365665f52ec6d33678f4062206b3fbbb8c"}
+{"event": "checkpoint_file_verified", "task": "forcedaligner", "path": "merges.txt", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 1671853, "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"}
+{"event": "checkpoint_file_verified", "task": "forcedaligner", "path": "model.safetensors", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 1835544544, "sha256": "47831d0e82f96b20e9034dba01a075ee06436654719f6a68289e49f1b65ce0e7"}
+{"event": "checkpoint_file_verified", "task": "forcedaligner", "path": "preprocessor_config.json", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 330, "sha256": "45e120a4eda2c20c5d7f2ea9354e63536bf35e27aa573fb7cdf78017b378770d"}
+{"event": "checkpoint_file_verified", "task": "forcedaligner", "path": "tokenizer_config.json", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 12666, "sha256": "3ab80063f8511deb9566e6ad438d17b7a6277fcffd52d92854112f19d36bd81c"}
+{"event": "checkpoint_file_verified", "task": "forcedaligner", "path": "vocab.json", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 2776833, "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"}
+{"event": "checkpoint_file_verified", "task": "mimo9b", "path": "chat_template.jinja", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 3916, "sha256": "59a64ebb4df6d1489d09a91267cf3ceb106162d4a893c4f84833cfb8c897ff63"}
+{"event": "checkpoint_file_verified", "task": "mimo9b", "path": "config.json", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 2784, "sha256": "407c46388b8fa2ae9bf69fe27d40af236d373e86a6b48f5284c86df5cd183633"}
+{"event": "checkpoint_file_verified", "task": "mimo9b", "path": "generation_config.json", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 126, "sha256": "aaed5b26f1cae55c1ceb58fc483c3cd65ee8d386b61daec3d7a9df82432d9205"}
+{"event": "checkpoint_file_verified", "task": "mimo9b", "path": "merges.txt", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 3353259, "sha256": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d"}
+{"event": "checkpoint_file_verified", "task": "mimo9b", "path": "model-00001-of-00004.safetensors", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 5276436216, "sha256": "aab052180118aee34abc3029b54eaa49096aac606b97d703866b420dceb703c3"}
+{"event": "checkpoint_file_verified", "task": "mimo9b", "path": "model-00002-of-00004.safetensors", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 5033171280, "sha256": "7a0486565f06d25ac4628e9dba470dc3f604353471d240d5a0bf7128f64df396"}
+{"event": "checkpoint_file_verified", "task": "mimo9b", "path": "model-00003-of-00004.safetensors", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 5234499504, "sha256": "6c73207563d1879bfd6c143a028cc70be68edff56280458c71a43df4240300f4"}
+{"event": "checkpoint_file_verified", "task": "mimo9b", "path": "model-00004-of-00004.safetensors", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 3275613848, "sha256": "1379a7cf8c0b8555a39ab65a47e830e0eb45e776b46045734da3afd73c09eea2"}
+{"event": "checkpoint_file_verified", "task": "mimo9b", "path": "model.safetensors.index.json", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 69217, "sha256": "4a24d25e902169c0393a2ca58b697c03b27efc40dcddbc2b59c42e5e1e2b1d90"}
+{"event": "checkpoint_file_verified", "task": "mimo9b", "path": "preprocessor_config.json", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 443, "sha256": "3a159dfec9978a186a72ba085e0ad6a050f3968d8b364218d7bd13f5c89381f2"}
+{"event": "checkpoint_file_verified", "task": "mimo9b", "path": "processor_config.json", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 1191, "sha256": "d89ef49ce9cd37fbf510158e13c1ef063d9286411c1ec9049932dbe0487143b1"}
+{"event": "checkpoint_file_verified", "task": "mimo9b", "path": "tokenizer.json", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 19989325, "sha256": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523"}
+{"event": "checkpoint_file_verified", "task": "mimo9b", "path": "tokenizer_config.json", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 1165, "sha256": "792fa3f0cb88b111e54ef3134c873531008c4df471d108da17903426e308aa7b"}
+{"event": "checkpoint_file_verified", "task": "mimo9b", "path": "video_preprocessor_config.json", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 385, "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13"}
+{"event": "checkpoint_file_verified", "task": "mimo9b", "path": "vocab.json", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 6722759, "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"}
+{"event": "checkpoint_file_verified", "task": "trident", "path": "added_tokens.json", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 707, "sha256": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680"}
+{"event": "checkpoint_file_verified", "task": "trident", "path": "chat_template.jinja", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 5292, "sha256": "3636d0f0bd6bef02654cdffdc447b79cb2cef8ab02cc75267345946291a489e4"}
+{"event": "checkpoint_file_verified", "task": "trident", "path": "config.json", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 1536, "sha256": "e2fdf43c0ef5c8c34333467d5d43ecca6c234da95445a7d14954b361f79b6926"}
+{"event": "checkpoint_file_verified", "task": "trident", "path": "merges.txt", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 1671853, "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"}
+{"event": "checkpoint_file_verified", "task": "trident", "path": "mmemb_model.json", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 923, "sha256": "9cc150d8b175d9b6e4ec6bb9f919d50307dca341b537278e59284d1928bff3de"}
+Traceback (most recent call last):
+  File "/root/private_data/guoxin-candidate-tools-20261023/scripts/download_candidate_models_20261023.py", line 263, in <module>
+    raise SystemExit(main())
+  File "/root/private_data/guoxin-candidate-tools-20261023/scripts/download_candidate_models_20261023.py", line 251, in main
+    result = download_file(item, target, item["download_url"], deadline)
+  File "/root/private_data/guoxin-candidate-tools-20261023/scripts/download_candidate_models_20261023.py", line 148, in download_file
+    raise TimeoutError("Overall download deadline reached; partial preserved")
+TimeoutError: Overall download deadline reached; partial preserved

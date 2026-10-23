@@ -1,0 +1,774 @@
+{
+  "schema_version": 1,
+  "session": "session003",
+  "report": "docs/session003-delivery.md",
+  "record_type": "frozen_development_delivery_report",
+  "created_at_utc": "2026-10-19T18:28:04.115206+00:00",
+  "frozen_at_utc": "2026-10-19T19:58:00.361702+00:00",
+  "local_date": "2026-10-20",
+  "timezone": "Asia/Shanghai",
+  "overall_status": "development_evidence_assembled_official_blocked",
+  "final_status": "development_evidence_assembled_official_blocked",
+  "development_evidence_assembled": true,
+  "development_load_completion": {
+    "expected_cells": 12,
+    "verified_cells": 11,
+    "verified_requests": 480,
+    "verified_output_tokens": 491520,
+    "complete_matrix": false,
+    "remaining_cell": "round2_16384_1024_c64",
+    "remaining_cell_status": "timeout_documented"
+  },
+  "all_platform_instances_stopped": true,
+  "formal_ready": false,
+  "official_accuracy": false,
+  "official_performance": false,
+  "contest_submitted": false,
+  "official_blockers": [
+    "Original task evaluator/selfcheck/schema and fixed subsets/references not received",
+    "Official GPU baselines and task-specific metric/decoding/image/audio load definitions unconfirmed",
+    "Actual SCNet Jupyter full registry/repository:tag missing despite verified imageID/version/name/tag",
+    "Clean final-image official evaluation replay not completed",
+    "Recon16K/c64 second round remains timed out; full12-cell development matrix is not complete"
+  ],
+  "report_freeze_policy": {
+    "frozen_snapshot": true,
+    "self_referential_remote_verification_avoided": true,
+    "final_remote_closure_record": null,
+    "final_remote_closure_status": "to_be_recorded_separately_by_root",
+    "closure_scope": [
+      "final common source/evidence/report delta",
+      "strict Sourcefind final archive comparisons",
+      "GitHub final remote commit verification",
+      "bundle contents/hash validation"
+    ],
+    "closure_included_back_into_frozen_manifests": false,
+    "no_final_remote_or_bundle_success_claimed_by_this_report": true
+  },
+  "report_preparation_actions": {
+    "scope": "Only the two report files; no GPU/platform/runtime/taskJSON/stage/repository mutation",
+    "files_written": [
+      "docs/session003-delivery.md",
+      "evidence/session003-delivery-status.json"
+    ],
+    "gpu_used": false,
+    "remote_repositories_modified": false
+  },
+  "platforms": [
+    {
+      "label": "A",
+      "instance_id": "2112186448839770114",
+      "instance_name": "2610192217464264",
+      "state": "stopped",
+      "save_environment_selected": true,
+      "manual_stop_confirmed_local": "2026-10-20T03:48:43+08:00",
+      "stopped_observed_local": "2026-10-20T03:49:00+08:00",
+      "time_precision": "minute observation; confirmation second approximately from tool clock",
+      "auto_off_configured_local": "2026-10-20T03:55:00+08:00",
+      "manual_stop_before_auto_off": true,
+      "maximum_card_hours_this_round": 3,
+      "resumed_approximately_local": "2026-10-20T01:03:32+08:00",
+      "conservative_wall_card_hours_upper_bound": 2.82,
+      "upper_bound_basis": "one card from approximately01:03:32 through03:52, later than verified stopped observation; not a billing conversion",
+      "persistent_project": "/root/private_data/guoxin-hackathon-20261020-session003",
+      "source": "evidence/platform-checkpoint-20261020-003.json",
+      "final_status": "stopped",
+      "tasks": [
+        "recon2reason-bw-vllm"
+      ],
+      "actual_retry_run_id": "bb6a20bae32640c0b924511637d6a222",
+      "service_stop_utc": "2026-10-19T19:46:43.702518+00:00",
+      "auto_off_fallback_triggered": false
+    },
+    {
+      "label": "B",
+      "instance_id": "2112237945233408001",
+      "instance_name": "2610200142242903",
+      "state": "stopped",
+      "save_environment_selected": true,
+      "stop_reported_local": "2026-10-20T02:03:00+08:00",
+      "final_stopped_observation": true,
+      "source": "evidence/platform-checkpoint-20261020-003.json",
+      "final_status": "stopped",
+      "tasks_in_order": [
+        "robobrain-bw-vllm",
+        "qwen3-asr-bw-vllm"
+      ]
+    },
+    {
+      "label": "reference",
+      "instance_id": "2097876209970565121",
+      "state": "stopped",
+      "not_started_in_this_session": true,
+      "source": "evidence/platform-checkpoint-20261020-003.json",
+      "final_status": "stopped"
+    }
+  ],
+  "platform_checkpoint": "evidence/platform-checkpoint-20261020-003.json",
+  "platform_screenshots": {
+    "stopped": "evidence/screenshots/notebooks-stopped-final-003.png",
+    "balance": "evidence/screenshots/balance-after-stop-003.png",
+    "auto_off_backend": "evidence/screenshots/recon-autooff-0355-confirmed-003.png"
+  },
+  "balance": {
+    "before_session_card_hours": "495.766111111",
+    "after_stop_visible_card_hours": "493.5055555555",
+    "visible_snapshot_difference": "2.2605555555",
+    "note": "Visible quota snapshot after reload; settlement may lag. Not asserted to equal wall clock card usage or final bill.",
+    "final_bill_verified": false,
+    "settlement_may_lag": true,
+    "wall_clock_or_billing_conversion_claimed": false
+  },
+  "recharged_or_purchased": false,
+  "tasks": [
+    {
+      "task": "recon2reason-bw-vllm",
+      "model": "BAAI/Recon2Reason-Reasoning-4B",
+      "track": "T02",
+      "task_metadata_status": "functional_verified_with_partial_development_matrix",
+      "task_metadata_file": "tasks/recon2reason-bw-vllm/task.json",
+      "readme": "tasks/recon2reason-bw-vllm/README.md",
+      "results_report": "docs/session003-recon-results.md",
+      "formal_ready": false,
+      "official_accuracy": false,
+      "official_performance": false,
+      "submitted": false,
+      "full_image_reference": null,
+      "development_evidence_only": true,
+      "gpu_completed": {
+        "functional_cases": 7,
+        "all_functional_answers_finished": true,
+        "calibrations": [
+          {
+            "service_max_num_seqs": 4,
+            "client_concurrency": 1,
+            "round": 1,
+            "requests": 8,
+            "completed": 8,
+            "failed": 0,
+            "output_tokens_each": 1024,
+            "output_throughput_tokens_per_second": 21.518136,
+            "output_integrity_verified": true
+          },
+          {
+            "service_max_num_seqs": 16,
+            "service_config_scope": "root UI reported; raw maxseq16 service config/profile pending",
+            "client_concurrency": 8,
+            "round": 1,
+            "requests": 16,
+            "completed": 16,
+            "failed": 0,
+            "output_tokens_each": 1024,
+            "output_throughput_tokens_per_second": 152.477761,
+            "output_integrity_verified": true
+          }
+        ],
+        "calibration_scope": "native vLLM random-mm development load; input4096 means text target, not certified total image/chat input",
+        "audit": "evidence/recon-completed-audit-003.json"
+      },
+      "complete_matrix": {
+        "status": "incomplete_11_of_12_development_cells_verified",
+        "final_status": "incomplete_documented_no_further_gpu_run_this_round",
+        "audit": "evidence/recon-matrix-final-audit-003.json",
+        "summary": "evidence/recon-final-results-summary-003.json",
+        "row_count_planned": 12,
+        "requests_planned": 608,
+        "output_tokens_planned": 622592,
+        "text_input_targets": [
+          4096,
+          16384
+        ],
+        "output_target_tokens": 1024,
+        "client_concurrencies": [
+          1,
+          8,
+          64
+        ],
+        "rounds": [
+          1,
+          2
+        ],
+        "original": {
+          "source": "evidence/session003/recon-matrix/run.json",
+          "status": "incomplete_or_failed",
+          "verified_cells": 10,
+          "verified_requests": 352,
+          "verified_output_tokens": 360448,
+          "total_timeout_seconds": 4000.0,
+          "started_utc": "2026-10-19T17:41:41.427773+00:00",
+          "ended_utc": "2026-10-19T18:48:22.578497+00:00"
+        },
+        "original_terminal_rows": [
+          {
+            "name": "round1_16384_1024_c64",
+            "status": "timeout",
+            "client_wall_seconds": 745.996889,
+            "native_request_counts_verified": false
+          },
+          {
+            "name": "round2_16384_1024_c64",
+            "status": "not_attempted_total_timeout",
+            "native_request_counts_verified": false
+          }
+        ],
+        "retry": {
+          "source": "evidence/session003/recon-matrix-retry/run.json",
+          "status": "incomplete_or_failed",
+          "verified_cells": 1,
+          "verified_requests": 128,
+          "verified_output_tokens": 131072,
+          "total_timeout_seconds": 2697.0,
+          "started_utc": "2026-10-19T19:01:33.531802+00:00",
+          "ended_utc": "2026-10-19T19:46:31.399894+00:00",
+          "run_id": "bb6a20bae32640c0b924511637d6a222",
+          "same_instance": true,
+          "independent_new_run": true,
+          "created_utc": "2026-10-19T18:59:30.678808+00:00",
+          "ready_utc": "2026-10-19T19:01:32.498983+00:00",
+          "service_ended_utc": "2026-10-19T19:46:43.702518+00:00",
+          "actual_run_id": "bb6a20bae32640c0b924511637d6a222",
+          "summary_typo_corrected_without_modifying_original": true,
+          "rows": [
+            {
+              "name": "round1_16384_1024_c64",
+              "status": "complete",
+              "verified": true,
+              "requests": 128,
+              "output_tokens": 131072,
+              "client_wall_seconds": 1388.66132,
+              "output_throughput_tokens_per_second": 98.16924655749037
+            },
+            {
+              "name": "round2_16384_1024_c64",
+              "status": "timeout",
+              "verified": false,
+              "client_wall_seconds": 1307.366197,
+              "native_result_available": false,
+              "completed_or_failed_request_counts": null
+            }
+          ]
+        },
+        "combined": {
+          "expected_cells": 12,
+          "verified_cells": 11,
+          "expected_requests": 608,
+          "verified_requests": 480,
+          "expected_output_tokens": 622592,
+          "verified_output_tokens": 491520,
+          "matrix_complete_verified": false,
+          "combined_development_coverage_complete": false,
+          "missing_cells": [
+            "round2_16384_1024_c64"
+          ],
+          "unverified_request_counts_are_unknown_not_zero": true
+        },
+        "all_verified_requests_output_tokens_each": 1024,
+        "all_verified_generated_texts_nonempty": true,
+        "all_verified_request_errors_empty": true,
+        "unverified_request_counts_are_unknown_not_zero": true,
+        "all_twelve_completed_verified": false,
+        "matrix_complete_verified": false,
+        "combined_development_coverage_complete": false,
+        "server_profile": {
+          "kv_memory_gib": 44.93,
+          "kv_tokens": 327168,
+          "verified_from_raw_final_server_log": true
+        },
+        "scope": "Persistent server with fixed seed=1 permits prefix-cache reuse across rounds/loads; no independent cold start or cache-disabled baseline is verified. Native random-mm development coverage only; no official performance acceptance."
+      },
+      "task_metadata_sha256_at_report_freeze": "3b1b9ef4f725aa4cab4d8c0008e36a47771567b00e81f202a5e76a7a589dffd0",
+      "readme_sha256_at_report_freeze": "5e0ba7d586b4d74f4210cce0afe3625ba265e93839e883c95e1241688d940b47",
+      "results_report_sha256_at_report_freeze": "df4f595fda8597156e84044d6a7758d805ea8d90e826ddf7af3c73588b70076a"
+    },
+    {
+      "task": "robobrain-bw-vllm",
+      "model": "BAAI/RoboBrain2.5-8B-NV",
+      "track": "T02",
+      "task_metadata_status": "head72_compat_gpu_numerical_and_functional_revalidated_official_pending",
+      "task_metadata_file": "tasks/robobrain-bw-vllm/task.json",
+      "readme": "tasks/robobrain-bw-vllm/README.md",
+      "results_report": "docs/session003-robobrain-results.md",
+      "formal_ready": false,
+      "official_accuracy": false,
+      "official_performance": false,
+      "submitted": false,
+      "full_image_reference": null,
+      "development_evidence_only": true,
+      "gpu_completed": {
+        "candidate_sha256": "083dc53f3e4f8171b774469bffa724c2269a9d289769f56a9d7a5624cd81659f",
+        "numerical_cases_distinct": 24,
+        "numeric_repeats_completed": 2,
+        "all_numerical_cases_passed": true,
+        "broadcast_budget_cases_per_repeat": 6,
+        "broadcast_budget_verified": true,
+        "max_absolute_error": 0.0009765625,
+        "heldout_functional_requests": 7,
+        "all_nonempty_stop_untruncated": true,
+        "synthetic_bbox_iou": [
+          0.8839659402511187,
+          0.9024416623854203
+        ],
+        "both_points_inside_synthetic_boxes": true,
+        "actual_vision_sequence_lengths": [
+          1120,
+          1024
+        ],
+        "successful_math_calls": 81,
+        "profiling_bound": [
+          1024,
+          1024
+        ],
+        "scope": "synthetic functional and tensor numerical diagnostics; no official accuracy/trajectory/depth/performance",
+        "run_id": "c43dadd550fb44dabd84f52df49711d5",
+        "service_final_status": "stopped",
+        "cleanup_verified_in_executed_driver": true,
+        "audit": "evidence/robobrain-source-audit-003.json"
+      },
+      "task_metadata_sha256_at_report_freeze": "5755b24af20f85c602ade783a6a885c6f8645b7481af4e07df145acfae60b6e9",
+      "readme_sha256_at_report_freeze": "383b5b155f4aecb2652d48ec3b916fd7abc3aeff88a416391738aff18a26978f",
+      "results_report_sha256_at_report_freeze": "37db526158a1d5383465841767889331970555b446e8b630c681becf285e3497"
+    },
+    {
+      "task": "qwen3-asr-bw-vllm",
+      "model": "Qwen/Qwen3-ASR-1.7B",
+      "track": "T04",
+      "task_metadata_status": "isolated_prepare_publisher_wav_long_and_fullfile_sse_verified_formal_pending",
+      "task_metadata_file": "tasks/qwen3-asr-bw-vllm/task.json",
+      "readme": "tasks/qwen3-asr-bw-vllm/README.md",
+      "results_report": "docs/session003-asr-results.md",
+      "formal_ready": false,
+      "official_accuracy": false,
+      "official_performance": false,
+      "submitted": false,
+      "full_image_reference": null,
+      "development_evidence_only": true,
+      "gpu_completed": {
+        "fresh_task_venv_prepared": true,
+        "locked_cpu_wheels_installed": 7,
+        "protected_native_packages_unchanged": 12,
+        "audio_cases": [
+          {
+            "language": "zh",
+            "duration_seconds": 4.2039375,
+            "http_roundtrip_seconds": 4.889441,
+            "returned_characters": 14
+          },
+          {
+            "language": "en",
+            "duration_seconds": 15.05125,
+            "http_roundtrip_seconds": 1.807355,
+            "returned_characters": 188
+          },
+          {
+            "language": "zh_en_development_splice",
+            "duration_seconds": 39.260375,
+            "http_roundtrip_seconds": 4.204148,
+            "returned_characters": 393,
+            "natural_continuous_recording": false
+          }
+        ],
+        "audio_reference_independently_verified": false,
+        "wer_cer_computed": false,
+        "ordinary_transcription_finish_reason_available": false,
+        "sse": {
+          "input_mode": "one complete WAV upload",
+          "events": 12,
+          "finish_reason": "stop",
+          "done_received": true,
+          "usage": {
+            "prompt_tokens": 65,
+            "completion_tokens": 11,
+            "total_tokens": 76
+          },
+          "nonempty_transcript_body_observed": true,
+          "raw_protocol_prefix_preserved": true,
+          "realtime_audio_input_verified": false
+        },
+        "run_id": "6b00889feafc4ea1af2133b5c4a3317a",
+        "service_final_status": "stopped",
+        "cleanup_verified_in_executed_driver": true,
+        "audit": "evidence/asr-copy-provenance-003.json",
+        "scope": "publisher-derived audio development diagnostics, not official accuracy/RTF/performance"
+      },
+      "task_metadata_sha256_at_report_freeze": "e51eaed230eb430edc709d724b661be24386671776c6469d9415b48c236d806d",
+      "readme_sha256_at_report_freeze": "835cb61dcce9569d3bf5d8b52a9df437b2fef7f61bd04d801640b2551b5faa75",
+      "results_report_sha256_at_report_freeze": "577f21fb442067a2c29c7e7d4b2840747494cdd40fa7b3a2ef989aaea942d4cf"
+    }
+  ],
+  "repositories": [
+    {
+      "task": "recon2reason-bw-vllm",
+      "sourcefind": {
+        "url": "https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-recon2reason-bw-vllm",
+        "private": true,
+        "private_visibility_source": "root agent direct UI observation relayed to this report author",
+        "last_archive_verified_snapshot": {
+          "verification_file": "evidence/sourcefind-recon-initial-003-verification.json",
+          "commit": "94a972c4fd78df85c60cd35856569dea62929509",
+          "file_count": 181,
+          "archive_sha256": "c53c08b16262a3d6c659494fbf3e693ce26f6abea9e21a6fc867610a2219033e",
+          "scope": "Historical snapshot only; not a latest/final repository verification"
+        },
+        "current_update": {
+          "status": "post_metadata_snapshot_strict_verified_final_closure_separate",
+          "post_metadata_snapshot_verified": true,
+          "final_closure_delta_verified_in_this_report": false,
+          "final_remote_content_verified": false,
+          "verification_policy": "Final closure delta must be recorded outside frozen payload manifests; no success asserted here"
+        },
+        "project_id": 15915,
+        "post_metadata_snapshot": {
+          "verification_file": "evidence/sourcefind-recon-post-metadata-003-verification.json",
+          "reported_commit": "af6eccdcf268c78fc871076c869ce0e21018cabd",
+          "commit_precision": "full",
+          "actual_zip_files": 315,
+          "matched_files": 315,
+          "missing_files": [],
+          "extra_files": [],
+          "mismatched_files": [],
+          "all_bytes_match": true,
+          "archive_sha256": "a1a6c49787c145663b27d6ed7e4344283cae230b8f018f7cb64aab2fea22178b",
+          "target_manifest_sha256": "07dab6c82e50a250e0ef4419ed04aca99dc17d80bcf7bc0d5001617b088bc96b",
+          "scope": "Exact frozen post-metadata snapshot only; finalraw/stop/report closure delta verified separately"
+        }
+      },
+      "github": {
+        "url": "https://github.com/zhl-2022/guoxin-recon2reason-bw-vllm",
+        "private": true,
+        "last_recorded_verified_commit": "923a25cbfed9f6f3e73847ff4236f8d63b67a25e",
+        "last_recorded_at_utc": "2026-10-19T17:20:25.453203+00:00",
+        "verification_file": "evidence/github-private-repositories-003.json",
+        "final_session003_update_verified": false,
+        "status": "private_backup_recorded_final_commit_check_in_external_closure"
+      },
+      "local_stage": "dist/repositories-stage003/recon2reason-bw-vllm"
+    },
+    {
+      "task": "robobrain-bw-vllm",
+      "sourcefind": {
+        "url": "https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-robobrain-bw-vllm",
+        "private": true,
+        "private_visibility_source": "root agent direct UI observation relayed to this report author",
+        "last_archive_verified_snapshot": {
+          "verification_file": "evidence/sourcefind-robo-initial-003-verification.json",
+          "commit": "1503dc5a8f487a1c3a2ce681a31b3d7b6593a91d",
+          "file_count": 184,
+          "archive_sha256": "ef6e0f406f201f8ad080de08783c01f5e678eed8fd0cde6686be3e62cfc6b0e6",
+          "scope": "Historical snapshot only; not a latest/final repository verification"
+        },
+        "current_update": {
+          "status": "post_metadata_snapshot_strict_verified_final_closure_separate",
+          "post_metadata_snapshot_verified": true,
+          "final_closure_delta_verified_in_this_report": false,
+          "final_remote_content_verified": false,
+          "verification_policy": "Final closure delta must be recorded outside frozen payload manifests; no success asserted here"
+        },
+        "project_id": 15916,
+        "post_metadata_snapshot": {
+          "verification_file": "evidence/sourcefind-robo-post-metadata-003-verification.json",
+          "reported_commit": "40884bbd",
+          "commit_precision": "prefix",
+          "actual_zip_files": 318,
+          "matched_files": 318,
+          "missing_files": [],
+          "extra_files": [],
+          "mismatched_files": [],
+          "all_bytes_match": true,
+          "archive_sha256": "d9be778a81859cd8445746dcbf5f8275686912151712f5bd6c1c8dbc7e7fc1f9",
+          "target_manifest_sha256": "0a275f6e38d42ab483e6707fcf6fefe0be198978915ebcfef4ee1efccf9b4162",
+          "scope": "Exact frozen post-metadata snapshot only; finalraw/stop/report closure delta verified separately"
+        },
+        "old_task_json_correction_verified": true
+      },
+      "github": {
+        "url": "https://github.com/zhl-2022/guoxin-robobrain-bw-vllm",
+        "private": true,
+        "last_recorded_verified_commit": "b0d9006a16f05f66a6669d8cd648df979933a32d",
+        "last_recorded_at_utc": "2026-10-19T17:20:25.453203+00:00",
+        "verification_file": "evidence/github-private-repositories-003.json",
+        "final_session003_update_verified": false,
+        "status": "private_backup_recorded_final_commit_check_in_external_closure"
+      },
+      "local_stage": "dist/repositories-stage003/robobrain-bw-vllm"
+    },
+    {
+      "task": "qwen3-asr-bw-vllm",
+      "sourcefind": {
+        "url": "https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-qwen3-asr-bw-vllm",
+        "private": true,
+        "private_visibility_source": "root agent direct UI observation relayed to this report author",
+        "last_archive_verified_snapshot": {
+          "verification_file": "evidence/sourcefind-asr-complete-003-verification.json",
+          "commit": "d7dec559365f78456a3b3344305c633b92b6851b",
+          "file_count": 183,
+          "archive_sha256": "6e292b751643672c91a154d8facf577fb34ee15e9c00cdb398452a169c7f646b",
+          "scope": "Historical snapshot only; not a latest/final repository verification"
+        },
+        "current_update": {
+          "status": "post_metadata_snapshot_strict_verified_final_closure_separate",
+          "post_metadata_snapshot_verified": true,
+          "final_closure_delta_verified_in_this_report": false,
+          "final_remote_content_verified": false,
+          "verification_policy": "Final closure delta must be recorded outside frozen payload manifests; no success asserted here"
+        },
+        "project_id": 15917,
+        "post_metadata_snapshot": {
+          "verification_file": "evidence/sourcefind-asr-post-metadata-003-verification.json",
+          "reported_commit": "b4913d3e",
+          "commit_precision": "prefix",
+          "actual_zip_files": 317,
+          "matched_files": 317,
+          "missing_files": [],
+          "extra_files": [],
+          "mismatched_files": [],
+          "all_bytes_match": true,
+          "archive_sha256": "937044109d46290d6206150b85cbd618a25dd0fc2aafebee9a8d268798ef85d8",
+          "target_manifest_sha256": "c3cc3a44c95bc01f838e7e1954d0cd0ba0d906055b5b1e8b16d0af6ea6149688",
+          "scope": "Exact frozen post-metadata snapshot only; finalraw/stop/report closure delta verified separately"
+        }
+      },
+      "github": {
+        "url": "https://github.com/zhl-2022/guoxin-qwen3-asr-bw-vllm",
+        "private": true,
+        "last_recorded_verified_commit": "62859c68edfb6d8f7b60f13a63f9710077af6fb9",
+        "last_recorded_at_utc": "2026-10-19T17:20:25.453203+00:00",
+        "verification_file": "evidence/github-private-repositories-003.json",
+        "final_session003_update_verified": false,
+        "status": "private_backup_recorded_final_commit_check_in_external_closure"
+      },
+      "local_stage": "dist/repositories-stage003/qwen3-asr-bw-vllm"
+    }
+  ],
+  "community_delivery": {
+    "status": "engineering_metadata_prepared",
+    "evidence": "evidence/community-metadata-003.json",
+    "project_ids": {
+      "recon2reason-bw-vllm": 15915,
+      "robobrain-bw-vllm": 15916,
+      "qwen3-asr-bw-vllm": 15917
+    },
+    "root_files": [
+      "model.properties",
+      "LICENSE",
+      "icon.png",
+      "README_origin.md",
+      "requirements.txt"
+    ],
+    "root_promotion_implemented": true,
+    "fixed_upstream_sources_hashed": true,
+    "icons_png_ihdr_dimensions": [
+      410,
+      410
+    ],
+    "observed_accelerator": "BW",
+    "specific_accelerator_suffix_verified": false,
+    "root_requirements_install_targets": false,
+    "license_choice": "user_chose_scope_notice_no_repositorywide_license",
+    "license_ready": false,
+    "weights_license_scope_separate": true,
+    "evidence_sha256_at_report_freeze": "88b5293c3f67007c27e21366c2241a609d2c692fb020303312f3ab3967f4909a",
+    "final_remote_promotion_scope": "Three frozen post-metadata snapshots strict verified; later closure changes separate",
+    "post_metadata_snapshots_verified": true,
+    "final_closure_delta_promotion_verified_in_this_report": false
+  },
+  "cpu_validation": {
+    "latest_evidence": "evidence/local-validation-session003-final-003.json",
+    "latest_log": "evidence/local-tests-session003-final-003.log",
+    "tests_run": 175,
+    "passed": 169,
+    "skipped": 6,
+    "failed": 0,
+    "exit_code": 0,
+    "unittest_seconds": 56.183,
+    "outer_wall_seconds": 62.375,
+    "canonical_python_sources_unchanged_during_suite": true,
+    "canonical_source_file_count": 46,
+    "gpu_checks_run": false,
+    "historical_compilation_and_cli": {
+      "repeated_in_latest_run": false,
+      "evidence": "evidence/local-validation-session003-final-002.json",
+      "compiled_python_files": 46
+    },
+    "targeted_audit_checks": {
+      "Windows": {
+        "passed": 8,
+        "failed": 0
+      },
+      "WSL": {
+        "passed": 8,
+        "failed": 0
+      },
+      "counted_as_additional_full_suite_tests": false
+    }
+  },
+  "execution_source_boundaries": {
+    "original_robo_asr_gpu": {
+      "driver_sha256": "3fdd8ee4ca4daa47993b5589367ac95a551f0fa7ebc26f8d23d8e516c4004238",
+      "runtime_sha256": "04b0c91fd0596360f142021800f1487af5a83264cb6de5971b954b45dc80b422",
+      "sse_client_sha256": "20df684b5c82ea8eb1ecb002ca12adc23c236d94d5e7ab089c434153d7114edf",
+      "scope": "Executed source snapshots preserved unchanged"
+    },
+    "final_shared_runtime": {
+      "sha256": "66e9a97c63469698bfc09fbc1158a28fbd7a48f52877abb21156785a33ab1221",
+      "gpu_launch_verified": true,
+      "same_run_stop_and_cleanup_verified": true,
+      "run_id": "bb6a20bae32640c0b924511637d6a222",
+      "scope": "Actual Recon independent retry only; does not imply all Robo/ASR new-driver paths ran on GPU",
+      "evidence": [
+        "evidence/recon-final-zip-verification-003.json",
+        "evidence/recon-matrix-final-audit-003.json"
+      ]
+    },
+    "new_robo_asr_orchestrator": {
+      "sha256": "20f358fa199f4e18db08072aa6ccf1a21019fff197233c335ab2555d50491345",
+      "validation": "CPU_only",
+      "gpu_revalidated": false,
+      "evidence": "evidence/rules/session003-run-identity-cpu-004.json"
+    },
+    "new_sse_client": {
+      "sha256": "3ae83568801ff05787cef6b959d3cfc28b63d3014e04049d8803cb3cd35a7f05",
+      "validation": "CPU_loopback_only",
+      "gpu_revalidated": false,
+      "evidence": "evidence/rules/asr-sse-integrity-cpu-004.json"
+    }
+  },
+  "original_evidence": {
+    "archive": "dist/session003-completed-intermediate.zip",
+    "archive_sha256": "61dae05b974e3b0151e90885818493bfe27f461c58125f529eae1c79cbcba9fd",
+    "payload_files_verified": 121,
+    "manifest_verified": true,
+    "scope": "completed intermediate snapshot; does not certify concurrently running Recon matrix completed",
+    "original_session_files_preserved": true
+  },
+  "recon_final_evidence": {
+    "archive": "dist/session003-recon-final.zip",
+    "bytes": 4287828,
+    "sha256": "e120e32c0d00c67545c7a50c7a572ba3d8a828152cabbad180821ac7e5114bef",
+    "zip_entries": 68,
+    "payload_files": 67,
+    "manifest_verified": true,
+    "verification": "evidence/recon-final-zip-verification-003.json",
+    "merge": "evidence/recon-final-merge-003.json",
+    "audit": "evidence/recon-matrix-final-audit-003.json",
+    "summary": "evidence/recon-final-results-summary-003.json",
+    "actual_run_id": "bb6a20bae32640c0b924511637d6a222",
+    "owned_service_cleanup": {
+      "captured_utc": "2026-10-19T19:47:37.618812+00:00",
+      "run_id": "bb6a20bae32640c0b924511637d6a222",
+      "state_status": "stopped",
+      "supervisor_same_identity_alive": false,
+      "server_same_identity_alive": false,
+      "port_30000_open": false,
+      "platform_shutdown_verified": false,
+      "scope": "Read-only owned process start-token and loopback-port observation; platform shutdown is separately verified in UI",
+      "owned_service_cleanup_verified": true
+    },
+    "original_evidence_files_modified": false
+  },
+  "image_identity": {
+    "actual_scnet_private_image": {
+      "image_id": "2071293281204580354",
+      "version_id": "2082674417745739777",
+      "name": "vllm018-ubuntu22.04-dtk26.04-qwen3.6-20260423",
+      "tag": "jupyter-vllm018-ubuntu22.04-dtk26.04-qwen3.6-20260423",
+      "size_display": "51.64GB",
+      "updated_date_display": "07-30",
+      "full_registry_reference": null,
+      "full_registry_reference_observed_in_image_form": false,
+      "large_image_export_cancelled": true,
+      "image_modified_by_lookup": false,
+      "source_id": "image_identity"
+    },
+    "public_modelzoo_base_only": {
+      "readme_commit": "d2864a6a8dfd8f22c80fa08e1c01ea28d41b269f",
+      "reference": "harbor.sourcefind.cn:5443/dcu/admin/base/custom:vllm018-ubuntu22.04-dtk26.04-qwen3.6-20260423",
+      "scope": "public base image only; not verified as the actual SCNet Jupyter full reference"
+    },
+    "torch_runtime_preferred_over_ui": {
+      "runtime": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+      "ui": "2.9",
+      "policy": "Actual runtime evidence prevails; UI label is not package verification"
+    }
+  },
+  "official_materials": {
+    "original_task_evaluators_received": false,
+    "original_selfchecks_received": false,
+    "fixed_subsets_received": false,
+    "official_gpu_baselines_received": false,
+    "task_specific_metric_and_decoding_confirmed": false,
+    "full_registry_image_references_received": false,
+    "clean_final_image_replay_completed": false,
+    "claim_receipt_is_extra_development_prerequisite": false,
+    "optional_digest_is_not_invented_official_requirement": true,
+    "public_search_report": "docs/official-material-search-round2-20261020.md",
+    "cloud_review_report": "docs/cloud-materials-and-repository-access-20261020.md",
+    "cloud_section_observation": "verify.py text is inside an embedded table image; current review did not expose a download URL. This does not prove global absence."
+  },
+  "sources": [
+    {
+      "id": "gpu_completed_audits",
+      "type": "downloaded_raw_and_independent_offline_audits",
+      "paths": [
+        "evidence/recon-matrix-final-audit-003.json",
+        "evidence/recon-final-results-summary-003.json",
+        "evidence/recon-final-zip-verification-003.json",
+        "evidence/recon-final-merge-003.json",
+        "evidence/robobrain-source-audit-003.json",
+        "evidence/asr-copy-provenance-003.json",
+        "evidence/recon-final-local-closure-003.json"
+      ],
+      "scope": "Verified development outputs and exact executed source identities; no official acceptance"
+    },
+    {
+      "id": "final_platform",
+      "type": "root_direct_platform_observation_and_structured_checkpoint",
+      "paths": [
+        "evidence/platform-checkpoint-20261020-003.json",
+        "evidence/screenshots/notebooks-stopped-final-003.png",
+        "evidence/screenshots/balance-after-stop-003.png",
+        "evidence/screenshots/recon-autooff-0355-confirmed-003.png"
+      ],
+      "scope": "A/B/reference stopped, A environment save ON, manual stop before auto-off; visible balance is not final bill"
+    },
+    {
+      "id": "postmetadata_repositories",
+      "type": "downloaded_strict_byte_comparisons",
+      "paths": [
+        "evidence/sourcefind-recon-post-metadata-003-verification.json",
+        "evidence/sourcefind-robo-post-metadata-003-verification.json",
+        "evidence/sourcefind-asr-post-metadata-003-verification.json"
+      ],
+      "scope": "Immutable frozen post-metadata commit/archive snapshots only; final common delta/remote closure separate"
+    },
+    {
+      "id": "latest_cpu_tests",
+      "type": "executed_full_windows_suite_and_source_stability_check",
+      "paths": [
+        "evidence/local-validation-session003-final-003.json",
+        "evidence/local-tests-session003-final-003.log"
+      ],
+      "scope": "175run169passed6explicit platform skips;46 source hashes stable; compile/CLI not repeated"
+    },
+    {
+      "id": "community",
+      "type": "fixed_source_provenance_and_user_explicit_license_choice",
+      "paths": [
+        "evidence/community-metadata-003.json"
+      ],
+      "scope": "Actual IDs, fixed upstream/icon hashes, user chose scope notice with no repository-wide license"
+    },
+    {
+      "id": "image_identity",
+      "type": "root_direct_SCNet_image_UI_and_fixed_official_ModelZoo_source",
+      "paths": [],
+      "scope": "Actual imageID/version/name/tag observed; full actual registry reference not exposed; publicbase image separate"
+    }
+  ],
+  "next_execution_boundary": [
+    "All GPU instances stopped; no automatic continuation or additional card allocation to chase remaining16K/c64 round2",
+    "Root completes final common delta/GitHub/bundle checks and stores external closure without rewriting the frozen manifests to include their own verification",
+    "Keep original successes, timeout/unattempted states, source snapshots and licenses separate; do not promote development evidence to official acceptance",
+    "Revisit official evaluator/data/baseline/full image reference before any formal replay; final contest submission waits user explicit instruction"
+  ],
+  "sensitive_credentials_recorded": false
+}

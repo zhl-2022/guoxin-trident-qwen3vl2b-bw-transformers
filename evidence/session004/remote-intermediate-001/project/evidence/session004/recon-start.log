@@ -1,0 +1,43 @@
+nohup: ignoring input
+{
+  "run_id": "4ecf16914a374d5ca91cee3dd11bfe3a",
+  "status": "ready",
+  "created_utc": "2026-10-23T09:46:51.545331+00:00",
+  "supervisor_pid": 423,
+  "supervisor_token": "277619411",
+  "config_path": "/root/private_data/guoxin-hackathon-20261023-session004/tasks/recon2reason-bw-vllm/runtime/config-4ecf16914a374d5ca91cee3dd11bfe3a.json",
+  "url": "http://127.0.0.1:30000",
+  "max_runtime_seconds": 5500,
+  "framework": "vllm",
+  "precision": "bf16",
+  "command": [
+    "/usr/bin/python",
+    "-m",
+    "vllm.entrypoints.openai.api_server",
+    "--model",
+    "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+    "--served-model-name",
+    "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "30000",
+    "--tensor-parallel-size",
+    "1",
+    "--dtype",
+    "bfloat16",
+    "--max-model-len",
+    "32768",
+    "--gpu-memory-utilization",
+    "0.85",
+    "--enforce-eager",
+    "--max-num-seqs",
+    "16",
+    "--limit-mm-per-prompt",
+    "{\"image\":2,\"video\":0}"
+  ],
+  "server_pid": 424,
+  "server_token": "277619430",
+  "ready_utc": "2026-10-23T09:48:45.075284+00:00"
+}
+Service ready. The supervisor continues enforcing its runtime limit.

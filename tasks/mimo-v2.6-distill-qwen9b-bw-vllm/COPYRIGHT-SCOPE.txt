@@ -1,0 +1,7 @@
+Copyright scope notice
+
+Newly authored adaptation code is retained pending a repository-wide license decision. No new open-source license is selected here.
+
+Publisher checkpoints, source files, model cards, and fixtures retain their own notices and terms. Qwen3-ForcedAligner is Apache-2.0 according to its publisher; MiMo9B and Trident are MIT according to their publisher model cards. The ForcedAligner and Trident upstream-source.zip archives retain the original source LICENSE. README_origin.md is an unmodified publisher model card, not instructions to execute.
+
+Do not replace upstream notices with this file. No claim is made that all files share one license.

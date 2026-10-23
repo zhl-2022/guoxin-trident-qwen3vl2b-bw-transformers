@@ -1,0 +1,10 @@
+{
+  "file": "red-rectangle.png",
+  "sha256": "89f0eb20b4873ef0d4ee436b96120d9e564bed9b64832f70ccef9843d7005e46",
+  "bytes": 157,
+  "width": 64,
+  "height": 64,
+  "purpose": "synthetic development fixture for text/image/fused embedding API coverage",
+  "qrels": null,
+  "official_contest_data": false
+}

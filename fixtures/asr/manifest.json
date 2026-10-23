@@ -1,0 +1,24 @@
+{
+  "scope": "Locally synthesized transport and transcription diagnostics; not an official dataset or accuracy score.",
+  "source": "Windows System.Speech installed desktop voices",
+  "cases": [
+    {
+      "sample_rate_hz": 16000,
+      "channels": 1,
+      "voice": "Microsoft Huihui Desktop",
+      "expected_text": "这是语音识别功能测试。今天我们在国产算力平台上验证中文语音识别。",
+      "sample_bits": 16,
+      "sha256": "1690a7f5c0304bedf4a319a73deda41d21945de26640b6a2c441cc3882c01377",
+      "file": "zh_system_tts.wav"
+    },
+    {
+      "sample_rate_hz": 16000,
+      "channels": 1,
+      "voice": "Microsoft Zira Desktop",
+      "expected_text": "This is a speech recognition test. We are checking a model on a single accelerator.",
+      "sample_bits": 16,
+      "sha256": "6c268637b73d810007ee231a85113eacec952c9296f8e458eddff705dd7452d7",
+      "file": "en_system_tts.wav"
+    }
+  ]
+}

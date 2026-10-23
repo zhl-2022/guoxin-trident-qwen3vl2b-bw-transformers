@@ -1,0 +1,50 @@
+{
+  "torch": {
+    "version": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+    "root": "/usr/local/lib/python3.10/dist-packages"
+  },
+  "torchvision": {
+    "version": "0.25.0+das.opt1.dtk2604.torch2100.20260325.g860505",
+    "root": "/usr/local/lib/python3.10/dist-packages"
+  },
+  "transformers": {
+    "version": "5.5.0",
+    "root": "/usr/local/lib/python3.10/dist-packages"
+  },
+  "vllm": {
+    "version": "0.18.1+das.fa71803.dtk2604",
+    "root": "/usr/local/lib/python3.10/dist-packages"
+  },
+  "vllm-hcu": {
+    "version": "0.18.1+das.dtk2604",
+    "root": "/usr/local/lib/python3.10/dist-packages"
+  },
+  "numpy": {
+    "version": "1.25.0",
+    "root": "/usr/local/lib/python3.10/dist-packages"
+  },
+  "scipy": {
+    "version": "1.15.3",
+    "root": "/usr/local/lib/python3.10/dist-packages"
+  },
+  "triton": {
+    "version": "3.6.0+gitc73250c4.staging",
+    "root": "/usr/local/lib/python3.10/dist-packages"
+  },
+  "flash-attn": {
+    "version": "2.8.3+das.opt1.dtk2604.torch2100.20260330.g3f0061",
+    "root": "/usr/local/lib/python3.10/dist-packages"
+  },
+  "lightop": {
+    "version": "0.6.0+das.dtk2604.torch2100.2604101656.g193111",
+    "root": "/usr/local/lib/python3.10/dist-packages"
+  },
+  "aiter": {
+    "version": "0.1.2+das.opt1.dtk2604.torch2100.2604212021.gd52133",
+    "root": "/usr/local/lib/python3.10/dist-packages"
+  },
+  "python-multipart": {
+    "version": "0.0.22",
+    "root": "/usr/local/lib/python3.10/dist-packages"
+  }
+}

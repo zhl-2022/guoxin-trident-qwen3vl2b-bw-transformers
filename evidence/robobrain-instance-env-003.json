@@ -1,0 +1,6 @@
+{
+  "host": "crdnotebook-2112237945233408001-ac3p4mowhz-79491",
+  "python": "3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0]",
+  "project_exists": true,
+  "vllm": "0.18.1+das.fa71803.dtk2604"
+}

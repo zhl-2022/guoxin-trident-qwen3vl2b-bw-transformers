@@ -1,0 +1,268 @@
+{
+  "install": [
+    {
+      "name": "audioread",
+      "version": "3.0.1",
+      "filename": "audioread-3.0.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/57/8d/30aa32745af16af0a9a650115fbe81bde7c610ed5c21b381fca0196f3a7f/audioread-3.0.1-py3-none-any.whl",
+      "sha256": "4cdce70b8adc0da0a3c9e0d85fb10b3ace30fbdf8d1670fd443929b61d117c33",
+      "size": 23492,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/audioread/3.0.1/json"
+    }
+  ],
+  "reuse_without_install": [
+    {
+      "name": "accelerate",
+      "version": "1.12.0",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "certifi",
+      "version": "2026.1.4",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "cffi",
+      "version": "2.0.0",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.4.4",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "cython",
+      "version": "3.0.12",
+      "root": "/root/private_data/guoxin-candidates/envs/forcedaligner-001/lib/python3.10/site-packages",
+      "mode": "reuse_satisfied_candidate"
+    },
+    {
+      "name": "decorator",
+      "version": "5.3.1",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "dynet38",
+      "version": "2.2",
+      "root": "/root/private_data/guoxin-candidates/envs/forcedaligner-001/lib/python3.10/site-packages",
+      "mode": "reuse_satisfied_candidate"
+    },
+    {
+      "name": "filelock",
+      "version": "3.24.3",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "fsspec",
+      "version": "2025.10.0",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "hf-xet",
+      "version": "1.4.3",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "huggingface-hub",
+      "version": "0.36.0",
+      "root": "/root/private_data/guoxin-candidates/envs/forcedaligner-001/lib/python3.10/site-packages",
+      "mode": "reuse_satisfied_candidate"
+    },
+    {
+      "name": "idna",
+      "version": "3.11",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "joblib",
+      "version": "1.5.3",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "lazy-loader",
+      "version": "0.4",
+      "root": "/root/private_data/guoxin-candidates/envs/forcedaligner-001/lib/python3.10/site-packages",
+      "mode": "reuse_satisfied_candidate"
+    },
+    {
+      "name": "librosa",
+      "version": "0.11.0",
+      "root": "/root/private_data/guoxin-candidates/envs/forcedaligner-001/lib/python3.10/site-packages",
+      "mode": "reuse_satisfied_candidate"
+    },
+    {
+      "name": "llvmlite",
+      "version": "0.44.0",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "msgpack",
+      "version": "1.1.2",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "nagisa",
+      "version": "0.2.11",
+      "root": "/root/private_data/guoxin-candidates/envs/forcedaligner-001/lib/python3.10/site-packages",
+      "mode": "reuse_satisfied_candidate"
+    },
+    {
+      "name": "numba",
+      "version": "0.61.2",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "numpy",
+      "version": "1.25.0",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "packaging",
+      "version": "26.0",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "platformdirs",
+      "version": "4.9.2",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "pooch",
+      "version": "1.8.2",
+      "root": "/root/private_data/guoxin-candidates/envs/forcedaligner-001/lib/python3.10/site-packages",
+      "mode": "reuse_satisfied_candidate"
+    },
+    {
+      "name": "psutil",
+      "version": "7.2.2",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "pycparser",
+      "version": "3.0",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "pyyaml",
+      "version": "6.0.3",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "regex",
+      "version": "2026.2.19",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "requests",
+      "version": "2.32.5",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "safetensors",
+      "version": "0.7.0",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "scikit-learn",
+      "version": "1.6.1",
+      "root": "/root/private_data/guoxin-candidates/envs/forcedaligner-001/lib/python3.10/site-packages",
+      "mode": "reuse_satisfied_candidate"
+    },
+    {
+      "name": "scipy",
+      "version": "1.15.3",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "six",
+      "version": "1.16.0",
+      "root": "/usr/lib/python3/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "soundfile",
+      "version": "0.13.1",
+      "root": "/root/private_data/guoxin-candidates/envs/forcedaligner-001/lib/python3.10/site-packages",
+      "mode": "reuse_satisfied_candidate"
+    },
+    {
+      "name": "soxr",
+      "version": "0.5.0.post1",
+      "root": "/root/private_data/guoxin-candidates/envs/forcedaligner-001/lib/python3.10/site-packages",
+      "mode": "reuse_satisfied_candidate"
+    },
+    {
+      "name": "soynlp",
+      "version": "0.0.493",
+      "root": "/root/private_data/guoxin-candidates/envs/forcedaligner-001/lib/python3.10/site-packages",
+      "mode": "reuse_satisfied_candidate"
+    },
+    {
+      "name": "threadpoolctl",
+      "version": "3.6.0",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "tokenizers",
+      "version": "0.22.2",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "torch",
+      "version": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "tqdm",
+      "version": "4.67.3",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "transformers",
+      "version": "4.57.6",
+      "root": "/root/private_data/guoxin-candidates/envs/forcedaligner-001/lib/python3.10/site-packages",
+      "mode": "reuse_satisfied_candidate"
+    },
+    {
+      "name": "typing-extensions",
+      "version": "4.15.0",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    },
+    {
+      "name": "urllib3",
+      "version": "2.6.3",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "mode": "reuse_recorded_native"
+    }
+  ]
+}

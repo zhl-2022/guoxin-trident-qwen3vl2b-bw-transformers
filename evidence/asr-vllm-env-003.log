@@ -1,0 +1,83 @@
+{
+  "captured_utc": "2026-10-19T17:57:13.209674+00:00",
+  "python": "3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0]",
+  "image_requested": "",
+  "image_candidate_name": "jupyter-vllm018-ubuntu22.04-dtk26.04-qwen3.6-20260423",
+  "image_effective": null,
+  "image_note": "Configured candidate only; this script cannot attest to the running container digest.",
+  "card": "BW",
+  "framework": "vllm",
+  "precision": "bf16",
+  "packages": {
+    "torch": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+    "triton": "3.6.0+gitc73250c4.staging",
+    "transformers": "5.5.0",
+    "tokenizers": "0.22.2",
+    "sglang": null,
+    "sglang-das": null,
+    "vllm": "0.18.1+das.fa71803.dtk2604",
+    "vllm-plugin-das": null,
+    "vllm-hcu": "0.18.1+das.dtk2604"
+  },
+  "configuration": {
+    "task": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm",
+    "framework": "vllm",
+    "precision": "bf16",
+    "model_id": "Qwen/Qwen3-ASR-1.7B",
+    "model_path": "/root/private_data/SothisAI/model/Aihub/Qwen3-ASR-1.7B/main/Qwen3-ASR-1.7B",
+    "served_name": "qwen3-asr-1.7b",
+    "host": "127.0.0.1",
+    "port": 30002,
+    "tp": 1,
+    "max_len": 32768,
+    "mem_frac": 0.85,
+    "load_timeout": 600,
+    "max_runtime": 1800,
+    "stop_grace": 30,
+    "extra": [
+      "--enforce-eager",
+      "--max-num-seqs",
+      "4"
+    ],
+    "command": [
+      "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/runtime/audio-venv/bin/python",
+      "-m",
+      "vllm.entrypoints.openai.api_server",
+      "--model",
+      "/root/private_data/SothisAI/model/Aihub/Qwen3-ASR-1.7B/main/Qwen3-ASR-1.7B",
+      "--served-model-name",
+      "qwen3-asr-1.7b",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "30002",
+      "--tensor-parallel-size",
+      "1",
+      "--dtype",
+      "bfloat16",
+      "--max-model-len",
+      "32768",
+      "--gpu-memory-utilization",
+      "0.85",
+      "--enforce-eager",
+      "--max-num-seqs",
+      "4"
+    ],
+    "url": "http://127.0.0.1:30002"
+  },
+  "gpu_available": true,
+  "hy-smi": {
+    "code": 0,
+    "stdout": "\n================================= System Management Interface ==================================\n================================================================================================\nHCU     Temp     AvgPwr     Perf     PwrCap     VRAM%      HCU%      Dec%      Enc%      Mode     \n0       50.0C    74.0W      auto     1000.0W    0%         0.0%      0.0%      0.0%      Normal   \n================================================================================================\n======================================== End of SMI Log ========================================\n\n",
+    "stderr": ""
+  },
+  "cat /opt/dtk/.info/version": {
+    "code": 1,
+    "stdout": "",
+    "stderr": "cat: /opt/dtk/.info/version: No such file or directory\n"
+  },
+  "hip": "6.3.26093",
+  "devices": [
+    "BW"
+  ]
+}

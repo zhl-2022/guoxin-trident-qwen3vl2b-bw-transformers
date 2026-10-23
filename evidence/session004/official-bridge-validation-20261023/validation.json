@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "scope": "CPU-only temporary external-script mocks and real Bash entry tests; not official evaluation",
+  "started_utc": "2026-10-23T08:52:04.365903+00:00",
+  "gpu_started": false,
+  "native_packages_installed_or_changed": false,
+  "stage_or_git_mutated": false,
+  "source_before": {
+    "scripts/recon2reason_runtime.py": {
+      "bytes": 34890,
+      "sha256": "0edc33da22c07a804c93047f918a4a39a58af90997390c49695d8b39a891d85b"
+    },
+    "tasks/qwen3-asr-bw-vllm/env.sh": {
+      "bytes": 2246,
+      "sha256": "c4eb7e12eceac81b97b86e4163e5d6f7fe82a39294b0989a60a244a55970ab8a"
+    },
+    "tasks/qwen3-asr-bw-vllm/verify.sh": {
+      "bytes": 231,
+      "sha256": "7f134fcb6d12f8756ac885af198b250d24d2d002095925e0d1eabd0247f986f0"
+    },
+    "tasks/qwen3-asr-bw-vllm/bench.sh": {
+      "bytes": 303,
+      "sha256": "c0c3aa89c8756a8a7cf3b7cbdd5c2c0171aa91f9470839469e3b4c4b3c89e880"
+    },
+    "tests/test_official_bridge.py": {
+      "bytes": 23277,
+      "sha256": "5e367d0aa107b44f1b2cd768c339427b81cc28dbd25d5b9a89d9edfe178a07f1"
+    },
+    "tests/test_asr_official_entry.py": {
+      "bytes": 5927,
+      "sha256": "8d11add12a9e0f58e92130c131e4820ee07a801f140372a6152813f2b14d4792"
+    }
+  },
+  "steps": [
+    {
+      "argv": [
+        "C:\\Users\\zhl\\anaconda3\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*official*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 5.0,
+      "log": "windows-official-bridge.log",
+      "bytes": 5410,
+      "sha256": "8fb2e7b49f7e3cb5f3923f65175ca8cf1d76101c8eca24df2690398969b79609"
+    },
+    {
+      "argv": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "bash",
+        "-lc",
+        "cd /mnt/e/hg20261019 && PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s tests -p 'test_*official*.py' -v && bash -n tasks/qwen3-asr-bw-vllm/env.sh tasks/qwen3-asr-bw-vllm/verify.sh tasks/qwen3-asr-bw-vllm/bench.sh"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 3.594,
+      "log": "wsl-official-bridge.log",
+      "bytes": 5317,
+      "sha256": "0daf198a20823db36df203bf0eaaa3a8e29328dd7261fe39f07e1a7572b2adb2"
+    }
+  ],
+  "source_after": {
+    "scripts/recon2reason_runtime.py": {
+      "bytes": 34890,
+      "sha256": "0edc33da22c07a804c93047f918a4a39a58af90997390c49695d8b39a891d85b"
+    },
+    "tasks/qwen3-asr-bw-vllm/env.sh": {
+      "bytes": 2246,
+      "sha256": "c4eb7e12eceac81b97b86e4163e5d6f7fe82a39294b0989a60a244a55970ab8a"
+    },
+    "tasks/qwen3-asr-bw-vllm/verify.sh": {
+      "bytes": 231,
+      "sha256": "7f134fcb6d12f8756ac885af198b250d24d2d002095925e0d1eabd0247f986f0"
+    },
+    "tasks/qwen3-asr-bw-vllm/bench.sh": {
+      "bytes": 303,
+      "sha256": "c0c3aa89c8756a8a7cf3b7cbdd5c2c0171aa91f9470839469e3b4c4b3c89e880"
+    },
+    "tests/test_official_bridge.py": {
+      "bytes": 23277,
+      "sha256": "5e367d0aa107b44f1b2cd768c339427b81cc28dbd25d5b9a89d9edfe178a07f1"
+    },
+    "tests/test_asr_official_entry.py": {
+      "bytes": 5927,
+      "sha256": "8d11add12a9e0f58e92130c131e4820ee07a801f140372a6152813f2b14d4792"
+    }
+  },
+  "sources_unchanged_during_validation": true,
+  "ended_utc": "2026-10-23T08:52:12.990441+00:00",
+  "validation_passed": true
+}

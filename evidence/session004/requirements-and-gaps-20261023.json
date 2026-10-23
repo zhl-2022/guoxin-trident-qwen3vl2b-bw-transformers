@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-23T09:40:22.215845+00:00",
+  "kind": "requirements_crosswalk_not_an_acceptance_report",
+  "report": {
+    "path": "docs/session004-requirements-and-gaps.md",
+    "bytes": 12724,
+    "sha256": "5b12ddba4b7074bd2395e5563dda58b0f10636e913bb499410cd3d2a54226378"
+  },
+  "sources": [
+    {
+      "url": "https://www.scnet.cn/home/subject/modular/index890.html",
+      "provenance": "root_agent_forwarded_UI_image_review; author_did_not_independently_read_landing_images",
+      "scope": "landing routes details/template to Feishu; no evaluator download on observed landing"
+    },
+    {
+      "url": "https://bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif",
+      "snapshots": [
+        {
+          "path": "evidence/session004/rules-current-20261023/tracks-current.ax.txt",
+          "bytes": 10810,
+          "sha256": "a01c7744e5bb8487164bf6139c27a8ce4fea70244b8ce8bee38b6f91227ec70b"
+        },
+        {
+          "path": "evidence/session004/rules-current-20261023/participation-current.ax.txt",
+          "bytes": 11986,
+          "sha256": "7c87266fc189e7249b7dd54f737399d4882944b363c9170488abbd99b627742d"
+        }
+      ]
+    },
+    {
+      "template": {
+        "path": "国芯国模黑客松-技术报告模板.md",
+        "bytes": 14427,
+        "sha256": "b151143f6fa38c87e301cfc9335a94d17fcd49c7113a53fe05f89c04b45f349f"
+      },
+      "archived_template": {
+        "path": "evidence/official-materials/20261019/report-template.md",
+        "bytes": 14427,
+        "sha256": "b151143f6fa38c87e301cfc9335a94d17fcd49c7113a53fe05f89c04b45f349f"
+      },
+      "byte_identical": true
+    }
+  ],
+  "decisions": {
+    "uncompleted_performance_tier_is_automatic_whole_task_submission_rejection": false,
+    "recon_11_of_12_is_a_complete_matrix": false,
+    "recon_timeout_proven_reason": "total_budget_cutoff; native_OOM_or_intrinsic_unsupported_tier_not_proven",
+    "repositorywide_OSS_license_is_template_mandatory": false,
+    "copyright_policy": "retain_user_chosen_scope_notice_and_upstream_licenses",
+    "transformers_only_candidate_framework_requirement_proven": false,
+    "SGLang_client_against_vLLM_server_creates_separate_SGLang_serving_piece": false,
+    "final_contest_form_action": "user_manual_only"
+  },
+  "requirements": [
+    {
+      "id": "platform",
+      "requirement": "SCNet BW or AI-64GB; model x card x SGLang/vLLM with recorded version",
+      "status": "BW_vLLM_BF16_historical_development_evidence_exists"
+    },
+    {
+      "id": "T02_general",
+      "requirement": "task-bound OCRBench/MMMU or VQA; OCRBench loss<=20 of1000; MMMU loss<=2pt",
+      "status": "per_model_fixed_subset_baseline_and_evaluator_missing"
+    },
+    {
+      "id": "T02_embodied",
+      "requirement": "serving only; parsed action/coordinate agreement>=98% vs GPU references; single/multi-image",
+      "status": "input_manifest_parser_tolerance_and_GPU_references_missing"
+    },
+    {
+      "id": "T04_ASR",
+      "requirement": "audio->text incl streaming; official subset WER/CER degradation<=2%",
+      "status": "official_audio_reference_normalization_decode_baseline_and_difference_formula_missing"
+    },
+    {
+      "id": "T04_alignment",
+      "requirement": "audio+text->word/character timestamps; AAS_ms vs GPU baseline",
+      "status": "candidate_only; framework_path_and_official_AAS_materials_not_proven"
+    },
+    {
+      "id": "T02_performance",
+      "requirement": "SGLang client six loads two rounds; report round2; preserve raw logs; disclose unsupported loads",
+      "status": "004b_CPU_validated; current_SCNet_results_not_assessed_by_this_document"
+    },
+    {
+      "id": "T04_performance",
+      "requirement": "task-specific audio method",
+      "status": "explicit_external_script_output_bridge_ready; official_method_missing"
+    },
+    {
+      "id": "image",
+      "requirement": "actual accessible registry/repo:tag and clean reproduction",
+      "status": "image_ID_version_name_tag_exist; full_reference_not_closed"
+    },
+    {
+      "id": "delivery",
+      "requirement": "eight-section report, scripts, originals, reviewable repository and user manual form",
+      "status": "003_private_snapshots_closed; new004_snapshot_and_reviewer_access_independently_required"
+    }
+  ],
+  "evidence_boundaries": {
+    "session003_recon": {
+      "verified_cells": 11,
+      "planned_cells": 12,
+      "verified_requests": 480,
+      "verified_output_tokens": 491520,
+      "native_client": "vLLM random-mm; not SGLang",
+      "audit": "evidence/recon-matrix-final-audit-003.json"
+    },
+    "session003_delivery": "evidence/final-delivery-closure-003.json",
+    "current_session004_compute_results": "not_assessed_here; root records run IDs, source hashes, originals and platform final state separately",
+    "new_sources": [
+      {
+        "path": "scripts/recon2reason_runtime.py",
+        "bytes": 34890,
+        "sha256": "0edc33da22c07a804c93047f918a4a39a58af90997390c49695d8b39a891d85b"
+      },
+      {
+        "path": "scripts/t02_sglang_bench.py",
+        "bytes": 18786,
+        "sha256": "7318269cd4ae006c564c18b433cf3b6de852787acad9bde31947f9dfe67abead"
+      },
+      {
+        "path": "scripts/prepare_sglang_client.py",
+        "bytes": 9173,
+        "sha256": "3a18d7f08a90affcbd57474b72aba8288df6143cae3c8100f8a63eb2b01c431b"
+      },
+      {
+        "path": "tasks/robobrain-bw-vllm/env.sh",
+        "bytes": 2718,
+        "sha256": "15c91d2d332f649df3fa88f9562d4b0dce89df239729dacd4a680e17b473dfb9"
+      }
+    ],
+    "CPU_validation_records": [
+      "evidence/session004/official-bridge-validation-20261023/validation.json",
+      "evidence/session004/sglang-robo-validation-004b-20261023/validation.json"
+    ],
+    "deprecated_helper_for_deployment": "dist/sglang-client-helpers-004.zip",
+    "deployable_helper": "dist/sglang-client-helpers-004b.zip"
+  },
+  "official_flags": {
+    "formal_ready": false,
+    "official_accuracy": false,
+    "official_performance": false,
+    "submitted": false
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "slug": "qwen3-asr-bw-vllm",
+  "track": "T04",
+  "status": "short_wav_transcription_verified_with_explicit_tf55_config_compat",
+  "platform": {
+    "provider": "SCNet",
+    "region": "华中一区【A区】",
+    "resource_group": "113 / hx1hgbwnormal",
+    "card": "BW",
+    "framework": "vllm",
+    "precision": "bf16",
+    "cards": 1,
+    "execution_policy": "20261019 historical single-card sequential run; future allocation requires explicit session authorization",
+    "instance_final_state": "stopped",
+    "checkpoint": "evidence/platform-checkpoint-20261019-002.json"
+  },
+  "model": {
+    "id": "Qwen/Qwen3-ASR-1.7B",
+    "expected_architecture": "Qwen3ASRForConditionalGeneration",
+    "config_path": "evidence/asr-model-config.json",
+    "remote_path": "/root/private_data/SothisAI/model/Aihub/Qwen3-ASR-1.7B/main/Qwen3-ASR-1.7B",
+    "remote_path_candidate": "/root/private_data/SothisAI/model/Aihub/Qwen3-ASR-1.7B/main/Qwen3-ASR-1.7B",
+    "remote_path_status": "verified by actual model metadata/header/hash report asr-preflight-001.json",
+    "weights_verified": true,
+    "scnet_storage_path_reported": "/public/home/ac3p4mowhz/SothisAI/model/Aihub/Qwen3-ASR-1.7B/main/Qwen3-ASR-1.7B",
+    "scnet_model_entry_id": "2112193282963628034",
+    "scnet_cluster_id": 20091,
+    "scnet_created_at_local": "2026-10-19 22:44:56",
+    "scnet_clone_complete_reported": true,
+    "config_sha256": "2e74a751548b8ad7d7526d29365ad8144c345d8b412b1152d25dc6698452712f",
+    "weights_verification_scope": "two full shard hashes and sizes match upstream revision; not inference correctness",
+    "context_max_position_embeddings": 65536,
+    "context_max_position_embeddings_source": "thinker_config.text_config.max_position_embeddings",
+    "weight_hash_upstream_verification": {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-ASR-1.7B?blobs=true",
+      "revision": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+      "published_files": {
+        "model-00001-of-00002.safetensors": {
+          "sha256": "a4cd1f1a04d90b757dc7f7dd26254e69a013b19e80efe590a83c6a3bde8608d6",
+          "size": 4220320824
+        },
+        "model-00002-of-00002.safetensors": {
+          "sha256": "6e0b9d9e09e2e0238e7ef3cc8a484ab387e91b90f1900bedf88bc92d7929ccfc",
+          "size": 478200688
+        }
+      },
+      "all_shards_match": true
+    },
+    "preflight": {
+      "report": "evidence/asr-preflight-001.json",
+      "complete": false,
+      "tensor_count": 708,
+      "shard_count": 2,
+      "dtypes": [
+        "BF16"
+      ],
+      "payload_bytes": 4698434816,
+      "weights_hashed": true,
+      "tensor_and_payload_checks_passed": true,
+      "tokenizer_present_in_original_report": false,
+      "tokenizer_layout_reported_by_root": "legacy_bpe",
+      "tokenizer_json_present": false,
+      "vocab_bytes_reported": 2776833,
+      "merges_bytes_reported": 1671853,
+      "tokenizer_config_bytes": 12487,
+      "legacy_bpe_validation_rerun_status": "passed",
+      "rerun_report_path": "evidence/asr-preflight-002.json",
+      "original_report_preserved": true,
+      "latest_complete": true,
+      "tokenizer_layout": "legacy_bpe",
+      "vocab_entries": 151643,
+      "merge_pairs": 151387
+    }
+  },
+  "upstream": {
+    "model_card_url": "https://huggingface.co/Qwen/Qwen3-ASR-1.7B",
+    "model_revision": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "qwen_source_revision": "7c6daf77a2421100f5fb066495372c00129d39ff",
+    "architecture": "Qwen3ASRForConditionalGeneration",
+    "model_type": "qwen3_asr",
+    "safetensors_parameters": {
+      "BF16": 2349217408
+    },
+    "shard_count": 2,
+    "vllm_version_researched": "v0.18.1",
+    "vllm_implementation": "https://github.com/vllm-project/vllm/blob/v0.18.1/vllm/model_executor/models/qwen3_asr.py",
+    "native_transcriptions_supported_upstream": true,
+    "native_fork_asr_verified": true,
+    "source_notes": "docs/asr-preparation.md; original checkpoint, not -hf; do not install qwen-asr[vllm] into the current stack",
+    "native_fork_asr_source_present": true,
+    "native_fork_asr_source_evidence": "evidence/asr-probe-001.json",
+    "native_fork_asr_verification_scope": "actual BF16 engine and Chinese/English PCM WAV transcription; official accuracy not verified"
+  },
+  "service_candidate": {
+    "served_name": "qwen3-asr-1.7b",
+    "port": 30002,
+    "runtime_root": "tasks/qwen3-asr-bw-vllm/runtime",
+    "image_digest": null,
+    "actual_run_verified": true,
+    "native_environment_probe": "evidence/vllm-probe-001.json",
+    "native_environment_probe_scope": "real BW engine, ASR processor/audio dependencies and short WAV route verified",
+    "max_len": 32768,
+    "max_len_verified_against_actual_config": true,
+    "load_timeout_seconds": 600,
+    "max_runtime_seconds": 900,
+    "runner_override": null,
+    "max_len_verification_scope": "32768 actual engine initialized; no official long-audio benchmark",
+    "asr_probe": {
+      "report": "evidence/asr-probe-001.json",
+      "status": "completed_with_issues",
+      "checks_passed": false,
+      "model_loaded": false,
+      "missing_imports": [
+        "soundfile",
+        "librosa",
+        "torchaudio"
+      ],
+      "multipart_import_passed": true,
+      "ffmpeg_present": false,
+      "required_for_current_transcription_path_missing": [
+        "soundfile",
+        "librosa"
+      ],
+      "torchaudio_required_for_current_path": false,
+      "ffmpeg_required_for_initial_pcm_wav": false
+    },
+    "audio_environment": {
+      "python": "/root/private_data/venvs/qwen3-asr-audio-001/bin/python",
+      "report": "evidence/asr-audio-validation-002.json",
+      "protected_native_unchanged": true,
+      "installation_script_sha256_used": "5ea10013a1d31ffeef8d6ef8e15a7bc106b9e6975d5e19ac1febcadd210d7ed8",
+      "current_script_has_metadata_visibility_refinement": true
+    },
+    "compatibility": {
+      "opt_in": true,
+      "entrypoint_group": "vllm.general_plugins",
+      "plugin": "qwen_asr_tf55_compat",
+      "script": "scripts/qwen_asr_tf55_compat.py",
+      "sha256": "84d0d5402c73d21562fb12bb649ace56d6f29b7d1fdf1d3e402b8d4a6e28820a",
+      "scope": "preinitialize thinker before original parent token-ID validation; native constructor still runs",
+      "parent_and_enginecore_install_observed": true,
+      "source_hash_guard": true,
+      "transformers_version_guard": "5.5.0",
+      "weights_changed": false,
+      "baseline_failure": "evidence/asr-vllm-server-full-001.log",
+      "reproduce": "tasks/qwen3-asr-bw-vllm/run.sh"
+    },
+    "functional_run": {
+      "ready": "evidence/asr-vllm-state-002.json",
+      "stopped": "evidence/asr-vllm-stopped-state-002.json",
+      "server_log": "evidence/asr-vllm-server-full-002.log",
+      "samples": [
+        "evidence/asr-vllm-smoke-zh-002.jsonl",
+        "evidence/asr-vllm-smoke-en-002.jsonl"
+      ],
+      "sample_scope": "two own-text synthetic Windows TTS WAVs; no WER/CER; references not sent",
+      "exact_text_observed_by_local_comparison": true,
+      "finish_reason_available": false
+    },
+    "preparation": {
+      "entrypoint": "tasks/qwen3-asr-bw-vllm/prepare.sh",
+      "default_mode": "local_plan_only_no_downloads_or_writes",
+      "apply_mode": "new_isolated_system_site_packages_venv_locked_cpu_wheels",
+      "requirements": "tasks/qwen3-asr-bw-vllm/requirements-extra.txt",
+      "native_stack": "tasks/qwen3-asr-bw-vllm/native-stack.json",
+      "validated_on_new_native_image": false,
+      "no_automatic_service_start": true
+    },
+    "extra_args": [
+      "--enforce-eager",
+      "--max-num-seqs",
+      "4"
+    ],
+    "extra_args_source": "evidence/asr-vllm-state-002.json actual successful command"
+  },
+  "audio_protocol": {
+    "endpoint": "/v1/audio/transcriptions",
+    "request": "multipart/form-data",
+    "fields": {
+      "model": "served alias",
+      "file": "WAV file bytes",
+      "response_format": "json",
+      "temperature": "0"
+    },
+    "language_or_prompt_sent": false,
+    "smoke_input": {
+      "sample_rate_hz": 16000,
+      "channels": 1,
+      "encoding": "PCM16 WAV",
+      "maximum_duration_seconds": 30,
+      "automatic_conversion": false
+    },
+    "expected_text": "optional local diagnostic only; never included in request",
+    "official_metric_verified": false
+  },
+  "official": {
+    "claim": {
+      "confirmed": false,
+      "reference": null
+    },
+    "baseline": {
+      "artifact": "asr-official-baseline"
+    },
+    "evaluator": {
+      "artifact": "asr-official-evaluator"
+    },
+    "dataset": {
+      "artifact": "asr-official-dataset"
+    },
+    "image_digest": null,
+    "image_reference": null
+  },
+  "artifacts": [],
+  "accuracy": {
+    "metric": "official-WER-or-CER-pending",
+    "direction": "lower",
+    "drop_mode": "relative",
+    "max_drop": 0,
+    "baseline": null,
+    "policy_status": "disabled pending official materials; zero-drop scaffold is not an official threshold"
+  },
+  "budget": {
+    "cards": 1,
+    "wall_hours": 0.25,
+    "total_card_hours": 2,
+    "used_card_hours": 1.3623132980555555,
+    "scope": "shared current two-card-hour session cap, not additional allocation",
+    "used_card_hours_is_approximate": true,
+    "snapshot_note": "shared session conservative wall bound from creation through later stopped observation; includes provisioning; checkpoint002; not live and not a new allocation",
+    "snapshot_is_live": false
+  },
+  "evidence_files": [
+    "docs/asr-preparation.md",
+    "tasks/qwen3-asr-bw-vllm/README.md",
+    "evidence/vllm-probe-001.json",
+    "evidence/asr-model-config.json",
+    "evidence/asr-preflight-001.json",
+    "evidence/asr-probe-001.json",
+    "evidence/asr-preflight-002.json",
+    "evidence/asr-audio-validation-002.json",
+    "evidence/asr-audio-reviewed-plan-002.json",
+    "evidence/asr-vllm-state-001.json",
+    "evidence/asr-vllm-server-full-001.log",
+    "evidence/asr-vllm-state-002.json",
+    "evidence/asr-vllm-stopped-state-002.json",
+    "evidence/asr-vllm-smoke-zh-002.jsonl",
+    "evidence/asr-vllm-smoke-en-002.jsonl",
+    "evidence/asr-vllm-server-full-002.log",
+    "evidence/platform-checkpoint-20261019-002.json"
+  ],
+  "required_metrics": [
+    "official-T04-asr-metric-and-normalization-pending"
+  ],
+  "notes": "708 BF16 tensors and two upstream-identical weight hashes verified. Original preflight001 failure preserved; 002 validates real legacy BPE. Seven missing CPU audio packages installed in isolated venv; native package versions/paths unchanged. Baseline service001 failed at TF5.5 child initialization. Explicit guarded project-local plugin preinitializes thinker, observed in API and EngineCore; run002 loaded BF16 and returned matching Chinese/English own synthetic transcripts, then stopped. No official accuracy/performance/acceptance claim.",
+  "adaptation_ready": false,
+  "official_accuracy": false,
+  "development_tools": {
+    "offline_asr_evaluation": {
+      "script": "scripts/asr_development_eval.py",
+      "documentation": "docs/asr-offline-readiness.md",
+      "scope": "development_only",
+      "normalization": "identity",
+      "wer_tokenization": "Unicode whitespace; no Chinese segmentation",
+      "cer_tokenization": "all Unicode code points including whitespace",
+      "input_matching": "exact complete unique sample ids across references/predictions/optional manifest",
+      "manifest_default": "plan only; no audio read",
+      "audio_validation_opt_in": "--check-audio; existing short-WAV client bounds only",
+      "model_or_network_calls": false,
+      "official_evaluator": false,
+      "baseline_generated": false,
+      "threshold_or_pass_generated": false
+    }
+  }
+}

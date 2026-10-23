@@ -1,0 +1,52 @@
+{
+  "development_only": true,
+  "official_accuracy": false,
+  "steps": [
+    {
+      "command": [
+        "bash",
+        "/root/private_data/guoxin-hackathon-20261020-session003/tasks/recon2reason-bw-vllm/env_check.sh"
+      ],
+      "started_utc": "2026-10-19T17:16:49.322524+00:00",
+      "exit_code": 0,
+      "ended_utc": "2026-10-19T17:17:10.245190+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "/root/private_data/guoxin-hackathon-20261020-session003/scripts/robobrain_heldout_fixtures.py",
+        "--output-dir",
+        "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/recon-functional/images"
+      ],
+      "started_utc": "2026-10-19T17:17:10.257325+00:00",
+      "exit_code": 0,
+      "ended_utc": "2026-10-19T17:17:11.182226+00:00"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "/root/private_data/guoxin-hackathon-20261020-session003/scripts/recon2reason_smoke.py",
+        "--image",
+        "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/recon-functional/images/heldout_red_square.png",
+        "--image",
+        "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/recon-functional/images/heldout_blue_circle.png",
+        "--base-url",
+        "http://127.0.0.1:30000",
+        "--model",
+        "recon2reason-reasoning-4b",
+        "--max-tokens",
+        "256",
+        "--timeout",
+        "120",
+        "--log",
+        "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/recon-functional/smoke.jsonl"
+      ],
+      "started_utc": "2026-10-19T17:17:11.187660+00:00",
+      "exit_code": 0,
+      "ended_utc": "2026-10-19T17:17:16.668112+00:00"
+    }
+  ],
+  "script_sha256": "1d60186b4d37a8b6bf0be8f5f5b85a71d6ec838e442f0138aff79f7d36a4b777",
+  "steps_completed": true,
+  "service_stop_requested_by_this_script": false
+}

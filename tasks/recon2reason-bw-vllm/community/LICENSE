@@ -1,0 +1,22 @@
+License scope and upstream notices
+
+Scope of this development delivery
+
+No repository-wide license has yet been selected for the newly authored
+adaptation code, harness, tests, documentation or evidence in this project.
+This file is a truthful scope notice, not a grant of an Apache-2.0 license
+to all repository contents. The user chose to retain this scope notice
+for now; no repository-wide license has been selected.
+
+Upstream material retains its original terms:
+- Original model README: https://huggingface.co/BAAI/Recon2Reason-Reasoning-4B/resolve/f8faf41a1d5fe392f2d1ee31884f79398da59c99/README.md
+- Preserved upstream license: tasks/recon2reason-bw-vllm/community/upstream/weights-LICENSE.txt
+- License scope: original model repository license; not a repository-wide license grant for newly authored adaptation code
+- Exact source URLs and hashes: tasks/recon2reason-bw-vllm/community/metadata.json
+
+Model weights are not distributed in this repository. The model card
+declares Apache-2.0 for the model, which is recorded separately; this
+statement is not a legal review of training data or upstream artifacts.
+Official ModelZoo category icon is reused unchanged as directed by the
+community packaging convention. Other third-party material retains its
+source-specific copyright and license; no blanket relicensing is claimed.

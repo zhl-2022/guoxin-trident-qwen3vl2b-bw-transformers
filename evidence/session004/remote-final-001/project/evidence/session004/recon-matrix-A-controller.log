@@ -1,0 +1,51 @@
+nohup: ignoring input
+{
+  "run_id": "c2277b5d03b54683a5c7ba0193e5e55b",
+  "status": "ready",
+  "created_utc": "2026-10-23T10:41:53.518926+00:00",
+  "supervisor_pid": 3217,
+  "supervisor_token": "277949575",
+  "config_path": "/root/private_data/guoxin-hackathon-20261023-session004/tasks/recon2reason-bw-vllm/runtime/config-c2277b5d03b54683a5c7ba0193e5e55b.json",
+  "url": "http://127.0.0.1:30000",
+  "max_runtime_seconds": 6200,
+  "framework": "vllm",
+  "precision": "bf16",
+  "command": [
+    "/usr/bin/python",
+    "-m",
+    "vllm.entrypoints.openai.api_server",
+    "--model",
+    "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+    "--served-model-name",
+    "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "30000",
+    "--tensor-parallel-size",
+    "1",
+    "--dtype",
+    "bfloat16",
+    "--max-model-len",
+    "32768",
+    "--gpu-memory-utilization",
+    "0.85",
+    "--enforce-eager",
+    "--max-num-seqs",
+    "16",
+    "--limit-mm-per-prompt",
+    "{\"image\":2,\"video\":0}"
+  ],
+  "server_pid": 3218,
+  "server_token": "277949626",
+  "ready_utc": "2026-10-23T10:43:31.275280+00:00"
+}
+Service ready. The supervisor continues enforcing its runtime limit.
+{"name": "round1_4096_1024_c8", "status": "invalid_native_result", "wall_seconds": 156.231193}
+{"name": "round2_4096_1024_c8", "status": "invalid_native_result", "wall_seconds": 160.955256}
+{"name": "round1_4096_1024_c64", "status": "invalid_native_result", "wall_seconds": 619.059157}
+{"name": "round2_4096_1024_c64", "status": "invalid_native_result", "wall_seconds": 608.173795}
+{"name": "round1_16384_1024_c8", "status": "invalid_native_result", "wall_seconds": 268.074816}
+{"name": "round2_16384_1024_c8", "status": "invalid_native_result", "wall_seconds": 264.964626}
+{"name": "round1_16384_1024_c64", "status": "invalid_native_result", "wall_seconds": 1622.878336}
+{"name": "round2_16384_1024_c64", "status": "invalid_native_result", "wall_seconds": 1600.62053}

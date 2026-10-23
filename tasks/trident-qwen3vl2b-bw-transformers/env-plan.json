@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "task": "trident",
+  "target": "Linux x86_64 CPython3.10 glibc>=2.28",
+  "system_site_packages": true,
+  "requirements_native_first": [
+    "transformers>=4.57,<6",
+    "qwen-vl-utils==0.0.14",
+    "accelerate>=1.10",
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "Pillow>=10",
+    "PyYAML>=6",
+    "torch>=2.6,<2.11",
+    "torchvision>=0.21"
+  ],
+  "requirements_publisher_pinned": [
+    "transformers==4.57.1",
+    "qwen-vl-utils==0.0.14",
+    "accelerate>=1.10",
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "Pillow>=10",
+    "PyYAML>=6",
+    "torch>=2.6,<2.11",
+    "torchvision>=0.21"
+  ],
+  "protected_native_expectations": {
+    "torch": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+    "torchvision": "0.25.0+das.opt1.dtk2604.torch2100.20260325.g860505",
+    "vllm": "0.18.1+das.fa71803.dtk2604",
+    "vllm-hcu": "0.18.1+das.dtk2604",
+    "triton": "3.6.0+gitc73250c4.staging",
+    "flash-attn": "2.8.3+das.opt1.dtk2604.torch2100.20260330.g3f0061",
+    "lightop": "0.6.0+das.dtk2604.torch2100.2604101656.g193111",
+    "aiter": "0.1.2+das.opt1.dtk2604.torch2100.2604212021.gd52133"
+  },
+  "cpu_wheel_pool": "scripts/candidate_cpu_wheels_20261023.json",
+  "cpu_wheel_pool_sha256": "8daa740106938d69d0f1256d43a009afa190dd3f3b337cac996fb594c767af71",
+  "framework_eligibility": "pending_official_confirmation_T02_explicit_SGLang_vLLM_not_TF_only",
+  "dependency_policy": "reuse satisfying native CPU distributions first; only approved CPU fallback wheels in NEW system-site-packages venv; no native GPU package installer",
+  "whole_upstream_extras_installed": false,
+  "gpu_verified": false
+}

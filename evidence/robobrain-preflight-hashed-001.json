@@ -1,0 +1,104 @@
+{
+  "created_at_utc": "2026-10-19T14:41:04.938514+00:00",
+  "kind": "preflight_only_not_official_evaluation",
+  "python": "3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0]",
+  "system": "Linux-5.15.0-25-generic-x86_64-with-glibc2.35",
+  "packages": {
+    "torch": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+    "transformers": "5.5.0",
+    "tokenizers": "0.22.2",
+    "sglang": null,
+    "vllm": "0.18.1+das.fa71803.dtk2604",
+    "vllm-plugin-das": null,
+    "sgl-kernel": null,
+    "triton": "3.6.0+gitc73250c4.staging",
+    "safetensors": "0.7.0",
+    "accelerate": "1.12.0",
+    "Pillow": "12.1.1"
+  },
+  "tools": {
+    "hy-smi": true,
+    "rocm-smi": true,
+    "docker": false,
+    "podman": false,
+    "bash": true
+  },
+  "model_path": "/root/private_data/SothisAI/model/Aihub/RoboBrain2.5-8B-NV/main/RoboBrain2.5-8B-NV",
+  "model_exists": true,
+  "model_checks": {
+    "architecture": [
+      "Qwen3VLForConditionalGeneration"
+    ],
+    "model_type": "qwen3_vl",
+    "dtype": null,
+    "expected_architecture": true,
+    "index_weight_count": 750,
+    "index_total_size": 17534247392,
+    "shards": [
+      {
+        "name": "model-00001-of-00002.safetensors",
+        "exists": true,
+        "size": 9914019048,
+        "index_keys_match": true,
+        "dtypes": [
+          "BF16"
+        ],
+        "payload_complete": true,
+        "sha256": "ddcbb8b2c0edd0f7707b5c459c9981ef9c842293e5d520324dddc8c66996fba9"
+      },
+      {
+        "name": "model-00002-of-00002.safetensors",
+        "exists": true,
+        "size": 7620320504,
+        "index_keys_match": true,
+        "dtypes": [
+          "BF16"
+        ],
+        "payload_complete": true,
+        "sha256": "374a816964fc361fece15f7f8f661521a367181bdd3a5d6f75f59fa0b0c328b5"
+      }
+    ],
+    "payload_bytes": 17534247392,
+    "index_total_size_matches": true,
+    "tokenizer_present": true,
+    "complete": true
+  },
+  "files": [
+    {
+      "name": "config.json",
+      "size": 1474,
+      "sha256": "5cd452860dc1e9c29dd71cc3cef7f39b338b7a40793f7a260655c2d3568f3661"
+    },
+    {
+      "name": "generation_config.json",
+      "size": 269,
+      "sha256": "8469742d1fce0de951c8909b26a2c0c0d8490837ce476efb114da9e0cefc4d44"
+    },
+    {
+      "name": "preprocessor_config.json",
+      "size": 390,
+      "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516"
+    },
+    {
+      "name": "tokenizer.json",
+      "size": 7032403,
+      "sha256": "a5d85b6dcc535e6b93115a9ef287e6132fdbf30270da6218194ba742261173c7"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": 10868,
+      "sha256": "c2da771801886ad9ae98181793ffd3dfb7f1af30f6f7c6a4e15d7dbba52e2399"
+    },
+    {
+      "name": "model.safetensors.index.json",
+      "size": 67759,
+      "sha256": "765bab88ce308d515a6e02df460b9aae77a28171a7abca349c922322625aeb75"
+    }
+  ],
+  "hy_smi": {
+    "returncode": 0,
+    "output": "\n================================= System Management Interface ==================================\n================================================================================================\nHCU     Temp     AvgPwr     Perf     PwrCap     VRAM%      HCU%      Dec%      Enc%      Mode     \n0       54.0C    86.0W      manual   1000.0W    0%         0.0%      0.0%      0.0%      Normal   \n================================================================================================\n======================================== End of SMI Log ========================================\n\n"
+  },
+  "weights_hashed": true,
+  "note": "Header integrity is not inference correctness. No official baseline or acceptance checked."
+}

@@ -1,0 +1,8 @@
+nohup: ignoring input
+{
+  "reason": "collection_stopped",
+  "samples": 1340,
+  "output_dir": "/root/private_data/guoxin-hackathon-20261023-session004/evidence/session004/recon-server-metrics-001",
+  "finished_utc": "2026-10-23T12:11:58.461899+00:00",
+  "official_acceptance": false
+}

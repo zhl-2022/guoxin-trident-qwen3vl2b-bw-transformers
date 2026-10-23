@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "captured_at_utc": "2026-10-23T10:14:08.984275+00:00",
+  "windows_tests": {
+    "count": 14,
+    "exit_code": 0,
+    "log": "test-windows.log"
+  },
+  "wsl_tests": {
+    "count": 14,
+    "exit_code": 0,
+    "log": "test-wsl.log"
+  },
+  "ast_files": 2,
+  "heavy_imports_in_plan": false,
+  "model_tensor_payload_downloaded_locally": false,
+  "model_header_total_bytes": 76248,
+  "tensor_count": 625,
+  "gpu_executed_by_subagent": false,
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "submission_ready": false,
+  "initial_test_error_fixed": "Windows mock of Linux timeout required SIGKILL symbol; production code is Linux-only",
+  "review": "Two findings on reference provenance and preflight timeout addressed with snapshot metadata and bounded worker preflight; focused tests added"
+}

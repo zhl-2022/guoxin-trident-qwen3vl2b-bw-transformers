@@ -1,0 +1,11 @@
+# Environment declaration; intentionally no pip installation targets here.
+# Preserve the matched native DAS/HCU stack. Do not install or upgrade Torch,
+# vLLM, torchvision, Triton, Transformers or CUDA libraries from this file.
+# Python == 3.10.12
+# torch == 2.10.0+das.opt1.dtk2604.20260325.g6b060a
+# vllm == 0.18.1+das.fa71803.dtk2604
+# vllm-hcu == 0.18.1+das.dtk2604
+# transformers == 5.5.0
+# Native DTK == 26.04; actual HIP == 6.3.26093
+# Use env_check.sh to capture actual installed package paths and versions.
+# This task does not add packages to the verified native runtime.

@@ -1,0 +1,210 @@
+{
+  "created_utc": "2026-10-23T09:53:26.094584+00:00",
+  "mode": "apply",
+  "venv": "/root/private_data/sglang-client-004c",
+  "system_site_packages": true,
+  "wheel_lock": [
+    {
+      "name": "sglang",
+      "version": "0.5.12",
+      "url": "https://files.pythonhosted.org/packages/84/cb/a7802dcbdc35ec90d15115d312d55bc2b7aee1aea04b48d4f43df1f67267/sglang-0.5.12-cp310-cp310-manylinux_2_34_x86_64.whl",
+      "sha256": "4b88edfd3870d7dc8dd880f97d104f637baf105538827f968483d6cac56258f8"
+    }
+  ],
+  "protected_native": {
+    "torch": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+    "torchvision": "0.25.0+das.opt1.dtk2604.torch2100.20260325.g860505",
+    "transformers": "5.5.0",
+    "vllm": "0.18.1+das.fa71803.dtk2604",
+    "vllm-hcu": "0.18.1+das.dtk2604",
+    "numpy": "1.25.0",
+    "scipy": "1.15.3",
+    "triton": "3.6.0+gitc73250c4.staging",
+    "flash-attn": "2.8.3+das.opt1.dtk2604.torch2100.20260330.g3f0061",
+    "lightop": "0.6.0+das.dtk2604.torch2100.2604101656.g193111",
+    "aiter": "0.1.2+das.opt1.dtk2604.torch2100.2604212021.gd52133",
+    "python-multipart": "0.0.22"
+  },
+  "install_flags": [
+    "--ignore-installed",
+    "--no-deps",
+    "--require-hashes",
+    "--only-binary=:all:"
+  ],
+  "client_command": [
+    "/root/private_data/sglang-client-004c/bin/python",
+    "-B",
+    "-m",
+    "sglang.bench_serving"
+  ],
+  "compatibility_proven": false,
+  "service_started": false,
+  "filesystem_mutated": true,
+  "scope": "isolated client preparation; package declarations are not a claim of native-stack compatibility",
+  "native_before": {
+    "torch": {
+      "version": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "1ff8f9902a18a1d281da47bfa9b330da299e1ec30a4065fb70155fd1cf44f6aa"
+    },
+    "torchvision": {
+      "version": "0.25.0+das.opt1.dtk2604.torch2100.20260325.g860505",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "8a2c56baa18ee01d92f325bbff46e3fc205c38d136c13426db615ffd0a762209"
+    },
+    "transformers": {
+      "version": "5.5.0",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "b051d07991d6d7019a5eb5bf06fe364a61f75bf675de369c698061dbf613cdae"
+    },
+    "vllm": {
+      "version": "0.18.1+das.fa71803.dtk2604",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "ec95e9ad078cd5dcc71a11f9d914f4f09fdf16f1f1588673d44f1009570d4618"
+    },
+    "vllm-hcu": {
+      "version": "0.18.1+das.dtk2604",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "7c77a094e805cef0f8650e6b21b53bf12fddbcdee4ec3d867fea86416d7749a6"
+    },
+    "numpy": {
+      "version": "1.25.0",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "f92b4e11efc5583d738e1c37b9ca305ddb4c3ad7200abd43454db4ded95a7f72"
+    },
+    "scipy": {
+      "version": "1.15.3",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "c75caf32b67a13a9fc16aacf993a8bb883b7a69744ffe77cbbd4f3bfbad28f3d"
+    },
+    "triton": {
+      "version": "3.6.0+gitc73250c4.staging",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "b86365975bcb655ea9ce0d432a630db158dca099e72ccc59f599c135ffc6293f"
+    },
+    "flash-attn": {
+      "version": "2.8.3+das.opt1.dtk2604.torch2100.20260330.g3f0061",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "460bbbf91941c9fbf1ec57b790041f661850374306c5b5932ff12cea34762029"
+    },
+    "lightop": {
+      "version": "0.6.0+das.dtk2604.torch2100.2604101656.g193111",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "26b4bd5ebf15ea83fcc6288136faf4d7e902062c660cef9cef3c7bee1711babc"
+    },
+    "aiter": {
+      "version": "0.1.2+das.opt1.dtk2604.torch2100.2604212021.gd52133",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "730e03f3f6384aad88d2540bd907437361fc908919dc50c1e16af284e83ab9dd"
+    },
+    "python-multipart": {
+      "version": "0.0.22",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "9a2a61d13cbe56b0bf581b4b9ce8e24ea9fbcb37f474db99c52c4805cf197747"
+    }
+  },
+  "steps": [
+    {
+      "label": "venv",
+      "with_pip": false,
+      "completed_utc": "2026-10-23T09:53:26.920012+00:00"
+    },
+    {
+      "label": "pip",
+      "command": [
+        "/root/private_data/sglang-client-004c/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--ignore-installed",
+        "--no-deps",
+        "--require-hashes",
+        "--only-binary=:all:",
+        "-r",
+        "/root/private_data/sglang-client-004c/client-bootstrap-evidence/reviewed-wheels.txt"
+      ],
+      "exit_code": 0,
+      "log_sha256": "fc5d915a9bda8ec329ab9a7346e272ea81e2aa56a24e29923ee0d3362bfae859"
+    },
+    {
+      "label": "help",
+      "command": [
+        "/root/private_data/sglang-client-004c/bin/python",
+        "-B",
+        "-m",
+        "sglang.bench_serving",
+        "--help"
+      ],
+      "exit_code": 1,
+      "log_sha256": "cb7f329ca48ca4674ae37e2f72536736592ddd1ad1c46774a1134a094a5496ff"
+    }
+  ],
+  "status": "failed",
+  "pip_bootstrap": "reuse native pip via isolated venv interpreter; no ensurepip or apt",
+  "failure_type": "ValueError",
+  "failure": "help failed; partial venv and original log preserved; review missing CPU dependency before using a new target",
+  "native_after": {
+    "torch": {
+      "version": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "1ff8f9902a18a1d281da47bfa9b330da299e1ec30a4065fb70155fd1cf44f6aa"
+    },
+    "torchvision": {
+      "version": "0.25.0+das.opt1.dtk2604.torch2100.20260325.g860505",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "8a2c56baa18ee01d92f325bbff46e3fc205c38d136c13426db615ffd0a762209"
+    },
+    "transformers": {
+      "version": "5.5.0",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "b051d07991d6d7019a5eb5bf06fe364a61f75bf675de369c698061dbf613cdae"
+    },
+    "vllm": {
+      "version": "0.18.1+das.fa71803.dtk2604",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "ec95e9ad078cd5dcc71a11f9d914f4f09fdf16f1f1588673d44f1009570d4618"
+    },
+    "vllm-hcu": {
+      "version": "0.18.1+das.dtk2604",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "7c77a094e805cef0f8650e6b21b53bf12fddbcdee4ec3d867fea86416d7749a6"
+    },
+    "numpy": {
+      "version": "1.25.0",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "f92b4e11efc5583d738e1c37b9ca305ddb4c3ad7200abd43454db4ded95a7f72"
+    },
+    "scipy": {
+      "version": "1.15.3",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "c75caf32b67a13a9fc16aacf993a8bb883b7a69744ffe77cbbd4f3bfbad28f3d"
+    },
+    "triton": {
+      "version": "3.6.0+gitc73250c4.staging",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "b86365975bcb655ea9ce0d432a630db158dca099e72ccc59f599c135ffc6293f"
+    },
+    "flash-attn": {
+      "version": "2.8.3+das.opt1.dtk2604.torch2100.20260330.g3f0061",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "460bbbf91941c9fbf1ec57b790041f661850374306c5b5932ff12cea34762029"
+    },
+    "lightop": {
+      "version": "0.6.0+das.dtk2604.torch2100.2604101656.g193111",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "26b4bd5ebf15ea83fcc6288136faf4d7e902062c660cef9cef3c7bee1711babc"
+    },
+    "aiter": {
+      "version": "0.1.2+das.opt1.dtk2604.torch2100.2604212021.gd52133",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "730e03f3f6384aad88d2540bd907437361fc908919dc50c1e16af284e83ab9dd"
+    },
+    "python-multipart": {
+      "version": "0.0.22",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "9a2a61d13cbe56b0bf581b4b9ce8e24ea9fbcb37f474db99c52c4805cf197747"
+    }
+  },
+  "native_unchanged": true,
+  "ended_utc": "2026-10-23T09:58:27.765712+00:00"
+}

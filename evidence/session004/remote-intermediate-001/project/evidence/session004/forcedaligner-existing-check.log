@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/root/private_data/guoxin-candidate-tools-20261023/scripts/bootstrap_candidate_envs_20261023.py", line 258, in <module>
+    raise SystemExit(main())
+  File "/root/private_data/guoxin-candidate-tools-20261023/scripts/bootstrap_candidate_envs_20261023.py", line 178, in main
+    result = validate_current(record["plan"], record["native_before"])
+  File "/root/private_data/guoxin-candidate-tools-20261023/scripts/bootstrap_candidate_envs_20261023.py", line 130, in validate_current
+    raise ValueError("Candidate dependency version differs: " + item["name"])
+ValueError: Candidate dependency version differs: audioread

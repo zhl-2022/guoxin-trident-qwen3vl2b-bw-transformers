@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd /root/private_data/guoxin-hackathon-20261023-session004
+export RECON2REASON_MODEL_PATH="$(realpath /root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B)"
+export RECON2REASON_SERVED_NAME="$RECON2REASON_MODEL_PATH"
+export RECON2REASON_PYTHON_BIN=/usr/bin/python
+export RECON2REASON_MAX_RUNTIME_SECONDS=6200
+export RECON2REASON_EXTRA_ARGS_JSON='["--enforce-eager","--max-num-seqs","16","--limit-mm-per-prompt","{\"image\":2,\"video\":0}"]'
+rid=$(/usr/bin/python -c 'import uuid; print(uuid.uuid4().hex)')
+printf '%s' "$rid" > evidence/session004/recon-matrix-run-id.txt
+trap 'bash tasks/recon2reason-bw-vllm/stop.sh --run-id "$rid" > evidence/session004/recon-matrix-stop.log 2>&1' EXIT
+bash tasks/recon2reason-bw-vllm/run.sh --run-id "$rid"
+/usr/bin/python -B scripts/t02_sglang_bench.py --run --allow-client-device-discovery --client-python /root/private_data/sglang-client-004c/bin/python --model-path "$RECON2REASON_MODEL_PATH" --served-model-name "$RECON2REASON_MODEL_PATH" --runtime-dir "$PWD/tasks/recon2reason-bw-vllm/runtime" --expected-run-id "$rid" --output-dir evidence/session004/recon-sglang-matrix-A-001 --load 4096:8 --load 4096:64 --load 16384:8 --load 16384:64 --timeout-seconds 1800 --total-timeout-seconds 6000

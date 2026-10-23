@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "/root/private_data/guoxin-candidates/envs/trident-001/bin/python",
+    "-B",
+    "/root/repair_candidate_partial_002_20261023.py",
+    "--record",
+    "/root/private_data/guoxin-candidates/envs/trident-001/candidate-environment.json",
+    "--record-sha256",
+    "2e7c922960f641fb28eddacf418b5cafbd0a5d9b8076c8910160ce0edd4c9bf7",
+    "--pool",
+    "/root/private_data/guoxin-candidate-tools-20261023/scripts/candidate_cpu_wheels_20261023.json",
+    "--pool-sha256",
+    "8daa740106938d69d0f1256d43a009afa190dd3f3b337cac996fb594c767af71",
+    "--_child",
+    "metadata"
+  ]
+}

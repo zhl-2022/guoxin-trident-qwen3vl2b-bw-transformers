@@ -1,0 +1,27 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 187, in _run_module_as_main
+    mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+  File "/usr/lib/python3.10/runpy.py", line 110, in _get_module_details
+    __import__(pkg_name)
+  File "/root/private_data/sglang-client-004c/lib/python3.10/site-packages/sglang/__init__.py", line 29, in <module>
+    from sglang.srt.utils.hf_transformers_patches import apply_all as _apply_hf_patches
+  File "/root/private_data/sglang-client-004c/lib/python3.10/site-packages/sglang/srt/utils/__init__.py", line 2, in <module>
+    from sglang.srt.utils.common import *
+  File "/root/private_data/sglang-client-004c/lib/python3.10/site-packages/sglang/srt/utils/common.py", line 83, in <module>
+    import triton
+  File "/usr/local/lib/python3.10/dist-packages/triton/__init__.py", line 29, in <module>
+    from . import utils
+  File "/usr/local/lib/python3.10/dist-packages/triton/utils/__init__.py", line 41, in <module>
+    global_config_loader = ConfigLoader()
+  File "/usr/local/lib/python3.10/dist-packages/triton/utils/hcutuner.py", line 494, in __init__
+    self.device = get_gpu_label() if device is None else device
+  File "/usr/local/lib/python3.10/dist-packages/triton/utils/hcutuner.py", line 435, in get_gpu_label
+    gpu_name = torch.cuda.get_device_name().split(' ')[-1].replace("/", "_")
+  File "/usr/local/lib/python3.10/dist-packages/torch/cuda/__init__.py", line 599, in get_device_name
+    return get_device_properties(device).name
+  File "/usr/local/lib/python3.10/dist-packages/torch/cuda/__init__.py", line 632, in get_device_properties
+    _lazy_init()  # will define _get_device_properties
+  File "/usr/local/lib/python3.10/dist-packages/torch/cuda/__init__.py", line 424, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: No HIP GPUs are available
+Could not open /var/log/hylog/.

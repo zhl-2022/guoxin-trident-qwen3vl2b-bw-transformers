@@ -1,0 +1,450 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-19T17:03:49.217761+00:00",
+  "scope": "read-only browser availability attempt and earlier UI snapshot cross-check; no SCNet actions, new login, agreement, project creation, publication, submission or messages",
+  "browser_availability": {
+    "documentation_restored": true,
+    "attempted_tab": "1",
+    "attempted_browser": "2",
+    "get_tab_error": "Browser is not available: 2",
+    "cua_list_browsers_result": [],
+    "live_cloud_refresh_completed": false,
+    "live_sourcefind_profile_or_namespace_completed": false,
+    "interpretation": "This subagent has no available browser surface. It does not establish user logout, missing website access, or absent materials.",
+    "root_live_cloud_refresh_completed": true
+  },
+  "historical_cloud_reference": {
+    "source_path": "evidence/official-materials/20261019/cloud-sections.json",
+    "source_sha256": "c5e126140f6f33bfbe3dc0e5d7c31b0242f7d8c9023d04a93879651cd0ae7e47",
+    "not_a_live_refresh": true,
+    "url": "https://bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif",
+    "sections": [
+      {
+        "section": "五、官方材料支持清单",
+        "historical_ui_lines": [
+          "198 link Description: 脚本模板, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#UJB3d40PnolR0kxm32PcJ6AUnnh",
+          "201 link Description: 分题材料（评测 / 基线）, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#HQZOdkz3SoSSktx9hFwcDmHUn7b",
+          "137 text 国芯国模黑客松-技术报告模板.md"
+        ]
+      },
+      {
+        "section": "六、提交技术报告",
+        "historical_ui_lines": [
+          "198 link Description: 脚本模板, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#UJB3d40PnolR0kxm32PcJ6AUnnh",
+          "201 link Description: 分题材料（评测 / 基线）, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#HQZOdkz3SoSSktx9hFwcDmHUn7b",
+          "137 text 国芯国模黑客松-技术报告模板.md",
+          "444 text 11 ├── baselines/<模型>.json   # 官方下发，不改",
+          "446 text 12 ├── data/                   # 官方下发的评测子集，不改"
+        ]
+      },
+      {
+        "section": "脚本模板",
+        "historical_ui_lines": [
+          "198 link Description: 脚本模板, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#UJB3d40PnolR0kxm32PcJ6AUnnh",
+          "201 link Description: 分题材料（评测 / 基线）, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#HQZOdkz3SoSSktx9hFwcDmHUn7b",
+          "137 text 国芯国模黑客松-技术报告模板.md",
+          "444 text 11 ├── baselines/<模型>.json   # 官方下发，不改",
+          "446 text 12 ├── data/                   # 官方下发的评测子集，不改",
+          "451 text 脚本模板",
+          "453 text 官方随题下发脚手架，脚本里 需填  env.sh  文件 ，其余大部分可以直接复用；有包升级或代码改动时，分别写进  requirements-extra.txt  和  patches/ ， run.sh  启动前会自动安装、重放。评测配置与官方 GPU 基线写在官方下发的  baselines/<模型>.json  中，不需要也不允许修改。下面以 T01 为例；T02–T04 的评测器，以及生成类、语音类模型的启动方式与性能测法，随分题材料下发。",
+          "The focused UI element is 198 link Description: 脚本模板, URL: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#UJB3d40PnolR0kxm32PcJ6AUnnh"
+        ]
+      },
+      {
+        "section": "分题材料（评测 / 基线）",
+        "historical_ui_lines": [
+          "198 link Description: 脚本模板, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#UJB3d40PnolR0kxm32PcJ6AUnnh",
+          "201 link Description: 分题材料（评测 / 基线）, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#HQZOdkz3SoSSktx9hFwcDmHUn7b",
+          "137 text 国芯国模黑客松-技术报告模板.md",
+          "238 text 分题材料（评测 / 基线）",
+          "The focused UI element is 201 link Description: 分题材料（评测 / 基线）, URL: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#HQZOdkz3SoSSktx9hFwcDmHUn7b"
+        ]
+      }
+    ]
+  },
+  "previously_verified_public_entrypoints": {
+    "scope": "current round2 public HTTP/help checks, separate from live user browser identity",
+    "sourcefind_project_help": "https://developer.sourcefind.cn/codes/help/user/project/index.md",
+    "sourcefind_project_api_help": "https://developer.sourcefind.cn/codes/help/api/projects.md",
+    "private_visibility_documented": true,
+    "current_user_namespace": "ghu_30ebea88e",
+    "current_user_creation_permission": null,
+    "new_project_ui_entry_observed": true,
+    "namespace_source": "root-reported direct UI; not subagent browser observation",
+    "new_project_ui_entry_observation_source": "root-reported UI",
+    "profile_email_status": "user-supplied email saved; platform required confirmation; user reports confirmation complete"
+  },
+  "pending_live_checks": [
+    "Root verifies/creates authorized code projects and records actual Project IDs, visibility and permissions",
+    "Continue task-specific evaluation integration if original official evaluator/baseline/data become available; no global absence claim"
+  ],
+  "root_informed": true,
+  "gpu_validator": {
+    "path": "scripts/validate_robobrain_vision_math_compat.py",
+    "sha256": "ba6a94283fa63418948c466eac7fc8949a56cf244eb6f9c3be8dcd78ef673dd1",
+    "expected_numeric_case_count": 24,
+    "new_cases": "FP32/BF16 head broadcasts1/4/4,1/1/4,4/1/1 with batch1/2/1, Vdim40; actual chunk-budget assertions",
+    "syntax_check_passed": true,
+    "help_check_passed": true,
+    "gpu_executed": false,
+    "core_compat_sha256_unchanged": "083dc53f3e4f8171b774469bffa724c2269a9d289769f56a9d7a5624cd81659f",
+    "cpu_extracted_broadcast_block_validation": {
+      "scope": "Exact new AST block executed using CPU allocations; no CUDA or model execution. This is not GPU proof.",
+      "case_count": 6,
+      "cases": [
+        {
+          "name": "broadcast_heads1_4_4_batch1_2_1_chunk7",
+          "dtype": "torch.float32",
+          "max_absolute_error": 1.4901161193847656e-07,
+          "passed": true,
+          "score_element_limit": 3752,
+          "observed_chunks": [
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 2,
+              "key_length": 67,
+              "score_elements": 1072
+            }
+          ],
+          "budget_verified": true
+        },
+        {
+          "name": "broadcast_heads1_1_4_batch1_2_1_chunk7",
+          "dtype": "torch.float32",
+          "max_absolute_error": 1.4901161193847656e-07,
+          "passed": true,
+          "score_element_limit": 3752,
+          "observed_chunks": [
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 2,
+              "key_length": 67,
+              "score_elements": 1072
+            }
+          ],
+          "budget_verified": true
+        },
+        {
+          "name": "broadcast_heads4_1_1_batch1_2_1_chunk7",
+          "dtype": "torch.float32",
+          "max_absolute_error": 2.384185791015625e-07,
+          "passed": true,
+          "score_element_limit": 3752,
+          "observed_chunks": [
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 2,
+              "key_length": 67,
+              "score_elements": 1072
+            }
+          ],
+          "budget_verified": true
+        },
+        {
+          "name": "broadcast_heads1_4_4_batch1_2_1_chunk7",
+          "dtype": "torch.bfloat16",
+          "max_absolute_error": 0.00048828125,
+          "passed": true,
+          "score_element_limit": 3752,
+          "observed_chunks": [
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 2,
+              "key_length": 67,
+              "score_elements": 1072
+            }
+          ],
+          "budget_verified": true
+        },
+        {
+          "name": "broadcast_heads1_1_4_batch1_2_1_chunk7",
+          "dtype": "torch.bfloat16",
+          "max_absolute_error": 0.0,
+          "passed": true,
+          "score_element_limit": 3752,
+          "observed_chunks": [
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 2,
+              "key_length": 67,
+              "score_elements": 1072
+            }
+          ],
+          "budget_verified": true
+        },
+        {
+          "name": "broadcast_heads4_1_1_batch1_2_1_chunk7",
+          "dtype": "torch.bfloat16",
+          "max_absolute_error": 0.0,
+          "passed": true,
+          "score_element_limit": 3752,
+          "observed_chunks": [
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 7,
+              "key_length": 67,
+              "score_elements": 3752
+            },
+            {
+              "batch": 2,
+              "heads": 4,
+              "query_length": 2,
+              "key_length": 67,
+              "score_elements": 1072
+            }
+          ],
+          "budget_verified": true
+        }
+      ],
+      "chunk_count": 36,
+      "gpu_executed": false
+    }
+  },
+  "root_reported_ui_update": {
+    "recorded_at_utc": "2026-10-19T17:22:03.604450+00:00",
+    "evidence_source": "Root agent reports its direct UI observation; this subagent did not observe browser UI directly",
+    "tab4_initial_state": "anonymous",
+    "sign_in_path": "Sourcefind separate login; SCNet SSO entry reached account binding",
+    "current_state": "Root logged in successfully with user-authorized independent account; no credentials retained here",
+    "current_safe_url": "https://developer.sourcefind.cn/codes/-/profile",
+    "namespace": "ghu_30ebea88e",
+    "user_id": 25562,
+    "profile_message": "Please complete your profile with email address",
+    "new_project_entry_visible": true,
+    "project_creation_tested": false,
+    "project_creation_permission_verified": false,
+    "cloud_document_refreshed": true,
+    "credentials_saved": false,
+    "phone_number_saved": false,
+    "ticket_urls_saved": false,
+    "profile_email_source": "user-supplied; address value not retained in this record",
+    "profile_email_saved": true,
+    "platform_email_confirmation_required": true,
+    "user_reported_email_confirmation_completed": true,
+    "project_creation_next_step": "root verifies/creates projects under current user authorization"
+  },
+  "root_reported_cloud_review": {
+    "evidence_source": "Root direct UI/screenshot observation relayed to this subagent; subagent has no browser surface",
+    "section": "分题材料（评测 / 基线）",
+    "document_last_modified_ui": "10月19日",
+    "table_content": "Material categories and purposes, including integration documents, evaluation scripts, official baselines, and fixed test images",
+    "table_rendering": "single embedded table image",
+    "blue_verify_py": "Blue verify.py text is inside the table image; clicking opened only the image tools menu, not a file or download URL",
+    "download_url_observed_for_verify_py": false,
+    "known_visible_attachment": {
+      "name": "国芯国模黑客松-技术报告模板.md",
+      "display_size": "14.09 KB",
+      "already_downloaded_path": "evidence/official-materials/20261019/report-template.md"
+    },
+    "assessment": "This direct section review did not reveal an executable evaluator or download link. It does not establish that no materials are publicly available elsewhere."
+  }
+}

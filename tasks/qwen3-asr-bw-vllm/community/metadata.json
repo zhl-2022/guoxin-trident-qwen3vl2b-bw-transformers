@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "task": "qwen3-asr-bw-vllm",
+  "sourcefind_project_id": 15917,
+  "sourcefind_project_url": "https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-qwen3-asr-bw-vllm",
+  "project_identity_source": "root agent actual Sourcefind UI observation relayed on2026-10-20",
+  "model_id": "Qwen/Qwen3-ASR-1.7B",
+  "model_revision": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+  "app_category": "语音识别",
+  "category_icon": {
+    "source_project": "modelzoo/qwen3-asr_pytorch",
+    "commit": "baae2d0d52e4d4aac2476d0960bb62f0d0076609",
+    "width": 410,
+    "height": 410,
+    "bytes_preserved": true
+  },
+  "observed_accelerator": "BW",
+  "unverified_accelerator_suffix": true,
+  "frameworks": [
+    "pytorch",
+    "vllm"
+  ],
+  "process_type": "推理",
+  "model_weights_included": false,
+  "model_card_declared_weights_license": "apache-2.0",
+  "weights_license_scope_note": "Publisher model-card declaration; separate from adaptation code and not a review of all upstream rights",
+  "new_adaptation_code_license_status": "user_chose_scope_notice_no_repositorywide_license",
+  "complete_actual_image_reference": null,
+  "official_accuracy": false,
+  "official_performance": false,
+  "formal_ready": false,
+  "submitted": false,
+  "upstream_sources": [
+    {
+      "path": "README_origin.md",
+      "url": "https://huggingface.co/Qwen/Qwen3-ASR-1.7B/resolve/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md",
+      "scope": "original publisher model-card README at fixed model revision; preserved bytes, not executed",
+      "sha256": "5058416891bc47a2051557765997e8c42f8eb78a0e33c3e775bd17d4b0ba4d50",
+      "bytes": 57456
+    },
+    {
+      "path": "upstream/code-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/QwenLM/Qwen3-ASR/7c6daf77a2421100f5fb066495372c00129d39ff/LICENSE",
+      "scope": "QwenLM/Qwen3-ASR upstream code repository only; model weights licensing is separate",
+      "sha256": "a44a6081c73ad75f0255bb2bb5cab74ef1829565a895a24e53a4f11290ab7655",
+      "bytes": 11343
+    },
+    {
+      "path": "icon.png",
+      "url": "https://developer.sourcefind.cn/codes/api/v4/projects/modelzoo%2Fqwen3-asr_pytorch/repository/files/icon.png/raw?ref=baae2d0d52e4d4aac2476d0960bb62f0d0076609",
+      "scope": "official ModelZoo category icon reused unchanged for 语音识别",
+      "sha256": "1d03c2e3020a779122fd4e7ea69c08ebcf37e48dd0ca619ed1c6f6563e968a26",
+      "bytes": 70013
+    },
+    {
+      "path": "upstream/category-model.properties",
+      "url": "https://developer.sourcefind.cn/codes/api/v4/projects/modelzoo%2Fqwen3-asr_pytorch/repository/files/model.properties/raw?ref=baae2d0d52e4d4aac2476d0960bb62f0d0076609",
+      "scope": "official category label source at same fixed commit as icon; IDs/card SKUs belong to that example and are not copied",
+      "sha256": "d0320f2bee7bec168a4d32c4981a7ff2330097c25a743205c53bbb050d9a7492",
+      "bytes": 346
+    }
+  ],
+  "promoted_files": {
+    "model.properties": {
+      "source": "model.properties",
+      "sha256": "7bc280a885618d1b0fd2146d52e29d182f5581d7de17054872fdd5ffd07da8b3",
+      "bytes": 421
+    },
+    "LICENSE": {
+      "source": "LICENSE",
+      "sha256": "59c5957752d8d52466d4f9e8f161165188f5f04781c6d17722be477a88ad48f2",
+      "bytes": 1294
+    },
+    "icon.png": {
+      "source": "icon.png",
+      "sha256": "1d03c2e3020a779122fd4e7ea69c08ebcf37e48dd0ca619ed1c6f6563e968a26",
+      "bytes": 70013
+    },
+    "README_origin.md": {
+      "source": "README_origin.md",
+      "sha256": "5058416891bc47a2051557765997e8c42f8eb78a0e33c3e775bd17d4b0ba4d50",
+      "bytes": 57456
+    },
+    "requirements.txt": {
+      "source": "requirements.txt",
+      "sha256": "f90c4b73b473ef3f91ca3f942e937de3b9d72eeab9389c1ee43a46f02f3fc2ec",
+      "bytes": 810
+    }
+  },
+  "created_at_utc": "2026-10-19T18:38:35.068499+00:00",
+  "license_choice_source": "user explicitly chose to retain copyright/scope notice; no repository-wide license selected"
+}

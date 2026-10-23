@@ -1,0 +1,450 @@
+{
+  "schema_version": 1,
+  "scope": "Current canonical Windows CPU unittest suite; fresh final-003 run. Prior compilation/CLI and separate audit-only WSL results are not rerun here.",
+  "command": [
+    "C:\\Users\\zhl\\anaconda3\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "process_environment": {
+    "PYTHONPATH": "src;scripts",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "cwd": "E:\\hg20261019",
+  "started_at_utc": "2026-10-19T19:39:47.167067+00:00",
+  "ended_at_utc": "2026-10-19T19:40:49.552481+00:00",
+  "wall_seconds": 62.375,
+  "log": "evidence/local-tests-session003-final-003.log",
+  "log_sha256": "a5e89501fcc581d0a108a1132f983991c0ff39b93e392aecf7c91c2c4da98a7a",
+  "exit_code": 0,
+  "tests_run": 175,
+  "elapsed_test_seconds": 56.183,
+  "passed_tests": 169,
+  "skipped_tests": 6,
+  "suite_passed": true,
+  "skip_lines": [
+    "test_selfcheck_timeout_kills_its_child_process_group (test_official_bridge.OfficialBridgeTests.test_selfcheck_timeout_kills_its_child_process_group) ... skipped 'Linux process-group cleanup'",
+    "test_core_override_in_extra_array_fails_before_any_launch (test_recon_task_entry.ReconTaskEntryTests.test_core_override_in_extra_array_fails_before_any_launch) ... skipped 'Linux Bash entry; run in WSL'",
+    "test_default_command_matches_recorded_success_despite_other_task_environment (test_recon_task_entry.ReconTaskEntryTests.test_default_command_matches_recorded_success_despite_other_task_environment) ... skipped 'Linux Bash entry; run in WSL'",
+    "test_explicit_task_overrides_work_without_mutating_historical_defaults (test_recon_task_entry.ReconTaskEntryTests.test_explicit_task_overrides_work_without_mutating_historical_defaults) ... skipped 'Linux Bash entry; run in WSL'",
+    "test_other_tasks_official_paths_and_image_identity_are_not_inherited (test_recon_task_entry.ReconTaskEntryTests.test_other_tasks_official_paths_and_image_identity_are_not_inherited) ... skipped 'Linux Bash entry; run in WSL'",
+    "test_runtime_control_lock_refuses_concurrent_controller (test_session003_robo_asr_checks.SessionChecksTests.test_runtime_control_lock_refuses_concurrent_controller) ... skipped 'fcntl locking requires native Linux or WSL'"
+  ],
+  "terminal_summary": [
+    "test_concurrent_working_change_is_detected_before_any_update (test_update_task_repositories.RepositoryUpdateTests.test_concurrent_working_change_is_detected_before_any_update) ... ok",
+    "test_default_plan_does_not_modify_existing_working_files_or_git (test_update_task_repositories.RepositoryUpdateTests.test_default_plan_does_not_modify_existing_working_files_or_git) ... ok",
+    "test_explicit_lf_update_safely_migrates_old_manifest_and_preserves_binary_and_git (test_update_task_repositories.RepositoryUpdateTests.test_explicit_lf_update_safely_migrates_old_manifest_and_preserves_binary_and_git) ... ok",
+    "test_explicit_real_repository_metadata_is_retained (test_update_task_repositories.RepositoryUpdateTests.test_explicit_real_repository_metadata_is_retained) ... ok",
+    "test_extra_evidence_is_explicit_missing_sensitive_and_large_log_refused (test_update_task_repositories.RepositoryUpdateTests.test_extra_evidence_is_explicit_missing_sensitive_and_large_log_refused) ... ok",
+    "test_local_edits_and_unmanaged_target_collisions_are_refused (test_update_task_repositories.RepositoryUpdateTests.test_local_edits_and_unmanaged_target_collisions_are_refused) ... ok",
+    "test_malicious_manifest_git_path_and_symlink_target_are_refused (test_update_task_repositories.RepositoryUpdateTests.test_malicious_manifest_git_path_and_symlink_target_are_refused) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 175 tests in 56.183s",
+    "",
+    "OK (skipped=6)"
+  ],
+  "gpu_checks_run": false,
+  "official_evaluation": false,
+  "stage_or_repository_manifest_modified": false,
+  "source_sha256_before": {
+    "scripts/asr_development_eval.py": {
+      "bytes": 12691,
+      "sha256": "b1960668b5a70f6c8a31bdf3881881c1bc6dc785db26bf9b8e8a75ad27dd0d01"
+    },
+    "scripts/audit_recon_session003_final.py": {
+      "bytes": 22645,
+      "sha256": "86131961b495af7ba5b1bfd246df927f611393e848566b3b73e27c497dc084c2"
+    },
+    "scripts/make_bundle.py": {
+      "bytes": 5510,
+      "sha256": "82958bb763e80b0999569134014da826e88a824948401a0390c6e75c0c32dcef"
+    },
+    "scripts/prepare_asr_development_fixtures.py": {
+      "bytes": 4355,
+      "sha256": "30cac5624f236254bd94c0bbe2f8039467fa7191231a09d5eb379c56659648c2"
+    },
+    "scripts/prepare_qwen_asr_task.py": {
+      "bytes": 11320,
+      "sha256": "03101937ccf5aa4ac8cf134ac1b1821327767614a6809b39b03559928669ca52"
+    },
+    "scripts/prepare_task_repositories.py": {
+      "bytes": 26642,
+      "sha256": "9894061f04b969d984d1f6ea939fcb34f9acc3c72a4c96d8db7b7a5686cdfee5"
+    },
+    "scripts/qwen3_asr_smoke.py": {
+      "bytes": 10741,
+      "sha256": "da40fff4081c7873a4d276225d4ef990df9b2d666daf3c1d73ee0796def655f1"
+    },
+    "scripts/qwen3_asr_stream_smoke.py": {
+      "bytes": 11860,
+      "sha256": "3ae83568801ff05787cef6b959d3cfc28b63d3014e04049d8803cb3cd35a7f05"
+    },
+    "scripts/qwen_asr_tf55_compat.py": {
+      "bytes": 2230,
+      "sha256": "84d0d5402c73d21562fb12bb649ace56d6f29b7d1fdf1d3e402b8d4a6e28820a"
+    },
+    "scripts/recon2reason_reference.py": {
+      "bytes": 22721,
+      "sha256": "69261dcdffea3e849a7a1564d6c561ce044e69a5a75935100973e91ac464079c"
+    },
+    "scripts/recon2reason_runtime.py": {
+      "bytes": 32422,
+      "sha256": "66e9a97c63469698bfc09fbc1158a28fbd7a48f52877abb21156785a33ab1221"
+    },
+    "scripts/recon2reason_smoke.py": {
+      "bytes": 10802,
+      "sha256": "21d2f90e7a1df414cb260f029a5e42a677cc06867e1222f537487b53b8a1fe2d"
+    },
+    "scripts/robobrain_heldout_fixtures.py": {
+      "bytes": 8633,
+      "sha256": "e0dba59f274a1629b53b0cf3c9c4fd3adf72220b41164c34f03e8a72778cbeb7"
+    },
+    "scripts/robobrain_protocol_smoke.py": {
+      "bytes": 12468,
+      "sha256": "bec36fb0c85332eb7144c479e9782d57c9b0dc2ad15b610ac81d1af2bd237486"
+    },
+    "scripts/robobrain_vision_math_compat.py": {
+      "bytes": 8173,
+      "sha256": "083dc53f3e4f8171b774469bffa724c2269a9d289769f56a9d7a5624cd81659f"
+    },
+    "scripts/robobrain_vision_math_diagnostic.py": {
+      "bytes": 5609,
+      "sha256": "d529f5caf6625cfae6564dbeea4fb6617d5aa37c738386e8ec54f159d5d64bc3"
+    },
+    "scripts/scnet_asr_probe.py": {
+      "bytes": 9305,
+      "sha256": "88697918ca570a4ab9510f0a5cd57e787dea9cf924e2cc0bf1f75f805c30048c"
+    },
+    "scripts/scnet_preflight.py": {
+      "bytes": 14827,
+      "sha256": "b55d50fcf5cfea9fa213b9a27a6811b41c1c7a08b3c5cc6bb257c6b66f109466"
+    },
+    "scripts/scnet_vllm_probe.py": {
+      "bytes": 15060,
+      "sha256": "2a9650acefb5f8c48a9713a9979d09347c8de0e1b93f7db7f71d05c06a921ec5"
+    },
+    "scripts/session003_recon_checks.py": {
+      "bytes": 3027,
+      "sha256": "1d60186b4d37a8b6bf0be8f5f5b85a71d6ec838e442f0138aff79f7d36a4b777"
+    },
+    "scripts/session003_robo_asr_checks.py": {
+      "bytes": 22177,
+      "sha256": "20f358fa199f4e18db08072aa6ccf1a21019fff197233c335ab2555d50491345"
+    },
+    "scripts/t02_development_bench.py": {
+      "bytes": 17119,
+      "sha256": "bc09711bb58fb5a7ae4676a840956a4da1caf49f6e6034b8015c5dd9a5bae14e"
+    },
+    "scripts/update_task_repositories.py": {
+      "bytes": 12426,
+      "sha256": "af8dc461340fc3bc6a55f7f581b5424481af799c49b049e471c5a53b23a87b18"
+    },
+    "scripts/validate_robobrain_vision_math_compat.py": {
+      "bytes": 8728,
+      "sha256": "ba6a94283fa63418948c466eac7fc8949a56cf244eb6f9c3be8dcd78ef673dd1"
+    },
+    "src/guoxin/__init__.py": {
+      "bytes": 102,
+      "sha256": "128c91f210e19fdd88c315b25294a7e8ddfdc499e05272f98436f78e5700e061"
+    },
+    "src/guoxin/__main__.py": {
+      "bytes": 6067,
+      "sha256": "274758da59ad2166eccb79beab7a378e72665614880c46887c6c31e7b6d7c67a"
+    },
+    "src/guoxin/config.py": {
+      "bytes": 11481,
+      "sha256": "01a16d15bfb4fb6671791cb9f01d1d57d32522118833c87ff7536afb8b0dab88"
+    },
+    "src/guoxin/gates.py": {
+      "bytes": 3765,
+      "sha256": "3600e694a0440614e5525435d6f0e66384d261a0f349f14a5c598e18d0ef0e3d"
+    },
+    "src/guoxin/runtime.py": {
+      "bytes": 4579,
+      "sha256": "79006a5c295e1b829c330f25ee23e57def0faaae5be4a8c41ac484bd45b497f6"
+    },
+    "tests/test_asr_development_eval.py": {
+      "bytes": 9584,
+      "sha256": "3763172fdfde5c4b0a9b1b6d944defc208028a8b1b0bff1775fc8987b8adf776"
+    },
+    "tests/test_asr_task_prepare.py": {
+      "bytes": 3900,
+      "sha256": "6f313a71c4f75d9358dfdf0ec3b7c49265d3b795f389d41395d9b0667b9f2fb7"
+    },
+    "tests/test_audit_recon_session003_final.py": {
+      "bytes": 10578,
+      "sha256": "5eeb07020a0133c6adbe557f76c3f3ec43d76e5708c37e1666d89b5aa1d04ff3"
+    },
+    "tests/test_guoxin.py": {
+      "bytes": 12823,
+      "sha256": "e8ccfdd93aac3e4210e21bf9f3eb972cebf35f00f9f3dcf8c203d8dcc4113a8e"
+    },
+    "tests/test_official_bridge.py": {
+      "bytes": 16668,
+      "sha256": "6899ba3c4ff98076ea9a4b7d35a5418c97d37cbe3a9a5b300440d42cf401d9ce"
+    },
+    "tests/test_qwen3_asr_smoke.py": {
+      "bytes": 6755,
+      "sha256": "7896d8091a397fc1515e5ff82ab1c4112861cdc86840f671dac0059dff109f8c"
+    },
+    "tests/test_qwen3_asr_stream_smoke.py": {
+      "bytes": 12483,
+      "sha256": "780b65a78c28f0ed11b553225c1a76e7284e31c9ce9a3fa38bed4fad551ac2b7"
+    },
+    "tests/test_qwen_asr_tf55_compat.py": {
+      "bytes": 3856,
+      "sha256": "8ac7d660d3deb3f0a8d6df55019786ce0fdd85009b50a396334ec2a3e5d358d0"
+    },
+    "tests/test_recon_task_entry.py": {
+      "bytes": 4968,
+      "sha256": "25ec763bf887295ec26a16343af82a21024f3661676c52e8706c9ddedcb2b07e"
+    },
+    "tests/test_robobrain_protocol_smoke.py": {
+      "bytes": 7456,
+      "sha256": "958f5a165a3fdca85239c8c998380cd5b8c7d5e2496fa2252f8c1fbec27deec7"
+    },
+    "tests/test_robobrain_vision_math_compat.py": {
+      "bytes": 8885,
+      "sha256": "a6ed183aff5c690aa78f99550bf35a8686c742abe0ef8d3874fe993d7bbfbf99"
+    },
+    "tests/test_robobrain_vision_math_diagnostic.py": {
+      "bytes": 4444,
+      "sha256": "3211558b67d7df120e3dc9bc384808a9428d0b68796e0a08d6c2d801f0ee25e5"
+    },
+    "tests/test_scnet_preflight.py": {
+      "bytes": 15872,
+      "sha256": "cd2ba50dbc7cc710c1d6f338ac8aa9406fc1f13dba832c4b70ff47a4541f923c"
+    },
+    "tests/test_session003_robo_asr_checks.py": {
+      "bytes": 16685,
+      "sha256": "46e34fb5378d88d06c70a1745bfa87e73bb4b2daf968ddd9444f0cc27fd9be2c"
+    },
+    "tests/test_t02_development_bench.py": {
+      "bytes": 10319,
+      "sha256": "c506e23a6a206263583890741e7637a3e6d74f368e35dfc2dfc6e360d4938c33"
+    },
+    "tests/test_task_repositories.py": {
+      "bytes": 18423,
+      "sha256": "eafab29f8c67ea52bc4283d67188dca8c27ce37070d530735e7510cbdc66b382"
+    },
+    "tests/test_update_task_repositories.py": {
+      "bytes": 11276,
+      "sha256": "2dd72836f8755cfc874b47a421e0ad95af2861592b7cff7543bdfc1f6423a42d"
+    }
+  },
+  "source_sha256_after": {
+    "scripts/asr_development_eval.py": {
+      "bytes": 12691,
+      "sha256": "b1960668b5a70f6c8a31bdf3881881c1bc6dc785db26bf9b8e8a75ad27dd0d01"
+    },
+    "scripts/audit_recon_session003_final.py": {
+      "bytes": 22645,
+      "sha256": "86131961b495af7ba5b1bfd246df927f611393e848566b3b73e27c497dc084c2"
+    },
+    "scripts/make_bundle.py": {
+      "bytes": 5510,
+      "sha256": "82958bb763e80b0999569134014da826e88a824948401a0390c6e75c0c32dcef"
+    },
+    "scripts/prepare_asr_development_fixtures.py": {
+      "bytes": 4355,
+      "sha256": "30cac5624f236254bd94c0bbe2f8039467fa7191231a09d5eb379c56659648c2"
+    },
+    "scripts/prepare_qwen_asr_task.py": {
+      "bytes": 11320,
+      "sha256": "03101937ccf5aa4ac8cf134ac1b1821327767614a6809b39b03559928669ca52"
+    },
+    "scripts/prepare_task_repositories.py": {
+      "bytes": 26642,
+      "sha256": "9894061f04b969d984d1f6ea939fcb34f9acc3c72a4c96d8db7b7a5686cdfee5"
+    },
+    "scripts/qwen3_asr_smoke.py": {
+      "bytes": 10741,
+      "sha256": "da40fff4081c7873a4d276225d4ef990df9b2d666daf3c1d73ee0796def655f1"
+    },
+    "scripts/qwen3_asr_stream_smoke.py": {
+      "bytes": 11860,
+      "sha256": "3ae83568801ff05787cef6b959d3cfc28b63d3014e04049d8803cb3cd35a7f05"
+    },
+    "scripts/qwen_asr_tf55_compat.py": {
+      "bytes": 2230,
+      "sha256": "84d0d5402c73d21562fb12bb649ace56d6f29b7d1fdf1d3e402b8d4a6e28820a"
+    },
+    "scripts/recon2reason_reference.py": {
+      "bytes": 22721,
+      "sha256": "69261dcdffea3e849a7a1564d6c561ce044e69a5a75935100973e91ac464079c"
+    },
+    "scripts/recon2reason_runtime.py": {
+      "bytes": 32422,
+      "sha256": "66e9a97c63469698bfc09fbc1158a28fbd7a48f52877abb21156785a33ab1221"
+    },
+    "scripts/recon2reason_smoke.py": {
+      "bytes": 10802,
+      "sha256": "21d2f90e7a1df414cb260f029a5e42a677cc06867e1222f537487b53b8a1fe2d"
+    },
+    "scripts/robobrain_heldout_fixtures.py": {
+      "bytes": 8633,
+      "sha256": "e0dba59f274a1629b53b0cf3c9c4fd3adf72220b41164c34f03e8a72778cbeb7"
+    },
+    "scripts/robobrain_protocol_smoke.py": {
+      "bytes": 12468,
+      "sha256": "bec36fb0c85332eb7144c479e9782d57c9b0dc2ad15b610ac81d1af2bd237486"
+    },
+    "scripts/robobrain_vision_math_compat.py": {
+      "bytes": 8173,
+      "sha256": "083dc53f3e4f8171b774469bffa724c2269a9d289769f56a9d7a5624cd81659f"
+    },
+    "scripts/robobrain_vision_math_diagnostic.py": {
+      "bytes": 5609,
+      "sha256": "d529f5caf6625cfae6564dbeea4fb6617d5aa37c738386e8ec54f159d5d64bc3"
+    },
+    "scripts/scnet_asr_probe.py": {
+      "bytes": 9305,
+      "sha256": "88697918ca570a4ab9510f0a5cd57e787dea9cf924e2cc0bf1f75f805c30048c"
+    },
+    "scripts/scnet_preflight.py": {
+      "bytes": 14827,
+      "sha256": "b55d50fcf5cfea9fa213b9a27a6811b41c1c7a08b3c5cc6bb257c6b66f109466"
+    },
+    "scripts/scnet_vllm_probe.py": {
+      "bytes": 15060,
+      "sha256": "2a9650acefb5f8c48a9713a9979d09347c8de0e1b93f7db7f71d05c06a921ec5"
+    },
+    "scripts/session003_recon_checks.py": {
+      "bytes": 3027,
+      "sha256": "1d60186b4d37a8b6bf0be8f5f5b85a71d6ec838e442f0138aff79f7d36a4b777"
+    },
+    "scripts/session003_robo_asr_checks.py": {
+      "bytes": 22177,
+      "sha256": "20f358fa199f4e18db08072aa6ccf1a21019fff197233c335ab2555d50491345"
+    },
+    "scripts/t02_development_bench.py": {
+      "bytes": 17119,
+      "sha256": "bc09711bb58fb5a7ae4676a840956a4da1caf49f6e6034b8015c5dd9a5bae14e"
+    },
+    "scripts/update_task_repositories.py": {
+      "bytes": 12426,
+      "sha256": "af8dc461340fc3bc6a55f7f581b5424481af799c49b049e471c5a53b23a87b18"
+    },
+    "scripts/validate_robobrain_vision_math_compat.py": {
+      "bytes": 8728,
+      "sha256": "ba6a94283fa63418948c466eac7fc8949a56cf244eb6f9c3be8dcd78ef673dd1"
+    },
+    "src/guoxin/__init__.py": {
+      "bytes": 102,
+      "sha256": "128c91f210e19fdd88c315b25294a7e8ddfdc499e05272f98436f78e5700e061"
+    },
+    "src/guoxin/__main__.py": {
+      "bytes": 6067,
+      "sha256": "274758da59ad2166eccb79beab7a378e72665614880c46887c6c31e7b6d7c67a"
+    },
+    "src/guoxin/config.py": {
+      "bytes": 11481,
+      "sha256": "01a16d15bfb4fb6671791cb9f01d1d57d32522118833c87ff7536afb8b0dab88"
+    },
+    "src/guoxin/gates.py": {
+      "bytes": 3765,
+      "sha256": "3600e694a0440614e5525435d6f0e66384d261a0f349f14a5c598e18d0ef0e3d"
+    },
+    "src/guoxin/runtime.py": {
+      "bytes": 4579,
+      "sha256": "79006a5c295e1b829c330f25ee23e57def0faaae5be4a8c41ac484bd45b497f6"
+    },
+    "tests/test_asr_development_eval.py": {
+      "bytes": 9584,
+      "sha256": "3763172fdfde5c4b0a9b1b6d944defc208028a8b1b0bff1775fc8987b8adf776"
+    },
+    "tests/test_asr_task_prepare.py": {
+      "bytes": 3900,
+      "sha256": "6f313a71c4f75d9358dfdf0ec3b7c49265d3b795f389d41395d9b0667b9f2fb7"
+    },
+    "tests/test_audit_recon_session003_final.py": {
+      "bytes": 10578,
+      "sha256": "5eeb07020a0133c6adbe557f76c3f3ec43d76e5708c37e1666d89b5aa1d04ff3"
+    },
+    "tests/test_guoxin.py": {
+      "bytes": 12823,
+      "sha256": "e8ccfdd93aac3e4210e21bf9f3eb972cebf35f00f9f3dcf8c203d8dcc4113a8e"
+    },
+    "tests/test_official_bridge.py": {
+      "bytes": 16668,
+      "sha256": "6899ba3c4ff98076ea9a4b7d35a5418c97d37cbe3a9a5b300440d42cf401d9ce"
+    },
+    "tests/test_qwen3_asr_smoke.py": {
+      "bytes": 6755,
+      "sha256": "7896d8091a397fc1515e5ff82ab1c4112861cdc86840f671dac0059dff109f8c"
+    },
+    "tests/test_qwen3_asr_stream_smoke.py": {
+      "bytes": 12483,
+      "sha256": "780b65a78c28f0ed11b553225c1a76e7284e31c9ce9a3fa38bed4fad551ac2b7"
+    },
+    "tests/test_qwen_asr_tf55_compat.py": {
+      "bytes": 3856,
+      "sha256": "8ac7d660d3deb3f0a8d6df55019786ce0fdd85009b50a396334ec2a3e5d358d0"
+    },
+    "tests/test_recon_task_entry.py": {
+      "bytes": 4968,
+      "sha256": "25ec763bf887295ec26a16343af82a21024f3661676c52e8706c9ddedcb2b07e"
+    },
+    "tests/test_robobrain_protocol_smoke.py": {
+      "bytes": 7456,
+      "sha256": "958f5a165a3fdca85239c8c998380cd5b8c7d5e2496fa2252f8c1fbec27deec7"
+    },
+    "tests/test_robobrain_vision_math_compat.py": {
+      "bytes": 8885,
+      "sha256": "a6ed183aff5c690aa78f99550bf35a8686c742abe0ef8d3874fe993d7bbfbf99"
+    },
+    "tests/test_robobrain_vision_math_diagnostic.py": {
+      "bytes": 4444,
+      "sha256": "3211558b67d7df120e3dc9bc384808a9428d0b68796e0a08d6c2d801f0ee25e5"
+    },
+    "tests/test_scnet_preflight.py": {
+      "bytes": 15872,
+      "sha256": "cd2ba50dbc7cc710c1d6f338ac8aa9406fc1f13dba832c4b70ff47a4541f923c"
+    },
+    "tests/test_session003_robo_asr_checks.py": {
+      "bytes": 16685,
+      "sha256": "46e34fb5378d88d06c70a1745bfa87e73bb4b2daf968ddd9444f0cc27fd9be2c"
+    },
+    "tests/test_t02_development_bench.py": {
+      "bytes": 10319,
+      "sha256": "c506e23a6a206263583890741e7637a3e6d74f368e35dfc2dfc6e360d4938c33"
+    },
+    "tests/test_task_repositories.py": {
+      "bytes": 18423,
+      "sha256": "eafab29f8c67ea52bc4283d67188dca8c27ce37070d530735e7510cbdc66b382"
+    },
+    "tests/test_update_task_repositories.py": {
+      "bytes": 11276,
+      "sha256": "2dd72836f8755cfc874b47a421e0ad95af2861592b7cff7543bdfc1f6423a42d"
+    }
+  },
+  "sources_unchanged_during_suite": true,
+  "source_file_count": 46,
+  "prior_final_002_preserved": {
+    "path": "evidence/local-validation-session003-final-002.json",
+    "sha256": "548726cb463e49dafa5f605807efa4be443fcf0414f526d6374791008d08edfe"
+  },
+  "compilation_and_cli": {
+    "repeated_in_this_run": false,
+    "previous_evidence": "evidence/local-validation-session003-final-002.json",
+    "note": "Prior file records compilation of46 sources and CLI checks; those are separate historical checks."
+  },
+  "separate_targeted_audit_checks": {
+    "scope": "Previously executed against these same two audit-source hashes, independent of this full suite",
+    "windows_tests_run": 8,
+    "windows_passed": 8,
+    "wsl_tests_run": 8,
+    "wsl_passed": 8,
+    "official_evaluation": false,
+    "source_sha256": {
+      "scripts/audit_recon_session003_final.py": "86131961b495af7ba5b1bfd246df927f611393e848566b3b73e27c497dc084c2",
+      "tests/test_audit_recon_session003_final.py": "5eeb07020a0133c6adbe557f76c3f3ec43d76e5708c37e1666d89b5aa1d04ff3"
+    }
+  }
+}

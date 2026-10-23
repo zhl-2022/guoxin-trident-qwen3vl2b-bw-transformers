@@ -1,0 +1,482 @@
+{
+  "schema_version": 1,
+  "slug": "qwen3-asr-bw-vllm",
+  "track": "T04",
+  "status": "isolated_prepare_publisher_wav_long_and_fullfile_sse_verified_formal_pending",
+  "platform": {
+    "provider": "SCNet",
+    "region": "华中一区【A区】",
+    "resource_group": "113 / hx1hgbwnormal",
+    "card": "BW",
+    "framework": "vllm",
+    "precision": "bf16",
+    "cards": 1,
+    "execution_policy": "session003 used authorized A Recon and B Robo-to-ASR sequential execution; all instances verified stopped; no further GPU allocation in final delivery",
+    "instance_final_state": "stopped",
+    "checkpoint": "evidence/platform-checkpoint-20261020-003.json",
+    "historical_checkpoint": "evidence/platform-checkpoint-20261019-002.json",
+    "latest_instance_id": "2112237945233408001",
+    "latest_instance_final_state": "stopped",
+    "latest_instance_environment_saved": true,
+    "latest_state_source": "evidence/platform-checkpoint-20261020-003.json"
+  },
+  "model": {
+    "id": "Qwen/Qwen3-ASR-1.7B",
+    "expected_architecture": "Qwen3ASRForConditionalGeneration",
+    "config_path": "evidence/asr-model-config.json",
+    "remote_path": "/root/private_data/SothisAI/model/Aihub/Qwen3-ASR-1.7B/main/Qwen3-ASR-1.7B",
+    "remote_path_candidate": "/root/private_data/SothisAI/model/Aihub/Qwen3-ASR-1.7B/main/Qwen3-ASR-1.7B",
+    "remote_path_status": "verified by actual model metadata/header/hash report asr-preflight-001.json",
+    "weights_verified": true,
+    "scnet_storage_path_reported": "/public/home/ac3p4mowhz/SothisAI/model/Aihub/Qwen3-ASR-1.7B/main/Qwen3-ASR-1.7B",
+    "scnet_model_entry_id": "2112193282963628034",
+    "scnet_cluster_id": 20091,
+    "scnet_created_at_local": "2026-10-19 22:44:56",
+    "scnet_clone_complete_reported": true,
+    "config_sha256": "2e74a751548b8ad7d7526d29365ad8144c345d8b412b1152d25dc6698452712f",
+    "weights_verification_scope": "two full shard hashes and sizes match upstream revision; not inference correctness",
+    "context_max_position_embeddings": 65536,
+    "context_max_position_embeddings_source": "thinker_config.text_config.max_position_embeddings",
+    "weight_hash_upstream_verification": {
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3-ASR-1.7B?blobs=true",
+      "revision": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+      "published_files": {
+        "model-00001-of-00002.safetensors": {
+          "sha256": "a4cd1f1a04d90b757dc7f7dd26254e69a013b19e80efe590a83c6a3bde8608d6",
+          "size": 4220320824
+        },
+        "model-00002-of-00002.safetensors": {
+          "sha256": "6e0b9d9e09e2e0238e7ef3cc8a484ab387e91b90f1900bedf88bc92d7929ccfc",
+          "size": 478200688
+        }
+      },
+      "all_shards_match": true
+    },
+    "preflight": {
+      "report": "evidence/asr-preflight-001.json",
+      "complete": false,
+      "tensor_count": 708,
+      "shard_count": 2,
+      "dtypes": [
+        "BF16"
+      ],
+      "payload_bytes": 4698434816,
+      "weights_hashed": true,
+      "tensor_and_payload_checks_passed": true,
+      "tokenizer_present_in_original_report": false,
+      "tokenizer_layout_reported_by_root": "legacy_bpe",
+      "tokenizer_json_present": false,
+      "vocab_bytes_reported": 2776833,
+      "merges_bytes_reported": 1671853,
+      "tokenizer_config_bytes": 12487,
+      "legacy_bpe_validation_rerun_status": "passed",
+      "rerun_report_path": "evidence/asr-preflight-002.json",
+      "original_report_preserved": true,
+      "latest_complete": true,
+      "tokenizer_layout": "legacy_bpe",
+      "vocab_entries": 151643,
+      "merge_pairs": 151387
+    }
+  },
+  "upstream": {
+    "model_card_url": "https://huggingface.co/Qwen/Qwen3-ASR-1.7B",
+    "model_revision": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+    "qwen_source_revision": "7c6daf77a2421100f5fb066495372c00129d39ff",
+    "architecture": "Qwen3ASRForConditionalGeneration",
+    "model_type": "qwen3_asr",
+    "safetensors_parameters": {
+      "BF16": 2349217408
+    },
+    "shard_count": 2,
+    "vllm_version_researched": "v0.18.1",
+    "vllm_implementation": "https://github.com/vllm-project/vllm/blob/v0.18.1/vllm/model_executor/models/qwen3_asr.py",
+    "native_transcriptions_supported_upstream": true,
+    "native_fork_asr_verified": true,
+    "source_notes": "docs/asr-preparation.md; original checkpoint, not -hf; do not install qwen-asr[vllm] into the current stack",
+    "native_fork_asr_source_present": true,
+    "native_fork_asr_source_evidence": "evidence/asr-probe-001.json",
+    "native_fork_asr_verification_scope": "actual BF16 engine, isolated task venv prepare, publisher-derived zh/en/artificial39s PCM WAV and full-file SSE; no official accuracy or realtime input proof"
+  },
+  "service_candidate": {
+    "served_name": "qwen3-asr-1.7b",
+    "port": 30002,
+    "runtime_root": "tasks/qwen3-asr-bw-vllm/runtime",
+    "image_digest": null,
+    "actual_run_verified": true,
+    "native_environment_probe": "evidence/vllm-probe-001.json",
+    "native_environment_probe_scope": "real BW engine, ASR processor/audio dependencies and short WAV route verified",
+    "max_len": 32768,
+    "max_len_verified_against_actual_config": true,
+    "load_timeout_seconds": 600,
+    "max_runtime_seconds": 900,
+    "runner_override": null,
+    "max_len_verification_scope": "32768 actual engine initialized; no official long-audio benchmark",
+    "asr_probe": {
+      "report": "evidence/asr-probe-001.json",
+      "status": "completed_with_issues",
+      "checks_passed": false,
+      "model_loaded": false,
+      "missing_imports": [
+        "soundfile",
+        "librosa",
+        "torchaudio"
+      ],
+      "multipart_import_passed": true,
+      "ffmpeg_present": false,
+      "required_for_current_transcription_path_missing": [
+        "soundfile",
+        "librosa"
+      ],
+      "torchaudio_required_for_current_path": false,
+      "ffmpeg_required_for_initial_pcm_wav": false
+    },
+    "audio_environment": {
+      "python": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/runtime/audio-venv/bin/python",
+      "report": "evidence/asr-clean-prepare-003.json",
+      "protected_native_unchanged": true,
+      "protected_native_packages": 12,
+      "pip_install_log": "evidence/asr-audio-pip-install-003.log",
+      "locked_missing_wheels": "evidence/asr-audio-missing-wheels-003.txt",
+      "scope": "latest session003; new task-owned isolated venv on second Notebook same native stack"
+    },
+    "compatibility": {
+      "opt_in": true,
+      "entrypoint_group": "vllm.general_plugins",
+      "plugin": "qwen_asr_tf55_compat",
+      "script": "scripts/qwen_asr_tf55_compat.py",
+      "sha256": "84d0d5402c73d21562fb12bb649ace56d6f29b7d1fdf1d3e402b8d4a6e28820a",
+      "scope": "preinitialize thinker before original parent token-ID validation; native constructor still runs",
+      "parent_and_enginecore_install_observed": true,
+      "source_hash_guard": true,
+      "transformers_version_guard": "5.5.0",
+      "weights_changed": false,
+      "baseline_failure": "evidence/asr-vllm-server-full-001.log",
+      "reproduce": "tasks/qwen3-asr-bw-vllm/run.sh"
+    },
+    "functional_run": {
+      "ready": "evidence/asr-vllm-state-003.json",
+      "stopped": "evidence/asr-vllm-stopped-state-003.json",
+      "server_log": "evidence/asr-vllm-server-full-003.log",
+      "samples": [
+        "evidence/asr-vllm-smoke-zh-003.jsonl",
+        "evidence/asr-vllm-smoke-en-003.jsonl",
+        "evidence/asr-vllm-smoke-long-003.jsonl"
+      ],
+      "sample_scope": "three publisher-derived WAVs; 39.260375s is artificial concatenation, not natural continuous speech; no known independent references",
+      "exact_text_observed_by_local_comparison": null,
+      "finish_reason_available": false,
+      "sse_report": "evidence/asr-vllm-sse-zh-003.jsonl",
+      "sse_finish_reason_stop_observed": true,
+      "sse_audio_uploaded_as_one_file": true,
+      "realtime_audio_input_verified": false,
+      "cleanup_verified": true,
+      "official_accuracy": false,
+      "official_performance": false
+    },
+    "preparation": {
+      "entrypoint": "tasks/qwen3-asr-bw-vllm/prepare.sh",
+      "default_mode": "local_plan_only_no_downloads_or_writes",
+      "apply_mode": "new_isolated_system_site_packages_venv_locked_cpu_wheels",
+      "requirements": "tasks/qwen3-asr-bw-vllm/requirements-extra.txt",
+      "native_stack": "tasks/qwen3-asr-bw-vllm/native-stack.json",
+      "validated_on_new_native_image": true,
+      "no_automatic_service_start": true,
+      "validation_scope": "new task-owned isolated venv on another Notebook using the same observed native image stack; not final submission-image clean-room acceptance",
+      "validation_report": "evidence/asr-clean-prepare-003.json",
+      "installation_log": "evidence/asr-audio-pip-install-003.log",
+      "native_before": "evidence/asr-native-before-003.json",
+      "native_versions_and_roots_unchanged": true,
+      "protected_packages": 12,
+      "locked_wheels_installed": 7
+    },
+    "extra_args": [
+      "--enforce-eager",
+      "--max-num-seqs",
+      "4"
+    ],
+    "extra_args_source": "evidence/asr-vllm-state-002.json actual successful command",
+    "session003": {
+      "report": "docs/session003-asr-results.md",
+      "audit_and_copy_provenance": "evidence/asr-copy-provenance-003.json",
+      "archive_sha256": "61dae05b974e3b0151e90885818493bfe27f461c58125f529eae1c79cbcba9fd",
+      "run_id": "6b00889feafc4ea1af2133b5c4a3317a",
+      "venv": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/qwen3-asr-bw-vllm/runtime/audio-venv/bin/python",
+      "ready": "evidence/asr-vllm-state-003.json",
+      "stopped": "evidence/asr-vllm-stopped-state-003.json",
+      "server_log": "evidence/asr-vllm-server-full-003.log",
+      "config": "evidence/asr-vllm-config-003.json",
+      "env_report": "evidence/asr-vllm-env-003.log",
+      "max_runtime_override_seconds": 1800,
+      "runtime_seconds": 168.077,
+      "cleanup_verified": true,
+      "functional_samples": [
+        {
+          "id": "zh_16000_pcm16",
+          "path": "fixtures/asr/development-20261020/zh_16000_pcm16.wav",
+          "sha256": "46dbc998c9d1d48111267c40741dd3200f2e5bcf4075f8c4c97f4451160dce50",
+          "bytes": 134570,
+          "frames": 67263,
+          "duration_seconds": 4.2039375,
+          "http_round_trip_seconds": 4.889441492035985,
+          "returned_characters": 14,
+          "response_text_log_truncated": false,
+          "finish_reason_available": false,
+          "transcription_nonempty": true,
+          "reference_text": null,
+          "wer_cer_computed": false,
+          "official_accuracy": false
+        },
+        {
+          "id": "en_16000_pcm16",
+          "path": "fixtures/asr/development-20261020/en_16000_pcm16.wav",
+          "sha256": "64e219123047e533c1c1dbb446cb04873ff8c72a2ff20e24ae9d84664d9b455f",
+          "bytes": 481684,
+          "frames": 240820,
+          "duration_seconds": 15.05125,
+          "http_round_trip_seconds": 1.8073552479036152,
+          "returned_characters": 188,
+          "response_text_log_truncated": false,
+          "finish_reason_available": false,
+          "transcription_nonempty": true,
+          "reference_text": null,
+          "wer_cer_computed": false,
+          "official_accuracy": false
+        },
+        {
+          "id": "zh_en_repeated_39s",
+          "path": "fixtures/asr/development-20261020/zh_en_repeated_39s.wav",
+          "sha256": "b403449966b68821ea1f43d01d1399733f622201cdb57bfe3e43a98343b339c1",
+          "bytes": 1256376,
+          "frames": 628166,
+          "duration_seconds": 39.260375,
+          "http_round_trip_seconds": 4.204147764015943,
+          "returned_characters": 393,
+          "response_text_log_truncated": false,
+          "finish_reason_available": false,
+          "transcription_nonempty": true,
+          "reference_text": null,
+          "wer_cer_computed": false,
+          "official_accuracy": false
+        }
+      ],
+      "fullfile_sse": {
+        "report": "evidence/asr-vllm-sse-zh-003.jsonl",
+        "audio_uploaded_as_one_file": true,
+        "events": 12,
+        "done_marker_received": true,
+        "finish_reasons": [
+          "stop"
+        ],
+        "usage": {
+          "prompt_tokens": 65,
+          "completion_tokens": 11,
+          "total_tokens": 76
+        },
+        "first_nonempty_delta_seconds": 0.07438341015949845,
+        "stream_duration_seconds": 0.42363550001755357,
+        "raw_prefix_stripped": false,
+        "raw_prefix_present": true,
+        "realtime_audio_input_verified": false,
+        "official_latency": false
+      },
+      "combined_robo_asr_driver_wall_seconds": 547.5722765130922,
+      "combined_wall_is_asr_inference_or_billing_time": false,
+      "platform_shutdown_reported_by_root": true,
+      "platform_ui_proof_in_this_asr_audit": false,
+      "official_accuracy": false,
+      "official_performance": false,
+      "formal_ready": false
+    },
+    "historical_audio_environment_002": {
+      "python": "/root/private_data/venvs/qwen3-asr-audio-001/bin/python",
+      "report": "evidence/asr-audio-validation-002.json",
+      "protected_native_unchanged": true,
+      "installation_script_sha256_used": "5ea10013a1d31ffeef8d6ef8e15a7bc106b9e6975d5e19ac1febcadd210d7ed8",
+      "current_script_has_metadata_visibility_refinement": true
+    },
+    "historical_functional_run_002": {
+      "ready": "evidence/asr-vllm-state-002.json",
+      "stopped": "evidence/asr-vllm-stopped-state-002.json",
+      "server_log": "evidence/asr-vllm-server-full-002.log",
+      "samples": [
+        "evidence/asr-vllm-smoke-zh-002.jsonl",
+        "evidence/asr-vllm-smoke-en-002.jsonl"
+      ],
+      "sample_scope": "two own-text synthetic Windows TTS WAVs; no WER/CER; references not sent",
+      "exact_text_observed_by_local_comparison": true,
+      "finish_reason_available": false
+    }
+  },
+  "audio_protocol": {
+    "endpoint": "/v1/audio/transcriptions",
+    "request": "multipart/form-data",
+    "fields": {
+      "model": "served alias",
+      "file": "WAV file bytes",
+      "response_format": "json",
+      "temperature": "0"
+    },
+    "language_or_prompt_sent": false,
+    "smoke_input": {
+      "sample_rate_hz": 16000,
+      "channels": 1,
+      "encoding": "PCM16 WAV",
+      "maximum_duration_seconds": 30,
+      "automatic_conversion": false
+    },
+    "expected_text": "optional local diagnostic only; never included in request",
+    "official_metric_verified": false,
+    "fullfile_sse_output": {
+      "verified": true,
+      "report": "evidence/asr-vllm-sse-zh-003.jsonl",
+      "whole_audio_file_uploaded_first": true,
+      "events": 12,
+      "finish_reasons": [
+        "stop"
+      ],
+      "done_marker_received": true,
+      "raw_asr_prefix_stripped": false,
+      "realtime_audio_input_verified": false
+    },
+    "long_audio_development_input": {
+      "explicit_flag": "--long-audio",
+      "client_max_seconds": 120,
+      "client_max_bytes": 4194304,
+      "actual_verified_seconds": 39.260375,
+      "actual_scope": "artificial zh,en,zh,en concatenation with 0.25s gaps; not natural continuous recording",
+      "official_model_maximum_claimed": false
+    }
+  },
+  "official": {
+    "claim": {
+      "confirmed": false,
+      "reference": null
+    },
+    "baseline": {
+      "artifact": "asr-official-baseline"
+    },
+    "evaluator": {
+      "artifact": "asr-official-evaluator"
+    },
+    "dataset": {
+      "artifact": "asr-official-dataset"
+    },
+    "image_digest": null,
+    "image_reference": null
+  },
+  "artifacts": [],
+  "accuracy": {
+    "metric": "official-WER-or-CER-pending",
+    "direction": "lower",
+    "drop_mode": "relative",
+    "max_drop": 0,
+    "baseline": null,
+    "policy_status": "disabled pending official materials; zero-drop scaffold is not an official threshold"
+  },
+  "budget": {
+    "cards": 1,
+    "wall_hours": 0.25,
+    "total_card_hours": 2,
+    "used_card_hours": 1.3623132980555555,
+    "scope": "shared current two-card-hour session cap, not additional allocation",
+    "used_card_hours_is_approximate": true,
+    "snapshot_note": "shared session conservative wall bound from creation through later stopped observation; includes provisioning; checkpoint002; not live and not a new allocation",
+    "snapshot_is_live": false
+  },
+  "evidence_files": [
+    "docs/asr-preparation.md",
+    "tasks/qwen3-asr-bw-vllm/README.md",
+    "evidence/vllm-probe-001.json",
+    "evidence/asr-model-config.json",
+    "evidence/asr-preflight-001.json",
+    "evidence/asr-probe-001.json",
+    "evidence/asr-preflight-002.json",
+    "evidence/asr-audio-validation-002.json",
+    "evidence/asr-audio-reviewed-plan-002.json",
+    "evidence/asr-vllm-state-001.json",
+    "evidence/asr-vllm-server-full-001.log",
+    "evidence/asr-vllm-state-002.json",
+    "evidence/asr-vllm-stopped-state-002.json",
+    "evidence/asr-vllm-smoke-zh-002.jsonl",
+    "evidence/asr-vllm-smoke-en-002.jsonl",
+    "evidence/asr-vllm-server-full-002.log",
+    "evidence/platform-checkpoint-20261019-002.json",
+    "docs/session003-asr-results.md",
+    "evidence/asr-copy-provenance-003.json",
+    "evidence/asr-clean-prepare-003.json",
+    "evidence/asr-native-before-003.json",
+    "evidence/asr-audio-pip-install-003.log",
+    "evidence/asr-audio-missing-wheels-003.txt",
+    "evidence/asr-vllm-env-003.log",
+    "evidence/asr-vllm-state-003.json",
+    "evidence/asr-vllm-stopped-state-003.json",
+    "evidence/asr-vllm-config-003.json",
+    "evidence/asr-vllm-server-full-003.log",
+    "evidence/asr-vllm-supervisor-003.log",
+    "evidence/asr-vllm-smoke-zh-003.jsonl",
+    "evidence/asr-vllm-smoke-en-003.jsonl",
+    "evidence/asr-vllm-smoke-long-003.jsonl",
+    "evidence/asr-vllm-sse-zh-003.jsonl",
+    "evidence/asr-session-driver-report-003.json",
+    "evidence/asr-fixture-manifest-003.json",
+    "evidence/session003/robo-asr/sources/scripts/session003_robo_asr_checks.py",
+    "evidence/session003/robo-asr/sources/scripts/recon2reason_runtime.py",
+    "evidence/session003/robo-asr/sources/scripts/qwen3_asr_smoke.py",
+    "evidence/session003/robo-asr/sources/scripts/qwen3_asr_stream_smoke.py",
+    "evidence/session003/robo-asr/sources/scripts/qwen_asr_tf55_compat.py",
+    "evidence/session003/robo-asr/sources/scripts/prepare_qwen_asr_task.py",
+    "evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/bench.sh",
+    "evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/env.sh",
+    "evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/prepare.sh",
+    "evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/verify.sh",
+    "evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/env_check.sh",
+    "evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/run.sh",
+    "evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/run_compat.sh",
+    "evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/smoke.sh",
+    "evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/stop.sh",
+    "evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/task.json",
+    "evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/requirements-extra.txt",
+    "evidence/session003/robo-asr/sources/tasks/qwen3-asr-bw-vllm/native-stack.json",
+    "evidence/session003/robo-asr/sources/fixtures/asr/development-20261020/manifest.json",
+    "fixtures/asr/development-20261020/manifest.json",
+    "fixtures/asr/development-20261020/zh_16000_pcm16.wav",
+    "fixtures/asr/development-20261020/en_16000_pcm16.wav",
+    "fixtures/asr/development-20261020/zh_en_repeated_39s.wav",
+    "evidence/rules/session003-run-identity-cpu-004.json",
+    "evidence/local-tests-session003-final-001.log",
+    "evidence/local-validation-session003-final-001.json",
+    "evidence/rules/asr-sse-integrity-cpu-004.json",
+    "evidence/local-tests-session003-final-002.log",
+    "evidence/local-validation-session003-final-002.json",
+    "evidence/community-metadata-003.json",
+    "evidence/platform-checkpoint-20261020-003.json",
+    "evidence/screenshots/notebooks-stopped-final-003.png",
+    "evidence/screenshots/balance-after-stop-003.png"
+  ],
+  "required_metrics": [
+    "official-T04-asr-metric-and-normalization-pending"
+  ],
+  "notes": "708 BF16 tensors and two upstream-identical weight hashes verified. Original preflight001 failure preserved; 002 validates real legacy BPE. Seven missing CPU audio packages installed in isolated venv; native package versions/paths unchanged. Baseline service001 failed at TF5.5 child initialization. Explicit guarded project-local plugin preinitializes thinker, observed in API and EngineCore; run002 loaded BF16 and returned matching Chinese/English own synthetic transcripts, then stopped. No official accuracy/performance/acceptance claim. Session003 rebuilt a new isolated venv on a second Notebook, verified all 12 native version/path identities and seven locked wheels, completed three publisher-derived WAVs including artificial 39.260375s concatenation and full-file SSE output. No publisher reference invented or WER/CER computed; current run stopped with owned process/port cleanup verified. Raw runtime evidence copied byte-identically to flat names with provenance; original session snapshots untouched. No repository commit/push or contest submission claimed by this audit.",
+  "adaptation_ready": false,
+  "official_accuracy": false,
+  "development_tools": {
+    "offline_asr_evaluation": {
+      "script": "scripts/asr_development_eval.py",
+      "documentation": "docs/asr-offline-readiness.md",
+      "scope": "development_only",
+      "normalization": "identity",
+      "wer_tokenization": "Unicode whitespace; no Chinese segmentation",
+      "cer_tokenization": "all Unicode code points including whitespace",
+      "input_matching": "exact complete unique sample ids across references/predictions/optional manifest",
+      "manifest_default": "plan only; no audio read",
+      "audio_validation_opt_in": "--check-audio; existing short-WAV client bounds only",
+      "model_or_network_calls": false,
+      "official_evaluator": false,
+      "baseline_generated": false,
+      "threshold_or_pass_generated": false
+    }
+  },
+  "formal_ready": false,
+  "official_performance": false,
+  "submitted": false
+}

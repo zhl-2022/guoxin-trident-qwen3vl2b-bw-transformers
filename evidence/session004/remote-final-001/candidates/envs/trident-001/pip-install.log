@@ -1,0 +1,6 @@
+Processing /root/private_data/guoxin-candidates/cpu-wheels/av-14.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (from -r /root/private_data/guoxin-candidates/envs/trident-001/requirements-effective.lock (line 1))
+Processing /root/private_data/guoxin-candidates/cpu-wheels/numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (from -r /root/private_data/guoxin-candidates/envs/trident-001/requirements-effective.lock (line 2))
+Processing /root/private_data/guoxin-candidates/cpu-wheels/qwen_vl_utils-0.0.14-py3-none-any.whl (from -r /root/private_data/guoxin-candidates/envs/trident-001/requirements-effective.lock (line 3))
+Installing collected packages: qwen-vl-utils, numpy, av
+
+Successfully installed av-14.2.0 numpy-1.26.4 qwen-vl-utils-0.0.14

@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "/root/private_data/guoxin-candidates/envs/forcedaligner-001/bin/python",
+    "-m",
+    "pip",
+    "--isolated",
+    "install",
+    "--no-index",
+    "--no-deps",
+    "--ignore-installed",
+    "--require-hashes",
+    "--only-binary=:all:",
+    "-r",
+    "/root/private_data/guoxin-candidates/envs/forcedaligner-001/partial-repair-evidence/attempt-4077e664e7904ffdb05da4a3289c1b6a/repair-requirements.lock"
+  ],
+  "timeout_seconds": 600
+}

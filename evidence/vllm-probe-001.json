@@ -1,0 +1,1044 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-19T14:27:50.757058+00:00",
+  "status": "completed",
+  "stage": "complete",
+  "scope": "metadata, bounded isolated imports/help, selected package sources; no model load/install",
+  "python": "3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0]",
+  "executable": "/usr/bin/python3",
+  "platform": "Linux-5.15.0-25-generic-x86_64-with-glibc2.35",
+  "packages": {
+    "torch": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+    "torchvision": "0.25.0+das.opt1.dtk2604.torch2100.20260325.g860505",
+    "transformers": "5.5.0",
+    "vllm": "0.18.1+das.fa71803.dtk2604",
+    "vllm-hcu": "0.18.1+das.dtk2604",
+    "triton": "3.6.0+gitc73250c4.staging",
+    "flash-attn": "2.8.3+das.opt1.dtk2604.torch2100.20260330.g3f0061",
+    "lightop": "0.6.0+das.dtk2604.torch2100.2604101656.g193111",
+    "aiter": "0.1.2+das.opt1.dtk2604.torch2100.2604212021.gd52133"
+  },
+  "known_switches": {
+    "VLLM_HCU_USE_PD_SPLIT": null,
+    "VLLM_HCU_USE_CUSTOM_FLASH_ATTN": null,
+    "VLLM_HCU_USE_CUSTOM_OPS": null,
+    "VLLM_HCU_USE_CUSTOM_QUANTIZATION_GEMM": null,
+    "VLLM_ATTENTION_BACKEND": null,
+    "VLLM_ROCM_USE_AITER": null,
+    "VLLM_ROCM_USE_AITER_MOE": null,
+    "VLLM_USE_V1": null,
+    "VLLM_USE_V2_MODEL_RUNNER": null,
+    "VLLM_KV_CACHE_LAYOUT": null,
+    "VLLM_TARGET_DEVICE": null
+  },
+  "imports": [
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-c",
+        "\nimport importlib\nimport json\nimport sys\nimport traceback\nsys.dont_write_bytecode = True\nkind = sys.argv[1]\nresult = {\"check\": kind, \"ok\": False}\ntry:\n    module = importlib.import_module(kind)\n    result.update(version=str(getattr(module, \"__version__\", \"unknown\")), file=getattr(module, \"__file__\", None))\n    if kind == \"torch\":\n        result.update(hip=module.version.hip, cuda_build=module.version.cuda)\n        available = module.cuda.is_available()\n        result[\"cuda_available\"] = available\n        if available:\n            count = module.cuda.device_count()\n            result[\"device_count\"] = count\n            result[\"devices\"] = []\n            for index in range(min(count, 2)):\n                props = module.cuda.get_device_properties(index)\n                result[\"devices\"].append({\"index\": index, \"name\": props.name,\n                    \"total_memory_bytes\": props.total_memory,\n                    \"gcn_arch_name\": getattr(props, \"gcnArchName\", None),\n                    \"major\": getattr(props, \"major\", None), \"minor\": getattr(props, \"minor\", None)})\n            result[\"additional_devices_omitted\"] = max(0, count - 2)\n    if kind == \"vllm\":\n        from vllm.platforms import current_platform\n        result[\"current_platform\"] = {\"class\": type(current_platform).__name__,\n            \"module\": type(current_platform).__module__,\n            \"device_type\": getattr(current_platform, \"device_type\", None),\n            \"device_name\": getattr(current_platform, \"device_name\", None),\n            \"dispatch_key\": getattr(current_platform, \"dispatch_key\", None)}\n    result[\"ok\"] = True\nexcept BaseException as exc:\n    result[\"error\"] = {\"type\": type(exc).__name__, \"message\": str(exc)[:2000],\n                       \"traceback\": traceback.format_exc()[-5500:]}\nprint(\"SCNET_PROBE_JSON=\" + json.dumps(result, ensure_ascii=False, default=str), flush=True)\nraise SystemExit(0 if result[\"ok\"] else 1)\n",
+        "torch"
+      ],
+      "timeout_seconds": 30,
+      "timed_out": false,
+      "returncode": 0,
+      "elapsed_seconds": 19.00837162975222,
+      "stdout": {
+        "text": "SCNET_PROBE_JSON={\"check\": \"torch\", \"ok\": true, \"version\": \"2.10.0\", \"file\": \"/usr/local/lib/python3.10/dist-packages/torch/__init__.py\", \"hip\": \"6.3.26093\", \"cuda_build\": null, \"cuda_available\": true, \"device_count\": 1, \"devices\": [{\"index\": 0, \"name\": \"BW\", \"total_memory_bytes\": 68702699520, \"gcn_arch_name\": \"gfx936:sramecc+:xnack-\", \"major\": 9, \"minor\": 3}], \"additional_devices_omitted\": 0}\n",
+        "total_bytes": 397,
+        "truncated": false,
+        "read_error": null,
+        "stream_matches": {}
+      },
+      "stderr": {
+        "text": "",
+        "total_bytes": 0,
+        "truncated": false,
+        "read_error": null,
+        "stream_matches": {}
+      },
+      "pipe_readers_complete": true,
+      "check": "torch",
+      "data": {
+        "check": "torch",
+        "ok": true,
+        "version": "2.10.0",
+        "file": "/usr/local/lib/python3.10/dist-packages/torch/__init__.py",
+        "hip": "6.3.26093",
+        "cuda_build": null,
+        "cuda_available": true,
+        "device_count": 1,
+        "devices": [
+          {
+            "index": 0,
+            "name": "BW",
+            "total_memory_bytes": 68702699520,
+            "gcn_arch_name": "gfx936:sramecc+:xnack-",
+            "major": 9,
+            "minor": 3
+          }
+        ],
+        "additional_devices_omitted": 0
+      },
+      "passed": true
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-c",
+        "\nimport importlib\nimport json\nimport sys\nimport traceback\nsys.dont_write_bytecode = True\nkind = sys.argv[1]\nresult = {\"check\": kind, \"ok\": False}\ntry:\n    module = importlib.import_module(kind)\n    result.update(version=str(getattr(module, \"__version__\", \"unknown\")), file=getattr(module, \"__file__\", None))\n    if kind == \"torch\":\n        result.update(hip=module.version.hip, cuda_build=module.version.cuda)\n        available = module.cuda.is_available()\n        result[\"cuda_available\"] = available\n        if available:\n            count = module.cuda.device_count()\n            result[\"device_count\"] = count\n            result[\"devices\"] = []\n            for index in range(min(count, 2)):\n                props = module.cuda.get_device_properties(index)\n                result[\"devices\"].append({\"index\": index, \"name\": props.name,\n                    \"total_memory_bytes\": props.total_memory,\n                    \"gcn_arch_name\": getattr(props, \"gcnArchName\", None),\n                    \"major\": getattr(props, \"major\", None), \"minor\": getattr(props, \"minor\", None)})\n            result[\"additional_devices_omitted\"] = max(0, count - 2)\n    if kind == \"vllm\":\n        from vllm.platforms import current_platform\n        result[\"current_platform\"] = {\"class\": type(current_platform).__name__,\n            \"module\": type(current_platform).__module__,\n            \"device_type\": getattr(current_platform, \"device_type\", None),\n            \"device_name\": getattr(current_platform, \"device_name\", None),\n            \"dispatch_key\": getattr(current_platform, \"dispatch_key\", None)}\n    result[\"ok\"] = True\nexcept BaseException as exc:\n    result[\"error\"] = {\"type\": type(exc).__name__, \"message\": str(exc)[:2000],\n                       \"traceback\": traceback.format_exc()[-5500:]}\nprint(\"SCNET_PROBE_JSON=\" + json.dumps(result, ensure_ascii=False, default=str), flush=True)\nraise SystemExit(0 if result[\"ok\"] else 1)\n",
+        "torchvision"
+      ],
+      "timeout_seconds": 30,
+      "timed_out": false,
+      "returncode": 0,
+      "elapsed_seconds": 20.29165685037151,
+      "stdout": {
+        "text": "SCNET_PROBE_JSON={\"check\": \"torchvision\", \"ok\": true, \"version\": \"0.25.0\", \"file\": \"/usr/local/lib/python3.10/dist-packages/torchvision/__init__.py\"}\n",
+        "total_bytes": 150,
+        "truncated": false,
+        "read_error": null,
+        "stream_matches": {}
+      },
+      "stderr": {
+        "text": "",
+        "total_bytes": 0,
+        "truncated": false,
+        "read_error": null,
+        "stream_matches": {}
+      },
+      "pipe_readers_complete": true,
+      "check": "torchvision",
+      "data": {
+        "check": "torchvision",
+        "ok": true,
+        "version": "0.25.0",
+        "file": "/usr/local/lib/python3.10/dist-packages/torchvision/__init__.py"
+      },
+      "passed": true
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-c",
+        "\nimport importlib\nimport json\nimport sys\nimport traceback\nsys.dont_write_bytecode = True\nkind = sys.argv[1]\nresult = {\"check\": kind, \"ok\": False}\ntry:\n    module = importlib.import_module(kind)\n    result.update(version=str(getattr(module, \"__version__\", \"unknown\")), file=getattr(module, \"__file__\", None))\n    if kind == \"torch\":\n        result.update(hip=module.version.hip, cuda_build=module.version.cuda)\n        available = module.cuda.is_available()\n        result[\"cuda_available\"] = available\n        if available:\n            count = module.cuda.device_count()\n            result[\"device_count\"] = count\n            result[\"devices\"] = []\n            for index in range(min(count, 2)):\n                props = module.cuda.get_device_properties(index)\n                result[\"devices\"].append({\"index\": index, \"name\": props.name,\n                    \"total_memory_bytes\": props.total_memory,\n                    \"gcn_arch_name\": getattr(props, \"gcnArchName\", None),\n                    \"major\": getattr(props, \"major\", None), \"minor\": getattr(props, \"minor\", None)})\n            result[\"additional_devices_omitted\"] = max(0, count - 2)\n    if kind == \"vllm\":\n        from vllm.platforms import current_platform\n        result[\"current_platform\"] = {\"class\": type(current_platform).__name__,\n            \"module\": type(current_platform).__module__,\n            \"device_type\": getattr(current_platform, \"device_type\", None),\n            \"device_name\": getattr(current_platform, \"device_name\", None),\n            \"dispatch_key\": getattr(current_platform, \"dispatch_key\", None)}\n    result[\"ok\"] = True\nexcept BaseException as exc:\n    result[\"error\"] = {\"type\": type(exc).__name__, \"message\": str(exc)[:2000],\n                       \"traceback\": traceback.format_exc()[-5500:]}\nprint(\"SCNET_PROBE_JSON=\" + json.dumps(result, ensure_ascii=False, default=str), flush=True)\nraise SystemExit(0 if result[\"ok\"] else 1)\n",
+        "flash_attn"
+      ],
+      "timeout_seconds": 30,
+      "timed_out": false,
+      "returncode": 0,
+      "elapsed_seconds": 20.897006477229297,
+      "stdout": {
+        "text": "SCNET_PROBE_JSON={\"check\": \"flash_attn\", \"ok\": true, \"version\": \"2.8.3\", \"file\": \"/usr/local/lib/python3.10/dist-packages/flash_attn/__init__.py\"}\n",
+        "total_bytes": 147,
+        "truncated": false,
+        "read_error": null,
+        "stream_matches": {}
+      },
+      "stderr": {
+        "text": "",
+        "total_bytes": 0,
+        "truncated": false,
+        "read_error": null,
+        "stream_matches": {}
+      },
+      "pipe_readers_complete": true,
+      "check": "flash_attn",
+      "data": {
+        "check": "flash_attn",
+        "ok": true,
+        "version": "2.8.3",
+        "file": "/usr/local/lib/python3.10/dist-packages/flash_attn/__init__.py"
+      },
+      "passed": true
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-c",
+        "\nimport importlib\nimport json\nimport sys\nimport traceback\nsys.dont_write_bytecode = True\nkind = sys.argv[1]\nresult = {\"check\": kind, \"ok\": False}\ntry:\n    module = importlib.import_module(kind)\n    result.update(version=str(getattr(module, \"__version__\", \"unknown\")), file=getattr(module, \"__file__\", None))\n    if kind == \"torch\":\n        result.update(hip=module.version.hip, cuda_build=module.version.cuda)\n        available = module.cuda.is_available()\n        result[\"cuda_available\"] = available\n        if available:\n            count = module.cuda.device_count()\n            result[\"device_count\"] = count\n            result[\"devices\"] = []\n            for index in range(min(count, 2)):\n                props = module.cuda.get_device_properties(index)\n                result[\"devices\"].append({\"index\": index, \"name\": props.name,\n                    \"total_memory_bytes\": props.total_memory,\n                    \"gcn_arch_name\": getattr(props, \"gcnArchName\", None),\n                    \"major\": getattr(props, \"major\", None), \"minor\": getattr(props, \"minor\", None)})\n            result[\"additional_devices_omitted\"] = max(0, count - 2)\n    if kind == \"vllm\":\n        from vllm.platforms import current_platform\n        result[\"current_platform\"] = {\"class\": type(current_platform).__name__,\n            \"module\": type(current_platform).__module__,\n            \"device_type\": getattr(current_platform, \"device_type\", None),\n            \"device_name\": getattr(current_platform, \"device_name\", None),\n            \"dispatch_key\": getattr(current_platform, \"dispatch_key\", None)}\n    result[\"ok\"] = True\nexcept BaseException as exc:\n    result[\"error\"] = {\"type\": type(exc).__name__, \"message\": str(exc)[:2000],\n                       \"traceback\": traceback.format_exc()[-5500:]}\nprint(\"SCNET_PROBE_JSON=\" + json.dumps(result, ensure_ascii=False, default=str), flush=True)\nraise SystemExit(0 if result[\"ok\"] else 1)\n",
+        "vllm"
+      ],
+      "timeout_seconds": 30,
+      "timed_out": false,
+      "returncode": 0,
+      "elapsed_seconds": 20.89408750878647,
+      "stdout": {
+        "text": "INFO 10-19 22:29:09 [__init__.py:44] Available plugins for group vllm.platform_plugins:\nINFO 10-19 22:29:09 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin\nINFO 10-19 22:29:09 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.\nINFO 10-19 22:29:09 [__init__.py:239] Platform plugin hcu is activated\nSCNET_PROBE_JSON={\"check\": \"vllm\", \"ok\": true, \"version\": \"0.18.1\", \"file\": \"/usr/local/lib/python3.10/dist-packages/vllm/__init__.py\", \"current_platform\": {\"class\": \"HCUPlatform\", \"module\": \"vllm_hcu.platforms.hcu\", \"device_type\": \"cuda\", \"device_name\": \"hip\", \"dispatch_key\": \"CUDA\"}}\n",
+        "total_bytes": 653,
+        "truncated": false,
+        "read_error": null,
+        "stream_matches": {}
+      },
+      "stderr": {
+        "text": "",
+        "total_bytes": 0,
+        "truncated": false,
+        "read_error": null,
+        "stream_matches": {}
+      },
+      "pipe_readers_complete": true,
+      "check": "vllm",
+      "data": {
+        "check": "vllm",
+        "ok": true,
+        "version": "0.18.1",
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/__init__.py",
+        "current_platform": {
+          "class": "HCUPlatform",
+          "module": "vllm_hcu.platforms.hcu",
+          "device_type": "cuda",
+          "device_name": "hip",
+          "dispatch_key": "CUDA"
+        }
+      },
+      "passed": true
+    }
+  ],
+  "official_framework_service": false,
+  "official_accuracy": false,
+  "source": {
+    "files": [
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/envs.py",
+        "relative": "vllm/envs.py",
+        "bytes": 82796,
+        "lines": 1830
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+        "relative": "vllm_hcu/platforms/envs.py",
+        "bytes": 4317,
+        "lines": 107
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/__init__.py",
+        "relative": "vllm_hcu/platforms/__init__.py",
+        "bytes": 109,
+        "lines": 5
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/hcu.py",
+        "relative": "vllm_hcu/platforms/hcu.py",
+        "bytes": 18313,
+        "lines": 490
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/engine/arg_utils.py",
+        "relative": "vllm/engine/arg_utils.py",
+        "bytes": 96146,
+        "lines": 2303
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/model_executor/kernels/linear/scaled_mm/rocm.py",
+        "relative": "vllm/model_executor/kernels/linear/scaled_mm/rocm.py",
+        "bytes": 3286,
+        "lines": 118
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/model_executor/layers/attention/mm_encoder_attention.py",
+        "relative": "vllm/model_executor/layers/attention/mm_encoder_attention.py",
+        "bytes": 15422,
+        "lines": 447
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/model_executor/models/qwen3_vl.py",
+        "relative": "vllm/model_executor/models/qwen3_vl.py",
+        "bytes": 91703,
+        "lines": 2344
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/model_executor/models/vision.py",
+        "relative": "vllm/model_executor/models/vision.py",
+        "bytes": 21178,
+        "lines": 603
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/platforms/rocm.py",
+        "relative": "vllm/platforms/rocm.py",
+        "bytes": 31834,
+        "lines": 892
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/v1/attention/ops/vit_attn_wrappers.py",
+        "relative": "vllm/v1/attention/ops/vit_attn_wrappers.py",
+        "bytes": 10054,
+        "lines": 358
+      }
+    ],
+    "snippets": [
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+        "matched_line": 10,
+        "lines": [
+          {
+            "line": 9,
+            "text": "    VLLM_HCU_USE_FLASHMLA: bool = False"
+          },
+          {
+            "line": 10,
+            "text": "    VLLM_HCU_USE_CUSTOM_QUANTIZATION_GEMM : bool = False"
+          },
+          {
+            "line": 11,
+            "text": "    VLLM_HCU_USE_CUSTOM_OPS : bool = False"
+          },
+          {
+            "line": 12,
+            "text": "    VLLM_HCU_USE_CUSTOM_SILU_AND_MUL : bool = False"
+          },
+          {
+            "line": 13,
+            "text": "    VLLM_HCU_USE_CUSTOM_GEMMA_RMS_NORM : bool = False"
+          }
+        ]
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+        "matched_line": 47,
+        "lines": [
+          {
+            "line": 46,
+            "text": "    # If set, control hcu custom gemm including w8a8 int8/fp8 etc"
+          },
+          {
+            "line": 47,
+            "text": "    \"VLLM_HCU_USE_CUSTOM_QUANTIZATION_GEMM\":"
+          },
+          {
+            "line": 48,
+            "text": "    lambda: (os.environ.get(\"VLLM_HCU_USE_CUSTOM_QUANTIZATION_GEMM\", \"False\").lower() in"
+          },
+          {
+            "line": 49,
+            "text": "             (\"true\", \"1\")),"
+          },
+          {
+            "line": 50,
+            "text": "    # If set, control hcu custom unfused or fused kernel ops"
+          }
+        ]
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+        "matched_line": 51,
+        "lines": [
+          {
+            "line": 50,
+            "text": "    # If set, control hcu custom unfused or fused kernel ops"
+          },
+          {
+            "line": 51,
+            "text": "    \"VLLM_HCU_USE_CUSTOM_OPS\":"
+          },
+          {
+            "line": 52,
+            "text": "    lambda: (os.environ.get(\"VLLM_HCU_USE_CUSTOM_OPS\", \"False\").lower() in"
+          },
+          {
+            "line": 53,
+            "text": "             (\"true\", \"1\")),"
+          },
+          {
+            "line": 54,
+            "text": "    # If set, control hcu custom silu and mul op"
+          }
+        ]
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/hcu.py",
+        "matched_line": 88,
+        "lines": [
+          {
+            "line": 87,
+            "text": "            return ["
+          },
+          {
+            "line": 88,
+            "text": "                AttentionBackendEnum.TRITON_ATTN,"
+          },
+          {
+            "line": 89,
+            "text": "            ]"
+          },
+          {
+            "line": 90,
+            "text": ""
+          },
+          {
+            "line": 91,
+            "text": "def register_attention_backends() -> None:"
+          }
+        ]
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/hcu.py",
+        "matched_line": 94,
+        "lines": [
+          {
+            "line": 93,
+            "text": "    register_backend("
+          },
+          {
+            "line": 94,
+            "text": "        AttentionBackendEnum.TRITON_ATTN,"
+          },
+          {
+            "line": 95,
+            "text": "        class_path=\"vllm_hcu.v1.attention.backends.triton_attn.HcuTritonAttentionBackend\","
+          },
+          {
+            "line": 96,
+            "text": "    )"
+          },
+          {
+            "line": 97,
+            "text": "    register_backend("
+          }
+        ]
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/hcu.py",
+        "matched_line": 243,
+        "lines": [
+          {
+            "line": 242,
+            "text": "            AttentionBackendEnum.ROCM_AITER_FA,"
+          },
+          {
+            "line": 243,
+            "text": "            AttentionBackendEnum.TRITON_ATTN,"
+          },
+          {
+            "line": 244,
+            "text": "            AttentionBackendEnum.TORCH_SDPA,"
+          },
+          {
+            "line": 245,
+            "text": "        ]"
+          },
+          {
+            "line": 246,
+            "text": ""
+          }
+        ]
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/hcu.py",
+        "matched_line": 248,
+        "lines": [
+          {
+            "line": 247,
+            "text": "    @classmethod"
+          },
+          {
+            "line": 248,
+            "text": "    def get_vit_attn_backend("
+          },
+          {
+            "line": 249,
+            "text": "        cls,"
+          },
+          {
+            "line": 250,
+            "text": "        head_size: int,"
+          },
+          {
+            "line": 251,
+            "text": "        dtype: torch.dtype,"
+          }
+        ]
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/hcu.py",
+        "matched_line": 270,
+        "lines": [
+          {
+            "line": 269,
+            "text": "        logger.info_once(\"Using Torch SDPA backend for ViT model.\")"
+          },
+          {
+            "line": 270,
+            "text": "        return AttentionBackendEnum.TORCH_SDPA"
+          },
+          {
+            "line": 271,
+            "text": "    "
+          },
+          {
+            "line": 272,
+            "text": "    @classmethod"
+          },
+          {
+            "line": 273,
+            "text": "    def get_device_name(cls, device_id: int = 0) -> str:"
+          }
+        ]
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/engine/arg_utils.py",
+        "matched_line": 496,
+        "lines": [
+          {
+            "line": 495,
+            "text": "    mm_encoder_tp_mode: MMEncoderTPMode = MultiModalConfig.mm_encoder_tp_mode"
+          },
+          {
+            "line": 496,
+            "text": "    mm_encoder_attn_backend: AttentionBackendEnum | str | None = ("
+          },
+          {
+            "line": 497,
+            "text": "        MultiModalConfig.mm_encoder_attn_backend"
+          },
+          {
+            "line": 498,
+            "text": "    )"
+          },
+          {
+            "line": 499,
+            "text": "    io_processor_plugin: str | None = None"
+          }
+        ]
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/engine/arg_utils.py",
+        "matched_line": 1077,
+        "lines": [
+          {
+            "line": 1076,
+            "text": "            \"--mm-encoder-attn-backend\","
+          },
+          {
+            "line": 1077,
+            "text": "            **multimodal_kwargs[\"mm_encoder_attn_backend\"],"
+          },
+          {
+            "line": 1078,
+            "text": "        )"
+          },
+          {
+            "line": 1079,
+            "text": "        multimodal_group.add_argument("
+          },
+          {
+            "line": 1080,
+            "text": "            \"--interleave-mm-strings\", **multimodal_kwargs[\"interleave_mm_strings\"]"
+          }
+        ]
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/engine/arg_utils.py",
+        "matched_line": 1403,
+        "lines": [
+          {
+            "line": 1402,
+            "text": "            mm_encoder_tp_mode=self.mm_encoder_tp_mode,"
+          },
+          {
+            "line": 1403,
+            "text": "            mm_encoder_attn_backend=self.mm_encoder_attn_backend,"
+          },
+          {
+            "line": 1404,
+            "text": "            pooler_config=self.pooler_config,"
+          },
+          {
+            "line": 1405,
+            "text": "            generation_config=self.generation_config,"
+          },
+          {
+            "line": 1406,
+            "text": "            override_generation_config=self.override_generation_config,"
+          }
+        ]
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/model_executor/layers/attention/mm_encoder_attention.py",
+        "matched_line": 95,
+        "lines": [
+          {
+            "line": 94,
+            "text": "@CustomOp.register(\"mm_encoder_attn\")"
+          },
+          {
+            "line": 95,
+            "text": "class MMEncoderAttention(CustomOp):"
+          },
+          {
+            "line": 96,
+            "text": "    \"\"\"Multi-headed attention without any cache, used for multimodal encoder.\"\"\""
+          },
+          {
+            "line": 97,
+            "text": ""
+          },
+          {
+            "line": 98,
+            "text": "    # --8<-- [end:mm_encoder_attn]"
+          }
+        ]
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/model_executor/layers/attention/mm_encoder_attention.py",
+        "matched_line": 111,
+        "lines": [
+          {
+            "line": 110,
+            "text": "                AttentionBackendEnum.ROCM_AITER_FA,"
+          },
+          {
+            "line": 111,
+            "text": "                AttentionBackendEnum.TRITON_ATTN,"
+          },
+          {
+            "line": 112,
+            "text": "                AttentionBackendEnum.FLASHINFER,"
+          },
+          {
+            "line": 113,
+            "text": "            )"
+          },
+          {
+            "line": 114,
+            "text": "            and len(cu_seqlens) >= 2"
+          }
+        ]
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/model_executor/layers/attention/mm_encoder_attention.py",
+        "matched_line": 401,
+        "lines": [
+          {
+            "line": 400,
+            "text": "            return self._forward_fa(query, key, value, cu_seqlens, max_seqlen)"
+          },
+          {
+            "line": 401,
+            "text": "        elif self.attn_backend == AttentionBackendEnum.TRITON_ATTN:"
+          },
+          {
+            "line": 402,
+            "text": "            return self._forward_triton(query, key, value, cu_seqlens, max_seqlen)"
+          },
+          {
+            "line": 403,
+            "text": "        elif self.attn_backend == AttentionBackendEnum.FLASHINFER:"
+          },
+          {
+            "line": 404,
+            "text": "            return self._forward_flashinfer("
+          }
+        ]
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/model_executor/layers/attention/mm_encoder_attention.py",
+        "matched_line": 407,
+        "lines": [
+          {
+            "line": 406,
+            "text": "            )"
+          },
+          {
+            "line": 407,
+            "text": "        elif self.attn_backend == AttentionBackendEnum.TORCH_SDPA:"
+          },
+          {
+            "line": 408,
+            "text": "            return self._forward_sdpa(query, key, value, cu_seqlens)"
+          },
+          {
+            "line": 409,
+            "text": "        else:"
+          },
+          {
+            "line": 410,
+            "text": "            raise ValueError("
+          }
+        ]
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/model_executor/layers/attention/mm_encoder_attention.py",
+        "matched_line": 439,
+        "lines": [
+          {
+            "line": 438,
+            "text": "            return self._forward_fa(query, key, value, cu_seqlens, max_seqlen)"
+          },
+          {
+            "line": 439,
+            "text": "        elif self.attn_backend == AttentionBackendEnum.TRITON_ATTN:"
+          },
+          {
+            "line": 440,
+            "text": "            return self._forward_triton(query, key, value, cu_seqlens, max_seqlen)"
+          },
+          {
+            "line": 441,
+            "text": "        elif self.attn_backend == AttentionBackendEnum.TORCH_SDPA:"
+          },
+          {
+            "line": 442,
+            "text": "            return self._forward_sdpa(query, key, value, cu_seqlens)"
+          }
+        ]
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/model_executor/models/vision.py",
+        "matched_line": 98,
+        "lines": [
+          {
+            "line": 97,
+            "text": ""
+          },
+          {
+            "line": 98,
+            "text": "def get_vit_attn_backend("
+          },
+          {
+            "line": 99,
+            "text": "    head_size: int,"
+          },
+          {
+            "line": 100,
+            "text": "    dtype: torch.dtype,"
+          },
+          {
+            "line": 101,
+            "text": ") -> AttentionBackendEnum:"
+          }
+        ]
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/model_executor/models/vision.py",
+        "matched_line": 115,
+        "lines": [
+          {
+            "line": 114,
+            "text": "    attn_backend_override = ("
+          },
+          {
+            "line": 115,
+            "text": "        multimodal_config.mm_encoder_attn_backend"
+          },
+          {
+            "line": 116,
+            "text": "        if multimodal_config is not None"
+          },
+          {
+            "line": 117,
+            "text": "        else None"
+          },
+          {
+            "line": 118,
+            "text": "    )"
+          }
+        ]
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/platforms/rocm.py",
+        "matched_line": 351,
+        "lines": [
+          {
+            "line": 350,
+            "text": "    # Default: Triton Unified Attention"
+          },
+          {
+            "line": 351,
+            "text": "    backends.append(AttentionBackendEnum.TRITON_ATTN)"
+          },
+          {
+            "line": 352,
+            "text": "    return backends"
+          },
+          {
+            "line": 353,
+            "text": ""
+          },
+          {
+            "line": 354,
+            "text": ""
+          }
+        ]
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/platforms/rocm.py",
+        "matched_line": 510,
+        "lines": [
+          {
+            "line": 509,
+            "text": "            AttentionBackendEnum.ROCM_AITER_FA,"
+          },
+          {
+            "line": 510,
+            "text": "            AttentionBackendEnum.TRITON_ATTN,"
+          },
+          {
+            "line": 511,
+            "text": "            AttentionBackendEnum.TORCH_SDPA,"
+          },
+          {
+            "line": 512,
+            "text": "        ]"
+          },
+          {
+            "line": 513,
+            "text": ""
+          }
+        ]
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/platforms/rocm.py",
+        "matched_line": 515,
+        "lines": [
+          {
+            "line": 514,
+            "text": "    @classmethod"
+          },
+          {
+            "line": 515,
+            "text": "    def get_vit_attn_backend("
+          },
+          {
+            "line": 516,
+            "text": "        cls,"
+          },
+          {
+            "line": 517,
+            "text": "        head_size: int,"
+          },
+          {
+            "line": 518,
+            "text": "        dtype: torch.dtype,"
+          }
+        ]
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/platforms/rocm.py",
+        "matched_line": 557,
+        "lines": [
+          {
+            "line": 556,
+            "text": "        logger.info_once(\"Using Torch SDPA backend for ViT model.\")"
+          },
+          {
+            "line": 557,
+            "text": "        return AttentionBackendEnum.TORCH_SDPA"
+          },
+          {
+            "line": 558,
+            "text": ""
+          },
+          {
+            "line": 559,
+            "text": "    @classmethod"
+          },
+          {
+            "line": 560,
+            "text": "    def set_device(cls, device: torch.device) -> None:"
+          }
+        ]
+      }
+    ],
+    "hcu_symbols": {
+      "VLLM_HCU_USE_FLASH_ATTN": [
+        {
+          "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+          "line": 8
+        },
+        {
+          "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+          "line": 39
+        },
+        {
+          "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+          "line": 40
+        },
+        {
+          "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/hcu.py",
+          "line": 82
+        }
+      ],
+      "VLLM_HCU_USE_FLASHMLA": [
+        {
+          "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+          "line": 9
+        },
+        {
+          "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+          "line": 43
+        },
+        {
+          "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+          "line": 44
+        },
+        {
+          "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/hcu.py",
+          "line": 73
+        }
+      ],
+      "VLLM_HCU_USE_CUSTOM_QUANTIZATION_GEMM": [
+        {
+          "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+          "line": 10
+        },
+        {
+          "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+          "line": 47
+        },
+        {
+          "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+          "line": 48
+        }
+      ],
+      "VLLM_HCU_USE_CUSTOM_OPS": [
+        {
+          "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+          "line": 11
+        },
+        {
+          "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+          "line": 51
+        },
+        {
+          "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+          "line": 52
+        }
+      ],
+      "VLLM_HCU_USE_CUSTOM_SILU_AND_MUL": [
+        {
+          "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+          "line": 12
+        },
+        {
+          "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+          "line": 55
+        },
+        {
+          "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+          "line": 56
+        }
+      ],
+      "VLLM_HCU_USE_CUSTOM_GEMMA_RMS_NORM": [
+        {
+          "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+          "line": 13
+        },
+        {
+          "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+          "line": 58
+        },
+        {
+          "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+          "line": 59
+        }
+      ],
+      "VLLM_HCU_USE_SKIP_WEIGHT_DEBUG": [
+        {
+          "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+          "line": 14
+        },
+        {
+          "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+          "line": 61
+        },
+        {
+          "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+          "line": 62
+        }
+      ],
+      "VLLM_HCU_USE_CUSTOM_TOPK_TOPP_SAMPLER": [
+        {
+          "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+          "line": 15
+        },
+        {
+          "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+          "line": 64
+        },
+        {
+          "file": "/usr/local/lib/python3.10/dist-packages/vllm_hcu/platforms/envs.py",
+          "line": 65
+        }
+      ]
+    },
+    "errors": [],
+    "limits": {
+      "files": 32,
+      "per_file_bytes": 262144,
+      "total_bytes": 2097152,
+      "snippet_windows": 48,
+      "snippet_line_characters": 240
+    },
+    "scope": "distribution metadata paths under vllm or vllm_hcu only",
+    "source_bytes_read": 375158,
+    "candidate_files": 11,
+    "file_limit_reached": false
+  },
+  "api_server_help": {
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "-m",
+      "vllm.entrypoints.openai.api_server",
+      "--help"
+    ],
+    "timeout_seconds": 60,
+    "timed_out": false,
+    "returncode": 0,
+    "elapsed_seconds": 30.21274011209607,
+    "stdout": {
+      "text": "INFO 10-19 22:29:30 [__init__.py:44] Available plugins for group vllm.platform_plugins:\nINFO 10-19 22:29:30 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin\nINFO 10-19 22:29:30 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.\nINFO 10-19 22:29:30 [__init__.py:239] Platform plugin hcu is activated\nusage: api_server.py [-h] [--headless] [--api-server-count API_SERVER_COUNT]\n                     [--config CONFIG] [--lora-modules LORA_MODULES [LORA_MODULES ...]]\n                     [--chat-template CHAT_TEMPLATE]\n                     [--chat-template-content-format {auto,openai,string}]\n                     [--trust-request-chat-template | --no-trust-request-chat-template]\n                     [--default-chat-template-kwargs DEFAULT_CHAT_TEMPLATE_KWARGS]\n                     [--response-role RESPONSE_ROLE]\n                     [--return-tokens-as-token-ids | --no-return-tokens-as-token-ids]\n                     [--disable-frontend-multiprocessing | --no-disable-frontend-multiprocessing]\n                     [--enable-auto-tool-choice | --no-enable-auto-tool-choice]\n                     [--exclude-tools-when-tool-choice-none | --no-exclude-tools-when-tool-choice-none]\n                     [--tool-call-parser {deepseek_v3,deepseek_v31,deepseek_v32,ernie45,functiongemma,gigachat3,glm45,glm47,granite,granite-20b-fc,granite4,hermes,hunyuan_a13b,internlm,jamba,kimi_k2,llama3_json,llama4_json,llama4_pythonic,longcat,minimax,minimax_m2,mistral,olmo3,openai,phi4_mini_json,pythonic,qwen3_coder,qwen3_xml,seed_oss,step3,step3p5,xlam} or name registered in --tool-parser-plugin]\n                     [--tool-parser-plugin TOOL_PARSER_PLUGIN] [--tool-server TOOL_SERVER]\n                     [--log-config-file LOG_CONFIG_FILE] [--max-log-len MAX_LOG_LEN]\n                     [--enable-prompt-tokens-details | --no-enable-prompt-tokens-details]\n                     [--enable-server-load-tracking | --no-enable-server-load-tracking]\n                     [--enable-force-include-usage | --no-enable-force-include-usage]\n                     [--enable-tokenizer-info-endpoint | --no-enable-tokenizer-info-endpoint]\n                     [--enable-log-outputs | --no-enable-log-outputs]\n                     [--enable-log-deltas | --no-enable-log-deltas]\n                     [--log-error-stack | --no-log-error-stack]\n                     [--tokens-only | --no-tokens-only] [--host HOST] [--port PORT]\n                     [--uds UDS]\n                     [--uvicorn-log-level {critical,debug,error,info,trace,warning}]\n                     [--disable-uvicorn-access-log | --no-disable-uvicorn-access-log]\n                     [--disable-access-log-for-endpoints DISABLE_ACCESS_LOG_FOR_ENDPOINTS]\n                     [--allow-credentials | --no-allow-credentials]\n                     [--allowed-origins ALLOWED_ORIGINS] [--allowed-methods ALLOWED_METHODS]\n                     [--allowed-headers ALLOWED_HEADERS] [--api-key API_KEY [API_KEY ...]]\n                     [--ssl-keyfile SSL_KEYFILE] [--ssl-certfile SSL_CERTFILE]\n                     [--ssl-ca-certs SSL_CA_CERTS]\n                     [--enable-ssl-refresh | --no-enable-ssl-refresh]\n                     [--ssl-cert-reqs SSL_CERT_REQS] [--ssl-ciphers SSL_CIPHERS]\n                     [--root-path ROOT_PATH] [--middleware MIDDLEWARE]\n                     [--enable-request-id-headers | --no-enable-request-id-headers]\n                     [--disable-fastapi-docs | --no-disable-fastapi-docs]\n                     [--h11-max-incomplete-event-size H11_MAX_INCOMPLETE_EVENT_SIZE]\n                     [--h11-max-header-count H11_MAX_HEADER_COUNT]\n                     [--enable-offline-docs | --no-enable-offline-docs] [--model MODEL]\n                     [--runner {auto,draft,generate,pooling}]\n                     [--convert {auto,classify,embed,none}] [--tokenizer TOKENIZER]\n                     [--tokenizer-mode ['auto', 'deepseek_v32', 'hf', 'mistral', 'slow']]\n                     [--trust-remote-code | --no-trust-remote-code]\n                     [--dtype {auto,bfloat16,float,float16,float32,half}] [--seed SEED]\n                     [--hf-config-path HF_CONFIG_PATH]\n                     [--allowed-local-media-path ALLOWED_LOCAL_MEDIA_PATH]\n                     [--allowed-media-domains ALLOWED_MEDIA_DOMAINS [ALLOWED_MEDIA_DOMAINS ...]]\n                     [--revision REVISION] [--code-revision CODE_REVISION]\n                     [--tokenizer-revision TOKENIZER_REVISION]\n                     [--max-model-len MAX_MODEL_LEN] [--quantization QUANTIZATION]\n                     [--allow-deprecated-quantization | --no-allow-deprecated-quantization]\n                     [--enforce-eager | --no-enforce-eager]\n                     [--enable-return-routed-experts | --no-enable-return-routed-experts]\n                     [--max-logprobs MAX_LOGPROBS]\n                     [--logprobs-mode {processed_logits,processed_logprobs,raw_logits,raw_logprobs}]\n                     [--disable-sliding-window | --no-disable-sliding-window]\n                     [--disable-cascade-attn | --no-disable-cascade-attn]\n                     [--skip-tokenizer-init | --no-skip-tokenizer-init]\n                     [--enable-prompt-embeds | --no-enable-prompt-embeds]\n                     [--served-model-name SERVED_MODEL_NAME [SERVED_MODEL_NAME ...]]\n                     [--config-format ['auto', 'hf', 'mistral']] [--hf-token [HF_TOKEN]]\n                     [--hf-overrides HF_OVERRIDES] [--pooler-config POOLER_CONFIG]\n                     [--generation-config GENERATION_CONFIG]\n                     [--override-generation-config OVERRIDE_GENERATION_CONFIG]\n                     [--enable-sleep-mode | --no-enable-sleep-mode]\n                     [--model-impl ['auto', 'terratorch', 'transformers', 'vllm']]\n                     [--override-attention-dtype OVERRIDE_ATTENTION_DTYPE]\n                     [--logits-processors LOGITS_PROCESSORS [LOGITS_PROCESSORS ...]]\n                     [--io-processor-plugin IO_PROCESSOR_PLUGIN] [--load-format LOAD_FORMAT]\n                     [--download-dir DOWNLOAD_DIR]\n                     [--safetensors-load-strategy SAFETENSORS_LOAD_STRATEGY]\n                     [--model-loader-extra-config MODEL_LOADER_EXTRA_CONFIG]\n                     [--ignore-patterns IGNORE_PATTERNS [IGNORE_PATTERNS ...]]\n                     [--use-tqdm-on-load | --no-use-tqdm-on-load]\n                     [--pt-load-map-location PT_LOAD_MAP_LOCATION]\n                     [--attention-backend ATTENTION_BACKEND]\n                     [--reasoning-parser REASONING_PARSER]\n                     [--reasoning-parser-plugin REASONING_PARSER_PLUGIN]\n                     [--distributed-executor-backend ['external_launcher', 'mp', 'ray', 'uni']]\n                     [--pipeline-parallel-size PIPELINE_PARALLEL_SIZE]\n                     [--master-addr MASTER_ADDR] [--master-port MASTER_PORT]\n                     [--nnodes NNODES] [--node-rank NODE_RANK]\n                     [--distributed-timeout-seconds DISTRIBUTED_TIMEOUT_SECONDS]\n                     [--tensor-parallel-size TENSOR_PARALLEL_SIZE]\n                     [--decode-context-parallel-size DECODE_CONTEXT_PARALLEL_SIZE]\n                     [--dcp-comm-backend {a2a,ag_rs}]\n                     [--dcp-kv-cache-interleave-size DCP_KV_CACHE_INTERLEAVE_SIZE]\n                     [--cp-kv-cache-interleave-size CP_KV_CACHE_INTERLEAVE_SIZE]\n                     [--prefill-context-parallel-size PREFILL_CONTEXT_PARALLEL_SIZE]\n                     [--data-parallel-size DATA_PARALLEL_SIZE]\n                     [--data-parallel-rank DATA_PARALLEL_RANK]\n                     [--data-parallel-start-rank DATA_PARALLEL_START_RANK]\n                     [--data-parallel-size-local DATA_PARALLEL_SIZE_LOCAL]\n                     [--data-parallel-address DATA_PARALLEL_ADDRESS]\n                     [--data-parallel-rpc-port DATA_PARALLEL_RPC_PORT]\n                     [--data-parallel-backend DATA_PARALLEL_BACKEND]\n                     [--data-parallel-hybrid-lb | --no-data-parallel-hybrid-lb | -dph]\n                     [--data-parallel-external-lb | --no-data-\n[... output truncated ...]\nocessor-kwargs MM_PROCESSOR_KWARGS]\n                     [--mm-processor-cache-gb MM_PROCESSOR_CACHE_GB]\n                     [--mm-processor-cache-type {lru,shm}]\n                     [--mm-shm-cache-max-object-size-mb MM_SHM_CACHE_MAX_OBJECT_SIZE_MB]\n                     [--mm-encoder-only | --no-mm-encoder-only]\n                     [--mm-encoder-tp-mode {data,weights}]\n                     [--mm-encoder-attn-backend MM_ENCODER_ATTN_BACKEND]\n                     [--interleave-mm-strings | --no-interleave-mm-strings]\n                     [--skip-mm-profiling | --no-skip-mm-profiling]\n                     [--video-pruning-rate VIDEO_PRUNING_RATE]\n                     [--enable-lora | --no-enable-lora] [--max-loras MAX_LORAS]\n                     [--max-lora-rank {1,8,16,32,64,128,256,320,512}]\n                     [--lora-dtype {auto,bfloat16,float16}]\n                     [--enable-tower-connector-lora | --no-enable-tower-connector-lora]\n                     [--max-cpu-loras MAX_CPU_LORAS]\n                     [--fully-sharded-loras | --no-fully-sharded-loras]\n                     [--default-mm-loras DEFAULT_MM_LORAS]\n                     [--specialize-active-lora | --no-specialize-active-lora]\n                     [--show-hidden-metrics-for-version SHOW_HIDDEN_METRICS_FOR_VERSION]\n                     [--otlp-traces-endpoint OTLP_TRACES_ENDPOINT]\n                     [--collect-detailed-traces {all,model,worker,None} [{all,model,worker,None} ...]]\n                     [--kv-cache-metrics | --no-kv-cache-metrics]\n                     [--kv-cache-metrics-sample KV_CACHE_METRICS_SAMPLE]\n                     [--cudagraph-metrics | --no-cudagraph-metrics]\n                     [--enable-layerwise-nvtx-tracing | --no-enable-layerwise-nvtx-tracing]\n                     [--enable-mfu-metrics | --no-enable-mfu-metrics]\n                     [--enable-logging-iteration-details | --no-enable-logging-iteration-details]\n                     [--max-num-batched-tokens MAX_NUM_BATCHED_TOKENS]\n                     [--max-num-seqs MAX_NUM_SEQS]\n                     [--max-num-partial-prefills MAX_NUM_PARTIAL_PREFILLS]\n                     [--max-long-partial-prefills MAX_LONG_PARTIAL_PREFILLS]\n                     [--long-prefill-token-threshold LONG_PREFILL_TOKEN_THRESHOLD]\n                     [--scheduling-policy {fcfs,priority}]\n                     [--enable-chunked-prefill | --no-enable-chunked-prefill]\n                     [--disable-chunked-mm-input | --no-disable-chunked-mm-input]\n                     [--scheduler-cls SCHEDULER_CLS]\n                     [--disable-hybrid-kv-cache-manager | --no-disable-hybrid-kv-cache-manager]\n                     [--async-scheduling | --no-async-scheduling]\n                     [--stream-interval STREAM_INTERVAL]\n                     [--cudagraph-capture-sizes CUDAGRAPH_CAPTURE_SIZES [CUDAGRAPH_CAPTURE_SIZES ...]]\n                     [--max-cudagraph-capture-size MAX_CUDAGRAPH_CAPTURE_SIZE]\n                     [--enable-flashinfer-autotune | --no-enable-flashinfer-autotune]\n                     [--moe-backend {aiter,auto,cutlass,deep_gemm,flashinfer_cutedsl,flashinfer_cutlass,flashinfer_trtllm,marlin,triton}]\n                     [--speculative-config SPECULATIVE_CONFIG]\n                     [--kv-transfer-config KV_TRANSFER_CONFIG]\n                     [--kv-events-config KV_EVENTS_CONFIG]\n                     [--ec-transfer-config EC_TRANSFER_CONFIG]\n                     [--compilation-config COMPILATION_CONFIG]\n                     [--attention-config ATTENTION_CONFIG] [--kernel-config KERNEL_CONFIG]\n                     [--additional-config ADDITIONAL_CONFIG]\n                     [--structured-outputs-config STRUCTURED_OUTPUTS_CONFIG]\n                     [--profiler-config PROFILER_CONFIG]\n                     [--optimization-level OPTIMIZATION_LEVEL]\n                     [--performance-mode {balanced,interactivity,throughput}]\n                     [--weight-transfer-config WEIGHT_TRANSFER_CONFIG] [--disable-log-stats]\n                     [--aggregate-engine-logging]\n                     [--fail-on-environ-validation | --no-fail-on-environ-validation]\n                     [--shutdown-timeout SHUTDOWN_TIMEOUT]\n                     [--gdn-prefill-backend {flashinfer,triton}]\n                     [--enable-log-requests | --no-enable-log-requests]\n                     [model_tag]\n\nvLLM OpenAI-Compatible RESTful API server.\n\nConfig Groups:\n  positional arguments    \n  options                 \n  Frontend                Arguments for the OpenAI-compatible frontend server.\n  ModelConfig             Configuration for the model.\n  LoadConfig              Configuration for loading the model weights.\n  AttentionConfig         Configuration for attention mechanisms in vLLM.\n  StructuredOutputsConfig Dataclass which contains structured outputs config for the engine.\n  ParallelConfig          Configuration for the distributed execution.\n  CacheConfig             Configuration for the KV cache.\n  OffloadConfig           Configuration for model weight offloading to reduce GPU memory usage.\n  MultiModalConfig        Controls the behavior of multimodal models.\n  LoRAConfig              Configuration for LoRA.\n  ObservabilityConfig     Configuration for observability - metrics and tracing.\n  SchedulerConfig         Scheduler configuration.\n  CompilationConfig       Configuration for compilation.\n  \n      You must pass CompilationConfig to VLLMConfig constructor.\n      VLLMConfig's post_init does further initialization. If used outside of the\n      VLLMConfig, some fields will be left in an improper state.\n  \n      It contains PassConfig, which controls the custom fusion/transformation passes.\n      The rest has three parts:\n  \n      - Top-level Compilation control:\n          - [`mode`][vllm.config.CompilationConfig.mode]\n          - [`debug_dump_path`][vllm.config.CompilationConfig.debug_dump_path]\n          - [`cache_dir`][vllm.config.CompilationConfig.cache_dir]\n          - [`backend`][vllm.config.CompilationConfig.backend]\n          - [`custom_ops`][vllm.config.CompilationConfig.custom_ops]\n          - [`splitting_ops`][vllm.config.CompilationConfig.splitting_ops]\n          - [`compile_mm_encoder`][vllm.config.CompilationConfig.compile_mm_encoder]\n      - CudaGraph capture:\n          - [`cudagraph_mode`][vllm.config.CompilationConfig.cudagraph_mode]\n          - [`cudagraph_capture_sizes`]\n          [vllm.config.CompilationConfig.cudagraph_capture_sizes]\n          - [`max_cudagraph_capture_size`]\n          [vllm.config.CompilationConfig.max_cudagraph_capture_size]\n          - [`cudagraph_num_of_warmups`]\n          [vllm.config.CompilationConfig.cudagraph_num_of_warmups]\n          - [`cudagraph_copy_inputs`]\n          [vllm.config.CompilationConfig.cudagraph_copy_inputs]\n      - Inductor compilation:\n          - [`compile_sizes`][vllm.config.CompilationConfig.compile_sizes]\n          - [`compile_ranges_endpoints`]\n              [vllm.config.CompilationConfig.compile_ranges_endpoints]\n          - [`inductor_compile_config`]\n          [vllm.config.CompilationConfig.inductor_compile_config]\n          - [`inductor_passes`][vllm.config.CompilationConfig.inductor_passes]\n          - custom inductor passes\n  \n      Why we have different sizes for cudagraph and inductor:\n      - cudagraph: a cudagraph captured for a specific size can only be used\n          for the same size. We need to capture all the sizes we want to use.\n      - inductor: a graph compiled by inductor for a general shape can be used\n          for different sizes. Inductor can also compile for specific sizes,\n          where it can have more information to optimize the graph with fully\n          static shapes. However, we find the general shape compilation is\n          sufficient for most cases. It might be beneficial to compile for\n          certain small batchsizes, where inductor is good at optimizing.\n      \n  KernelConfig            Configuration for kernel selection and warmup behavior.\n  VllmConfig              Dataclass which contains all vllm-related configuration. This\n      simplifies passing around the distinct configurations in the codebase.\n      \n",
+      "total_bytes": 19526,
+      "truncated": true,
+      "read_error": null,
+      "stream_matches": {
+        "--attention-backend": "                     [--attention-backend ATTENTION_BACKEND]",
+        "--enforce-eager": "                     [--enforce-eager | --no-enforce-eager]",
+        "--dtype": "                     [--dtype {auto,bfloat16,float,float16,float32,half}] [--seed SEED]",
+        "--tensor-parallel-size": "                     [--tensor-parallel-size TENSOR_PARALLEL_SIZE]",
+        "--max-model-len": "                     [--max-model-len MAX_MODEL_LEN] [--quantization QUANTIZATION]",
+        "--mm-encoder-attn-backend": "                     [--mm-encoder-attn-backend MM_ENCODER_ATTN_BACKEND]",
+        "--limit-mm-per-prompt": "                     [--limit-mm-per-prompt LIMIT_MM_PER_PROMPT]",
+        "--mm-processor-kwargs": "                     [--mm-processor-kwargs MM_PROCESSOR_KWARGS]",
+        "--skip-mm-profiling": "                     [--skip-mm-profiling | --no-skip-mm-profiling]",
+        "--gpu-memory-utilization": "                     [--gpu-memory-utilization GPU_MEMORY_UTILIZATION]",
+        "--max-num-seqs": "                     [--max-num-seqs MAX_NUM_SEQS]"
+      }
+    },
+    "stderr": {
+      "text": "",
+      "total_bytes": 0,
+      "truncated": false,
+      "read_error": null,
+      "stream_matches": {}
+    },
+    "pipe_readers_complete": true,
+    "supports": {
+      "--attention-backend": true,
+      "--mm-encoder-attn-backend": true,
+      "--enforce-eager": true,
+      "--limit-mm-per-prompt": true,
+      "--mm-processor-kwargs": true,
+      "--skip-mm-profiling": true,
+      "--dtype": true,
+      "--tensor-parallel-size": true,
+      "--max-model-len": true,
+      "--max-num-seqs": true,
+      "--gpu-memory-utilization": true
+    },
+    "backend_names_mentioned": {
+      "FLASH_ATTN_CUSTOM": false,
+      "TORCH_SDPA": false,
+      "TRITON_ATTN": false
+    },
+    "help_succeeded": true,
+    "support_caveat": "flag mentions scanned across the full drained stdout; verify choices in local source"
+  },
+  "checks_passed": true,
+  "finished_at_utc": "2026-10-19T14:29:42.389477+00:00"
+}

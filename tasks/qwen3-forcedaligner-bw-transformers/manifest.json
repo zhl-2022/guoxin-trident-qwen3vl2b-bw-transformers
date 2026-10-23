@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "task": "qwen3-forcedaligner-bw-transformers",
+  "status": "development_candidate_not_gpu_verified",
+  "self_included": false,
+  "upload_preserve_project_relative_paths": true,
+  "files": [
+    {
+      "path": "scripts/task_expansion_candidates_20261023.py",
+      "size": 25749,
+      "sha256": "8c7ec3978d59e2d8cf69e09fc647b6f2cb5fb1fa7685ee11cdf4e77048dc3bde"
+    },
+    {
+      "path": "tasks/qwen3-forcedaligner-bw-transformers/COPYRIGHT-SCOPE.txt",
+      "size": 667,
+      "sha256": "fa71287711d371e999ef1d867bba0c06508b3374ba0be3e09a538922771dbd24"
+    },
+    {
+      "path": "tasks/qwen3-forcedaligner-bw-transformers/entry.py",
+      "size": 347,
+      "sha256": "a9cab7abc52801a6ded0cf7756ec20b20865fa9560cd01e19c35738db8d68023"
+    },
+    {
+      "path": "tasks/qwen3-forcedaligner-bw-transformers/fixtures/zh_16000_pcm16.wav",
+      "size": 134570,
+      "sha256": "46dbc998c9d1d48111267c40741dd3200f2e5bcf4075f8c4c97f4451160dce50"
+    },
+    {
+      "path": "tasks/qwen3-forcedaligner-bw-transformers/model-lock.json",
+      "size": 1451,
+      "sha256": "f4037782195ee0e80b5bd5575df8e3bd8a3e38b1b06a5491204ea304701b29a2"
+    },
+    {
+      "path": "tasks/qwen3-forcedaligner-bw-transformers/README.md",
+      "size": 3903,
+      "sha256": "94bf2ea615d4734e033356be92446b2501434f8a41b0b4f7ab2a92b2b47fe5d9"
+    },
+    {
+      "path": "tasks/qwen3-forcedaligner-bw-transformers/README_origin.md",
+      "size": 57456,
+      "sha256": "5058416891bc47a2051557765997e8c42f8eb78a0e33c3e775bd17d4b0ba4d50"
+    },
+    {
+      "path": "tasks/qwen3-forcedaligner-bw-transformers/requests.example.json",
+      "size": 140,
+      "sha256": "08b8a34dd01227d899694526cd987282c5e5b2f644b7764c05b305815abc499e"
+    },
+    {
+      "path": "tasks/qwen3-forcedaligner-bw-transformers/runtime.json",
+      "size": 1539,
+      "sha256": "a74b045d8ebc25bee00bc8d1774a4179d80ae41e3f30154c606dbceadce63be8"
+    },
+    {
+      "path": "tasks/qwen3-forcedaligner-bw-transformers/task.json",
+      "size": 1914,
+      "sha256": "eced53d0f8ac9ac87735f6235d62b938bad3b780ab490cb7b795e5b7f144429d"
+    },
+    {
+      "path": "tasks/qwen3-forcedaligner-bw-transformers/upstream-lock.json",
+      "size": 3845,
+      "sha256": "e92c9dd481950338ac4bb9f99b9a857d45b17dd7e8443cfecb135d119995fa82"
+    },
+    {
+      "path": "tasks/qwen3-forcedaligner-bw-transformers/upstream-source.zip",
+      "size": 142497,
+      "sha256": "0c6c04e035c7f4d60c2cfed518569c709bb786281971a34627aefebec9980fa0"
+    }
+  ],
+  "file_count": 12,
+  "bytes": 374078,
+  "external_weights_manifest": "tasks/qwen3-forcedaligner-bw-transformers/model-lock.json",
+  "downloads_performed_by_runner": false,
+  "submission_ready": false
+}

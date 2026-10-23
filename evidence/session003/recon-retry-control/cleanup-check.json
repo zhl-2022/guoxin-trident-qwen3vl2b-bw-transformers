@@ -1,0 +1,10 @@
+{
+  "captured_utc": "2026-10-19T19:46:45.091485+00:00",
+  "run_id": "bb6a20bae32640c0b924511637d6a222",
+  "state_status": "stopped",
+  "supervisor_same_identity_alive": false,
+  "server_same_identity_alive": false,
+  "port_open": false,
+  "platform_shutdown_verified": false,
+  "owned_service_cleanup_verified": true
+}

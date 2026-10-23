@@ -1,0 +1,996 @@
+{
+  "schema_version": 1,
+  "mode": "run",
+  "official_acceptance": false,
+  "benchmark_scope": "development synthetic random-mm; image specification and total input token target unconfirmed",
+  "source_reference": {
+    "serve": "https://raw.githubusercontent.com/vllm-project/vllm/v0.18.1/vllm/benchmarks/serve.py",
+    "datasets": "https://raw.githubusercontent.com/vllm-project/vllm/v0.18.1/vllm/benchmarks/datasets.py"
+  },
+  "model_path": "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+  "tokenizer_path": "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+  "served_model_name": "recon2reason-reasoning-4b",
+  "host": "127.0.0.1",
+  "port": 30000,
+  "output_dir": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/recon-matrix-retry",
+  "image_size": [
+    1024,
+    1024
+  ],
+  "images_per_request": 1,
+  "full_matrix": false,
+  "requests_planned": 256,
+  "timeout_seconds": 1800.0,
+  "total_timeout_seconds": 2697.0,
+  "extra_readiness_requests": 0,
+  "warmup_requests_inside_each_command": 0,
+  "filesystem_mutated": true,
+  "client_started": true,
+  "rows": [
+    {
+      "name": "round1_16384_1024_c64",
+      "round": 1,
+      "scored_round": false,
+      "target_text_input_tokens": 16384,
+      "target_output_tokens": 1024,
+      "concurrency": 64,
+      "expected_requests": 128,
+      "command": [
+        "vllm",
+        "bench",
+        "serve",
+        "--backend",
+        "openai-chat",
+        "--endpoint",
+        "/v1/chat/completions",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "30000",
+        "--model",
+        "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+        "--served-model-name",
+        "recon2reason-reasoning-4b",
+        "--tokenizer",
+        "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+        "--dataset-name",
+        "random-mm",
+        "--random-input-len",
+        "16384",
+        "--random-output-len",
+        "1024",
+        "--random-range-ratio",
+        "0",
+        "--random-prefix-len",
+        "0",
+        "--random-mm-base-items-per-request",
+        "1",
+        "--random-mm-num-mm-items-range-ratio",
+        "0",
+        "--random-mm-limit-mm-per-prompt",
+        "{\"image\":1,\"video\":0}",
+        "--random-mm-bucket-config",
+        "{(1024, 1024, 1): 1.0}",
+        "--max-concurrency",
+        "64",
+        "--num-prompts",
+        "128",
+        "--request-rate",
+        "inf",
+        "--seed",
+        "1",
+        "--temperature",
+        "0",
+        "--ignore-eos",
+        "--num-warmups",
+        "0",
+        "--ready-check-timeout-sec",
+        "0",
+        "--disable-tqdm",
+        "--percentile-metrics",
+        "ttft,tpot,itl,e2el",
+        "--metric-percentiles",
+        "99",
+        "--save-result",
+        "--save-detailed",
+        "--result-dir",
+        "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/recon-matrix-retry/native",
+        "--result-filename",
+        "round1_16384_1024_c64.json"
+      ],
+      "native_result": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/recon-matrix-retry/native/round1_16384_1024_c64.json",
+      "log": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/recon-matrix-retry/round1_16384_1024_c64.log",
+      "status": "complete",
+      "started_utc": "2026-10-19T19:01:34.370493+00:00",
+      "exit_code": 0,
+      "ended_utc": "2026-10-19T19:24:43.431028+00:00",
+      "client_wall_seconds": 1388.66132,
+      "log_sha256": "07311dd40458022f850e8f72a15af68cef7907fd29243c0e0e55ac785c39a32c",
+      "native_result_sha256": "bee59d8fcff5c86a4bffe9a6a0cfc1cb4f6101a4696e8e22866afe7e03159857",
+      "metrics": {
+        "completed": 128,
+        "failed": 0,
+        "duration": 1335.1635527042672,
+        "request_throughput": 0.09586840484129919,
+        "output_throughput": 98.16924655749037,
+        "total_token_throughput": 1668.8771914773363,
+        "mean_ttft_ms": 407773.81381296436,
+        "p99_ttft_ms": 600746.0267734993,
+        "mean_tpot_ms": 147.8136000478934,
+        "p99_tpot_ms": 155.29854754821278,
+        "mean_e2el_ms": 558987.1266619593,
+        "p99_e2el_ms": 757967.3596001789,
+        "total_input_tokens": 2097152,
+        "total_output_tokens": 131072
+      },
+      "output_integrity": {
+        "verified": true,
+        "status": "verified",
+        "missing_fields": [],
+        "issues": [],
+        "requests": [
+          {
+            "index": 0,
+            "output_tokens": 1024,
+            "generated_text_characters": 150,
+            "error": ""
+          },
+          {
+            "index": 1,
+            "output_tokens": 1024,
+            "generated_text_characters": 98,
+            "error": ""
+          },
+          {
+            "index": 2,
+            "output_tokens": 1024,
+            "generated_text_characters": 328,
+            "error": ""
+          },
+          {
+            "index": 3,
+            "output_tokens": 1024,
+            "generated_text_characters": 99,
+            "error": ""
+          },
+          {
+            "index": 4,
+            "output_tokens": 1024,
+            "generated_text_characters": 4659,
+            "error": ""
+          },
+          {
+            "index": 5,
+            "output_tokens": 1024,
+            "generated_text_characters": 151,
+            "error": ""
+          },
+          {
+            "index": 6,
+            "output_tokens": 1024,
+            "generated_text_characters": 443,
+            "error": ""
+          },
+          {
+            "index": 7,
+            "output_tokens": 1024,
+            "generated_text_characters": 288,
+            "error": ""
+          },
+          {
+            "index": 8,
+            "output_tokens": 1024,
+            "generated_text_characters": 574,
+            "error": ""
+          },
+          {
+            "index": 9,
+            "output_tokens": 1024,
+            "generated_text_characters": 302,
+            "error": ""
+          },
+          {
+            "index": 10,
+            "output_tokens": 1024,
+            "generated_text_characters": 393,
+            "error": ""
+          },
+          {
+            "index": 11,
+            "output_tokens": 1024,
+            "generated_text_characters": 5134,
+            "error": ""
+          },
+          {
+            "index": 12,
+            "output_tokens": 1024,
+            "generated_text_characters": 4366,
+            "error": ""
+          },
+          {
+            "index": 13,
+            "output_tokens": 1024,
+            "generated_text_characters": 358,
+            "error": ""
+          },
+          {
+            "index": 14,
+            "output_tokens": 1024,
+            "generated_text_characters": 4647,
+            "error": ""
+          },
+          {
+            "index": 15,
+            "output_tokens": 1024,
+            "generated_text_characters": 459,
+            "error": ""
+          },
+          {
+            "index": 16,
+            "output_tokens": 1024,
+            "generated_text_characters": 237,
+            "error": ""
+          },
+          {
+            "index": 17,
+            "output_tokens": 1024,
+            "generated_text_characters": 535,
+            "error": ""
+          },
+          {
+            "index": 18,
+            "output_tokens": 1024,
+            "generated_text_characters": 582,
+            "error": ""
+          },
+          {
+            "index": 19,
+            "output_tokens": 1024,
+            "generated_text_characters": 568,
+            "error": ""
+          },
+          {
+            "index": 20,
+            "output_tokens": 1024,
+            "generated_text_characters": 320,
+            "error": ""
+          },
+          {
+            "index": 21,
+            "output_tokens": 1024,
+            "generated_text_characters": 503,
+            "error": ""
+          },
+          {
+            "index": 22,
+            "output_tokens": 1024,
+            "generated_text_characters": 1654,
+            "error": ""
+          },
+          {
+            "index": 23,
+            "output_tokens": 1024,
+            "generated_text_characters": 103,
+            "error": ""
+          },
+          {
+            "index": 24,
+            "output_tokens": 1024,
+            "generated_text_characters": 5183,
+            "error": ""
+          },
+          {
+            "index": 25,
+            "output_tokens": 1024,
+            "generated_text_characters": 164,
+            "error": ""
+          },
+          {
+            "index": 26,
+            "output_tokens": 1024,
+            "generated_text_characters": 459,
+            "error": ""
+          },
+          {
+            "index": 27,
+            "output_tokens": 1024,
+            "generated_text_characters": 284,
+            "error": ""
+          },
+          {
+            "index": 28,
+            "output_tokens": 1024,
+            "generated_text_characters": 4522,
+            "error": ""
+          },
+          {
+            "index": 29,
+            "output_tokens": 1024,
+            "generated_text_characters": 103,
+            "error": ""
+          },
+          {
+            "index": 30,
+            "output_tokens": 1024,
+            "generated_text_characters": 4521,
+            "error": ""
+          },
+          {
+            "index": 31,
+            "output_tokens": 1024,
+            "generated_text_characters": 567,
+            "error": ""
+          },
+          {
+            "index": 32,
+            "output_tokens": 1024,
+            "generated_text_characters": 101,
+            "error": ""
+          },
+          {
+            "index": 33,
+            "output_tokens": 1024,
+            "generated_text_characters": 574,
+            "error": ""
+          },
+          {
+            "index": 34,
+            "output_tokens": 1024,
+            "generated_text_characters": 114,
+            "error": ""
+          },
+          {
+            "index": 35,
+            "output_tokens": 1024,
+            "generated_text_characters": 695,
+            "error": ""
+          },
+          {
+            "index": 36,
+            "output_tokens": 1024,
+            "generated_text_characters": 200,
+            "error": ""
+          },
+          {
+            "index": 37,
+            "output_tokens": 1024,
+            "generated_text_characters": 4521,
+            "error": ""
+          },
+          {
+            "index": 38,
+            "output_tokens": 1024,
+            "generated_text_characters": 459,
+            "error": ""
+          },
+          {
+            "index": 39,
+            "output_tokens": 1024,
+            "generated_text_characters": 4366,
+            "error": ""
+          },
+          {
+            "index": 40,
+            "output_tokens": 1024,
+            "generated_text_characters": 113,
+            "error": ""
+          },
+          {
+            "index": 41,
+            "output_tokens": 1024,
+            "generated_text_characters": 494,
+            "error": ""
+          },
+          {
+            "index": 42,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": ""
+          },
+          {
+            "index": 43,
+            "output_tokens": 1024,
+            "generated_text_characters": 255,
+            "error": ""
+          },
+          {
+            "index": 44,
+            "output_tokens": 1024,
+            "generated_text_characters": 476,
+            "error": ""
+          },
+          {
+            "index": 45,
+            "output_tokens": 1024,
+            "generated_text_characters": 99,
+            "error": ""
+          },
+          {
+            "index": 46,
+            "output_tokens": 1024,
+            "generated_text_characters": 796,
+            "error": ""
+          },
+          {
+            "index": 47,
+            "output_tokens": 1024,
+            "generated_text_characters": 99,
+            "error": ""
+          },
+          {
+            "index": 48,
+            "output_tokens": 1024,
+            "generated_text_characters": 250,
+            "error": ""
+          },
+          {
+            "index": 49,
+            "output_tokens": 1024,
+            "generated_text_characters": 101,
+            "error": ""
+          },
+          {
+            "index": 50,
+            "output_tokens": 1024,
+            "generated_text_characters": 4628,
+            "error": ""
+          },
+          {
+            "index": 51,
+            "output_tokens": 1024,
+            "generated_text_characters": 4827,
+            "error": ""
+          },
+          {
+            "index": 52,
+            "output_tokens": 1024,
+            "generated_text_characters": 459,
+            "error": ""
+          },
+          {
+            "index": 53,
+            "output_tokens": 1024,
+            "generated_text_characters": 155,
+            "error": ""
+          },
+          {
+            "index": 54,
+            "output_tokens": 1024,
+            "generated_text_characters": 493,
+            "error": ""
+          },
+          {
+            "index": 55,
+            "output_tokens": 1024,
+            "generated_text_characters": 652,
+            "error": ""
+          },
+          {
+            "index": 56,
+            "output_tokens": 1024,
+            "generated_text_characters": 355,
+            "error": ""
+          },
+          {
+            "index": 57,
+            "output_tokens": 1024,
+            "generated_text_characters": 447,
+            "error": ""
+          },
+          {
+            "index": 58,
+            "output_tokens": 1024,
+            "generated_text_characters": 164,
+            "error": ""
+          },
+          {
+            "index": 59,
+            "output_tokens": 1024,
+            "generated_text_characters": 99,
+            "error": ""
+          },
+          {
+            "index": 60,
+            "output_tokens": 1024,
+            "generated_text_characters": 459,
+            "error": ""
+          },
+          {
+            "index": 61,
+            "output_tokens": 1024,
+            "generated_text_characters": 217,
+            "error": ""
+          },
+          {
+            "index": 62,
+            "output_tokens": 1024,
+            "generated_text_characters": 588,
+            "error": ""
+          },
+          {
+            "index": 63,
+            "output_tokens": 1024,
+            "generated_text_characters": 4521,
+            "error": ""
+          },
+          {
+            "index": 64,
+            "output_tokens": 1024,
+            "generated_text_characters": 4503,
+            "error": ""
+          },
+          {
+            "index": 65,
+            "output_tokens": 1024,
+            "generated_text_characters": 149,
+            "error": ""
+          },
+          {
+            "index": 66,
+            "output_tokens": 1024,
+            "generated_text_characters": 567,
+            "error": ""
+          },
+          {
+            "index": 67,
+            "output_tokens": 1024,
+            "generated_text_characters": 438,
+            "error": ""
+          },
+          {
+            "index": 68,
+            "output_tokens": 1024,
+            "generated_text_characters": 151,
+            "error": ""
+          },
+          {
+            "index": 69,
+            "output_tokens": 1024,
+            "generated_text_characters": 141,
+            "error": ""
+          },
+          {
+            "index": 70,
+            "output_tokens": 1024,
+            "generated_text_characters": 158,
+            "error": ""
+          },
+          {
+            "index": 71,
+            "output_tokens": 1024,
+            "generated_text_characters": 397,
+            "error": ""
+          },
+          {
+            "index": 72,
+            "output_tokens": 1024,
+            "generated_text_characters": 153,
+            "error": ""
+          },
+          {
+            "index": 73,
+            "output_tokens": 1024,
+            "generated_text_characters": 114,
+            "error": ""
+          },
+          {
+            "index": 74,
+            "output_tokens": 1024,
+            "generated_text_characters": 251,
+            "error": ""
+          },
+          {
+            "index": 75,
+            "output_tokens": 1024,
+            "generated_text_characters": 155,
+            "error": ""
+          },
+          {
+            "index": 76,
+            "output_tokens": 1024,
+            "generated_text_characters": 465,
+            "error": ""
+          },
+          {
+            "index": 77,
+            "output_tokens": 1024,
+            "generated_text_characters": 4630,
+            "error": ""
+          },
+          {
+            "index": 78,
+            "output_tokens": 1024,
+            "generated_text_characters": 542,
+            "error": ""
+          },
+          {
+            "index": 79,
+            "output_tokens": 1024,
+            "generated_text_characters": 151,
+            "error": ""
+          },
+          {
+            "index": 80,
+            "output_tokens": 1024,
+            "generated_text_characters": 4630,
+            "error": ""
+          },
+          {
+            "index": 81,
+            "output_tokens": 1024,
+            "generated_text_characters": 497,
+            "error": ""
+          },
+          {
+            "index": 82,
+            "output_tokens": 1024,
+            "generated_text_characters": 158,
+            "error": ""
+          },
+          {
+            "index": 83,
+            "output_tokens": 1024,
+            "generated_text_characters": 479,
+            "error": ""
+          },
+          {
+            "index": 84,
+            "output_tokens": 1024,
+            "generated_text_characters": 103,
+            "error": ""
+          },
+          {
+            "index": 85,
+            "output_tokens": 1024,
+            "generated_text_characters": 127,
+            "error": ""
+          },
+          {
+            "index": 86,
+            "output_tokens": 1024,
+            "generated_text_characters": 854,
+            "error": ""
+          },
+          {
+            "index": 87,
+            "output_tokens": 1024,
+            "generated_text_characters": 588,
+            "error": ""
+          },
+          {
+            "index": 88,
+            "output_tokens": 1024,
+            "generated_text_characters": 5493,
+            "error": ""
+          },
+          {
+            "index": 89,
+            "output_tokens": 1024,
+            "generated_text_characters": 444,
+            "error": ""
+          },
+          {
+            "index": 90,
+            "output_tokens": 1024,
+            "generated_text_characters": 158,
+            "error": ""
+          },
+          {
+            "index": 91,
+            "output_tokens": 1024,
+            "generated_text_characters": 344,
+            "error": ""
+          },
+          {
+            "index": 92,
+            "output_tokens": 1024,
+            "generated_text_characters": 2537,
+            "error": ""
+          },
+          {
+            "index": 93,
+            "output_tokens": 1024,
+            "generated_text_characters": 103,
+            "error": ""
+          },
+          {
+            "index": 94,
+            "output_tokens": 1024,
+            "generated_text_characters": 99,
+            "error": ""
+          },
+          {
+            "index": 95,
+            "output_tokens": 1024,
+            "generated_text_characters": 494,
+            "error": ""
+          },
+          {
+            "index": 96,
+            "output_tokens": 1024,
+            "generated_text_characters": 574,
+            "error": ""
+          },
+          {
+            "index": 97,
+            "output_tokens": 1024,
+            "generated_text_characters": 105,
+            "error": ""
+          },
+          {
+            "index": 98,
+            "output_tokens": 1024,
+            "generated_text_characters": 103,
+            "error": ""
+          },
+          {
+            "index": 99,
+            "output_tokens": 1024,
+            "generated_text_characters": 284,
+            "error": ""
+          },
+          {
+            "index": 100,
+            "output_tokens": 1024,
+            "generated_text_characters": 584,
+            "error": ""
+          },
+          {
+            "index": 101,
+            "output_tokens": 1024,
+            "generated_text_characters": 436,
+            "error": ""
+          },
+          {
+            "index": 102,
+            "output_tokens": 1024,
+            "generated_text_characters": 326,
+            "error": ""
+          },
+          {
+            "index": 103,
+            "output_tokens": 1024,
+            "generated_text_characters": 158,
+            "error": ""
+          },
+          {
+            "index": 104,
+            "output_tokens": 1024,
+            "generated_text_characters": 4279,
+            "error": ""
+          },
+          {
+            "index": 105,
+            "output_tokens": 1024,
+            "generated_text_characters": 579,
+            "error": ""
+          },
+          {
+            "index": 106,
+            "output_tokens": 1024,
+            "generated_text_characters": 394,
+            "error": ""
+          },
+          {
+            "index": 107,
+            "output_tokens": 1024,
+            "generated_text_characters": 5312,
+            "error": ""
+          },
+          {
+            "index": 108,
+            "output_tokens": 1024,
+            "generated_text_characters": 652,
+            "error": ""
+          },
+          {
+            "index": 109,
+            "output_tokens": 1024,
+            "generated_text_characters": 4366,
+            "error": ""
+          },
+          {
+            "index": 110,
+            "output_tokens": 1024,
+            "generated_text_characters": 710,
+            "error": ""
+          },
+          {
+            "index": 111,
+            "output_tokens": 1024,
+            "generated_text_characters": 573,
+            "error": ""
+          },
+          {
+            "index": 112,
+            "output_tokens": 1024,
+            "generated_text_characters": 658,
+            "error": ""
+          },
+          {
+            "index": 113,
+            "output_tokens": 1024,
+            "generated_text_characters": 393,
+            "error": ""
+          },
+          {
+            "index": 114,
+            "output_tokens": 1024,
+            "generated_text_characters": 360,
+            "error": ""
+          },
+          {
+            "index": 115,
+            "output_tokens": 1024,
+            "generated_text_characters": 315,
+            "error": ""
+          },
+          {
+            "index": 116,
+            "output_tokens": 1024,
+            "generated_text_characters": 5296,
+            "error": ""
+          },
+          {
+            "index": 117,
+            "output_tokens": 1024,
+            "generated_text_characters": 456,
+            "error": ""
+          },
+          {
+            "index": 118,
+            "output_tokens": 1024,
+            "generated_text_characters": 265,
+            "error": ""
+          },
+          {
+            "index": 119,
+            "output_tokens": 1024,
+            "generated_text_characters": 4366,
+            "error": ""
+          },
+          {
+            "index": 120,
+            "output_tokens": 1024,
+            "generated_text_characters": 578,
+            "error": ""
+          },
+          {
+            "index": 121,
+            "output_tokens": 1024,
+            "generated_text_characters": 717,
+            "error": ""
+          },
+          {
+            "index": 122,
+            "output_tokens": 1024,
+            "generated_text_characters": 288,
+            "error": ""
+          },
+          {
+            "index": 123,
+            "output_tokens": 1024,
+            "generated_text_characters": 114,
+            "error": ""
+          },
+          {
+            "index": 124,
+            "output_tokens": 1024,
+            "generated_text_characters": 4712,
+            "error": ""
+          },
+          {
+            "index": 125,
+            "output_tokens": 1024,
+            "generated_text_characters": 362,
+            "error": ""
+          },
+          {
+            "index": 126,
+            "output_tokens": 1024,
+            "generated_text_characters": 4629,
+            "error": ""
+          },
+          {
+            "index": 127,
+            "output_tokens": 1024,
+            "generated_text_characters": 404,
+            "error": ""
+          }
+        ],
+        "reported_total_output_tokens": 131072,
+        "sum_output_lens": 131072,
+        "expected_total_output_tokens": 131072
+      }
+    },
+    {
+      "name": "round2_16384_1024_c64",
+      "round": 2,
+      "scored_round": true,
+      "target_text_input_tokens": 16384,
+      "target_output_tokens": 1024,
+      "concurrency": 64,
+      "expected_requests": 128,
+      "command": [
+        "vllm",
+        "bench",
+        "serve",
+        "--backend",
+        "openai-chat",
+        "--endpoint",
+        "/v1/chat/completions",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "30000",
+        "--model",
+        "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+        "--served-model-name",
+        "recon2reason-reasoning-4b",
+        "--tokenizer",
+        "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+        "--dataset-name",
+        "random-mm",
+        "--random-input-len",
+        "16384",
+        "--random-output-len",
+        "1024",
+        "--random-range-ratio",
+        "0",
+        "--random-prefix-len",
+        "0",
+        "--random-mm-base-items-per-request",
+        "1",
+        "--random-mm-num-mm-items-range-ratio",
+        "0",
+        "--random-mm-limit-mm-per-prompt",
+        "{\"image\":1,\"video\":0}",
+        "--random-mm-bucket-config",
+        "{(1024, 1024, 1): 1.0}",
+        "--max-concurrency",
+        "64",
+        "--num-prompts",
+        "128",
+        "--request-rate",
+        "inf",
+        "--seed",
+        "1",
+        "--temperature",
+        "0",
+        "--ignore-eos",
+        "--num-warmups",
+        "0",
+        "--ready-check-timeout-sec",
+        "0",
+        "--disable-tqdm",
+        "--percentile-metrics",
+        "ttft,tpot,itl,e2el",
+        "--metric-percentiles",
+        "99",
+        "--save-result",
+        "--save-detailed",
+        "--result-dir",
+        "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/recon-matrix-retry/native",
+        "--result-filename",
+        "round2_16384_1024_c64.json"
+      ],
+      "native_result": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/recon-matrix-retry/native/round2_16384_1024_c64.json",
+      "log": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/recon-matrix-retry/round2_16384_1024_c64.log",
+      "status": "timeout",
+      "started_utc": "2026-10-19T19:24:43.886643+00:00",
+      "exit_code": 124,
+      "ended_utc": "2026-10-19T19:46:31.280358+00:00",
+      "client_wall_seconds": 1307.366197,
+      "log_sha256": "8520400f259b5371cf35a936095490eb2acdf6462c6af1d53c31202bb79bdaa1"
+    }
+  ],
+  "started_utc": "2026-10-19T19:01:33.531802+00:00",
+  "driver_sha256": "bc09711bb58fb5a7ae4676a840956a4da1caf49f6e6034b8015c5dd9a5bae14e",
+  "native_vllm_version": "0.18.1+das.fa71803.dtk2604",
+  "native_source_sha256": {
+    "serve": "1c4fddeef7114371dfded0a1ba8287c2c644f06697cc00b0275a91cc26a024a9",
+    "datasets": "85b4e3b7407ef35ad364ccd454efdcfa9a06759144582d5a3a3761e3f85a41e2"
+  },
+  "ended_utc": "2026-10-19T19:46:31.399894+00:00",
+  "status": "incomplete_or_failed"
+}

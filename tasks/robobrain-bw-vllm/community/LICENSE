@@ -1,0 +1,22 @@
+License scope and upstream notices
+
+Scope of this development delivery
+
+No repository-wide license has yet been selected for the newly authored
+adaptation code, harness, tests, documentation or evidence in this project.
+This file is a truthful scope notice, not a grant of an Apache-2.0 license
+to all repository contents. The user chose to retain this scope notice
+for now; no repository-wide license has been selected.
+
+Upstream material retains its original terms:
+- Original model README: https://huggingface.co/BAAI/RoboBrain2.5-8B-NV/resolve/7ae187cc62e45cfa1c5904903a8f017f11b2037b/README.md
+- Preserved upstream license: tasks/robobrain-bw-vllm/community/upstream/code-LICENSE.txt
+- License scope: FlagOpen/RoboBrain2.5 upstream code repository only; model weights licensing is separate
+- Exact source URLs and hashes: tasks/robobrain-bw-vllm/community/metadata.json
+
+Model weights are not distributed in this repository. The model card
+declares Apache-2.0 for the model, which is recorded separately; this
+statement is not a legal review of training data or upstream artifacts.
+Official ModelZoo category icon is reused unchanged as directed by the
+community packaging convention. Other third-party material retains its
+source-specific copyright and license; no blanket relicensing is claimed.

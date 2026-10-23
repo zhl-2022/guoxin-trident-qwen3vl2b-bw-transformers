@@ -1,0 +1,11 @@
+{
+  "run_id": "ec698b4b-f378-4597-b236-bcd523bbb8ad",
+  "status": "completed",
+  "wall_seconds": 72.99090600339696,
+  "worker_exit_code": 0,
+  "owned_process_group_signalled_only": true,
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "submission_ready": false,
+  "contest_baseline_available": false
+}

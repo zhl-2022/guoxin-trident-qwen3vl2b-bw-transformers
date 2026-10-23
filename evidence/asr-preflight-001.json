@@ -1,0 +1,100 @@
+{
+  "created_at_utc": "2026-10-19T14:54:11.859788+00:00",
+  "kind": "preflight_only_not_official_evaluation",
+  "python": "3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0]",
+  "system": "Linux-5.15.0-25-generic-x86_64-with-glibc2.35",
+  "packages": {
+    "torch": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+    "transformers": "5.5.0",
+    "tokenizers": "0.22.2",
+    "sglang": null,
+    "vllm": "0.18.1+das.fa71803.dtk2604",
+    "vllm-plugin-das": null,
+    "sgl-kernel": null,
+    "triton": "3.6.0+gitc73250c4.staging",
+    "safetensors": "0.7.0",
+    "accelerate": "1.12.0",
+    "Pillow": "12.1.1"
+  },
+  "tools": {
+    "hy-smi": true,
+    "rocm-smi": true,
+    "docker": false,
+    "podman": false,
+    "bash": true
+  },
+  "model_path": "/root/private_data/SothisAI/model/Aihub/Qwen3-ASR-1.7B/main/Qwen3-ASR-1.7B",
+  "model_exists": true,
+  "model_checks": {
+    "expected_architecture_name": "Qwen3ASRForConditionalGeneration",
+    "architecture": [
+      "Qwen3ASRForConditionalGeneration"
+    ],
+    "model_type": "qwen3_asr",
+    "dtype": null,
+    "expected_architecture": true,
+    "index_weight_count": 708,
+    "index_total_size": null,
+    "shards": [
+      {
+        "name": "model-00001-of-00002.safetensors",
+        "exists": true,
+        "size": 4220320824,
+        "index_keys_match": true,
+        "dtypes": [
+          "BF16"
+        ],
+        "payload_complete": true,
+        "sha256": "a4cd1f1a04d90b757dc7f7dd26254e69a013b19e80efe590a83c6a3bde8608d6"
+      },
+      {
+        "name": "model-00002-of-00002.safetensors",
+        "exists": true,
+        "size": 478200688,
+        "index_keys_match": true,
+        "dtypes": [
+          "BF16"
+        ],
+        "payload_complete": true,
+        "sha256": "6e0b9d9e09e2e0238e7ef3cc8a484ab387e91b90f1900bedf88bc92d7929ccfc"
+      }
+    ],
+    "payload_bytes": 4698434816,
+    "index_total_size_matches": true,
+    "tokenizer_present": false,
+    "complete": false
+  },
+  "files": [
+    {
+      "name": "config.json",
+      "size": 6194,
+      "sha256": "2e74a751548b8ad7d7526d29365ad8144c345d8b412b1152d25dc6698452712f"
+    },
+    {
+      "name": "generation_config.json",
+      "size": 142,
+      "sha256": "1da527824d81e07118facff437e03f2e24a23311e3bdeb2368973fe77e5f275c"
+    },
+    {
+      "name": "preprocessor_config.json",
+      "size": 330,
+      "sha256": "45e120a4eda2c20c5d7f2ea9354e63536bf35e27aa573fb7cdf78017b378770d"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": 12487,
+      "sha256": "4942d005604266809309cabc9f4e9cb89ce855d59b14681fdc0e1cc62ea26c4c"
+    },
+    {
+      "name": "model.safetensors.index.json",
+      "size": 64821,
+      "sha256": "f994739fe38e5210b9e3e8ce6c6307315e2ceac3cb630e7b7414d69dce520f60"
+    }
+  ],
+  "hy_smi": {
+    "returncode": 0,
+    "output": "\n================================= System Management Interface ==================================\n================================================================================================\nHCU     Temp     AvgPwr     Perf     PwrCap     VRAM%      HCU%      Dec%      Enc%      Mode     \n0       54.0C    88.0W      manual   1000.0W    0%         0.0%      0.0%      0.0%      Normal   \n================================================================================================\n======================================== End of SMI Log ========================================\n\n"
+  },
+  "weights_hashed": true,
+  "note": "Header integrity is not inference correctness. No official baseline or acceptance checked."
+}

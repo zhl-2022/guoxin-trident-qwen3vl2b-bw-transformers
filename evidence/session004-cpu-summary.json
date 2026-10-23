@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "session": "session004",
+  "scope": "One full local Windows discovery run plus full WSL discovery run; no package installation or GPU",
+  "windows_full_suite_passed": true,
+  "wsl_full_suite_passed": false,
+  "runs": [
+    {
+      "host": "windows",
+      "record": "evidence/session004-cpu-windows.json",
+      "raw_log": "evidence/session004-cpu-windows.log",
+      "record_sha256": "cc9426d1a30ab35869553da8d9adc10fcd7da6d367bf17d4a9f8a1d8de1ec405",
+      "tests_run": 226,
+      "passed": 207,
+      "skipped": 19,
+      "failures": 0,
+      "errors": 0,
+      "successful": true,
+      "source_snapshot_stable": true,
+      "changed_sources_during_run": []
+    },
+    {
+      "host": "wsl",
+      "record": "evidence/session004-cpu-wsl.json",
+      "raw_log": "evidence/session004-cpu-wsl.log",
+      "record_sha256": "68c9b1ddd0ba7c15814f5eb2c9be76d09971c678e81c19fdaff44795ae938d04",
+      "tests_run": 221,
+      "passed": 220,
+      "skipped": 0,
+      "failures": 0,
+      "errors": 1,
+      "successful": false,
+      "source_snapshot_stable": false,
+      "changed_sources_during_run": [
+        "scripts/assemble_session004_upload.py",
+        "scripts/t02_sglang_bench.py",
+        "tests/test_t02_sglang_bench.py"
+      ]
+    }
+  ],
+  "wsl_error": "Discovery import of test_robobrain_vision_math_compat failed because WSL Python has no torch; Windows ran its numerical CPU cases",
+  "wsl_exclusion_note": "Initial exclude option did not match unittest FailedTest wrapper, so no tests were effectively excluded; records preserve this failed full run. Helper matching was then corrected without rerunning the full suites.",
+  "changed_sources_note": "WSL snapshot records concurrent t02 benchmark/test updates and addition of the package assembler; no claim that its entire run used one source snapshot. Later module changes require their own targeted validation.",
+  "duplicate_case_counts_must_not_be_summed_as_distinct_tests": true,
+  "official_accuracy": false,
+  "gpu_used": false,
+  "old_003_stage_or_remote_modified": false,
+  "package_verification": "evidence/session004-development-upload-verification.json",
+  "package_plan_smoke": "evidence/session004-upload-plan-smoke.json"
+}

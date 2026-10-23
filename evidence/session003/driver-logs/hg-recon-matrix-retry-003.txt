@@ -1,0 +1,54 @@
+{"utc": "2026-10-19T18:59:26.769436+00:00", "case": "scope", "kind": "two_cell_independent_development_retry", "official_acceptance": false, "old_run_id": "d70f7e5f590745e28488c55820169551", "owned_run_id": "bb6a20bae32640c0b924511637d6a222", "hard_end_utc": "2026-10-19T19:48:00+00:00", "original_report_sha256": "3aaf594da27ea399d0ca2a7eed3ffde828c7bf04c27abbe5bc88a00a22474f7e"}
+{"utc": "2026-10-19T18:59:26.783174+00:00", "case": "command", "argv": ["bash", "/root/private_data/guoxin-hackathon-20261020-session003/tasks/recon2reason-bw-vllm/stop.sh", "--run-id", "d70f7e5f590745e28488c55820169551"], "timeout_seconds": 50}
+The recorded supervisor is no longer running; no process was signaled.
+{"utc": "2026-10-19T18:59:29.282865+00:00", "case": "command", "argv": ["bash", "/root/private_data/guoxin-hackathon-20261020-session003/tasks/recon2reason-bw-vllm/run.sh", "--run-id", "bb6a20bae32640c0b924511637d6a222"], "timeout_seconds": 960}
+{
+  "run_id": "bb6a20bae32640c0b924511637d6a222",
+  "status": "ready",
+  "created_utc": "2026-10-19T18:59:30.678808+00:00",
+  "supervisor_pid": 9720,
+  "supervisor_token": "246375399",
+  "config_path": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/recon2reason-bw-vllm/runtime/config-bb6a20bae32640c0b924511637d6a222.json",
+  "url": "http://127.0.0.1:30000",
+  "max_runtime_seconds": 2883,
+  "framework": "vllm",
+  "precision": "bf16",
+  "command": [
+    "/usr/bin/python",
+    "-m",
+    "vllm.entrypoints.openai.api_server",
+    "--model",
+    "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+    "--served-model-name",
+    "recon2reason-reasoning-4b",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "30000",
+    "--tensor-parallel-size",
+    "1",
+    "--dtype",
+    "bfloat16",
+    "--max-model-len",
+    "32768",
+    "--gpu-memory-utilization",
+    "0.85",
+    "--enforce-eager",
+    "--max-num-seqs",
+    "16",
+    "--limit-mm-per-prompt",
+    "{\"image\":2,\"video\":0}"
+  ],
+  "server_pid": 9722,
+  "server_token": "246375475",
+  "ready_utc": "2026-10-19T19:01:32.498983+00:00"
+}
+Service ready. The supervisor continues enforcing its runtime limit.
+{"utc": "2026-10-19T19:01:32.856498+00:00", "case": "command", "argv": ["/usr/bin/python", "-B", "/root/private_data/guoxin-hackathon-20261020-session003/scripts/t02_development_bench.py", "--run", "--model-path", "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B", "--tokenizer-path", "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B", "--served-model-name", "recon2reason-reasoning-4b", "--image-size", "1024", "--host", "127.0.0.1", "--port", "30000", "--vllm-command-json", "[\"vllm\"]", "--output-dir", "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/recon-matrix-retry", "--load", "16384:64", "--timeout-seconds", "1800", "--total-timeout-seconds", "2697"], "timeout_seconds": 2707}
+{"name": "round1_16384_1024_c64", "status": "complete", "exit_code": 0, "client_wall_seconds": 1388.66132}
+{"name": "round2_16384_1024_c64", "status": "timeout", "exit_code": 124, "client_wall_seconds": 1307.366197}
+{"utc": "2026-10-19T19:46:31.687004+00:00", "case": "retry_driver_finished", "exit_code": 1, "retry_run_json_present": true}
+{"utc": "2026-10-19T19:46:32.130390+00:00", "case": "command", "argv": ["bash", "/root/private_data/guoxin-hackathon-20261020-session003/tasks/recon2reason-bw-vllm/stop.sh", "--run-id", "bb6a20bae32640c0b924511637d6a222"], "timeout_seconds": 50}
+Stopped the matching task supervisor and its server process group.
+{"utc": "2026-10-19T19:46:45.098474+00:00", "case": "owned_cleanup", "stop_exit_code": 0, "captured_utc": "2026-10-19T19:46:45.091485+00:00", "run_id": "bb6a20bae32640c0b924511637d6a222", "state_status": "stopped", "supervisor_same_identity_alive": false, "server_same_identity_alive": false, "port_open": false, "platform_shutdown_verified": false, "owned_service_cleanup_verified": true}
+{"utc": "2026-10-19T19:46:45.099139+00:00", "case": "original_report_preserved", "unchanged": true}

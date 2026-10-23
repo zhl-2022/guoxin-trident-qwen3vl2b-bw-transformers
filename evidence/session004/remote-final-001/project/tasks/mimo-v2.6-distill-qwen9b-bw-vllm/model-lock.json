@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "model_id": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "revision": "2367e865d009c13ac81713a2878291d33ab28177",
+  "source_url": "https://huggingface.co/api/models/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/revision/2367e865d009c13ac81713a2878291d33ab28177?blobs=true",
+  "files": [
+    {
+      "path": "chat_template.jinja",
+      "size": 3916,
+      "git_blob_sha1": "c6a37693fc7d9b48122182931a59f436e21b577a"
+    },
+    {
+      "path": "config.json",
+      "size": 2784,
+      "git_blob_sha1": "007c2eb8c73b9295f22491b1e4ab29d8b10f6e05"
+    },
+    {
+      "path": "generation_config.json",
+      "size": 126,
+      "git_blob_sha1": "06320848d7db69b8e66414a7ffad26b5be193fcd"
+    },
+    {
+      "path": "merges.txt",
+      "size": 3353259,
+      "git_blob_sha1": "a494e019ca1502219fd0128658b979e5f05ae8e8"
+    },
+    {
+      "path": "model-00001-of-00004.safetensors",
+      "size": 5276436216,
+      "sha256": "aab052180118aee34abc3029b54eaa49096aac606b97d703866b420dceb703c3"
+    },
+    {
+      "path": "model-00002-of-00004.safetensors",
+      "size": 5033171280,
+      "sha256": "7a0486565f06d25ac4628e9dba470dc3f604353471d240d5a0bf7128f64df396"
+    },
+    {
+      "path": "model-00003-of-00004.safetensors",
+      "size": 5234499504,
+      "sha256": "6c73207563d1879bfd6c143a028cc70be68edff56280458c71a43df4240300f4"
+    },
+    {
+      "path": "model-00004-of-00004.safetensors",
+      "size": 3275613848,
+      "sha256": "1379a7cf8c0b8555a39ab65a47e830e0eb45e776b46045734da3afd73c09eea2"
+    },
+    {
+      "path": "model.safetensors.index.json",
+      "size": 69217,
+      "git_blob_sha1": "be2a44ec6dc7004e51e648b5e2cf8c32cee42c79"
+    },
+    {
+      "path": "preprocessor_config.json",
+      "size": 443,
+      "git_blob_sha1": "8ed39680d90d989c35a3e308338a24875bafbc42"
+    },
+    {
+      "path": "processor_config.json",
+      "size": 1191,
+      "git_blob_sha1": "33818c7f9e991ad735fd240209f4fa73e6c28c50"
+    },
+    {
+      "path": "tokenizer.json",
+      "size": 19989325,
+      "sha256": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523"
+    },
+    {
+      "path": "tokenizer_config.json",
+      "size": 1165,
+      "git_blob_sha1": "1d134cd298be1e3be25db393d93a1cefe80e3214"
+    },
+    {
+      "path": "video_preprocessor_config.json",
+      "size": 385,
+      "git_blob_sha1": "3ba673a5ad7d4d13f54155ecd38b2a94a6dac8fe"
+    },
+    {
+      "path": "vocab.json",
+      "size": 6722759,
+      "git_blob_sha1": "0aa0ce0658d60ac4a5d609f4eadb0e8e43514176"
+    }
+  ],
+  "weight_bytes": 18819720848,
+  "downloaded_weight_bytes": 0
+}

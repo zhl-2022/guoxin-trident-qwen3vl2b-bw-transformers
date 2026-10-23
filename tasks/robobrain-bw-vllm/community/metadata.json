@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "task": "robobrain-bw-vllm",
+  "sourcefind_project_id": 15916,
+  "sourcefind_project_url": "https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-robobrain-bw-vllm",
+  "project_identity_source": "root agent actual Sourcefind UI observation relayed on2026-10-20",
+  "model_id": "BAAI/RoboBrain2.5-8B-NV",
+  "model_revision": "7ae187cc62e45cfa1c5904903a8f017f11b2037b",
+  "app_category": "多模态",
+  "category_icon": {
+    "source_project": "modelzoo/qwen3-vl_pytorch",
+    "commit": "22d21e877cf30728e879117787ee2e0f6f6547bc",
+    "width": 410,
+    "height": 410,
+    "bytes_preserved": true
+  },
+  "observed_accelerator": "BW",
+  "unverified_accelerator_suffix": true,
+  "frameworks": [
+    "pytorch",
+    "vllm"
+  ],
+  "process_type": "推理",
+  "model_weights_included": false,
+  "model_card_declared_weights_license": "apache-2.0",
+  "weights_license_scope_note": "Publisher model-card declaration; separate from adaptation code and not a review of all upstream rights",
+  "new_adaptation_code_license_status": "user_chose_scope_notice_no_repositorywide_license",
+  "complete_actual_image_reference": null,
+  "official_accuracy": false,
+  "official_performance": false,
+  "formal_ready": false,
+  "submitted": false,
+  "upstream_sources": [
+    {
+      "path": "README_origin.md",
+      "url": "https://huggingface.co/BAAI/RoboBrain2.5-8B-NV/resolve/7ae187cc62e45cfa1c5904903a8f017f11b2037b/README.md",
+      "scope": "original publisher model-card README at fixed model revision; preserved bytes, not executed",
+      "sha256": "2bd973711e170c8fb43e8001a532e5ff06fd90ac7e83f592a806bd7080bd16b0",
+      "bytes": 8555
+    },
+    {
+      "path": "upstream/code-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/FlagOpen/RoboBrain2.5/af98c932aac9ff715d70da177088d7bb95573ff7/LICENSE",
+      "scope": "FlagOpen/RoboBrain2.5 upstream code repository only; model weights licensing is separate",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    {
+      "path": "icon.png",
+      "url": "https://developer.sourcefind.cn/codes/api/v4/projects/modelzoo%2Fqwen3-vl_pytorch/repository/files/icon.png/raw?ref=22d21e877cf30728e879117787ee2e0f6f6547bc",
+      "scope": "official ModelZoo category icon reused unchanged for 多模态",
+      "sha256": "beb9bc510a5ea55298238a9d931951e8239d694f2484b56736b67cd17fb47a47",
+      "bytes": 51507
+    },
+    {
+      "path": "upstream/category-model.properties",
+      "url": "https://developer.sourcefind.cn/codes/api/v4/projects/modelzoo%2Fqwen3-vl_pytorch/repository/files/model.properties/raw?ref=22d21e877cf30728e879117787ee2e0f6f6547bc",
+      "scope": "official category label source at same fixed commit as icon; IDs/card SKUs belong to that example and are not copied",
+      "sha256": "62c9c93b9a7d31a72d63c16ffc28927933a358f6503391dc16b0b375368a8f84",
+      "bytes": 387
+    }
+  ],
+  "promoted_files": {
+    "model.properties": {
+      "source": "model.properties",
+      "sha256": "399bdf6e6e22aaf92b0fdc3121712d4f666d1864efc048ba21780b93decf5645",
+      "bytes": 412
+    },
+    "LICENSE": {
+      "source": "LICENSE",
+      "sha256": "24b57940be7745eac6f3a1fa910f3f7de38faee14ce423501bfa6e795f73bbf2",
+      "bytes": 1303
+    },
+    "icon.png": {
+      "source": "icon.png",
+      "sha256": "beb9bc510a5ea55298238a9d931951e8239d694f2484b56736b67cd17fb47a47",
+      "bytes": 51507
+    },
+    "README_origin.md": {
+      "source": "README_origin.md",
+      "sha256": "2bd973711e170c8fb43e8001a532e5ff06fd90ac7e83f592a806bd7080bd16b0",
+      "bytes": 8555
+    },
+    "requirements.txt": {
+      "source": "requirements.txt",
+      "sha256": "025664bf65cd3b8d8121a69f9a929132f41d39c08650b4f0f11a32ec8cf9f454",
+      "bytes": 583
+    }
+  },
+  "created_at_utc": "2026-10-19T18:38:31.720068+00:00",
+  "license_choice_source": "user explicitly chose to retain copyright/scope notice; no repository-wide license selected"
+}

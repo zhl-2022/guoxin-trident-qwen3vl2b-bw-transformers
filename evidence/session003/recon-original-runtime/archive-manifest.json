@@ -1,0 +1,38 @@
+{
+  "files": [
+    {
+      "source": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/recon2reason-bw-vllm/runtime/state.json",
+      "copy": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/recon-original-runtime/state-before-stop.json",
+      "bytes": 1271,
+      "sha256": "51594610ac7a2289296d677580b171f3946a23e2b17b3081e0581423c78faee9"
+    },
+    {
+      "source": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/recon2reason-bw-vllm/runtime/config-d70f7e5f590745e28488c55820169551.json",
+      "copy": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/recon-original-runtime/config-d70f7e5f590745e28488c55820169551.json",
+      "bytes": 1328,
+      "sha256": "3b966f652443edcb317bcbb88a038e3871d67fd290f3d8c1c1ea571b063859c8"
+    },
+    {
+      "source": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/recon2reason-bw-vllm/runtime/state.json",
+      "copy": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/recon-original-runtime/state-after-stop.json",
+      "bytes": 1271,
+      "sha256": "51594610ac7a2289296d677580b171f3946a23e2b17b3081e0581423c78faee9"
+    },
+    {
+      "source": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/recon2reason-bw-vllm/runtime/server.log",
+      "copy": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/recon-original-runtime/server.log",
+      "bytes": 193933,
+      "sha256": "d0f296628ab32d8275750ed706f2a84ac9d122a9917351b4a1945e050bedf007",
+      "operation": "rename_after_owned_stop"
+    },
+    {
+      "source": "/root/private_data/guoxin-hackathon-20261020-session003/tasks/recon2reason-bw-vllm/runtime/supervisor.log",
+      "copy": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/recon-original-runtime/supervisor.log",
+      "bytes": 4343,
+      "sha256": "b2710b897f6185a2f93d724c0af8f412782d1cb2d3b6dba9bd98aecb39f5c550",
+      "operation": "rename_after_owned_stop"
+    }
+  ],
+  "old_source_sha256": "04b0c91fd0596360f142021800f1487af5a83264cb6de5971b954b45dc80b422",
+  "old_run_id": "d70f7e5f590745e28488c55820169551"
+}

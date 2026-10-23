@@ -1,0 +1,28 @@
+{
+  "run_id": "ec698b4b-f378-4597-b236-bcd523bbb8ad",
+  "command": [
+    "/root/private_data/guoxin-candidates/envs/forcedaligner-001/bin/python",
+    "-B",
+    "/root/private_data/guoxin-hackathon-20261023-session004/scripts/task_expansion_candidates_20261023.py",
+    "qwen3-forcedaligner-bw-transformers",
+    "run",
+    "--_worker",
+    "--model-dir",
+    "/root/private_data/guoxin-candidates/models/forcedaligner",
+    "--output",
+    "/root/private_data/guoxin-candidates/results/forcedaligner-pilot-001",
+    "--max-seconds",
+    "360",
+    "--port",
+    "30109",
+    "--upstream-root",
+    "/root/private_data/guoxin-candidates/source/qwen3-asr",
+    "--requests",
+    "tasks/qwen3-forcedaligner-bw-transformers/requests.example.json"
+  ],
+  "max_seconds": 360,
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "submission_ready": false,
+  "contest_baseline_available": false
+}

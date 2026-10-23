@@ -1,0 +1,171 @@
+[
+  {
+    "file": "trident-config.json",
+    "url": "https://huggingface.co/openbmb/Trident-Qwen3VL-2B/resolve/a5aedf8733f2107ab75b42214c78496d85759077/config.json",
+    "size": 1536,
+    "sha256": "e2fdf43c0ef5c8c34333467d5d43ecca6c234da95445a7d14954b361f79b6926"
+  },
+  {
+    "file": "trident-mmemb-model.json",
+    "url": "https://huggingface.co/openbmb/Trident-Qwen3VL-2B/resolve/a5aedf8733f2107ab75b42214c78496d85759077/mmemb_model.json",
+    "size": 923,
+    "sha256": "9cc150d8b175d9b6e4ec6bb9f919d50307dca341b537278e59284d1928bff3de"
+  },
+  {
+    "file": "vllm-qwen3-vl.py",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.18.1/vllm/model_executor/models/qwen3_vl.py",
+    "size": 91703,
+    "sha256": "5fffbdd4cc1515ddca8c47d295cfbad7707a73ab65026ec476ca941ae4b02b6b"
+  },
+  {
+    "file": "vllm-adapters.py",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.18.1/vllm/model_executor/models/adapters.py",
+    "size": 23120,
+    "sha256": "96b6eff718fdf4c48b81124bd69673584dfb895fea8fd5534890bf76a9f8c169"
+  },
+  {
+    "file": "vllm-pooler-config.py",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.18.1/vllm/config/pooler.py",
+    "size": 5382,
+    "sha256": "bf73854f97a9ded8d6c2c5d02090e7817c9bbaa14368c4a6d8bacc0a5dec76b2"
+  },
+  {
+    "file": "vllm-pooler.py",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.18.1/vllm/model_executor/layers/pooler/__init__.py",
+    "size": 176,
+    "sha256": "02f309b58d6c41c3ff9fb49607d669d05edd05f80dc4a3a9a147e3b997cfd7f9"
+  },
+  {
+    "file": "vllm-model-config.py",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.18.1/vllm/config/model.py",
+    "size": 84803,
+    "sha256": "7cd5f1fa1bbeb81b42b9a7263f242b612970311e4d755bd31ced0ad34c97efe0"
+  },
+  {
+    "file": "vllm-registry.py",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.18.1/vllm/model_executor/models/registry.py",
+    "size": 52844,
+    "sha256": "c18f22acd950381d84fba16c39c9d73aaf057f5b02616b2df8ed37061cc71f71"
+  },
+  {
+    "file": "trident-safetensors-header.json",
+    "url": "https://huggingface.co/openbmb/Trident-Qwen3VL-2B/resolve/a5aedf8733f2107ab75b42214c78496d85759077/model.safetensors",
+    "request_range": "0-76247",
+    "read_bytes": 76248,
+    "http": 206,
+    "sha256": "a4c22c14e0d987dd572a283e92643374babeccc2f86cf2f8020e6144389c3f4d",
+    "weight_payload_downloaded": false
+  },
+  {
+    "file": "vllm-vllm-model_executor-layers-pooler-common.py",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.18.1/vllm/model_executor/layers/pooler/common.py",
+    "size": 1037,
+    "sha256": "38206e4aed07ee4242f0dbcf598208237cd02a331c848facde2022a200c1b90a"
+  },
+  {
+    "file": "vllm-vllm-model_executor-layers-pooler-special.py",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.18.1/vllm/model_executor/layers/pooler/special.py",
+    "size": 5461,
+    "sha256": "cbbd88167faea411e481d5dd3b2e72bfc0bfe798f2b06898d4e27cf277bef091"
+  },
+  {
+    "file": "vllm-vllm-model_executor-layers-pooler-abstract.py",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.18.1/vllm/model_executor/layers/pooler/abstract.py",
+    "size": 1090,
+    "sha256": "36359c72c5a2df93e6d9430572d9c904e424935a5706abb5e977ce828a0a5699"
+  },
+  {
+    "file": "vllm-vllm-model_executor-layers-pooler-seqwise-__init__.py",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.18.1/vllm/model_executor/layers/pooler/seqwise/__init__.py",
+    "size": 1059,
+    "sha256": "34e38d6bde67726a9f08dcc13f32f086483b1d641492c4453daaf87833550770"
+  },
+  {
+    "file": "vllm-vllm-model_executor-layers-pooler-seqwise-poolers.py",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.18.1/vllm/model_executor/layers/pooler/seqwise/poolers.py",
+    "size": 3957,
+    "sha256": "1d1e75a8961d878b9a89182a0c926a3643ce69cab5dd28d67dfc9cc6e44d6958"
+  },
+  {
+    "file": "vllm-vllm-model_executor-layers-pooler-seqwise-heads.py",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.18.1/vllm/model_executor/layers/pooler/seqwise/heads.py",
+    "size": 5111,
+    "sha256": "e87f7a16eb01a41517de38707b92fcebad0e97d671aceb5fc2176c6a4b28b5c4"
+  },
+  {
+    "file": "vllm-vllm-model_executor-models-qwen3.py",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.18.1/vllm/model_executor/models/qwen3.py",
+    "size": 12433,
+    "sha256": "153ac85de337ebfec8fd505be600bf93b0f4c55aa3e0ee3f4a91ca6637f75c76"
+  },
+  {
+    "file": "vllm-examples-pooling-embed-vision_embedding_offline.py",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.18.1/examples/pooling/embed/vision_embedding_offline.py",
+    "size": 10861,
+    "sha256": "edec4f449eff079f9fe55cb4b39cdb3dff6a72f547afd93990dd1096158cdf98"
+  },
+  {
+    "file": "vllm-vllm-model_executor-layers-pooler-activations.py",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.18.1/vllm/model_executor/layers/pooler/activations.py",
+    "size": 5269,
+    "sha256": "396fefdbdd0027e6c45b830f42f8c8bf51725dc1230cdb1cbbadaba159b3b7c0"
+  },
+  {
+    "file": "vllm-vllm-model_executor-layers-pooler-seqwise-methods.py",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.18.1/vllm/model_executor/layers/pooler/seqwise/methods.py",
+    "size": 3067,
+    "sha256": "bddca3cc441c6c7f737bc7d734f24c598ed6515f29125eee4a89e09ec67e7a4f"
+  },
+  {
+    "file": "vllm-vllm-config-utils.py",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.18.1/vllm/config/utils.py",
+    "size": 15108,
+    "sha256": "d2cc2c67e0dda7f98a85e9952a31b72a1f4e71a6a8b27c89bf6341b68764d06a"
+  },
+  {
+    "file": "vllm-vllm-pooling_params.py",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.18.1/vllm/pooling_params.py",
+    "size": 8238,
+    "sha256": "16b25fadcf8c9a4df5c7c0ba1ec11c52caa668503ba790c3f9cfba45674f7ace"
+  },
+  {
+    "file": "qwen-official-embedding-config.json",
+    "url": "https://huggingface.co/Qwen/Qwen3-VL-Embedding-2B/resolve/main/config.json",
+    "sha256": "9172f55b0b9cce70b7f67b10c58a408ccf3ec15c587e6efd4d5f41631237fded",
+    "mutable_revision": "main captured 2026-10-23; contextual only"
+  },
+  {
+    "file": "vllm-entrypoints-llm.py",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.18.1/vllm/entrypoints/llm.py",
+    "size": 85112,
+    "sha256": "dda584f23a37da56b67ba4201f280af124ee5febbbdd6c9a964fbd40d3d66db6"
+  },
+  {
+    "file": "official-trident_qwen3vl.py",
+    "url": "https://github.com/OpenBMB/Trident/blob/7fbf4b2033e1b3a43a99185fc125d765a549c52d/src/embedding_backends/trident_qwen3vl.py",
+    "sha256": "8d6ea5e9866da1e0e9f6400d8aba03df8820e7a46f83d6267a2ea72878e6754a",
+    "size": 9554,
+    "publisher_revision": "7fbf4b2033e1b3a43a99185fc125d765a549c52d"
+  },
+  {
+    "file": "official-base.py",
+    "url": "https://github.com/OpenBMB/Trident/blob/7fbf4b2033e1b3a43a99185fc125d765a549c52d/src/mmemb/models/base.py",
+    "sha256": "fc30b813125618b6d3a9ad65721d83860a8eec0555477582f36999c43956fadf",
+    "size": 6076,
+    "publisher_revision": "7fbf4b2033e1b3a43a99185fc125d765a549c52d"
+  },
+  {
+    "file": "official-modeling_qwen3_vl_embedding.py",
+    "url": "https://github.com/OpenBMB/Trident/blob/7fbf4b2033e1b3a43a99185fc125d765a549c52d/src/mmemb/models/modeling_qwen3_vl_embedding.py",
+    "sha256": "c0b351fb75ee2ef0ca17d8e476c6ef43b20eca0604d34cbcf2640916074cefe9",
+    "size": 7077,
+    "publisher_revision": "7fbf4b2033e1b3a43a99185fc125d765a549c52d"
+  },
+  {
+    "file": "official-qwen3_vl_embedding.py",
+    "url": "https://github.com/OpenBMB/Trident/blob/7fbf4b2033e1b3a43a99185fc125d765a549c52d/src/mmemb/models/qwen3_vl_embedding.py",
+    "sha256": "e67918523480a6f5d3c62c7ece8911748a89d51922a50ec634ff44f463ea1de7",
+    "size": 26000,
+    "publisher_revision": "7fbf4b2033e1b3a43a99185fc125d765a549c52d"
+  }
+]

@@ -1,0 +1,155 @@
+{
+  "started_utc": "2026-10-23T09:34:50.347781+00:00",
+  "scope": "CPU-only venv path regression, mock clients and Bash official-contract isolation; no GPU/native installs",
+  "source_before": [
+    {
+      "path": "scripts/t02_sglang_bench.py",
+      "bytes": 18786,
+      "sha256": "7318269cd4ae006c564c18b433cf3b6de852787acad9bde31947f9dfe67abead"
+    },
+    {
+      "path": "scripts/prepare_sglang_client.py",
+      "bytes": 9173,
+      "sha256": "3a18d7f08a90affcbd57474b72aba8288df6143cae3c8100f8a63eb2b01c431b"
+    },
+    {
+      "path": "tests/test_t02_sglang_bench.py",
+      "bytes": 10109,
+      "sha256": "1d9a6e2fd646a7585d9ae1a51bd0367666485b82d4ac5f674378c168f8663165"
+    },
+    {
+      "path": "tests/test_prepare_sglang_client.py",
+      "bytes": 2982,
+      "sha256": "f61c5c96fbe8f97e1c665e00bfe370793fd6f378ed4fef1c83c8435e909065f5"
+    },
+    {
+      "path": "tasks/qwen3-asr-bw-vllm/native-stack.json",
+      "bytes": 545,
+      "sha256": "8c029589352faf8418cf982f6255d81e53d7cff357c78512b519cc9950dfdc4e"
+    },
+    {
+      "path": "evidence/session004/sglang-client-preparation-20261023.md",
+      "bytes": 5067,
+      "sha256": "49598bcb435b4f0ce8fb345d1429df1df16d19eb328d604d887294e8cdaff014"
+    },
+    {
+      "path": "tasks/robobrain-bw-vllm/env.sh",
+      "bytes": 2718,
+      "sha256": "15c91d2d332f649df3fa88f9562d4b0dce89df239729dacd4a680e17b473dfb9"
+    },
+    {
+      "path": "tests/test_robobrain_official_entry.py",
+      "bytes": 5706,
+      "sha256": "cccd5f22e580210112d8ed326205b0d30a23e5140cd927467e4fe2e61bb5a5b8"
+    }
+  ],
+  "steps": [
+    {
+      "argv": [
+        "C:\\Users\\zhl\\anaconda3\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*sglang*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "windows-sglang-tests.log",
+      "sha256": "d56889f1f12a35152008c6aa1957e7aed97fcc91ae11f7433e576365d457884a"
+    },
+    {
+      "argv": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "bash",
+        "-lc",
+        "cd /mnt/e/hg20261019 && PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s tests -p 'test_*sglang*.py' -v && PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s tests -p test_robobrain_official_entry.py -v && bash -n tasks/robobrain-bw-vllm/env.sh tasks/robobrain-bw-vllm/verify.sh tasks/robobrain-bw-vllm/bench.sh"
+      ],
+      "exit_code": 0,
+      "log": "wsl-sglang-robo-tests.log",
+      "sha256": "22d6475ea1653a43e4dc2b60dc5fbe23e4176787fa3bc28dc0d8678c45d6e011"
+    }
+  ],
+  "recon_launch_plan": {
+    "exit_code": 0,
+    "argv": [
+      "/usr/bin/python3",
+      "-m",
+      "vllm.entrypoints.openai.api_server",
+      "--model",
+      "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+      "--served-model-name",
+      "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "30000",
+      "--tensor-parallel-size",
+      "1",
+      "--dtype",
+      "bfloat16",
+      "--max-model-len",
+      "32768",
+      "--gpu-memory-utilization",
+      "0.85",
+      "--enforce-eager",
+      "--max-num-seqs",
+      "16",
+      "--limit-mm-per-prompt",
+      "{\"image\":2,\"video\":0}"
+    ],
+    "env_script": "cd /mnt/e/hg20261019\nexport RECON2REASON_MODEL_PATH=/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B\nexport RECON2REASON_SERVED_NAME=\"$RECON2REASON_MODEL_PATH\"\nexport RECON2REASON_PYTHON_BIN=python3\nexport RECON2REASON_LOAD_TIMEOUT=900\nexport RECON2REASON_MAX_RUNTIME_SECONDS=6900\nexport RECON2REASON_EXTRA_ARGS_JSON='[\"--enforce-eager\",\"--max-num-seqs\",\"16\",\"--limit-mm-per-prompt\",\"{\\\"image\\\":2,\\\"video\\\":0}\"]'\nbash tasks/recon2reason-bw-vllm/run.sh --dry-run\n",
+    "dry_run": true,
+    "no_service_started": true
+  },
+  "source_after": [
+    {
+      "path": "scripts/t02_sglang_bench.py",
+      "bytes": 18786,
+      "sha256": "7318269cd4ae006c564c18b433cf3b6de852787acad9bde31947f9dfe67abead"
+    },
+    {
+      "path": "scripts/prepare_sglang_client.py",
+      "bytes": 9173,
+      "sha256": "3a18d7f08a90affcbd57474b72aba8288df6143cae3c8100f8a63eb2b01c431b"
+    },
+    {
+      "path": "tests/test_t02_sglang_bench.py",
+      "bytes": 10109,
+      "sha256": "1d9a6e2fd646a7585d9ae1a51bd0367666485b82d4ac5f674378c168f8663165"
+    },
+    {
+      "path": "tests/test_prepare_sglang_client.py",
+      "bytes": 2982,
+      "sha256": "f61c5c96fbe8f97e1c665e00bfe370793fd6f378ed4fef1c83c8435e909065f5"
+    },
+    {
+      "path": "tasks/qwen3-asr-bw-vllm/native-stack.json",
+      "bytes": 545,
+      "sha256": "8c029589352faf8418cf982f6255d81e53d7cff357c78512b519cc9950dfdc4e"
+    },
+    {
+      "path": "evidence/session004/sglang-client-preparation-20261023.md",
+      "bytes": 5067,
+      "sha256": "49598bcb435b4f0ce8fb345d1429df1df16d19eb328d604d887294e8cdaff014"
+    },
+    {
+      "path": "tasks/robobrain-bw-vllm/env.sh",
+      "bytes": 2718,
+      "sha256": "15c91d2d332f649df3fa88f9562d4b0dce89df239729dacd4a680e17b473dfb9"
+    },
+    {
+      "path": "tests/test_robobrain_official_entry.py",
+      "bytes": 5706,
+      "sha256": "cccd5f22e580210112d8ed326205b0d30a23e5140cd927467e4fe2e61bb5a5b8"
+    }
+  ],
+  "passed": true,
+  "ended_utc": "2026-10-23T09:34:55.528328+00:00"
+}

@@ -1,0 +1,96 @@
+{
+  "development_contract_passed": true,
+  "mode": "publisher_transformers_sdpa_alignment",
+  "results": [
+    {
+      "input": {
+        "audio": "fixtures/zh_16000_pcm16.wav",
+        "text": "甚至出现交易几乎停滞的情况。",
+        "language": "Chinese"
+      },
+      "fixture": {
+        "path": "/root/private_data/guoxin-hackathon-20261023-session004/tasks/qwen3-forcedaligner-bw-transformers/fixtures/zh_16000_pcm16.wav",
+        "duration_seconds": 4.2039375,
+        "sha256": "46dbc998c9d1d48111267c40741dd3200f2e5bcf4075f8c4c97f4451160dce50"
+      },
+      "items": [
+        {
+          "text": "甚",
+          "start_time": 0.4,
+          "end_time": 0.72
+        },
+        {
+          "text": "至",
+          "start_time": 0.72,
+          "end_time": 0.96
+        },
+        {
+          "text": "出",
+          "start_time": 0.96,
+          "end_time": 1.12
+        },
+        {
+          "text": "现",
+          "start_time": 1.12,
+          "end_time": 1.52
+        },
+        {
+          "text": "交",
+          "start_time": 1.52,
+          "end_time": 1.76
+        },
+        {
+          "text": "易",
+          "start_time": 1.76,
+          "end_time": 2.0
+        },
+        {
+          "text": "几",
+          "start_time": 2.0,
+          "end_time": 2.24
+        },
+        {
+          "text": "乎",
+          "start_time": 2.24,
+          "end_time": 2.48
+        },
+        {
+          "text": "停",
+          "start_time": 2.48,
+          "end_time": 2.72
+        },
+        {
+          "text": "滞",
+          "start_time": 2.72,
+          "end_time": 2.88
+        },
+        {
+          "text": "的",
+          "start_time": 2.88,
+          "end_time": 3.04
+        },
+        {
+          "text": "情",
+          "start_time": 3.04,
+          "end_time": 3.36
+        },
+        {
+          "text": "况",
+          "start_time": 3.36,
+          "end_time": 3.68
+        }
+      ],
+      "validation": {
+        "item_count": 13,
+        "text_units_preserved": true,
+        "timestamps_finite_monotonic_in_audio": true,
+        "accuracy_against_independent_timestamps_evaluated": false
+      },
+      "wall_seconds": 12.206611174158752
+    }
+  ],
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "submission_ready": false,
+  "contest_baseline_available": false
+}

@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "slug": "qwen3-forcedaligner-bw-transformers",
+  "track": "T04",
+  "status": "GPU_development_reference_completed_formal_pending",
+  "model_id": "Qwen/Qwen3-ForcedAligner-0.6B",
+  "framework": "publisher_qwen_asr_transformers",
+  "source_revision": "7c6daf77a2421100f5fb066495372c00129d39ff",
+  "api": "qwen_asr.Qwen3ForcedAligner.from_pretrained(...).align(audio=..., text=..., language=...)",
+  "precision": "bfloat16",
+  "attention": "sdpa",
+  "cards_candidate": 1,
+  "card_candidate": "BW 64GB",
+  "max_runtime_seconds_default": 900,
+  "max_audio_seconds": 180,
+  "python_distributions": [
+    "torch",
+    "transformers",
+    "accelerate",
+    "librosa",
+    "soundfile",
+    "nagisa",
+    "soynlp"
+  ],
+  "native_packages_must_remain_unchanged": [
+    "torch",
+    "torchvision",
+    "vllm",
+    "vllm-hcu",
+    "triton",
+    "flash-attn",
+    "lightop",
+    "aiter"
+  ],
+  "dependency_policy": "Isolated system-site-packages env executed with Transformers4.57.6; partial repair installed only missing audioread, reused42 items, protected native metadata unchanged. Import discovery initialized GPU context and was explicitly recorded; not claimed CPU-only.",
+  "model_license": "Apache-2.0 per official model card; source LICENSE retained in upstream-source.zip",
+  "new_adaptation_license": "copyright_scope_notice_only_no_repositorywide_license_selected",
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "gpu_verified": true,
+  "submission_ready": false,
+  "runtime_profile": "runtime.json",
+  "checkpoint_manifest": "model-lock.json",
+  "entry": "entry.py",
+  "task_kind": "development_candidate",
+  "official_materials_complete": false,
+  "contest_submission_performed": false,
+  "license_ready": false,
+  "weights_downloaded": true,
+  "model_loaded": true,
+  "manifest_reseal_pending": true,
+  "session004": {
+    "evidence": {
+      "worker-result.json": {
+        "path": "evidence/session004/remote-intermediate-001/candidates/results/forcedaligner-pilot-001/worker-result.json",
+        "sha256": "c91746c4e7b826749418b407aaf2e46458af930ed382c70e416229ce8b394184"
+      },
+      "run-start.json": {
+        "path": "evidence/session004/remote-intermediate-001/candidates/results/forcedaligner-pilot-001/run-start.json",
+        "sha256": "ad05712626c0e69fac4e32aec84e0838daf640d6019a08ec3853eca543b320fd"
+      },
+      "run-final.json": {
+        "path": "evidence/session004/remote-intermediate-001/candidates/results/forcedaligner-pilot-001/run-final.json",
+        "sha256": "8d5f20588a41f90c990cdb7aa4183c5a102af78bd5ff039cad4d3a0c845645b2"
+      },
+      "environment.json": {
+        "path": "evidence/session004/remote-intermediate-001/candidates/results/forcedaligner-pilot-001/environment.json",
+        "sha256": "60e78e09deb684a0157ee8942c4b64b6fbbaebff6eb8e0e698e6338a8dd57e70"
+      },
+      "checkpoint-verification.json": {
+        "path": "evidence/session004/remote-intermediate-001/candidates/results/forcedaligner-pilot-001/checkpoint-verification.json",
+        "sha256": "fe4c6f28284efb0a383ad2c827721c6425524af45146626e57de5037aa6fa07b"
+      }
+    },
+    "run_status": "completed",
+    "worker_exit_code": 0,
+    "development_contract_passed": true,
+    "run_wall_seconds": 72.99090600339696,
+    "owned_process_group_cleanup_recorded": true,
+    "standard_submission_complete": false,
+    "source_final_seal_pending": true,
+    "audio_seconds": 4.2039375,
+    "transcript": "甚至出现交易几乎停滞的情况。",
+    "alignment_units": [
+      {
+        "text": "甚",
+        "start_time": 0.4,
+        "end_time": 0.72
+      },
+      {
+        "text": "至",
+        "start_time": 0.72,
+        "end_time": 0.96
+      },
+      {
+        "text": "出",
+        "start_time": 0.96,
+        "end_time": 1.12
+      },
+      {
+        "text": "现",
+        "start_time": 1.12,
+        "end_time": 1.52
+      },
+      {
+        "text": "交",
+        "start_time": 1.52,
+        "end_time": 1.76
+      },
+      {
+        "text": "易",
+        "start_time": 1.76,
+        "end_time": 2.0
+      },
+      {
+        "text": "几",
+        "start_time": 2.0,
+        "end_time": 2.24
+      },
+      {
+        "text": "乎",
+        "start_time": 2.24,
+        "end_time": 2.48
+      },
+      {
+        "text": "停",
+        "start_time": 2.48,
+        "end_time": 2.72
+      },
+      {
+        "text": "滞",
+        "start_time": 2.72,
+        "end_time": 2.88
+      },
+      {
+        "text": "的",
+        "start_time": 2.88,
+        "end_time": 3.04
+      },
+      {
+        "text": "情",
+        "start_time": 3.04,
+        "end_time": 3.36
+      },
+      {
+        "text": "况",
+        "start_time": 3.36,
+        "end_time": 3.68
+      }
+    ],
+    "alignment_call_seconds": 12.206611174158752,
+    "framework": "publisher_transformers_SDPA",
+    "framework_eligibility": "TF_only_pending_official_confirmation",
+    "independent_timestamp_reference_available": false,
+    "AAS_ms": null,
+    "source_sha256": "8c7ec3978d59e2d8cf69e09fc647b6f2cb5fb1fa7685ee11cdf4e77048dc3bde",
+    "run_wall_scope": "worker supervision phase, excludes prior parent checkpoint hashing"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "scope": "CPU fixture and control-plane tests only; no GPU/model/official evaluation executed",
+  "checks": [
+    "sglang dry-run is side-effect free and preserves its exact loopback BF16 TP=1 MAX_LEN=32768 command defaults",
+    "sglang verify and bench reject absent official materials with exit 2 before creating outputs",
+    "sglang task env.sh is actually sourced and preserves its framework command and default extra arguments",
+    "vllm dry-run is side-effect free and preserves its exact loopback BF16 TP=1 MAX_LEN=32768 command defaults",
+    "vllm verify and bench reject absent official materials with exit 2 before creating outputs",
+    "vllm task env.sh is actually sourced and preserves its framework command and default extra arguments",
+    "vllm task env.sh defaults to enforce-eager and an explicit empty JSON list disables it",
+    "successful verify rerun archives the actual previous output byte-for-byte before replacing it",
+    "successful benchmark rerun archives all 15 existing raw artifacts byte-for-byte before replacing them",
+    "official bridge rejects wrong model, missing/stale outputs and incomplete benchmark artifacts using CPU fixtures",
+    "supervisor reaches ready, rejects duplicate launch and tampered PID identity, then precisely stops its group",
+    "single-image, multi-image, multi-turn and SSE smoke pass against a CPU fixture only",
+    "early exit and health timeout clean up the server process group",
+    "interrupting the startup frontend terminates its supervisor and server group",
+    "runtime limit expires and cleans up the fixture service",
+    "invalid or protected extra arguments rejected",
+    "invalid or protected extra arguments rejected",
+    "trust_remote_code remains disabled by default and can be explicitly requested through extra arguments",
+    "vllm rejects all nine core parameter overrides in separate and equals forms, the -tp alias, underscore forms, abbreviations and nested keys",
+    "vllm permits the independent longer --model-impl option without treating it as a --model override",
+    "vllm trust_remote_code requires an explicit extra argument and an explicit extra list replaces its eager default",
+    "vllm reaches ready with its CPU fixture, rejects duplicate launch and tampered PID identity, and precisely stops its service group",
+    "vllm official bridge records framework identity and rejects a mismatched SGLang result before accepting matching temporary fixture output"
+  ],
+  "passed": true
+}

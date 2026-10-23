@@ -1,0 +1,573 @@
+{
+  "schema_version": 1,
+  "target": "Linux x86_64 / CPython3.10 / glibc>=2.28",
+  "wheel_payload_bytes_downloaded": 0,
+  "native_gpu_libraries_in_pool": false,
+  "wheels": [
+    {
+      "name": "transformers",
+      "version": "4.57.6",
+      "filename": "transformers-4.57.6-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/03/b8/e484ef633af3887baeeb4b6ad12743363af7cce68ae51e938e00aaa0529d/transformers-4.57.6-py3-none-any.whl",
+      "sha256": "4c9e9de11333ddfe5114bc872c9f370509198acf0b87a832a0ab9458e2bd0550",
+      "size": 11993498,
+      "requires_dist": [
+        "filelock",
+        "huggingface-hub<1.0,>=0.34.0",
+        "numpy>=1.17",
+        "packaging>=20.0",
+        "pyyaml>=5.1",
+        "regex!=2019.12.17",
+        "requests",
+        "tokenizers<=0.23.0,>=0.22.0",
+        "safetensors>=0.4.3",
+        "tqdm>=4.27"
+      ],
+      "source_metadata_url": "https://pypi.org/pypi/transformers/4.57.6/json"
+    },
+    {
+      "name": "transformers",
+      "version": "4.57.1",
+      "filename": "transformers-4.57.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/71/d3/c16c3b3cf7655a67db1144da94b021c200ac1303f82428f2beef6c2e72bb/transformers-4.57.1-py3-none-any.whl",
+      "sha256": "b10d05da8fa67dc41644dbbf9bc45a44cb86ae33da6f9295f5fbf5b7890bd267",
+      "size": 11990925,
+      "requires_dist": [
+        "filelock",
+        "huggingface-hub<1.0,>=0.34.0",
+        "numpy>=1.17",
+        "packaging>=20.0",
+        "pyyaml>=5.1",
+        "regex!=2019.12.17",
+        "requests",
+        "tokenizers<=0.23.0,>=0.22.0",
+        "safetensors>=0.4.3",
+        "tqdm>=4.27"
+      ],
+      "source_metadata_url": "https://pypi.org/pypi/transformers/4.57.1/json"
+    },
+    {
+      "name": "huggingface-hub",
+      "version": "0.36.0",
+      "filename": "huggingface_hub-0.36.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/cb/bd/1a875e0d592d447cbc02805fd3fe0f497714d6a2583f59d14fa9ebad96eb/huggingface_hub-0.36.0-py3-none-any.whl",
+      "sha256": "7bcc9ad17d5b3f07b57c78e79d527102d08313caa278a641993acddcb894548d",
+      "size": 566094,
+      "requires_dist": [
+        "filelock",
+        "fsspec>=2023.5.0",
+        "packaging>=20.9",
+        "pyyaml>=5.1",
+        "requests",
+        "tqdm>=4.42.1",
+        "typing-extensions>=3.7.4.3",
+        "hf-xet<2.0.0,>=1.1.3; platform_machine == \"x86_64\" or platform_machine == \"amd64\" or platform_machine == \"arm64\" or platform_machine == \"aarch64\""
+      ],
+      "source_metadata_url": "https://pypi.org/pypi/huggingface-hub/0.36.0/json"
+    },
+    {
+      "name": "tokenizers",
+      "version": "0.22.1",
+      "filename": "tokenizers-0.22.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/d0/c6/dc3a0db5a6766416c32c034286d7c2d406da1f498e4de04ab1b8959edd00/tokenizers-0.22.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "e2ef6063d7a84994129732b47e7915e8710f27f99f3a3260b8a38fc7ccd083f4",
+      "size": 3250221,
+      "requires_dist": [
+        "huggingface-hub<2.0,>=0.16.4"
+      ],
+      "source_metadata_url": "https://pypi.org/pypi/tokenizers/0.22.1/json"
+    },
+    {
+      "name": "accelerate",
+      "version": "1.12.0",
+      "filename": "accelerate-1.12.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/9f/d2/c581486aa6c4fbd7394c23c47b83fa1a919d34194e16944241daf9e762dd/accelerate-1.12.0-py3-none-any.whl",
+      "sha256": "3e2091cd341423207e2f084a6654b1efcd250dc326f2a37d6dde446e07cabb11",
+      "size": 380935,
+      "requires_dist": [
+        "numpy>=1.17",
+        "packaging>=20.0",
+        "psutil",
+        "pyyaml",
+        "torch>=2.0.0",
+        "huggingface_hub>=0.21.0",
+        "safetensors>=0.4.3"
+      ],
+      "source_metadata_url": "https://pypi.org/pypi/accelerate/1.12.0/json"
+    },
+    {
+      "name": "numpy",
+      "version": "1.26.4",
+      "filename": "numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/4b/d7/ecf66c1cd12dc28b4040b15ab4d17b773b87fa9d29ca16125de01adb36cd/numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "ffa75af20b44f8dba823498024771d5ac50620e6915abac414251bd971b4529f",
+      "size": 18240889,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/numpy/1.26.4/json"
+    },
+    {
+      "name": "nagisa",
+      "version": "0.2.11",
+      "filename": "nagisa-0.2.11-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/a7/31/e9dde314118006db7a5fa3c1d0980a217f8bfae790ffb8655cd1c6691f17/nagisa-0.2.11-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "23a05f34785279b51b877ccb1b2005174427956a93c75a41c9c72528368d8dfc",
+      "size": 21638008,
+      "requires_dist": [
+        "six",
+        "numpy",
+        "DyNet38"
+      ],
+      "source_metadata_url": "https://pypi.org/pypi/nagisa/0.2.11/json"
+    },
+    {
+      "name": "dyNET38",
+      "version": "2.2",
+      "filename": "dyNET38-2.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/39/ad/fd604e798a74a1603f662a7dccc050df38e6cc72763fb414c69be81886b0/dyNET38-2.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "b25c9330f3c8dcef5616a483c760b16e0a17b0074533346f9b4912d8d1786d72",
+      "size": 6655609,
+      "requires_dist": [
+        "cython",
+        "numpy"
+      ],
+      "source_metadata_url": "https://pypi.org/pypi/DyNET38/2.2/json"
+    },
+    {
+      "name": "soynlp",
+      "version": "0.0.493",
+      "filename": "soynlp-0.0.493-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/7e/50/6913dc52a86a6b189419e59f9eef1b8d599cffb6f44f7bb91854165fc603/soynlp-0.0.493-py3-none-any.whl",
+      "sha256": "2aed0ced1f0f74f7bdd0bdc24a979c5cb9ee4a28393642db52a83d174ed65b7a",
+      "size": 416753,
+      "requires_dist": [
+        "numpy (>=1.12.1)",
+        "psutil (>=5.0.1)",
+        "scipy (>=1.1.0)",
+        "scikit-learn (>=0.20.0)"
+      ],
+      "source_metadata_url": "https://pypi.org/pypi/soynlp/0.0.493/json"
+    },
+    {
+      "name": "six",
+      "version": "1.17.0",
+      "filename": "six-1.17.0-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl",
+      "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+      "size": 11050,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/six/1.17.0/json"
+    },
+    {
+      "name": "Cython",
+      "version": "3.0.12",
+      "filename": "Cython-3.0.12-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/dc/21/5b700dac60cc7af4261c7fa2e91f55fe5f38f6c183e1201ced7cc932201b/Cython-3.0.12-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "bee2717e5b5f7d966d0c6e27d2efe3698c357aa4d61bb3201997c7a4f9fe485a",
+      "size": 3630244,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/Cython/3.0.12/json"
+    },
+    {
+      "name": "librosa",
+      "version": "0.11.0",
+      "filename": "librosa-0.11.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/b5/ba/c63c5786dfee4c3417094c4b00966e61e4a63efecee22cb7b4c0387dda83/librosa-0.11.0-py3-none-any.whl",
+      "sha256": "0b6415c4fd68bff4c29288abe67c6d80b587e0e1e2cfb0aad23e4559504a7fa1",
+      "size": 260749,
+      "requires_dist": [
+        "audioread>=2.1.9",
+        "numba>=0.51.0",
+        "numpy>=1.22.3",
+        "scipy>=1.6.0",
+        "scikit-learn>=1.1.0",
+        "joblib>=1.0",
+        "decorator>=4.3.0",
+        "soundfile>=0.12.1",
+        "pooch>=1.1",
+        "soxr>=0.3.2",
+        "typing_extensions>=4.1.1",
+        "lazy_loader>=0.1",
+        "msgpack>=1.0",
+        "standard-aifc; python_version >= \"3.13\"",
+        "standard-sunau; python_version >= \"3.13\""
+      ],
+      "source_metadata_url": "https://pypi.org/pypi/librosa/0.11.0/json"
+    },
+    {
+      "name": "soundfile",
+      "version": "0.13.1",
+      "filename": "soundfile-0.13.1-py2.py3-none-manylinux_2_28_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/57/5e/70bdd9579b35003a489fc850b5047beeda26328053ebadc1fb60f320f7db/soundfile-0.13.1-py2.py3-none-manylinux_2_28_x86_64.whl",
+      "sha256": "03267c4e493315294834a0870f31dbb3b28a95561b80b134f0bd3cf2d5f0e618",
+      "size": 1313646,
+      "requires_dist": [
+        "cffi>=1.0",
+        "numpy"
+      ],
+      "source_metadata_url": "https://pypi.org/pypi/soundfile/0.13.1/json"
+    },
+    {
+      "name": "scipy",
+      "version": "1.15.3",
+      "filename": "scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/8e/6d/41991e503e51fc1134502694c5fa7a1671501a17ffa12716a4a9151af3df/scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "9e2abc762b0811e09a0d3258abee2d98e0c703eee49464ce0069590846f31d40",
+      "size": 37662964,
+      "requires_dist": [
+        "numpy<2.5,>=1.23.5"
+      ],
+      "source_metadata_url": "https://pypi.org/pypi/scipy/1.15.3/json"
+    },
+    {
+      "name": "scikit-learn",
+      "version": "1.6.1",
+      "filename": "scikit_learn-1.6.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/b7/91/ab3c697188f224d658969f678be86b0968ccc52774c8ab4a86a07be13c25/scikit_learn-1.6.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "775da975a471c4f6f467725dff0ced5c7ac7bda5e9316b260225b48475279a1b",
+      "size": 13497182,
+      "requires_dist": [
+        "numpy>=1.19.5",
+        "scipy>=1.6.0",
+        "joblib>=1.2.0",
+        "threadpoolctl>=3.1.0"
+      ],
+      "source_metadata_url": "https://pypi.org/pypi/scikit-learn/1.6.1/json"
+    },
+    {
+      "name": "psutil",
+      "version": "6.1.1",
+      "filename": "psutil-6.1.1-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/9c/39/0f88a830a1c8a3aba27fededc642da37613c57cbff143412e3536f89784f/psutil-6.1.1-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "97f7cb9921fbec4904f522d972f0c0e1f4fabbdd4e0287813b21215074a0f160",
+      "size": 287477,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/psutil/6.1.1/json"
+    },
+    {
+      "name": "qwen-vl-utils",
+      "version": "0.0.14",
+      "filename": "qwen_vl_utils-0.0.14-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/c4/43/80f67e0336cb2fc725f8e06f7fe35c1d0fe946f4d2b8b2175e797e07349e/qwen_vl_utils-0.0.14-py3-none-any.whl",
+      "sha256": "5e28657bfd031e56bd447c5901b58ddfc3835285ed100f4c56580e0ade054e96",
+      "size": 8120,
+      "requires_dist": [
+        "av",
+        "packaging",
+        "pillow",
+        "requests"
+      ],
+      "source_metadata_url": "https://pypi.org/pypi/qwen-vl-utils/0.0.14/json"
+    },
+    {
+      "name": "av",
+      "version": "14.2.0",
+      "filename": "av-14.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/b9/dd/5eee0fa00134219051e9616786be19332823355f5ffbd2cbbf6d45e8be91/av-14.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "512a8ceca26250f26fc28913d7a08f962f8e7704189c111e9688180f9b752458",
+      "size": 38805945,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/av/14.2.0/json"
+    },
+    {
+      "name": "filelock",
+      "version": "3.18.0",
+      "filename": "filelock-3.18.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/4d/36/2a115987e2d8c300a974597416d9de88f2444426de9571f4b59b2cca3acc/filelock-3.18.0-py3-none-any.whl",
+      "sha256": "c401f4f8377c4464e6db25fff06205fd89bdd83b65eb0488ed1b160f780e21de",
+      "size": 16215,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/filelock/3.18.0/json"
+    },
+    {
+      "name": "fsspec",
+      "version": "2025.3.2",
+      "filename": "fsspec-2025.3.2-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/44/4b/e0cfc1a6f17e990f3e64b7d941ddc4acdc7b19d6edd51abf495f32b1a9e4/fsspec-2025.3.2-py3-none-any.whl",
+      "sha256": "2daf8dc3d1dfa65b6aa37748d112773a7a08416f6c70d96b264c96476ecaf711",
+      "size": 194435,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/fsspec/2025.3.2/json"
+    },
+    {
+      "name": "packaging",
+      "version": "25.0",
+      "filename": "packaging-25.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/20/12/38679034af332785aac8774540895e234f4d07f7545804097de4b666afd8/packaging-25.0-py3-none-any.whl",
+      "sha256": "29572ef2b1f17581046b3a2227d5c611fb25ec70ca1ba8554b24b0e69331a484",
+      "size": 66469,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/packaging/25.0/json"
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.2",
+      "filename": "PyYAML-6.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/6b/4e/1523cb902fd98355e2e9ea5e5eb237cbc5f3ad5f3075fa65087aa0ecb669/PyYAML-6.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "ec031d5d2feb36d1d1a24380e4db6d43695f3748343d99434e6f5f9156aaa2ed",
+      "size": 751239,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/PyYAML/6.0.2/json"
+    },
+    {
+      "name": "regex",
+      "version": "2024.11.6",
+      "filename": "regex-2024.11.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/f2/98/26d3830875b53071f1f0ae6d547f1d98e964dd29ad35cbf94439120bb67a/regex-2024.11.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "997d6a487ff00807ba810e0f8332c18b4eb8d29463cfb7c820dc4b6e7562d0cf",
+      "size": 781702,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/regex/2024.11.6/json"
+    },
+    {
+      "name": "requests",
+      "version": "2.32.3",
+      "filename": "requests-2.32.3-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/f9/9b/335f9764261e915ed497fcdeb11df5dfd6f7bf257d4a6a2a686d80da4d54/requests-2.32.3-py3-none-any.whl",
+      "sha256": "70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6",
+      "size": 64928,
+      "requires_dist": [
+        "charset-normalizer<4,>=2",
+        "idna<4,>=2.5",
+        "urllib3<3,>=1.21.1",
+        "certifi>=2017.4.17"
+      ],
+      "source_metadata_url": "https://pypi.org/pypi/requests/2.32.3/json"
+    },
+    {
+      "name": "safetensors",
+      "version": "0.5.3",
+      "filename": "safetensors-0.5.3-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/a6/f8/dae3421624fcc87a89d42e1898a798bc7ff72c61f38973a65d60df8f124c/safetensors-0.5.3-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "cead1fa41fc54b1e61089fa57452e8834f798cb1dc7a09ba3524f1eb08e0317a",
+      "size": 471642,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/safetensors/0.5.3/json"
+    },
+    {
+      "name": "tqdm",
+      "version": "4.67.1",
+      "filename": "tqdm-4.67.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/d0/30/dc54f88dd4a2b5dc8a0279bdd7270e735851848b762aeb1c1184ed1f6b14/tqdm-4.67.1-py3-none-any.whl",
+      "sha256": "26445eca388f82e72884e0d580d5464cd801a3ea01e63e5601bdff9ba6a48de2",
+      "size": 78540,
+      "requires_dist": [
+        "colorama; platform_system == \"Windows\""
+      ],
+      "source_metadata_url": "https://pypi.org/pypi/tqdm/4.67.1/json"
+    },
+    {
+      "name": "typing-extensions",
+      "version": "4.13.2",
+      "filename": "typing_extensions-4.13.2-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/8b/54/b1ae86c0973cc6f0210b53d508ca3641fb6d0c56823f288d108bc7ab3cc8/typing_extensions-4.13.2-py3-none-any.whl",
+      "sha256": "a439e7c04b49fec3e5d3e2beaa21755cadbbdc391694e28ccdd36ca4a1408f8c",
+      "size": 45806,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/typing-extensions/4.13.2/json"
+    },
+    {
+      "name": "hf-xet",
+      "version": "1.1.10",
+      "filename": "hf_xet-1.1.10-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/15/07/86397573efefff941e100367bbda0b21496ffcdb34db7ab51912994c32a2/hf_xet-1.1.10-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "6b6bceb6361c80c1cc42b5a7b4e3efd90e64630bcf11224dcac50ef30a47e435",
+      "size": 3186960,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/hf-xet/1.1.10/json"
+    },
+    {
+      "name": "pillow",
+      "version": "11.2.1",
+      "filename": "pillow-11.2.1-cp310-cp310-manylinux_2_28_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/f3/5e/7ca9c815ade5fdca18853db86d812f2f188212792780208bdb37a0a6aef4/pillow-11.2.1-cp310-cp310-manylinux_2_28_x86_64.whl",
+      "sha256": "c97209e85b5be259994eb5b69ff50c5d20cca0f458ef9abd835e262d9d88b39d",
+      "size": 4599802,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/Pillow/11.2.1/json"
+    },
+    {
+      "name": "joblib",
+      "version": "1.4.2",
+      "filename": "joblib-1.4.2-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/91/29/df4b9b42f2be0b623cbd5e2140cafcaa2bef0759a00b7b70104dcfe2fb51/joblib-1.4.2-py3-none-any.whl",
+      "sha256": "06d478d5674cbc267e7496a410ee875abd68e4340feff4490bcb7afb88060ae6",
+      "size": 301817,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/joblib/1.4.2/json"
+    },
+    {
+      "name": "threadpoolctl",
+      "version": "3.6.0",
+      "filename": "threadpoolctl-3.6.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/32/d5/f9a850d79b0851d1d4ef6456097579a9005b31fea68726a4ae5f2d82ddd9/threadpoolctl-3.6.0-py3-none-any.whl",
+      "sha256": "43a0b8fd5a2928500110039e43a5eed8480b918967083ea48dc3ab9f13c4a7fb",
+      "size": 18638,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/threadpoolctl/3.6.0/json"
+    },
+    {
+      "name": "audioread",
+      "version": "3.0.1",
+      "filename": "audioread-3.0.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/57/8d/30aa32745af16af0a9a650115fbe81bde7c610ed5c21b381fca0196f3a7f/audioread-3.0.1-py3-none-any.whl",
+      "sha256": "4cdce70b8adc0da0a3c9e0d85fb10b3ace30fbdf8d1670fd443929b61d117c33",
+      "size": 23492,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/audioread/3.0.1/json"
+    },
+    {
+      "name": "decorator",
+      "version": "5.2.1",
+      "filename": "decorator-5.2.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/4e/8c/f3147f5c4b73e7550fe5f9352eaa956ae838d5c51eb58e7a25b9f3e2643b/decorator-5.2.1-py3-none-any.whl",
+      "sha256": "d316bb415a2d9e2d2b3abcc4084c6502fc09240e292cd76a76afc106a1c8e04a",
+      "size": 9190,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/decorator/5.2.1/json"
+    },
+    {
+      "name": "numba",
+      "version": "0.61.2",
+      "filename": "numba-0.61.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/e2/7d/bfb2805bcfbd479f04f835241ecf28519f6e3609912e3a985aed45e21370/numba-0.61.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "sha256": "ae8c7a522c26215d5f62ebec436e3d341f7f590079245a2f1008dfd498cc1642",
+      "size": 3824054,
+      "requires_dist": [
+        "llvmlite<0.45,>=0.44.0dev0",
+        "numpy<2.3,>=1.24"
+      ],
+      "source_metadata_url": "https://pypi.org/pypi/numba/0.61.2/json"
+    },
+    {
+      "name": "llvmlite",
+      "version": "0.44.0",
+      "filename": "llvmlite-0.44.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/aa/46/8ffbc114def88cc698906bf5acab54ca9fdf9214fe04aed0e71731fb3688/llvmlite-0.44.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "7202b678cdf904823c764ee0fe2dfe38a76981f4c1e51715b4cb5abb6cf1d9e8",
+      "size": 42361859,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/llvmlite/0.44.0/json"
+    },
+    {
+      "name": "pooch",
+      "version": "1.8.2",
+      "filename": "pooch-1.8.2-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/a8/87/77cc11c7a9ea9fd05503def69e3d18605852cd0d4b0d3b8f15bbeb3ef1d1/pooch-1.8.2-py3-none-any.whl",
+      "sha256": "3529a57096f7198778a5ceefd5ac3ef0e4d06a6ddaf9fc2d609b806f25302c47",
+      "size": 64574,
+      "requires_dist": [
+        "platformdirs>=2.5.0",
+        "packaging>=20.0",
+        "requests>=2.19.0"
+      ],
+      "source_metadata_url": "https://pypi.org/pypi/pooch/1.8.2/json"
+    },
+    {
+      "name": "soxr",
+      "version": "0.5.0.post1",
+      "filename": "soxr-0.5.0.post1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/ba/e6/059070b4cdb7fdd8ffbb67c5087c1da9716577127fb0540cd11dbf77923b/soxr-0.5.0.post1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fcc049b0a151a65aa75b92f0ac64bb2dba785d16b78c31c2b94e68c141751d6d",
+      "size": 252779,
+      "requires_dist": [
+        "numpy"
+      ],
+      "source_metadata_url": "https://pypi.org/pypi/soxr/0.5.0.post1/json"
+    },
+    {
+      "name": "lazy-loader",
+      "version": "0.4",
+      "filename": "lazy_loader-0.4-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/83/60/d497a310bde3f01cb805196ac61b7ad6dc5dcf8dce66634dc34364b20b4f/lazy_loader-0.4-py3-none-any.whl",
+      "sha256": "342aa8e14d543a154047afb4ba8ef17f5563baad3fc610d7b15b213b0f119efc",
+      "size": 12097,
+      "requires_dist": [
+        "packaging",
+        "importlib-metadata; python_version < \"3.8\""
+      ],
+      "source_metadata_url": "https://pypi.org/pypi/lazy-loader/0.4/json"
+    },
+    {
+      "name": "msgpack",
+      "version": "1.1.0",
+      "filename": "msgpack-1.1.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/ff/75/09081792db60470bef19d9c2be89f024d366b1e1973c197bb59e6aabc647/msgpack-1.1.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "d8ce0b22b890be5d252de90d0e0d119f363012027cf256185fc3d474c44b1b9e",
+      "size": 378034,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/msgpack/1.1.0/json"
+    },
+    {
+      "name": "platformdirs",
+      "version": "4.3.7",
+      "filename": "platformdirs-4.3.7-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/6d/45/59578566b3275b8fd9157885918fcd0c4d74162928a5310926887b856a51/platformdirs-4.3.7-py3-none-any.whl",
+      "sha256": "a03875334331946f13c549dbd8f4bac7a13a50a895a0eb1e8c6a8ace80d40a94",
+      "size": 18499,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/platformdirs/4.3.7/json"
+    },
+    {
+      "name": "cffi",
+      "version": "1.17.1",
+      "filename": "cffi-1.17.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/8d/fb/4da72871d177d63649ac449aec2e8a29efe0274035880c7af59101ca2232/cffi-1.17.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "2bb1a08b8008b281856e5971307cc386a8e9c5b625ac297e853d36da6efe9c17",
+      "size": 446211,
+      "requires_dist": [
+        "pycparser"
+      ],
+      "source_metadata_url": "https://pypi.org/pypi/cffi/1.17.1/json"
+    },
+    {
+      "name": "pycparser",
+      "version": "2.22",
+      "filename": "pycparser-2.22-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/13/a3/a812df4e2dd5696d1f351d58b8fe16a405b234ad2886a0dab9183fb78109/pycparser-2.22-py3-none-any.whl",
+      "sha256": "c3702b6d3dd8c7abc1afa565d7e63d53a1d0bd86cdc24edd75470f4de499cfcc",
+      "size": 117552,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/pycparser/2.22/json"
+    },
+    {
+      "name": "certifi",
+      "version": "2025.1.31",
+      "filename": "certifi-2025.1.31-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/38/fc/bce832fd4fd99766c04d1ee0eead6b0ec6486fb100ae5e74c1d91292b982/certifi-2025.1.31-py3-none-any.whl",
+      "sha256": "ca78db4565a652026a4db2bcdf68f2fb589ea80d0be70e03929ed730746b84fe",
+      "size": 166393,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/certifi/2025.1.31/json"
+    },
+    {
+      "name": "idna",
+      "version": "3.10",
+      "filename": "idna-3.10-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl",
+      "sha256": "946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3",
+      "size": 70442,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/idna/3.10/json"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.4.1",
+      "filename": "charset_normalizer-3.4.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/93/62/5e89cdfe04584cb7f4d36003ffa2936681b03ecc0754f8e969c2becb7e24/charset_normalizer-3.4.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "b010a7a4fd316c3c484d482922d13044979e78d1861f0e0650423144c616a46a",
+      "size": 146123,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/charset-normalizer/3.4.1/json"
+    },
+    {
+      "name": "urllib3",
+      "version": "2.3.0",
+      "filename": "urllib3-2.3.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/c8/19/4ec628951a74043532ca2cf5d97b7b14863931476d117c471e8e2b1eb39f/urllib3-2.3.0-py3-none-any.whl",
+      "sha256": "1cee9ad369867bfdbbb48b7dd50374c0967a0bb7710050facf0dd6911440e3df",
+      "size": 128369,
+      "requires_dist": [],
+      "source_metadata_url": "https://pypi.org/pypi/urllib3/2.3.0/json"
+    }
+  ]
+}

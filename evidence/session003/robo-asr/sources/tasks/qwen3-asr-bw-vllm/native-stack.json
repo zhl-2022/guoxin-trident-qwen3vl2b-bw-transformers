@@ -1,0 +1,14 @@
+{
+  "torch": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+  "torchvision": "0.25.0+das.opt1.dtk2604.torch2100.20260325.g860505",
+  "transformers": "5.5.0",
+  "vllm": "0.18.1+das.fa71803.dtk2604",
+  "vllm-hcu": "0.18.1+das.dtk2604",
+  "numpy": "1.25.0",
+  "scipy": "1.15.3",
+  "triton": "3.6.0+gitc73250c4.staging",
+  "flash-attn": "2.8.3+das.opt1.dtk2604.torch2100.20260330.g3f0061",
+  "lightop": "0.6.0+das.dtk2604.torch2100.2604101656.g193111",
+  "aiter": "0.1.2+das.opt1.dtk2604.torch2100.2604212021.gd52133",
+  "python-multipart": "0.0.22"
+}

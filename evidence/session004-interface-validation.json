@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "session": "session004",
+  "record_type": "cpu_interface_validation_summary",
+  "created_at_utc": "2026-10-23T08:55:46.1834882Z",
+  "scope": "Assembler Python verify entry, fixed smoke fixture defaults, ASR prepare/validate selection",
+  "gpu_run": false,
+  "model_loaded": false,
+  "network_model_requests": false,
+  "delivery_stage_or_remote_repository_modified": false,
+  "temporary_repository_builds_used_in_tests": true,
+  "workspace_source_files_modified": true,
+  "old_session003_evidence_modified": false,
+  "canonical_task_json_or_readme_modified": false,
+  "official_accuracy": false,
+  "official_performance": false,
+  "fixture_provenance": "fixtures/smoke-session004/manifest.json",
+  "selfcheck_implementation": "Root Python execs Bash canonical verify.sh with argv preserved; runtime executes only real official selfcheck; absent materials return2 without result",
+  "validation_runs": [
+    {
+      "host": "Windows",
+      "command": "python -B -m unittest discover -s tests -p test_task_repositories.py -v",
+      "tests": 15,
+      "passed": 15,
+      "failed": 0,
+      "skipped": 0,
+      "seconds": 27.407
+    },
+    {
+      "host": "WSL Ubuntu",
+      "command": "python3 -B -m unittest discover -s /mnt/e/hg20261019/tests -p test_task_repositories.py -v",
+      "tests": 15,
+      "passed": 15,
+      "failed": 0,
+      "skipped": 0,
+      "seconds": 52.996
+    },
+    {
+      "host": "WSL Ubuntu",
+      "command": "python3 -B -m unittest discover -s /mnt/e/hg20261019/tests -p test_submission_entries.py -v",
+      "tests": 5,
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0,
+      "seconds": 26.34
+    },
+    {
+      "host": "WSL Ubuntu",
+      "command": "python3 -B -m unittest discover -s /mnt/e/hg20261019/tests -p test_recon_task_entry.py -v",
+      "tests": 4,
+      "passed": 4,
+      "failed": 0,
+      "skipped": 0,
+      "seconds": 0.895
+    },
+    {
+      "host": "WSL Ubuntu",
+      "command": "python3 -B -m unittest discover -s /mnt/e/hg20261019/tests -p test_asr_task_prepare.py -v",
+      "tests": 5,
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0,
+      "seconds": 0.037
+    }
+  ],
+  "bash_syntax_check": {
+    "exit_code": 0,
+    "files": [
+      "tasks/recon2reason-bw-vllm/smoke.sh",
+      "tasks/robobrain-bw-vllm/smoke.sh",
+      "tasks/qwen3-asr-bw-vllm/smoke.sh",
+      "tasks/qwen3-asr-bw-vllm/run.sh"
+    ]
+  },
+  "hashes": [
+    {
+      "path": "scripts/prepare_task_repositories.py",
+      "bytes": 27559,
+      "sha256": "345910ab5f67529ed2ea7946a4094378fd8171bcb44372e340a26d1739f25e18"
+    },
+    {
+      "path": "tasks/recon2reason-bw-vllm/smoke.sh",
+      "bytes": 713,
+      "sha256": "bd759a5e077960a3320567c85c545ff5c120d1b288b8fc9c40b3f38b5c05dcf4"
+    },
+    {
+      "path": "tasks/robobrain-bw-vllm/smoke.sh",
+      "bytes": 711,
+      "sha256": "3ddd52793dc4a6e93349807e83845fb1e586438d586ca491b266a6203aa17cf0"
+    },
+    {
+      "path": "tasks/qwen3-asr-bw-vllm/smoke.sh",
+      "bytes": 652,
+      "sha256": "6eb0c6511b01b605de5c8050e982e607a309c8b8440691b23480a9813aa79c2c"
+    },
+    {
+      "path": "tasks/qwen3-asr-bw-vllm/run.sh",
+      "bytes": 1550,
+      "sha256": "b364185208b5b6a424e78fe152c9d3b39aaec5e3210a1558990acaeaf2924107"
+    },
+    {
+      "path": "tests/test_task_repositories.py",
+      "bytes": 20445,
+      "sha256": "ce36f103f5ffcb1bd29ad212b58d82a24ebb2b44db652f37ac8e1eac202f51ba"
+    },
+    {
+      "path": "tests/test_submission_entries.py",
+      "bytes": 8320,
+      "sha256": "df2cf5eeced8122ae402ae50e8cfcfa7ec6e83114b0f87c7ef1171f18d3e421d"
+    },
+    {
+      "path": "fixtures/smoke-session004/manifest.json",
+      "bytes": 1794,
+      "sha256": "d3b626ec28ced4507c41b026570852d5daf802f39e2c88e6ce2108c49acd1900"
+    }
+  ],
+  "remaining_dependencies": [
+    "Original official evaluators and task score contracts",
+    "GPU validation of the changed ASR automatic prepare path and default smoke inputs",
+    "Fresh final-image reproduction and accessible full image reference"
+  ]
+}

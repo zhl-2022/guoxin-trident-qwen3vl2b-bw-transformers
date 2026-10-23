@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "task": "mimo-v2.6-distill-qwen9b-bw-vllm",
+  "status": "development_candidate_not_gpu_verified",
+  "self_included": false,
+  "upload_preserve_project_relative_paths": true,
+  "files": [
+    {
+      "path": "scripts/task_expansion_candidates_20261023.py",
+      "size": 25749,
+      "sha256": "8c7ec3978d59e2d8cf69e09fc647b6f2cb5fb1fa7685ee11cdf4e77048dc3bde"
+    },
+    {
+      "path": "tasks/mimo-v2.6-distill-qwen9b-bw-vllm/COPYRIGHT-SCOPE.txt",
+      "size": 667,
+      "sha256": "fa71287711d371e999ef1d867bba0c06508b3374ba0be3e09a538922771dbd24"
+    },
+    {
+      "path": "tasks/mimo-v2.6-distill-qwen9b-bw-vllm/entry.py",
+      "size": 344,
+      "sha256": "35bec1407315112ae6f8b63d7b3cadf3b92060710ebe65364f02e87ea97ad6ef"
+    },
+    {
+      "path": "tasks/mimo-v2.6-distill-qwen9b-bw-vllm/model-lock.json",
+      "size": 2579,
+      "sha256": "1b0e3c38402e7cf70bea18c1e27c1dc8bea162b35ad32c6d65de7d7dfe93963e"
+    },
+    {
+      "path": "tasks/mimo-v2.6-distill-qwen9b-bw-vllm/README.md",
+      "size": 2943,
+      "sha256": "f50d92413e73c1ad353a8739e23369c72eea851b79099b79b707316aa956751e"
+    },
+    {
+      "path": "tasks/mimo-v2.6-distill-qwen9b-bw-vllm/README_origin.md",
+      "size": 3030,
+      "sha256": "09f915ac8116db54ca78586cfdf9ddb14209cba1ca23561a202f38039eac95ca"
+    },
+    {
+      "path": "tasks/mimo-v2.6-distill-qwen9b-bw-vllm/runtime.json",
+      "size": 1515,
+      "sha256": "8421371203101d50ca59ebcef35a5a0f92cc66f64e1b1c39a5d9b69c768fb125"
+    },
+    {
+      "path": "tasks/mimo-v2.6-distill-qwen9b-bw-vllm/task.json",
+      "size": 1878,
+      "sha256": "1fae62472e796b72c5075d46b1179c685e0265518bec5df3008c70f1c7789e90"
+    }
+  ],
+  "file_count": 8,
+  "bytes": 38705,
+  "external_weights_manifest": "tasks/mimo-v2.6-distill-qwen9b-bw-vllm/model-lock.json",
+  "downloads_performed_by_runner": false,
+  "submission_ready": false
+}

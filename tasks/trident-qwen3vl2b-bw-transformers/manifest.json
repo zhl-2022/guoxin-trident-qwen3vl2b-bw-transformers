@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "task": "trident-qwen3vl2b-bw-transformers",
+  "status": "development_candidate_not_gpu_verified",
+  "self_included": false,
+  "upload_preserve_project_relative_paths": true,
+  "files": [
+    {
+      "path": "scripts/task_expansion_candidates_20261023.py",
+      "size": 25749,
+      "sha256": "8c7ec3978d59e2d8cf69e09fc647b6f2cb5fb1fa7685ee11cdf4e77048dc3bde"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/benchmark-plan.json",
+      "size": 1684,
+      "sha256": "b89465329d5831c80f6550f080ad4d5b7b79edaa7e9bf982c4659f5e078ec7c1"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/COPYRIGHT-SCOPE.txt",
+      "size": 667,
+      "sha256": "fa71287711d371e999ef1d867bba0c06508b3374ba0be3e09a538922771dbd24"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/entry.py",
+      "size": 345,
+      "sha256": "28717b808c7f1b72c970260ba64b69c8207bd8c31eca65975c6178caac3419f2"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/fixtures/red-rectangle.png",
+      "size": 157,
+      "sha256": "89f0eb20b4873ef0d4ee436b96120d9e564bed9b64832f70ccef9843d7005e46"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/model-lock.json",
+      "size": 2009,
+      "sha256": "9655dc89230e6d0f3e82c8061342142ab29455d396a5645ac195f53ddca46aba"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/README.md",
+      "size": 3744,
+      "sha256": "4f87326fd04cda83f9b1dfc9cc8ebc579298b5622ee0695098ec757976ae722b"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/README_origin.md",
+      "size": 5655,
+      "sha256": "c23b59ea7acf37ddc65956b3f52cb63d59b74149811b5944f6f430fa8639d59c"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/requests.example.json",
+      "size": 311,
+      "sha256": "af2c1ce0cde3f09c59a661052c65c4ca9190756b51db02ddfb4b0fc94675f430"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/runtime.json",
+      "size": 1767,
+      "sha256": "5b56f7099566f486821cf6a275338d77e0676af3d3cf0f2fb056736d74501df1"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/task.json",
+      "size": 2146,
+      "sha256": "76e147b26e8f59fe5a060dc152fdbbcc23661c5ef7e452d66b803d90cc914b46"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/upstream-lock.json",
+      "size": 12341,
+      "sha256": "3207be7c1b7d38b62f214c783d711899ea6569cb1d68feb4baad716aee670003"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/upstream-source.zip",
+      "size": 244321,
+      "sha256": "1cd6a1695c4bfc1c92616738b9785b868b94a0f82cb74d34c07984d91207289a"
+    }
+  ],
+  "file_count": 13,
+  "bytes": 300896,
+  "external_weights_manifest": "tasks/trident-qwen3vl2b-bw-transformers/model-lock.json",
+  "downloads_performed_by_runner": false,
+  "submission_ready": false
+}

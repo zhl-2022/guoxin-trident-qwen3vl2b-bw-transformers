@@ -1,0 +1,5 @@
+# Mandatory/publisher-pinned fallback references; bootstrap resolves the full reviewed CPU closure.
+# Do not install directly into native Python. Use bootstrap_candidate_envs_20261023.py.
+# Actual chosen wheel subset is written as requirements-effective.lock inside the new venv.
+transformers @ https://files.pythonhosted.org/packages/71/d3/c16c3b3cf7655a67db1144da94b021c200ac1303f82428f2beef6c2e72bb/transformers-4.57.1-py3-none-any.whl --hash=sha256:b10d05da8fa67dc41644dbbf9bc45a44cb86ae33da6f9295f5fbf5b7890bd267
+qwen-vl-utils @ https://files.pythonhosted.org/packages/c4/43/80f67e0336cb2fc725f8e06f7fe35c1d0fe946f4d2b8b2175e797e07349e/qwen_vl_utils-0.0.14-py3-none-any.whl --hash=sha256:5e28657bfd031e56bd447c5901b58ddfc3835285ed100f4c56580e0ade054e96

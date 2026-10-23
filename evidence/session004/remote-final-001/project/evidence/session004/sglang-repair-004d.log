@@ -1,0 +1,2 @@
+ERROR: client metadata probe failed: before-client-metadata.log
+{"record": "/root/private_data/sglang-client-004c/client-repair-evidence/attempt-12cb4d7e49f040699a9f541f349c907c/record.json", "status": "failed", "native_unchanged": true}

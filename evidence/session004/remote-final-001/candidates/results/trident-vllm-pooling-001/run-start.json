@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "/root/private_data/guoxin-candidates/envs/trident-001/bin/python",
+    "-B",
+    "/root/private_data/guoxin-candidate-tools-20261023/scripts/trident_vllm_pooling_probe_20261023.py",
+    "run",
+    "--_worker",
+    "--model-dir",
+    "/root/private_data/guoxin-candidates/models/trident",
+    "--requests",
+    "/root/private_data/guoxin-candidate-tools-20261023/tasks/trident-qwen3vl2b-bw-transformers/requests.example.json",
+    "--output",
+    "/root/private_data/guoxin-candidates/results/trident-vllm-pooling-001"
+  ],
+  "max_seconds": 480,
+  "deadline_includes_checkpoint_hash_semantics_inputs_imports_and_gpu_worker": true,
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "submission_ready": false,
+  "contest_baseline_available": false
+}

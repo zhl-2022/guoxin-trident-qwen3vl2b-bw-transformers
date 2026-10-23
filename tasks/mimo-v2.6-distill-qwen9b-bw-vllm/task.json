@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "slug": "mimo-v2.6-distill-qwen9b-bw-vllm",
+  "track": "T01",
+  "status": "session004_t01_text_only_native_vllm_functional_verified_official_pending",
+  "model_id": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "architecture": "Qwen3_5ForConditionalGeneration",
+  "framework": "native_vllm",
+  "native_vllm_candidate": "0.18.1+das.fa71803.dtk2604",
+  "precision": "bfloat16",
+  "cards_candidate": 1,
+  "card_candidate": "BW 64GB",
+  "max_runtime_seconds_default": 900,
+  "max_model_len": 8192,
+  "max_num_seqs": 4,
+  "max_num_batched_tokens": 2048,
+  "gpu_memory_utilization": 0.8,
+  "thinking_enabled": true,
+  "reasoning_parser": null,
+  "reasoning_output_policy": "Preserve unparsed original response and exact checkpoint chat template; no guessed parser conversion. A separately verified parser can be proposed after the pilot.",
+  "max_tokens": 2048,
+  "sampling_policy": "No temperature/top_p/top_k override; preserve checkpoint generation defaults. This is a development sample, not a guessed contest decoding configuration.",
+  "python_distributions": [
+    "torch",
+    "transformers",
+    "vllm",
+    "vllm-hcu"
+  ],
+  "native_packages_must_remain_unchanged": [
+    "torch",
+    "torchvision",
+    "vllm",
+    "vllm-hcu",
+    "triton",
+    "flash-attn",
+    "lightop",
+    "aiter"
+  ],
+  "model_license": "MIT per publisher model-card metadata",
+  "new_adaptation_license": "copyright_scope_notice_only_no_repositorywide_license_selected",
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "gpu_verified": true,
+  "submission_ready": false,
+  "runtime_profile": "runtime.json",
+  "checkpoint_manifest": "model-lock.json",
+  "entry": "entry.py",
+  "task_kind": "development_candidate",
+  "official_materials_complete": false,
+  "contest_submission_performed": false,
+  "license_ready": false,
+  "weights_downloaded": true,
+  "model_loaded": true,
+  "session004_observation": {
+    "session": "004",
+    "recorded_from_archive_utc": "2026-10-23T12:11:25.079495+00:00",
+    "archive_manifest": {
+      "path": "evidence/session004/remote-intermediate-001/export-manifest.json",
+      "sha256": "2b1543b7bb12c95f3a0aa041e8e3db605f6189921f2819316c5fcfc7ea86ecb2"
+    },
+    "runtime_run_id": "813bbcb199394129949b9afe7214b7cd",
+    "status": "expired",
+    "created_utc": "2026-10-23T10:44:01.162930+00:00",
+    "ready_utc": "2026-10-23T10:46:29.361855+00:00",
+    "ended_utc": "2026-10-23T11:14:10.112657+00:00",
+    "elapsed_seconds": 1808.949,
+    "command": [
+      "/usr/bin/python3",
+      "-m",
+      "vllm.entrypoints.openai.api_server",
+      "--model",
+      "/root/private_data/guoxin-candidates/models/mimo9b",
+      "--served-model-name",
+      "mimo-v2.6-distill-qwen-9b",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "30109",
+      "--tensor-parallel-size",
+      "1",
+      "--dtype",
+      "bfloat16",
+      "--max-model-len",
+      "32768",
+      "--gpu-memory-utilization",
+      "0.8",
+      "--enforce-eager",
+      "--max-num-seqs",
+      "4",
+      "--max-num-batched-tokens",
+      "2048",
+      "--limit-mm-per-prompt",
+      "{\"image\":0,\"video\":0}"
+    ],
+    "state": {
+      "path": "evidence/session004/remote-intermediate-001/project/evidence/session004/mimo-second-stopped.json",
+      "sha256": "a0f4cd640267d77f64c7a22b61e22a17fcb84319979436d28b2ebbf63e15f950",
+      "bytes": 1290
+    },
+    "config": {
+      "path": "evidence/session004/remote-intermediate-001/project/tasks/mimo-v2.6-distill-qwen9b-bw-vllm/runtime/config-813bbcb199394129949b9afe7214b7cd.json",
+      "sha256": "9530a13eb5037e43d59ebbaaaf44286b8ebaa36031a008cb8fa84fee85ae060d",
+      "bytes": 1338
+    },
+    "server_log": {
+      "path": "evidence/session004/remote-intermediate-001/project/tasks/mimo-v2.6-distill-qwen9b-bw-vllm/runtime/server.log",
+      "sha256": "e33d83307917247bc11d5458a27e6267050d32dbb9a3b94bee6930cae2dccad1",
+      "bytes": 32453
+    },
+    "stop_log": {
+      "path": "evidence/session004/remote-intermediate-001/project/evidence/session004/mimo-second-stop.log",
+      "sha256": "9cab7f8f9c0c46d44e6e3d8eafea7f7e3595cc906ff7ed47f8fbb2137fedbcf3",
+      "bytes": 71
+    },
+    "smoke_logs": [
+      {
+        "path": "evidence/session004/remote-intermediate-001/project/evidence/session004/mimo-standard-smoke-002.jsonl",
+        "sha256": "468fd52beae92fbf2b0c177805c79817923c083b176c3d7e7c744f901f2bff61",
+        "bytes": 14565
+      }
+    ],
+    "functional_verified": true,
+    "independent_post_stop_process_and_port_probe": null,
+    "platform_final_state_verified_by_this_archive": false,
+    "official_accuracy": false,
+    "official_performance": false,
+    "official_acceptance": false,
+    "submitted": false,
+    "task_metadata_updated_after_run": true,
+    "runtime_code_sha256": "0edc33da22c07a804c93047f918a4a39a58af90997390c49695d8b39a891d85b",
+    "functional_checks_passed": 6,
+    "generation_requests": 4,
+    "jsonl_records": 32,
+    "source_sha256": "4e45292e6b0af32c52026abbe4723b39477d40cd419036ae35a267627396e5a6",
+    "executed_env_sha256": "660c4e5baf4a10428705937beb810aec837ea05a9df25e0b9c58b20055cc3a8d",
+    "text_only_modalities": {
+      "image": 0,
+      "video": 0
+    },
+    "checkpoint_full_hash_report_in_this_archive": null,
+    "previous_failure": {
+      "path": "evidence/session004/remote-intermediate-001/project/evidence/session004/mimo-first-state.json",
+      "sha256": "46bc189ceb3c995e6e906862a9d62d480b3ba6febf9cf53a561ff19fa0e0e371",
+      "bytes": 1170
+    },
+    "previous_smoke_failure": {
+      "path": "evidence/session004/remote-intermediate-001/project/evidence/session004/mimo-standard-smoke.jsonl",
+      "sha256": "f4ee3b60a3d2dcbd34d30e01f7bbdfc688bd7971473863fcaf6903ef3656ff05",
+      "bytes": 833
+    },
+    "post_stop_scope": "Expired supervisor; later stop reports supervisor absent and no signal sent; no independent all-descendants/port probe"
+  },
+  "gpu_verification_scope": "session004 standard run.sh 32K T01 text-only native vLLM; not legacy entry.py 8K pilot and not official scoring",
+  "weights_downloaded_scope": "Actual server loaded checkpoint; fresh per-file weight SHA verification record is not in intermediate export",
+  "legacy_pilot_configuration_scope": "Existing max_model_len/max_runtime_seconds_default/thinking_enabled/runtime.json belong to frozen entry.py 8K pilot",
+  "standard_service_profile": {
+    "entry": "run.sh",
+    "framework": "vllm",
+    "precision": "bf16",
+    "tp": 1,
+    "max_model_len": 32768,
+    "max_runtime_seconds_default": 1800,
+    "load_timeout_seconds_default": 900,
+    "modalities": {
+      "image": 0,
+      "video": 0
+    },
+    "max_num_seqs": 4,
+    "max_num_batched_tokens": 2048,
+    "gpu_memory_utilization": 0.8,
+    "eager": true,
+    "new_default_gpu_reexecuted": false,
+    "same_serving_parameters_as_successful_run": true,
+    "current_env_sha256": "52d054df24a7ad20d6fb92a1f8c2eade68433d78577a6ef154648cb46f1f592f",
+    "cpu_validation_after_default_update": {
+      "utc": "2026-10-23T12:13:59.013377+00:00",
+      "wsl_test_mimo_text_smoke": {
+        "passed": 15,
+        "failed": 0
+      },
+      "three_task_env_bash_syntax": "passed",
+      "dry_run_assertions": [
+        "max_len32768",
+        "max_runtime1800",
+        "load_timeout900",
+        "image0/video0",
+        "no reasoning parser"
+      ],
+      "gpu_executed": false
+    }
+  },
+  "thinking_enabled_scope": "Legacy entry.py pilot flag only; standard path preserves checkpoint defaults without thinking override",
+  "formal_ready": false,
+  "official_acceptance": false,
+  "legacy_manifest_scope": "Frozen manifest.json describes initial candidate snapshot. Canonical README/task metadata were updated after session004; use the new stage004 repository manifest for current payload integrity."
+}

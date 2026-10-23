@@ -1,0 +1,3 @@
+av @ file:///root/private_data/guoxin-candidates/cpu-wheels/av-14.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl --hash=sha256:512a8ceca26250f26fc28913d7a08f962f8e7704189c111e9688180f9b752458
+numpy @ file:///root/private_data/guoxin-candidates/cpu-wheels/numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl --hash=sha256:ffa75af20b44f8dba823498024771d5ac50620e6915abac414251bd971b4529f
+qwen-vl-utils @ file:///root/private_data/guoxin-candidates/cpu-wheels/qwen_vl_utils-0.0.14-py3-none-any.whl --hash=sha256:5e28657bfd031e56bd447c5901b58ddfc3835285ed100f4c56580e0ade054e96

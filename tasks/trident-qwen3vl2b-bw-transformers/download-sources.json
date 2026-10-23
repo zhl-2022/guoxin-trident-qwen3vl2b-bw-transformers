@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "task": "trident-qwen3vl2b-bw-transformers",
+  "original_model_id": "openbmb/Trident-Qwen3VL-2B",
+  "original_huggingface_revision": "a5aedf8733f2107ab75b42214c78496d85759077",
+  "modelscope_model_id": "OpenBMB/Trident-Qwen3VL-2B",
+  "modelscope_discovery_api": "https://modelscope.cn/api/v1/models/OpenBMB/Trident-Qwen3VL-2B/repo/files?Revision=master&Recursive=true",
+  "mutable_master_not_used_for_downloads": true,
+  "all_files_match_pinned_huggingface_checkpoint": true,
+  "verification": "large LFS SHA256+size compared between publisher APIs; small non-LFS ModelScope files read and Git blob SHA1 compared to pinned HuggingFace revision",
+  "weight_payload_bytes_downloaded": 0,
+  "files": [
+    {
+      "path": "added_tokens.json",
+      "size": 707,
+      "sha256": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+      "modelscope_revision": "44a3568d585b0873b628d63934407404e46a7786",
+      "modelscope_url": "https://modelscope.cn/models/OpenBMB/Trident-Qwen3VL-2B/resolve/44a3568d585b0873b628d63934407404e46a7786/added_tokens.json",
+      "huggingface_url": "https://huggingface.co/openbmb/Trident-Qwen3VL-2B/resolve/a5aedf8733f2107ab75b42214c78496d85759077/added_tokens.json"
+    },
+    {
+      "path": "chat_template.jinja",
+      "size": 5292,
+      "sha256": "3636d0f0bd6bef02654cdffdc447b79cb2cef8ab02cc75267345946291a489e4",
+      "modelscope_revision": "99b4ea44813baf2d06886466893794272dbe6ad4",
+      "modelscope_url": "https://modelscope.cn/models/OpenBMB/Trident-Qwen3VL-2B/resolve/99b4ea44813baf2d06886466893794272dbe6ad4/chat_template.jinja",
+      "huggingface_url": "https://huggingface.co/openbmb/Trident-Qwen3VL-2B/resolve/a5aedf8733f2107ab75b42214c78496d85759077/chat_template.jinja"
+    },
+    {
+      "path": "config.json",
+      "size": 1536,
+      "sha256": "e2fdf43c0ef5c8c34333467d5d43ecca6c234da95445a7d14954b361f79b6926",
+      "modelscope_revision": "92be03444a634b7020df9e7f5c6555c449174b54",
+      "modelscope_url": "https://modelscope.cn/models/OpenBMB/Trident-Qwen3VL-2B/resolve/92be03444a634b7020df9e7f5c6555c449174b54/config.json",
+      "huggingface_url": "https://huggingface.co/openbmb/Trident-Qwen3VL-2B/resolve/a5aedf8733f2107ab75b42214c78496d85759077/config.json"
+    },
+    {
+      "path": "merges.txt",
+      "size": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+      "modelscope_revision": "527a5d59242633d69701f258842a7c75b5015e64",
+      "modelscope_url": "https://modelscope.cn/models/OpenBMB/Trident-Qwen3VL-2B/resolve/527a5d59242633d69701f258842a7c75b5015e64/merges.txt",
+      "huggingface_url": "https://huggingface.co/openbmb/Trident-Qwen3VL-2B/resolve/a5aedf8733f2107ab75b42214c78496d85759077/merges.txt"
+    },
+    {
+      "path": "mmemb_model.json",
+      "size": 923,
+      "sha256": "9cc150d8b175d9b6e4ec6bb9f919d50307dca341b537278e59284d1928bff3de",
+      "modelscope_revision": "1a7fe2a57fd6d9d4c06fe1a6d72506087ce2bb8a",
+      "modelscope_url": "https://modelscope.cn/models/OpenBMB/Trident-Qwen3VL-2B/resolve/1a7fe2a57fd6d9d4c06fe1a6d72506087ce2bb8a/mmemb_model.json",
+      "huggingface_url": "https://huggingface.co/openbmb/Trident-Qwen3VL-2B/resolve/a5aedf8733f2107ab75b42214c78496d85759077/mmemb_model.json"
+    },
+    {
+      "path": "model.safetensors",
+      "size": 4255140312,
+      "sha256": "984c6dad40e50c68497764e363b4980634a3c82ea9396d395e81e0668e62ea2f",
+      "modelscope_revision": "b4ecb6e0e956c92271b0e1affc05e8f3a64abdf7",
+      "modelscope_url": "https://modelscope.cn/models/OpenBMB/Trident-Qwen3VL-2B/resolve/b4ecb6e0e956c92271b0e1affc05e8f3a64abdf7/model.safetensors",
+      "huggingface_url": "https://huggingface.co/openbmb/Trident-Qwen3VL-2B/resolve/a5aedf8733f2107ab75b42214c78496d85759077/model.safetensors"
+    },
+    {
+      "path": "preprocessor_config.json",
+      "size": 782,
+      "sha256": "93585062a80db5e8ca038efc7726a3e6411d9db948472d81d63c6303993be8c5",
+      "modelscope_revision": "7fd3d30b9e05ee66247fa177d524853bb6d84c17",
+      "modelscope_url": "https://modelscope.cn/models/OpenBMB/Trident-Qwen3VL-2B/resolve/7fd3d30b9e05ee66247fa177d524853bb6d84c17/preprocessor_config.json",
+      "huggingface_url": "https://huggingface.co/openbmb/Trident-Qwen3VL-2B/resolve/a5aedf8733f2107ab75b42214c78496d85759077/preprocessor_config.json"
+    },
+    {
+      "path": "special_tokens_map.json",
+      "size": 613,
+      "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+      "modelscope_revision": "6e898d938c6801b55702d0e9ba1d8ffc95b0df3a",
+      "modelscope_url": "https://modelscope.cn/models/OpenBMB/Trident-Qwen3VL-2B/resolve/6e898d938c6801b55702d0e9ba1d8ffc95b0df3a/special_tokens_map.json",
+      "huggingface_url": "https://huggingface.co/openbmb/Trident-Qwen3VL-2B/resolve/a5aedf8733f2107ab75b42214c78496d85759077/special_tokens_map.json"
+    },
+    {
+      "path": "tokenizer.json",
+      "size": 11422921,
+      "sha256": "8d15a42a4361d0b9ba8768bfc32102f5745102ec6fe5c3de45835088195d9468",
+      "modelscope_revision": "2609ff1632c043fe80b8ee7a91b26eb674d00828",
+      "modelscope_url": "https://modelscope.cn/models/OpenBMB/Trident-Qwen3VL-2B/resolve/2609ff1632c043fe80b8ee7a91b26eb674d00828/tokenizer.json",
+      "huggingface_url": "https://huggingface.co/openbmb/Trident-Qwen3VL-2B/resolve/a5aedf8733f2107ab75b42214c78496d85759077/tokenizer.json"
+    },
+    {
+      "path": "tokenizer_config.json",
+      "size": 5472,
+      "sha256": "cf43a5bf1a49ee69ecced02f419b169e72559034dcf15af47cf775bd253830f0",
+      "modelscope_revision": "e37ff3a929b5b5cc6a5e19f769c9fd7e08b53d47",
+      "modelscope_url": "https://modelscope.cn/models/OpenBMB/Trident-Qwen3VL-2B/resolve/e37ff3a929b5b5cc6a5e19f769c9fd7e08b53d47/tokenizer_config.json",
+      "huggingface_url": "https://huggingface.co/openbmb/Trident-Qwen3VL-2B/resolve/a5aedf8733f2107ab75b42214c78496d85759077/tokenizer_config.json"
+    },
+    {
+      "path": "video_preprocessor_config.json",
+      "size": 817,
+      "sha256": "59c5c9eb52182eb14c06ffb10ca9effd29adce5f238a95de23ca14a38dbd2cb1",
+      "modelscope_revision": "52006707ac837accf881f1abe60ab6b574686de8",
+      "modelscope_url": "https://modelscope.cn/models/OpenBMB/Trident-Qwen3VL-2B/resolve/52006707ac837accf881f1abe60ab6b574686de8/video_preprocessor_config.json",
+      "huggingface_url": "https://huggingface.co/openbmb/Trident-Qwen3VL-2B/resolve/a5aedf8733f2107ab75b42214c78496d85759077/video_preprocessor_config.json"
+    },
+    {
+      "path": "vocab.json",
+      "size": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "modelscope_revision": "b11921fa580d37e032578c23827a6b181450e180",
+      "modelscope_url": "https://modelscope.cn/models/OpenBMB/Trident-Qwen3VL-2B/resolve/b11921fa580d37e032578c23827a6b181450e180/vocab.json",
+      "huggingface_url": "https://huggingface.co/openbmb/Trident-Qwen3VL-2B/resolve/a5aedf8733f2107ab75b42214c78496d85759077/vocab.json"
+    }
+  ]
+}

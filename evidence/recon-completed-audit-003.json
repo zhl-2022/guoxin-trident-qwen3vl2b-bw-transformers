@@ -1,0 +1,353 @@
+{
+  "schema_version": 1,
+  "audited_at_utc": "2026-10-19T18:08:39.927266+00:00",
+  "scope": "Audit completed, downloaded session003 Recon functional results and two calibration subsets only.",
+  "official_accuracy": false,
+  "official_performance": false,
+  "full_matrix_completed_verified": false,
+  "functional": {
+    "cases": [
+      {
+        "case": "health",
+        "passed": true
+      },
+      {
+        "case": "models",
+        "passed": true
+      },
+      {
+        "case": "single_image",
+        "passed": true
+      },
+      {
+        "case": "multiple_images",
+        "passed": true
+      },
+      {
+        "case": "multiturn_first",
+        "passed": true
+      },
+      {
+        "case": "multiturn_followup",
+        "passed": true
+      },
+      {
+        "case": "streaming_image",
+        "passed": true
+      }
+    ],
+    "functional_checks_passed": true,
+    "finished_utc": "2026-10-19T17:17:16.554340+00:00",
+    "all_generation_finish_stop": true,
+    "any_answer_truncated": false,
+    "server_run_id": "142884db17fa4053a243bf2c5822ed27",
+    "server_snapshot_status": "ready",
+    "server_ready_utc": "2026-10-19T17:13:50.498449+00:00",
+    "maxseq4_final_status": "stopped",
+    "maxseq4_ended_utc": "2026-10-19T17:33:07.014122+00:00"
+  },
+  "calibrations": [
+    {
+      "label": "recon-calibration",
+      "server_max_num_seqs": 4,
+      "server_configuration_source": "raw maxseq4 state/config",
+      "source_run": "evidence/session003/recon-calibration/run.json",
+      "round": 1,
+      "text_input_target": 4096,
+      "output_target": 1024,
+      "concurrency": 1,
+      "requests": 8,
+      "full_matrix": false,
+      "started_utc": "2026-10-19T17:18:08.741790+00:00",
+      "ended_utc": "2026-10-19T17:25:04.259341+00:00",
+      "client_wall_seconds": 414.878568,
+      "metrics": {
+        "completed": 8,
+        "failed": 0,
+        "duration": 380.7021179809235,
+        "request_throughput": 0.02101380481524106,
+        "output_throughput": 21.518136130806845,
+        "total_token_throughput": 107.59068065403422,
+        "mean_ttft_ms": 812.1671736007556,
+        "p99_ttft_ms": 957.7196404524148,
+        "mean_tpot_ms": 45.72372548144451,
+        "p99_tpot_ms": 46.04211596985105,
+        "mean_e2el_ms": 47587.53834111849,
+        "p99_e2el_ms": 47834.095459096134,
+        "total_input_tokens": 32768,
+        "total_output_tokens": 8192
+      },
+      "output_integrity_verified": true,
+      "total_output_tokens": 8192,
+      "output_lens": [
+        1024,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024
+      ],
+      "per_request_text_nonempty": true,
+      "per_request_errors_empty": true,
+      "checks": {
+        "native_result_sha256_matches_run": true,
+        "client_log_sha256_matches_run": true,
+        "independent_integrity_verified": true,
+        "driver_metrics_match_native": true,
+        "complete_calibration_only": true
+      },
+      "driver_sha256": "bc09711bb58fb5a7ae4676a840956a4da1caf49f6e6034b8015c5dd9a5bae14e",
+      "native_source_sha256": {
+        "serve": "1c4fddeef7114371dfded0a1ba8287c2c644f06697cc00b0275a91cc26a024a9",
+        "datasets": "85b4e3b7407ef35ad364ccd454efdcfa9a06759144582d5a3a3761e3f85a41e2"
+      },
+      "native_vllm_version": "0.18.1+das.fa71803.dtk2604"
+    },
+    {
+      "label": "recon-maxseq16-calibration",
+      "server_max_num_seqs": 16,
+      "server_configuration_source": "root live report; raw maxseq16 server state/profile not included in current completed-result download",
+      "source_run": "evidence/session003/recon-maxseq16-calibration/run.json",
+      "round": 1,
+      "text_input_target": 4096,
+      "output_target": 1024,
+      "concurrency": 8,
+      "requests": 16,
+      "full_matrix": false,
+      "started_utc": "2026-10-19T17:36:24.163946+00:00",
+      "ended_utc": "2026-10-19T17:38:45.855267+00:00",
+      "client_wall_seconds": 141.348396,
+      "metrics": {
+        "completed": 16,
+        "failed": 0,
+        "duration": 107.4517349707894,
+        "request_throughput": 0.1489040638045498,
+        "output_throughput": 152.477761335859,
+        "total_token_throughput": 762.3888066792949,
+        "mean_ttft_ms": 3510.726662585512,
+        "p99_ttft_ms": 8290.199475456027,
+        "mean_tpot_ms": 48.846766034730436,
+        "p99_tpot_ms": 51.13307041726471,
+        "mean_e2el_ms": 53480.96831611474,
+        "p99_e2el_ms": 58451.21775958687,
+        "total_input_tokens": 65536,
+        "total_output_tokens": 16384
+      },
+      "output_integrity_verified": true,
+      "total_output_tokens": 16384,
+      "output_lens": [
+        1024,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024
+      ],
+      "per_request_text_nonempty": true,
+      "per_request_errors_empty": true,
+      "checks": {
+        "native_result_sha256_matches_run": true,
+        "client_log_sha256_matches_run": true,
+        "independent_integrity_verified": true,
+        "driver_metrics_match_native": true,
+        "complete_calibration_only": true
+      },
+      "driver_sha256": "bc09711bb58fb5a7ae4676a840956a4da1caf49f6e6034b8015c5dd9a5bae14e",
+      "native_source_sha256": {
+        "serve": "1c4fddeef7114371dfded0a1ba8287c2c644f06697cc00b0275a91cc26a024a9",
+        "datasets": "85b4e3b7407ef35ad364ccd454efdcfa9a06759144582d5a3a3761e3f85a41e2"
+      },
+      "native_vllm_version": "0.18.1+das.fa71803.dtk2604"
+    }
+  ],
+  "profiles": {
+    "maxseq4": {
+      "source": "evidence/session003/recon-calibration/server-maxseq4/server.log",
+      "kv_tokens": 327296,
+      "kv_memory_gib_display": 44.95
+    },
+    "maxseq16": {
+      "source": "root live observation supplied with audit task; raw server log pending download",
+      "kv_tokens": 327168,
+      "kv_memory_gib_display": 44.93,
+      "independently_verified_from_downloaded_raw": false
+    }
+  },
+  "full_matrix": {
+    "status": "reported_running_not_in_download",
+    "local_raw_available": false,
+    "completed_claimed": false
+  },
+  "raw_copy_provenance": [
+    {
+      "source": "evidence/session003/recon-functional/env.log",
+      "copy": "evidence/recon-functional-env-003.log",
+      "bytes": 3037,
+      "sha256": "11f818f356ffbc12943dcbacda2c7820b591176cbc59ff04d805207732600e8f"
+    },
+    {
+      "source": "evidence/session003/recon-functional/images/heldout.jsonl",
+      "copy": "evidence/recon-functional-images-heldout-003.jsonl",
+      "bytes": 4188,
+      "sha256": "4d487a64efd9ab118ce99f26af51a825255c2c06cceaa2e0692789ed0eb040ca"
+    },
+    {
+      "source": "evidence/session003/recon-functional/images/heldout_blue_circle.png",
+      "copy": "evidence/recon-functional-images-heldout_blue_circle-003.png",
+      "bytes": 3463,
+      "sha256": "13588c097bf637a09c571e441392c40f406b81ca0a50e30b3ee2f336585fec2f"
+    },
+    {
+      "source": "evidence/session003/recon-functional/images/heldout_red_square.png",
+      "copy": "evidence/recon-functional-images-heldout_red_square-003.png",
+      "bytes": 2915,
+      "sha256": "d51437c5bb459fb25f47a9e52e650b3f815d1d9900ec63b651f338e6e73c7165"
+    },
+    {
+      "source": "evidence/session003/recon-functional/images/manifest.json",
+      "copy": "evidence/recon-functional-images-manifest-003.json",
+      "bytes": 2325,
+      "sha256": "bcb0c0e26c7d78d166679a5d35a9c9a680923b3cbecf76dd5f3d0ba05bbb49ae"
+    },
+    {
+      "source": "evidence/session003/recon-functional/run.json",
+      "copy": "evidence/recon-functional-run-003.json",
+      "bytes": 1904,
+      "sha256": "320e75a4263eb99c12737b8363d4c13de3b0f1c760a4927c36e66d2d458a7b7e"
+    },
+    {
+      "source": "evidence/session003/recon-functional/server.log",
+      "copy": "evidence/recon-functional-server-003.log",
+      "bytes": 14182,
+      "sha256": "3022b6ac1676e197ded2f74193aa87726209b3ad2d1704e9392196899b5fc8c9"
+    },
+    {
+      "source": "evidence/session003/recon-functional/smoke.jsonl",
+      "copy": "evidence/recon-functional-smoke-003.jsonl",
+      "bytes": 8830,
+      "sha256": "e984957fdcd32950753eff74910f795620fb27c74aeaf5e4c8ad2d778857ea65"
+    },
+    {
+      "source": "evidence/session003/recon-functional/state-at-functional-end.json",
+      "copy": "evidence/recon-functional-state-at-functional-end-003.json",
+      "bytes": 1154,
+      "sha256": "064249daf4704153711958e2cf4453988cee23096b0597ddd25e1c4ba38d108d"
+    },
+    {
+      "source": "evidence/session003/recon-functional/step0.log",
+      "copy": "evidence/recon-functional-step0-003.log",
+      "bytes": 3037,
+      "sha256": "11f818f356ffbc12943dcbacda2c7820b591176cbc59ff04d805207732600e8f"
+    },
+    {
+      "source": "evidence/session003/recon-functional/step1.log",
+      "copy": "evidence/recon-functional-step1-003.log",
+      "bytes": 4188,
+      "sha256": "4d487a64efd9ab118ce99f26af51a825255c2c06cceaa2e0692789ed0eb040ca"
+    },
+    {
+      "source": "evidence/session003/recon-functional/step2.log",
+      "copy": "evidence/recon-functional-step2-003.log",
+      "bytes": 8830,
+      "sha256": "e984957fdcd32950753eff74910f795620fb27c74aeaf5e4c8ad2d778857ea65"
+    },
+    {
+      "source": "evidence/session003/recon-calibration/native/round1_4096_1024_c1.json",
+      "copy": "evidence/recon-calibration-native-round1_4096_1024_c1-003.json",
+      "bytes": 183967,
+      "sha256": "7887f184b2b73a26648782175cf53c3bf8ebc4eda883e85b34ef008ee7488400"
+    },
+    {
+      "source": "evidence/session003/recon-calibration/round1.jsonl",
+      "copy": "evidence/recon-calibration-round1-003.jsonl",
+      "bytes": 3411,
+      "sha256": "8f82947346cf6090c7878399bfb04d262b855ed4dba2e20fef59d1ced99e196c"
+    },
+    {
+      "source": "evidence/session003/recon-calibration/round1_4096_1024_c1.log",
+      "copy": "evidence/recon-calibration-round1_4096_1024_c1-003.log",
+      "bytes": 4958,
+      "sha256": "6dfce08f7133cf666f9c4874fa28dd7c01d8839656cf2946bc21e581f740054a"
+    },
+    {
+      "source": "evidence/session003/recon-calibration/round2.jsonl",
+      "copy": "evidence/recon-calibration-round2-003.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "evidence/session003/recon-calibration/run.json",
+      "copy": "evidence/recon-calibration-run-003.json",
+      "bytes": 6460,
+      "sha256": "95cb59c0dfbd71ab4e5de7895a2654e415ab4c08ec986dd599d3621e63ae2fbe"
+    },
+    {
+      "source": "evidence/session003/recon-calibration/server-maxseq4/config-142884db17fa4053a243bf2c5822ed27.json",
+      "copy": "evidence/recon-calibration-server-maxseq4-config-142884db17fa4053a243bf2c5822ed27-003.json",
+      "bytes": 1326,
+      "sha256": "f982e167177952382cc74279e7cbdb53ea45882c9b3619571005f73c755385d8"
+    },
+    {
+      "source": "evidence/session003/recon-calibration/server-maxseq4/server.log",
+      "copy": "evidence/recon-calibration-server-maxseq4-server-003.log",
+      "bytes": 26815,
+      "sha256": "43d0381c5a4b282893da3f622e2c8c180cdbec04b676d413c4d630a0ec11ae51"
+    },
+    {
+      "source": "evidence/session003/recon-calibration/server-maxseq4/state.json",
+      "copy": "evidence/recon-calibration-server-maxseq4-state-003.json",
+      "bytes": 1268,
+      "sha256": "4f3e1496e9278970b10ece03a85818a46796920855edc1f38d080669e9481528"
+    },
+    {
+      "source": "evidence/session003/recon-calibration/server-maxseq4/supervisor.log",
+      "copy": "evidence/recon-calibration-server-maxseq4-supervisor-003.log",
+      "bytes": 2169,
+      "sha256": "94656fcedea2485b08db55497caadc27e5ace9235ecfe6ff6c079cc2c5d20d2a"
+    },
+    {
+      "source": "evidence/session003/recon-maxseq16-calibration/native/round1_4096_1024_c8.json",
+      "copy": "evidence/recon-maxseq16-calibration-native-round1_4096_1024_c8-003.json",
+      "bytes": 356913,
+      "sha256": "aed0751e5b7a737b18db0ae4a12addd56000c27968f0b79ec34df07a15302511"
+    },
+    {
+      "source": "evidence/session003/recon-maxseq16-calibration/round1.jsonl",
+      "copy": "evidence/recon-maxseq16-calibration-round1-003.jsonl",
+      "bytes": 4118,
+      "sha256": "a91716af6f69f481cf37c0190bc6b74dc985a74957e7d823ae9ab96fea06bd34"
+    },
+    {
+      "source": "evidence/session003/recon-maxseq16-calibration/round1_4096_1024_c8.log",
+      "copy": "evidence/recon-maxseq16-calibration-round1_4096_1024_c8-003.log",
+      "bytes": 4968,
+      "sha256": "2c7bf8efd0ab3061f0c398425be30f0bca6dedf4a39d9e5f1c14e610c266a6e1"
+    },
+    {
+      "source": "evidence/session003/recon-maxseq16-calibration/round2.jsonl",
+      "copy": "evidence/recon-maxseq16-calibration-round2-003.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "evidence/session003/recon-maxseq16-calibration/run.json",
+      "copy": "evidence/recon-maxseq16-calibration-run-003.json",
+      "bytes": 7737,
+      "sha256": "5842e3268190079cf96468bdcd0e77046d617c533d9c740e200d2e71a46f0092"
+    }
+  ],
+  "raw_copies_count": 26,
+  "all_raw_copies_byte_identical": true
+}

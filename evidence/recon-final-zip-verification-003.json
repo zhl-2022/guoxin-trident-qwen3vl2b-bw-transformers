@@ -1,0 +1,368 @@
+{
+  "schema_version": 1,
+  "verified_at_utc": "2026-10-19T19:48:39.748210+00:00",
+  "archive_integrity_verified": true,
+  "archive": "E:\\hg20261019\\dist\\session003-recon-final.zip",
+  "archive_bytes": 4287828,
+  "archive_sha256": "e120e32c0d00c67545c7a50c7a572ba3d8a828152cabbad180821ac7e5114bef",
+  "payload_files": 67,
+  "zip_entries": 68,
+  "manifest_sha256": "f8cc692fc99006c7a53fdbec15335def6994c425682072af4e2e1b1062fd6625",
+  "expected_retry_run_id": "bb6a20bae32640c0b924511637d6a222",
+  "export_reported_cleanup": {
+    "captured_utc": "2026-10-19T19:47:37.618812+00:00",
+    "run_id": "bb6a20bae32640c0b924511637d6a222",
+    "state_status": "stopped",
+    "supervisor_same_identity_alive": false,
+    "server_same_identity_alive": false,
+    "port_30000_open": false,
+    "platform_shutdown_verified": false,
+    "scope": "Read-only owned process start-token and loopback-port observation; platform shutdown is separately verified in UI",
+    "owned_service_cleanup_verified": true
+  },
+  "export_reported_sources_stable": true,
+  "original_reported_status": "incomplete_or_failed",
+  "retry_reported_status": "incomplete_or_failed",
+  "official_accuracy": false,
+  "official_performance": false,
+  "formal_ready": false,
+  "benchmark_completeness_independently_audited": false,
+  "files": [
+    {
+      "path": "evidence/session003/driver-logs/hg-final-recon-export-004.py",
+      "bytes": 12342,
+      "sha256": "e8caf8d8b2dbd02b89ec40f54e0fa28f751cf166e4f4b3e120223af58fb4c651"
+    },
+    {
+      "path": "evidence/session003/driver-logs/hg-recon-matrix-003.txt",
+      "bytes": 1163,
+      "sha256": "24d3d10996c20c7a3261466a8140b34acecd758df4d2271db3972772f9194465"
+    },
+    {
+      "path": "evidence/session003/driver-logs/hg-recon-matrix-retry-003.txt",
+      "bytes": 4129,
+      "sha256": "ed8f948ee94ed0748a3908856bd56e379affa65ed1f63a6ea59716302376186a"
+    },
+    {
+      "path": "evidence/session003/driver-logs/hg-recon-original-stop-003.txt",
+      "bytes": 67,
+      "sha256": "f876dd5029a62e13517e28fa6e32b074ea9cf830a09182054467451c7c866cb1"
+    },
+    {
+      "path": "evidence/session003/driver-logs/hg-recon-retry-both-003.py",
+      "bytes": 17365,
+      "sha256": "56c6d4d693d9115794479a2e546c08cc90615ae814b1460508d7c11ada6afb4d"
+    },
+    {
+      "path": "evidence/session003/driver-logs/hg-recon-retry-helper-launch-003.txt",
+      "bytes": 3007,
+      "sha256": "f797c5ecc816479d87dccb9771a3eaf5607a3ba59999a0ce61e46d61122178c7"
+    },
+    {
+      "path": "evidence/session003/driver-logs/hg-retry-recon-last-row-003.py",
+      "bytes": 3467,
+      "sha256": "9a53036fcef873a5b34cc2cec4747c526ff675e6f73c5afd8de63287cef16297"
+    },
+    {
+      "path": "evidence/session003/recon-final-runtime/cleanup-check.json",
+      "bytes": 453,
+      "sha256": "4ae00a22464bb6188533088cb3781bda8e23373f590980c59b718432b6ef7a0f"
+    },
+    {
+      "path": "evidence/session003/recon-final-runtime/config-bb6a20bae32640c0b924511637d6a222.json",
+      "bytes": 1327,
+      "sha256": "857bd3d4ca9e6d903a63e07d0914d2b63199d1f077b6ebaf3fe08f4439174c78"
+    },
+    {
+      "path": "evidence/session003/recon-final-runtime/server.log",
+      "bytes": 108128,
+      "sha256": "18b64061cbb0abdb60fa1601b4f8ea14968b800aefc225fe9e889e5e501d842f"
+    },
+    {
+      "path": "evidence/session003/recon-final-runtime/sources/scripts/recon2reason_runtime.py",
+      "bytes": 32422,
+      "sha256": "66e9a97c63469698bfc09fbc1158a28fbd7a48f52877abb21156785a33ab1221"
+    },
+    {
+      "path": "evidence/session003/recon-final-runtime/sources/scripts/t02_development_bench.py",
+      "bytes": 17119,
+      "sha256": "bc09711bb58fb5a7ae4676a840956a4da1caf49f6e6034b8015c5dd9a5bae14e"
+    },
+    {
+      "path": "evidence/session003/recon-final-runtime/sources/tasks/recon2reason-bw-vllm/env.sh",
+      "bytes": 2779,
+      "sha256": "390c12d84c18163245e1fb994099bea5205a3a287ca44b69fad5afacff46d8aa"
+    },
+    {
+      "path": "evidence/session003/recon-final-runtime/sources/tasks/recon2reason-bw-vllm/run.sh",
+      "bytes": 231,
+      "sha256": "8ab5a4d53e6d317a67ab902ec3ca78332e1cb458d21765295be27f05b5f97a69"
+    },
+    {
+      "path": "evidence/session003/recon-final-runtime/sources/tasks/recon2reason-bw-vllm/stop.sh",
+      "bytes": 229,
+      "sha256": "d3e0b15a5bc42ca3d62a2215582ec61c47c1364f7b398898ab800a7396f4bc2c"
+    },
+    {
+      "path": "evidence/session003/recon-final-runtime/state.json",
+      "bytes": 1270,
+      "sha256": "79f67ed2d578f5ef4c7192dffcc8f8d94c218c49faac02f34993503ddc6a93e0"
+    },
+    {
+      "path": "evidence/session003/recon-final-runtime/supervisor.log",
+      "bytes": 2172,
+      "sha256": "885b36e991fae5f01887fb68562c6df1b11c67cd1f4c60c60cb0547a214e92de"
+    },
+    {
+      "path": "evidence/session003/recon-matrix-retry/native/round1_16384_1024_c64.json",
+      "bytes": 2920377,
+      "sha256": "bee59d8fcff5c86a4bffe9a6a0cfc1cb4f6101a4696e8e22866afe7e03159857"
+    },
+    {
+      "path": "evidence/session003/recon-matrix-retry/round1.jsonl",
+      "bytes": 13687,
+      "sha256": "e98a5a73e1cbe61ef1c80cb57009a97e303eb805845e18e1a6e0422d8aff5d5e"
+    },
+    {
+      "path": "evidence/session003/recon-matrix-retry/round1_16384_1024_c64.log",
+      "bytes": 4968,
+      "sha256": "07311dd40458022f850e8f72a15af68cef7907fd29243c0e0e55ac785c39a32c"
+    },
+    {
+      "path": "evidence/session003/recon-matrix-retry/round2.jsonl",
+      "bytes": 1984,
+      "sha256": "4183b6357c112a20e537351c81b7b65c4f6a1033be53b47e5ea672f0249686d8"
+    },
+    {
+      "path": "evidence/session003/recon-matrix-retry/round2_16384_1024_c64.log",
+      "bytes": 3205,
+      "sha256": "8520400f259b5371cf35a936095490eb2acdf6462c6af1d53c31202bb79bdaa1"
+    },
+    {
+      "path": "evidence/session003/recon-matrix-retry/run.json",
+      "bytes": 27740,
+      "sha256": "af90e24d0f53012c1f91dd381421df43386829b730bc4695295983c421e27e59"
+    },
+    {
+      "path": "evidence/session003/recon-matrix-retry/summary.md",
+      "bytes": 878,
+      "sha256": "45640f6f91464f5c3e15c395aab162c1a71aa960bc6165c367db0180bc20e401"
+    },
+    {
+      "path": "evidence/session003/recon-matrix/native/round1_16384_1024_c1.json",
+      "bytes": 177752,
+      "sha256": "d1d20a23b5bd505a46a74871124dfa2b3d66bdcf149488c7a9651a664c18fe4c"
+    },
+    {
+      "path": "evidence/session003/recon-matrix/native/round1_16384_1024_c8.json",
+      "bytes": 364210,
+      "sha256": "935f9197ff90b78ff8ee9588d93804189663a1310eec5edb9d5be85bd5150020"
+    },
+    {
+      "path": "evidence/session003/recon-matrix/native/round1_4096_1024_c1.json",
+      "bytes": 184026,
+      "sha256": "3ec74fadada01f2dbc595eebcb55acd99d97fa1235db7ca8ebc330d86dc2bd46"
+    },
+    {
+      "path": "evidence/session003/recon-matrix/native/round1_4096_1024_c64.json",
+      "bytes": 2866453,
+      "sha256": "c663fa323cbf2667c6fe158bf2a11dbd0929989c9562b51364274102af75f46b"
+    },
+    {
+      "path": "evidence/session003/recon-matrix/native/round1_4096_1024_c8.json",
+      "bytes": 356620,
+      "sha256": "448fe35380b2bcd441ff61e12286047a2b30ef844dcc075f5b520791fcb8cbc5"
+    },
+    {
+      "path": "evidence/session003/recon-matrix/native/round2_16384_1024_c1.json",
+      "bytes": 178778,
+      "sha256": "1df3187000d29f36e7a7cc9e3e93002923f190d519299babec1ebe2242c7814b"
+    },
+    {
+      "path": "evidence/session003/recon-matrix/native/round2_16384_1024_c8.json",
+      "bytes": 364983,
+      "sha256": "91a75ee8d2d953e5145110f5bee4a40c1d6d3d689b38c705a1c6502ea5a1b596"
+    },
+    {
+      "path": "evidence/session003/recon-matrix/native/round2_4096_1024_c1.json",
+      "bytes": 183566,
+      "sha256": "e763920e70f5734603e2c7eb4af28c2012edfa23b240ab34a352d1256fde4340"
+    },
+    {
+      "path": "evidence/session003/recon-matrix/native/round2_4096_1024_c64.json",
+      "bytes": 2875777,
+      "sha256": "3e8b460ba03f3a045b48bd873c8d24bd5198a8f333b7ab83536f6c9cb9e68348"
+    },
+    {
+      "path": "evidence/session003/recon-matrix/native/round2_4096_1024_c8.json",
+      "bytes": 360745,
+      "sha256": "2cf3f055764b99f140dbc5bbc224e752c3bbbb1134850fce904ac57fac68ed8c"
+    },
+    {
+      "path": "evidence/session003/recon-matrix/round1.jsonl",
+      "bytes": 30578,
+      "sha256": "165b103a86a72126c7c560bbd9b53c0b1a25ba8e414ff8de6a1b7a3bde5d25d6"
+    },
+    {
+      "path": "evidence/session003/recon-matrix/round1_16384_1024_c1.log",
+      "bytes": 4957,
+      "sha256": "72e8e37813037f356afa33df9ee6d5e4b8c84e3f36b3fa2989c38ac9fb0a6666"
+    },
+    {
+      "path": "evidence/session003/recon-matrix/round1_16384_1024_c64.log",
+      "bytes": 3199,
+      "sha256": "a0cbfe0912ae64fc2421a13e26827fc4234f53d75ff3c1d23a402015a5d3b491"
+    },
+    {
+      "path": "evidence/session003/recon-matrix/round1_16384_1024_c8.log",
+      "bytes": 4958,
+      "sha256": "d0764e202a3eba8ea67a9f6d9c1df638afd83d11ad2d28568cb6ccb7141fced1"
+    },
+    {
+      "path": "evidence/session003/recon-matrix/round1_4096_1024_c1.log",
+      "bytes": 4953,
+      "sha256": "d42203bdd87adcdc59567ddaec28926b8020d479f152c2752e5487f0d3630541"
+    },
+    {
+      "path": "evidence/session003/recon-matrix/round1_4096_1024_c64.log",
+      "bytes": 4958,
+      "sha256": "9754b9489e097dc4caa7bc7f6240a214ffb5237e33f83d84a5a19dc261927164"
+    },
+    {
+      "path": "evidence/session003/recon-matrix/round1_4096_1024_c8.log",
+      "bytes": 4954,
+      "sha256": "87b8453f115ecfe112f31587d069836ee7e02097b00a7e462dc30a3c3e79e45b"
+    },
+    {
+      "path": "evidence/session003/recon-matrix/round2.jsonl",
+      "bytes": 30351,
+      "sha256": "9ad21c7cc0600a1e879a79ca53593762315287cb19c610810873a24112a03e91"
+    },
+    {
+      "path": "evidence/session003/recon-matrix/round2_16384_1024_c1.log",
+      "bytes": 4957,
+      "sha256": "c1550fc1264bfc4ac4d581b541ac2a0f64ff420afa04642661f73ae02ea70fa8"
+    },
+    {
+      "path": "evidence/session003/recon-matrix/round2_16384_1024_c8.log",
+      "bytes": 4958,
+      "sha256": "abc4c5fc9b48a9982a1b8d541093562aa3f3103d5465fb91c66ae6b220b11808"
+    },
+    {
+      "path": "evidence/session003/recon-matrix/round2_4096_1024_c1.log",
+      "bytes": 4953,
+      "sha256": "7bca2e4f3c20f72f270ee84d4d0ff23d3a91d994f45820b8046ec85baeb7ee47"
+    },
+    {
+      "path": "evidence/session003/recon-matrix/round2_4096_1024_c64.log",
+      "bytes": 4958,
+      "sha256": "f7ccaecbb1ae63fd06054da6e079afaccc02b362427d9d9109a4b6be991200c5"
+    },
+    {
+      "path": "evidence/session003/recon-matrix/round2_4096_1024_c8.log",
+      "bytes": 4954,
+      "sha256": "892544006c57c04996755b3c18622252c8b4e72c3ba5c5b7886451f63c819972"
+    },
+    {
+      "path": "evidence/session003/recon-matrix/run.json",
+      "bytes": 96651,
+      "sha256": "3aaf594da27ea399d0ca2a7eed3ffde828c7bf04c27abbe5bc88a00a22474f7e"
+    },
+    {
+      "path": "evidence/session003/recon-matrix/summary.md",
+      "bytes": 3185,
+      "sha256": "fca6cc7af03b7a78f07b4a861fb96308f012ed277d34609a7112e91630fd3a0d"
+    },
+    {
+      "path": "evidence/session003/recon-original-runtime/archive-manifest.json",
+      "bytes": 2181,
+      "sha256": "7449b69e336900bf6cdb2129251f24e185efa38b992bacd53e0f6a5c7594d905"
+    },
+    {
+      "path": "evidence/session003/recon-original-runtime/cleanup-check.json",
+      "bytes": 319,
+      "sha256": "b8663563cbdf57e25d538a1864f5f9c532a73a7ffefcc8a798ab1ed317fabd6e"
+    },
+    {
+      "path": "evidence/session003/recon-original-runtime/config-d70f7e5f590745e28488c55820169551.json",
+      "bytes": 1328,
+      "sha256": "3b966f652443edcb317bcbb88a038e3871d67fd290f3d8c1c1ea571b063859c8"
+    },
+    {
+      "path": "evidence/session003/recon-original-runtime/server.log",
+      "bytes": 193933,
+      "sha256": "d0f296628ab32d8275750ed706f2a84ac9d122a9917351b4a1945e050bedf007"
+    },
+    {
+      "path": "evidence/session003/recon-original-runtime/sources/scripts/recon2reason_runtime.py",
+      "bytes": 30595,
+      "sha256": "04b0c91fd0596360f142021800f1487af5a83264cb6de5971b954b45dc80b422"
+    },
+    {
+      "path": "evidence/session003/recon-original-runtime/state-after-stop.json",
+      "bytes": 1271,
+      "sha256": "51594610ac7a2289296d677580b171f3946a23e2b17b3081e0581423c78faee9"
+    },
+    {
+      "path": "evidence/session003/recon-original-runtime/state-before-stop.json",
+      "bytes": 1271,
+      "sha256": "51594610ac7a2289296d677580b171f3946a23e2b17b3081e0581423c78faee9"
+    },
+    {
+      "path": "evidence/session003/recon-original-runtime/supervisor.log",
+      "bytes": 4343,
+      "sha256": "b2710b897f6185a2f93d724c0af8f412782d1cb2d3b6dba9bd98aecb39f5c550"
+    },
+    {
+      "path": "evidence/session003/recon-retry-control/cleanup-check.json",
+      "bytes": 319,
+      "sha256": "a67c1a89bad20ac3810d210e5a1a8f3d89c24c8bd989a94ba65831339eebe596"
+    },
+    {
+      "path": "evidence/session003/recon-retry-control/control-events.json",
+      "bytes": 3413,
+      "sha256": "0d24dd0c1da7ef8254763caf2157e54062f9c6d1dcab3b92e58b465b1e9210d3"
+    },
+    {
+      "path": "evidence/session003/recon-retry-control/metrics-before-stop.txt",
+      "bytes": 55876,
+      "sha256": "d678eea9cecfd7b105a9543d3996dd25f007ad6a3d09477478c5d280f11348ac"
+    },
+    {
+      "path": "evidence/session003/recon-retry-control/ready-state.json",
+      "bytes": 1156,
+      "sha256": "117cfe7addb4e7dac39fa96f635bb1d72e95f1cc3fd4999c9a5e1c037f377a2e"
+    },
+    {
+      "path": "evidence/session003/recon-retry-control/sources/scripts/recon2reason_runtime.py",
+      "bytes": 32422,
+      "sha256": "66e9a97c63469698bfc09fbc1158a28fbd7a48f52877abb21156785a33ab1221"
+    },
+    {
+      "path": "evidence/session003/recon-retry-control/sources/scripts/t02_development_bench.py",
+      "bytes": 17119,
+      "sha256": "bc09711bb58fb5a7ae4676a840956a4da1caf49f6e6034b8015c5dd9a5bae14e"
+    },
+    {
+      "path": "evidence/session003/recon-retry-control/sources/tasks/recon2reason-bw-vllm/env.sh",
+      "bytes": 2779,
+      "sha256": "390c12d84c18163245e1fb994099bea5205a3a287ca44b69fad5afacff46d8aa"
+    },
+    {
+      "path": "evidence/session003/recon-retry-control/sources/tasks/recon2reason-bw-vllm/run.sh",
+      "bytes": 231,
+      "sha256": "8ab5a4d53e6d317a67ab902ec3ca78332e1cb458d21765295be27f05b5f97a69"
+    },
+    {
+      "path": "evidence/session003/recon-retry-control/sources/tasks/recon2reason-bw-vllm/stop.sh",
+      "bytes": 229,
+      "sha256": "d3e0b15a5bc42ca3d62a2215582ec61c47c1364f7b398898ab800a7396f4bc2c"
+    },
+    {
+      "path": "evidence/session003/source-update-003-004.json",
+      "bytes": 526,
+      "sha256": "ec43ebc7e729f38029989ff52528407aa103b2cee86ae53d4e3d3785bb5b584d"
+    }
+  ],
+  "extracted_to": "E:\\hg20261019\\dist\\recon-final-extracted-003"
+}

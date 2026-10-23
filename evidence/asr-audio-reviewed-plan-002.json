@@ -1,0 +1,97 @@
+{
+  "apply_requested": true,
+  "selected": [
+    {
+      "name": "librosa",
+      "version": "0.11.0",
+      "url": "https://files.pythonhosted.org/packages/b5/ba/c63c5786dfee4c3417094c4b00966e61e4a63efecee22cb7b4c0387dda83/librosa-0.11.0-py3-none-any.whl",
+      "sha256": "0b6415c4fd68bff4c29288abe67c6d80b587e0e1e2cfb0aad23e4559504a7fa1"
+    },
+    {
+      "name": "soundfile",
+      "version": "0.13.1",
+      "url": "https://files.pythonhosted.org/packages/57/5e/70bdd9579b35003a489fc850b5047beeda26328053ebadc1fb60f320f7db/soundfile-0.13.1-py2.py3-none-manylinux_2_28_x86_64.whl",
+      "sha256": "03267c4e493315294834a0870f31dbb3b28a95561b80b134f0bd3cf2d5f0e618"
+    },
+    {
+      "name": "audioread",
+      "version": "3.0.1",
+      "url": "https://files.pythonhosted.org/packages/57/8d/30aa32745af16af0a9a650115fbe81bde7c610ed5c21b381fca0196f3a7f/audioread-3.0.1-py3-none-any.whl",
+      "sha256": "4cdce70b8adc0da0a3c9e0d85fb10b3ace30fbdf8d1670fd443929b61d117c33"
+    },
+    {
+      "name": "lazy-loader",
+      "version": "0.4",
+      "url": "https://files.pythonhosted.org/packages/83/60/d497a310bde3f01cb805196ac61b7ad6dc5dcf8dce66634dc34364b20b4f/lazy_loader-0.4-py3-none-any.whl",
+      "sha256": "342aa8e14d543a154047afb4ba8ef17f5563baad3fc610d7b15b213b0f119efc"
+    },
+    {
+      "name": "pooch",
+      "version": "1.8.2",
+      "url": "https://files.pythonhosted.org/packages/a8/87/77cc11c7a9ea9fd05503def69e3d18605852cd0d4b0d3b8f15bbeb3ef1d1/pooch-1.8.2-py3-none-any.whl",
+      "sha256": "3529a57096f7198778a5ceefd5ac3ef0e4d06a6ddaf9fc2d609b806f25302c47"
+    },
+    {
+      "name": "scikit-learn",
+      "version": "1.6.1",
+      "url": "https://files.pythonhosted.org/packages/b7/91/ab3c697188f224d658969f678be86b0968ccc52774c8ab4a86a07be13c25/scikit_learn-1.6.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "775da975a471c4f6f467725dff0ced5c7ac7bda5e9316b260225b48475279a1b"
+    },
+    {
+      "name": "soxr",
+      "version": "0.5.0.post1",
+      "url": "https://files.pythonhosted.org/packages/ba/e6/059070b4cdb7fdd8ffbb67c5087c1da9716577127fb0540cd11dbf77923b/soxr-0.5.0.post1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "fcc049b0a151a65aa75b92f0ac64bb2dba785d16b78c31c2b94e68c141751d6d"
+    }
+  ],
+  "protected": {
+    "torch": {
+      "version": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+      "root": "/usr/local/lib/python3.10/dist-packages"
+    },
+    "torchvision": {
+      "version": "0.25.0+das.opt1.dtk2604.torch2100.20260325.g860505",
+      "root": "/usr/local/lib/python3.10/dist-packages"
+    },
+    "transformers": {
+      "version": "5.5.0",
+      "root": "/usr/local/lib/python3.10/dist-packages"
+    },
+    "vllm": {
+      "version": "0.18.1+das.fa71803.dtk2604",
+      "root": "/usr/local/lib/python3.10/dist-packages"
+    },
+    "vllm-hcu": {
+      "version": "0.18.1+das.dtk2604",
+      "root": "/usr/local/lib/python3.10/dist-packages"
+    },
+    "numpy": {
+      "version": "1.25.0",
+      "root": "/usr/local/lib/python3.10/dist-packages"
+    },
+    "scipy": {
+      "version": "1.15.3",
+      "root": "/usr/local/lib/python3.10/dist-packages"
+    },
+    "triton": {
+      "version": "3.6.0+gitc73250c4.staging",
+      "root": "/usr/local/lib/python3.10/dist-packages"
+    },
+    "flash-attn": {
+      "version": "2.8.3+das.opt1.dtk2604.torch2100.20260330.g3f0061",
+      "root": "/usr/local/lib/python3.10/dist-packages"
+    },
+    "lightop": {
+      "version": "0.6.0+das.dtk2604.torch2100.2604101656.g193111",
+      "root": "/usr/local/lib/python3.10/dist-packages"
+    },
+    "aiter": {
+      "version": "0.1.2+das.opt1.dtk2604.torch2100.2604212021.gd52133",
+      "root": "/usr/local/lib/python3.10/dist-packages"
+    },
+    "python-multipart": {
+      "version": "0.0.22",
+      "root": "/usr/local/lib/python3.10/dist-packages"
+    }
+  }
+}

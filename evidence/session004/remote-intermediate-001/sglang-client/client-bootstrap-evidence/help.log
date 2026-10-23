@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 187, in _run_module_as_main
+    mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+  File "/usr/lib/python3.10/runpy.py", line 110, in _get_module_details
+    __import__(pkg_name)
+  File "/root/private_data/sglang-client-004c/lib/python3.10/site-packages/sglang/__init__.py", line 29, in <module>
+    from sglang.srt.utils.hf_transformers_patches import apply_all as _apply_hf_patches
+  File "/root/private_data/sglang-client-004c/lib/python3.10/site-packages/sglang/srt/utils/__init__.py", line 2, in <module>
+    from sglang.srt.utils.common import *
+  File "/root/private_data/sglang-client-004c/lib/python3.10/site-packages/sglang/srt/utils/common.py", line 77, in <module>
+    import orjson
+ModuleNotFoundError: No module named 'orjson'

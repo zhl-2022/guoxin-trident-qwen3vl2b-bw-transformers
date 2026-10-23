@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "model_id": "openbmb/Trident-Qwen3VL-2B",
+  "model_revision": "a5aedf8733f2107ab75b42214c78496d85759077",
+  "entry": "scripts/trident_vllm_pooling_probe_20261023.py",
+  "purpose": "development_embedding_conversion_pilot_not_formal_eval",
+  "framework": "native_vllm",
+  "framework_version": "0.18.1",
+  "original_architecture": "Qwen3VLForEmbedding",
+  "runtime_architecture_override": "Qwen3VLForConditionalGeneration",
+  "runner": "pooling",
+  "convert": "embed",
+  "pooler_config": {
+    "seq_pooling_type": "LAST",
+    "use_activation": true
+  },
+  "head_dtype": "float32",
+  "model_dtype": "bfloat16",
+  "instructions_source": "pinned mmemb_model.json prompt.query_instruction and prompt.doc_instruction",
+  "image_preprocessing": "qwen-vl-utils 0.0.14 process_vision_info image_patch_size=16, 262144..1310720 pixels; vLLM do_resize=false",
+  "supported_pilot_inputs": [
+    "text",
+    "local_image",
+    "local_image_plus_text"
+  ],
+  "video_pilot_implemented": false,
+  "checkpoint_rewritten": false,
+  "weight_keys_rewritten": false,
+  "tensor_header_count": 625,
+  "runtime_qualification": "GPU load and token/numerical comparison pending; static architecture compatibility alone is insufficient",
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "gpu_verified": false,
+  "submission_ready": false,
+  "reference_comparison": {
+    "optional": "publisher TF worker-result.json same inputs",
+    "engineering_cosine_threshold": 0.999,
+    "official_metric": false
+  },
+  "max_seconds_default": 600,
+  "native_dependencies_must_not_change": [
+    "torch",
+    "torchvision",
+    "vllm",
+    "vllm-hcu",
+    "triton",
+    "flash-attn",
+    "lightop",
+    "aiter"
+  ]
+}

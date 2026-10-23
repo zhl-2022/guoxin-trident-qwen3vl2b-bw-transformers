@@ -1,0 +1,32 @@
+[
+  {
+    "name": "orjson",
+    "version": "3.11.3",
+    "url": "https://files.pythonhosted.org/packages/44/1d/ca2230fd55edbd87b58a43a19032d63a4b180389a97520cc62c535b726f9/orjson-3.11.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "d7d18dd34ea2e860553a579df02041845dee0af8985dff7f8661306f95504ddf"
+  },
+  {
+    "name": "pybase64",
+    "version": "1.4.2",
+    "url": "https://files.pythonhosted.org/packages/f6/da/1c22f2a21d6bb9ec2a214d15ae02d5b20a95335de218a0ecbf769c535a5c/pybase64-1.4.2-cp310-cp310-manylinux1_x86_64.manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_5_x86_64.whl",
+    "sha256": "17b871a34aaeb0644145cb6bf28feb163f593abea11aec3dbcc34a006edfc828"
+  },
+  {
+    "name": "setproctitle",
+    "version": "1.3.6",
+    "url": "https://files.pythonhosted.org/packages/67/2b/c3cbd4a4462c1143465d8c151f1d51bbfb418e60a96a754329d28d416575/setproctitle-1.3.6-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "6af330ddc2ec05a99c3933ab3cba9365357c0b8470a7f2fa054ee4b0984f57d1"
+  },
+  {
+    "name": "msgspec",
+    "version": "0.19.0",
+    "url": "https://files.pythonhosted.org/packages/c6/65/080509c5774a1592b2779d902a70b5fe008532759927e011f068145a16cb/msgspec-0.19.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "00e87ecfa9795ee5214861eab8326b0e75475c2e68a384002aa135ea2a27d909"
+  },
+  {
+    "name": "partial-json-parser",
+    "version": "0.2.1.1.post7",
+    "url": "https://files.pythonhosted.org/packages/42/32/658973117bf0fd82a24abbfb94fe73a5e86216e49342985e10acce54775a/partial_json_parser-0.2.1.1.post7-py3-none-any.whl",
+    "sha256": "145119e5eabcf80cbb13844a6b50a85c68bf99d376f8ed771e2a3c3b03e653ae"
+  }
+]

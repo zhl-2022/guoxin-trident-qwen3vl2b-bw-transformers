@@ -1,0 +1,244 @@
+{
+  "schema_version": 1,
+  "mode": "run",
+  "official_acceptance": false,
+  "benchmark_scope": "development synthetic random-mm; image specification and total input token target unconfirmed",
+  "source_reference": {
+    "serve": "https://raw.githubusercontent.com/vllm-project/vllm/v0.18.1/vllm/benchmarks/serve.py",
+    "datasets": "https://raw.githubusercontent.com/vllm-project/vllm/v0.18.1/vllm/benchmarks/datasets.py"
+  },
+  "model_path": "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+  "tokenizer_path": "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+  "served_model_name": "recon2reason-reasoning-4b",
+  "host": "127.0.0.1",
+  "port": 30000,
+  "output_dir": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/recon-maxseq16-calibration",
+  "image_size": [
+    1024,
+    1024
+  ],
+  "images_per_request": 1,
+  "full_matrix": false,
+  "requests_planned": 16,
+  "timeout_seconds": 650.0,
+  "total_timeout_seconds": 700.0,
+  "extra_readiness_requests": 0,
+  "warmup_requests_inside_each_command": 0,
+  "filesystem_mutated": true,
+  "client_started": true,
+  "rows": [
+    {
+      "name": "round1_4096_1024_c8",
+      "round": 1,
+      "scored_round": false,
+      "target_text_input_tokens": 4096,
+      "target_output_tokens": 1024,
+      "concurrency": 8,
+      "expected_requests": 16,
+      "command": [
+        "vllm",
+        "bench",
+        "serve",
+        "--backend",
+        "openai-chat",
+        "--endpoint",
+        "/v1/chat/completions",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "30000",
+        "--model",
+        "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+        "--served-model-name",
+        "recon2reason-reasoning-4b",
+        "--tokenizer",
+        "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+        "--dataset-name",
+        "random-mm",
+        "--random-input-len",
+        "4096",
+        "--random-output-len",
+        "1024",
+        "--random-range-ratio",
+        "0",
+        "--random-prefix-len",
+        "0",
+        "--random-mm-base-items-per-request",
+        "1",
+        "--random-mm-num-mm-items-range-ratio",
+        "0",
+        "--random-mm-limit-mm-per-prompt",
+        "{\"image\":1,\"video\":0}",
+        "--random-mm-bucket-config",
+        "{(1024, 1024, 1): 1.0}",
+        "--max-concurrency",
+        "8",
+        "--num-prompts",
+        "16",
+        "--request-rate",
+        "inf",
+        "--seed",
+        "1",
+        "--temperature",
+        "0",
+        "--ignore-eos",
+        "--num-warmups",
+        "0",
+        "--ready-check-timeout-sec",
+        "0",
+        "--disable-tqdm",
+        "--percentile-metrics",
+        "ttft,tpot,itl,e2el",
+        "--metric-percentiles",
+        "99",
+        "--save-result",
+        "--save-detailed",
+        "--result-dir",
+        "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/recon-maxseq16-calibration/native",
+        "--result-filename",
+        "round1_4096_1024_c8.json"
+      ],
+      "native_result": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/recon-maxseq16-calibration/native/round1_4096_1024_c8.json",
+      "log": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/recon-maxseq16-calibration/round1_4096_1024_c8.log",
+      "status": "complete",
+      "started_utc": "2026-10-19T17:36:24.163946+00:00",
+      "exit_code": 0,
+      "ended_utc": "2026-10-19T17:38:45.855267+00:00",
+      "client_wall_seconds": 141.348396,
+      "log_sha256": "2c7bf8efd0ab3061f0c398425be30f0bca6dedf4a39d9e5f1c14e610c266a6e1",
+      "native_result_sha256": "aed0751e5b7a737b18db0ae4a12addd56000c27968f0b79ec34df07a15302511",
+      "metrics": {
+        "completed": 16,
+        "failed": 0,
+        "duration": 107.4517349707894,
+        "request_throughput": 0.1489040638045498,
+        "output_throughput": 152.477761335859,
+        "total_token_throughput": 762.3888066792949,
+        "mean_ttft_ms": 3510.726662585512,
+        "p99_ttft_ms": 8290.199475456027,
+        "mean_tpot_ms": 48.846766034730436,
+        "p99_tpot_ms": 51.13307041726471,
+        "mean_e2el_ms": 53480.96831611474,
+        "p99_e2el_ms": 58451.21775958687,
+        "total_input_tokens": 65536,
+        "total_output_tokens": 16384
+      },
+      "output_integrity": {
+        "verified": true,
+        "status": "verified",
+        "missing_fields": [],
+        "issues": [],
+        "requests": [
+          {
+            "index": 0,
+            "output_tokens": 1024,
+            "generated_text_characters": 624,
+            "error": ""
+          },
+          {
+            "index": 1,
+            "output_tokens": 1024,
+            "generated_text_characters": 582,
+            "error": ""
+          },
+          {
+            "index": 2,
+            "output_tokens": 1024,
+            "generated_text_characters": 331,
+            "error": ""
+          },
+          {
+            "index": 3,
+            "output_tokens": 1024,
+            "generated_text_characters": 361,
+            "error": ""
+          },
+          {
+            "index": 4,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": ""
+          },
+          {
+            "index": 5,
+            "output_tokens": 1024,
+            "generated_text_characters": 454,
+            "error": ""
+          },
+          {
+            "index": 6,
+            "output_tokens": 1024,
+            "generated_text_characters": 469,
+            "error": ""
+          },
+          {
+            "index": 7,
+            "output_tokens": 1024,
+            "generated_text_characters": 882,
+            "error": ""
+          },
+          {
+            "index": 8,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": ""
+          },
+          {
+            "index": 9,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": ""
+          },
+          {
+            "index": 10,
+            "output_tokens": 1024,
+            "generated_text_characters": 336,
+            "error": ""
+          },
+          {
+            "index": 11,
+            "output_tokens": 1024,
+            "generated_text_characters": 453,
+            "error": ""
+          },
+          {
+            "index": 12,
+            "output_tokens": 1024,
+            "generated_text_characters": 454,
+            "error": ""
+          },
+          {
+            "index": 13,
+            "output_tokens": 1024,
+            "generated_text_characters": 541,
+            "error": ""
+          },
+          {
+            "index": 14,
+            "output_tokens": 1024,
+            "generated_text_characters": 306,
+            "error": ""
+          },
+          {
+            "index": 15,
+            "output_tokens": 1024,
+            "generated_text_characters": 586,
+            "error": ""
+          }
+        ],
+        "reported_total_output_tokens": 16384,
+        "sum_output_lens": 16384,
+        "expected_total_output_tokens": 16384
+      }
+    }
+  ],
+  "started_utc": "2026-10-19T17:36:23.225962+00:00",
+  "driver_sha256": "bc09711bb58fb5a7ae4676a840956a4da1caf49f6e6034b8015c5dd9a5bae14e",
+  "native_vllm_version": "0.18.1+das.fa71803.dtk2604",
+  "native_source_sha256": {
+    "serve": "1c4fddeef7114371dfded0a1ba8287c2c644f06697cc00b0275a91cc26a024a9",
+    "datasets": "85b4e3b7407ef35ad364ccd454efdcfa9a06759144582d5a3a3761e3f85a41e2"
+  },
+  "ended_utc": "2026-10-19T17:38:46.560544+00:00",
+  "status": "complete"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "wall_seconds": 116.63075440889224,
+  "worker_exit_code": 0,
+  "owned_process_group_only": true,
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "submission_ready": false,
+  "contest_baseline_available": false
+}

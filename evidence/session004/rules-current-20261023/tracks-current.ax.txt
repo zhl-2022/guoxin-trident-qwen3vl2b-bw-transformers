@@ -1,0 +1,158 @@
+Browser tab: 7, Title: "‌​⁡⁡﻿⁤﻿‍⁣⁣​⁣⁣‍‌​﻿﻿⁡‬﻿﻿⁢⁣‬﻿⁣⁡⁤⁢⁢‌‍‌‍‌​​​​⁤‬‬⁤⁢﻿⁡‬⁣⁢超算互联网 × 光合开发者社区\"国芯国模\"黑客松 赛事详情 - 飞书云文档", URL: "https://bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif".
+0 AXWebArea ‌​⁡⁡﻿⁤﻿‍⁣⁣​⁣⁣‍‌​﻿﻿⁡‬﻿﻿⁢⁣‬﻿⁣⁡⁤⁢⁢‌‍‌‍‌​​​​⁤‬‬⁤⁢﻿⁡‬⁣⁢超算互联网 × 光合开发者社区"国芯国模"黑客松 赛事详情 - 飞书云文档, URL: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif
+	1 container zh-CN
+		160 container mainContainer
+			161 container
+				162 container
+					163 button
+						164 image
+					165 button
+						166 image
+					167 heading 飞书云文档, Value: 1
+						168 text 飞书云文档
+					169 container
+						170 text 马
+						171 text 马雅兰的云文档
+						172 container
+							173 image
+							174 text 搜索
+						175 container
+							176 button 与我分享
+								177 text 与我分享
+								178 image
+							179 content list SHARE_WITH_ME_ROOT
+								180 container
+									181 button 超算互联网 × 光合开发者社区"国芯国模"黑客松 赛事详情
+				182 container
+					183 button
+						184 image
+					185 container
+						381 text ...
+						382 image
+						188 text 超算互联网 × 光合开发者社区"国芯国模"黑客松 赛事详情
+						189 button
+							190 image
+						191 text 最近修改:  54 分钟前
+						192 button 分享, ID: suite-share-btn
+							193 text 分享
+						194 button
+							195 image
+						196 button
+							197 image
+						198 button
+							199 image
+						200 container
+							201 image
+							202 text 问问豆包
+				203 container docx
+					204 container
+						205 container
+						206 container
+							207 content list
+								383 link Description: 超算互联网 × 光合开发者社区"国芯国模"黑客松 赛事详情, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#A8m1dMJlToAuvox7iQ1czgkOnXc
+								384 link Description: 一、赛事定位, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#VkS4dxCJJoySHWx4yhOcea6inMc
+								385 link Description: 二、参赛流程, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#A4ACd1xIooKFtyxNLnRc1ZaLnPg
+								386 link Description: 三、赛题, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#IX3mdXJmvo8jkExQHsAcJowgnTe
+								387 link Description: T01 稠密 / 文本 LLM 的 SGLang / vLLM 适配, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#AHqodQNCeofDyRxkcXJcWi1mnHf
+								388 link Description: T02 视觉多模态理解模型（VL / VLA）SGLang / vLLM 适配, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#SNZEdzk9ooUHllxVX4UcFl3hnNc
+								389 link Description: T03 生成类模型 SGLang / vLLM 适配（文生图 / 图生视频 / 音乐 / 3D 世界）, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#TW4GdFe4hoDTvVxlcRgcCd3UnNg
+								215 link Description: T04 语音模型适配（语音合成 / 语音识别 / 强制对齐）, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#IxmkdjoGzoHlUJxEGEVcnIbznte
+								216 link Description: 四、模型清单, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#KK1ydcZREoFjaHxSW26cajfLngb
+								217 link Description: 超算互联网AI社区模型链接, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#Eyg5dn7g2oV2ZExwPsmcdLkonmb
+								218 link Description: 五、官方材料支持清单, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#Af0gd44nNorCiTxnUsgcmDVLnSb
+								219 link Description: 通用材料（全赛道）, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#H8j4dXTH8owExBxQfC8cFlZln4g
+								220 link Description: 分题材料, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#LBS1d3lGkolSnaxcJXHcpjfUn3g
+								221 link Description: 评审口径, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#R69kd07YCoqDlsxp0V5cDwM1ntL
+								222 link Description: 六、提交技术报告, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#ZbdTdk1tloRVulxZIPpcXSMbnNg
+								223 link Description: 技术报告：8 个章节写什么, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#Fz1Edkzk6oVdh0xXtRFcLmz7ncd
+								224 link Description: 仓库目录, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#I5TWdDMsGoQuxGxGLasc1EtYnwe
+								225 link Description: 脚本模板, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#UJB3d40PnolR0kxm32PcJ6AUnnh
+								226 link Description: 七、这些材料是什么、起什么作用, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#Zu71dhZojoUm3UxfT8sc6IpRnhe
+								227 link Description: 通用材料, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#KnhYdXAIAogMDRxRMBAcGdbqn7e
+								228 link Description: 分题材料（评测 / 基线）, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#HQZOdkz3SoSSktx9hFwcDmHUn7b
+								229 link Description: 脚本各自的作用, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#B9IrdjQ1oo5iZ8xN7kicV3NYnLc
+								230 link Description: 附录、模型介绍与部署信息, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#QhPmdWiZYoVMG6xgsjzcSLXvnsd
+								231 link Description: T01 moonshotai/Kimi-Linear-48B-A3B-Instruct 48B / A3B · BF16 · 98 GB, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#Ob5QdhnizocY8qxxfEbcsgcmnpe
+								232 link Description: T01 XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B 9.4B · BF16 · 19 GB, Value: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#LVkkdazvbofhs5xLIGrcKWwSnsg
+						246 container
+							247 container
+								248 container
+									249 heading 超算互联网 × 光合开发者社区"国芯国模"黑客松 赛事详情​, Value: 1
+										250 container
+											251 text 超算互联网 × 光合开发者社区"国芯国模"黑客松 赛事详情
+									252 text 今天修改
+									390 container
+										391 text 范围： 认领 T02 行任一模型，图像预处理 → vision encoder → LLM 全链路，支持多图；嵌入模型跑通图文输入 → 向量输出（embedding 接口）；VLA / 具身模型 仅做 serving 适配 （多模态输入、文本/动作 token 输出），机器人任务不在本赛季范围。
+									392 container
+										393 text 验收： OCRBench + MMMU 子集较官方 GPU 基线劣化 ≤2%（OCRBench 为千分制，即 ≤20 分；MMMU 即 ≤2 pt；VQA 类用对应评测集）；嵌入模型用公示检索子集的检索指标；VLA / 具身模型在公示的图像（含深度图）输入集上，解析后的动作 / 坐标与 GPU 参考输出一致率 ≥98%；单图/多图均正常。
+									394 container
+										395 text 支持： 多模态接入文档；VL / 检索 / VLA 评测脚本 + 官方基线文件；测试图集。
+									396 container
+										397 container
+											398 text T03  生成类模型 SGLang / vLLM 适配（文生图 / 图生视频 / 音乐 / 3D 世界）
+									399 container
+										400 text 范围： 认领 T03 行任一模型，按单模型计件；文生图/图生视频跑通 pipeline（text/image encoder → DiT → VAE），音乐生成跑通文本/条件 → 音频解码全链路，3D 世界模型跑通文本/图像 → 3D 产物（点云 / 3DGS / 网格）全链路。
+									401 container
+										402 text 验收：固定 seed + 公示 prompt/条件集 ，与 GPU 参考输出对比——图像用 CLIP score / FID 子集、视频用 VBench 子集、音乐用公示音频指标、3D 用公示重建指标（如深度 / 点云误差），较 GPU 参考劣化 ≤2%；一键脚本 + 样例产物。
+									403 container
+										404 text 支持： 生成子栈说明 + 接入示例；标准 prompt/条件集、GPU 参考产物、对应评测脚本。
+									405 container
+										406 container
+											407 text T04  语音模型适配（语音合成 / 语音识别 / 强制对齐）
+									408 container
+										409 text 范围： 认领 T04 行任一模型；TTS 模型跑通文本 → 音频，ASR 模型跑通音频 → 文本（含流式），强制对齐模型跑通音频 + 文本 → 词级 / 字级时间戳。
+									410 container
+										411 text 验收： TTS 用公示任务指标对齐（含 ASR 回测 WER）；ASR 用公示测试集子集的 WER / CER；强制对齐用时间戳偏移 AAS（ms）；均较官方 GPU 基线劣化 ≤2%；附样例音频 / 转写 / 时间戳。
+									412 container
+										413 text 支持： 音频测试集 + WER / CER 与 AAS 脚本；TTS / ASR / 强制对齐接入说明。
+									414 container
+										415 container
+											416 text 四、模型清单
+									417 container
+										418 text 粒度 =  模型 × 卡型 × 框架（SGLang / vLLM） ：卡型不同按不同件数计（异构加速卡BW、异构加速卡AI-64GB 各算一件）；同系列多参数规格各自单件计，但 AuK / AuK-Flash、Wan2.1-I2V 480P / 720P 这类同规格变体按同一模型计；量化版本（INT8 / INT4 等）单独计件。清单每周随任务池滚动更新。
+									419 container
+										420 container
+											421 container
+												422 image
+									423 container
+										424 container
+											425 text 超算互联网AI社区模型链接
+									426 container
+										427 text 请在超算互联网AI社区下载模型。
+									428 container
+										429 container
+											430 container
+												432 image
+						299 container docCommentContainer
+							300 container
+								301 text 评论（0）
+								302 image
+						303 button
+							304 image
+				305 container
+					306 menu
+						307 container
+							308 上传日志
+								309 text 上传日志
+							310 联系客服
+								311 text 联系客服
+							312 功能更新
+								313 text 功能更新
+							314 帮助中心
+								315 text 帮助中心
+							316 快捷键
+								317 text 快捷键
+		318 container ccm-global-overlay-container
+			319 container
+				320 container
+					321 text field (settable)
+					322 text 加载中...
+		159 text entry area  
+		323 text entry area  
+		324 AXWebArea about:blank
+		433 container
+			434 container T04 语音模型适配（语音合成 / 语音识别 / 强制对齐）
+				435 text T04 语音模型适配（语音合成 / 语音识别 / 强制对齐）
+			436 image
+
+The focused UI element is 215 link Description: T04 语音模型适配（语音合成 / 语音识别 / 强制对齐）, URL: bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif#IxmkdjoGzoHlUJxEGEVcnIbznte

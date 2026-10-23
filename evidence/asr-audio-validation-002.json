@@ -1,0 +1,48 @@
+{
+  "elapsed_seconds": 19.292151206173003,
+  "result": {
+    "status": "passed",
+    "python": "/root/private_data/venvs/qwen3-asr-audio-001/bin/python",
+    "protected_native_unchanged": true,
+    "audio_closure_packages": [
+      "audioread",
+      "certifi",
+      "cffi",
+      "charset-normalizer",
+      "decorator",
+      "idna",
+      "joblib",
+      "lazy-loader",
+      "librosa",
+      "llvmlite",
+      "msgpack",
+      "numba",
+      "numpy",
+      "packaging",
+      "platformdirs",
+      "pooch",
+      "pycparser",
+      "requests",
+      "scikit-learn",
+      "scipy",
+      "soundfile",
+      "soxr",
+      "threadpoolctl",
+      "typing-extensions",
+      "urllib3"
+    ],
+    "librosa": "0.11.0",
+    "soundfile": "0.13.1",
+    "numba": "0.61.2",
+    "soxr": "0.5.0.post1",
+    "wav": {
+      "sample_rate": 16000,
+      "samples": 1600,
+      "dtype": "float32"
+    },
+    "resample_samples": 800,
+    "gpu_allocated": false,
+    "model_loaded": false,
+    "official_accuracy_evidence": false
+  }
+}

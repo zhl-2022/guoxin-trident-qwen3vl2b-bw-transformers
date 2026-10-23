@@ -1,0 +1,286 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-19T14:54:11.183794+00:00",
+  "status": "completed_with_issues",
+  "stage": "complete",
+  "python": "3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0]",
+  "executable": "/usr/bin/python3",
+  "packages": {
+    "numpy": "1.25.0",
+    "scipy": "1.15.3",
+    "soundfile": null,
+    "librosa": null,
+    "torchaudio": null,
+    "python-multipart": "0.0.22",
+    "qwen-asr": null
+  },
+  "ffmpeg": null,
+  "imports": [
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-c",
+        "\nimport importlib\nimport io\nimport json\nfrom pathlib import Path\nimport sys\nimport traceback\nimport wave\nsys.dont_write_bytecode = True\nname, audio_path = sys.argv[1:3]\nresult = {\"module\": name, \"ok\": False}\ntry:\n    module = importlib.import_module(name)\n    result.update(version=str(getattr(module, \"__version__\", \"unknown\")), file=getattr(module, \"__file__\", None))\n    if name == \"soundfile\":\n        buffer = io.BytesIO()\n        with wave.open(buffer, \"wb\") as wav:\n            wav.setnchannels(1)\n            wav.setsampwidth(2)\n            wav.setframerate(16000)\n            wav.writeframes(b\"\\0\\0\" * 1600)\n        waveform, sr = module.read(io.BytesIO(buffer.getvalue()), dtype=\"float32\")\n        if sr != 16000 or waveform.shape != (1600,):\n            raise ValueError(\"In-memory mono 16k PCM WAV decode failed\")\n        result[\"synthetic_codec_check\"] = {\"sample_rate\": sr, \"samples\": len(waveform),\n            \"dtype\": str(waveform.dtype), \"asr_accuracy_evidence\": False}\n        if audio_path:\n            path = Path(audio_path)\n            if not path.is_file() or not 0 < path.stat().st_size <= 20 * 1024 * 1024:\n                raise ValueError(\"Optional audio must be an existing nonempty file <=20 MiB\")\n            info = module.info(str(path))\n            if (info.samplerate != 16000 or info.channels != 1 or info.duration > 30\n                    or info.frames <= 0 or info.format != \"WAV\" or info.subtype != \"PCM_16\"):\n                raise ValueError(\"Optional audio must be mono 16k PCM_16 WAV, nonempty and <=30 seconds; no conversion applied\")\n            waveform, sr = module.read(str(path), dtype=\"float32\")\n            import numpy as np\n            if not bool(np.isfinite(waveform).all()):\n                raise ValueError(\"Optional audio has non-finite decoded samples\")\n            result[\"audio_read\"] = {\"path\": str(path), \"sample_rate\": sr, \"samples\": len(waveform),\n                \"channels\": info.channels, \"duration_seconds\": info.duration,\n                \"subtype\": info.subtype, \"dtype\": str(waveform.dtype),\n                \"peak_abs\": float(np.max(np.abs(waveform))), \"asr_accuracy_evidence\": False}\n    result[\"ok\"] = True\nexcept BaseException as exc:\n    result[\"error\"] = {\"type\": type(exc).__name__, \"message\": str(exc)[:2000],\n                       \"traceback\": traceback.format_exc()[-5500:]}\nprint(\"SCNET_ASR_JSON=\" + json.dumps(result, ensure_ascii=False, default=str), flush=True)\nraise SystemExit(0 if result[\"ok\"] else 1)\n",
+        "soundfile",
+        "/root/private_data/guoxin-hackathon-20261019-vllm/reference-fixtures/asr/zh_system_tts.wav"
+      ],
+      "timeout_seconds": 30,
+      "timed_out": false,
+      "returncode": 1,
+      "elapsed_seconds": 0.06464857794344425,
+      "stdout": {
+        "text": "SCNET_ASR_JSON={\"module\": \"soundfile\", \"ok\": false, \"error\": {\"type\": \"ModuleNotFoundError\", \"message\": \"No module named 'soundfile'\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"<string>\\\", line 13, in <module>\\n  File \\\"/usr/lib/python3.10/importlib/__init__.py\\\", line 126, in import_module\\n    return _bootstrap._gcd_import(name[level:], package, level)\\n  File \\\"<frozen importlib._bootstrap>\\\", line 1050, in _gcd_import\\n  File \\\"<frozen importlib._bootstrap>\\\", line 1027, in _find_and_load\\n  File \\\"<frozen importlib._bootstrap>\\\", line 1004, in _find_and_load_unlocked\\nModuleNotFoundError: No module named 'soundfile'\\n\"}}\n",
+        "total_bytes": 651,
+        "truncated": false,
+        "read_error": null,
+        "stream_matches": {}
+      },
+      "stderr": {
+        "text": "",
+        "total_bytes": 0,
+        "truncated": false,
+        "read_error": null,
+        "stream_matches": {}
+      },
+      "pipe_readers_complete": true,
+      "module": "soundfile",
+      "data": {
+        "module": "soundfile",
+        "ok": false,
+        "error": {
+          "type": "ModuleNotFoundError",
+          "message": "No module named 'soundfile'",
+          "traceback": "Traceback (most recent call last):\n  File \"<string>\", line 13, in <module>\n  File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n  File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 1004, in _find_and_load_unlocked\nModuleNotFoundError: No module named 'soundfile'\n"
+        }
+      },
+      "passed": false
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-c",
+        "\nimport importlib\nimport io\nimport json\nfrom pathlib import Path\nimport sys\nimport traceback\nimport wave\nsys.dont_write_bytecode = True\nname, audio_path = sys.argv[1:3]\nresult = {\"module\": name, \"ok\": False}\ntry:\n    module = importlib.import_module(name)\n    result.update(version=str(getattr(module, \"__version__\", \"unknown\")), file=getattr(module, \"__file__\", None))\n    if name == \"soundfile\":\n        buffer = io.BytesIO()\n        with wave.open(buffer, \"wb\") as wav:\n            wav.setnchannels(1)\n            wav.setsampwidth(2)\n            wav.setframerate(16000)\n            wav.writeframes(b\"\\0\\0\" * 1600)\n        waveform, sr = module.read(io.BytesIO(buffer.getvalue()), dtype=\"float32\")\n        if sr != 16000 or waveform.shape != (1600,):\n            raise ValueError(\"In-memory mono 16k PCM WAV decode failed\")\n        result[\"synthetic_codec_check\"] = {\"sample_rate\": sr, \"samples\": len(waveform),\n            \"dtype\": str(waveform.dtype), \"asr_accuracy_evidence\": False}\n        if audio_path:\n            path = Path(audio_path)\n            if not path.is_file() or not 0 < path.stat().st_size <= 20 * 1024 * 1024:\n                raise ValueError(\"Optional audio must be an existing nonempty file <=20 MiB\")\n            info = module.info(str(path))\n            if (info.samplerate != 16000 or info.channels != 1 or info.duration > 30\n                    or info.frames <= 0 or info.format != \"WAV\" or info.subtype != \"PCM_16\"):\n                raise ValueError(\"Optional audio must be mono 16k PCM_16 WAV, nonempty and <=30 seconds; no conversion applied\")\n            waveform, sr = module.read(str(path), dtype=\"float32\")\n            import numpy as np\n            if not bool(np.isfinite(waveform).all()):\n                raise ValueError(\"Optional audio has non-finite decoded samples\")\n            result[\"audio_read\"] = {\"path\": str(path), \"sample_rate\": sr, \"samples\": len(waveform),\n                \"channels\": info.channels, \"duration_seconds\": info.duration,\n                \"subtype\": info.subtype, \"dtype\": str(waveform.dtype),\n                \"peak_abs\": float(np.max(np.abs(waveform))), \"asr_accuracy_evidence\": False}\n    result[\"ok\"] = True\nexcept BaseException as exc:\n    result[\"error\"] = {\"type\": type(exc).__name__, \"message\": str(exc)[:2000],\n                       \"traceback\": traceback.format_exc()[-5500:]}\nprint(\"SCNET_ASR_JSON=\" + json.dumps(result, ensure_ascii=False, default=str), flush=True)\nraise SystemExit(0 if result[\"ok\"] else 1)\n",
+        "librosa",
+        "/root/private_data/guoxin-hackathon-20261019-vllm/reference-fixtures/asr/zh_system_tts.wav"
+      ],
+      "timeout_seconds": 30,
+      "timed_out": false,
+      "returncode": 1,
+      "elapsed_seconds": 0.11479267198592424,
+      "stdout": {
+        "text": "SCNET_ASR_JSON={\"module\": \"librosa\", \"ok\": false, \"error\": {\"type\": \"ModuleNotFoundError\", \"message\": \"No module named 'librosa'\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"<string>\\\", line 13, in <module>\\n  File \\\"/usr/lib/python3.10/importlib/__init__.py\\\", line 126, in import_module\\n    return _bootstrap._gcd_import(name[level:], package, level)\\n  File \\\"<frozen importlib._bootstrap>\\\", line 1050, in _gcd_import\\n  File \\\"<frozen importlib._bootstrap>\\\", line 1027, in _find_and_load\\n  File \\\"<frozen importlib._bootstrap>\\\", line 1004, in _find_and_load_unlocked\\nModuleNotFoundError: No module named 'librosa'\\n\"}}\n",
+        "total_bytes": 645,
+        "truncated": false,
+        "read_error": null,
+        "stream_matches": {}
+      },
+      "stderr": {
+        "text": "",
+        "total_bytes": 0,
+        "truncated": false,
+        "read_error": null,
+        "stream_matches": {}
+      },
+      "pipe_readers_complete": true,
+      "module": "librosa",
+      "data": {
+        "module": "librosa",
+        "ok": false,
+        "error": {
+          "type": "ModuleNotFoundError",
+          "message": "No module named 'librosa'",
+          "traceback": "Traceback (most recent call last):\n  File \"<string>\", line 13, in <module>\n  File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n  File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 1004, in _find_and_load_unlocked\nModuleNotFoundError: No module named 'librosa'\n"
+        }
+      },
+      "passed": false
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-c",
+        "\nimport importlib\nimport io\nimport json\nfrom pathlib import Path\nimport sys\nimport traceback\nimport wave\nsys.dont_write_bytecode = True\nname, audio_path = sys.argv[1:3]\nresult = {\"module\": name, \"ok\": False}\ntry:\n    module = importlib.import_module(name)\n    result.update(version=str(getattr(module, \"__version__\", \"unknown\")), file=getattr(module, \"__file__\", None))\n    if name == \"soundfile\":\n        buffer = io.BytesIO()\n        with wave.open(buffer, \"wb\") as wav:\n            wav.setnchannels(1)\n            wav.setsampwidth(2)\n            wav.setframerate(16000)\n            wav.writeframes(b\"\\0\\0\" * 1600)\n        waveform, sr = module.read(io.BytesIO(buffer.getvalue()), dtype=\"float32\")\n        if sr != 16000 or waveform.shape != (1600,):\n            raise ValueError(\"In-memory mono 16k PCM WAV decode failed\")\n        result[\"synthetic_codec_check\"] = {\"sample_rate\": sr, \"samples\": len(waveform),\n            \"dtype\": str(waveform.dtype), \"asr_accuracy_evidence\": False}\n        if audio_path:\n            path = Path(audio_path)\n            if not path.is_file() or not 0 < path.stat().st_size <= 20 * 1024 * 1024:\n                raise ValueError(\"Optional audio must be an existing nonempty file <=20 MiB\")\n            info = module.info(str(path))\n            if (info.samplerate != 16000 or info.channels != 1 or info.duration > 30\n                    or info.frames <= 0 or info.format != \"WAV\" or info.subtype != \"PCM_16\"):\n                raise ValueError(\"Optional audio must be mono 16k PCM_16 WAV, nonempty and <=30 seconds; no conversion applied\")\n            waveform, sr = module.read(str(path), dtype=\"float32\")\n            import numpy as np\n            if not bool(np.isfinite(waveform).all()):\n                raise ValueError(\"Optional audio has non-finite decoded samples\")\n            result[\"audio_read\"] = {\"path\": str(path), \"sample_rate\": sr, \"samples\": len(waveform),\n                \"channels\": info.channels, \"duration_seconds\": info.duration,\n                \"subtype\": info.subtype, \"dtype\": str(waveform.dtype),\n                \"peak_abs\": float(np.max(np.abs(waveform))), \"asr_accuracy_evidence\": False}\n    result[\"ok\"] = True\nexcept BaseException as exc:\n    result[\"error\"] = {\"type\": type(exc).__name__, \"message\": str(exc)[:2000],\n                       \"traceback\": traceback.format_exc()[-5500:]}\nprint(\"SCNET_ASR_JSON=\" + json.dumps(result, ensure_ascii=False, default=str), flush=True)\nraise SystemExit(0 if result[\"ok\"] else 1)\n",
+        "torchaudio",
+        "/root/private_data/guoxin-hackathon-20261019-vllm/reference-fixtures/asr/zh_system_tts.wav"
+      ],
+      "timeout_seconds": 30,
+      "timed_out": false,
+      "returncode": 1,
+      "elapsed_seconds": 0.06456218706443906,
+      "stdout": {
+        "text": "SCNET_ASR_JSON={\"module\": \"torchaudio\", \"ok\": false, \"error\": {\"type\": \"ModuleNotFoundError\", \"message\": \"No module named 'torchaudio'\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"<string>\\\", line 13, in <module>\\n  File \\\"/usr/lib/python3.10/importlib/__init__.py\\\", line 126, in import_module\\n    return _bootstrap._gcd_import(name[level:], package, level)\\n  File \\\"<frozen importlib._bootstrap>\\\", line 1050, in _gcd_import\\n  File \\\"<frozen importlib._bootstrap>\\\", line 1027, in _find_and_load\\n  File \\\"<frozen importlib._bootstrap>\\\", line 1004, in _find_and_load_unlocked\\nModuleNotFoundError: No module named 'torchaudio'\\n\"}}\n",
+        "total_bytes": 654,
+        "truncated": false,
+        "read_error": null,
+        "stream_matches": {}
+      },
+      "stderr": {
+        "text": "",
+        "total_bytes": 0,
+        "truncated": false,
+        "read_error": null,
+        "stream_matches": {}
+      },
+      "pipe_readers_complete": true,
+      "module": "torchaudio",
+      "data": {
+        "module": "torchaudio",
+        "ok": false,
+        "error": {
+          "type": "ModuleNotFoundError",
+          "message": "No module named 'torchaudio'",
+          "traceback": "Traceback (most recent call last):\n  File \"<string>\", line 13, in <module>\n  File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n  File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 1004, in _find_and_load_unlocked\nModuleNotFoundError: No module named 'torchaudio'\n"
+        }
+      },
+      "passed": false
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-c",
+        "\nimport importlib\nimport io\nimport json\nfrom pathlib import Path\nimport sys\nimport traceback\nimport wave\nsys.dont_write_bytecode = True\nname, audio_path = sys.argv[1:3]\nresult = {\"module\": name, \"ok\": False}\ntry:\n    module = importlib.import_module(name)\n    result.update(version=str(getattr(module, \"__version__\", \"unknown\")), file=getattr(module, \"__file__\", None))\n    if name == \"soundfile\":\n        buffer = io.BytesIO()\n        with wave.open(buffer, \"wb\") as wav:\n            wav.setnchannels(1)\n            wav.setsampwidth(2)\n            wav.setframerate(16000)\n            wav.writeframes(b\"\\0\\0\" * 1600)\n        waveform, sr = module.read(io.BytesIO(buffer.getvalue()), dtype=\"float32\")\n        if sr != 16000 or waveform.shape != (1600,):\n            raise ValueError(\"In-memory mono 16k PCM WAV decode failed\")\n        result[\"synthetic_codec_check\"] = {\"sample_rate\": sr, \"samples\": len(waveform),\n            \"dtype\": str(waveform.dtype), \"asr_accuracy_evidence\": False}\n        if audio_path:\n            path = Path(audio_path)\n            if not path.is_file() or not 0 < path.stat().st_size <= 20 * 1024 * 1024:\n                raise ValueError(\"Optional audio must be an existing nonempty file <=20 MiB\")\n            info = module.info(str(path))\n            if (info.samplerate != 16000 or info.channels != 1 or info.duration > 30\n                    or info.frames <= 0 or info.format != \"WAV\" or info.subtype != \"PCM_16\"):\n                raise ValueError(\"Optional audio must be mono 16k PCM_16 WAV, nonempty and <=30 seconds; no conversion applied\")\n            waveform, sr = module.read(str(path), dtype=\"float32\")\n            import numpy as np\n            if not bool(np.isfinite(waveform).all()):\n                raise ValueError(\"Optional audio has non-finite decoded samples\")\n            result[\"audio_read\"] = {\"path\": str(path), \"sample_rate\": sr, \"samples\": len(waveform),\n                \"channels\": info.channels, \"duration_seconds\": info.duration,\n                \"subtype\": info.subtype, \"dtype\": str(waveform.dtype),\n                \"peak_abs\": float(np.max(np.abs(waveform))), \"asr_accuracy_evidence\": False}\n    result[\"ok\"] = True\nexcept BaseException as exc:\n    result[\"error\"] = {\"type\": type(exc).__name__, \"message\": str(exc)[:2000],\n                       \"traceback\": traceback.format_exc()[-5500:]}\nprint(\"SCNET_ASR_JSON=\" + json.dumps(result, ensure_ascii=False, default=str), flush=True)\nraise SystemExit(0 if result[\"ok\"] else 1)\n",
+        "multipart",
+        "/root/private_data/guoxin-hackathon-20261019-vllm/reference-fixtures/asr/zh_system_tts.wav"
+      ],
+      "timeout_seconds": 30,
+      "timed_out": false,
+      "returncode": 0,
+      "elapsed_seconds": 0.11440583691000938,
+      "stdout": {
+        "text": "SCNET_ASR_JSON={\"module\": \"multipart\", \"ok\": true, \"version\": \"0.0.22\", \"file\": \"/usr/local/lib/python3.10/dist-packages/multipart/__init__.py\"}\n",
+        "total_bytes": 145,
+        "truncated": false,
+        "read_error": null,
+        "stream_matches": {}
+      },
+      "stderr": {
+        "text": "",
+        "total_bytes": 0,
+        "truncated": false,
+        "read_error": null,
+        "stream_matches": {}
+      },
+      "pipe_readers_complete": true,
+      "module": "multipart",
+      "data": {
+        "module": "multipart",
+        "ok": true,
+        "version": "0.0.22",
+        "file": "/usr/local/lib/python3.10/dist-packages/multipart/__init__.py"
+      },
+      "passed": true
+    }
+  ],
+  "audio_requested": "/root/private_data/guoxin-hackathon-20261019-vllm/reference-fixtures/asr/zh_system_tts.wav",
+  "model_loaded": false,
+  "official_accuracy": false,
+  "scope": "T04 environment/source/codec checks; no ASR inference or official dataset required",
+  "source": {
+    "files": [
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/model_executor/models/registry.py",
+        "exists": true,
+        "bytes": 52844,
+        "sha256": "c18f22acd950381d84fba16c39c9d73aaf057f5b02616b2df8ed37061cc71f71",
+        "declarations": [
+          {
+            "line": 505,
+            "text": "    \"Qwen3ASRForConditionalGeneration\": ("
+          },
+          {
+            "line": 507,
+            "text": "        \"Qwen3ASRForConditionalGeneration\","
+          }
+        ]
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/model_executor/models/qwen3_asr.py",
+        "exists": true,
+        "bytes": 21085,
+        "sha256": "8fecd845bbe5c4fcf117d04b81df3ff77c4e65f689f98a218612dadc852e406a",
+        "declarations": [
+          {
+            "line": 43,
+            "text": "    SupportsTranscription,"
+          },
+          {
+            "line": 265,
+            "text": "class Qwen3ASRForConditionalGeneration("
+          },
+          {
+            "line": 270,
+            "text": "    SupportsTranscription,"
+          },
+          {
+            "line": 519,
+            "text": "    def get_speech_to_text_config("
+          },
+          {
+            "line": 530,
+            "text": "    def get_generation_prompt("
+          },
+          {
+            "line": 569,
+            "text": "    def post_process_output(cls, text: str) -> str:"
+          }
+        ]
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/transformers_utils/configs/qwen3_asr.py",
+        "exists": true,
+        "bytes": 20563,
+        "sha256": "56fd1f1ea939dff47533b052962d294375e85482ed310e48ccad402cf5699818",
+        "declarations": [
+          {
+            "line": 288,
+            "text": "class Qwen3ASRThinkerConfig(PretrainedConfig):"
+          },
+          {
+            "line": 366,
+            "text": "class Qwen3ASRConfig(PretrainedConfig):"
+          },
+          {
+            "line": 368,
+            "text": "    This is the configuration class to store the configuration of a [`Qwen3ASRForConditionalGeneration`]. It is used to instantiate a Qwen3ASR"
+          },
+          {
+            "line": 386,
+            "text": "    ...     Qwen3ASRForConditionalGeneration,"
+          },
+          {
+            "line": 394,
+            "text": "    >>> model = Qwen3ASRForConditionalGeneration(configuration)"
+          }
+        ]
+      },
+      {
+        "file": "/usr/local/lib/python3.10/dist-packages/vllm/transformers_utils/processors/qwen3_asr.py",
+        "exists": true,
+        "bytes": 9030,
+        "sha256": "f676fc249482fac2918cc1893b39a80f6ec6d497f2aa58a46ab92854b112f4ee",
+        "declarations": [
+          {
+            "line": 31,
+            "text": "class Qwen3ASRProcessorKwargs(ProcessingKwargs, total=False):"
+          },
+          {
+            "line": 38,
+            "text": "            \"sampling_rate\": 16000,"
+          },
+          {
+            "line": 58,
+            "text": "class Qwen3ASRProcessor(ProcessorMixin):"
+          }
+        ]
+      }
+    ],
+    "registry_entry_found": true,
+    "vllm_root": "/usr/local/lib/python3.10/dist-packages/vllm"
+  },
+  "audio_sha256": "1690a7f5c0304bedf4a319a73deda41d21945de26640b6a2c441cc3882c01377",
+  "checks_passed": false,
+  "finished_at_utc": "2026-10-19T14:54:11.763375+00:00"
+}

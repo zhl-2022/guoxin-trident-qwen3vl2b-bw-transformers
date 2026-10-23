@@ -1,0 +1,17 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "/root/private_data/guoxin-candidate-tools-20261023/scripts/bootstrap_candidate_envs_20261023.py", line 258, in <module>
+    raise SystemExit(main())
+  File "/root/private_data/guoxin-candidate-tools-20261023/scripts/bootstrap_candidate_envs_20261023.py", line 231, in main
+    subprocess.run(command, check=True, stdout=log, stderr=subprocess.STDOUT,
+  File "/usr/lib/python3.10/subprocess.py", line 505, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+  File "/usr/lib/python3.10/subprocess.py", line 1154, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "/usr/lib/python3.10/subprocess.py", line 2047, in _communicate
+    self.wait(timeout=self._remaining_time(endtime))
+  File "/usr/lib/python3.10/subprocess.py", line 1209, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.10/subprocess.py", line 1951, in _wait
+    raise TimeoutExpired(self.args, timeout)
+subprocess.TimeoutExpired: Command '['/root/private_data/guoxin-candidates/envs/forcedaligner-001/bin/python', '-m', 'pip', '--isolated', 'install', '--no-index', '--no-deps', '--ignore-installed', '--require-hashes', '--only-binary=:all:', '-r', '/root/private_data/guoxin-candidates/envs/forcedaligner-001/requirements-effective.lock']' timed out after 234.06656629312783 seconds

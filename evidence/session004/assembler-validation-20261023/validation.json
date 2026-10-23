@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "scope": "actual CPU regression and fresh temp six-repository builds only; no production stage/ZIP/git/GPU",
+  "commands": [
+    {
+      "label": "windows",
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_assemble_session004_repositories.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 64.51599999999962,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "ad7cef546dc1a703775ddc5d2cbc29f91493bdd05b7cdaf0e99a05001dae63a5"
+    },
+    {
+      "label": "wsl",
+      "argv": [
+        "wsl",
+        "--distribution",
+        "Ubuntu",
+        "--exec",
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/mnt/e/hg20261019/tests",
+        "-p",
+        "test_assemble_session004_repositories.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 57.29700000000048,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "a868822e615044df681ca179d0337a0ce9a56c6ef8d31060f227edd453b1b9bf"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "scripts/assemble_session004_repositories.py",
+      "sha256": "53f99a04d41d89aad1482887d4e5c6fd56052d14f4f764124634cfc07c12d05a"
+    },
+    {
+      "path": "tests/test_assemble_session004_repositories.py",
+      "sha256": "de2d5690265ffc3167b23d59120246b59bde9605e9450e66178d35b937d30583"
+    }
+  ],
+  "actual_stage004_exists": false,
+  "test_suite_counts": {
+    "windows": {
+      "run": 13,
+      "passed": 12,
+      "skipped": 1
+    },
+    "wsl": {
+      "run": 13,
+      "passed": 13,
+      "skipped": 0
+    }
+  }
+}

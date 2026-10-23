@@ -1,0 +1,3 @@
+nohup: ignoring input
+FORCED_PILOT_EXIT=0
+TRIDENT_VLLM_PILOT_EXIT=0

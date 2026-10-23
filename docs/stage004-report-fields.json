@@ -1,0 +1,3304 @@
+{
+  "schema_version": 1,
+  "session": "session004",
+  "created_utc": "2026-10-23T10:05:45.128087+00:00",
+  "kind": "verified_runtime_and_prebuild_delivery_field_snapshot",
+  "assembly_plan": "docs/stage004-assembly-plan.md",
+  "stage_created_by_this_task": false,
+  "old_stage_or_readme_modified": false,
+  "external_repository_created_or_pushed": false,
+  "final_zip_generated": false,
+  "null_semantics": "Not incorporated from raw evidence; not zero, not failure, not confirmed absent. Populate only from actual current-run originals.",
+  "history_policy": "Session003 remains separately labelled; never backfill a null current-run field with historical evidence.",
+  "template_sha256": "b151143f6fa38c87e301cfc9335a94d17fcd49c7113a53fe05f89c04b45f349f",
+  "reports": [
+    {
+      "task": "recon2reason-bw-vllm",
+      "model_id": "BAAI/Recon2Reason-Reasoning-4B",
+      "track": "T02",
+      "report_source": "docs/report-004-recon2reason-bw-vllm.md",
+      "report_sha256_at_draft": "a7cc6190477fd05ff74de05855182918183d1a54f4717a4596d81188174782f5",
+      "report_sections": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "draft_scope": "Session004 final export: all8 native clients exited0/reaped;5 strict eligible rows;12 empty outputs; c1 not run; independent process cleanup verified",
+      "framework_eligibility": "actual_vllm_server_verified; SGLang0.5.12_is_client_not_second_serving_framework",
+      "counts_as_completed_contest_piece": false,
+      "root_standard_entries_for_new_candidate_ready": null,
+      "repositorywide_OSS_license_is_mandatory": false,
+      "incomplete_load_is_automatic_submission_rejection": false,
+      "formal_ready": false,
+      "pending_fields": {
+        "execution004": {
+          "run_id": "c2277b5d03b54683a5c7ba0193e5e55b",
+          "status": "stopped",
+          "started_utc": "2026-10-23T10:41:53.518926+00:00",
+          "ready_or_model_loaded_utc": "2026-10-23T10:43:31.275280+00:00",
+          "ended_utc": "2026-10-23T12:12:05.973275+00:00",
+          "command_argv": [
+            "/usr/bin/python",
+            "-m",
+            "vllm.entrypoints.openai.api_server",
+            "--model",
+            "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+            "--served-model-name",
+            "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+            "--host",
+            "127.0.0.1",
+            "--port",
+            "30000",
+            "--tensor-parallel-size",
+            "1",
+            "--dtype",
+            "bfloat16",
+            "--max-model-len",
+            "32768",
+            "--gpu-memory-utilization",
+            "0.85",
+            "--enforce-eager",
+            "--max-num-seqs",
+            "16",
+            "--limit-mm-per-prompt",
+            "{\"image\":2,\"video\":0}"
+          ],
+          "source_manifest_path": "evidence/session004/remote-final-001/export-manifest.json",
+          "source_manifest_sha256": "eb5ab4603f1f557d4d07d9d8b76e24865a8aa518d6a4713981453c5f2aca15c0",
+          "runtime_code_sha256": "0edc33da22c07a804c93047f918a4a39a58af90997390c49695d8b39a891d85b",
+          "plugin_code_sha256": null,
+          "server_or_worker_log_path": null,
+          "server_or_worker_log_sha256": null,
+          "owned_cleanup_path": "evidence/session004/remote-final-001/project/evidence/session004/recon-final-cleanup-001.json",
+          "owned_cleanup_sha256": "f4b36a9bb1d3cab011e28669d5f7986ac6e4d629e3d6ab891a2339f3b127e782",
+          "owned_processes_stopped_verified": true,
+          "raw_artifact_manifest_path": "evidence/session004/remote-final-001/export-manifest.json",
+          "raw_artifact_manifest_sha256": "eb5ab4603f1f557d4d07d9d8b76e24865a8aa518d6a4713981453c5f2aca15c0",
+          "independent_cleanup": {
+            "artifact": {
+              "path": "evidence/session004/remote-final-001/project/evidence/session004/recon-final-cleanup-001.json",
+              "bytes": 1747,
+              "sha256": "f4b36a9bb1d3cab011e28669d5f7986ac6e4d629e3d6ab891a2339f3b127e782"
+            },
+            "verification_utc": "2026-10-23T12:14:55.823368+00:00",
+            "run_id": "c2277b5d03b54683a5c7ba0193e5e55b",
+            "created_utc": "2026-10-23T10:41:53.518926+00:00",
+            "ready_utc": "2026-10-23T10:43:31.275280+00:00",
+            "ended_utc": "2026-10-23T12:12:05.973275+00:00",
+            "elapsed_seconds": 5412.454,
+            "status": "stopped",
+            "observed_process_tokens": {
+              "supervisor": null,
+              "server": null
+            },
+            "port_30000_open": false,
+            "cleanup_verified": true,
+            "platform_notebook_shutdown_included": false
+          },
+          "matrix_producer_run": {
+            "path": "evidence/session004/remote-final-001/project/evidence/session004/recon-sglang-matrix-A-001/run.json",
+            "bytes": 32974,
+            "sha256": "cb03b5f5aa591a81bd234ae6b45a51aa89a7bab32e3bfbb3e89ff3ff4cbc8ecd"
+          },
+          "matrix_producer_status": "incomplete_or_failed",
+          "matrix_started_utc": "2026-10-23T10:43:32.061379+00:00",
+          "matrix_ended_utc": "2026-10-23T12:11:57.025297+00:00",
+          "matrix_wall_seconds": 5304.963429,
+          "source_final_seal_pending": false,
+          "executed_runtime_source_identity": {
+            "manifest": {
+              "path": "evidence/session004/remote-final-001/export-manifest.json",
+              "bytes": 208071,
+              "sha256": "eb5ab4603f1f557d4d07d9d8b76e24865a8aa518d6a4713981453c5f2aca15c0"
+            },
+            "source": "/root/private_data/guoxin-hackathon-20261023-session004/scripts/recon2reason_runtime.py",
+            "sha256": "0edc33da22c07a804c93047f918a4a39a58af90997390c49695d8b39a891d85b",
+            "size": 34890,
+            "before_after_match": true,
+            "evidence_type": "export_manifest_before_after_hash_only",
+            "source_payload_reconstructed": false
+          }
+        },
+        "environment004": {
+          "platform_instance_id": "2112186448839770114",
+          "region_and_resource_group": {
+            "region": "华中一区【A区】",
+            "group": "113 / hx1hgbwnormal"
+          },
+          "cpu_memory_storage": {
+            "allocated_cpu_cores": 15,
+            "allocated_memory_gb": 59,
+            "storage_gb": null
+          },
+          "actual_device_name_count_and_vram": null,
+          "platform_screenshots": [
+            {
+              "path": "evidence/session004/screenshots/all-notebooks-stopped-20261023.png",
+              "bytes": 72900,
+              "sha256": "8bb1411be69da7fb3bb15d55bee7e30ff64c59d3ebb737c031801af1f7246e27",
+              "captured_utc": "2026-10-23T12:22:20.179036+00:00"
+            },
+            {
+              "path": "evidence/session004/screenshots/remaining-cardhours-20261023.png",
+              "bytes": 69694,
+              "sha256": "e982191b4f7392bbb48b3c15f0f24af94dcfaf14a2034894c93d210654cd2c12",
+              "captured_utc": "2026-10-23T12:28:49.526923+00:00"
+            }
+          ],
+          "image_id_and_version": {
+            "id": "2071293281204580354",
+            "version_id": "2082674417745739777",
+            "display_tag": "jupyter-vllm018-ubuntu22.04-dtk26.04-qwen3.6-20260423"
+          },
+          "image_registry_repository_tag": null,
+          "image_access_method": "Account image is selectable in SCNet Notebook; reviewer access not independently verified",
+          "env_log_path": "evidence/session004/remote-final-001/project/evidence/session004/recon-sglang-matrix-A-001/client-identity.log",
+          "env_log_sha256": "cb19fd4213b934cc18fd6011831e6a82fb99abefa36d5dc74b4b876af63d9a66",
+          "python_executable_and_version": {
+            "client_executable": "/root/private_data/sglang-client-004c/bin/python",
+            "server_executable": "/usr/bin/python",
+            "client_version": "3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0]",
+            "server_python_version": null
+          },
+          "package_versions_and_roots": {
+            "torch": {
+              "version": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "transformers": {
+              "version": "5.5.0",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "vllm": {
+              "version": "0.18.1+das.fa71803.dtk2604",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "triton": {
+              "version": "3.6.0+gitc73250c4.staging",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            }
+          },
+          "native_before_after_manifest": null,
+          "dtk_and_hip": null,
+          "checkpoint_path_revision_and_verification": {
+            "path": "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+            "full_weight_SHA_verified_in_this_run": false,
+            "revision": null
+          },
+          "actual_precision_tp_context_port": {
+            "precision": "BF16",
+            "TP": 1,
+            "max_model_len": 32768,
+            "host": "127.0.0.1",
+            "port": 30000,
+            "max_num_seqs": 16
+          },
+          "service_mapping_or_none": null,
+          "SGLang_client": {
+            "version": "0.5.12",
+            "root": "/root/private_data/sglang-client-004c/lib/python3.10/site-packages/sglang",
+            "server_framework": "vllm"
+          },
+          "platform_allocation": {
+            "card": "BW 64GB",
+            "count": 1,
+            "scope": "visible platform allocation; not an independent runtime device inventory"
+          },
+          "platform_checkpoint": {
+            "path": "evidence/platform-checkpoint-20261023-004.json",
+            "bytes": 3348,
+            "sha256": "18c756885773696a834b7f44c82a21ecc2f35e18e3005010d173dbc98fba3148"
+          }
+        },
+        "smoke004": {
+          "kind": "multimodal_generation",
+          "input_manifest_path": "fixtures/smoke-session004/manifest.json",
+          "input_manifest_sha256": "d3b626ec28ced4507c41b026570852d5daf802f39e2c88e6ce2108c49acd1900",
+          "source_and_task_hashes": null,
+          "raw_output_paths_and_hashes": [
+            {
+              "path": "evidence/session004/remote-final-001/project/tasks/recon2reason-bw-vllm/smoke.log",
+              "bytes": 9911,
+              "sha256": "9c2177d0da40cae48ee741dd4ec928a0574de89055fa6592cf2127d1ed12bbb5"
+            }
+          ],
+          "functional_contract": "health/models/single_image/multiple_images/multiturn_first/multiturn_followup/streaming_image; nonempty transport output, not answer correctness",
+          "passed_cases_and_failed_cases": [
+            {
+              "case": "health",
+              "passed": true
+            },
+            {
+              "case": "models",
+              "passed": true
+            },
+            {
+              "case": "single_image",
+              "passed": true
+            },
+            {
+              "case": "multiple_images",
+              "passed": true
+            },
+            {
+              "case": "multiturn_first",
+              "passed": true
+            },
+            {
+              "case": "multiturn_followup",
+              "passed": true
+            },
+            {
+              "case": "streaming_image",
+              "passed": true
+            }
+          ],
+          "finish_reason_or_not_applicable": null,
+          "truncation_and_error_scope": null,
+          "usage_or_vector_or_timestamp_integrity": "Smoke raw replies retained. Matrix output_lens may fall back to requested lengths; no per-request exact-token/SSE certification.",
+          "functional_passed": true,
+          "official_accuracy_implied": false,
+          "functional_summary": {
+            "run_id": "2a5aa189359a4aa6a422f89362489147",
+            "utc": "2026-10-23T09:54:33.280337+00:00",
+            "case": "summary",
+            "functional_checks_passed": true,
+            "official_accuracy": false,
+            "results": [
+              {
+                "case": "health",
+                "passed": true
+              },
+              {
+                "case": "models",
+                "passed": true
+              },
+              {
+                "case": "single_image",
+                "passed": true
+              },
+              {
+                "case": "multiple_images",
+                "passed": true
+              },
+              {
+                "case": "multiturn_first",
+                "passed": true
+              },
+              {
+                "case": "multiturn_followup",
+                "passed": true
+              },
+              {
+                "case": "streaming_image",
+                "passed": true
+              }
+            ]
+          },
+          "input_images": [
+            {
+              "path": "/root/private_data/guoxin-hackathon-20261023-session004/fixtures/smoke-session004/recon_red.png",
+              "sha256": "d51437c5bb459fb25f47a9e52e650b3f815d1d9900ec63b651f338e6e73c7165",
+              "bytes": 2915
+            },
+            {
+              "path": "/root/private_data/guoxin-hackathon-20261023-session004/fixtures/smoke-session004/recon_blue.png",
+              "sha256": "13588c097bf637a09c571e441392c40f406b81ca0a50e30b3ee2f336585fec2f",
+              "bytes": 3463
+            }
+          ]
+        },
+        "accuracy004": {
+          "evaluator_path_and_sha256": null,
+          "official_material_source": null,
+          "selfcheck_command_and_log": null,
+          "baseline_path_and_sha256": null,
+          "dataset_reference_manifest_and_revision": null,
+          "preprocessing_decoding_and_parser_contract": null,
+          "metric_names_and_difference_formula": null,
+          "raw_predictions_path_and_sha256": null,
+          "verify_result_path_and_sha256": null,
+          "per_metric_score_baseline_tolerance_and_judgment": null,
+          "official_accuracy_verified": false
+        },
+        "performance004": {
+          "task_kind": "multimodal_generation",
+          "applicable_official_method": "template-shaped SGLang image client; official dataset/total input token definition and acceptance remain unverified",
+          "client_distribution_version_and_source_hash": {
+            "version": "0.5.12",
+            "driver_sha256": "ff8eef852e19f336e99884cc031353627ca304c6a7534c22375116758a850000",
+            "upstream_sources": [
+              {
+                "path": "__init__.py",
+                "bytes": 2820,
+                "sha256": "ffda05a78218ed47a7fad82a86c8a1068ac6549cb0ddecf9959fe8752034b9c8"
+              },
+              {
+                "path": "bench_serving.py",
+                "bytes": 90674,
+                "sha256": "129e40b9e361be192306a9df56df41507f0397d5768696db3a9b994421daa259"
+              },
+              {
+                "path": "benchmark/datasets/image.py",
+                "bytes": 10610,
+                "sha256": "8a9a1c8cd9f1818b76b06c01aedf7283de999a84baf115f00c46caf52ed3003c"
+              },
+              {
+                "path": "benchmark/datasets/common.py",
+                "bytes": 3150,
+                "sha256": "5f00c71b31cfcc3e446eed7ce0774650c2b684f46f80cc091e995d8504900b08"
+              },
+              {
+                "path": "benchmark/utils.py",
+                "bytes": 4935,
+                "sha256": "437c615343bb4d2d006e62278fbe579022618c71d5c6f5e33581e768a9aaf2c0"
+              }
+            ],
+            "identity_log": {
+              "path": "evidence/session004/remote-final-001/project/evidence/session004/recon-sglang-matrix-A-001/client-identity.log",
+              "bytes": 594,
+              "sha256": "cb19fd4213b934cc18fd6011831e6a82fb99abefa36d5dc74b4b876af63d9a66"
+            },
+            "final_source_manifest": {
+              "path": "evidence/session004/remote-final-001/export-manifest.json",
+              "bytes": 208071,
+              "sha256": "eb5ab4603f1f557d4d07d9d8b76e24865a8aa518d6a4713981453c5f2aca15c0"
+            }
+          },
+          "client_and_server_python_paths": {
+            "client": "/root/private_data/sglang-client-004c/bin/python",
+            "server": "/usr/bin/python"
+          },
+          "cache_warmup_and_round_policy": {
+            "two_rounds": true,
+            "scored_round": 2,
+            "warmups": 8,
+            "warmup_output_target": 32,
+            "separate_server_restart_between_rows": false,
+            "cold_cache_independently_verified": false
+          },
+          "input_preprocessing_and_total_length_definition": {
+            "text_targets": [
+              4096,
+              16384
+            ],
+            "one_random_JPEG_pixels": [
+              1024,
+              1024
+            ],
+            "seed": 1,
+            "length_boundary": "generated text target; image/chat tokens and detokenization are separate"
+          },
+          "per_load_argv_and_native_raw_paths": {
+            "producer_run": {
+              "path": "evidence/session004/remote-final-001/project/evidence/session004/recon-sglang-matrix-A-001/run.json",
+              "bytes": 32974,
+              "sha256": "cb03b5f5aa591a81bd234ae6b45a51aa89a7bab32e3bfbb3e89ff3ff4cbc8ecd"
+            },
+            "rows": [
+              {
+                "name": "round1_4096_1024_c8",
+                "argv": null,
+                "command": [
+                  "/root/private_data/sglang-client-004c/bin/python",
+                  "-B",
+                  "-m",
+                  "sglang.bench_serving",
+                  "--backend",
+                  "sglang-oai-chat",
+                  "--host",
+                  "127.0.0.1",
+                  "--port",
+                  "30000",
+                  "--model",
+                  "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+                  "--served-model-name",
+                  "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+                  "--tokenizer",
+                  "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+                  "--dataset-name",
+                  "image",
+                  "--image-count",
+                  "1",
+                  "--image-resolution",
+                  "1024x1024",
+                  "--image-content",
+                  "random",
+                  "--image-format",
+                  "jpeg",
+                  "--random-input-len",
+                  "4096",
+                  "--random-output-len",
+                  "1024",
+                  "--random-range-ratio",
+                  "1",
+                  "--seed",
+                  "1",
+                  "--max-concurrency",
+                  "8",
+                  "--num-prompts",
+                  "16",
+                  "--request-rate",
+                  "inf",
+                  "--warmup-requests",
+                  "1",
+                  "--ready-check-timeout-sec",
+                  "0",
+                  "--extra-request-body",
+                  "{\"temperature\":0,\"ignore_eos\":true,\"stream_options\":{\"include_usage\":true}}",
+                  "--output-details",
+                  "--output-file",
+                  "/root/private_data/guoxin-hackathon-20261023-session004/evidence/session004/recon-sglang-matrix-A-001/native/round1_4096_1024_c8.jsonl"
+                ],
+                "native_result": "/root/private_data/guoxin-hackathon-20261023-session004/evidence/session004/recon-sglang-matrix-A-001/native/round1_4096_1024_c8.jsonl"
+              },
+              {
+                "name": "round2_4096_1024_c8",
+                "argv": null,
+                "command": [
+                  "/root/private_data/sglang-client-004c/bin/python",
+                  "-B",
+                  "-m",
+                  "sglang.bench_serving",
+                  "--backend",
+                  "sglang-oai-chat",
+                  "--host",
+                  "127.0.0.1",
+                  "--port",
+                  "30000",
+                  "--model",
+                  "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+                  "--served-model-name",
+                  "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+                  "--tokenizer",
+                  "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+                  "--dataset-name",
+                  "image",
+                  "--image-count",
+                  "1",
+                  "--image-resolution",
+                  "1024x1024",
+                  "--image-content",
+                  "random",
+                  "--image-format",
+                  "jpeg",
+                  "--random-input-len",
+                  "4096",
+                  "--random-output-len",
+                  "1024",
+                  "--random-range-ratio",
+                  "1",
+                  "--seed",
+                  "1",
+                  "--max-concurrency",
+                  "8",
+                  "--num-prompts",
+                  "16",
+                  "--request-rate",
+                  "inf",
+                  "--warmup-requests",
+                  "1",
+                  "--ready-check-timeout-sec",
+                  "0",
+                  "--extra-request-body",
+                  "{\"temperature\":0,\"ignore_eos\":true,\"stream_options\":{\"include_usage\":true}}",
+                  "--output-details",
+                  "--output-file",
+                  "/root/private_data/guoxin-hackathon-20261023-session004/evidence/session004/recon-sglang-matrix-A-001/native/round2_4096_1024_c8.jsonl"
+                ],
+                "native_result": "/root/private_data/guoxin-hackathon-20261023-session004/evidence/session004/recon-sglang-matrix-A-001/native/round2_4096_1024_c8.jsonl"
+              },
+              {
+                "name": "round1_4096_1024_c64",
+                "argv": null,
+                "command": [
+                  "/root/private_data/sglang-client-004c/bin/python",
+                  "-B",
+                  "-m",
+                  "sglang.bench_serving",
+                  "--backend",
+                  "sglang-oai-chat",
+                  "--host",
+                  "127.0.0.1",
+                  "--port",
+                  "30000",
+                  "--model",
+                  "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+                  "--served-model-name",
+                  "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+                  "--tokenizer",
+                  "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+                  "--dataset-name",
+                  "image",
+                  "--image-count",
+                  "1",
+                  "--image-resolution",
+                  "1024x1024",
+                  "--image-content",
+                  "random",
+                  "--image-format",
+                  "jpeg",
+                  "--random-input-len",
+                  "4096",
+                  "--random-output-len",
+                  "1024",
+                  "--random-range-ratio",
+                  "1",
+                  "--seed",
+                  "1",
+                  "--max-concurrency",
+                  "64",
+                  "--num-prompts",
+                  "128",
+                  "--request-rate",
+                  "inf",
+                  "--warmup-requests",
+                  "1",
+                  "--ready-check-timeout-sec",
+                  "0",
+                  "--extra-request-body",
+                  "{\"temperature\":0,\"ignore_eos\":true,\"stream_options\":{\"include_usage\":true}}",
+                  "--output-details",
+                  "--output-file",
+                  "/root/private_data/guoxin-hackathon-20261023-session004/evidence/session004/recon-sglang-matrix-A-001/native/round1_4096_1024_c64.jsonl"
+                ],
+                "native_result": "/root/private_data/guoxin-hackathon-20261023-session004/evidence/session004/recon-sglang-matrix-A-001/native/round1_4096_1024_c64.jsonl"
+              },
+              {
+                "name": "round2_4096_1024_c64",
+                "argv": null,
+                "command": [
+                  "/root/private_data/sglang-client-004c/bin/python",
+                  "-B",
+                  "-m",
+                  "sglang.bench_serving",
+                  "--backend",
+                  "sglang-oai-chat",
+                  "--host",
+                  "127.0.0.1",
+                  "--port",
+                  "30000",
+                  "--model",
+                  "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+                  "--served-model-name",
+                  "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+                  "--tokenizer",
+                  "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+                  "--dataset-name",
+                  "image",
+                  "--image-count",
+                  "1",
+                  "--image-resolution",
+                  "1024x1024",
+                  "--image-content",
+                  "random",
+                  "--image-format",
+                  "jpeg",
+                  "--random-input-len",
+                  "4096",
+                  "--random-output-len",
+                  "1024",
+                  "--random-range-ratio",
+                  "1",
+                  "--seed",
+                  "1",
+                  "--max-concurrency",
+                  "64",
+                  "--num-prompts",
+                  "128",
+                  "--request-rate",
+                  "inf",
+                  "--warmup-requests",
+                  "1",
+                  "--ready-check-timeout-sec",
+                  "0",
+                  "--extra-request-body",
+                  "{\"temperature\":0,\"ignore_eos\":true,\"stream_options\":{\"include_usage\":true}}",
+                  "--output-details",
+                  "--output-file",
+                  "/root/private_data/guoxin-hackathon-20261023-session004/evidence/session004/recon-sglang-matrix-A-001/native/round2_4096_1024_c64.jsonl"
+                ],
+                "native_result": "/root/private_data/guoxin-hackathon-20261023-session004/evidence/session004/recon-sglang-matrix-A-001/native/round2_4096_1024_c64.jsonl"
+              },
+              {
+                "name": "round1_16384_1024_c8",
+                "argv": null,
+                "command": [
+                  "/root/private_data/sglang-client-004c/bin/python",
+                  "-B",
+                  "-m",
+                  "sglang.bench_serving",
+                  "--backend",
+                  "sglang-oai-chat",
+                  "--host",
+                  "127.0.0.1",
+                  "--port",
+                  "30000",
+                  "--model",
+                  "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+                  "--served-model-name",
+                  "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+                  "--tokenizer",
+                  "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+                  "--dataset-name",
+                  "image",
+                  "--image-count",
+                  "1",
+                  "--image-resolution",
+                  "1024x1024",
+                  "--image-content",
+                  "random",
+                  "--image-format",
+                  "jpeg",
+                  "--random-input-len",
+                  "16384",
+                  "--random-output-len",
+                  "1024",
+                  "--random-range-ratio",
+                  "1",
+                  "--seed",
+                  "1",
+                  "--max-concurrency",
+                  "8",
+                  "--num-prompts",
+                  "16",
+                  "--request-rate",
+                  "inf",
+                  "--warmup-requests",
+                  "1",
+                  "--ready-check-timeout-sec",
+                  "0",
+                  "--extra-request-body",
+                  "{\"temperature\":0,\"ignore_eos\":true,\"stream_options\":{\"include_usage\":true}}",
+                  "--output-details",
+                  "--output-file",
+                  "/root/private_data/guoxin-hackathon-20261023-session004/evidence/session004/recon-sglang-matrix-A-001/native/round1_16384_1024_c8.jsonl"
+                ],
+                "native_result": "/root/private_data/guoxin-hackathon-20261023-session004/evidence/session004/recon-sglang-matrix-A-001/native/round1_16384_1024_c8.jsonl"
+              },
+              {
+                "name": "round2_16384_1024_c8",
+                "argv": null,
+                "command": [
+                  "/root/private_data/sglang-client-004c/bin/python",
+                  "-B",
+                  "-m",
+                  "sglang.bench_serving",
+                  "--backend",
+                  "sglang-oai-chat",
+                  "--host",
+                  "127.0.0.1",
+                  "--port",
+                  "30000",
+                  "--model",
+                  "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+                  "--served-model-name",
+                  "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+                  "--tokenizer",
+                  "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+                  "--dataset-name",
+                  "image",
+                  "--image-count",
+                  "1",
+                  "--image-resolution",
+                  "1024x1024",
+                  "--image-content",
+                  "random",
+                  "--image-format",
+                  "jpeg",
+                  "--random-input-len",
+                  "16384",
+                  "--random-output-len",
+                  "1024",
+                  "--random-range-ratio",
+                  "1",
+                  "--seed",
+                  "1",
+                  "--max-concurrency",
+                  "8",
+                  "--num-prompts",
+                  "16",
+                  "--request-rate",
+                  "inf",
+                  "--warmup-requests",
+                  "1",
+                  "--ready-check-timeout-sec",
+                  "0",
+                  "--extra-request-body",
+                  "{\"temperature\":0,\"ignore_eos\":true,\"stream_options\":{\"include_usage\":true}}",
+                  "--output-details",
+                  "--output-file",
+                  "/root/private_data/guoxin-hackathon-20261023-session004/evidence/session004/recon-sglang-matrix-A-001/native/round2_16384_1024_c8.jsonl"
+                ],
+                "native_result": "/root/private_data/guoxin-hackathon-20261023-session004/evidence/session004/recon-sglang-matrix-A-001/native/round2_16384_1024_c8.jsonl"
+              },
+              {
+                "name": "round1_16384_1024_c64",
+                "argv": null,
+                "command": [
+                  "/root/private_data/sglang-client-004c/bin/python",
+                  "-B",
+                  "-m",
+                  "sglang.bench_serving",
+                  "--backend",
+                  "sglang-oai-chat",
+                  "--host",
+                  "127.0.0.1",
+                  "--port",
+                  "30000",
+                  "--model",
+                  "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+                  "--served-model-name",
+                  "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+                  "--tokenizer",
+                  "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+                  "--dataset-name",
+                  "image",
+                  "--image-count",
+                  "1",
+                  "--image-resolution",
+                  "1024x1024",
+                  "--image-content",
+                  "random",
+                  "--image-format",
+                  "jpeg",
+                  "--random-input-len",
+                  "16384",
+                  "--random-output-len",
+                  "1024",
+                  "--random-range-ratio",
+                  "1",
+                  "--seed",
+                  "1",
+                  "--max-concurrency",
+                  "64",
+                  "--num-prompts",
+                  "128",
+                  "--request-rate",
+                  "inf",
+                  "--warmup-requests",
+                  "1",
+                  "--ready-check-timeout-sec",
+                  "0",
+                  "--extra-request-body",
+                  "{\"temperature\":0,\"ignore_eos\":true,\"stream_options\":{\"include_usage\":true}}",
+                  "--output-details",
+                  "--output-file",
+                  "/root/private_data/guoxin-hackathon-20261023-session004/evidence/session004/recon-sglang-matrix-A-001/native/round1_16384_1024_c64.jsonl"
+                ],
+                "native_result": "/root/private_data/guoxin-hackathon-20261023-session004/evidence/session004/recon-sglang-matrix-A-001/native/round1_16384_1024_c64.jsonl"
+              },
+              {
+                "name": "round2_16384_1024_c64",
+                "argv": null,
+                "command": [
+                  "/root/private_data/sglang-client-004c/bin/python",
+                  "-B",
+                  "-m",
+                  "sglang.bench_serving",
+                  "--backend",
+                  "sglang-oai-chat",
+                  "--host",
+                  "127.0.0.1",
+                  "--port",
+                  "30000",
+                  "--model",
+                  "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+                  "--served-model-name",
+                  "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+                  "--tokenizer",
+                  "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+                  "--dataset-name",
+                  "image",
+                  "--image-count",
+                  "1",
+                  "--image-resolution",
+                  "1024x1024",
+                  "--image-content",
+                  "random",
+                  "--image-format",
+                  "jpeg",
+                  "--random-input-len",
+                  "16384",
+                  "--random-output-len",
+                  "1024",
+                  "--random-range-ratio",
+                  "1",
+                  "--seed",
+                  "1",
+                  "--max-concurrency",
+                  "64",
+                  "--num-prompts",
+                  "128",
+                  "--request-rate",
+                  "inf",
+                  "--warmup-requests",
+                  "1",
+                  "--ready-check-timeout-sec",
+                  "0",
+                  "--extra-request-body",
+                  "{\"temperature\":0,\"ignore_eos\":true,\"stream_options\":{\"include_usage\":true}}",
+                  "--output-details",
+                  "--output-file",
+                  "/root/private_data/guoxin-hackathon-20261023-session004/evidence/session004/recon-sglang-matrix-A-001/native/round2_16384_1024_c64.jsonl"
+                ],
+                "native_result": "/root/private_data/guoxin-hackathon-20261023-session004/evidence/session004/recon-sglang-matrix-A-001/native/round2_16384_1024_c64.jsonl"
+              }
+            ]
+          },
+          "per_load_requested_completed_failed_counts": [
+            {
+              "name": "round1_4096_1024_c8",
+              "requested": 16,
+              "producer_reported_completed": 16,
+              "client_errors_array_empty": true,
+              "empty_generated_texts": 0,
+              "strict_row_eligible": true
+            },
+            {
+              "name": "round2_4096_1024_c8",
+              "requested": 16,
+              "producer_reported_completed": 16,
+              "client_errors_array_empty": true,
+              "empty_generated_texts": 0,
+              "strict_row_eligible": true
+            },
+            {
+              "name": "round1_4096_1024_c64",
+              "requested": 128,
+              "producer_reported_completed": 128,
+              "client_errors_array_empty": true,
+              "empty_generated_texts": 0,
+              "strict_row_eligible": true
+            },
+            {
+              "name": "round2_4096_1024_c64",
+              "requested": 128,
+              "producer_reported_completed": 128,
+              "client_errors_array_empty": true,
+              "empty_generated_texts": 0,
+              "strict_row_eligible": true
+            },
+            {
+              "name": "round1_16384_1024_c8",
+              "requested": 16,
+              "producer_reported_completed": 16,
+              "client_errors_array_empty": true,
+              "empty_generated_texts": 0,
+              "strict_row_eligible": true
+            },
+            {
+              "name": "round2_16384_1024_c8",
+              "requested": 16,
+              "producer_reported_completed": 16,
+              "client_errors_array_empty": true,
+              "empty_generated_texts": 1,
+              "strict_row_eligible": false
+            },
+            {
+              "name": "round1_16384_1024_c64",
+              "requested": 128,
+              "producer_reported_completed": 128,
+              "client_errors_array_empty": true,
+              "empty_generated_texts": 7,
+              "strict_row_eligible": false
+            },
+            {
+              "name": "round2_16384_1024_c64",
+              "requested": 128,
+              "producer_reported_completed": 128,
+              "client_errors_array_empty": true,
+              "empty_generated_texts": 4,
+              "strict_row_eligible": false
+            }
+          ],
+          "per_load_durations_and_metrics": [
+            {
+              "name": "round1_4096_1024_c8",
+              "round": 1,
+              "scored_round": false,
+              "text_target_tokens": 4096,
+              "concurrency": 8,
+              "expected_requests": 16,
+              "original_producer_status": "invalid_native_result",
+              "original_producer_result_error": "Infinity",
+              "process_status": "exited",
+              "exit_code": 0,
+              "child_reaped": true,
+              "client_wall_seconds": 156.231193,
+              "eligible_client_report": true,
+              "analysis_issues": [],
+              "metrics": {
+                "tag": null,
+                "backend": "sglang-oai-chat",
+                "dataset_name": "image",
+                "request_rate": "inf",
+                "max_concurrency": 8,
+                "sharegpt_output_len": null,
+                "random_input_len": 4096,
+                "random_output_len": 1024,
+                "random_range_ratio": 1.0,
+                "server_info": null,
+                "duration": 111.25628708675504,
+                "completed": 16,
+                "total_input_tokens": 69916,
+                "total_input_text_tokens": 69100,
+                "total_input_vision_tokens": 816,
+                "total_output_tokens": 16384,
+                "total_output_tokens_retokenized": 1499,
+                "request_throughput": 0.1438120974459949,
+                "input_throughput": 628.4229128146362,
+                "output_throughput": 147.26358778469879,
+                "total_throughput": 775.686500599335,
+                "mean_e2e_latency_ms": 55445.35226980224,
+                "median_e2e_latency_ms": 55392.05981884152,
+                "std_e2e_latency_ms": 868.4446636206496,
+                "p90_e2e_latency_ms": 56586.67333028279,
+                "p99_e2e_latency_ms": 57393.97761581931,
+                "mean_ttft_ms": 2685.25369479903,
+                "median_ttft_ms": 2839.026565430686,
+                "std_ttft_ms": 1123.1989782195187,
+                "p99_ttft_ms": 4952.019530162215,
+                "mean_tpot_ms": 51.57389890029639,
+                "median_tpot_ms": 51.43392096430187,
+                "std_tpot_ms": 0.9859078828691079,
+                "p99_tpot_ms": 53.08294982134109,
+                "mean_itl_ms": 68.93552784616,
+                "median_itl_ms": 49.32060092687607,
+                "std_itl_ms": 70.80140848664229,
+                "p95_itl_ms": 265.5566248111427,
+                "p99_itl_ms": 383.72812055051327,
+                "concurrency": 7.973712403552315,
+                "accept_length": null,
+                "max_output_tokens_per_s": 160.0,
+                "max_concurrent_requests": 13
+              },
+              "native_artifact": {
+                "path": "evidence/session004/remote-final-001/project/evidence/session004/recon-sglang-matrix-A-001/native/round1_4096_1024_c8.jsonl",
+                "bytes": 41220,
+                "sha256": "d9ab43cbc0850745cc8dba139810a93e7bc0f9d7dd0861e11cdd103386d9839e"
+              },
+              "native_bytes_unchanged_from_intermediate": true,
+              "empty_sample_details": []
+            },
+            {
+              "name": "round2_4096_1024_c8",
+              "round": 2,
+              "scored_round": true,
+              "text_target_tokens": 4096,
+              "concurrency": 8,
+              "expected_requests": 16,
+              "original_producer_status": "invalid_native_result",
+              "original_producer_result_error": "Infinity",
+              "process_status": "exited",
+              "exit_code": 0,
+              "child_reaped": true,
+              "client_wall_seconds": 160.955256,
+              "eligible_client_report": true,
+              "analysis_issues": [],
+              "metrics": {
+                "tag": null,
+                "backend": "sglang-oai-chat",
+                "dataset_name": "image",
+                "request_rate": "inf",
+                "max_concurrency": 8,
+                "sharegpt_output_len": null,
+                "random_input_len": 4096,
+                "random_output_len": 1024,
+                "random_range_ratio": 1.0,
+                "server_info": null,
+                "duration": 110.46816708985716,
+                "completed": 16,
+                "total_input_tokens": 69934,
+                "total_input_text_tokens": 69118,
+                "total_input_vision_tokens": 816,
+                "total_output_tokens": 16384,
+                "total_output_tokens_retokenized": 1720,
+                "request_throughput": 0.14483810514376744,
+                "input_throughput": 633.0692528202644,
+                "output_throughput": 148.31421966721786,
+                "total_throughput": 781.3834724874823,
+                "mean_e2e_latency_ms": 55070.68742293632,
+                "median_e2e_latency_ms": 54989.75752759725,
+                "std_e2e_latency_ms": 1538.905079535764,
+                "p90_e2e_latency_ms": 57207.57625158876,
+                "p99_e2e_latency_ms": 57959.23374046106,
+                "mean_ttft_ms": 1963.9933175349142,
+                "median_ttft_ms": 1458.302180049941,
+                "std_ttft_ms": 1122.8814721280808,
+                "p99_ttft_ms": 4493.269640300423,
+                "mean_tpot_ms": 51.91270196031418,
+                "median_tpot_ms": 52.286810255522965,
+                "std_tpot_ms": 0.9125297487062578,
+                "p99_tpot_ms": 53.085115650611385,
+                "mean_itl_ms": 65.87278475107755,
+                "median_itl_ms": 49.55249582417309,
+                "std_itl_ms": 60.566899883748235,
+                "p95_itl_ms": 246.4395068353042,
+                "p99_itl_ms": 336.2396875815466,
+                "concurrency": 7.9763340153028,
+                "accept_length": null,
+                "max_output_tokens_per_s": 160.0,
+                "max_concurrent_requests": 10
+              },
+              "native_artifact": {
+                "path": "evidence/session004/remote-final-001/project/evidence/session004/recon-sglang-matrix-A-001/native/round2_4096_1024_c8.jsonl",
+                "bytes": 47061,
+                "sha256": "ebe44e75463ba506049e8396490efdb7106da6b591522b4ad5c480fd78858c56"
+              },
+              "native_bytes_unchanged_from_intermediate": true,
+              "empty_sample_details": []
+            },
+            {
+              "name": "round1_4096_1024_c64",
+              "round": 1,
+              "scored_round": false,
+              "text_target_tokens": 4096,
+              "concurrency": 64,
+              "expected_requests": 128,
+              "original_producer_status": "invalid_native_result",
+              "original_producer_result_error": "Infinity",
+              "process_status": "exited",
+              "exit_code": 0,
+              "child_reaped": true,
+              "client_wall_seconds": 619.059157,
+              "eligible_client_report": true,
+              "analysis_issues": [],
+              "metrics": {
+                "tag": null,
+                "backend": "sglang-oai-chat",
+                "dataset_name": "image",
+                "request_rate": "inf",
+                "max_concurrency": 64,
+                "sharegpt_output_len": null,
+                "random_input_len": 4096,
+                "random_output_len": 1024,
+                "random_range_ratio": 1.0,
+                "server_info": null,
+                "duration": 486.5785878938623,
+                "completed": 128,
+                "total_input_tokens": 559308,
+                "total_input_text_tokens": 552780,
+                "total_input_vision_tokens": 6528,
+                "total_output_tokens": 131072,
+                "total_output_tokens_retokenized": 13620,
+                "request_throughput": 0.2630613084600441,
+                "input_throughput": 1149.471049313831,
+                "output_throughput": 269.37477986308517,
+                "total_throughput": 1418.8458291769161,
+                "mean_e2e_latency_ms": 198780.937152158,
+                "median_e2e_latency_ms": 242465.22869192995,
+                "std_e2e_latency_ms": 64653.61619641412,
+                "p90_e2e_latency_ms": 243396.99109508656,
+                "p99_e2e_latency_ms": 250421.3655591011,
+                "mean_ttft_ms": 139825.67695561738,
+                "median_ttft_ms": 183242.25567048416,
+                "std_ttft_ms": 64748.5787799599,
+                "p99_ttft_ms": 190967.3661679309,
+                "mean_tpot_ms": 57.62977536318731,
+                "median_tpot_ms": 58.072298675054505,
+                "std_tpot_ms": 1.5616801599781152,
+                "p99_tpot_ms": 58.80014909815065,
+                "mean_itl_ms": 88.96655579135795,
+                "median_itl_ms": 50.42209196835756,
+                "std_itl_ms": 93.14810306588276,
+                "p95_itl_ms": 339.38294081017375,
+                "p99_itl_ms": 400.0964118447155,
+                "concurrency": 52.29157342416048,
+                "accept_length": null,
+                "max_output_tokens_per_s": 336.0,
+                "max_concurrent_requests": 66
+              },
+              "native_artifact": {
+                "path": "evidence/session004/remote-final-001/project/evidence/session004/recon-sglang-matrix-A-001/native/round1_4096_1024_c64.jsonl",
+                "bytes": 358295,
+                "sha256": "f73ccedb26bb2df934c0740ef10ad1c366ef1ddab3efde7a908c6bff1e3d98e6"
+              },
+              "native_bytes_unchanged_from_intermediate": true,
+              "empty_sample_details": []
+            },
+            {
+              "name": "round2_4096_1024_c64",
+              "round": 2,
+              "scored_round": true,
+              "text_target_tokens": 4096,
+              "concurrency": 64,
+              "expected_requests": 128,
+              "original_producer_status": "invalid_native_result",
+              "original_producer_result_error": "Infinity",
+              "process_status": "exited",
+              "exit_code": 0,
+              "child_reaped": true,
+              "client_wall_seconds": 608.173795,
+              "eligible_client_report": true,
+              "analysis_issues": [],
+              "metrics": {
+                "tag": null,
+                "backend": "sglang-oai-chat",
+                "dataset_name": "image",
+                "request_rate": "inf",
+                "max_concurrency": 64,
+                "sharegpt_output_len": null,
+                "random_input_len": 4096,
+                "random_output_len": 1024,
+                "random_range_ratio": 1.0,
+                "server_info": null,
+                "duration": 486.626683363691,
+                "completed": 128,
+                "total_input_tokens": 559600,
+                "total_input_text_tokens": 553072,
+                "total_input_vision_tokens": 6528,
+                "total_output_tokens": 131072,
+                "total_output_tokens_retokenized": 14801,
+                "request_throughput": 0.263035308946132,
+                "input_throughput": 1149.9574912988708,
+                "output_throughput": 269.34815636083914,
+                "total_throughput": 1419.3056476597098,
+                "mean_e2e_latency_ms": 198885.0157856723,
+                "median_e2e_latency_ms": 242105.25188408792,
+                "std_e2e_latency_ms": 64150.80671178029,
+                "p90_e2e_latency_ms": 243928.70030198246,
+                "p99_e2e_latency_ms": 251431.2069560308,
+                "mean_ttft_ms": 139972.6449816626,
+                "median_ttft_ms": 182774.8348196037,
+                "std_ttft_ms": 64451.987678090074,
+                "p99_ttft_ms": 191938.71004084125,
+                "mean_tpot_ms": 57.58785024829883,
+                "median_tpot_ms": 57.99397819617241,
+                "std_tpot_ms": 1.5348681061685345,
+                "p99_tpot_ms": 58.56820338588201,
+                "mean_itl_ms": 86.05820991320903,
+                "median_itl_ms": 50.49029225483537,
+                "std_itl_ms": 90.31295225787197,
+                "p95_itl_ms": 331.42985436134035,
+                "p99_itl_ms": 397.0121243037284,
+                "concurrency": 52.31378157194065,
+                "accept_length": null,
+                "max_output_tokens_per_s": 320.0,
+                "max_concurrent_requests": 66
+              },
+              "native_artifact": {
+                "path": "evidence/session004/remote-final-001/project/evidence/session004/recon-sglang-matrix-A-001/native/round2_4096_1024_c64.jsonl",
+                "bytes": 392225,
+                "sha256": "717e2b2c467883dd7a725c3bc2631469ed0fbd54598190e2153750b214d0374e"
+              },
+              "native_bytes_unchanged_from_intermediate": true,
+              "empty_sample_details": []
+            },
+            {
+              "name": "round1_16384_1024_c8",
+              "round": 1,
+              "scored_round": false,
+              "text_target_tokens": 16384,
+              "concurrency": 8,
+              "expected_requests": 16,
+              "original_producer_status": "invalid_native_result",
+              "original_producer_result_error": "Infinity",
+              "process_status": "exited",
+              "exit_code": 0,
+              "child_reaped": true,
+              "client_wall_seconds": 268.074816,
+              "eligible_client_report": true,
+              "analysis_issues": [],
+              "metrics": {
+                "tag": null,
+                "backend": "sglang-oai-chat",
+                "dataset_name": "image",
+                "request_rate": "inf",
+                "max_concurrency": 8,
+                "sharegpt_output_len": null,
+                "random_input_len": 16384,
+                "random_output_len": 1024,
+                "random_range_ratio": 1.0,
+                "server_info": null,
+                "duration": 211.0890087466687,
+                "completed": 16,
+                "total_input_tokens": 277192,
+                "total_input_text_tokens": 276376,
+                "total_input_vision_tokens": 816,
+                "total_output_tokens": 16384,
+                "total_output_tokens_retokenized": 1359,
+                "request_throughput": 0.07579740932509592,
+                "input_throughput": 1313.1522178526243,
+                "output_throughput": 77.61654714889822,
+                "total_throughput": 1390.7687650015225,
+                "mean_e2e_latency_ms": 104820.99523663055,
+                "median_e2e_latency_ms": 104293.70135441422,
+                "std_e2e_latency_ms": 22871.601524601112,
+                "p90_e2e_latency_ms": 135717.51146716997,
+                "p99_e2e_latency_ms": 145880.33423137385,
+                "mean_ttft_ms": 19519.533247861546,
+                "median_ttft_ms": 13428.056549513713,
+                "std_ttft_ms": 13821.198923412008,
+                "p99_ttft_ms": 51054.869097354815,
+                "mean_tpot_ms": 83.38363830769208,
+                "median_tpot_ms": 91.86563728366298,
+                "std_tpot_ms": 14.621655100547509,
+                "p99_tpot_ms": 97.75318051037449,
+                "mean_itl_ms": 336.2052557404709,
+                "median_itl_ms": 50.001021940261126,
+                "std_itl_ms": 452.8113852349744,
+                "p95_itl_ms": 1369.3466048222035,
+                "p99_itl_ms": 1488.1008979585022,
+                "concurrency": 7.945159881814815,
+                "accept_length": null,
+                "max_output_tokens_per_s": 154.0,
+                "max_concurrent_requests": 9
+              },
+              "native_artifact": {
+                "path": "evidence/session004/remote-final-001/project/evidence/session004/recon-sglang-matrix-A-001/native/round1_16384_1024_c8.jsonl",
+                "bytes": 37409,
+                "sha256": "7864a7ebd9ac85e3be0ca751bf5988f97e38d819090a91e7a98ecc1c96c1b651"
+              },
+              "native_bytes_unchanged_from_intermediate": true,
+              "empty_sample_details": []
+            },
+            {
+              "name": "round2_16384_1024_c8",
+              "round": 2,
+              "scored_round": true,
+              "text_target_tokens": 16384,
+              "concurrency": 8,
+              "expected_requests": 16,
+              "original_producer_status": "invalid_native_result",
+              "original_producer_result_error": "Infinity",
+              "process_status": "exited",
+              "exit_code": 0,
+              "child_reaped": true,
+              "client_wall_seconds": 264.964626,
+              "eligible_client_report": false,
+              "analysis_issues": [
+                "empty or non-string generated text"
+              ],
+              "metrics": {
+                "tag": null,
+                "backend": "sglang-oai-chat",
+                "dataset_name": "image",
+                "request_rate": "inf",
+                "max_concurrency": 8,
+                "sharegpt_output_len": null,
+                "random_input_len": 16384,
+                "random_output_len": 1024,
+                "random_range_ratio": 1.0,
+                "server_info": null,
+                "duration": 209.9049623371102,
+                "completed": 16,
+                "total_input_tokens": 276647,
+                "total_input_text_tokens": 275831,
+                "total_input_vision_tokens": 816,
+                "total_output_tokens": 16384,
+                "total_output_tokens_retokenized": 1432,
+                "request_throughput": 0.07622497258689762,
+                "input_throughput": 1317.9631244529664,
+                "output_throughput": 78.05437192898316,
+                "total_throughput": 1396.0174963819497,
+                "mean_e2e_latency_ms": 104208.21288632578,
+                "median_e2e_latency_ms": 103676.88098899089,
+                "std_e2e_latency_ms": 23470.76164674654,
+                "p90_e2e_latency_ms": 135898.8809469156,
+                "p99_e2e_latency_ms": 146009.74664506502,
+                "mean_ttft_ms": 18418.53173475829,
+                "median_ttft_ms": 12285.805769031867,
+                "std_ttft_ms": 14460.420231920276,
+                "p99_ttft_ms": 50731.84256574604,
+                "mean_tpot_ms": 83.86088089107282,
+                "median_tpot_ms": 92.31960365911974,
+                "std_tpot_ms": 15.275589614581145,
+                "p99_tpot_ms": 103.59240408157447,
+                "mean_itl_ms": 285.245109739383,
+                "median_itl_ms": 49.981307005509734,
+                "std_itl_ms": 421.10560854723224,
+                "p95_itl_ms": 1289.5214342279362,
+                "p99_itl_ms": 1493.0171919520944,
+                "concurrency": 7.943268170589773,
+                "accept_length": null,
+                "max_output_tokens_per_s": 160.0,
+                "max_concurrent_requests": 9
+              },
+              "native_artifact": {
+                "path": "evidence/session004/remote-final-001/project/evidence/session004/recon-sglang-matrix-A-001/native/round2_16384_1024_c8.jsonl",
+                "bytes": 39303,
+                "sha256": "7c4a7a70f91dfe2f31209cdea65b7648455edad9a42c251dde58fe1fb0a901dc"
+              },
+              "native_bytes_unchanged_from_intermediate": true,
+              "empty_sample_details": [
+                {
+                  "zero_based_index": 8,
+                  "ttft": 0.0,
+                  "itl_count": 0,
+                  "output_len": 1024,
+                  "error": ""
+                }
+              ]
+            },
+            {
+              "name": "round1_16384_1024_c64",
+              "round": 1,
+              "scored_round": false,
+              "text_target_tokens": 16384,
+              "concurrency": 64,
+              "expected_requests": 128,
+              "original_producer_status": "invalid_native_result",
+              "original_producer_result_error": "Infinity",
+              "process_status": "exited",
+              "exit_code": 0,
+              "child_reaped": true,
+              "client_wall_seconds": 1622.878336,
+              "eligible_client_report": false,
+              "analysis_issues": [
+                "empty or non-string generated text"
+              ],
+              "metrics": {
+                "tag": null,
+                "backend": "sglang-oai-chat",
+                "dataset_name": "image",
+                "request_rate": "inf",
+                "max_concurrency": 64,
+                "sharegpt_output_len": null,
+                "random_input_len": 16384,
+                "random_output_len": 1024,
+                "random_range_ratio": 1.0,
+                "server_info": null,
+                "duration": 1432.993228693027,
+                "completed": 128,
+                "total_input_tokens": 2214642,
+                "total_input_text_tokens": 2208114,
+                "total_input_vision_tokens": 6528,
+                "total_output_tokens": 131072,
+                "total_output_tokens_retokenized": 10686,
+                "request_throughput": 0.08932352047241941,
+                "input_throughput": 1545.465781453749,
+                "output_throughput": 91.46728496375748,
+                "total_throughput": 1636.9330664175066,
+                "mean_e2e_latency_ms": 599847.3387105514,
+                "median_e2e_latency_ms": 713230.4453044198,
+                "std_e2e_latency_ms": 179966.02449295385,
+                "p90_e2e_latency_ms": 724242.177973967,
+                "p99_e2e_latency_ms": 811204.8769474728,
+                "mean_ttft_ms": 413590.462240536,
+                "median_ttft_ms": 547473.619379336,
+                "std_ttft_ms": 202552.01197781542,
+                "p99_ttft_ms": 641483.0081349751,
+                "mean_tpot_ms": 182.0692829618919,
+                "median_tpot_ms": 166.0937381774471,
+                "std_tpot_ms": 104.65876178515416,
+                "p99_tpot_ms": 702.4368761190535,
+                "mean_itl_ms": 591.191714505064,
+                "median_itl_ms": 496.8021009117365,
+                "std_itl_ms": 509.7246152789893,
+                "p95_itl_ms": 1479.364699497819,
+                "p99_itl_ms": 1572.6171163469553,
+                "concurrency": 53.58047603963824,
+                "accept_length": null,
+                "max_output_tokens_per_s": 175.0,
+                "max_concurrent_requests": 65
+              },
+              "native_artifact": {
+                "path": "evidence/session004/remote-final-001/project/evidence/session004/recon-sglang-matrix-A-001/native/round1_16384_1024_c64.jsonl",
+                "bytes": 279012,
+                "sha256": "be08d0cd0dbe433fcd050656936ef5dfc880f16b5e195c6d95a121b7b5c1dead"
+              },
+              "native_bytes_unchanged_from_intermediate": null,
+              "empty_sample_details": [
+                {
+                  "zero_based_index": 2,
+                  "ttft": 0.0,
+                  "itl_count": 0,
+                  "output_len": 1024,
+                  "error": ""
+                },
+                {
+                  "zero_based_index": 26,
+                  "ttft": 0.0,
+                  "itl_count": 0,
+                  "output_len": 1024,
+                  "error": ""
+                },
+                {
+                  "zero_based_index": 47,
+                  "ttft": 0.0,
+                  "itl_count": 0,
+                  "output_len": 1024,
+                  "error": ""
+                },
+                {
+                  "zero_based_index": 70,
+                  "ttft": 0.0,
+                  "itl_count": 0,
+                  "output_len": 1024,
+                  "error": ""
+                },
+                {
+                  "zero_based_index": 95,
+                  "ttft": 0.0,
+                  "itl_count": 0,
+                  "output_len": 1024,
+                  "error": ""
+                },
+                {
+                  "zero_based_index": 97,
+                  "ttft": 0.0,
+                  "itl_count": 0,
+                  "output_len": 1024,
+                  "error": ""
+                },
+                {
+                  "zero_based_index": 119,
+                  "ttft": 0.0,
+                  "itl_count": 0,
+                  "output_len": 1024,
+                  "error": ""
+                }
+              ]
+            },
+            {
+              "name": "round2_16384_1024_c64",
+              "round": 2,
+              "scored_round": true,
+              "text_target_tokens": 16384,
+              "concurrency": 64,
+              "expected_requests": 128,
+              "original_producer_status": "invalid_native_result",
+              "original_producer_result_error": "Infinity",
+              "process_status": "exited",
+              "exit_code": 0,
+              "child_reaped": true,
+              "client_wall_seconds": 1600.62053,
+              "eligible_client_report": false,
+              "analysis_issues": [
+                "empty or non-string generated text"
+              ],
+              "metrics": {
+                "tag": null,
+                "backend": "sglang-oai-chat",
+                "dataset_name": "image",
+                "request_rate": "inf",
+                "max_concurrency": 64,
+                "sharegpt_output_len": null,
+                "random_input_len": 16384,
+                "random_output_len": 1024,
+                "random_range_ratio": 1.0,
+                "server_info": null,
+                "duration": 1433.9009379958734,
+                "completed": 128,
+                "total_input_tokens": 2215831,
+                "total_input_text_tokens": 2209303,
+                "total_input_vision_tokens": 6528,
+                "total_output_tokens": 131072,
+                "total_output_tokens_retokenized": 11482,
+                "request_throughput": 0.08926697556869048,
+                "input_throughput": 1545.3166542292736,
+                "output_throughput": 91.40938298233905,
+                "total_throughput": 1636.7260372116125,
+                "mean_e2e_latency_ms": 600368.7200459898,
+                "median_e2e_latency_ms": 713687.3773634434,
+                "std_e2e_latency_ms": 179860.77669542088,
+                "p90_e2e_latency_ms": 725250.3411150072,
+                "p99_e2e_latency_ms": 812334.7118373495,
+                "mean_ttft_ms": 426527.2896882889,
+                "median_ttft_ms": 547839.0643929597,
+                "std_ttft_ms": 192506.80883544817,
+                "p99_ttft_ms": 642489.7550052871,
+                "mean_tpot_ms": 169.9329720016628,
+                "median_tpot_ms": 166.1436322394609,
+                "std_tpot_ms": 73.34469430721116,
+                "p99_tpot_ms": 618.6644113368302,
+                "mean_itl_ms": 569.6088133629943,
+                "median_itl_ms": 471.6840577311814,
+                "std_itl_ms": 509.9847968523354,
+                "p95_itl_ms": 1469.0622388850898,
+                "p99_itl_ms": 1564.1736595146358,
+                "concurrency": 53.593099864551355,
+                "accept_length": null,
+                "max_output_tokens_per_s": 174.0,
+                "max_concurrent_requests": 65
+              },
+              "native_artifact": {
+                "path": "evidence/session004/remote-final-001/project/evidence/session004/recon-sglang-matrix-A-001/native/round2_16384_1024_c64.jsonl",
+                "bytes": 299576,
+                "sha256": "7a20e02ab3797403f4471ff8c4854935f6bdbef9f92732458a132a370389381c"
+              },
+              "native_bytes_unchanged_from_intermediate": null,
+              "empty_sample_details": [
+                {
+                  "zero_based_index": 0,
+                  "ttft": 0.0,
+                  "itl_count": 0,
+                  "output_len": 1024,
+                  "error": ""
+                },
+                {
+                  "zero_based_index": 23,
+                  "ttft": 0.0,
+                  "itl_count": 0,
+                  "output_len": 1024,
+                  "error": ""
+                },
+                {
+                  "zero_based_index": 50,
+                  "ttft": 0.0,
+                  "itl_count": 0,
+                  "output_len": 1024,
+                  "error": ""
+                },
+                {
+                  "zero_based_index": 95,
+                  "ttft": 0.0,
+                  "itl_count": 0,
+                  "output_len": 1024,
+                  "error": ""
+                }
+              ]
+            }
+          ],
+          "scored_round_table_path": "evidence/session004/remote-final-001-analysis/summary.md",
+          "unsupported_unattempted_timedout_loads": {
+            "unattempted_c1_rows": [
+              "round1_4096_1024_c1",
+              "round2_4096_1024_c1",
+              "round1_16384_1024_c1",
+              "round2_16384_1024_c1"
+            ],
+            "unsupported_not_inferred": true,
+            "all8_client_processes_exited0": true
+          },
+          "output_integrity_evidence_and_limitations": {
+            "native_rows": 8,
+            "strict_eligible_rows": 5,
+            "producer_reported_completed_requests": 576,
+            "producer_reported_output_tokens": 589824,
+            "empty_generated_texts": 12,
+            "nonempty_text_count_not_accuracy": 564,
+            "strict_eligible_client_reported_requests": 304,
+            "strict_eligible_client_reported_output_tokens": 311296,
+            "exact_tokens_per_request_independently_verified": false,
+            "raw_SSE_terminal_framing_independently_verified": false,
+            "producer_Infinity_parse_issue_posthoc_only": true,
+            "empty_samples_retained": true
+          },
+          "official_performance_verified": false,
+          "server_aggregate_metrics": {
+            "collector_final_artifact": {
+              "path": "evidence/session004/remote-final-001/project/evidence/session004/recon-server-metrics-001/collector-final.json",
+              "bytes": 5626,
+              "sha256": "c89c65fa6e28b7d7e3eb5b7bc5e8ca21098668fc89e19c272b7e02be27fe5714"
+            },
+            "samples_artifact": {
+              "path": "evidence/session004/remote-final-001/project/evidence/session004/recon-server-metrics-001/samples.jsonl",
+              "bytes": 3138580,
+              "sha256": "19e416ef669b05af378ad7529e4965938a1c7b0e58e0e1dba11b273b2ee535cc"
+            },
+            "collector_source_sha256": "37846b851baacedf903071b43a81a4b145973526105f0a89578816fc7583dcfa",
+            "source_hash_seal_matches_local_reviewed_source": true,
+            "samples": 1340,
+            "started_utc": "2026-10-23T11:49:32.913679+00:00",
+            "finished_utc": "2026-10-23T12:11:58.461899+00:00",
+            "last_good_utc": "2026-10-23T12:11:56.998927+00:00",
+            "elapsed_seconds": 1345.548245,
+            "reason": "collection_stopped",
+            "error_type": "URLError",
+            "error": "<urlopen error [Errno 111] Connection refused>",
+            "model_requests_sent": false,
+            "server_mutated": false,
+            "all_sample_identities_stable": true,
+            "first_last_raw_metrics_reparsed_and_sha_verified": true,
+            "last_good_counters": {
+              "vllm:generation_tokens_total": "590080.0",
+              "vllm:request_success_total:stop": "0.0",
+              "vllm:request_success_total:length": "584.0",
+              "vllm:request_success_total:abort": "0.0",
+              "vllm:request_success_total:error": "0.0",
+              "vllm:request_success_total:repetition": "0.0",
+              "vllm:request_generation_tokens_count": "584.0",
+              "vllm:request_generation_tokens_sum": "590080.0"
+            },
+            "aggregate_expected_request_count": 584,
+            "aggregate_expected_generation_tokens_if_all_targets_fulfilled": 590080,
+            "aggregate_values_match_theoretical_targets": true,
+            "upstream_warmup_output_rule": "min(test_request.output_len,32) in pinned SGLang0.5.12; eight warmups of target32",
+            "interpretation": "Aggregate consistency only. Collector starts during the last grid; does not establish zero baseline, isolate every request/warmup/other traffic or prove each request length. 12 empty texts remain ineligible.",
+            "raw_retention": "First, latest, and last-good responses only; historical samples retain selected server values and full-response SHA, not full raw responses",
+            "per_request_exactness_proven": false,
+            "official_acceptance": false
+          },
+          "full_two_round_12row_matrix_complete": false,
+          "formal_acceptance": false
+        },
+        "delivery004": {
+          "proposed_local_stage": "dist/repositories-stage004/recon2reason-bw-vllm",
+          "local_stage_created": false,
+          "manifest_path_and_sha256": null,
+          "local_or_remote_commit": null,
+          "repository_url": null,
+          "reviewer_repository_access_method": null,
+          "mirror_sync_verified": null,
+          "reviewer_image_access_verified": null,
+          "clean_image_replay_record": null,
+          "platform_stopped_final_evidence": {
+            "path": "evidence/platform-checkpoint-20261023-004.json",
+            "bytes": 3348,
+            "sha256": "18c756885773696a834b7f44c82a21ecc2f35e18e3005010d173dbc98fba3148"
+          },
+          "user_manual_submission_material_index": null,
+          "contest_form_submitted": false,
+          "contest_submission_performed": false,
+          "platform_all_instances_stopped": true,
+          "visible_remaining_cardhours": "488.0238888888",
+          "visible_balance_is_final_settled_bill": false,
+          "no_recharge_or_purchase": true,
+          "raw_export_manifest_binding": {
+            "path": "evidence/session004/remote-final-001/export-manifest.json",
+            "bytes": 208071,
+            "sha256": "eb5ab4603f1f557d4d07d9d8b76e24865a8aa518d6a4713981453c5f2aca15c0"
+          },
+          "raw_final_audit": {
+            "path": "evidence/session004/remote-final-001-audit.json",
+            "bytes": 54379,
+            "sha256": "42ca16eb48c4673e412626fb26e2667e27ec85116962e0e42941f540fb8a4335"
+          }
+        }
+      },
+      "report_sha256_at_update": "a7cc6190477fd05ff74de05855182918183d1a54f4717a4596d81188174782f5",
+      "report_updated_utc": "2026-10-23T12:41:36.633422+00:00",
+      "submission_ready": false,
+      "report_sha256_scope": "Current frozen report source before repository build; legacy key name retained"
+    },
+    {
+      "task": "robobrain-bw-vllm",
+      "model_id": "BAAI/RoboBrain2.5-8B-NV",
+      "track": "T02",
+      "report_source": "docs/report-004-robobrain-bw-vllm.md",
+      "report_sha256_at_draft": "81e0cbfc143f6216510626193e36fcf1474521da993a4c9b7d737e3d44bb4f4e",
+      "report_sections": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "draft_scope": "Session004 intermediate GPU originals incorporated; official scoring and final delivery remain pending",
+      "framework_eligibility": "native_vllm_gpu_functional_verified_official_pending",
+      "counts_as_completed_contest_piece": false,
+      "root_standard_entries_for_new_candidate_ready": null,
+      "repositorywide_OSS_license_is_mandatory": false,
+      "incomplete_load_is_automatic_submission_rejection": false,
+      "formal_ready": false,
+      "pending_fields": {
+        "execution004": {
+          "run_id": "68f2ba449dbd41629b40cca27aa07553",
+          "status": "stopped",
+          "started_utc": "2026-10-23T10:13:15.079736+00:00",
+          "ready_or_model_loaded_utc": "2026-10-23T10:15:51.060057+00:00",
+          "ended_utc": "2026-10-23T10:25:49.335472+00:00",
+          "command_argv": [
+            "/usr/bin/python",
+            "-m",
+            "vllm.entrypoints.openai.api_server",
+            "--model",
+            "/root/private_data/SothisAI/model/Aihub/RoboBrain2.5-8B-NV/main/RoboBrain2.5-8B-NV",
+            "--served-model-name",
+            "robobrain2-5-8b-nv",
+            "--host",
+            "127.0.0.1",
+            "--port",
+            "30001",
+            "--tensor-parallel-size",
+            "1",
+            "--dtype",
+            "bfloat16",
+            "--max-model-len",
+            "32768",
+            "--gpu-memory-utilization",
+            "0.85",
+            "--enforce-eager",
+            "--max-num-seqs",
+            "4",
+            "--limit-mm-per-prompt",
+            "{\"image\":{\"count\":2,\"width\":1024,\"height\":1024},\"video\":0}",
+            "--worker-extension-cls",
+            "robobrain_vision_math_compat.VisionMathCompat"
+          ],
+          "source_manifest_path": "evidence/session004/remote-intermediate-001/export-manifest.json",
+          "source_manifest_sha256": "2b1543b7bb12c95f3a0aa041e8e3db605f6189921f2819316c5fcfc7ea86ecb2",
+          "runtime_code_sha256": "0edc33da22c07a804c93047f918a4a39a58af90997390c49695d8b39a891d85b",
+          "plugin_code_sha256": "083dc53f3e4f8171b774469bffa724c2269a9d289769f56a9d7a5624cd81659f",
+          "server_or_worker_log_path": "evidence/session004/remote-intermediate-001/project/tasks/robobrain-bw-vllm/runtime/server.log",
+          "server_or_worker_log_sha256": "de33edb34ebd2fdb2cffa2eacdfb73a2b46169351e05ca9e9537c0a68f088b23",
+          "owned_cleanup_path": "evidence/session004/remote-intermediate-001/project/evidence/session004/robo-stop.log",
+          "owned_cleanup_sha256": "f876dd5029a62e13517e28fa6e32b074ea9cf830a09182054467451c7c866cb1",
+          "owned_processes_stopped_verified": null,
+          "raw_artifact_manifest_path": "evidence/session004/remote-intermediate-001/export-manifest.json",
+          "raw_artifact_manifest_sha256": "2b1543b7bb12c95f3a0aa041e8e3db605f6189921f2819316c5fcfc7ea86ecb2",
+          "supervisor_terminal_state_verified": true,
+          "cleanup_scope": "Stop command reports matching supervisor/server process group stopped; no separate all-descendants/port probe"
+        },
+        "environment004": {
+          "platform_instance_id": "2112237945233408001",
+          "region_and_resource_group": null,
+          "cpu_memory_storage": null,
+          "actual_device_name_count_and_vram": null,
+          "platform_screenshots": null,
+          "image_id_and_version": null,
+          "image_registry_repository_tag": null,
+          "image_access_method": null,
+          "env_log_path": null,
+          "env_log_sha256": null,
+          "python_executable_and_version": {
+            "executable": "/usr/bin/python",
+            "version": null
+          },
+          "package_versions_and_roots": null,
+          "native_before_after_manifest": null,
+          "dtk_and_hip": null,
+          "checkpoint_path_revision_and_verification": {
+            "path": "/root/private_data/SothisAI/model/Aihub/RoboBrain2.5-8B-NV/main/RoboBrain2.5-8B-NV",
+            "revision_declared": null,
+            "fresh_full_weight_hash_report": null,
+            "actual_model_loaded": true
+          },
+          "actual_precision_tp_context_port": {
+            "precision": "bf16",
+            "tp": 1,
+            "max_len": 32768,
+            "port": 30001,
+            "extra": [
+              "--enforce-eager",
+              "--max-num-seqs",
+              "4",
+              "--limit-mm-per-prompt",
+              "{\"image\":{\"count\":2,\"width\":1024,\"height\":1024},\"video\":0}",
+              "--worker-extension-cls",
+              "robobrain_vision_math_compat.VisionMathCompat"
+            ]
+          },
+          "service_mapping_or_none": "loopback only; no public mapping used",
+          "platform_identity_source": "Root agent SCNet UI report; archive process state does not independently identify SCNet instance"
+        },
+        "smoke004": {
+          "kind": "multimodal_generation",
+          "input_manifest_path": "evidence/session004/remote-intermediate-001/project/fixtures/smoke-session004/manifest.json",
+          "input_manifest_sha256": "d3b626ec28ced4507c41b026570852d5daf802f39e2c88e6ce2108c49acd1900",
+          "source_and_task_hashes": {
+            "executed_client_sha256": "bec36fb0c85332eb7144c479e9782d57c9b0dc2ad15b610ac81d1af2bd237486",
+            "executed_plugin_sha256": "083dc53f3e4f8171b774469bffa724c2269a9d289769f56a9d7a5624cd81659f",
+            "executed_env_sha256": null,
+            "current_task_metadata_differs_from_execution_snapshot": true
+          },
+          "raw_output_paths_and_hashes": [
+            {
+              "path": "evidence/session004/remote-intermediate-001/project/evidence/session004/robo-default-smoke-004.log",
+              "sha256": "554d43f8be07dc5ab3f014d3287a5c480fe91e9c1018fad86f49ba9a684110d7",
+              "bytes": 10136
+            }
+          ],
+          "functional_contract": "7 checks include health/models and 5 generation calls; nonempty stop; SSE DONE",
+          "passed_cases_and_failed_cases": {
+            "checks_passed": 7,
+            "generation_requests": 5,
+            "prior_failed_attempts_preserved": false
+          },
+          "finish_reason_or_not_applicable": "all 5 generation responses stop; SSE DONE",
+          "truncation_and_error_scope": "answers logged untruncated and finished stop; no semantic/trajectory score",
+          "usage_or_vector_or_timestamp_integrity": "protocol smoke does not score usage/coordinates",
+          "functional_passed": true,
+          "official_accuracy_implied": false
+        },
+        "accuracy004": {
+          "evaluator_path_and_sha256": null,
+          "official_material_source": null,
+          "selfcheck_command_and_log": null,
+          "baseline_path_and_sha256": null,
+          "dataset_reference_manifest_and_revision": null,
+          "preprocessing_decoding_and_parser_contract": null,
+          "metric_names_and_difference_formula": null,
+          "raw_predictions_path_and_sha256": null,
+          "verify_result_path_and_sha256": null,
+          "per_metric_score_baseline_tolerance_and_judgment": null,
+          "official_accuracy_verified": false
+        },
+        "performance004": {
+          "task_kind": "multimodal_generation",
+          "applicable_official_method": null,
+          "client_distribution_version_and_source_hash": null,
+          "client_and_server_python_paths": null,
+          "cache_warmup_and_round_policy": null,
+          "input_preprocessing_and_total_length_definition": null,
+          "per_load_argv_and_native_raw_paths": null,
+          "per_load_requested_completed_failed_counts": null,
+          "per_load_durations_and_metrics": null,
+          "scored_round_table_path": null,
+          "unsupported_unattempted_timedout_loads": "All template load cells not executed for this task in archived session004; Recon results not reused",
+          "output_integrity_evidence_and_limitations": "Functional development results only; no official throughput/latency judgment",
+          "official_performance_verified": false
+        },
+        "delivery004": {
+          "proposed_local_stage": "dist/repositories-stage004/robobrain-bw-vllm",
+          "local_stage_created": false,
+          "manifest_path_and_sha256": null,
+          "local_or_remote_commit": null,
+          "repository_url": null,
+          "reviewer_repository_access_method": null,
+          "mirror_sync_verified": null,
+          "reviewer_image_access_verified": null,
+          "clean_image_replay_record": null,
+          "platform_stopped_final_evidence": null,
+          "user_manual_submission_material_index": null,
+          "contest_form_submitted": false
+        }
+      },
+      "report_sha256_at_update": "824dc85dd831e7ac508b77addfbc6f66e19dc57a107475513b96559a22806d4e",
+      "report_updated_utc": "2026-10-23T12:11:25.079495+00:00",
+      "report_sha256_scope": "Current frozen report source before repository build; legacy key name retained"
+    },
+    {
+      "task": "qwen3-asr-bw-vllm",
+      "model_id": "Qwen/Qwen3-ASR-1.7B",
+      "track": "T04",
+      "report_source": "docs/report-004-qwen3-asr-bw-vllm.md",
+      "report_sha256_at_draft": "f1df182c40da8db4ea047e02f023f594794fb430a8aa65a44b4657cff9b9c341",
+      "report_sections": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "draft_scope": "Session004 intermediate GPU originals incorporated; official scoring and final delivery remain pending",
+      "framework_eligibility": "native_vllm_gpu_functional_verified_official_pending",
+      "counts_as_completed_contest_piece": false,
+      "root_standard_entries_for_new_candidate_ready": null,
+      "repositorywide_OSS_license_is_mandatory": false,
+      "incomplete_load_is_automatic_submission_rejection": false,
+      "formal_ready": false,
+      "pending_fields": {
+        "execution004": {
+          "run_id": "1a02b2e4e0c944cabdb195dd54dc8348",
+          "status": "expired",
+          "started_utc": "2026-10-23T09:57:35.327930+00:00",
+          "ready_or_model_loaded_utc": "2026-10-23T09:59:20.009955+00:00",
+          "ended_utc": "2026-10-23T10:12:39.030575+00:00",
+          "command_argv": [
+            "/root/private_data/guoxin-hackathon-20261023-session004/tasks/qwen3-asr-bw-vllm/runtime/audio-venv/bin/python",
+            "-m",
+            "vllm.entrypoints.openai.api_server",
+            "--model",
+            "/root/private_data/SothisAI/model/Aihub/Qwen3-ASR-1.7B/main/Qwen3-ASR-1.7B",
+            "--served-model-name",
+            "qwen3-asr-1.7b",
+            "--host",
+            "127.0.0.1",
+            "--port",
+            "30002",
+            "--tensor-parallel-size",
+            "1",
+            "--dtype",
+            "bfloat16",
+            "--max-model-len",
+            "32768",
+            "--gpu-memory-utilization",
+            "0.85",
+            "--enforce-eager",
+            "--max-num-seqs",
+            "4"
+          ],
+          "source_manifest_path": "evidence/session004/remote-intermediate-001/export-manifest.json",
+          "source_manifest_sha256": "2b1543b7bb12c95f3a0aa041e8e3db605f6189921f2819316c5fcfc7ea86ecb2",
+          "runtime_code_sha256": "0edc33da22c07a804c93047f918a4a39a58af90997390c49695d8b39a891d85b",
+          "plugin_code_sha256": "84d0d5402c73d21562fb12bb649ace56d6f29b7d1fdf1d3e402b8d4a6e28820a",
+          "server_or_worker_log_path": "evidence/session004/remote-intermediate-001/project/tasks/qwen3-asr-bw-vllm/runtime/server.log",
+          "server_or_worker_log_sha256": "18ca1fea6f19e60d9994dc6331b6ed67a5856e6acdf9ed7b6c491cc0b7a024a0",
+          "owned_cleanup_path": "evidence/session004/remote-intermediate-001/project/evidence/session004/asr-stop.log",
+          "owned_cleanup_sha256": "9cab7f8f9c0c46d44e6e3d8eafea7f7e3595cc906ff7ed47f8fbb2137fedbcf3",
+          "owned_processes_stopped_verified": null,
+          "raw_artifact_manifest_path": "evidence/session004/remote-intermediate-001/export-manifest.json",
+          "raw_artifact_manifest_sha256": "2b1543b7bb12c95f3a0aa041e8e3db605f6189921f2819316c5fcfc7ea86ecb2",
+          "supervisor_terminal_state_verified": true,
+          "cleanup_scope": "Expired supervisor; later stop reports supervisor absent and no signal sent; no independent all-descendants/port probe"
+        },
+        "environment004": {
+          "platform_instance_id": "2112237945233408001",
+          "region_and_resource_group": null,
+          "cpu_memory_storage": null,
+          "actual_device_name_count_and_vram": null,
+          "platform_screenshots": null,
+          "image_id_and_version": null,
+          "image_registry_repository_tag": null,
+          "image_access_method": null,
+          "env_log_path": null,
+          "env_log_sha256": null,
+          "python_executable_and_version": {
+            "executable": "/root/private_data/guoxin-hackathon-20261023-session004/tasks/qwen3-asr-bw-vllm/runtime/audio-venv/bin/python",
+            "version": null
+          },
+          "package_versions_and_roots": {
+            "torch": {
+              "version": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "torchvision": {
+              "version": "0.25.0+das.opt1.dtk2604.torch2100.20260325.g860505",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "transformers": {
+              "version": "5.5.0",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "vllm": {
+              "version": "0.18.1+das.fa71803.dtk2604",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "vllm-hcu": {
+              "version": "0.18.1+das.dtk2604",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "numpy": {
+              "version": "1.25.0",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "scipy": {
+              "version": "1.15.3",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "triton": {
+              "version": "3.6.0+gitc73250c4.staging",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "flash-attn": {
+              "version": "2.8.3+das.opt1.dtk2604.torch2100.20260330.g3f0061",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "lightop": {
+              "version": "0.6.0+das.dtk2604.torch2100.2604101656.g193111",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "aiter": {
+              "version": "0.1.2+das.opt1.dtk2604.torch2100.2604212021.gd52133",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "python-multipart": {
+              "version": "0.0.22",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            }
+          },
+          "native_before_after_manifest": {
+            "before": {
+              "path": "evidence/session004/remote-intermediate-001/project/tasks/qwen3-asr-bw-vllm/runtime/audio-venv/asr-prepare-evidence/native-before.json",
+              "sha256": "7ca00986667ff850c303386ff9f0f320d325aa7a803af22e0dd8d0f95ca7f8e3",
+              "bytes": 1457
+            },
+            "after": {
+              "path": "evidence/session004/remote-intermediate-001/project/tasks/qwen3-asr-bw-vllm/runtime/audio-venv/asr-prepare-evidence/ready.json",
+              "sha256": "82ad354d0dc4a5e6561829fae5c593dfdd68bd91c5fd1cac690434414b470d01",
+              "bytes": 2387
+            },
+            "versions_and_roots_equal": true,
+            "protected_count": 12,
+            "locked_cpu_wheels_installed": 7
+          },
+          "dtk_and_hip": null,
+          "checkpoint_path_revision_and_verification": {
+            "path": "/root/private_data/SothisAI/model/Aihub/Qwen3-ASR-1.7B/main/Qwen3-ASR-1.7B",
+            "revision_declared": "7278e1e70fe206f11671096ffdd38061171dd6e5",
+            "fresh_full_weight_hash_report": null,
+            "actual_model_loaded": true
+          },
+          "actual_precision_tp_context_port": {
+            "precision": "bf16",
+            "tp": 1,
+            "max_len": 32768,
+            "port": 30002,
+            "extra": [
+              "--enforce-eager",
+              "--max-num-seqs",
+              "4"
+            ]
+          },
+          "service_mapping_or_none": "loopback only; no public mapping used",
+          "platform_identity_source": "Root agent SCNet UI report; archive process state does not independently identify SCNet instance"
+        },
+        "smoke004": {
+          "kind": "asr",
+          "input_manifest_path": "evidence/session004/remote-intermediate-001/project/fixtures/smoke-session004/manifest.json",
+          "input_manifest_sha256": "d3b626ec28ced4507c41b026570852d5daf802f39e2c88e6ce2108c49acd1900",
+          "source_and_task_hashes": {
+            "executed_client_sha256": "da40fff4081c7873a4d276225d4ef990df9b2d666daf3c1d73ee0796def655f1",
+            "executed_plugin_sha256": "84d0d5402c73d21562fb12bb649ace56d6f29b7d1fdf1d3e402b8d4a6e28820a",
+            "executed_env_sha256": null,
+            "current_task_metadata_differs_from_execution_snapshot": true
+          },
+          "raw_output_paths_and_hashes": [
+            {
+              "path": "evidence/session004/remote-intermediate-001/project/evidence/session004/asr-default-smoke.jsonl",
+              "sha256": "71c6417f9268131277da79b0f2349c27de895bca2d714d3bbe303e72c2a90259",
+              "bytes": 2228
+            },
+            {
+              "path": "evidence/session004/remote-intermediate-001/project/evidence/session004/asr-en-smoke.jsonl",
+              "sha256": "7bff4221c81db822889bbd80d2d4b3186a7a9dd05c56f593ebb475dd36d5b69a",
+              "bytes": 2393
+            },
+            {
+              "path": "evidence/session004/remote-intermediate-001/project/evidence/session004/asr-sse-zh.jsonl",
+              "sha256": "9ba208f2094c8c132854394d6fdf1904964ba8258a4896ebe8f7e1f1617b1284",
+              "bytes": 4442
+            }
+          ],
+          "functional_contract": "2 nonempty PCM16 WAV transcriptions plus 1 full-file SSE stop/DONE/usage; no semantics scored",
+          "passed_cases_and_failed_cases": {
+            "checks_passed": 3,
+            "generation_requests": 3,
+            "prior_failed_attempts_preserved": false
+          },
+          "finish_reason_or_not_applicable": "ordinary transcription omits finish_reason; SSE stop and DONE",
+          "truncation_and_error_scope": "raw log not clipped; ordinary transcription truncation not independently proven; realtime input unverified",
+          "usage_or_vector_or_timestamp_integrity": "SSE 65+11=76; ordinary API has no usage",
+          "functional_passed": true,
+          "official_accuracy_implied": false
+        },
+        "accuracy004": {
+          "evaluator_path_and_sha256": null,
+          "official_material_source": null,
+          "selfcheck_command_and_log": null,
+          "baseline_path_and_sha256": null,
+          "dataset_reference_manifest_and_revision": null,
+          "preprocessing_decoding_and_parser_contract": null,
+          "metric_names_and_difference_formula": null,
+          "raw_predictions_path_and_sha256": null,
+          "verify_result_path_and_sha256": null,
+          "per_metric_score_baseline_tolerance_and_judgment": null,
+          "official_accuracy_verified": false
+        },
+        "performance004": {
+          "task_kind": "asr",
+          "applicable_official_method": null,
+          "client_distribution_version_and_source_hash": null,
+          "client_and_server_python_paths": null,
+          "cache_warmup_and_round_policy": null,
+          "input_preprocessing_and_total_length_definition": null,
+          "per_load_argv_and_native_raw_paths": null,
+          "per_load_requested_completed_failed_counts": null,
+          "per_load_durations_and_metrics": null,
+          "scored_round_table_path": null,
+          "unsupported_unattempted_timedout_loads": "Official audio method and load matrix not executed",
+          "output_integrity_evidence_and_limitations": "Functional development results only; no official throughput/latency judgment",
+          "official_performance_verified": false
+        },
+        "delivery004": {
+          "proposed_local_stage": "dist/repositories-stage004/qwen3-asr-bw-vllm",
+          "local_stage_created": false,
+          "manifest_path_and_sha256": null,
+          "local_or_remote_commit": null,
+          "repository_url": null,
+          "reviewer_repository_access_method": null,
+          "mirror_sync_verified": null,
+          "reviewer_image_access_verified": null,
+          "clean_image_replay_record": null,
+          "platform_stopped_final_evidence": null,
+          "user_manual_submission_material_index": null,
+          "contest_form_submitted": false
+        }
+      },
+      "report_sha256_at_update": "4448715986db1559017777c4379a6c924e534ab28aed5ee52eb1096c8d6b7ec3",
+      "report_updated_utc": "2026-10-23T12:11:25.079495+00:00",
+      "report_sha256_scope": "Current frozen report source before repository build; legacy key name retained"
+    },
+    {
+      "task": "mimo-v2.6-distill-qwen9b-bw-vllm",
+      "model_id": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+      "track": "T01",
+      "report_source": "docs/report-004-mimo-v2.6-distill-qwen9b-bw-vllm.md",
+      "report_sha256_at_draft": "9e3e75d15120ea984444bb51b024c577818733c6a1e54bc02c298587333c73ef",
+      "report_sections": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "draft_scope": "Session004 intermediate GPU originals incorporated; official scoring and final delivery remain pending",
+      "framework_eligibility": "native_vllm_gpu_functional_verified_official_pending",
+      "counts_as_completed_contest_piece": false,
+      "root_standard_entries_for_new_candidate_ready": false,
+      "repositorywide_OSS_license_is_mandatory": false,
+      "incomplete_load_is_automatic_submission_rejection": false,
+      "formal_ready": false,
+      "pending_fields": {
+        "execution004": {
+          "run_id": "813bbcb199394129949b9afe7214b7cd",
+          "status": "expired",
+          "started_utc": "2026-10-23T10:44:01.162930+00:00",
+          "ready_or_model_loaded_utc": "2026-10-23T10:46:29.361855+00:00",
+          "ended_utc": "2026-10-23T11:14:10.112657+00:00",
+          "command_argv": [
+            "/usr/bin/python3",
+            "-m",
+            "vllm.entrypoints.openai.api_server",
+            "--model",
+            "/root/private_data/guoxin-candidates/models/mimo9b",
+            "--served-model-name",
+            "mimo-v2.6-distill-qwen-9b",
+            "--host",
+            "127.0.0.1",
+            "--port",
+            "30109",
+            "--tensor-parallel-size",
+            "1",
+            "--dtype",
+            "bfloat16",
+            "--max-model-len",
+            "32768",
+            "--gpu-memory-utilization",
+            "0.8",
+            "--enforce-eager",
+            "--max-num-seqs",
+            "4",
+            "--max-num-batched-tokens",
+            "2048",
+            "--limit-mm-per-prompt",
+            "{\"image\":0,\"video\":0}"
+          ],
+          "source_manifest_path": "evidence/session004/remote-intermediate-001/export-manifest.json",
+          "source_manifest_sha256": "2b1543b7bb12c95f3a0aa041e8e3db605f6189921f2819316c5fcfc7ea86ecb2",
+          "runtime_code_sha256": "0edc33da22c07a804c93047f918a4a39a58af90997390c49695d8b39a891d85b",
+          "plugin_code_sha256": null,
+          "server_or_worker_log_path": "evidence/session004/remote-intermediate-001/project/tasks/mimo-v2.6-distill-qwen9b-bw-vllm/runtime/server.log",
+          "server_or_worker_log_sha256": "e33d83307917247bc11d5458a27e6267050d32dbb9a3b94bee6930cae2dccad1",
+          "owned_cleanup_path": "evidence/session004/remote-intermediate-001/project/evidence/session004/mimo-second-stop.log",
+          "owned_cleanup_sha256": "9cab7f8f9c0c46d44e6e3d8eafea7f7e3595cc906ff7ed47f8fbb2137fedbcf3",
+          "owned_processes_stopped_verified": null,
+          "raw_artifact_manifest_path": "evidence/session004/remote-intermediate-001/export-manifest.json",
+          "raw_artifact_manifest_sha256": "2b1543b7bb12c95f3a0aa041e8e3db605f6189921f2819316c5fcfc7ea86ecb2",
+          "supervisor_terminal_state_verified": true,
+          "cleanup_scope": "Expired supervisor; later stop reports supervisor absent and no signal sent; no independent all-descendants/port probe"
+        },
+        "environment004": {
+          "platform_instance_id": "2112237945233408001",
+          "region_and_resource_group": null,
+          "cpu_memory_storage": null,
+          "actual_device_name_count_and_vram": null,
+          "platform_screenshots": null,
+          "image_id_and_version": null,
+          "image_registry_repository_tag": null,
+          "image_access_method": null,
+          "env_log_path": null,
+          "env_log_sha256": null,
+          "python_executable_and_version": {
+            "executable": "/usr/bin/python3",
+            "version": null
+          },
+          "package_versions_and_roots": null,
+          "native_before_after_manifest": null,
+          "dtk_and_hip": null,
+          "checkpoint_path_revision_and_verification": {
+            "path": "/root/private_data/guoxin-candidates/models/mimo9b",
+            "revision_declared": "2367e865d009c13ac81713a2878291d33ab28177",
+            "fresh_full_weight_hash_report": null,
+            "actual_model_loaded": true
+          },
+          "actual_precision_tp_context_port": {
+            "precision": "bf16",
+            "tp": 1,
+            "max_len": 32768,
+            "port": 30109,
+            "extra": [
+              "--enforce-eager",
+              "--max-num-seqs",
+              "4",
+              "--max-num-batched-tokens",
+              "2048",
+              "--limit-mm-per-prompt",
+              "{\"image\":0,\"video\":0}"
+            ]
+          },
+          "service_mapping_or_none": "loopback only; no public mapping used",
+          "platform_identity_source": "Root agent SCNet UI report; archive process state does not independently identify SCNet instance"
+        },
+        "smoke004": {
+          "kind": "text_generation",
+          "input_manifest_path": null,
+          "input_manifest_sha256": null,
+          "source_and_task_hashes": {
+            "executed_client_sha256": "4e45292e6b0af32c52026abbe4723b39477d40cd419036ae35a267627396e5a6",
+            "executed_plugin_sha256": null,
+            "executed_env_sha256": "660c4e5baf4a10428705937beb810aec837ea05a9df25e0b9c58b20055cc3a8d",
+            "current_task_metadata_differs_from_execution_snapshot": true
+          },
+          "raw_output_paths_and_hashes": [
+            {
+              "path": "evidence/session004/remote-intermediate-001/project/evidence/session004/mimo-standard-smoke-002.jsonl",
+              "sha256": "468fd52beae92fbf2b0c177805c79817923c083b176c3d7e7c744f901f2bff61",
+              "bytes": 14565
+            }
+          ],
+          "functional_contract": "6 checks include health/models and 4 generation calls; 32 JSONL records are not request count; stop/usage/DONE",
+          "passed_cases_and_failed_cases": {
+            "checks_passed": 6,
+            "generation_requests": 4,
+            "prior_failed_attempts_preserved": true
+          },
+          "finish_reason_or_not_applicable": "all 4 generation responses stop; SSE DONE",
+          "truncation_and_error_scope": "prior connection refused preserved; successful002 nonempty body+stop; thinking unparsed",
+          "usage_or_vector_or_timestamp_integrity": "single14+10=24; multiturn22+15=37 and55+24=79; SSE14+12=26",
+          "functional_passed": true,
+          "official_accuracy_implied": false
+        },
+        "accuracy004": {
+          "evaluator_path_and_sha256": null,
+          "official_material_source": null,
+          "selfcheck_command_and_log": null,
+          "baseline_path_and_sha256": null,
+          "dataset_reference_manifest_and_revision": null,
+          "preprocessing_decoding_and_parser_contract": null,
+          "metric_names_and_difference_formula": null,
+          "raw_predictions_path_and_sha256": null,
+          "verify_result_path_and_sha256": null,
+          "per_metric_score_baseline_tolerance_and_judgment": null,
+          "official_accuracy_verified": false
+        },
+        "performance004": {
+          "task_kind": "text_generation",
+          "applicable_official_method": null,
+          "client_distribution_version_and_source_hash": null,
+          "client_and_server_python_paths": null,
+          "cache_warmup_and_round_policy": null,
+          "input_preprocessing_and_total_length_definition": null,
+          "per_load_argv_and_native_raw_paths": null,
+          "per_load_requested_completed_failed_counts": null,
+          "per_load_durations_and_metrics": null,
+          "scored_round_table_path": null,
+          "unsupported_unattempted_timedout_loads": "All template load cells not executed for this task in archived session004; Recon results not reused",
+          "output_integrity_evidence_and_limitations": "Functional development results only; no official throughput/latency judgment",
+          "official_performance_verified": false
+        },
+        "delivery004": {
+          "proposed_local_stage": "dist/repositories-stage004/mimo-v2.6-distill-qwen9b-bw-vllm",
+          "local_stage_created": false,
+          "manifest_path_and_sha256": null,
+          "local_or_remote_commit": null,
+          "repository_url": null,
+          "reviewer_repository_access_method": null,
+          "mirror_sync_verified": null,
+          "reviewer_image_access_verified": null,
+          "clean_image_replay_record": null,
+          "platform_stopped_final_evidence": null,
+          "user_manual_submission_material_index": null,
+          "contest_form_submitted": false
+        }
+      },
+      "canonical_standard_entries_implemented": true,
+      "independent_stage_root_wrappers_generated": false,
+      "report_sha256_at_update": "b86bab5908c55822678d9b1c0308dde6a8b7ae8e804f6f22e318c8f066f10c2f",
+      "report_updated_utc": "2026-10-23T12:11:25.079495+00:00",
+      "new_standard_default_profile": {
+        "image": 0,
+        "video": 0,
+        "max_runtime_seconds": 1800,
+        "same_profile_gpu_verified_with_explicit_override": true,
+        "current_env_source_gpu_reexecuted": false,
+        "executed_env_sha256": "660c4e5baf4a10428705937beb810aec837ea05a9df25e0b9c58b20055cc3a8d",
+        "current_env_sha256": "52d054df24a7ad20d6fb92a1f8c2eade68433d78577a6ef154648cb46f1f592f"
+      },
+      "cpu_validation_after_default_update": {
+        "utc": "2026-10-23T12:13:59.013377+00:00",
+        "wsl_test_mimo_text_smoke": {
+          "passed": 15,
+          "failed": 0
+        },
+        "three_task_env_bash_syntax": "passed",
+        "dry_run_assertions": [
+          "max_len32768",
+          "max_runtime1800",
+          "load_timeout900",
+          "image0/video0",
+          "no reasoning parser"
+        ],
+        "gpu_executed": false
+      },
+      "report_sha256_scope": "Current frozen report source before repository build; legacy key name retained"
+    },
+    {
+      "task": "trident-qwen3vl2b-bw-transformers",
+      "model_id": "openbmb/Trident-Qwen3VL-2B",
+      "track": "T02",
+      "report_source": "docs/report-004-trident-qwen3vl2b-bw-transformers.md",
+      "report_sha256_at_draft": "334cf57a3c73c2604c934570aa4c55b6d6c147c770d7b16e0f98269355bd68fb",
+      "report_sections": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "draft_scope": "Session004 final-source-sealed offline native vLLM embeddings GPU pilot; local standard HTTP entries prepared with CPU contract only",
+      "framework_eligibility": "native_vllm_pooling_GPU_verified; HTTP_GPU_and_formal_embedding_evaluation_pending",
+      "counts_as_completed_contest_piece": false,
+      "root_standard_entries_for_new_candidate_ready": true,
+      "repositorywide_OSS_license_is_mandatory": false,
+      "incomplete_load_is_automatic_submission_rejection": false,
+      "formal_ready": false,
+      "pending_fields": {
+        "execution004": {
+          "run_id": null,
+          "status": "completed",
+          "started_utc": null,
+          "ready_or_model_loaded_utc": null,
+          "ended_utc": null,
+          "command_argv": [
+            "/root/private_data/guoxin-candidates/envs/trident-001/bin/python",
+            "-B",
+            "/root/private_data/guoxin-candidate-tools-20261023/scripts/trident_vllm_pooling_probe_20261023.py",
+            "run",
+            "--_worker",
+            "--model-dir",
+            "/root/private_data/guoxin-candidates/models/trident",
+            "--requests",
+            "/root/private_data/guoxin-candidate-tools-20261023/tasks/trident-qwen3vl2b-bw-transformers/requests.example.json",
+            "--output",
+            "/root/private_data/guoxin-candidates/results/trident-vllm-pooling-001"
+          ],
+          "source_manifest_path": "evidence/session004/remote-final-001/export-manifest.json",
+          "source_manifest_sha256": "eb5ab4603f1f557d4d07d9d8b76e24865a8aa518d6a4713981453c5f2aca15c0",
+          "runtime_code_sha256": "2b4030517bd55056595b4caa34506c5f8573d6c3149b81aa81c507a10061ede7",
+          "plugin_code_sha256": null,
+          "server_or_worker_log_path": "evidence/session004/remote-final-001/candidates/results/trident-vllm-pooling-001/worker.log",
+          "server_or_worker_log_sha256": "bbc3fec811dbb47f4ef9f57f65b0d13a66cee27440c720ef57096bf0e136b2d7",
+          "owned_cleanup_path": null,
+          "owned_cleanup_sha256": null,
+          "owned_processes_stopped_verified": null,
+          "raw_artifact_manifest_path": "evidence/session004/remote-final-001/export-manifest.json",
+          "raw_artifact_manifest_sha256": "eb5ab4603f1f557d4d07d9d8b76e24865a8aa518d6a4713981453c5f2aca15c0",
+          "run_directory_identity": "trident-vllm-pooling-001",
+          "run_wall_seconds": 116.63075440889224,
+          "worker_exit_code": 0,
+          "source_final_seal_pending": false,
+          "raw_artifacts": {
+            "worker-result.json": {
+              "path": "evidence/session004/remote-final-001/candidates/results/trident-vllm-pooling-001/worker-result.json",
+              "sha256": "7de46591cf782cbb50ac6d670f822868f766097b44854d568a2b13f83eec3044"
+            },
+            "run-start.json": {
+              "path": "evidence/session004/remote-final-001/candidates/results/trident-vllm-pooling-001/run-start.json",
+              "sha256": "603068a089b8ae9d2caa020b88dfe3e2c71a1c86f552150a3942b6f6e7af07f7"
+            },
+            "run-final.json": {
+              "path": "evidence/session004/remote-final-001/candidates/results/trident-vllm-pooling-001/run-final.json",
+              "sha256": "fe5c13cd9388d57e03342b35d7997b3b5e76bf9f04a4b061571324695a6fcef7"
+            },
+            "environment.json": {
+              "path": "evidence/session004/remote-final-001/candidates/results/trident-vllm-pooling-001/environment.json",
+              "sha256": "51cd1158f39efc0c039cda8e63a5a31f8fdf9328ec9751d46240877e7431161c"
+            },
+            "checkpoint-verification.json": {
+              "path": "evidence/session004/remote-final-001/candidates/results/trident-vllm-pooling-001/checkpoint-verification.json",
+              "sha256": "0ad9bb2fc2b84e8b491442dfcadc951908b3fa2351e75346e046c77fad562bcd"
+            }
+          },
+          "executed_source_identity": {
+            "manifest": {
+              "path": "evidence/session004/remote-final-001/export-manifest.json",
+              "bytes": 208071,
+              "sha256": "eb5ab4603f1f557d4d07d9d8b76e24865a8aa518d6a4713981453c5f2aca15c0"
+            },
+            "source": "/root/private_data/guoxin-candidate-tools-20261023/scripts/trident_vllm_pooling_probe_20261023.py",
+            "sha256": "2b4030517bd55056595b4caa34506c5f8573d6c3149b81aa81c507a10061ede7",
+            "size": 19452,
+            "before_after_match": true,
+            "evidence_type": "export_manifest_before_after_hash_only",
+            "source_payload_reconstructed": false
+          },
+          "owned_process_group_cleanup_recorded": true
+        },
+        "environment004": {
+          "platform_instance_id": "2112237945233408001",
+          "region_and_resource_group": {
+            "region": "华中一区【A区】",
+            "group": "113 / hx1hgbwnormal"
+          },
+          "cpu_memory_storage": {
+            "allocated_cpu_cores": 15,
+            "allocated_memory_gb": 59,
+            "storage_gb": null
+          },
+          "actual_device_name_count_and_vram": null,
+          "platform_screenshots": [
+            {
+              "path": "evidence/session004/screenshots/all-notebooks-stopped-20261023.png",
+              "bytes": 72900,
+              "sha256": "8bb1411be69da7fb3bb15d55bee7e30ff64c59d3ebb737c031801af1f7246e27",
+              "captured_utc": "2026-10-23T12:22:20.179036+00:00"
+            },
+            {
+              "path": "evidence/session004/screenshots/remaining-cardhours-20261023.png",
+              "bytes": 69694,
+              "sha256": "e982191b4f7392bbb48b3c15f0f24af94dcfaf14a2034894c93d210654cd2c12",
+              "captured_utc": "2026-10-23T12:28:49.526923+00:00"
+            }
+          ],
+          "image_id_and_version": {
+            "id": "2071293281204580354",
+            "version_id": "2082674417745739777",
+            "display_tag": "jupyter-vllm018-ubuntu22.04-dtk26.04-qwen3.6-20260423"
+          },
+          "image_registry_repository_tag": null,
+          "image_access_method": "Account image is selectable in SCNet Notebook; reviewer access not independently verified",
+          "env_log_path": "evidence/session004/remote-final-001/candidates/results/trident-vllm-pooling-001/environment.json",
+          "env_log_sha256": "51cd1158f39efc0c039cda8e63a5a31f8fdf9328ec9751d46240877e7431161c",
+          "python_executable_and_version": {
+            "executable": "/root/private_data/guoxin-candidates/envs/trident-001/bin/python",
+            "version": "/root/private_data/guoxin-candidates/envs/trident-001/bin/python"
+          },
+          "package_versions_and_roots": {
+            "torch": {
+              "version": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "torchvision": {
+              "version": "0.25.0+das.opt1.dtk2604.torch2100.20260325.g860505",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "vllm": {
+              "version": "0.18.1+das.fa71803.dtk2604",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "vllm-hcu": {
+              "version": "0.18.1+das.dtk2604",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "transformers": {
+              "version": "5.5.0",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "qwen-vl-utils": {
+              "version": "0.0.14",
+              "root": "/root/private_data/guoxin-candidates/envs/trident-001/lib/python3.10/site-packages"
+            },
+            "Pillow": {
+              "version": "12.1.1",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            }
+          },
+          "native_before_after_manifest": null,
+          "dtk_and_hip": null,
+          "checkpoint_path_revision_and_verification": {
+            "path": "evidence/session004/remote-final-001/candidates/results/trident-vllm-pooling-001/checkpoint-verification.json",
+            "bytes": 2248,
+            "sha256": "0ad9bb2fc2b84e8b491442dfcadc951908b3fa2351e75346e046c77fad562bcd"
+          },
+          "actual_precision_tp_context_port": {
+            "precision": "BF16",
+            "TP": 1,
+            "context": 8192,
+            "HTTP_port": null,
+            "scope": "offline LLM.embed; proposed HTTP port30119 has not been GPU tested"
+          },
+          "service_mapping_or_none": null,
+          "python": "/root/private_data/guoxin-candidates/envs/trident-001/bin/python",
+          "executable": "/root/private_data/guoxin-candidates/envs/trident-001/bin/python",
+          "checkpoint": {
+            "complete": true,
+            "model_id": "openbmb/Trident-Qwen3VL-2B",
+            "revision": "a5aedf8733f2107ab75b42214c78496d85759077",
+            "directory": "/root/private_data/guoxin-candidates/models/trident",
+            "weights_hashed": true,
+            "files": [
+              {
+                "path": "added_tokens.json",
+                "size_ok": true,
+                "identity_ok": true,
+                "git_blob_sha1": "b54f9135e44c1e81047e8d05cb027af8bc039eed"
+              },
+              {
+                "path": "chat_template.jinja",
+                "size_ok": true,
+                "identity_ok": true,
+                "git_blob_sha1": "124386803f142761528f710e77ae483f5f8c4fc4"
+              },
+              {
+                "path": "config.json",
+                "size_ok": true,
+                "identity_ok": true,
+                "git_blob_sha1": "d23cb908bf7206f048c846a31b3d12ac217111a4"
+              },
+              {
+                "path": "merges.txt",
+                "size_ok": true,
+                "identity_ok": true,
+                "git_blob_sha1": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7"
+              },
+              {
+                "path": "mmemb_model.json",
+                "size_ok": true,
+                "identity_ok": true,
+                "git_blob_sha1": "a94febd44e6e73bacfcf05d2e1f5bbd66ca3fa47"
+              },
+              {
+                "path": "model.safetensors",
+                "size_ok": true,
+                "identity_ok": true,
+                "sha256": "984c6dad40e50c68497764e363b4980634a3c82ea9396d395e81e0668e62ea2f"
+              },
+              {
+                "path": "preprocessor_config.json",
+                "size_ok": true,
+                "identity_ok": true,
+                "git_blob_sha1": "2fa6553554f69b4e3a6b742a75264ff9dff90ad0"
+              },
+              {
+                "path": "special_tokens_map.json",
+                "size_ok": true,
+                "identity_ok": true,
+                "git_blob_sha1": "ac23c0aaa2434523c494330aeb79c58395378103"
+              },
+              {
+                "path": "tokenizer.json",
+                "size_ok": true,
+                "identity_ok": true,
+                "sha256": "8d15a42a4361d0b9ba8768bfc32102f5745102ec6fe5c3de45835088195d9468"
+              },
+              {
+                "path": "tokenizer_config.json",
+                "size_ok": true,
+                "identity_ok": true,
+                "git_blob_sha1": "35d32052b3bc1bc9493b6cc3d8b0f22acf33dc83"
+              },
+              {
+                "path": "video_preprocessor_config.json",
+                "size_ok": true,
+                "identity_ok": true,
+                "git_blob_sha1": "e32b1d90356f74457edbfca27aa1e121dab7cdc7"
+              },
+              {
+                "path": "vocab.json",
+                "size_ok": true,
+                "identity_ok": true,
+                "git_blob_sha1": "4783fe10ac3adce15ac8f358ef5462739852c569"
+              }
+            ]
+          },
+          "partial_repair_native_metadata_unchanged": true,
+          "device_discovery_observed": true,
+          "platform_allocation": {
+            "card": "BW 64GB",
+            "count": 1,
+            "scope": "visible platform allocation; not an independent runtime device inventory"
+          },
+          "platform_checkpoint": {
+            "path": "evidence/platform-checkpoint-20261023-004.json",
+            "bytes": 3348,
+            "sha256": "18c756885773696a834b7f44c82a21ecc2f35e18e3005010d173dbc98fba3148"
+          }
+        },
+        "smoke004": {
+          "kind": "retrieval_embeddings",
+          "input_manifest_path": null,
+          "input_manifest_sha256": null,
+          "source_and_task_hashes": null,
+          "raw_output_paths_and_hashes": null,
+          "functional_contract": null,
+          "passed_cases_and_failed_cases": null,
+          "finish_reason_or_not_applicable": null,
+          "truncation_and_error_scope": null,
+          "usage_or_vector_or_timestamp_integrity": null,
+          "functional_passed": true,
+          "official_accuracy_implied": false,
+          "evidence": {
+            "worker-result.json": {
+              "path": "evidence/session004/remote-final-001/candidates/results/trident-vllm-pooling-001/worker-result.json",
+              "sha256": "7de46591cf782cbb50ac6d670f822868f766097b44854d568a2b13f83eec3044"
+            },
+            "run-start.json": {
+              "path": "evidence/session004/remote-final-001/candidates/results/trident-vllm-pooling-001/run-start.json",
+              "sha256": "603068a089b8ae9d2caa020b88dfe3e2c71a1c86f552150a3942b6f6e7af07f7"
+            },
+            "run-final.json": {
+              "path": "evidence/session004/remote-final-001/candidates/results/trident-vllm-pooling-001/run-final.json",
+              "sha256": "fe5c13cd9388d57e03342b35d7997b3b5e76bf9f04a4b061571324695a6fcef7"
+            },
+            "environment.json": {
+              "path": "evidence/session004/remote-final-001/candidates/results/trident-vllm-pooling-001/environment.json",
+              "sha256": "51cd1158f39efc0c039cda8e63a5a31f8fdf9328ec9751d46240877e7431161c"
+            },
+            "checkpoint-verification.json": {
+              "path": "evidence/session004/remote-final-001/candidates/results/trident-vllm-pooling-001/checkpoint-verification.json",
+              "sha256": "0ad9bb2fc2b84e8b491442dfcadc951908b3fa2351e75346e046c77fad562bcd"
+            }
+          },
+          "run_status": "completed",
+          "worker_exit_code": 0,
+          "development_contract_passed": true,
+          "run_wall_seconds": 116.63075440889224,
+          "owned_process_group_cleanup_recorded": true,
+          "standard_submission_complete": false,
+          "source_final_seal_pending": false,
+          "framework": "native_vllm_pooling_conversion",
+          "query_count": 1,
+          "document_count": 4,
+          "dimension": 2048,
+          "cosine_scores": [
+            [
+              0.8738650784711609,
+              0.7526463319888547,
+              0.7866230580349918,
+              0.7910106371015895
+            ]
+          ],
+          "ranking": [
+            [
+              0,
+              3,
+              2,
+              1
+            ]
+          ],
+          "all_5_token_ids_match_publisher_processor": true,
+          "numerical_reference_available": false,
+          "engine_load_and_calls_seconds": 65.61741575831547,
+          "usable_GPU_peak_bytes": null,
+          "parent_reported_gpu_peak_allocated_bytes": 0,
+          "peak_memory_caveat": "Parent-process allocator reports0; model is in EngineCore subprocess, not a real zero-memory observation",
+          "HTTP_service_GPU_verified": false,
+          "HTTP_service_CPU_contract_verified": true,
+          "official_qrels_available": false,
+          "executed_source_identity": {
+            "manifest": {
+              "path": "evidence/session004/remote-final-001/export-manifest.json",
+              "bytes": 208071,
+              "sha256": "eb5ab4603f1f557d4d07d9d8b76e24865a8aa518d6a4713981453c5f2aca15c0"
+            },
+            "source": "/root/private_data/guoxin-candidate-tools-20261023/scripts/trident_vllm_pooling_probe_20261023.py",
+            "sha256": "2b4030517bd55056595b4caa34506c5f8573d6c3149b81aa81c507a10061ede7",
+            "size": 19452,
+            "before_after_match": true,
+            "evidence_type": "export_manifest_before_after_hash_only",
+            "source_payload_reconstructed": false
+          },
+          "official_embedding_evaluator_bridge_implemented": false,
+          "HTTP_CPU_contract_tests_per_platform": 10
+        },
+        "accuracy004": {
+          "evaluator_path_and_sha256": null,
+          "official_material_source": null,
+          "selfcheck_command_and_log": null,
+          "baseline_path_and_sha256": null,
+          "dataset_reference_manifest_and_revision": null,
+          "preprocessing_decoding_and_parser_contract": null,
+          "metric_names_and_difference_formula": null,
+          "raw_predictions_path_and_sha256": null,
+          "verify_result_path_and_sha256": null,
+          "per_metric_score_baseline_tolerance_and_judgment": null,
+          "official_accuracy_verified": false,
+          "independent_reference_available": false,
+          "official_score": null
+        },
+        "performance004": {
+          "task_kind": "retrieval_embeddings",
+          "applicable_official_method": null,
+          "client_distribution_version_and_source_hash": null,
+          "client_and_server_python_paths": null,
+          "cache_warmup_and_round_policy": null,
+          "input_preprocessing_and_total_length_definition": null,
+          "per_load_argv_and_native_raw_paths": null,
+          "per_load_requested_completed_failed_counts": null,
+          "per_load_durations_and_metrics": null,
+          "scored_round_table_path": null,
+          "unsupported_unattempted_timedout_loads": null,
+          "output_integrity_evidence_and_limitations": null,
+          "official_performance_verified": false,
+          "timings_are_development_diagnostics_only": true,
+          "usable_GPU_peak_bytes": null,
+          "engine_load_and_calls_seconds": 65.61741575831547,
+          "parent_reported_gpu_peak_allocated_bytes": 0,
+          "per_request_throughput_or_latency_verified": false
+        },
+        "delivery004": {
+          "proposed_local_stage": "dist/repositories-stage004/trident-qwen3vl2b-bw-transformers",
+          "local_stage_created": false,
+          "manifest_path_and_sha256": null,
+          "local_or_remote_commit": null,
+          "repository_url": null,
+          "reviewer_repository_access_method": null,
+          "mirror_sync_verified": null,
+          "reviewer_image_access_verified": null,
+          "clean_image_replay_record": null,
+          "platform_stopped_final_evidence": {
+            "path": "evidence/platform-checkpoint-20261023-004.json",
+            "bytes": 3348,
+            "sha256": "18c756885773696a834b7f44c82a21ecc2f35e18e3005010d173dbc98fba3148"
+          },
+          "user_manual_submission_material_index": null,
+          "contest_form_submitted": false,
+          "final_repo_commit": null,
+          "final_manifest": null,
+          "contest_submission_performed": false,
+          "source_final_seal_pending": false,
+          "executed_source_identity": {
+            "manifest": {
+              "path": "evidence/session004/remote-final-001/export-manifest.json",
+              "bytes": 208071,
+              "sha256": "eb5ab4603f1f557d4d07d9d8b76e24865a8aa518d6a4713981453c5f2aca15c0"
+            },
+            "source": "/root/private_data/guoxin-candidate-tools-20261023/scripts/trident_vllm_pooling_probe_20261023.py",
+            "sha256": "2b4030517bd55056595b4caa34506c5f8573d6c3149b81aa81c507a10061ede7",
+            "size": 19452,
+            "before_after_match": true,
+            "evidence_type": "export_manifest_before_after_hash_only",
+            "source_payload_reconstructed": false
+          },
+          "platform_all_instances_stopped": true,
+          "visible_remaining_cardhours": "488.0238888888",
+          "visible_balance_is_final_settled_bill": false,
+          "no_recharge_or_purchase": true,
+          "raw_export_manifest_binding": {
+            "path": "evidence/session004/remote-final-001/export-manifest.json",
+            "bytes": 208071,
+            "sha256": "eb5ab4603f1f557d4d07d9d8b76e24865a8aa518d6a4713981453c5f2aca15c0"
+          },
+          "raw_final_audit": {
+            "path": "evidence/session004/remote-final-001-audit.json",
+            "bytes": 54379,
+            "sha256": "42ca16eb48c4673e412626fb26e2667e27ec85116962e0e42941f540fb8a4335"
+          }
+        }
+      },
+      "HTTP_service_GPU_verified": false,
+      "official_embedding_evaluator_bridge_implemented": false,
+      "report_sha256_at_update": "334cf57a3c73c2604c934570aa4c55b6d6c147c770d7b16e0f98269355bd68fb",
+      "report_updated_utc": "2026-10-23T12:41:36.633422+00:00",
+      "submission_ready": false,
+      "report_sha256_scope": "Current frozen report source before repository build; legacy key name retained"
+    },
+    {
+      "task": "qwen3-forcedaligner-bw-transformers",
+      "model_id": "Qwen/Qwen3-ForcedAligner-0.6B",
+      "track": "T04",
+      "report_source": "docs/report-004-qwen3-forcedaligner-bw-transformers.md",
+      "report_sha256_at_draft": "7e6d947c68daadd20ce9ddbe9964b6bac7852e922d7423966fabeae827393b98",
+      "report_sections": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "draft_scope": "Session004 final-source-sealed publisher Transformers GPU alignment reference; formal framework eligibility and independent timestamp accuracy pending",
+      "framework_eligibility": "publisher_Transformers_reference_verified; contest_vllm_or_sglang_scope_not_closed",
+      "counts_as_completed_contest_piece": false,
+      "root_standard_entries_for_new_candidate_ready": false,
+      "repositorywide_OSS_license_is_mandatory": false,
+      "incomplete_load_is_automatic_submission_rejection": false,
+      "formal_ready": false,
+      "pending_fields": {
+        "execution004": {
+          "run_id": "ec698b4b-f378-4597-b236-bcd523bbb8ad",
+          "status": "completed",
+          "started_utc": null,
+          "ready_or_model_loaded_utc": null,
+          "ended_utc": null,
+          "command_argv": [
+            "/root/private_data/guoxin-candidates/envs/forcedaligner-001/bin/python",
+            "-B",
+            "/root/private_data/guoxin-hackathon-20261023-session004/scripts/task_expansion_candidates_20261023.py",
+            "qwen3-forcedaligner-bw-transformers",
+            "run",
+            "--_worker",
+            "--model-dir",
+            "/root/private_data/guoxin-candidates/models/forcedaligner",
+            "--output",
+            "/root/private_data/guoxin-candidates/results/forcedaligner-pilot-001",
+            "--max-seconds",
+            "360",
+            "--port",
+            "30109",
+            "--upstream-root",
+            "/root/private_data/guoxin-candidates/source/qwen3-asr",
+            "--requests",
+            "tasks/qwen3-forcedaligner-bw-transformers/requests.example.json"
+          ],
+          "source_manifest_path": "evidence/session004/remote-final-001/export-manifest.json",
+          "source_manifest_sha256": "eb5ab4603f1f557d4d07d9d8b76e24865a8aa518d6a4713981453c5f2aca15c0",
+          "runtime_code_sha256": "8c7ec3978d59e2d8cf69e09fc647b6f2cb5fb1fa7685ee11cdf4e77048dc3bde",
+          "plugin_code_sha256": null,
+          "server_or_worker_log_path": "evidence/session004/remote-final-001/candidates/results/forcedaligner-pilot-001/worker.log",
+          "server_or_worker_log_sha256": "0a27e15af169564d3ec40cc5476894fb0289fec0dd4ebb87df4c071460c52381",
+          "owned_cleanup_path": null,
+          "owned_cleanup_sha256": null,
+          "owned_processes_stopped_verified": null,
+          "raw_artifact_manifest_path": "evidence/session004/remote-final-001/export-manifest.json",
+          "raw_artifact_manifest_sha256": "eb5ab4603f1f557d4d07d9d8b76e24865a8aa518d6a4713981453c5f2aca15c0",
+          "run_directory_identity": "forcedaligner-pilot-001",
+          "run_wall_seconds": 72.99090600339696,
+          "worker_exit_code": 0,
+          "source_final_seal_pending": false,
+          "raw_artifacts": {
+            "worker-result.json": {
+              "path": "evidence/session004/remote-final-001/candidates/results/forcedaligner-pilot-001/worker-result.json",
+              "sha256": "c91746c4e7b826749418b407aaf2e46458af930ed382c70e416229ce8b394184"
+            },
+            "run-start.json": {
+              "path": "evidence/session004/remote-final-001/candidates/results/forcedaligner-pilot-001/run-start.json",
+              "sha256": "ad05712626c0e69fac4e32aec84e0838daf640d6019a08ec3853eca543b320fd"
+            },
+            "run-final.json": {
+              "path": "evidence/session004/remote-final-001/candidates/results/forcedaligner-pilot-001/run-final.json",
+              "sha256": "8d5f20588a41f90c990cdb7aa4183c5a102af78bd5ff039cad4d3a0c845645b2"
+            },
+            "environment.json": {
+              "path": "evidence/session004/remote-final-001/candidates/results/forcedaligner-pilot-001/environment.json",
+              "sha256": "60e78e09deb684a0157ee8942c4b64b6fbbaebff6eb8e0e698e6338a8dd57e70"
+            },
+            "checkpoint-verification.json": {
+              "path": "evidence/session004/remote-final-001/candidates/results/forcedaligner-pilot-001/checkpoint-verification.json",
+              "sha256": "fe4c6f28284efb0a383ad2c827721c6425524af45146626e57de5037aa6fa07b"
+            }
+          },
+          "executed_source_identity": {
+            "manifest": {
+              "path": "evidence/session004/remote-final-001/export-manifest.json",
+              "bytes": 208071,
+              "sha256": "eb5ab4603f1f557d4d07d9d8b76e24865a8aa518d6a4713981453c5f2aca15c0"
+            },
+            "source": "/root/private_data/guoxin-hackathon-20261023-session004/scripts/task_expansion_candidates_20261023.py",
+            "sha256": "8c7ec3978d59e2d8cf69e09fc647b6f2cb5fb1fa7685ee11cdf4e77048dc3bde",
+            "size": 25749,
+            "before_after_match": true,
+            "evidence_type": "export_manifest_before_after_hash_only",
+            "source_payload_reconstructed": false
+          },
+          "owned_process_group_cleanup_recorded": true
+        },
+        "environment004": {
+          "platform_instance_id": "2112237945233408001",
+          "region_and_resource_group": {
+            "region": "华中一区【A区】",
+            "group": "113 / hx1hgbwnormal"
+          },
+          "cpu_memory_storage": {
+            "allocated_cpu_cores": 15,
+            "allocated_memory_gb": 59,
+            "storage_gb": null
+          },
+          "actual_device_name_count_and_vram": null,
+          "platform_screenshots": [
+            {
+              "path": "evidence/session004/screenshots/all-notebooks-stopped-20261023.png",
+              "bytes": 72900,
+              "sha256": "8bb1411be69da7fb3bb15d55bee7e30ff64c59d3ebb737c031801af1f7246e27",
+              "captured_utc": "2026-10-23T12:22:20.179036+00:00"
+            },
+            {
+              "path": "evidence/session004/screenshots/remaining-cardhours-20261023.png",
+              "bytes": 69694,
+              "sha256": "e982191b4f7392bbb48b3c15f0f24af94dcfaf14a2034894c93d210654cd2c12",
+              "captured_utc": "2026-10-23T12:28:49.526923+00:00"
+            }
+          ],
+          "image_id_and_version": {
+            "id": "2071293281204580354",
+            "version_id": "2082674417745739777",
+            "display_tag": "jupyter-vllm018-ubuntu22.04-dtk26.04-qwen3.6-20260423"
+          },
+          "image_registry_repository_tag": null,
+          "image_access_method": "Account image is selectable in SCNet Notebook; reviewer access not independently verified",
+          "env_log_path": "evidence/session004/remote-final-001/candidates/results/forcedaligner-pilot-001/environment.json",
+          "env_log_sha256": "60e78e09deb684a0157ee8942c4b64b6fbbaebff6eb8e0e698e6338a8dd57e70",
+          "python_executable_and_version": {
+            "executable": "/root/private_data/guoxin-candidates/envs/forcedaligner-001/bin/python",
+            "version": "3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0]"
+          },
+          "package_versions_and_roots": {
+            "torchvision": {
+              "version": "0.25.0+das.opt1.dtk2604.torch2100.20260325.g860505",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "flash-attn": {
+              "version": "2.8.3+das.opt1.dtk2604.torch2100.20260330.g3f0061",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "nagisa": {
+              "version": "0.2.11",
+              "root": "/root/private_data/guoxin-candidates/envs/forcedaligner-001/lib/python3.10/site-packages"
+            },
+            "lightop": {
+              "version": "0.6.0+das.dtk2604.torch2100.2604101656.g193111",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "librosa": {
+              "version": "0.11.0",
+              "root": "/root/private_data/guoxin-candidates/envs/forcedaligner-001/lib/python3.10/site-packages"
+            },
+            "triton": {
+              "version": "3.6.0+gitc73250c4.staging",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "soundfile": {
+              "version": "0.13.1",
+              "root": "/root/private_data/guoxin-candidates/envs/forcedaligner-001/lib/python3.10/site-packages"
+            },
+            "torch": {
+              "version": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "soynlp": {
+              "version": "0.0.493",
+              "root": "/root/private_data/guoxin-candidates/envs/forcedaligner-001/lib/python3.10/site-packages"
+            },
+            "vllm-hcu": {
+              "version": "0.18.1+das.dtk2604",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "aiter": {
+              "version": "0.1.2+das.opt1.dtk2604.torch2100.2604212021.gd52133",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "accelerate": {
+              "version": "1.12.0",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "vllm": {
+              "version": "0.18.1+das.fa71803.dtk2604",
+              "root": "/usr/local/lib/python3.10/dist-packages"
+            },
+            "transformers": {
+              "version": "4.57.6",
+              "root": "/root/private_data/guoxin-candidates/envs/forcedaligner-001/lib/python3.10/site-packages"
+            }
+          },
+          "native_before_after_manifest": null,
+          "dtk_and_hip": null,
+          "checkpoint_path_revision_and_verification": {
+            "path": "evidence/session004/remote-final-001/candidates/results/forcedaligner-pilot-001/checkpoint-verification.json",
+            "bytes": 1573,
+            "sha256": "fe4c6f28284efb0a383ad2c827721c6425524af45146626e57de5037aa6fa07b"
+          },
+          "actual_precision_tp_context_port": {
+            "precision": "BF16",
+            "device_map": "cuda:0",
+            "attention": "SDPA",
+            "TP": null,
+            "context": null,
+            "HTTP_port": null,
+            "scope": "direct publisher alignment call, not an HTTP service"
+          },
+          "service_mapping_or_none": null,
+          "python": "3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0]",
+          "executable": "/root/private_data/guoxin-candidates/envs/forcedaligner-001/bin/python",
+          "checkpoint": {
+            "complete": true,
+            "model_id": "Qwen/Qwen3-ForcedAligner-0.6B",
+            "revision": "c7cbfc2048c462b0d63a45797104fc9db3ad62b7",
+            "directory": "/root/private_data/guoxin-candidates/models/forcedaligner",
+            "weights_hashed": true,
+            "files": [
+              {
+                "path": "chat_template.json",
+                "size_ok": true,
+                "identity_ok": true,
+                "git_blob_sha1": "c44736493efd71ec96218cc626904698cdb13235"
+              },
+              {
+                "path": "config.json",
+                "size_ok": true,
+                "identity_ok": true,
+                "git_blob_sha1": "7b9883fe52d0ba896773687a7fdad38eacab062d"
+              },
+              {
+                "path": "generation_config.json",
+                "size_ok": true,
+                "identity_ok": true,
+                "git_blob_sha1": "b0a540032cf7b6b5ba1438d04ab69b7e787d9b8e"
+              },
+              {
+                "path": "merges.txt",
+                "size_ok": true,
+                "identity_ok": true,
+                "git_blob_sha1": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7"
+              },
+              {
+                "path": "model.safetensors",
+                "size_ok": true,
+                "identity_ok": true,
+                "sha256": "47831d0e82f96b20e9034dba01a075ee06436654719f6a68289e49f1b65ce0e7"
+              },
+              {
+                "path": "preprocessor_config.json",
+                "size_ok": true,
+                "identity_ok": true,
+                "git_blob_sha1": "8f7f07346466d5d494ec0d4969d1c3d0190eed72"
+              },
+              {
+                "path": "tokenizer_config.json",
+                "size_ok": true,
+                "identity_ok": true,
+                "git_blob_sha1": "3df92df83b22342e36a7b11cf9a70de2a2996bec"
+              },
+              {
+                "path": "vocab.json",
+                "size_ok": true,
+                "identity_ok": true,
+                "git_blob_sha1": "4783fe10ac3adce15ac8f358ef5462739852c569"
+              }
+            ]
+          },
+          "partial_repair_native_metadata_unchanged": true,
+          "device_discovery_observed": true,
+          "platform_allocation": {
+            "card": "BW 64GB",
+            "count": 1,
+            "scope": "visible platform allocation; not an independent runtime device inventory"
+          },
+          "platform_checkpoint": {
+            "path": "evidence/platform-checkpoint-20261023-004.json",
+            "bytes": 3348,
+            "sha256": "18c756885773696a834b7f44c82a21ecc2f35e18e3005010d173dbc98fba3148"
+          }
+        },
+        "smoke004": {
+          "kind": "forced_alignment",
+          "input_manifest_path": null,
+          "input_manifest_sha256": null,
+          "source_and_task_hashes": null,
+          "raw_output_paths_and_hashes": null,
+          "functional_contract": null,
+          "passed_cases_and_failed_cases": null,
+          "finish_reason_or_not_applicable": null,
+          "truncation_and_error_scope": null,
+          "usage_or_vector_or_timestamp_integrity": null,
+          "functional_passed": true,
+          "official_accuracy_implied": false,
+          "evidence": {
+            "worker-result.json": {
+              "path": "evidence/session004/remote-final-001/candidates/results/forcedaligner-pilot-001/worker-result.json",
+              "sha256": "c91746c4e7b826749418b407aaf2e46458af930ed382c70e416229ce8b394184"
+            },
+            "run-start.json": {
+              "path": "evidence/session004/remote-final-001/candidates/results/forcedaligner-pilot-001/run-start.json",
+              "sha256": "ad05712626c0e69fac4e32aec84e0838daf640d6019a08ec3853eca543b320fd"
+            },
+            "run-final.json": {
+              "path": "evidence/session004/remote-final-001/candidates/results/forcedaligner-pilot-001/run-final.json",
+              "sha256": "8d5f20588a41f90c990cdb7aa4183c5a102af78bd5ff039cad4d3a0c845645b2"
+            },
+            "environment.json": {
+              "path": "evidence/session004/remote-final-001/candidates/results/forcedaligner-pilot-001/environment.json",
+              "sha256": "60e78e09deb684a0157ee8942c4b64b6fbbaebff6eb8e0e698e6338a8dd57e70"
+            },
+            "checkpoint-verification.json": {
+              "path": "evidence/session004/remote-final-001/candidates/results/forcedaligner-pilot-001/checkpoint-verification.json",
+              "sha256": "fe4c6f28284efb0a383ad2c827721c6425524af45146626e57de5037aa6fa07b"
+            }
+          },
+          "run_status": "completed",
+          "worker_exit_code": 0,
+          "development_contract_passed": true,
+          "run_wall_seconds": 72.99090600339696,
+          "owned_process_group_cleanup_recorded": true,
+          "standard_submission_complete": false,
+          "source_final_seal_pending": false,
+          "audio_seconds": 4.2039375,
+          "transcript": "甚至出现交易几乎停滞的情况。",
+          "alignment_units": [
+            {
+              "text": "甚",
+              "start_time": 0.4,
+              "end_time": 0.72
+            },
+            {
+              "text": "至",
+              "start_time": 0.72,
+              "end_time": 0.96
+            },
+            {
+              "text": "出",
+              "start_time": 0.96,
+              "end_time": 1.12
+            },
+            {
+              "text": "现",
+              "start_time": 1.12,
+              "end_time": 1.52
+            },
+            {
+              "text": "交",
+              "start_time": 1.52,
+              "end_time": 1.76
+            },
+            {
+              "text": "易",
+              "start_time": 1.76,
+              "end_time": 2.0
+            },
+            {
+              "text": "几",
+              "start_time": 2.0,
+              "end_time": 2.24
+            },
+            {
+              "text": "乎",
+              "start_time": 2.24,
+              "end_time": 2.48
+            },
+            {
+              "text": "停",
+              "start_time": 2.48,
+              "end_time": 2.72
+            },
+            {
+              "text": "滞",
+              "start_time": 2.72,
+              "end_time": 2.88
+            },
+            {
+              "text": "的",
+              "start_time": 2.88,
+              "end_time": 3.04
+            },
+            {
+              "text": "情",
+              "start_time": 3.04,
+              "end_time": 3.36
+            },
+            {
+              "text": "况",
+              "start_time": 3.36,
+              "end_time": 3.68
+            }
+          ],
+          "alignment_call_seconds": 12.206611174158752,
+          "framework": "publisher_transformers_SDPA",
+          "framework_eligibility": "TF_only_pending_official_confirmation",
+          "independent_timestamp_reference_available": false,
+          "AAS_ms": null,
+          "source_sha256": "8c7ec3978d59e2d8cf69e09fc647b6f2cb5fb1fa7685ee11cdf4e77048dc3bde",
+          "run_wall_scope": "worker supervision only; preceding parent checkpoint SHA time excluded",
+          "executed_source_identity": {
+            "manifest": {
+              "path": "evidence/session004/remote-final-001/export-manifest.json",
+              "bytes": 208071,
+              "sha256": "eb5ab4603f1f557d4d07d9d8b76e24865a8aa518d6a4713981453c5f2aca15c0"
+            },
+            "source": "/root/private_data/guoxin-hackathon-20261023-session004/scripts/task_expansion_candidates_20261023.py",
+            "sha256": "8c7ec3978d59e2d8cf69e09fc647b6f2cb5fb1fa7685ee11cdf4e77048dc3bde",
+            "size": 25749,
+            "before_after_match": true,
+            "evidence_type": "export_manifest_before_after_hash_only",
+            "source_payload_reconstructed": false
+          }
+        },
+        "accuracy004": {
+          "evaluator_path_and_sha256": null,
+          "official_material_source": null,
+          "selfcheck_command_and_log": null,
+          "baseline_path_and_sha256": null,
+          "dataset_reference_manifest_and_revision": null,
+          "preprocessing_decoding_and_parser_contract": null,
+          "metric_names_and_difference_formula": null,
+          "raw_predictions_path_and_sha256": null,
+          "verify_result_path_and_sha256": null,
+          "per_metric_score_baseline_tolerance_and_judgment": null,
+          "official_accuracy_verified": false,
+          "independent_reference_available": false,
+          "official_score": null
+        },
+        "performance004": {
+          "task_kind": "forced_alignment",
+          "applicable_official_method": null,
+          "client_distribution_version_and_source_hash": null,
+          "client_and_server_python_paths": null,
+          "cache_warmup_and_round_policy": null,
+          "input_preprocessing_and_total_length_definition": null,
+          "per_load_argv_and_native_raw_paths": null,
+          "per_load_requested_completed_failed_counts": null,
+          "per_load_durations_and_metrics": null,
+          "scored_round_table_path": null,
+          "unsupported_unattempted_timedout_loads": null,
+          "output_integrity_evidence_and_limitations": null,
+          "official_performance_verified": false,
+          "timings_are_development_diagnostics_only": true,
+          "usable_GPU_peak_bytes": null,
+          "alignment_call_seconds": 12.206611174158752,
+          "worker_supervision_wall_seconds": 72.99090600339696,
+          "independent_timestamp_accuracy_evaluated": false
+        },
+        "delivery004": {
+          "proposed_local_stage": "dist/repositories-stage004/qwen3-forcedaligner-bw-transformers",
+          "local_stage_created": false,
+          "manifest_path_and_sha256": null,
+          "local_or_remote_commit": null,
+          "repository_url": null,
+          "reviewer_repository_access_method": null,
+          "mirror_sync_verified": null,
+          "reviewer_image_access_verified": null,
+          "clean_image_replay_record": null,
+          "platform_stopped_final_evidence": {
+            "path": "evidence/platform-checkpoint-20261023-004.json",
+            "bytes": 3348,
+            "sha256": "18c756885773696a834b7f44c82a21ecc2f35e18e3005010d173dbc98fba3148"
+          },
+          "user_manual_submission_material_index": null,
+          "contest_form_submitted": false,
+          "final_repo_commit": null,
+          "final_manifest": null,
+          "contest_submission_performed": false,
+          "source_final_seal_pending": false,
+          "executed_source_identity": {
+            "manifest": {
+              "path": "evidence/session004/remote-final-001/export-manifest.json",
+              "bytes": 208071,
+              "sha256": "eb5ab4603f1f557d4d07d9d8b76e24865a8aa518d6a4713981453c5f2aca15c0"
+            },
+            "source": "/root/private_data/guoxin-hackathon-20261023-session004/scripts/task_expansion_candidates_20261023.py",
+            "sha256": "8c7ec3978d59e2d8cf69e09fc647b6f2cb5fb1fa7685ee11cdf4e77048dc3bde",
+            "size": 25749,
+            "before_after_match": true,
+            "evidence_type": "export_manifest_before_after_hash_only",
+            "source_payload_reconstructed": false
+          },
+          "platform_all_instances_stopped": true,
+          "visible_remaining_cardhours": "488.0238888888",
+          "visible_balance_is_final_settled_bill": false,
+          "no_recharge_or_purchase": true,
+          "raw_export_manifest_binding": {
+            "path": "evidence/session004/remote-final-001/export-manifest.json",
+            "bytes": 208071,
+            "sha256": "eb5ab4603f1f557d4d07d9d8b76e24865a8aa518d6a4713981453c5f2aca15c0"
+          },
+          "raw_final_audit": {
+            "path": "evidence/session004/remote-final-001-audit.json",
+            "bytes": 54379,
+            "sha256": "42ca16eb48c4673e412626fb26e2667e27ec85116962e0e42941f540fb8a4335"
+          }
+        }
+      },
+      "report_sha256_at_update": "7e6d947c68daadd20ce9ddbe9964b6bac7852e922d7423966fabeae827393b98",
+      "report_updated_utc": "2026-10-23T12:41:36.633422+00:00",
+      "submission_ready": false,
+      "report_sha256_scope": "Current frozen report source before repository build; legacy key name retained"
+    }
+  ],
+  "snapshot_utc": "2026-10-23T12:45:12.832760+00:00",
+  "snapshot_boundary": "Local-stage and push fields describe this prebuild snapshot. Actual build, ZIP, commits and remote readback are recorded externally after freezing; this file is not rewritten inside frozen payloads.",
+  "final_platform_checkpoint": "evidence/platform-checkpoint-20261023-004.json",
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "contest_form_submitted": false
+}

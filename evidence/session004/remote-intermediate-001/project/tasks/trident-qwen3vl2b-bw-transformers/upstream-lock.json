@@ -1,0 +1,381 @@
+{
+  "schema_version": 1,
+  "repository": "OpenBMB/Trident",
+  "revision": "7fbf4b2033e1b3a43a99185fc125d765a549c52d",
+  "source_url": "https://codeload.github.com/OpenBMB/Trident/zip/7fbf4b2033e1b3a43a99185fc125d765a549c52d",
+  "original_archive_sha256": "9ffe592101afa4a4c49fe363fe19573a52e8dff96626a00612d07723e0c75951",
+  "archive_file": "upstream-source.zip",
+  "archive_sha256": "1cd6a1695c4bfc1c92616738b9785b868b94a0f82cb74d34c07984d91207289a",
+  "selection": [
+    "src/",
+    "scripts/",
+    "configs/",
+    "data/download_data.sh",
+    "LICENSE",
+    "README.md",
+    "requirements.txt"
+  ],
+  "files": [
+    {
+      "path": "LICENSE",
+      "size": 1076,
+      "sha256": "ce577a6544d1b99fc830cc8eb39af59caa78372ca0568bd53e43124246a100a6"
+    },
+    {
+      "path": "README.md",
+      "size": 21637,
+      "sha256": "49a32640bcb076dd3252bc1cfee7720018b3965d3fab82ef0d21d26222a72cf6"
+    },
+    {
+      "path": "configs/base.yaml",
+      "size": 10516,
+      "sha256": "20ab4ff830fc49378db9d2c8ae9ca69050c20f8b121190d6c08b0a1aee8613c7"
+    },
+    {
+      "path": "configs/ds_zero2.json",
+      "size": 457,
+      "sha256": "3da1443e27a77f97f9355bf181779761b2515c0f35102ad1814ec9a52188eda5"
+    },
+    {
+      "path": "configs/ds_zero3.json",
+      "size": 631,
+      "sha256": "e65b9ec688f7717a0550de1a3e63cd0add29563a6bce5d69c23251bd76753d64"
+    },
+    {
+      "path": "configs/trident_jinaclip.yaml",
+      "size": 4177,
+      "sha256": "3c2926dce572bc6d1ad9cf6200562ebf785c81ff96c169def945f3c109e1203a"
+    },
+    {
+      "path": "configs/trident_qwen3vl.yaml",
+      "size": 4691,
+      "sha256": "17e049e335e77a27442a54c4ef45be9042556c00e963434113279f48c9156332"
+    },
+    {
+      "path": "data/download_data.sh",
+      "size": 12617,
+      "sha256": "71e6e22690af94390cdf387f2dd348bf96a17ca935bec8f3e9c509000dddf1a1"
+    },
+    {
+      "path": "requirements.txt",
+      "size": 1305,
+      "sha256": "96821508a31b6dfb54c471b50759c555e7e3fce8b5830fae91b97388ed16ca1d"
+    },
+    {
+      "path": "scripts/compute_gr_clip_means.sh",
+      "size": 1351,
+      "sha256": "5cdbf0e8b2804b5aa43ac0504e9b863a893b8df7e22f03849bd0813656dfc918"
+    },
+    {
+      "path": "scripts/eval.sh",
+      "size": 2429,
+      "sha256": "935d3a7185cf592099e5f6ff2803e7f1efbeed012ea093f0b392646c8dec7169"
+    },
+    {
+      "path": "scripts/run_all_datasets.sh",
+      "size": 21336,
+      "sha256": "20294a2edd2a041d9e01eba72baa59e1d575a45ea0764ddf0329b1df55f02c0a"
+    },
+    {
+      "path": "scripts/train.sh",
+      "size": 1331,
+      "sha256": "90bdc31a6649949e0b9e9f47d4f71218e7bd49845c7c492aa04eb9974e3fe59b"
+    },
+    {
+      "path": "src/embedding_backends/__init__.py",
+      "size": 1506,
+      "sha256": "64338e49267ef9d922e6bbc51b523ae8d460f63174109ad94b305954acd1521f"
+    },
+    {
+      "path": "src/embedding_backends/altclip.py",
+      "size": 6463,
+      "sha256": "54a68f9100230a81e4f279446f5d88299234754cba865c19310c25717e521a3a"
+    },
+    {
+      "path": "src/embedding_backends/base.py",
+      "size": 17936,
+      "sha256": "74d51bd5f7fa8d3e3d4779eec21c74f734543a1dae4fa1d5d8926afed2fa5416"
+    },
+    {
+      "path": "src/embedding_backends/clip_openai.py",
+      "size": 6144,
+      "sha256": "f1ded4a1f0f2bfe87fa4879dbe044636b236dadbd1b17cf0b518c6c30333986b"
+    },
+    {
+      "path": "src/embedding_backends/common.py",
+      "size": 12818,
+      "sha256": "279915c091665d3c05016cd9d47bef55f51fd9b17a7b6ea269df30228a75795c"
+    },
+    {
+      "path": "src/embedding_backends/gr_clip.py",
+      "size": 17518,
+      "sha256": "7136d1cd6cabe169496fc90b38f8b4d2a8a06c1a17cf6d15c7f135e0584269eb"
+    },
+    {
+      "path": "src/embedding_backends/jina_clip_v2.py",
+      "size": 7538,
+      "sha256": "b65b902c9d7727de846d14042f04975bada7f027fc4765ce9c9d93e9f3b1bb65"
+    },
+    {
+      "path": "src/embedding_backends/jina_v5_omni.py",
+      "size": 6153,
+      "sha256": "67e7f6dcb9335e247d2d45928c7050c6d5c52dca6646549647410e4f5df104d6"
+    },
+    {
+      "path": "src/embedding_backends/qwen3vl_official.py",
+      "size": 6488,
+      "sha256": "9ad62e74f716d79d4978d881f3a8805a4ec5f55bc6ced80bc1ac999a02f30f89"
+    },
+    {
+      "path": "src/embedding_backends/siglip2.py",
+      "size": 7366,
+      "sha256": "380f5a22a0e299e0f2ee14fee260eeef6c46a0c6836deed2e6b257c32d117115"
+    },
+    {
+      "path": "src/embedding_backends/trident_jinaclip.py",
+      "size": 10139,
+      "sha256": "5d1d4e833dff66e75f1d612bea1dae7c6785ea9df8aecc34421bff3a9e56b3d2"
+    },
+    {
+      "path": "src/embedding_backends/trident_qwen3vl.py",
+      "size": 9554,
+      "sha256": "8d6ea5e9866da1e0e9f6400d8aba03df8820e7a46f83d6267a2ea72878e6754a"
+    },
+    {
+      "path": "src/embedding_backends/unime_phi35v.py",
+      "size": 9883,
+      "sha256": "4be03728acbd7904d0cac34211167cf981ea0b4c54aa9ea94d58771c21c063dc"
+    },
+    {
+      "path": "src/embedding_backends/visrag_ret.py",
+      "size": 6016,
+      "sha256": "4937eb0c58474a2f6ec5656458cbea6359f74057d0bd4d65e8f137ea88d7a51f"
+    },
+    {
+      "path": "src/eval/build_manifests.py",
+      "size": 6003,
+      "sha256": "5354d1bde1b2afeb2f6520f0b033339a87b9cd48e754ca05dce99d811a02f939"
+    },
+    {
+      "path": "src/eval/embed_jsonl_unified_multigpu.py",
+      "size": 58288,
+      "sha256": "4f5602bd064a14f8ca8a70a6b53af4396af061b058fd89afcc5cdd1fdcdd4131"
+    },
+    {
+      "path": "src/eval/eval_common.py",
+      "size": 26240,
+      "sha256": "1195b489d0c34fffea4c7a05e4bcc6f870346521e6ff462588426933e70a747a"
+    },
+    {
+      "path": "src/eval/eval_mix_retrieval.py",
+      "size": 11682,
+      "sha256": "ca0e93ba3604b814a0fd556e9a015bbcf2c591250d0f2040efcd574c410522c9"
+    },
+    {
+      "path": "src/eval/eval_retrieval.py",
+      "size": 5156,
+      "sha256": "3e14234515b74ca4376deadd47dcf570309c49348b8901a43e91ad1fe9954484"
+    },
+    {
+      "path": "src/eval/export_results_table.py",
+      "size": 19860,
+      "sha256": "b5a934f4af6935c0da8b36b4300381729ab6823a26f210fa15582347609206ed"
+    },
+    {
+      "path": "src/eval/summarize_matryoshka.py",
+      "size": 5100,
+      "sha256": "190bf1e694373c6e1166cf05878737f6db0cbb592287194ffb950ea9089d173a"
+    },
+    {
+      "path": "src/mmemb/__init__.py",
+      "size": 543,
+      "sha256": "9c5df400dcbaa19c1c3b83f3667165102430e8f873b36d260c2c0b7bc8117b24"
+    },
+    {
+      "path": "src/mmemb/config.py",
+      "size": 3697,
+      "sha256": "c18908dac1a50164454ef16c650d59ccf6b1636f7c4e8cf86434dd02154dbd14"
+    },
+    {
+      "path": "src/mmemb/data/__init__.py",
+      "size": 5643,
+      "sha256": "dfe2ff9a38e3fc857607d3b127e50cd520403d99fa21c60616bf715049e92102"
+    },
+    {
+      "path": "src/mmemb/data/collator.py",
+      "size": 9533,
+      "sha256": "bb2a44049c82e3494fa63a40920c9f15325c813c4ee5be04ce7a352e7ccc1b43"
+    },
+    {
+      "path": "src/mmemb/data/dataset.py",
+      "size": 39661,
+      "sha256": "45aa30f57fa0673289f97b0eea79c46420640af65c98f4b5bd3c2c70dc6d44b7"
+    },
+    {
+      "path": "src/mmemb/data/identity.py",
+      "size": 10888,
+      "sha256": "53d6df5a86daa9175bf2032a4976d4f1aa256fda493de612a6b57ee71af73839"
+    },
+    {
+      "path": "src/mmemb/data/instructions.py",
+      "size": 5003,
+      "sha256": "238b3c0d9abc1776d255dd64d5041ab193ae0a0cfbd054feefe50768954160f4"
+    },
+    {
+      "path": "src/mmemb/data/lexical_negatives.py",
+      "size": 29171,
+      "sha256": "658afd30cd1e30df6b2fd288ebec53a3b12b60bfed15656e30e5a018d1396a5c"
+    },
+    {
+      "path": "src/mmemb/data/progress.py",
+      "size": 2510,
+      "sha256": "09ce088b9a296a2539cd9450459ee90acc92fca2debd15107e2318557836fb96"
+    },
+    {
+      "path": "src/mmemb/data/schema.py",
+      "size": 12671,
+      "sha256": "ae5c667a1250e9ab4ff80da2e556c03ab0d2cc0dede858d7a45ff6139bad1f46"
+    },
+    {
+      "path": "src/mmemb/engine/__init__.py",
+      "size": 264,
+      "sha256": "279ffbaddf0b18cdfddebe31bfb195c9c7b712c3a9684035321384c7c7680c2b"
+    },
+    {
+      "path": "src/mmemb/engine/curriculum.py",
+      "size": 2000,
+      "sha256": "735b415a188dbd8695931aed2699ee2aa16fb57955dd5ce85983615a0ddf4d1e"
+    },
+    {
+      "path": "src/mmemb/engine/monitor.py",
+      "size": 11049,
+      "sha256": "c8d810f511e91310813fec5154fd0fcd4a64b2bf8e6ccc08d96a1455c3de812d"
+    },
+    {
+      "path": "src/mmemb/engine/trainer.py",
+      "size": 9853,
+      "sha256": "830d3193bf9a0a044b1bc1709f4b08cc0cf14da7b580e11ebf1ca99374411089"
+    },
+    {
+      "path": "src/mmemb/engine/wrapper.py",
+      "size": 9453,
+      "sha256": "100ff04f9742e886237646953ca14b77855e41c498ea3c310a16dd988d9479ff"
+    },
+    {
+      "path": "src/mmemb/eval/__init__.py",
+      "size": 144,
+      "sha256": "512d40a20c6ea704fba92ee40c9c0aa8d6e4a8fcfd708b2282a9e8aa883a4c4c"
+    },
+    {
+      "path": "src/mmemb/eval/retrieval.py",
+      "size": 9136,
+      "sha256": "ee60483939a184ff7d5490cd9f9e9549852c4d764253f9e4e3b4ce51ffca0bb6"
+    },
+    {
+      "path": "src/mmemb/losses/__init__.py",
+      "size": 944,
+      "sha256": "47d41a7fe34d1b10819eff6cf47025d2f7d995b0759e258292e20f21a4376aac"
+    },
+    {
+      "path": "src/mmemb/losses/base.py",
+      "size": 3506,
+      "sha256": "78662db18df624d53da96934835611f60a923b1c4690b39b53829eb22070d929"
+    },
+    {
+      "path": "src/mmemb/losses/false_negative.py",
+      "size": 10747,
+      "sha256": "3fda260fd33e13c3a4dcfe076b4437e96d7297c4fb7a8996b6d1ccad55b19fe7"
+    },
+    {
+      "path": "src/mmemb/losses/infonce.py",
+      "size": 25293,
+      "sha256": "d382cca5265fe562c44723bc419b016581e09cb56ed4cc3e7f58f346641d8ccc"
+    },
+    {
+      "path": "src/mmemb/losses/modality_balance.py",
+      "size": 14956,
+      "sha256": "bf4718a4a03b92719577256d0916586226c7d2c011b1918af79334cd53ca8b6e"
+    },
+    {
+      "path": "src/mmemb/losses/spec.py",
+      "size": 12482,
+      "sha256": "f7ca5d03ec6618b2fc306c07167b9841d92d8ede75a4bd55f38bd14d28137f50"
+    },
+    {
+      "path": "src/mmemb/models/__init__.py",
+      "size": 3990,
+      "sha256": "0349609c272964902b7e9475329ef56fee3db7fab31d8cf55f396ba5412f703a"
+    },
+    {
+      "path": "src/mmemb/models/base.py",
+      "size": 6076,
+      "sha256": "fc30b813125618b6d3a9ad65721d83860a8eec0555477582f36999c43956fadf"
+    },
+    {
+      "path": "src/mmemb/models/image_io.py",
+      "size": 2073,
+      "sha256": "76c85c0024fc4eb8b1d9d1f3ec2c40b8165246a5d2c95dae5249e473fd353b11"
+    },
+    {
+      "path": "src/mmemb/models/jina_clip.py",
+      "size": 30989,
+      "sha256": "22132d9170a6579ce64e5fbfe77822fbdc649d3e9f352e2201a91f234b547a7e"
+    },
+    {
+      "path": "src/mmemb/models/modeling_qwen3_vl_embedding.py",
+      "size": 7077,
+      "sha256": "c0b351fb75ee2ef0ca17d8e476c6ef43b20eca0604d34cbcf2640916074cefe9"
+    },
+    {
+      "path": "src/mmemb/models/pooling.py",
+      "size": 2916,
+      "sha256": "ce88f447d2f26a88816a4510c6eeca9223bcf4732d448cc13e09e41769f027e6"
+    },
+    {
+      "path": "src/mmemb/models/qwen3_vl_embedding.py",
+      "size": 26000,
+      "sha256": "e67918523480a6f5d3c62c7ece8911748a89d51922a50ec634ff44f463ea1de7"
+    },
+    {
+      "path": "src/mmemb/registry.py",
+      "size": 1429,
+      "sha256": "22fcd90e2b5eb31fdcd6fcb191b714d27cb8bcfcdaf92994c5badd0a278497a3"
+    },
+    {
+      "path": "src/mmemb/utils/__init__.py",
+      "size": 109,
+      "sha256": "7f479acbb3e26208ea35a93c17181ae3b1cf209dc88c4016bd3b9596301e52b7"
+    },
+    {
+      "path": "src/mmemb/utils/dist.py",
+      "size": 3122,
+      "sha256": "e017e27a4f8cbe4802259790c930b3dfc0647c0af46b51969df27f6b1186aa71"
+    },
+    {
+      "path": "src/mmemb/utils/env.py",
+      "size": 10492,
+      "sha256": "b4c0366caf156229203189443b6e356646b566475664d39a192558fa66c5012b"
+    },
+    {
+      "path": "src/mmemb/utils/misc.py",
+      "size": 3415,
+      "sha256": "08861bc6314c1b6154266f1e545a056e368a8758ee245251f695f87cb370038e"
+    },
+    {
+      "path": "src/tools/compute_gr_clip_calibration_means.py",
+      "size": 45042,
+      "sha256": "3c1dc78532d624b139a55a91c7c0d9e968b747e7393cca5515e2895a8bff6d00"
+    },
+    {
+      "path": "src/tools/merge_lora.py",
+      "size": 15967,
+      "sha256": "ac3b31f83647ae46d30b071cf454f36040539a228e392a14359991a017c00cd1"
+    },
+    {
+      "path": "src/train.py",
+      "size": 10072,
+      "sha256": "4fccb8d3bebe7b1ea4e9a45fe9f468491bb9149b3d4274142b9df61bcce4f53f"
+    }
+  ],
+  "modified_upstream_files": false
+}

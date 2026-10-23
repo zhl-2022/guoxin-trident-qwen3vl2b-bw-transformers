@@ -1,0 +1,7 @@
+INFO 10-23 19:25:58 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-23 19:25:58 [__init__.py:46] - hcu -> vllm_hcu:hcu_platform_plugin
+INFO 10-23 19:25:58 [__init__.py:49] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 10-23 19:25:58 [__init__.py:239] Platform plugin hcu is activated
+WARNING 10-23 19:26:03 [registry.py:911] Model architecture Qwen3ASRForConditionalGeneration is already registered, and will be overwritten by the new model class <class 'qwen_asr.core.vllm_backend.qwen3_asr.Qwen3ASRForConditionalGeneration'>.
+/root/private_data/guoxin-candidates/envs/forcedaligner-001/lib/python3.10/site-packages/transformers/integrations/sdpa_attention.py:96: UserWarning: sdpa adopt the new interface of flash-attn (Triggered internally at /home/pytorch/aten/src/ATen/native/transformers/hip/cutlassfa_adapter.h:145.)
+  attn_output = torch.nn.functional.scaled_dot_product_attention(

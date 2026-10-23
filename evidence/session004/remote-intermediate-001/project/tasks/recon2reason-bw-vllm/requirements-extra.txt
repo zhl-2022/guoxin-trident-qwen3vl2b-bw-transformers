@@ -1,0 +1,2 @@
+# Intentionally empty: validate the private image's existing DAS stack first.
+# No automatic pip installation, torch upgrade, tokenizer or weight changes.

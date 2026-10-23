@@ -1,0 +1,11 @@
+{
+  "status": "exported_and_verified",
+  "output": "/root/hg-session004-results-intermediate-001.zip",
+  "size": 783254,
+  "sha256": "8b4481d5fcc8d1080cd5ffa8cf14509ab9577d8ea4b30089eb5b1f049ce702d5",
+  "payload_files": 231,
+  "script_hashes": 88,
+  "script_hashes_unchanged": true,
+  "finished_utc": "2026-10-23T11:30:29.978614+00:00",
+  "evaluation_status": "not_assessed_by_exporter"
+}

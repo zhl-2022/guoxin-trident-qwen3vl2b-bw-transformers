@@ -1,0 +1,94 @@
+{
+  "kind": "synthetic_heldout_sizes",
+  "created_at_utc": "2026-10-19T17:17:11.139471+00:00",
+  "pillow": "12.1.1",
+  "official_accuracy": false,
+  "official_performance": false,
+  "semantic_acceptance_verified": false,
+  "fixtures": [
+    {
+      "name": "heldout_red_square",
+      "size": [
+        640,
+        448
+      ],
+      "bbox_pixels": [
+        400,
+        112,
+        560,
+        272
+      ],
+      "color": [
+        230,
+        25,
+        25
+      ],
+      "shape": "square",
+      "target": "the red square",
+      "label": "HELDOUT A - RED SQUARE",
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/recon-functional/images/heldout_red_square.png",
+      "sha256": "d51437c5bb459fb25f47a9e52e650b3f815d1d9900ec63b651f338e6e73c7165",
+      "bytes": 2915,
+      "bbox_xyxy_0_1000": [
+        625.0,
+        250.0,
+        875.0,
+        607.1428571428571
+      ],
+      "center_xy_0_1000": [
+        750.0,
+        428.57142857142856
+      ],
+      "patch_grid_if_no_processor_resize": [
+        1,
+        28,
+        40
+      ],
+      "vision_sequence_length_if_no_resize": 1120,
+      "processor_grid_actually_verified": false
+    },
+    {
+      "name": "heldout_blue_circle",
+      "size": [
+        512,
+        512
+      ],
+      "bbox_pixels": [
+        64,
+        280,
+        208,
+        424
+      ],
+      "color": [
+        25,
+        75,
+        230
+      ],
+      "shape": "circle",
+      "target": "the blue circle",
+      "label": "HELDOUT B - BLUE CIRCLE",
+      "path": "/root/private_data/guoxin-hackathon-20261020-session003/evidence/session003/recon-functional/images/heldout_blue_circle.png",
+      "sha256": "13588c097bf637a09c571e441392c40f406b81ca0a50e30b3ee2f336585fec2f",
+      "bytes": 3463,
+      "bbox_xyxy_0_1000": [
+        125.0,
+        546.875,
+        406.25,
+        828.125
+      ],
+      "center_xy_0_1000": [
+        265.625,
+        687.5
+      ],
+      "patch_grid_if_no_processor_resize": [
+        1,
+        32,
+        32
+      ],
+      "vision_sequence_length_if_no_resize": 1024,
+      "processor_grid_actually_verified": false
+    }
+  ],
+  "script_sha256": "e0dba59f274a1629b53b0cf3c9c4fd3adf72220b41164c34f03e8a72778cbeb7",
+  "task_sha256": "ec35ac53f1b74d75f1fc4524f7076de956d3d3e1b60e9aceecec872624e7e09b"
+}

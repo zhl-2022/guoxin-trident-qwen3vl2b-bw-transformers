@@ -1,0 +1,4419 @@
+{
+  "schema_version": 1,
+  "audited_at_utc": "2026-10-19T19:49:17.054589+00:00",
+  "kind": "offline_downloaded_development_matrix_audit",
+  "matrix_dir": "E:\\hg20261019\\evidence\\session003\\recon-matrix",
+  "run_complete_verified": false,
+  "matrix_complete_verified": false,
+  "official_accuracy": false,
+  "official_performance": false,
+  "formal_ready": false,
+  "submitted": false,
+  "expected_cells": 12,
+  "expected_requests": 608,
+  "server_state_scope": "Persistent server with fixed seed=1 permits prefix-cache reuse across rounds/loads; no independent cold start or cache-disabled baseline is verified.",
+  "expected_output_tokens": 622592,
+  "verified_cells": 10,
+  "verified_requests": 352,
+  "verified_output_tokens": 360448,
+  "observed_native_completed_requests": 352,
+  "observed_sum_output_tokens": 360448,
+  "cells_missing_native_request_counts": [
+    "round1_16384_1024_c64",
+    "round2_16384_1024_c64"
+  ],
+  "driver_sha256_match": true,
+  "reported_driver_sha256": "bc09711bb58fb5a7ae4676a840956a4da1caf49f6e6034b8015c5dd9a5bae14e",
+  "native_vllm_version": "0.18.1+das.fa71803.dtk2604",
+  "reported_native_source_sha256": {
+    "serve": "1c4fddeef7114371dfded0a1ba8287c2c644f06697cc00b0275a91cc26a024a9",
+    "datasets": "85b4e3b7407ef35ad364ccd454efdcfa9a06759144582d5a3a3761e3f85a41e2"
+  },
+  "identity": {
+    "model_path": "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+    "tokenizer_path": "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+    "served_model_name": "recon2reason-reasoning-4b",
+    "host": "127.0.0.1",
+    "port": 30000,
+    "image_size": [
+      1024,
+      1024
+    ],
+    "images_per_request": 1,
+    "driver_sha256": "bc09711bb58fb5a7ae4676a840956a4da1caf49f6e6034b8015c5dd9a5bae14e",
+    "native_vllm_version": "0.18.1+das.fa71803.dtk2604",
+    "native_source_sha256": {
+      "serve": "1c4fddeef7114371dfded0a1ba8287c2c644f06697cc00b0275a91cc26a024a9",
+      "datasets": "85b4e3b7407ef35ad364ccd454efdcfa9a06759144582d5a3a3761e3f85a41e2"
+    }
+  },
+  "started_utc": "2026-10-19T17:41:41.427773+00:00",
+  "ended_utc": "2026-10-19T18:48:22.578497+00:00",
+  "deadline": {
+    "total_timeout_seconds": 4000.0,
+    "per_cell_timeout_seconds": 1800.0,
+    "client_wall_sum_seconds": 3992.774667,
+    "budget_note": "Upper bounds ignore metadata/summary overhead; deadline starts after initial metadata collection.",
+    "first_incomplete_cell": "round1_16384_1024_c64"
+  },
+  "issues": [
+    "run field mismatch: status"
+  ],
+  "rows": [
+    {
+      "name": "round1_4096_1024_c1",
+      "round": 1,
+      "target_text_input_tokens": 4096,
+      "concurrency": 1,
+      "expected_requests": 8,
+      "issues": [],
+      "verified": true,
+      "completed_requests_reported": 8,
+      "failed_requests_reported": 0,
+      "requests_with_full_output": 8,
+      "sum_output_tokens": 8192,
+      "recorded_status": "complete",
+      "budget_upper_bound_before_seconds": 4000.0,
+      "client_wall_seconds": 409.04173,
+      "started_utc": "2026-10-19T17:41:41.869747+00:00",
+      "ended_utc": "2026-10-19T17:48:30.935113+00:00",
+      "utc_elapsed_seconds": 409.065366,
+      "metrics": {
+        "completed": 8,
+        "failed": 0,
+        "duration": 377.15475177997723,
+        "request_throughput": 0.02121145222814799,
+        "output_throughput": 21.72052708162354,
+        "total_token_throughput": 108.6026354081177,
+        "mean_ttft_ms": 396.68706635711715,
+        "p99_ttft_ms": 695.0615250365809,
+        "mean_tpot_ms": 45.69647735633859,
+        "p99_tpot_ms": 46.137467870581624,
+        "mean_e2el_ms": 47144.183401891496,
+        "p99_e2el_ms": 47795.371861374006,
+        "total_input_tokens": 32768,
+        "total_output_tokens": 8192
+      },
+      "output_integrity": {
+        "verified": true,
+        "issues": [],
+        "requests": [
+          {
+            "index": 0,
+            "output_tokens": 1024,
+            "generated_text_characters": 575,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 1,
+            "output_tokens": 1024,
+            "generated_text_characters": 582,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 2,
+            "output_tokens": 1024,
+            "generated_text_characters": 4973,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 3,
+            "output_tokens": 1024,
+            "generated_text_characters": 425,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 4,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 5,
+            "output_tokens": 1024,
+            "generated_text_characters": 454,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 6,
+            "output_tokens": 1024,
+            "generated_text_characters": 549,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 7,
+            "output_tokens": 1024,
+            "generated_text_characters": 586,
+            "error": "",
+            "issues": []
+          }
+        ],
+        "reported_output_tokens": 8192,
+        "sum_output_tokens": 8192,
+        "expected_output_tokens": 8192
+      }
+    },
+    {
+      "name": "round2_4096_1024_c1",
+      "round": 2,
+      "target_text_input_tokens": 4096,
+      "concurrency": 1,
+      "expected_requests": 8,
+      "issues": [],
+      "verified": true,
+      "completed_requests_reported": 8,
+      "failed_requests_reported": 0,
+      "requests_with_full_output": 8,
+      "sum_output_tokens": 8192,
+      "recorded_status": "complete",
+      "budget_upper_bound_before_seconds": 3590.95827,
+      "client_wall_seconds": 408.088852,
+      "started_utc": "2026-10-19T17:48:31.172799+00:00",
+      "ended_utc": "2026-10-19T17:55:19.285752+00:00",
+      "utc_elapsed_seconds": 408.112953,
+      "metrics": {
+        "completed": 8,
+        "failed": 0,
+        "duration": 375.722076383885,
+        "request_throughput": 0.021292334155595883,
+        "output_throughput": 21.803350175330184,
+        "total_token_throughput": 109.01675087665092,
+        "mean_ttft_ms": 308.14900976838544,
+        "p99_ttft_ms": 558.1986422138289,
+        "mean_tpot_ms": 45.607960065050676,
+        "p99_tpot_ms": 45.874322047848565,
+        "mean_e2el_ms": 46965.09215631522,
+        "p99_e2el_ms": 47487.63009716291,
+        "total_input_tokens": 32768,
+        "total_output_tokens": 8192
+      },
+      "output_integrity": {
+        "verified": true,
+        "issues": [],
+        "requests": [
+          {
+            "index": 0,
+            "output_tokens": 1024,
+            "generated_text_characters": 642,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 1,
+            "output_tokens": 1024,
+            "generated_text_characters": 582,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 2,
+            "output_tokens": 1024,
+            "generated_text_characters": 335,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 3,
+            "output_tokens": 1024,
+            "generated_text_characters": 425,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 4,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 5,
+            "output_tokens": 1024,
+            "generated_text_characters": 583,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 6,
+            "output_tokens": 1024,
+            "generated_text_characters": 553,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 7,
+            "output_tokens": 1024,
+            "generated_text_characters": 4515,
+            "error": "",
+            "issues": []
+          }
+        ],
+        "reported_output_tokens": 8192,
+        "sum_output_tokens": 8192,
+        "expected_output_tokens": 8192
+      }
+    },
+    {
+      "name": "round1_4096_1024_c8",
+      "round": 1,
+      "target_text_input_tokens": 4096,
+      "concurrency": 8,
+      "expected_requests": 16,
+      "issues": [],
+      "verified": true,
+      "completed_requests_reported": 16,
+      "failed_requests_reported": 0,
+      "requests_with_full_output": 16,
+      "sum_output_tokens": 16384,
+      "recorded_status": "complete",
+      "budget_upper_bound_before_seconds": 3182.869418,
+      "client_wall_seconds": 128.997285,
+      "started_utc": "2026-10-19T17:55:20.263567+00:00",
+      "ended_utc": "2026-10-19T17:57:29.742895+00:00",
+      "utc_elapsed_seconds": 129.479328,
+      "metrics": {
+        "completed": 16,
+        "failed": 0,
+        "duration": 95.44587983796373,
+        "request_throughput": 0.16763426590192088,
+        "output_throughput": 171.65748828356698,
+        "total_token_throughput": 858.2874414178349,
+        "mean_ttft_ms": 645.203782216413,
+        "p99_ttft_ms": 852.9887167271227,
+        "mean_tpot_ms": 46.01100859088748,
+        "p99_tpot_ms": 46.19050209568895,
+        "mean_e2el_ms": 47714.4655706943,
+        "p99_e2el_ms": 48051.18855771143,
+        "total_input_tokens": 65536,
+        "total_output_tokens": 16384
+      },
+      "output_integrity": {
+        "verified": true,
+        "issues": [],
+        "requests": [
+          {
+            "index": 0,
+            "output_tokens": 1024,
+            "generated_text_characters": 624,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 1,
+            "output_tokens": 1024,
+            "generated_text_characters": 582,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 2,
+            "output_tokens": 1024,
+            "generated_text_characters": 331,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 3,
+            "output_tokens": 1024,
+            "generated_text_characters": 371,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 4,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 5,
+            "output_tokens": 1024,
+            "generated_text_characters": 446,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 6,
+            "output_tokens": 1024,
+            "generated_text_characters": 532,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 7,
+            "output_tokens": 1024,
+            "generated_text_characters": 578,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 8,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 9,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 10,
+            "output_tokens": 1024,
+            "generated_text_characters": 336,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 11,
+            "output_tokens": 1024,
+            "generated_text_characters": 453,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 12,
+            "output_tokens": 1024,
+            "generated_text_characters": 454,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 13,
+            "output_tokens": 1024,
+            "generated_text_characters": 580,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 14,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 15,
+            "output_tokens": 1024,
+            "generated_text_characters": 577,
+            "error": "",
+            "issues": []
+          }
+        ],
+        "reported_output_tokens": 16384,
+        "sum_output_tokens": 16384,
+        "expected_output_tokens": 16384
+      }
+    },
+    {
+      "name": "round2_4096_1024_c8",
+      "round": 2,
+      "target_text_input_tokens": 4096,
+      "concurrency": 8,
+      "expected_requests": 16,
+      "issues": [],
+      "verified": true,
+      "completed_requests_reported": 16,
+      "failed_requests_reported": 0,
+      "requests_with_full_output": 16,
+      "sum_output_tokens": 16384,
+      "recorded_status": "complete",
+      "budget_upper_bound_before_seconds": 3053.872133,
+      "client_wall_seconds": 129.275382,
+      "started_utc": "2026-10-19T17:57:30.346708+00:00",
+      "ended_utc": "2026-10-19T17:59:39.846362+00:00",
+      "utc_elapsed_seconds": 129.499654,
+      "metrics": {
+        "completed": 16,
+        "failed": 0,
+        "duration": 95.33234821120277,
+        "request_throughput": 0.16783390213522292,
+        "output_throughput": 171.86191578646827,
+        "total_token_throughput": 859.3095789323414,
+        "mean_ttft_ms": 546.7492605093867,
+        "p99_ttft_ms": 660.6723360950127,
+        "mean_tpot_ms": 46.050593777775234,
+        "p99_tpot_ms": 46.24095523931571,
+        "mean_e2el_ms": 47656.50669517345,
+        "p99_e2el_ms": 47717.07673387136,
+        "total_input_tokens": 65536,
+        "total_output_tokens": 16384
+      },
+      "output_integrity": {
+        "verified": true,
+        "issues": [],
+        "requests": [
+          {
+            "index": 0,
+            "output_tokens": 1024,
+            "generated_text_characters": 654,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 1,
+            "output_tokens": 1024,
+            "generated_text_characters": 582,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 2,
+            "output_tokens": 1024,
+            "generated_text_characters": 335,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 3,
+            "output_tokens": 1024,
+            "generated_text_characters": 361,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 4,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 5,
+            "output_tokens": 1024,
+            "generated_text_characters": 591,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 6,
+            "output_tokens": 1024,
+            "generated_text_characters": 530,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 7,
+            "output_tokens": 1024,
+            "generated_text_characters": 4508,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 8,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 9,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 10,
+            "output_tokens": 1024,
+            "generated_text_characters": 336,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 11,
+            "output_tokens": 1024,
+            "generated_text_characters": 453,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 12,
+            "output_tokens": 1024,
+            "generated_text_characters": 454,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 13,
+            "output_tokens": 1024,
+            "generated_text_characters": 580,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 14,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 15,
+            "output_tokens": 1024,
+            "generated_text_characters": 577,
+            "error": "",
+            "issues": []
+          }
+        ],
+        "reported_output_tokens": 16384,
+        "sum_output_tokens": 16384,
+        "expected_output_tokens": 16384
+      }
+    },
+    {
+      "name": "round1_4096_1024_c64",
+      "round": 1,
+      "target_text_input_tokens": 4096,
+      "concurrency": 64,
+      "expected_requests": 128,
+      "issues": [],
+      "verified": true,
+      "completed_requests_reported": 128,
+      "failed_requests_reported": 0,
+      "requests_with_full_output": 128,
+      "sum_output_tokens": 131072,
+      "recorded_status": "complete",
+      "budget_upper_bound_before_seconds": 2924.596751,
+      "client_wall_seconds": 489.985761,
+      "started_utc": "2026-10-19T17:59:40.812079+00:00",
+      "ended_utc": "2026-10-19T18:07:50.819462+00:00",
+      "utc_elapsed_seconds": 490.007383,
+      "metrics": {
+        "completed": 128,
+        "failed": 0,
+        "duration": 450.96727762790397,
+        "request_throughput": 0.2838343408712098,
+        "output_throughput": 290.6463650521188,
+        "total_token_throughput": 1453.2318252605942,
+        "mean_ttft_ms": 129502.34713491227,
+        "p99_ttft_ms": 176411.0530238552,
+        "mean_tpot_ms": 53.345192278623706,
+        "p99_tpot_ms": 54.525044877801314,
+        "mean_e2el_ms": 184074.47883594432,
+        "p99_e2el_ms": 231799.85695748124,
+        "total_input_tokens": 524288,
+        "total_output_tokens": 131072
+      },
+      "output_integrity": {
+        "verified": true,
+        "issues": [],
+        "requests": [
+          {
+            "index": 0,
+            "output_tokens": 1024,
+            "generated_text_characters": 590,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 1,
+            "output_tokens": 1024,
+            "generated_text_characters": 582,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 2,
+            "output_tokens": 1024,
+            "generated_text_characters": 331,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 3,
+            "output_tokens": 1024,
+            "generated_text_characters": 97,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 4,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 5,
+            "output_tokens": 1024,
+            "generated_text_characters": 583,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 6,
+            "output_tokens": 1024,
+            "generated_text_characters": 547,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 7,
+            "output_tokens": 1024,
+            "generated_text_characters": 38,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 8,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 9,
+            "output_tokens": 1024,
+            "generated_text_characters": 201,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 10,
+            "output_tokens": 1024,
+            "generated_text_characters": 444,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 11,
+            "output_tokens": 1024,
+            "generated_text_characters": 453,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 12,
+            "output_tokens": 1024,
+            "generated_text_characters": 454,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 13,
+            "output_tokens": 1024,
+            "generated_text_characters": 294,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 14,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 15,
+            "output_tokens": 1024,
+            "generated_text_characters": 695,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 16,
+            "output_tokens": 1024,
+            "generated_text_characters": 465,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 17,
+            "output_tokens": 1024,
+            "generated_text_characters": 588,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 18,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 19,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 20,
+            "output_tokens": 1024,
+            "generated_text_characters": 616,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 21,
+            "output_tokens": 1024,
+            "generated_text_characters": 349,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 22,
+            "output_tokens": 1024,
+            "generated_text_characters": 716,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 23,
+            "output_tokens": 1024,
+            "generated_text_characters": 454,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 24,
+            "output_tokens": 1024,
+            "generated_text_characters": 396,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 25,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 26,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 27,
+            "output_tokens": 1024,
+            "generated_text_characters": 420,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 28,
+            "output_tokens": 1024,
+            "generated_text_characters": 666,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 29,
+            "output_tokens": 1024,
+            "generated_text_characters": 709,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 30,
+            "output_tokens": 1024,
+            "generated_text_characters": 500,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 31,
+            "output_tokens": 1024,
+            "generated_text_characters": 454,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 32,
+            "output_tokens": 1024,
+            "generated_text_characters": 489,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 33,
+            "output_tokens": 1024,
+            "generated_text_characters": 592,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 34,
+            "output_tokens": 1024,
+            "generated_text_characters": 614,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 35,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 36,
+            "output_tokens": 1024,
+            "generated_text_characters": 434,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 37,
+            "output_tokens": 1024,
+            "generated_text_characters": 696,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 38,
+            "output_tokens": 1024,
+            "generated_text_characters": 582,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 39,
+            "output_tokens": 1024,
+            "generated_text_characters": 231,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 40,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 41,
+            "output_tokens": 1024,
+            "generated_text_characters": 343,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 42,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 43,
+            "output_tokens": 1024,
+            "generated_text_characters": 513,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 44,
+            "output_tokens": 1024,
+            "generated_text_characters": 410,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 45,
+            "output_tokens": 1024,
+            "generated_text_characters": 390,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 46,
+            "output_tokens": 1024,
+            "generated_text_characters": 662,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 47,
+            "output_tokens": 1024,
+            "generated_text_characters": 432,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 48,
+            "output_tokens": 1024,
+            "generated_text_characters": 349,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 49,
+            "output_tokens": 1024,
+            "generated_text_characters": 38,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 50,
+            "output_tokens": 1024,
+            "generated_text_characters": 446,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 51,
+            "output_tokens": 1024,
+            "generated_text_characters": 405,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 52,
+            "output_tokens": 1024,
+            "generated_text_characters": 306,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 53,
+            "output_tokens": 1024,
+            "generated_text_characters": 694,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 54,
+            "output_tokens": 1024,
+            "generated_text_characters": 431,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 55,
+            "output_tokens": 1024,
+            "generated_text_characters": 454,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 56,
+            "output_tokens": 1024,
+            "generated_text_characters": 402,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 57,
+            "output_tokens": 1024,
+            "generated_text_characters": 440,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 58,
+            "output_tokens": 1024,
+            "generated_text_characters": 201,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 59,
+            "output_tokens": 1024,
+            "generated_text_characters": 4866,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 60,
+            "output_tokens": 1024,
+            "generated_text_characters": 594,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 61,
+            "output_tokens": 1024,
+            "generated_text_characters": 454,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 62,
+            "output_tokens": 1024,
+            "generated_text_characters": 220,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 63,
+            "output_tokens": 1024,
+            "generated_text_characters": 399,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 64,
+            "output_tokens": 1024,
+            "generated_text_characters": 574,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 65,
+            "output_tokens": 1024,
+            "generated_text_characters": 4579,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 66,
+            "output_tokens": 1024,
+            "generated_text_characters": 476,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 67,
+            "output_tokens": 1024,
+            "generated_text_characters": 247,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 68,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 69,
+            "output_tokens": 1024,
+            "generated_text_characters": 582,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 70,
+            "output_tokens": 1024,
+            "generated_text_characters": 339,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 71,
+            "output_tokens": 1024,
+            "generated_text_characters": 466,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 72,
+            "output_tokens": 1024,
+            "generated_text_characters": 453,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 73,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 74,
+            "output_tokens": 1024,
+            "generated_text_characters": 405,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 75,
+            "output_tokens": 1024,
+            "generated_text_characters": 654,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 76,
+            "output_tokens": 1024,
+            "generated_text_characters": 428,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 77,
+            "output_tokens": 1024,
+            "generated_text_characters": 542,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 78,
+            "output_tokens": 1024,
+            "generated_text_characters": 455,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 79,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 80,
+            "output_tokens": 1024,
+            "generated_text_characters": 561,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 81,
+            "output_tokens": 1024,
+            "generated_text_characters": 297,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 82,
+            "output_tokens": 1024,
+            "generated_text_characters": 4964,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 83,
+            "output_tokens": 1024,
+            "generated_text_characters": 418,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 84,
+            "output_tokens": 1024,
+            "generated_text_characters": 446,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 85,
+            "output_tokens": 1024,
+            "generated_text_characters": 476,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 86,
+            "output_tokens": 1024,
+            "generated_text_characters": 479,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 87,
+            "output_tokens": 1024,
+            "generated_text_characters": 583,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 88,
+            "output_tokens": 1024,
+            "generated_text_characters": 454,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 89,
+            "output_tokens": 1024,
+            "generated_text_characters": 569,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 90,
+            "output_tokens": 1024,
+            "generated_text_characters": 734,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 91,
+            "output_tokens": 1024,
+            "generated_text_characters": 582,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 92,
+            "output_tokens": 1024,
+            "generated_text_characters": 322,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 93,
+            "output_tokens": 1024,
+            "generated_text_characters": 114,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 94,
+            "output_tokens": 1024,
+            "generated_text_characters": 412,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 95,
+            "output_tokens": 1024,
+            "generated_text_characters": 349,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 96,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 97,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 98,
+            "output_tokens": 1024,
+            "generated_text_characters": 547,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 99,
+            "output_tokens": 1024,
+            "generated_text_characters": 514,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 100,
+            "output_tokens": 1024,
+            "generated_text_characters": 577,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 101,
+            "output_tokens": 1024,
+            "generated_text_characters": 4853,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 102,
+            "output_tokens": 1024,
+            "generated_text_characters": 341,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 103,
+            "output_tokens": 1024,
+            "generated_text_characters": 190,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 104,
+            "output_tokens": 1024,
+            "generated_text_characters": 543,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 105,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 106,
+            "output_tokens": 1024,
+            "generated_text_characters": 447,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 107,
+            "output_tokens": 1024,
+            "generated_text_characters": 443,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 108,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 109,
+            "output_tokens": 1024,
+            "generated_text_characters": 475,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 110,
+            "output_tokens": 1024,
+            "generated_text_characters": 575,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 111,
+            "output_tokens": 1024,
+            "generated_text_characters": 591,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 112,
+            "output_tokens": 1024,
+            "generated_text_characters": 468,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 113,
+            "output_tokens": 1024,
+            "generated_text_characters": 552,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 114,
+            "output_tokens": 1024,
+            "generated_text_characters": 512,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 115,
+            "output_tokens": 1024,
+            "generated_text_characters": 480,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 116,
+            "output_tokens": 1024,
+            "generated_text_characters": 515,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 117,
+            "output_tokens": 1024,
+            "generated_text_characters": 611,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 118,
+            "output_tokens": 1024,
+            "generated_text_characters": 209,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 119,
+            "output_tokens": 1024,
+            "generated_text_characters": 702,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 120,
+            "output_tokens": 1024,
+            "generated_text_characters": 464,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 121,
+            "output_tokens": 1024,
+            "generated_text_characters": 446,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 122,
+            "output_tokens": 1024,
+            "generated_text_characters": 514,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 123,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 124,
+            "output_tokens": 1024,
+            "generated_text_characters": 567,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 125,
+            "output_tokens": 1024,
+            "generated_text_characters": 3253,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 126,
+            "output_tokens": 1024,
+            "generated_text_characters": 4611,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 127,
+            "output_tokens": 1024,
+            "generated_text_characters": 358,
+            "error": "",
+            "issues": []
+          }
+        ],
+        "reported_output_tokens": 131072,
+        "sum_output_tokens": 131072,
+        "expected_output_tokens": 131072
+      }
+    },
+    {
+      "name": "round2_4096_1024_c64",
+      "round": 2,
+      "target_text_input_tokens": 4096,
+      "concurrency": 64,
+      "expected_requests": 128,
+      "issues": [],
+      "verified": true,
+      "completed_requests_reported": 128,
+      "failed_requests_reported": 0,
+      "requests_with_full_output": 128,
+      "sum_output_tokens": 131072,
+      "recorded_status": "complete",
+      "budget_upper_bound_before_seconds": 2434.61099,
+      "client_wall_seconds": 490.822692,
+      "started_utc": "2026-10-19T18:07:51.282697+00:00",
+      "ended_utc": "2026-10-19T18:16:02.595988+00:00",
+      "utc_elapsed_seconds": 491.313291,
+      "metrics": {
+        "completed": 128,
+        "failed": 0,
+        "duration": 452.44792384887114,
+        "request_throughput": 0.2829054864726381,
+        "output_throughput": 289.6952181479814,
+        "total_token_throughput": 1448.476090739907,
+        "mean_ttft_ms": 130209.67949813712,
+        "p99_ttft_ms": 178201.00896738935,
+        "mean_tpot_ms": 53.464268633925315,
+        "p99_tpot_ms": 54.44966300406137,
+        "mean_e2el_ms": 184903.62631064272,
+        "p99_e2el_ms": 233511.39369225595,
+        "total_input_tokens": 524288,
+        "total_output_tokens": 131072
+      },
+      "output_integrity": {
+        "verified": true,
+        "issues": [],
+        "requests": [
+          {
+            "index": 0,
+            "output_tokens": 1024,
+            "generated_text_characters": 575,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 1,
+            "output_tokens": 1024,
+            "generated_text_characters": 582,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 2,
+            "output_tokens": 1024,
+            "generated_text_characters": 335,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 3,
+            "output_tokens": 1024,
+            "generated_text_characters": 97,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 4,
+            "output_tokens": 1024,
+            "generated_text_characters": 565,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 5,
+            "output_tokens": 1024,
+            "generated_text_characters": 583,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 6,
+            "output_tokens": 1024,
+            "generated_text_characters": 547,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 7,
+            "output_tokens": 1024,
+            "generated_text_characters": 38,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 8,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 9,
+            "output_tokens": 1024,
+            "generated_text_characters": 201,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 10,
+            "output_tokens": 1024,
+            "generated_text_characters": 658,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 11,
+            "output_tokens": 1024,
+            "generated_text_characters": 453,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 12,
+            "output_tokens": 1024,
+            "generated_text_characters": 439,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 13,
+            "output_tokens": 1024,
+            "generated_text_characters": 529,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 14,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 15,
+            "output_tokens": 1024,
+            "generated_text_characters": 591,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 16,
+            "output_tokens": 1024,
+            "generated_text_characters": 465,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 17,
+            "output_tokens": 1024,
+            "generated_text_characters": 588,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 18,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 19,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 20,
+            "output_tokens": 1024,
+            "generated_text_characters": 581,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 21,
+            "output_tokens": 1024,
+            "generated_text_characters": 349,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 22,
+            "output_tokens": 1024,
+            "generated_text_characters": 5085,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 23,
+            "output_tokens": 1024,
+            "generated_text_characters": 439,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 24,
+            "output_tokens": 1024,
+            "generated_text_characters": 508,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 25,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 26,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 27,
+            "output_tokens": 1024,
+            "generated_text_characters": 417,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 28,
+            "output_tokens": 1024,
+            "generated_text_characters": 666,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 29,
+            "output_tokens": 1024,
+            "generated_text_characters": 709,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 30,
+            "output_tokens": 1024,
+            "generated_text_characters": 500,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 31,
+            "output_tokens": 1024,
+            "generated_text_characters": 454,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 32,
+            "output_tokens": 1024,
+            "generated_text_characters": 490,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 33,
+            "output_tokens": 1024,
+            "generated_text_characters": 446,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 34,
+            "output_tokens": 1024,
+            "generated_text_characters": 642,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 35,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 36,
+            "output_tokens": 1024,
+            "generated_text_characters": 433,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 37,
+            "output_tokens": 1024,
+            "generated_text_characters": 696,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 38,
+            "output_tokens": 1024,
+            "generated_text_characters": 582,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 39,
+            "output_tokens": 1024,
+            "generated_text_characters": 231,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 40,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 41,
+            "output_tokens": 1024,
+            "generated_text_characters": 343,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 42,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 43,
+            "output_tokens": 1024,
+            "generated_text_characters": 536,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 44,
+            "output_tokens": 1024,
+            "generated_text_characters": 4653,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 45,
+            "output_tokens": 1024,
+            "generated_text_characters": 388,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 46,
+            "output_tokens": 1024,
+            "generated_text_characters": 582,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 47,
+            "output_tokens": 1024,
+            "generated_text_characters": 469,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 48,
+            "output_tokens": 1024,
+            "generated_text_characters": 349,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 49,
+            "output_tokens": 1024,
+            "generated_text_characters": 38,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 50,
+            "output_tokens": 1024,
+            "generated_text_characters": 446,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 51,
+            "output_tokens": 1024,
+            "generated_text_characters": 405,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 52,
+            "output_tokens": 1024,
+            "generated_text_characters": 306,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 53,
+            "output_tokens": 1024,
+            "generated_text_characters": 694,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 54,
+            "output_tokens": 1024,
+            "generated_text_characters": 431,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 55,
+            "output_tokens": 1024,
+            "generated_text_characters": 454,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 56,
+            "output_tokens": 1024,
+            "generated_text_characters": 402,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 57,
+            "output_tokens": 1024,
+            "generated_text_characters": 448,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 58,
+            "output_tokens": 1024,
+            "generated_text_characters": 201,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 59,
+            "output_tokens": 1024,
+            "generated_text_characters": 4866,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 60,
+            "output_tokens": 1024,
+            "generated_text_characters": 440,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 61,
+            "output_tokens": 1024,
+            "generated_text_characters": 454,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 62,
+            "output_tokens": 1024,
+            "generated_text_characters": 306,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 63,
+            "output_tokens": 1024,
+            "generated_text_characters": 399,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 64,
+            "output_tokens": 1024,
+            "generated_text_characters": 574,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 65,
+            "output_tokens": 1024,
+            "generated_text_characters": 4579,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 66,
+            "output_tokens": 1024,
+            "generated_text_characters": 476,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 67,
+            "output_tokens": 1024,
+            "generated_text_characters": 247,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 68,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 69,
+            "output_tokens": 1024,
+            "generated_text_characters": 582,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 70,
+            "output_tokens": 1024,
+            "generated_text_characters": 339,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 71,
+            "output_tokens": 1024,
+            "generated_text_characters": 466,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 72,
+            "output_tokens": 1024,
+            "generated_text_characters": 453,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 73,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 74,
+            "output_tokens": 1024,
+            "generated_text_characters": 405,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 75,
+            "output_tokens": 1024,
+            "generated_text_characters": 654,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 76,
+            "output_tokens": 1024,
+            "generated_text_characters": 428,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 77,
+            "output_tokens": 1024,
+            "generated_text_characters": 542,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 78,
+            "output_tokens": 1024,
+            "generated_text_characters": 455,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 79,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 80,
+            "output_tokens": 1024,
+            "generated_text_characters": 555,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 81,
+            "output_tokens": 1024,
+            "generated_text_characters": 297,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 82,
+            "output_tokens": 1024,
+            "generated_text_characters": 4964,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 83,
+            "output_tokens": 1024,
+            "generated_text_characters": 418,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 84,
+            "output_tokens": 1024,
+            "generated_text_characters": 446,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 85,
+            "output_tokens": 1024,
+            "generated_text_characters": 476,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 86,
+            "output_tokens": 1024,
+            "generated_text_characters": 479,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 87,
+            "output_tokens": 1024,
+            "generated_text_characters": 583,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 88,
+            "output_tokens": 1024,
+            "generated_text_characters": 454,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 89,
+            "output_tokens": 1024,
+            "generated_text_characters": 569,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 90,
+            "output_tokens": 1024,
+            "generated_text_characters": 734,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 91,
+            "output_tokens": 1024,
+            "generated_text_characters": 582,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 92,
+            "output_tokens": 1024,
+            "generated_text_characters": 322,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 93,
+            "output_tokens": 1024,
+            "generated_text_characters": 114,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 94,
+            "output_tokens": 1024,
+            "generated_text_characters": 412,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 95,
+            "output_tokens": 1024,
+            "generated_text_characters": 349,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 96,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 97,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 98,
+            "output_tokens": 1024,
+            "generated_text_characters": 547,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 99,
+            "output_tokens": 1024,
+            "generated_text_characters": 514,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 100,
+            "output_tokens": 1024,
+            "generated_text_characters": 577,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 101,
+            "output_tokens": 1024,
+            "generated_text_characters": 4853,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 102,
+            "output_tokens": 1024,
+            "generated_text_characters": 341,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 103,
+            "output_tokens": 1024,
+            "generated_text_characters": 190,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 104,
+            "output_tokens": 1024,
+            "generated_text_characters": 543,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 105,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 106,
+            "output_tokens": 1024,
+            "generated_text_characters": 447,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 107,
+            "output_tokens": 1024,
+            "generated_text_characters": 443,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 108,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 109,
+            "output_tokens": 1024,
+            "generated_text_characters": 475,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 110,
+            "output_tokens": 1024,
+            "generated_text_characters": 575,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 111,
+            "output_tokens": 1024,
+            "generated_text_characters": 591,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 112,
+            "output_tokens": 1024,
+            "generated_text_characters": 468,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 113,
+            "output_tokens": 1024,
+            "generated_text_characters": 552,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 114,
+            "output_tokens": 1024,
+            "generated_text_characters": 512,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 115,
+            "output_tokens": 1024,
+            "generated_text_characters": 480,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 116,
+            "output_tokens": 1024,
+            "generated_text_characters": 515,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 117,
+            "output_tokens": 1024,
+            "generated_text_characters": 611,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 118,
+            "output_tokens": 1024,
+            "generated_text_characters": 209,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 119,
+            "output_tokens": 1024,
+            "generated_text_characters": 702,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 120,
+            "output_tokens": 1024,
+            "generated_text_characters": 464,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 121,
+            "output_tokens": 1024,
+            "generated_text_characters": 446,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 122,
+            "output_tokens": 1024,
+            "generated_text_characters": 514,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 123,
+            "output_tokens": 1024,
+            "generated_text_characters": 115,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 124,
+            "output_tokens": 1024,
+            "generated_text_characters": 567,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 125,
+            "output_tokens": 1024,
+            "generated_text_characters": 3253,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 126,
+            "output_tokens": 1024,
+            "generated_text_characters": 4611,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 127,
+            "output_tokens": 1024,
+            "generated_text_characters": 358,
+            "error": "",
+            "issues": []
+          }
+        ],
+        "reported_output_tokens": 131072,
+        "sum_output_tokens": 131072,
+        "expected_output_tokens": 131072
+      }
+    },
+    {
+      "name": "round1_16384_1024_c1",
+      "round": 1,
+      "target_text_input_tokens": 16384,
+      "concurrency": 1,
+      "expected_requests": 8,
+      "issues": [],
+      "verified": true,
+      "completed_requests_reported": 8,
+      "failed_requests_reported": 0,
+      "requests_with_full_output": 8,
+      "sum_output_tokens": 8192,
+      "recorded_status": "complete",
+      "budget_upper_bound_before_seconds": 1943.788298,
+      "client_wall_seconds": 462.213666,
+      "started_utc": "2026-10-19T18:16:02.681119+00:00",
+      "ended_utc": "2026-10-19T18:23:44.920985+00:00",
+      "utc_elapsed_seconds": 462.239866,
+      "metrics": {
+        "completed": 8,
+        "failed": 0,
+        "duration": 428.70441637421027,
+        "request_throughput": 0.01866087610587363,
+        "output_throughput": 19.108737132414596,
+        "total_token_throughput": 324.84853125104814,
+        "mean_ttft_ms": 6846.836780314334,
+        "p99_ttft_ms": 7387.355769681744,
+        "mean_tpot_ms": 45.69018802255982,
+        "p99_tpot_ms": 46.04443764907626,
+        "mean_e2el_ms": 53587.89912739303,
+        "p99_e2el_ms": 54241.75755179487,
+        "total_input_tokens": 131072,
+        "total_output_tokens": 8192
+      },
+      "output_integrity": {
+        "verified": true,
+        "issues": [],
+        "requests": [
+          {
+            "index": 0,
+            "output_tokens": 1024,
+            "generated_text_characters": 150,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 1,
+            "output_tokens": 1024,
+            "generated_text_characters": 103,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 2,
+            "output_tokens": 1024,
+            "generated_text_characters": 427,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 3,
+            "output_tokens": 1024,
+            "generated_text_characters": 101,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 4,
+            "output_tokens": 1024,
+            "generated_text_characters": 673,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 5,
+            "output_tokens": 1024,
+            "generated_text_characters": 151,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 6,
+            "output_tokens": 1024,
+            "generated_text_characters": 284,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 7,
+            "output_tokens": 1024,
+            "generated_text_characters": 98,
+            "error": "",
+            "issues": []
+          }
+        ],
+        "reported_output_tokens": 8192,
+        "sum_output_tokens": 8192,
+        "expected_output_tokens": 8192
+      }
+    },
+    {
+      "name": "round2_16384_1024_c1",
+      "round": 2,
+      "target_text_input_tokens": 16384,
+      "concurrency": 1,
+      "expected_requests": 8,
+      "issues": [],
+      "verified": true,
+      "completed_requests_reported": 8,
+      "failed_requests_reported": 0,
+      "requests_with_full_output": 8,
+      "sum_output_tokens": 8192,
+      "recorded_status": "complete",
+      "budget_upper_bound_before_seconds": 1481.5746319999998,
+      "client_wall_seconds": 411.054068,
+      "started_utc": "2026-10-19T18:23:45.342130+00:00",
+      "ended_utc": "2026-10-19T18:30:36.422590+00:00",
+      "utc_elapsed_seconds": 411.08046,
+      "metrics": {
+        "completed": 8,
+        "failed": 0,
+        "duration": 377.2631951519288,
+        "request_throughput": 0.02120535504869033,
+        "output_throughput": 21.7142835698589,
+        "total_token_throughput": 369.14282068760133,
+        "mean_ttft_ms": 370.15435710782185,
+        "p99_ttft_ms": 539.56880194135,
+        "mean_tpot_ms": 45.735653144109875,
+        "p99_tpot_ms": 46.23377885460992,
+        "mean_e2el_ms": 47157.72752353223,
+        "p99_e2el_ms": 47820.6697345851,
+        "total_input_tokens": 131072,
+        "total_output_tokens": 8192
+      },
+      "output_integrity": {
+        "verified": true,
+        "issues": [],
+        "requests": [
+          {
+            "index": 0,
+            "output_tokens": 1024,
+            "generated_text_characters": 276,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 1,
+            "output_tokens": 1024,
+            "generated_text_characters": 567,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 2,
+            "output_tokens": 1024,
+            "generated_text_characters": 394,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 3,
+            "output_tokens": 1024,
+            "generated_text_characters": 124,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 4,
+            "output_tokens": 1024,
+            "generated_text_characters": 568,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 5,
+            "output_tokens": 1024,
+            "generated_text_characters": 571,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 6,
+            "output_tokens": 1024,
+            "generated_text_characters": 284,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 7,
+            "output_tokens": 1024,
+            "generated_text_characters": 98,
+            "error": "",
+            "issues": []
+          }
+        ],
+        "reported_output_tokens": 8192,
+        "sum_output_tokens": 8192,
+        "expected_output_tokens": 8192
+      }
+    },
+    {
+      "name": "round1_16384_1024_c8",
+      "round": 1,
+      "target_text_input_tokens": 16384,
+      "concurrency": 8,
+      "expected_requests": 16,
+      "issues": [],
+      "verified": true,
+      "completed_requests_reported": 16,
+      "failed_requests_reported": 0,
+      "requests_with_full_output": 16,
+      "sum_output_tokens": 16384,
+      "recorded_status": "complete",
+      "budget_upper_bound_before_seconds": 1070.520564,
+      "client_wall_seconds": 184.974208,
+      "started_utc": "2026-10-19T18:30:37.093901+00:00",
+      "ended_utc": "2026-10-19T18:33:42.095949+00:00",
+      "utc_elapsed_seconds": 185.002048,
+      "metrics": {
+        "completed": 16,
+        "failed": 0,
+        "duration": 150.65571827394888,
+        "request_throughput": 0.10620240760397803,
+        "output_throughput": 108.7512653864735,
+        "total_token_throughput": 1848.7715115700496,
+        "mean_ttft_ms": 15935.335218440741,
+        "p99_ttft_ms": 52008.16563507541,
+        "mean_tpot_ms": 57.442185576766846,
+        "p99_tpot_ms": 88.24009100889708,
+        "mean_e2el_ms": 74698.69106347323,
+        "p99_e2el_ms": 100461.16718493868,
+        "total_input_tokens": 262144,
+        "total_output_tokens": 16384
+      },
+      "output_integrity": {
+        "verified": true,
+        "issues": [],
+        "requests": [
+          {
+            "index": 0,
+            "output_tokens": 1024,
+            "generated_text_characters": 276,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 1,
+            "output_tokens": 1024,
+            "generated_text_characters": 103,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 2,
+            "output_tokens": 1024,
+            "generated_text_characters": 498,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 3,
+            "output_tokens": 1024,
+            "generated_text_characters": 124,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 4,
+            "output_tokens": 1024,
+            "generated_text_characters": 4659,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 5,
+            "output_tokens": 1024,
+            "generated_text_characters": 151,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 6,
+            "output_tokens": 1024,
+            "generated_text_characters": 479,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 7,
+            "output_tokens": 1024,
+            "generated_text_characters": 99,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 8,
+            "output_tokens": 1024,
+            "generated_text_characters": 666,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 9,
+            "output_tokens": 1024,
+            "generated_text_characters": 103,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 10,
+            "output_tokens": 1024,
+            "generated_text_characters": 400,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 11,
+            "output_tokens": 1024,
+            "generated_text_characters": 4503,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 12,
+            "output_tokens": 1024,
+            "generated_text_characters": 723,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 13,
+            "output_tokens": 1024,
+            "generated_text_characters": 459,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 14,
+            "output_tokens": 1024,
+            "generated_text_characters": 459,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 15,
+            "output_tokens": 1024,
+            "generated_text_characters": 459,
+            "error": "",
+            "issues": []
+          }
+        ],
+        "reported_output_tokens": 16384,
+        "sum_output_tokens": 16384,
+        "expected_output_tokens": 16384
+      }
+    },
+    {
+      "name": "round2_16384_1024_c8",
+      "round": 2,
+      "target_text_input_tokens": 16384,
+      "concurrency": 8,
+      "expected_requests": 16,
+      "issues": [],
+      "verified": true,
+      "completed_requests_reported": 16,
+      "failed_requests_reported": 0,
+      "requests_with_full_output": 16,
+      "sum_output_tokens": 16384,
+      "recorded_status": "complete",
+      "budget_upper_bound_before_seconds": 885.5463559999998,
+      "client_wall_seconds": 132.324134,
+      "started_utc": "2026-10-19T18:33:42.592518+00:00",
+      "ended_utc": "2026-10-19T18:35:54.944096+00:00",
+      "utc_elapsed_seconds": 132.351578,
+      "metrics": {
+        "completed": 16,
+        "failed": 0,
+        "duration": 97.03586306096986,
+        "request_throughput": 0.16488749102944375,
+        "output_throughput": 168.8447908141504,
+        "total_token_throughput": 2870.3614438405566,
+        "mean_ttft_ms": 866.861639340641,
+        "p99_ttft_ms": 1334.29980261717,
+        "mean_tpot_ms": 46.47169233263263,
+        "p99_tpot_ms": 46.55694107819559,
+        "mean_e2el_ms": 48407.40289562382,
+        "p99_e2el_ms": 48889.185513556,
+        "total_input_tokens": 262144,
+        "total_output_tokens": 16384
+      },
+      "output_integrity": {
+        "verified": true,
+        "issues": [],
+        "requests": [
+          {
+            "index": 0,
+            "output_tokens": 1024,
+            "generated_text_characters": 710,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 1,
+            "output_tokens": 1024,
+            "generated_text_characters": 103,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 2,
+            "output_tokens": 1024,
+            "generated_text_characters": 499,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 3,
+            "output_tokens": 1024,
+            "generated_text_characters": 101,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 4,
+            "output_tokens": 1024,
+            "generated_text_characters": 559,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 5,
+            "output_tokens": 1024,
+            "generated_text_characters": 579,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 6,
+            "output_tokens": 1024,
+            "generated_text_characters": 284,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 7,
+            "output_tokens": 1024,
+            "generated_text_characters": 99,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 8,
+            "output_tokens": 1024,
+            "generated_text_characters": 666,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 9,
+            "output_tokens": 1024,
+            "generated_text_characters": 306,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 10,
+            "output_tokens": 1024,
+            "generated_text_characters": 393,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 11,
+            "output_tokens": 1024,
+            "generated_text_characters": 618,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 12,
+            "output_tokens": 1024,
+            "generated_text_characters": 4521,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 13,
+            "output_tokens": 1024,
+            "generated_text_characters": 459,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 14,
+            "output_tokens": 1024,
+            "generated_text_characters": 4707,
+            "error": "",
+            "issues": []
+          },
+          {
+            "index": 15,
+            "output_tokens": 1024,
+            "generated_text_characters": 459,
+            "error": "",
+            "issues": []
+          }
+        ],
+        "reported_output_tokens": 16384,
+        "sum_output_tokens": 16384,
+        "expected_output_tokens": 16384
+      }
+    },
+    {
+      "name": "round1_16384_1024_c64",
+      "round": 1,
+      "target_text_input_tokens": 16384,
+      "concurrency": 64,
+      "expected_requests": 128,
+      "issues": [
+        "row field mismatch: status",
+        "row field mismatch: exit_code",
+        "missing regular evidence file: E:\\hg20261019\\evidence\\session003\\recon-matrix\\native\\round1_16384_1024_c64.json"
+      ],
+      "verified": false,
+      "completed_requests_reported": null,
+      "failed_requests_reported": null,
+      "requests_with_full_output": null,
+      "sum_output_tokens": null,
+      "recorded_status": "timeout",
+      "budget_upper_bound_before_seconds": 753.2222219999999,
+      "client_wall_seconds": 745.996889,
+      "started_utc": "2026-10-19T18:35:55.637609+00:00",
+      "ended_utc": "2026-10-19T18:48:21.659802+00:00",
+      "utc_elapsed_seconds": 746.022193
+    },
+    {
+      "name": "round2_16384_1024_c64",
+      "round": 2,
+      "target_text_input_tokens": 16384,
+      "concurrency": 64,
+      "expected_requests": 128,
+      "issues": [
+        "row field mismatch: status",
+        "row field mismatch: exit_code",
+        "missing/invalid client wall duration",
+        "invalid row timing: fromisoformat: argument must be str",
+        "missing regular evidence file: E:\\hg20261019\\evidence\\session003\\recon-matrix\\round2_16384_1024_c64.log",
+        "missing regular evidence file: E:\\hg20261019\\evidence\\session003\\recon-matrix\\native\\round2_16384_1024_c64.json"
+      ],
+      "verified": false,
+      "completed_requests_reported": null,
+      "failed_requests_reported": null,
+      "requests_with_full_output": null,
+      "sum_output_tokens": null,
+      "recorded_status": "not_attempted_total_timeout",
+      "budget_upper_bound_before_seconds": 7.225332999999864,
+      "client_wall_seconds": null,
+      "started_utc": null,
+      "ended_utc": null
+    }
+  ],
+  "source_files": [
+    {
+      "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix\\run.json",
+      "bytes": 96651,
+      "sha256": "3aaf594da27ea399d0ca2a7eed3ffde828c7bf04c27abbe5bc88a00a22474f7e"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session003\\recon-final-runtime\\sources\\scripts\\t02_development_bench.py",
+      "bytes": 17119,
+      "sha256": "bc09711bb58fb5a7ae4676a840956a4da1caf49f6e6034b8015c5dd9a5bae14e"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix\\round1_4096_1024_c1.log",
+      "bytes": 4953,
+      "sha256": "d42203bdd87adcdc59567ddaec28926b8020d479f152c2752e5487f0d3630541"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix\\native\\round1_4096_1024_c1.json",
+      "bytes": 184026,
+      "sha256": "3ec74fadada01f2dbc595eebcb55acd99d97fa1235db7ca8ebc330d86dc2bd46"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix\\round2_4096_1024_c1.log",
+      "bytes": 4953,
+      "sha256": "7bca2e4f3c20f72f270ee84d4d0ff23d3a91d994f45820b8046ec85baeb7ee47"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix\\native\\round2_4096_1024_c1.json",
+      "bytes": 183566,
+      "sha256": "e763920e70f5734603e2c7eb4af28c2012edfa23b240ab34a352d1256fde4340"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix\\round1_4096_1024_c8.log",
+      "bytes": 4954,
+      "sha256": "87b8453f115ecfe112f31587d069836ee7e02097b00a7e462dc30a3c3e79e45b"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix\\native\\round1_4096_1024_c8.json",
+      "bytes": 356620,
+      "sha256": "448fe35380b2bcd441ff61e12286047a2b30ef844dcc075f5b520791fcb8cbc5"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix\\round2_4096_1024_c8.log",
+      "bytes": 4954,
+      "sha256": "892544006c57c04996755b3c18622252c8b4e72c3ba5c5b7886451f63c819972"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix\\native\\round2_4096_1024_c8.json",
+      "bytes": 360745,
+      "sha256": "2cf3f055764b99f140dbc5bbc224e752c3bbbb1134850fce904ac57fac68ed8c"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix\\round1_4096_1024_c64.log",
+      "bytes": 4958,
+      "sha256": "9754b9489e097dc4caa7bc7f6240a214ffb5237e33f83d84a5a19dc261927164"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix\\native\\round1_4096_1024_c64.json",
+      "bytes": 2866453,
+      "sha256": "c663fa323cbf2667c6fe158bf2a11dbd0929989c9562b51364274102af75f46b"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix\\round2_4096_1024_c64.log",
+      "bytes": 4958,
+      "sha256": "f7ccaecbb1ae63fd06054da6e079afaccc02b362427d9d9109a4b6be991200c5"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix\\native\\round2_4096_1024_c64.json",
+      "bytes": 2875777,
+      "sha256": "3e8b460ba03f3a045b48bd873c8d24bd5198a8f333b7ab83536f6c9cb9e68348"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix\\round1_16384_1024_c1.log",
+      "bytes": 4957,
+      "sha256": "72e8e37813037f356afa33df9ee6d5e4b8c84e3f36b3fa2989c38ac9fb0a6666"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix\\native\\round1_16384_1024_c1.json",
+      "bytes": 177752,
+      "sha256": "d1d20a23b5bd505a46a74871124dfa2b3d66bdcf149488c7a9651a664c18fe4c"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix\\round2_16384_1024_c1.log",
+      "bytes": 4957,
+      "sha256": "c1550fc1264bfc4ac4d581b541ac2a0f64ff420afa04642661f73ae02ea70fa8"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix\\native\\round2_16384_1024_c1.json",
+      "bytes": 178778,
+      "sha256": "1df3187000d29f36e7a7cc9e3e93002923f190d519299babec1ebe2242c7814b"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix\\round1_16384_1024_c8.log",
+      "bytes": 4958,
+      "sha256": "d0764e202a3eba8ea67a9f6d9c1df638afd83d11ad2d28568cb6ccb7141fced1"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix\\native\\round1_16384_1024_c8.json",
+      "bytes": 364210,
+      "sha256": "935f9197ff90b78ff8ee9588d93804189663a1310eec5edb9d5be85bd5150020"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix\\round2_16384_1024_c8.log",
+      "bytes": 4958,
+      "sha256": "abc4c5fc9b48a9982a1b8d541093562aa3f3103d5465fb91c66ae6b220b11808"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix\\native\\round2_16384_1024_c8.json",
+      "bytes": 364983,
+      "sha256": "91a75ee8d2d953e5145110f5bee4a40c1d6d3d689b38c705a1c6502ea5a1b596"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix\\round1_16384_1024_c64.log",
+      "bytes": 3199,
+      "sha256": "a0cbfe0912ae64fc2421a13e26827fc4234f53d75ff3c1d23a402015a5d3b491"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix\\round1.jsonl",
+      "bytes": 30578,
+      "sha256": "165b103a86a72126c7c560bbd9b53c0b1a25ba8e414ff8de6a1b7a3bde5d25d6"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix\\round2.jsonl",
+      "bytes": 30351,
+      "sha256": "9ad21c7cc0600a1e879a79ca53593762315287cb19c610810873a24112a03e91"
+    },
+    {
+      "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix\\summary.md",
+      "bytes": 3185,
+      "sha256": "fca6cc7af03b7a78f07b4a861fb96308f012ed277d34609a7112e91630fd3a0d"
+    }
+  ],
+  "source_files_stable_during_audit": true,
+  "runtime": {
+    "provided": true,
+    "files": [
+      {
+        "path": "E:\\hg20261019\\evidence\\session003\\recon-final-runtime\\cleanup-check.json",
+        "bytes": 453,
+        "sha256": "4ae00a22464bb6188533088cb3781bda8e23373f590980c59b718432b6ef7a0f"
+      },
+      {
+        "path": "E:\\hg20261019\\evidence\\session003\\recon-final-runtime\\config-bb6a20bae32640c0b924511637d6a222.json",
+        "bytes": 1327,
+        "sha256": "857bd3d4ca9e6d903a63e07d0914d2b63199d1f077b6ebaf3fe08f4439174c78"
+      },
+      {
+        "path": "E:\\hg20261019\\evidence\\session003\\recon-final-runtime\\server.log",
+        "bytes": 108128,
+        "sha256": "18b64061cbb0abdb60fa1601b4f8ea14968b800aefc225fe9e889e5e501d842f"
+      },
+      {
+        "path": "E:\\hg20261019\\evidence\\session003\\recon-final-runtime\\sources\\scripts\\recon2reason_runtime.py",
+        "bytes": 32422,
+        "sha256": "66e9a97c63469698bfc09fbc1158a28fbd7a48f52877abb21156785a33ab1221"
+      },
+      {
+        "path": "E:\\hg20261019\\evidence\\session003\\recon-final-runtime\\sources\\scripts\\t02_development_bench.py",
+        "bytes": 17119,
+        "sha256": "bc09711bb58fb5a7ae4676a840956a4da1caf49f6e6034b8015c5dd9a5bae14e"
+      },
+      {
+        "path": "E:\\hg20261019\\evidence\\session003\\recon-final-runtime\\sources\\tasks\\recon2reason-bw-vllm\\env.sh",
+        "bytes": 2779,
+        "sha256": "390c12d84c18163245e1fb994099bea5205a3a287ca44b69fad5afacff46d8aa"
+      },
+      {
+        "path": "E:\\hg20261019\\evidence\\session003\\recon-final-runtime\\sources\\tasks\\recon2reason-bw-vllm\\run.sh",
+        "bytes": 231,
+        "sha256": "8ab5a4d53e6d317a67ab902ec3ca78332e1cb458d21765295be27f05b5f97a69"
+      },
+      {
+        "path": "E:\\hg20261019\\evidence\\session003\\recon-final-runtime\\sources\\tasks\\recon2reason-bw-vllm\\stop.sh",
+        "bytes": 229,
+        "sha256": "d3e0b15a5bc42ca3d62a2215582ec61c47c1364f7b398898ab800a7396f4bc2c"
+      },
+      {
+        "path": "E:\\hg20261019\\evidence\\session003\\recon-final-runtime\\state.json",
+        "bytes": 1270,
+        "sha256": "79f67ed2d578f5ef4c7192dffcc8f8d94c218c49faac02f34993503ddc6a93e0"
+      },
+      {
+        "path": "E:\\hg20261019\\evidence\\session003\\recon-final-runtime\\supervisor.log",
+        "bytes": 2172,
+        "sha256": "885b36e991fae5f01887fb68562c6df1b11c67cd1f4c60c60cb0547a214e92de"
+      }
+    ],
+    "profiles": [
+      {
+        "path": "E:\\hg20261019\\evidence\\session003\\recon-final-runtime\\server.log",
+        "line": 54,
+        "raw_line": "(EngineCore pid=10017) INFO 10-20 03:01:23 [gpu_worker.py:456] Available KV cache memory: 44.93 GiB",
+        "kv_memory_gib": 44.93,
+        "kv_tokens": null
+      },
+      {
+        "path": "E:\\hg20261019\\evidence\\session003\\recon-final-runtime\\server.log",
+        "line": 55,
+        "raw_line": "(EngineCore pid=10017) INFO 10-20 03:01:23 [kv_cache_utils.py:1316] GPU KV cache size: 327,168 tokens",
+        "kv_memory_gib": null,
+        "kv_tokens": 327168
+      }
+    ],
+    "states": [
+      {
+        "path": "E:\\hg20261019\\evidence\\session003\\recon-final-runtime\\state.json",
+        "run_id": "bb6a20bae32640c0b924511637d6a222",
+        "status": "stopped",
+        "reason": "stop requested",
+        "created_utc": "2026-10-19T18:59:30.678808+00:00",
+        "ready_utc": "2026-10-19T19:01:32.498983+00:00",
+        "ended_utc": "2026-10-19T19:46:43.702518+00:00",
+        "command": [
+          "/usr/bin/python",
+          "-m",
+          "vllm.entrypoints.openai.api_server",
+          "--model",
+          "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+          "--served-model-name",
+          "recon2reason-reasoning-4b",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "30000",
+          "--tensor-parallel-size",
+          "1",
+          "--dtype",
+          "bfloat16",
+          "--max-model-len",
+          "32768",
+          "--gpu-memory-utilization",
+          "0.85",
+          "--enforce-eager",
+          "--max-num-seqs",
+          "16",
+          "--limit-mm-per-prompt",
+          "{\"image\":2,\"video\":0}"
+        ]
+      }
+    ],
+    "live_process_or_port_checked": false,
+    "platform_shutdown_verified": false,
+    "recorded_stopped_state_present": true
+  },
+  "retries": [
+    {
+      "schema_version": 1,
+      "audited_at_utc": "2026-10-19T19:49:17.126035+00:00",
+      "kind": "offline_downloaded_development_matrix_audit",
+      "matrix_dir": "E:\\hg20261019\\evidence\\session003\\recon-matrix-retry",
+      "run_complete_verified": false,
+      "matrix_complete_verified": false,
+      "official_accuracy": false,
+      "official_performance": false,
+      "formal_ready": false,
+      "submitted": false,
+      "expected_cells": 2,
+      "expected_requests": 256,
+      "server_state_scope": "Persistent server with fixed seed=1 permits prefix-cache reuse across rounds/loads; no independent cold start or cache-disabled baseline is verified.",
+      "expected_output_tokens": 262144,
+      "verified_cells": 1,
+      "verified_requests": 128,
+      "verified_output_tokens": 131072,
+      "observed_native_completed_requests": 128,
+      "observed_sum_output_tokens": 131072,
+      "cells_missing_native_request_counts": [
+        "round2_16384_1024_c64"
+      ],
+      "driver_sha256_match": true,
+      "reported_driver_sha256": "bc09711bb58fb5a7ae4676a840956a4da1caf49f6e6034b8015c5dd9a5bae14e",
+      "native_vllm_version": "0.18.1+das.fa71803.dtk2604",
+      "reported_native_source_sha256": {
+        "serve": "1c4fddeef7114371dfded0a1ba8287c2c644f06697cc00b0275a91cc26a024a9",
+        "datasets": "85b4e3b7407ef35ad364ccd454efdcfa9a06759144582d5a3a3761e3f85a41e2"
+      },
+      "identity": {
+        "model_path": "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+        "tokenizer_path": "/root/private_data/SothisAI/model/Aihub/Recon2Reason-Reasoning-4B/main/Recon2Reason-Reasoning-4B",
+        "served_model_name": "recon2reason-reasoning-4b",
+        "host": "127.0.0.1",
+        "port": 30000,
+        "image_size": [
+          1024,
+          1024
+        ],
+        "images_per_request": 1,
+        "driver_sha256": "bc09711bb58fb5a7ae4676a840956a4da1caf49f6e6034b8015c5dd9a5bae14e",
+        "native_vllm_version": "0.18.1+das.fa71803.dtk2604",
+        "native_source_sha256": {
+          "serve": "1c4fddeef7114371dfded0a1ba8287c2c644f06697cc00b0275a91cc26a024a9",
+          "datasets": "85b4e3b7407ef35ad364ccd454efdcfa9a06759144582d5a3a3761e3f85a41e2"
+        }
+      },
+      "started_utc": "2026-10-19T19:01:33.531802+00:00",
+      "ended_utc": "2026-10-19T19:46:31.399894+00:00",
+      "deadline": {
+        "total_timeout_seconds": 2697.0,
+        "per_cell_timeout_seconds": 1800.0,
+        "client_wall_sum_seconds": 2696.027517,
+        "budget_note": "Upper bounds ignore metadata/summary overhead; deadline starts after initial metadata collection.",
+        "first_incomplete_cell": "round2_16384_1024_c64"
+      },
+      "issues": [
+        "run field mismatch: status"
+      ],
+      "rows": [
+        {
+          "name": "round1_16384_1024_c64",
+          "round": 1,
+          "target_text_input_tokens": 16384,
+          "concurrency": 64,
+          "expected_requests": 128,
+          "issues": [],
+          "verified": true,
+          "completed_requests_reported": 128,
+          "failed_requests_reported": 0,
+          "requests_with_full_output": 128,
+          "sum_output_tokens": 131072,
+          "recorded_status": "complete",
+          "budget_upper_bound_before_seconds": 2697.0,
+          "client_wall_seconds": 1388.66132,
+          "started_utc": "2026-10-19T19:01:34.370493+00:00",
+          "ended_utc": "2026-10-19T19:24:43.431028+00:00",
+          "utc_elapsed_seconds": 1389.060535,
+          "metrics": {
+            "completed": 128,
+            "failed": 0,
+            "duration": 1335.1635527042672,
+            "request_throughput": 0.09586840484129919,
+            "output_throughput": 98.16924655749037,
+            "total_token_throughput": 1668.8771914773363,
+            "mean_ttft_ms": 407773.81381296436,
+            "p99_ttft_ms": 600746.0267734993,
+            "mean_tpot_ms": 147.8136000478934,
+            "p99_tpot_ms": 155.29854754821278,
+            "mean_e2el_ms": 558987.1266619593,
+            "p99_e2el_ms": 757967.3596001789,
+            "total_input_tokens": 2097152,
+            "total_output_tokens": 131072
+          },
+          "output_integrity": {
+            "verified": true,
+            "issues": [],
+            "requests": [
+              {
+                "index": 0,
+                "output_tokens": 1024,
+                "generated_text_characters": 150,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 1,
+                "output_tokens": 1024,
+                "generated_text_characters": 98,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 2,
+                "output_tokens": 1024,
+                "generated_text_characters": 328,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 3,
+                "output_tokens": 1024,
+                "generated_text_characters": 99,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 4,
+                "output_tokens": 1024,
+                "generated_text_characters": 4659,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 5,
+                "output_tokens": 1024,
+                "generated_text_characters": 151,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 6,
+                "output_tokens": 1024,
+                "generated_text_characters": 443,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 7,
+                "output_tokens": 1024,
+                "generated_text_characters": 288,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 8,
+                "output_tokens": 1024,
+                "generated_text_characters": 574,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 9,
+                "output_tokens": 1024,
+                "generated_text_characters": 302,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 10,
+                "output_tokens": 1024,
+                "generated_text_characters": 393,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 11,
+                "output_tokens": 1024,
+                "generated_text_characters": 5134,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 12,
+                "output_tokens": 1024,
+                "generated_text_characters": 4366,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 13,
+                "output_tokens": 1024,
+                "generated_text_characters": 358,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 14,
+                "output_tokens": 1024,
+                "generated_text_characters": 4647,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 15,
+                "output_tokens": 1024,
+                "generated_text_characters": 459,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 16,
+                "output_tokens": 1024,
+                "generated_text_characters": 237,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 17,
+                "output_tokens": 1024,
+                "generated_text_characters": 535,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 18,
+                "output_tokens": 1024,
+                "generated_text_characters": 582,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 19,
+                "output_tokens": 1024,
+                "generated_text_characters": 568,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 20,
+                "output_tokens": 1024,
+                "generated_text_characters": 320,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 21,
+                "output_tokens": 1024,
+                "generated_text_characters": 503,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 22,
+                "output_tokens": 1024,
+                "generated_text_characters": 1654,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 23,
+                "output_tokens": 1024,
+                "generated_text_characters": 103,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 24,
+                "output_tokens": 1024,
+                "generated_text_characters": 5183,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 25,
+                "output_tokens": 1024,
+                "generated_text_characters": 164,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 26,
+                "output_tokens": 1024,
+                "generated_text_characters": 459,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 27,
+                "output_tokens": 1024,
+                "generated_text_characters": 284,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 28,
+                "output_tokens": 1024,
+                "generated_text_characters": 4522,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 29,
+                "output_tokens": 1024,
+                "generated_text_characters": 103,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 30,
+                "output_tokens": 1024,
+                "generated_text_characters": 4521,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 31,
+                "output_tokens": 1024,
+                "generated_text_characters": 567,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 32,
+                "output_tokens": 1024,
+                "generated_text_characters": 101,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 33,
+                "output_tokens": 1024,
+                "generated_text_characters": 574,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 34,
+                "output_tokens": 1024,
+                "generated_text_characters": 114,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 35,
+                "output_tokens": 1024,
+                "generated_text_characters": 695,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 36,
+                "output_tokens": 1024,
+                "generated_text_characters": 200,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 37,
+                "output_tokens": 1024,
+                "generated_text_characters": 4521,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 38,
+                "output_tokens": 1024,
+                "generated_text_characters": 459,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 39,
+                "output_tokens": 1024,
+                "generated_text_characters": 4366,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 40,
+                "output_tokens": 1024,
+                "generated_text_characters": 113,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 41,
+                "output_tokens": 1024,
+                "generated_text_characters": 494,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 42,
+                "output_tokens": 1024,
+                "generated_text_characters": 115,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 43,
+                "output_tokens": 1024,
+                "generated_text_characters": 255,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 44,
+                "output_tokens": 1024,
+                "generated_text_characters": 476,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 45,
+                "output_tokens": 1024,
+                "generated_text_characters": 99,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 46,
+                "output_tokens": 1024,
+                "generated_text_characters": 796,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 47,
+                "output_tokens": 1024,
+                "generated_text_characters": 99,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 48,
+                "output_tokens": 1024,
+                "generated_text_characters": 250,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 49,
+                "output_tokens": 1024,
+                "generated_text_characters": 101,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 50,
+                "output_tokens": 1024,
+                "generated_text_characters": 4628,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 51,
+                "output_tokens": 1024,
+                "generated_text_characters": 4827,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 52,
+                "output_tokens": 1024,
+                "generated_text_characters": 459,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 53,
+                "output_tokens": 1024,
+                "generated_text_characters": 155,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 54,
+                "output_tokens": 1024,
+                "generated_text_characters": 493,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 55,
+                "output_tokens": 1024,
+                "generated_text_characters": 652,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 56,
+                "output_tokens": 1024,
+                "generated_text_characters": 355,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 57,
+                "output_tokens": 1024,
+                "generated_text_characters": 447,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 58,
+                "output_tokens": 1024,
+                "generated_text_characters": 164,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 59,
+                "output_tokens": 1024,
+                "generated_text_characters": 99,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 60,
+                "output_tokens": 1024,
+                "generated_text_characters": 459,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 61,
+                "output_tokens": 1024,
+                "generated_text_characters": 217,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 62,
+                "output_tokens": 1024,
+                "generated_text_characters": 588,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 63,
+                "output_tokens": 1024,
+                "generated_text_characters": 4521,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 64,
+                "output_tokens": 1024,
+                "generated_text_characters": 4503,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 65,
+                "output_tokens": 1024,
+                "generated_text_characters": 149,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 66,
+                "output_tokens": 1024,
+                "generated_text_characters": 567,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 67,
+                "output_tokens": 1024,
+                "generated_text_characters": 438,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 68,
+                "output_tokens": 1024,
+                "generated_text_characters": 151,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 69,
+                "output_tokens": 1024,
+                "generated_text_characters": 141,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 70,
+                "output_tokens": 1024,
+                "generated_text_characters": 158,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 71,
+                "output_tokens": 1024,
+                "generated_text_characters": 397,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 72,
+                "output_tokens": 1024,
+                "generated_text_characters": 153,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 73,
+                "output_tokens": 1024,
+                "generated_text_characters": 114,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 74,
+                "output_tokens": 1024,
+                "generated_text_characters": 251,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 75,
+                "output_tokens": 1024,
+                "generated_text_characters": 155,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 76,
+                "output_tokens": 1024,
+                "generated_text_characters": 465,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 77,
+                "output_tokens": 1024,
+                "generated_text_characters": 4630,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 78,
+                "output_tokens": 1024,
+                "generated_text_characters": 542,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 79,
+                "output_tokens": 1024,
+                "generated_text_characters": 151,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 80,
+                "output_tokens": 1024,
+                "generated_text_characters": 4630,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 81,
+                "output_tokens": 1024,
+                "generated_text_characters": 497,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 82,
+                "output_tokens": 1024,
+                "generated_text_characters": 158,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 83,
+                "output_tokens": 1024,
+                "generated_text_characters": 479,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 84,
+                "output_tokens": 1024,
+                "generated_text_characters": 103,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 85,
+                "output_tokens": 1024,
+                "generated_text_characters": 127,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 86,
+                "output_tokens": 1024,
+                "generated_text_characters": 854,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 87,
+                "output_tokens": 1024,
+                "generated_text_characters": 588,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 88,
+                "output_tokens": 1024,
+                "generated_text_characters": 5493,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 89,
+                "output_tokens": 1024,
+                "generated_text_characters": 444,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 90,
+                "output_tokens": 1024,
+                "generated_text_characters": 158,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 91,
+                "output_tokens": 1024,
+                "generated_text_characters": 344,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 92,
+                "output_tokens": 1024,
+                "generated_text_characters": 2537,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 93,
+                "output_tokens": 1024,
+                "generated_text_characters": 103,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 94,
+                "output_tokens": 1024,
+                "generated_text_characters": 99,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 95,
+                "output_tokens": 1024,
+                "generated_text_characters": 494,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 96,
+                "output_tokens": 1024,
+                "generated_text_characters": 574,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 97,
+                "output_tokens": 1024,
+                "generated_text_characters": 105,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 98,
+                "output_tokens": 1024,
+                "generated_text_characters": 103,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 99,
+                "output_tokens": 1024,
+                "generated_text_characters": 284,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 100,
+                "output_tokens": 1024,
+                "generated_text_characters": 584,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 101,
+                "output_tokens": 1024,
+                "generated_text_characters": 436,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 102,
+                "output_tokens": 1024,
+                "generated_text_characters": 326,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 103,
+                "output_tokens": 1024,
+                "generated_text_characters": 158,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 104,
+                "output_tokens": 1024,
+                "generated_text_characters": 4279,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 105,
+                "output_tokens": 1024,
+                "generated_text_characters": 579,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 106,
+                "output_tokens": 1024,
+                "generated_text_characters": 394,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 107,
+                "output_tokens": 1024,
+                "generated_text_characters": 5312,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 108,
+                "output_tokens": 1024,
+                "generated_text_characters": 652,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 109,
+                "output_tokens": 1024,
+                "generated_text_characters": 4366,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 110,
+                "output_tokens": 1024,
+                "generated_text_characters": 710,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 111,
+                "output_tokens": 1024,
+                "generated_text_characters": 573,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 112,
+                "output_tokens": 1024,
+                "generated_text_characters": 658,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 113,
+                "output_tokens": 1024,
+                "generated_text_characters": 393,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 114,
+                "output_tokens": 1024,
+                "generated_text_characters": 360,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 115,
+                "output_tokens": 1024,
+                "generated_text_characters": 315,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 116,
+                "output_tokens": 1024,
+                "generated_text_characters": 5296,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 117,
+                "output_tokens": 1024,
+                "generated_text_characters": 456,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 118,
+                "output_tokens": 1024,
+                "generated_text_characters": 265,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 119,
+                "output_tokens": 1024,
+                "generated_text_characters": 4366,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 120,
+                "output_tokens": 1024,
+                "generated_text_characters": 578,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 121,
+                "output_tokens": 1024,
+                "generated_text_characters": 717,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 122,
+                "output_tokens": 1024,
+                "generated_text_characters": 288,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 123,
+                "output_tokens": 1024,
+                "generated_text_characters": 114,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 124,
+                "output_tokens": 1024,
+                "generated_text_characters": 4712,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 125,
+                "output_tokens": 1024,
+                "generated_text_characters": 362,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 126,
+                "output_tokens": 1024,
+                "generated_text_characters": 4629,
+                "error": "",
+                "issues": []
+              },
+              {
+                "index": 127,
+                "output_tokens": 1024,
+                "generated_text_characters": 404,
+                "error": "",
+                "issues": []
+              }
+            ],
+            "reported_output_tokens": 131072,
+            "sum_output_tokens": 131072,
+            "expected_output_tokens": 131072
+          }
+        },
+        {
+          "name": "round2_16384_1024_c64",
+          "round": 2,
+          "target_text_input_tokens": 16384,
+          "concurrency": 64,
+          "expected_requests": 128,
+          "issues": [
+            "row field mismatch: status",
+            "row field mismatch: exit_code",
+            "missing regular evidence file: E:\\hg20261019\\evidence\\session003\\recon-matrix-retry\\native\\round2_16384_1024_c64.json"
+          ],
+          "verified": false,
+          "completed_requests_reported": null,
+          "failed_requests_reported": null,
+          "requests_with_full_output": null,
+          "sum_output_tokens": null,
+          "recorded_status": "timeout",
+          "budget_upper_bound_before_seconds": 1308.33868,
+          "client_wall_seconds": 1307.366197,
+          "started_utc": "2026-10-19T19:24:43.886643+00:00",
+          "ended_utc": "2026-10-19T19:46:31.280358+00:00",
+          "utc_elapsed_seconds": 1307.393715
+        }
+      ],
+      "source_files": [
+        {
+          "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix-retry\\run.json",
+          "bytes": 27740,
+          "sha256": "af90e24d0f53012c1f91dd381421df43386829b730bc4695295983c421e27e59"
+        },
+        {
+          "path": "E:\\hg20261019\\evidence\\session003\\recon-final-runtime\\sources\\scripts\\t02_development_bench.py",
+          "bytes": 17119,
+          "sha256": "bc09711bb58fb5a7ae4676a840956a4da1caf49f6e6034b8015c5dd9a5bae14e"
+        },
+        {
+          "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix-retry\\round1_16384_1024_c64.log",
+          "bytes": 4968,
+          "sha256": "07311dd40458022f850e8f72a15af68cef7907fd29243c0e0e55ac785c39a32c"
+        },
+        {
+          "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix-retry\\native\\round1_16384_1024_c64.json",
+          "bytes": 2920377,
+          "sha256": "bee59d8fcff5c86a4bffe9a6a0cfc1cb4f6101a4696e8e22866afe7e03159857"
+        },
+        {
+          "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix-retry\\round2_16384_1024_c64.log",
+          "bytes": 3205,
+          "sha256": "8520400f259b5371cf35a936095490eb2acdf6462c6af1d53c31202bb79bdaa1"
+        },
+        {
+          "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix-retry\\round1.jsonl",
+          "bytes": 13687,
+          "sha256": "e98a5a73e1cbe61ef1c80cb57009a97e303eb805845e18e1a6e0422d8aff5d5e"
+        },
+        {
+          "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix-retry\\round2.jsonl",
+          "bytes": 1984,
+          "sha256": "4183b6357c112a20e537351c81b7b65c4f6a1033be53b47e5ea672f0249686d8"
+        },
+        {
+          "path": "E:\\hg20261019\\evidence\\session003\\recon-matrix-retry\\summary.md",
+          "bytes": 878,
+          "sha256": "45640f6f91464f5c3e15c395aab162c1a71aa960bc6165c367db0180bc20e401"
+        }
+      ],
+      "source_files_stable_during_audit": true
+    }
+  ],
+  "combined_coverage": [
+    {
+      "name": "round1_4096_1024_c1",
+      "verified": true,
+      "source_run_dir": "E:\\hg20261019\\evidence\\session003\\recon-matrix",
+      "source_is_retry": false,
+      "requests": 8
+    },
+    {
+      "name": "round2_4096_1024_c1",
+      "verified": true,
+      "source_run_dir": "E:\\hg20261019\\evidence\\session003\\recon-matrix",
+      "source_is_retry": false,
+      "requests": 8
+    },
+    {
+      "name": "round1_4096_1024_c8",
+      "verified": true,
+      "source_run_dir": "E:\\hg20261019\\evidence\\session003\\recon-matrix",
+      "source_is_retry": false,
+      "requests": 16
+    },
+    {
+      "name": "round2_4096_1024_c8",
+      "verified": true,
+      "source_run_dir": "E:\\hg20261019\\evidence\\session003\\recon-matrix",
+      "source_is_retry": false,
+      "requests": 16
+    },
+    {
+      "name": "round1_4096_1024_c64",
+      "verified": true,
+      "source_run_dir": "E:\\hg20261019\\evidence\\session003\\recon-matrix",
+      "source_is_retry": false,
+      "requests": 128
+    },
+    {
+      "name": "round2_4096_1024_c64",
+      "verified": true,
+      "source_run_dir": "E:\\hg20261019\\evidence\\session003\\recon-matrix",
+      "source_is_retry": false,
+      "requests": 128
+    },
+    {
+      "name": "round1_16384_1024_c1",
+      "verified": true,
+      "source_run_dir": "E:\\hg20261019\\evidence\\session003\\recon-matrix",
+      "source_is_retry": false,
+      "requests": 8
+    },
+    {
+      "name": "round2_16384_1024_c1",
+      "verified": true,
+      "source_run_dir": "E:\\hg20261019\\evidence\\session003\\recon-matrix",
+      "source_is_retry": false,
+      "requests": 8
+    },
+    {
+      "name": "round1_16384_1024_c8",
+      "verified": true,
+      "source_run_dir": "E:\\hg20261019\\evidence\\session003\\recon-matrix",
+      "source_is_retry": false,
+      "requests": 16
+    },
+    {
+      "name": "round2_16384_1024_c8",
+      "verified": true,
+      "source_run_dir": "E:\\hg20261019\\evidence\\session003\\recon-matrix",
+      "source_is_retry": false,
+      "requests": 16
+    },
+    {
+      "name": "round1_16384_1024_c64",
+      "verified": true,
+      "source_run_dir": "E:\\hg20261019\\evidence\\session003\\recon-matrix-retry",
+      "source_is_retry": true,
+      "requests": 128
+    },
+    {
+      "name": "round2_16384_1024_c64",
+      "verified": false,
+      "source_run_dir": null,
+      "source_is_retry": false,
+      "requests": 128
+    }
+  ],
+  "combined_development_coverage_complete": false,
+  "separate_runs_note": "Retry evidence never changes the original run status. Combined coverage is development request coverage only; same server configuration and official performance equivalence are not automatically verified."
+}

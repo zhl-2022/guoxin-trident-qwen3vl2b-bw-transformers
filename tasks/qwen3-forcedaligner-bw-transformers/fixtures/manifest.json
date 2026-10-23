@@ -1,0 +1,10 @@
+{
+  "file": "zh_16000_pcm16.wav",
+  "sha256": "46dbc998c9d1d48111267c40741dd3200f2e5bcf4075f8c4c97f4451160dce50",
+  "bytes": 134570,
+  "source_url": "https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-ASR-Repo/asr_zh.wav",
+  "copy_source": "fixtures/asr/development-20261020/zh_16000_pcm16.wav",
+  "transcript_source": "QwenLM/Qwen3-ASR@7c6daf77a2421100f5fb066495372c00129d39ff/examples/example_qwen3_forced_aligner.py TEXT_ZH",
+  "transcript_is_independent_timestamp_reference": false,
+  "official_contest_data": false
+}

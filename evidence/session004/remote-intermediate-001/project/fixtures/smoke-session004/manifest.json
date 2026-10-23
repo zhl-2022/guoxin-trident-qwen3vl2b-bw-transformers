@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "session": "session004",
+  "scope": "Fixed API smoke inputs only; not official accuracy data, baselines, or references",
+  "created_at_utc": "2026-10-23T08:50:04.7331781Z",
+  "source_session": "session003",
+  "official_accuracy": false,
+  "new_model_outputs_generated": false,
+  "original_sources_modified": false,
+  "files": [
+    {
+      "source": "evidence/recon-functional-images-heldout_red_square-003.png",
+      "path": "recon_red.png",
+      "bytes": 2915,
+      "sha256": "d51437c5bb459fb25f47a9e52e650b3f815d1d9900ec63b651f338e6e73c7165",
+      "operation": "byte_for_byte_copy_original_unchanged"
+    },
+    {
+      "source": "evidence/recon-functional-images-heldout_blue_circle-003.png",
+      "path": "recon_blue.png",
+      "bytes": 3463,
+      "sha256": "13588c097bf637a09c571e441392c40f406b81ca0a50e30b3ee2f336585fec2f",
+      "operation": "byte_for_byte_copy_original_unchanged"
+    },
+    {
+      "source": "evidence/robobrain-heldout-red-003.png",
+      "path": "robo_red.png",
+      "bytes": 2915,
+      "sha256": "d51437c5bb459fb25f47a9e52e650b3f815d1d9900ec63b651f338e6e73c7165",
+      "operation": "byte_for_byte_copy_original_unchanged"
+    },
+    {
+      "source": "evidence/robobrain-heldout-blue-003.png",
+      "path": "robo_blue.png",
+      "bytes": 3463,
+      "sha256": "13588c097bf637a09c571e441392c40f406b81ca0a50e30b3ee2f336585fec2f",
+      "operation": "byte_for_byte_copy_original_unchanged"
+    },
+    {
+      "source": "fixtures/asr/development-20261020/zh_16000_pcm16.wav",
+      "path": "asr_zh.wav",
+      "bytes": 134570,
+      "sha256": "46dbc998c9d1d48111267c40741dd3200f2e5bcf4075f8c4c97f4451160dce50",
+      "operation": "byte_for_byte_copy_original_unchanged"
+    }
+  ]
+}
