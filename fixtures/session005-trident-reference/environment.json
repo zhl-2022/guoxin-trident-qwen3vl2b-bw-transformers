@@ -1,0 +1,34 @@
+{
+  "python": "/root/private_data/guoxin-candidates/envs/trident-001/bin/python",
+  "distributions": {
+    "torch": {
+      "version": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+      "root": "/usr/local/lib/python3.10/dist-packages"
+    },
+    "torchvision": {
+      "version": "0.25.0+das.opt1.dtk2604.torch2100.20260325.g860505",
+      "root": "/usr/local/lib/python3.10/dist-packages"
+    },
+    "vllm": {
+      "version": "0.18.1+das.fa71803.dtk2604",
+      "root": "/usr/local/lib/python3.10/dist-packages"
+    },
+    "vllm-hcu": {
+      "version": "0.18.1+das.dtk2604",
+      "root": "/usr/local/lib/python3.10/dist-packages"
+    },
+    "transformers": {
+      "version": "5.5.0",
+      "root": "/usr/local/lib/python3.10/dist-packages"
+    },
+    "qwen-vl-utils": {
+      "version": "0.0.14",
+      "root": "/root/private_data/guoxin-candidates/envs/trident-001/lib/python3.10/site-packages"
+    },
+    "Pillow": {
+      "version": "12.1.1",
+      "root": "/usr/local/lib/python3.10/dist-packages"
+    }
+  },
+  "package_installation_performed": false
+}

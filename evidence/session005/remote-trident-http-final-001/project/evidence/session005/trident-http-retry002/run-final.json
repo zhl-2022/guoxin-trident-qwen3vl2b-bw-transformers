@@ -1,0 +1,54 @@
+{
+  "started_utc": "2026-10-23T13:28:25.228793+00:00",
+  "run_id": "1b62c9a782bf40ec923a16edc132e8ad",
+  "steps": [
+    {
+      "argv": [
+        "/root/private_data/guoxin-candidates/envs/trident-001/bin/python",
+        "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/scripts/trident_embedding_runtime_004.py",
+        "launch",
+        "--task-dir",
+        "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/tasks/trident-qwen3vl2b-bw-transformers",
+        "--run-id",
+        "1b62c9a782bf40ec923a16edc132e8ad"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "child_reaped": true,
+      "wall_seconds": 126.89444461092353,
+      "log_sha256": "160e73bc5585eb9b6d5858d1c4303d92e01d800608d5db6bf4fb9c7581d7715b"
+    },
+    {
+      "argv": [
+        "/root/private_data/guoxin-candidates/envs/trident-001/bin/python",
+        "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/scripts/trident_embedding_smoke_004.py",
+        "--base-url",
+        "http://127.0.0.1:30119",
+        "--model",
+        "trident-qwen3vl-2b",
+        "--image",
+        "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/tasks/trident-qwen3vl2b-bw-transformers/fixtures/red-rectangle.png",
+        "--log",
+        "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/evidence/session005/trident-http-retry002/smoke.jsonl",
+        "--timeout",
+        "30"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "child_reaped": true,
+      "wall_seconds": 32.612301100976765,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "official_embedding_evaluator_bridge_implemented": false,
+  "submission_ready": false,
+  "functional_HTTP_passed": true,
+  "rank_matches_offline_reference": true,
+  "cleanup_verified": false,
+  "native_metadata_unchanged": true,
+  "ended_utc": "2026-10-23T13:31:06.236911+00:00",
+  "wall_seconds": 161.28149762004614,
+  "exit_code": 2
+}

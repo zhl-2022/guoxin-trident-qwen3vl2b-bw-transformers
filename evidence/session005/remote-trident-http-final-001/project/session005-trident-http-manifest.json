@@ -1,0 +1,135 @@
+{
+  "schema": "session005-trident-http-source-v1",
+  "target_project": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002",
+  "run_id": "1b62c9a782bf40ec923a16edc132e8ad",
+  "native_installation_allowed": false,
+  "model_weights_included": false,
+  "runtime_logs_under": "evidence/session005",
+  "files": [
+    {
+      "path": "fixtures/session005-trident-reference/environment.json",
+      "size": 1062,
+      "sha256": "51cd1158f39efc0c039cda8e63a5a31f8fdf9328ec9751d46240877e7431161c"
+    },
+    {
+      "path": "fixtures/session005-trident-reference/prompt-audit.json",
+      "size": 10562,
+      "sha256": "38d529189efdacb306aea6689188ef0e8be6a9eae876f031dc4831c16d9a96d4"
+    },
+    {
+      "path": "fixtures/session005-trident-reference/reference-binding.json",
+      "size": 828,
+      "sha256": "93d036c83268b055eb9b5edd107affd1b82bdb0d7113b77b6f2a7594bf753368"
+    },
+    {
+      "path": "fixtures/session005-trident-reference/worker-result.json",
+      "size": 323771,
+      "sha256": "7de46591cf782cbb50ac6d670f822868f766097b44854d568a2b13f83eec3044"
+    },
+    {
+      "path": "scripts/recon2reason_runtime.py",
+      "size": 34890,
+      "sha256": "0edc33da22c07a804c93047f918a4a39a58af90997390c49695d8b39a891d85b"
+    },
+    {
+      "path": "scripts/session005_trident_http_retry002.py",
+      "size": 13955,
+      "sha256": "3089e429e4f73591bf6f4852a7e714f6d851a1634dc71e1d2cd843b1923e3065"
+    },
+    {
+      "path": "scripts/task_expansion_candidates_20261023.py",
+      "size": 25749,
+      "sha256": "8c7ec3978d59e2d8cf69e09fc647b6f2cb5fb1fa7685ee11cdf4e77048dc3bde"
+    },
+    {
+      "path": "scripts/trident_embedding_runtime_004.py",
+      "size": 6465,
+      "sha256": "9abdefdc19abb7bee53b17e2f7ff6fffb0d5e6ec8289db86cd6969a148787ed1"
+    },
+    {
+      "path": "scripts/trident_embedding_smoke_004.py",
+      "size": 8457,
+      "sha256": "91f68403a82dc543e44f019cc83e9d28fb35e2c62f87b80ac68959c0d529c3f8"
+    },
+    {
+      "path": "scripts/trident_vllm_pooling_probe_20261023.py",
+      "size": 19452,
+      "sha256": "2b4030517bd55056595b4caa34506c5f8573d6c3149b81aa81c507a10061ede7"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/COPYRIGHT-SCOPE.txt",
+      "size": 667,
+      "sha256": "fa71287711d371e999ef1d867bba0c06508b3374ba0be3e09a538922771dbd24"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/bench.sh",
+      "size": 239,
+      "sha256": "c9fb1f3f483f8116ccdf010d7c47403d6e0ee092a330279f4acdc35c85444eab"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/env.sh",
+      "size": 767,
+      "sha256": "a7c5f3d559b416124fb1619f1d42ff7244263e7a6977d08eb01dd02f3324c969"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/env_check.sh",
+      "size": 258,
+      "sha256": "0833c3feffc0fa5d47fe2495177c848cf5b3461cf41679a7d7543d5d6e35db99"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/fixtures/red-rectangle.png",
+      "size": 157,
+      "sha256": "89f0eb20b4873ef0d4ee436b96120d9e564bed9b64832f70ccef9843d7005e46"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/model-lock.json",
+      "size": 2009,
+      "sha256": "9655dc89230e6d0f3e82c8061342142ab29455d396a5645ac195f53ddca46aba"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/requests.example.json",
+      "size": 311,
+      "sha256": "af2c1ce0cde3f09c59a661052c65c4ca9190756b51db02ddfb4b0fc94675f430"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/run.sh",
+      "size": 240,
+      "sha256": "0892c2b4d3d278dcefd2e8beae0b8bcf582763eca2d3c394e955b839a0f935a2"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/runtime.json",
+      "size": 5381,
+      "sha256": "590455db23ea05be05fe6f5d1f6b52f1619e594b1529917b63acce904a420d24"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/service-profile.json",
+      "size": 1541,
+      "sha256": "9bf47acecce23af624e69ba58177fb29c11fdd0014fa90fa5300af818c2f384b"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/smoke.sh",
+      "size": 358,
+      "sha256": "954cbaace02e027ba8f0fea86d2d9dea32a87db1f998441416183af0ce8b3775"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/stop.sh",
+      "size": 238,
+      "sha256": "7641c15501277d4692a1649fb7c3fd7501892cb9401fe939a2714b37a5061303"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/task.json",
+      "size": 5917,
+      "sha256": "139778f1efec127194c2c49f0b81b864784786e54c347c32f6c7c16b22cdf289"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/upstream-lock.json",
+      "size": 12341,
+      "sha256": "3207be7c1b7d38b62f214c783d711899ea6569cb1d68feb4baad716aee670003"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/verify.sh",
+      "size": 240,
+      "sha256": "9375e588db99388fcf78bc4ff04f3ca73bbac05bd64949bf05f151fe8dc7cdf4"
+    }
+  ]
+}

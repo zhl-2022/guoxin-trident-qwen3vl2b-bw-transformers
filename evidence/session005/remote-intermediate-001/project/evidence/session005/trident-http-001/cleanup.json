@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-23T13:19:44.134257+00:00",
+  "owned_run_id": "40f92c092d064ce8839ea9987bc4c704b",
+  "state_existed": false,
+  "stop_called": false,
+  "cleanup_verified": true,
+  "owned_config_existed": false,
+  "scope": "No state; no signal attempted. A created config without state leaves launch cleanup unverified."
+}

@@ -1,0 +1,10 @@
+{"event": "file_verified", "path": "README.md", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 14619, "sha256": "7fa4d4e39537a43a7d6cc6f62873eb014b2f8bc3da2142111ba2ad29d4984794"}
+{"event": "file_verified", "path": "chat_template.jinja", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 1032, "sha256": "172c7450a66b9b3644538888ffa24d02047e535e9d1f911564460203fbf7e8e8"}
+{"event": "file_verified", "path": "config.json", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 2005, "sha256": "af3810295de6b08232776b74110ed482fa0183f4aeaec586ff4f7593910951cb"}
+{"event": "file_verified", "path": "configuration_kimi_vl.py", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 13151, "sha256": "d30462b89993b9fef138db983d3884bbc39750effadf2efe67f404d28ee40e5b"}
+{"event": "file_verified", "path": "generation_config.json", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 149, "sha256": "da26dd1916774784790db2b83336bad62d0917356743478ba6eb0c425c53eac5"}
+{"event": "file_verified", "path": "image_processing_kimi_vl.py", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 4680, "sha256": "bb58551e088f3bb0027b1886ca5ff42776c485acec1a9aafe91553ff76926870"}
+{"event": "file_verified", "path": "model-00001-of-00007.safetensors", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 4994390288, "sha256": "a5ef3ebd9727f82e34417a778317d2cc9c08762fe0bc4a2ee333b8a52cf7c1a5"}
+{"event": "file_verified", "path": "model-00002-of-00007.safetensors", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 4995061424, "sha256": "45ecd00decdad65e7d3f494028ed0c79d0cd56f145adae077ffa78b5b8ff95c0"}
+{"event": "file_verified", "path": "model-00003-of-00007.safetensors", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 4996100112, "sha256": "b9ba98f01e22eea43da8cfbf6f09ff0857616cd9e1df4603a735c111755109ef"}
+{"event": "file_verified", "path": "model-00004-of-00007.safetensors", "status": "downloaded_verified", "resumed_from_bytes": 0, "size": 4996100320, "sha256": "8f7eb3fc5c12481fd1a81d2708fa4a299ff4c207a5dbafb5b8bef25ab9fd8b23"}

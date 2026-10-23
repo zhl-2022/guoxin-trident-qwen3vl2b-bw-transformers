@@ -1,0 +1,10 @@
+{
+  "metadata_dependency_contract_passed": true,
+  "qwen_vl_utils_version": "0.0.14",
+  "model_weight_hash_deferred_to_bounded_launch": true,
+  "GPU_inference_executed": false,
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "official_embedding_evaluator_bridge_implemented": false,
+  "submission_ready": false
+}

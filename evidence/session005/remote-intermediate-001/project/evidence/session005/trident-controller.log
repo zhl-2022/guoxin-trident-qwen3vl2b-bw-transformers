@@ -1,0 +1,11 @@
+nohup: ignoring input
+{
+  "output": "/root/private_data/guoxin-hackathon-20261023-session005/evidence/session005/trident-http-001",
+  "exit_code": 2,
+  "functional_HTTP_passed": false,
+  "cleanup_verified": true,
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "official_embedding_evaluator_bridge_implemented": false,
+  "submission_ready": false
+}

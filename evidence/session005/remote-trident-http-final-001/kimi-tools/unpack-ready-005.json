@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-10-23T13:19:42.532610+00:00",
+  "source_zip": "/root/session005-kimi-cpu-002.zip",
+  "zip_sha256": "27dcfad4c472690eeb80b8e1933dcd2d8c45310c6f7c8b243e3d595a04bc35ef",
+  "manifest_sha256": "f7e77ae4a475b3d1aad9bab3aedb60136902f21db9f88e5302ad0d3e7d8891f3",
+  "target": "/root/private_data/guoxin-kimi-tools-005",
+  "payload_files_verified": 59,
+  "CRC_and_each_SHA_and_destination_readback_verified": true,
+  "GPU_started": false,
+  "weights_downloaded": false,
+  "native_packages_modified": false
+}

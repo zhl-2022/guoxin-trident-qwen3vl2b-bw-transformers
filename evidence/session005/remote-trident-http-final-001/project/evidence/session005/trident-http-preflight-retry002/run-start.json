@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-23T13:28:23.962042+00:00",
+  "root": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002",
+  "expected_root": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002",
+  "python": "/root/private_data/guoxin-candidates/envs/trident-001/bin/python",
+  "model": "/root/private_data/guoxin-candidates/models/trident",
+  "run_id": "1b62c9a782bf40ec923a16edc132e8ad",
+  "port": 30119,
+  "service_runtime_seconds": 1800,
+  "controller_phase_budget_seconds": 2100,
+  "cleanup_budget_seconds": 60,
+  "dry_run": false,
+  "bundle": {
+    "manifest_sha256": "6c888030447e5f1f81c13308628ac45d52fdc59a0b5db00e837641855aeb69a7",
+    "files_verified": 25
+  },
+  "native_packages_will_be_installed": false,
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "official_embedding_evaluator_bridge_implemented": false,
+  "submission_ready": false
+}

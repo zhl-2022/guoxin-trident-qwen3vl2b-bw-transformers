@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "slug": "trident-qwen3vl2b-bw-transformers",
+  "track": "T02",
+  "status": "vllm_offline_GPU_development_verified_HTTP_pending",
+  "model_id": "openbmb/Trident-Qwen3VL-2B",
+  "architecture": "Qwen3VLForEmbedding",
+  "framework": "vllm",
+  "source_revision": "7fbf4b2033e1b3a43a99185fc125d765a549c52d",
+  "api": "vllm.LLM.embed offline verified; /v1/embeddings messages extension implemented locally, HTTP GPU replay pending",
+  "task_semantics": "mixed-modality retrieval embeddings, not chat generation",
+  "pooling": "publisher last-token pooling",
+  "normalization": "publisher L2 normalization",
+  "query_instruction": "Represent the query for retrieving relevant content.",
+  "document_instruction": "Represent the candidate content for retrieval.",
+  "precision": "bfloat16",
+  "attention": "native vLLM Qwen3-VL implementation",
+  "cards_candidate": 1,
+  "card_candidate": "BW 64GB",
+  "max_runtime_seconds_default": 900,
+  "python_distributions": [
+    "torch",
+    "transformers",
+    "accelerate",
+    "qwen-vl-utils",
+    "Pillow",
+    "numpy",
+    "PyYAML",
+    "scipy"
+  ],
+  "dependency_policy": "Native-first isolated env executed with native Transformers5.5.0/Torch2.10/vLLM0.18.1 and qwen-vl-utils0.0.14; repair reused39 dependencies without installing any item. Native metadata unchanged; device discovery observed explicitly.",
+  "native_packages_must_remain_unchanged": [
+    "torch",
+    "torchvision",
+    "vllm",
+    "vllm-hcu",
+    "triton",
+    "flash-attn",
+    "lightop",
+    "aiter"
+  ],
+  "model_license": "MIT; publisher source LICENSE retained in upstream-source.zip",
+  "new_adaptation_license": "copyright_scope_notice_only_no_repositorywide_license_selected",
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "gpu_verified": true,
+  "submission_ready": false,
+  "runtime_profile": "service-profile.json",
+  "checkpoint_manifest": "model-lock.json",
+  "entry": "entry.py",
+  "task_kind": "development_candidate",
+  "official_materials_complete": false,
+  "contest_submission_performed": false,
+  "license_ready": false,
+  "weights_downloaded": true,
+  "model_loaded": true,
+  "manifest_reseal_pending": true,
+  "session004": {
+    "evidence": {
+      "worker-result.json": {
+        "path": "evidence/session004/remote-intermediate-001/candidates/results/trident-vllm-pooling-001/worker-result.json",
+        "sha256": "7de46591cf782cbb50ac6d670f822868f766097b44854d568a2b13f83eec3044"
+      },
+      "run-start.json": {
+        "path": "evidence/session004/remote-intermediate-001/candidates/results/trident-vllm-pooling-001/run-start.json",
+        "sha256": "603068a089b8ae9d2caa020b88dfe3e2c71a1c86f552150a3942b6f6e7af07f7"
+      },
+      "run-final.json": {
+        "path": "evidence/session004/remote-intermediate-001/candidates/results/trident-vllm-pooling-001/run-final.json",
+        "sha256": "fe5c13cd9388d57e03342b35d7997b3b5e76bf9f04a4b061571324695a6fcef7"
+      },
+      "environment.json": {
+        "path": "evidence/session004/remote-intermediate-001/candidates/results/trident-vllm-pooling-001/environment.json",
+        "sha256": "51cd1158f39efc0c039cda8e63a5a31f8fdf9328ec9751d46240877e7431161c"
+      },
+      "checkpoint-verification.json": {
+        "path": "evidence/session004/remote-intermediate-001/candidates/results/trident-vllm-pooling-001/checkpoint-verification.json",
+        "sha256": "0ad9bb2fc2b84e8b491442dfcadc951908b3fa2351e75346e046c77fad562bcd"
+      }
+    },
+    "run_status": "completed",
+    "worker_exit_code": 0,
+    "development_contract_passed": true,
+    "run_wall_seconds": 116.63075440889224,
+    "owned_process_group_cleanup_recorded": true,
+    "standard_submission_complete": false,
+    "source_final_seal_pending": false,
+    "framework": "native_vllm_pooling_conversion",
+    "query_count": 1,
+    "document_count": 4,
+    "dimension": 2048,
+    "cosine_scores": [
+      [
+        0.8738650784711609,
+        0.7526463319888547,
+        0.7866230580349918,
+        0.7910106371015895
+      ]
+    ],
+    "ranking": [
+      [
+        0,
+        3,
+        2,
+        1
+      ]
+    ],
+    "all_5_token_ids_match_publisher_processor": true,
+    "numerical_reference_available": false,
+    "engine_load_and_calls_seconds": 65.61741575831547,
+    "usable_GPU_peak_bytes": null,
+    "parent_reported_gpu_peak_allocated_bytes": 0,
+    "peak_memory_caveat": "Parent-process allocator reports0; model is in EngineCore subprocess, not a real zero-memory observation",
+    "HTTP_service_GPU_verified": false,
+    "HTTP_service_CPU_contract_verified": true,
+    "official_qrels_available": false,
+    "executed_probe_source_sha256": "2b4030517bd55056595b4caa34506c5f8573d6c3149b81aa81c507a10061ede7",
+    "executed_probe_source_sha_sealed": true,
+    "executed_probe_source_seal_manifest": {
+      "path": "evidence/session004/remote-final-001/export-manifest.json",
+      "sha256": "eb5ab4603f1f557d4d07d9d8b76e24865a8aa518d6a4713981453c5f2aca15c0",
+      "archive_hash_identity": "external-script-hashes/004-trident_vllm_pooling_probe_20261023.py",
+      "source_payload_reconstructed": false
+    }
+  },
+  "publisher_reference_api": "embedding_backends.trident_qwen3vl.TridentQwen3VLBackend.load/process; TF numerical reference not executed",
+  "standard_interfaces": {
+    "env.sh": "configuration",
+    "run.sh": "native_vllm_API_server_under_owned_supervisor",
+    "smoke.sh": "real_embeddings_HTTP_client",
+    "verify.sh": "explicit_blocked_until_embedding_evaluator_schema",
+    "bench.sh": "explicit_blocked_until_embedding_workload_schema",
+    "stop.sh": "owned_PID_and_start_token_cleanup",
+    "env_check.sh": "metadata_inventory",
+    "HTTP_gpu_verified": false
+  },
+  "official_embedding_evaluator_bridge_implemented": false
+}

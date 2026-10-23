@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "task": "kimi-vl-bw-vllm",
+  "track": "T02",
+  "model_id": "moonshotai/Kimi-VL-A3B-Instruct",
+  "model_revision": "398eede0903cd983a2bfa0cc634e9ac1d843f375",
+  "architecture": "KimiVLForConditionalGeneration",
+  "framework": "vllm",
+  "card": "BW",
+  "precision": "bf16",
+  "status": "CPU_prepared_GPU_not_started",
+  "pilot": {
+    "tp": 1,
+    "max_model_len": 4096,
+    "max_num_seqs": 1,
+    "enforce_eager": true,
+    "limit_mm_per_prompt": {
+      "image": 2,
+      "video": 0
+    },
+    "default_runtime_seconds": 1800,
+    "maximum_runtime_seconds": 6900,
+    "load_timeout_seconds": 900,
+    "attention_backend_override": null,
+    "architecture_override": null
+  },
+  "SCNet_clone": {
+    "model_page": "https://www.scnet.cn/ui/aihub/models/sugon_scnet/Kimi-VL-A3B-Instruct",
+    "model_entry_id": "2113616559908220929",
+    "platform_storage_path_reported": "/public/home/ac3p4mowhz/SothisAI/model/Aihub/Kimi-VL-A3B-Instruct/main/Kimi-VL-A3B-Instruct",
+    "expected_notebook_path_unverified": "/root/private_data/SothisAI/model/Aihub/Kimi-VL-A3B-Instruct/main/Kimi-VL-A3B-Instruct",
+    "clone_completion_and_identity_verified_by_this_task": false,
+    "identity_requirement": "Never trust main/size/progress; verify exact 20 file sizes+SHA256 including all 7 weights before launch",
+    "last_parent_observed_status": "failed",
+    "failure_reported_platform_China_local": "2026-10-23 21:01:50",
+    "source": "Parent agent read the SCNet UI; this CPU task did not independently inspect live UI"
+  },
+  "GPU_verified": false,
+  "HTTP_service_GPU_verified": false,
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "formal_ready": false,
+  "submission_ready": false,
+  "submitted": false
+}

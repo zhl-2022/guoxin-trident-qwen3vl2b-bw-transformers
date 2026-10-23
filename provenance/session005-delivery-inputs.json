@@ -1,0 +1,900 @@
+{
+  "schema": "session005-delivery-inputs-v1",
+  "base004_closure": {
+    "path": "evidence/session004/github-delivery-004-final.json",
+    "sha256": "bcd943749e01ff3ef49306ca67f9db0a0ab003d9fa0fb1a298baefb725c5b137"
+  },
+  "base004_stage": "dist/repositories-stage004",
+  "packages": [
+    {
+      "archive": "dist/hg-session005-recon-c1-final-001.zip",
+      "sha256": "bfd26699ad2ff8d53698ffd9d8813c6ca4a2df52776d9c755949aee86cfd05a8",
+      "prefix": "evidence/session005/remote-recon-c1-final-001"
+    },
+    {
+      "archive": "dist/hg-session005-trident-http-final-001.zip",
+      "sha256": "1865af152496f46dc7ff9d26004b6cde16fdd53a070d3d2dcb355e5923fea912",
+      "prefix": "evidence/session005/remote-trident-http-final-001"
+    },
+    {
+      "archive": "dist/hg-session005-results-intermediate-001.zip",
+      "sha256": "7d071b6bda8863d60461d3f4de5cf23bdea3df041bfa41cae471e4bba85c7bfb",
+      "prefix": "evidence/session005/remote-intermediate-001"
+    },
+    {
+      "archive": "dist/hg-session005-kimi-final-001.zip",
+      "sha256": "b48da2ab024b90bb9aeba2727252807a6ae73a399c10d62a926dafcaa8c87c96",
+      "prefix": "evidence/session005/remote-kimi-final-001"
+    }
+  ],
+  "tasks": [
+    {
+      "slug": "recon2reason-bw-vllm",
+      "report": {
+        "path": "docs/report-005-recon2reason-bw-vllm.md",
+        "sha256": "13e5e3e56db4094edc3cf00cacdcd34197c828136b4498f80028e4e635be975e"
+      },
+      "execution_state": "evidence/session005/remote-recon-c1-final-001/project/evidence/session005/recon-c1-001/runtime-after-stop/state.json",
+      "execution_config": "evidence/session005/remote-recon-c1-final-001/project/evidence/session005/recon-c1-001/runtime-after-stop/config-c78f8f7f9b24488a9d0d529a5ad28f0f.json",
+      "evidence_files": [],
+      "evidence_prefixes": [
+        "evidence/session005/remote-recon-c1-final-001/project"
+      ],
+      "overlays": [
+        {
+          "path": "dist/session005-recon-c1.zip",
+          "source": "dist/session005-recon-c1.zip",
+          "sha256": "4b05728f2f5e3858f59ecb59ad34ddbb7f4636630a1946595a7f42cfef78fc4b"
+        },
+        {
+          "path": "docs/session004-recon-performance-scope-audit.md",
+          "source": "docs/session004-recon-performance-scope-audit.md",
+          "sha256": "44d4bdba1fb8a24380c75a156a8126dd98a8e68463592b150ec31ec72b66499b"
+        },
+        {
+          "path": "evidence/session005/exporter-selection-scope-addendum-001.json",
+          "source": "evidence/session005/exporter-selection-scope-addendum-001.json",
+          "sha256": "950771ecd85b1a2330de8decdf1f653715df7d7c89317c4707c5fc4dc213badd"
+        },
+        {
+          "path": "evidence/session005/recon-c1-analyzer-preparation/validation-002.json",
+          "source": "evidence/session005/recon-c1-analyzer-preparation/validation-002.json",
+          "sha256": "215f7e630ed57fcc52eaa76faaae604e4aeed2e564c3fcfc754c4d9a3599fab5"
+        },
+        {
+          "path": "evidence/session005/recon-c1-final-001-analysis/analysis-manifest.json",
+          "source": "evidence/session005/recon-c1-final-001-analysis/analysis-manifest.json",
+          "sha256": "a31e181c0b90aa7ce77736d3aae69bc6d75d2f34cd330b2f1bb143d7d7829ad8"
+        },
+        {
+          "path": "evidence/session005/recon-c1-final-001-analysis/analysis.json",
+          "source": "evidence/session005/recon-c1-final-001-analysis/analysis.json",
+          "sha256": "a8e5a85ae6d5926f20cb0fb036c944c0bf8c25227142f8fd5e4ef74c2dba6c89"
+        },
+        {
+          "path": "evidence/session005/recon-c1-preparation/validation.json",
+          "source": "evidence/session005/recon-c1-preparation/validation.json",
+          "sha256": "1c1055ded0912428844b6da1bb19a4547012945cb13e9fd3bf041e1400d5b590"
+        },
+        {
+          "path": "evidence/session005/remote-recon-c1-final-001-audit.json",
+          "source": "evidence/session005/remote-recon-c1-final-001-audit.json",
+          "sha256": "f3c03641e15090e3062456f828dda6a3100ecf2cb90828fa8bc866d018351e19"
+        },
+        {
+          "path": "evidence/session005/remote-recon-c1-final-001.local-verification.json",
+          "source": "evidence/session005/remote-recon-c1-final-001.local-verification.json",
+          "sha256": "37c53c4713ca0d624c770cc69666482cb4f587fee2586a4a5e4210aea098b8a2"
+        },
+        {
+          "path": "scripts/analyze_recon_c1_session005.py",
+          "source": "scripts/analyze_recon_c1_session005.py",
+          "sha256": "e7f0d0edc18fb3df64c2dc36d28f724f31f4e35018c94fb3a5d93e48d570a697"
+        },
+        {
+          "path": "scripts/analyze_sglang_results_004.py",
+          "source": "scripts/analyze_sglang_results_004.py",
+          "sha256": "d73ecca728b47b8f58fed407f13c9a496e73ba8e165ee08b740afd9065efdaa8"
+        },
+        {
+          "path": "scripts/collect_vllm_metrics_004.py",
+          "source": "scripts/collect_vllm_metrics_004.py",
+          "sha256": "37846b851baacedf903071b43a81a4b145973526105f0a89578816fc7583dcfa"
+        },
+        {
+          "path": "scripts/recon2reason_runtime.py",
+          "source": "dist/session005-delivery-source/recon2reason-bw-vllm/scripts/recon2reason_runtime.py",
+          "sha256": "0edc33da22c07a804c93047f918a4a39a58af90997390c49695d8b39a891d85b",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-recon-c1-final-001",
+            "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/scripts/recon2reason_runtime.py"
+          }
+        },
+        {
+          "path": "scripts/session005_recon_c1.py",
+          "source": "dist/session005-delivery-source/recon2reason-bw-vllm/scripts/session005_recon_c1.py",
+          "sha256": "43fd29e52c008f16c5e0e24dd9c7db07e2c730b33b92b1802feb0854c6280d3c",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-recon-c1-final-001",
+            "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/scripts/session005_recon_c1.py"
+          }
+        },
+        {
+          "path": "scripts/t02_sglang_bench.py",
+          "source": "dist/session005-delivery-source/recon2reason-bw-vllm/scripts/t02_sglang_bench.py",
+          "sha256": "ff8eef852e19f336e99884cc031353627ca304c6a7534c22375116758a850000",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-recon-c1-final-001",
+            "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/scripts/t02_sglang_bench.py"
+          }
+        },
+        {
+          "path": "tasks/recon2reason-bw-vllm/env.sh",
+          "source": "dist/session005-delivery-source/recon2reason-bw-vllm/tasks/recon2reason-bw-vllm/env.sh",
+          "sha256": "390c12d84c18163245e1fb994099bea5205a3a287ca44b69fad5afacff46d8aa",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-recon-c1-final-001",
+            "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/tasks/recon2reason-bw-vllm/env.sh"
+          }
+        },
+        {
+          "path": "tasks/recon2reason-bw-vllm/run.sh",
+          "source": "dist/session005-delivery-source/recon2reason-bw-vllm/tasks/recon2reason-bw-vllm/run.sh",
+          "sha256": "8ab5a4d53e6d317a67ab902ec3ca78332e1cb458d21765295be27f05b5f97a69",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-recon-c1-final-001",
+            "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/tasks/recon2reason-bw-vllm/run.sh"
+          }
+        },
+        {
+          "path": "tasks/recon2reason-bw-vllm/stop.sh",
+          "source": "dist/session005-delivery-source/recon2reason-bw-vllm/tasks/recon2reason-bw-vllm/stop.sh",
+          "sha256": "d3e0b15a5bc42ca3d62a2215582ec61c47c1364f7b398898ab800a7396f4bc2c",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-recon-c1-final-001",
+            "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/tasks/recon2reason-bw-vllm/stop.sh"
+          }
+        },
+        {
+          "path": "tasks/recon2reason-bw-vllm/task.json",
+          "source": "dist/session005-delivery-source/recon2reason-bw-vllm/tasks/recon2reason-bw-vllm/task.json",
+          "sha256": "3b1b9ef4f725aa4cab4d8c0008e36a47771567b00e81f202a5e76a7a589dffd0"
+        },
+        {
+          "path": "tests/test_analyze_recon_c1_session005.py",
+          "source": "tests/test_analyze_recon_c1_session005.py",
+          "sha256": "2febc507d2cad263f4d2038c98296f49802c711e56b6de0fefeb31eb0a22628a"
+        }
+      ],
+      "approved_source_archives": {
+        "dist/session005-recon-c1.zip": "4b05728f2f5e3858f59ecb59ad34ddbb7f4636630a1946595a7f42cfef78fc4b"
+      },
+      "reviewed_observations": {
+        "GPU_model_loaded": {
+          "value": true,
+          "evidence": "evidence/session005/remote-recon-c1-final-001-audit.json",
+          "sha256": "f3c03641e15090e3062456f828dda6a3100ecf2cb90828fa8bc866d018351e19"
+        }
+      }
+    },
+    {
+      "slug": "trident-qwen3vl2b-bw-transformers",
+      "report": {
+        "path": "docs/report-005-trident-qwen3vl2b-bw-vllm.md",
+        "sha256": "8ca4212b59c367abedd55808c4b7b76abbd78494af8aedb778a5b76ec89e4172"
+      },
+      "execution_state": "evidence/session005/remote-trident-http-final-001/project/evidence/session005/trident-http-runtime-001/state.json",
+      "execution_config": "evidence/session005/remote-trident-http-final-001/project/evidence/session005/trident-http-runtime-001/config-1b62c9a782bf40ec923a16edc132e8ad.json",
+      "evidence_files": [
+        "evidence/session005/remote-trident-http-final-001/project/evidence/session005/trident-guarded-cleanup-executed-001.json",
+        "evidence/session005/remote-trident-http-final-001/project/evidence/session005/trident-http-retry002/cleanup.json",
+        "evidence/session005/remote-trident-http-final-001/project/evidence/session005/trident-http-retry002/native-after.json",
+        "evidence/session005/remote-trident-http-final-001/project/evidence/session005/trident-http-retry002/native-before.json",
+        "evidence/session005/remote-trident-http-final-001/project/evidence/session005/trident-http-retry002/run-final.json",
+        "evidence/session005/remote-trident-http-final-001/project/evidence/session005/trident-http-retry002/smoke.jsonl"
+      ],
+      "evidence_prefixes": [
+        "evidence/session005/remote-trident-http-final-001",
+        "evidence/session005/remote-intermediate-001/project"
+      ],
+      "overlays": [
+        {
+          "path": "dist/hg-session005-trident-http-final-001.zip",
+          "source": "dist/hg-session005-trident-http-final-001.zip",
+          "sha256": "1865af152496f46dc7ff9d26004b6cde16fdd53a070d3d2dcb355e5923fea912"
+        },
+        {
+          "path": "dist/session005-trident-http-002.zip",
+          "source": "dist/session005-trident-http-002.zip",
+          "sha256": "f1104acb8dd5b5c4d35bc111c20144def9567f9ad7765b15f514d6e893689536"
+        },
+        {
+          "path": "dist/session005_trident_guarded_cleanup_001.py",
+          "source": "dist/session005_trident_guarded_cleanup_001.py",
+          "sha256": "8c2dffd12dc089a3b418e6aaef2d67abf1f2df9a50506901ea2b70e9132b58a1"
+        },
+        {
+          "path": "evidence/session005/remote-intermediate-001-audit.json",
+          "source": "evidence/session005/remote-intermediate-001-audit.json",
+          "sha256": "4f7a2d6cea213e656f78e26ebae50efb754ed8fcbd8e4265f4d2651fe532641a"
+        },
+        {
+          "path": "evidence/session005/remote-intermediate-001.local-verification.json",
+          "source": "evidence/session005/remote-intermediate-001.local-verification.json",
+          "sha256": "4decad14e8c73e009fd094aa14f9ddebb2db99ee656b1f271b93571cb742040c"
+        },
+        {
+          "path": "evidence/session005/remote-trident-http-final-001-audit.json",
+          "source": "evidence/session005/remote-trident-http-final-001-audit.json",
+          "sha256": "06d99fd07deedf13fa581ac60b41b53b1380f7bf0f1a603c627059b47050bdeb"
+        },
+        {
+          "path": "evidence/session005/remote-trident-http-final-001.local-verification.json",
+          "source": "evidence/session005/remote-trident-http-final-001.local-verification.json",
+          "sha256": "347cb81d5213bbed6600f6fc7e25a5cc8cd80035af291f449d0006a58c06ebd4"
+        },
+        {
+          "path": "evidence/session005/trident-official-bridge-preparation/validation-002.json",
+          "source": "evidence/session005/trident-official-bridge-preparation/validation-002.json",
+          "sha256": "b7e6c7f8c7c76dbbdadea5e505e8ef8d3158953ee338b03a7202837a3345837b"
+        },
+        {
+          "path": "fixtures/session005-trident-reference/environment.json",
+          "source": "dist/session005-delivery-source/trident-qwen3vl2b-bw-transformers/fixtures/session005-trident-reference/environment.json",
+          "sha256": "51cd1158f39efc0c039cda8e63a5a31f8fdf9328ec9751d46240877e7431161c"
+        },
+        {
+          "path": "fixtures/session005-trident-reference/prompt-audit.json",
+          "source": "dist/session005-delivery-source/trident-qwen3vl2b-bw-transformers/fixtures/session005-trident-reference/prompt-audit.json",
+          "sha256": "38d529189efdacb306aea6689188ef0e8be6a9eae876f031dc4831c16d9a96d4"
+        },
+        {
+          "path": "fixtures/session005-trident-reference/reference-binding.json",
+          "source": "dist/session005-delivery-source/trident-qwen3vl2b-bw-transformers/fixtures/session005-trident-reference/reference-binding.json",
+          "sha256": "93d036c83268b055eb9b5edd107affd1b82bdb0d7113b77b6f2a7594bf753368"
+        },
+        {
+          "path": "fixtures/session005-trident-reference/worker-result.json",
+          "source": "dist/session005-delivery-source/trident-qwen3vl2b-bw-transformers/fixtures/session005-trident-reference/worker-result.json",
+          "sha256": "7de46591cf782cbb50ac6d670f822868f766097b44854d568a2b13f83eec3044"
+        },
+        {
+          "path": "scripts/audit_session005_trident_http.py",
+          "source": "scripts/audit_session005_trident_http.py",
+          "sha256": "14aeb982cc7bafcf8163cf6794aca23841284b8f1a3ce809120485608cbf0781"
+        },
+        {
+          "path": "scripts/recon2reason_runtime.py",
+          "source": "dist/session005-delivery-source/trident-qwen3vl2b-bw-transformers/scripts/recon2reason_runtime.py",
+          "sha256": "0edc33da22c07a804c93047f918a4a39a58af90997390c49695d8b39a891d85b",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-trident-http-final-001",
+            "source": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/scripts/recon2reason_runtime.py"
+          }
+        },
+        {
+          "path": "scripts/session005_trident_http_retry002.py",
+          "source": "dist/session005-delivery-source/trident-qwen3vl2b-bw-transformers/scripts/session005_trident_http_retry002.py",
+          "sha256": "3089e429e4f73591bf6f4852a7e714f6d851a1634dc71e1d2cd843b1923e3065",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-trident-http-final-001",
+            "source": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/scripts/session005_trident_http_retry002.py"
+          }
+        },
+        {
+          "path": "scripts/task_expansion_candidates_20261023.py",
+          "source": "dist/session005-delivery-source/trident-qwen3vl2b-bw-transformers/scripts/task_expansion_candidates_20261023.py",
+          "sha256": "8c7ec3978d59e2d8cf69e09fc647b6f2cb5fb1fa7685ee11cdf4e77048dc3bde",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-trident-http-final-001",
+            "source": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/scripts/task_expansion_candidates_20261023.py"
+          }
+        },
+        {
+          "path": "scripts/trident_embedding_runtime_004.py",
+          "source": "dist/session005-delivery-source/trident-qwen3vl2b-bw-transformers/scripts/trident_embedding_runtime_004.py",
+          "sha256": "9abdefdc19abb7bee53b17e2f7ff6fffb0d5e6ec8289db86cd6969a148787ed1",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-trident-http-final-001",
+            "source": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/scripts/trident_embedding_runtime_004.py"
+          }
+        },
+        {
+          "path": "scripts/trident_embedding_smoke_004.py",
+          "source": "dist/session005-delivery-source/trident-qwen3vl2b-bw-transformers/scripts/trident_embedding_smoke_004.py",
+          "sha256": "91f68403a82dc543e44f019cc83e9d28fb35e2c62f87b80ac68959c0d529c3f8",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-trident-http-final-001",
+            "source": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/scripts/trident_embedding_smoke_004.py"
+          }
+        },
+        {
+          "path": "scripts/trident_official_bridge_005.py",
+          "source": "scripts/trident_official_bridge_005.py",
+          "sha256": "f01fc60b702de2002c9b31cc83c5a7c676bcbeed92f47506cb4596ffe6c24ca5"
+        },
+        {
+          "path": "scripts/trident_vllm_pooling_probe_20261023.py",
+          "source": "dist/session005-delivery-source/trident-qwen3vl2b-bw-transformers/scripts/trident_vllm_pooling_probe_20261023.py",
+          "sha256": "2b4030517bd55056595b4caa34506c5f8573d6c3149b81aa81c507a10061ede7",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-trident-http-final-001",
+            "source": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/scripts/trident_vllm_pooling_probe_20261023.py"
+          }
+        },
+        {
+          "path": "tasks/trident-qwen3vl2b-bw-transformers/COPYRIGHT-SCOPE.txt",
+          "source": "dist/session005-delivery-source/trident-qwen3vl2b-bw-transformers/tasks/trident-qwen3vl2b-bw-transformers/COPYRIGHT-SCOPE.txt",
+          "sha256": "fa71287711d371e999ef1d867bba0c06508b3374ba0be3e09a538922771dbd24"
+        },
+        {
+          "path": "tasks/trident-qwen3vl2b-bw-transformers/OFFICIAL-BRIDGE-005.md",
+          "source": "tasks/trident-qwen3vl2b-bw-transformers/OFFICIAL-BRIDGE-005.md",
+          "sha256": "cc9f71d5f3a61100363c1e12ec641c888b9fdcfc0582db1cd59c7dc39eff63f0"
+        },
+        {
+          "path": "tasks/trident-qwen3vl2b-bw-transformers/bench.sh",
+          "source": "dist/session005-delivery-source/trident-qwen3vl2b-bw-transformers/tasks/trident-qwen3vl2b-bw-transformers/bench.sh",
+          "sha256": "c9fb1f3f483f8116ccdf010d7c47403d6e0ee092a330279f4acdc35c85444eab",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-trident-http-final-001",
+            "source": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/tasks/trident-qwen3vl2b-bw-transformers/bench.sh"
+          }
+        },
+        {
+          "path": "tasks/trident-qwen3vl2b-bw-transformers/bench005.sh",
+          "source": "tasks/trident-qwen3vl2b-bw-transformers/bench005.sh",
+          "sha256": "e11fc76980f00781daf47a3954c9c8d215e94de57cffb6ed0f54d842df896163"
+        },
+        {
+          "path": "tasks/trident-qwen3vl2b-bw-transformers/env.sh",
+          "source": "dist/session005-delivery-source/trident-qwen3vl2b-bw-transformers/tasks/trident-qwen3vl2b-bw-transformers/env.sh",
+          "sha256": "a7c5f3d559b416124fb1619f1d42ff7244263e7a6977d08eb01dd02f3324c969",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-trident-http-final-001",
+            "source": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/tasks/trident-qwen3vl2b-bw-transformers/env.sh"
+          }
+        },
+        {
+          "path": "tasks/trident-qwen3vl2b-bw-transformers/env_check.sh",
+          "source": "dist/session005-delivery-source/trident-qwen3vl2b-bw-transformers/tasks/trident-qwen3vl2b-bw-transformers/env_check.sh",
+          "sha256": "0833c3feffc0fa5d47fe2495177c848cf5b3461cf41679a7d7543d5d6e35db99",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-trident-http-final-001",
+            "source": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/tasks/trident-qwen3vl2b-bw-transformers/env_check.sh"
+          }
+        },
+        {
+          "path": "tasks/trident-qwen3vl2b-bw-transformers/fixtures/red-rectangle.png",
+          "source": "dist/session005-delivery-source/trident-qwen3vl2b-bw-transformers/tasks/trident-qwen3vl2b-bw-transformers/fixtures/red-rectangle.png",
+          "sha256": "89f0eb20b4873ef0d4ee436b96120d9e564bed9b64832f70ccef9843d7005e46"
+        },
+        {
+          "path": "tasks/trident-qwen3vl2b-bw-transformers/model-lock.json",
+          "source": "dist/session005-delivery-source/trident-qwen3vl2b-bw-transformers/tasks/trident-qwen3vl2b-bw-transformers/model-lock.json",
+          "sha256": "9655dc89230e6d0f3e82c8061342142ab29455d396a5645ac195f53ddca46aba"
+        },
+        {
+          "path": "tasks/trident-qwen3vl2b-bw-transformers/requests.example.json",
+          "source": "dist/session005-delivery-source/trident-qwen3vl2b-bw-transformers/tasks/trident-qwen3vl2b-bw-transformers/requests.example.json",
+          "sha256": "af2c1ce0cde3f09c59a661052c65c4ca9190756b51db02ddfb4b0fc94675f430"
+        },
+        {
+          "path": "tasks/trident-qwen3vl2b-bw-transformers/run.sh",
+          "source": "dist/session005-delivery-source/trident-qwen3vl2b-bw-transformers/tasks/trident-qwen3vl2b-bw-transformers/run.sh",
+          "sha256": "0892c2b4d3d278dcefd2e8beae0b8bcf582763eca2d3c394e955b839a0f935a2",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-trident-http-final-001",
+            "source": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/tasks/trident-qwen3vl2b-bw-transformers/run.sh"
+          }
+        },
+        {
+          "path": "tasks/trident-qwen3vl2b-bw-transformers/runtime.json",
+          "source": "dist/session005-delivery-source/trident-qwen3vl2b-bw-transformers/tasks/trident-qwen3vl2b-bw-transformers/runtime.json",
+          "sha256": "590455db23ea05be05fe6f5d1f6b52f1619e594b1529917b63acce904a420d24"
+        },
+        {
+          "path": "tasks/trident-qwen3vl2b-bw-transformers/service-profile.json",
+          "source": "dist/session005-delivery-source/trident-qwen3vl2b-bw-transformers/tasks/trident-qwen3vl2b-bw-transformers/service-profile.json",
+          "sha256": "9bf47acecce23af624e69ba58177fb29c11fdd0014fa90fa5300af818c2f384b"
+        },
+        {
+          "path": "tasks/trident-qwen3vl2b-bw-transformers/smoke.sh",
+          "source": "dist/session005-delivery-source/trident-qwen3vl2b-bw-transformers/tasks/trident-qwen3vl2b-bw-transformers/smoke.sh",
+          "sha256": "954cbaace02e027ba8f0fea86d2d9dea32a87db1f998441416183af0ce8b3775",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-trident-http-final-001",
+            "source": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/tasks/trident-qwen3vl2b-bw-transformers/smoke.sh"
+          }
+        },
+        {
+          "path": "tasks/trident-qwen3vl2b-bw-transformers/stop.sh",
+          "source": "dist/session005-delivery-source/trident-qwen3vl2b-bw-transformers/tasks/trident-qwen3vl2b-bw-transformers/stop.sh",
+          "sha256": "7641c15501277d4692a1649fb7c3fd7501892cb9401fe939a2714b37a5061303",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-trident-http-final-001",
+            "source": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/tasks/trident-qwen3vl2b-bw-transformers/stop.sh"
+          }
+        },
+        {
+          "path": "tasks/trident-qwen3vl2b-bw-transformers/task.json",
+          "source": "dist/session005-delivery-source/trident-qwen3vl2b-bw-transformers/tasks/trident-qwen3vl2b-bw-transformers/task.json",
+          "sha256": "139778f1efec127194c2c49f0b81b864784786e54c347c32f6c7c16b22cdf289"
+        },
+        {
+          "path": "tasks/trident-qwen3vl2b-bw-transformers/upstream-lock.json",
+          "source": "dist/session005-delivery-source/trident-qwen3vl2b-bw-transformers/tasks/trident-qwen3vl2b-bw-transformers/upstream-lock.json",
+          "sha256": "3207be7c1b7d38b62f214c783d711899ea6569cb1d68feb4baad716aee670003"
+        },
+        {
+          "path": "tasks/trident-qwen3vl2b-bw-transformers/verify.sh",
+          "source": "dist/session005-delivery-source/trident-qwen3vl2b-bw-transformers/tasks/trident-qwen3vl2b-bw-transformers/verify.sh",
+          "sha256": "9375e588db99388fcf78bc4ff04f3ca73bbac05bd64949bf05f151fe8dc7cdf4",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-trident-http-final-001",
+            "source": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/tasks/trident-qwen3vl2b-bw-transformers/verify.sh"
+          }
+        },
+        {
+          "path": "tasks/trident-qwen3vl2b-bw-transformers/verify005.sh",
+          "source": "tasks/trident-qwen3vl2b-bw-transformers/verify005.sh",
+          "sha256": "d9649c869471613f6fac72571f97e1a4d06f9f970f9e983bdd133938330ad122"
+        },
+        {
+          "path": "tests/test_trident_official_bridge_005.py",
+          "source": "tests/test_trident_official_bridge_005.py",
+          "sha256": "814f5987baad027ff91f1cc42907b9f30dce8882ed15f229f27841c27643354f"
+        }
+      ],
+      "approved_source_archives": {
+        "dist/session005-trident-http-002.zip": "f1104acb8dd5b5c4d35bc111c20144def9567f9ad7765b15f514d6e893689536",
+        "dist/hg-session005-trident-http-final-001.zip": "1865af152496f46dc7ff9d26004b6cde16fdd53a070d3d2dcb355e5923fea912"
+      },
+      "reviewed_observations": {
+        "GPU_model_loaded": {
+          "value": true,
+          "evidence": "evidence/session005/remote-trident-http-final-001-audit.json",
+          "sha256": "06d99fd07deedf13fa581ac60b41b53b1380f7bf0f1a603c627059b47050bdeb"
+        },
+        "functional_smoke_verified": {
+          "value": true,
+          "evidence": "evidence/session005/remote-trident-http-final-001-audit.json",
+          "sha256": "06d99fd07deedf13fa581ac60b41b53b1380f7bf0f1a603c627059b47050bdeb"
+        }
+      },
+      "root_entry_overrides": {
+        "verify.sh": "verify005.sh",
+        "bench.sh": "bench005.sh"
+      }
+    },
+    {
+      "slug": "kimi-vl-bw-vllm",
+      "report": {
+        "path": "docs/report-005-kimi-vl-bw-vllm.md",
+        "sha256": "e9f2d1d6e4c5a08e5eee93a2005dfa1c98bb6629d238258260356369d2c57a5b"
+      },
+      "execution_state": "evidence/session005/remote-kimi-final-001/kimi-tools/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/state.json",
+      "execution_config": "evidence/session005/remote-kimi-final-001/kimi-tools/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/config.json",
+      "evidence_prefixes": [
+        "evidence/session005/remote-kimi-final-001"
+      ],
+      "evidence_files": [
+        "evidence/session005/remote-kimi-final-001/kimi-tools/evidence/session005/kimi-checkpoint-verification-A-001.json",
+        "evidence/session005/remote-kimi-final-001/kimi-tools/evidence/session005/kimi-final-cleanup-A-001.json",
+        "evidence/session005/remote-kimi-final-001/kimi-tools/evidence/session005/kimi-pilot-A-001-start.json",
+        "evidence/session005/remote-kimi-final-001/kimi-tools/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/config.json",
+        "evidence/session005/remote-kimi-final-001/kimi-tools/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/env.log",
+        "evidence/session005/remote-kimi-final-001/kimi-tools/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/pilot-result.json",
+        "evidence/session005/remote-kimi-final-001/kimi-tools/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/smoke.log"
+      ],
+      "reviewed_observations": {
+        "GPU_model_loaded": {
+          "value": true,
+          "evidence": "evidence/session005/kimi-final-001-audit.json",
+          "sha256": "5c86429335a196866b4440075e7bb7153d2f483f92d325dca3ab099c3c31cb1b"
+        },
+        "functional_smoke_verified": {
+          "value": true,
+          "evidence": "evidence/session005/kimi-final-001-audit.json",
+          "sha256": "5c86429335a196866b4440075e7bb7153d2f483f92d325dca3ab099c3c31cb1b"
+        }
+      },
+      "overlays": [
+        {
+          "path": "dist/session005-kimi-cpu-002.zip",
+          "source": "dist/session005-kimi-cpu-002.zip",
+          "sha256": "27dcfad4c472690eeb80b8e1933dcd2d8c45310c6f7c8b243e3d595a04bc35ef"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/bundle-002.json",
+          "source": "evidence/kimi-vl-preparation-20261023/bundle-002.json",
+          "sha256": "80b05a1c4e5cfb70f343b969dd0bc59186c4c62b4ab7acffffc061ecf42df18c"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/cpu-preflight-helper-validation-004/validation.json",
+          "source": "evidence/kimi-vl-preparation-20261023/cpu-preflight-helper-validation-004/validation.json",
+          "sha256": "d3a887f4e5f4035a13f7d455f0a27c15232075808073dc470f506e6c48850d5c"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/huggingface-metadata.json",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/huggingface-metadata.json",
+          "sha256": "49d565af111fd2f1f9035fdb9da2f4416f3a0f57e92e743153290ef5a0bf90a7"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/metadata-fetch-attempts.json",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/metadata-fetch-attempts.json",
+          "sha256": "58d4a9064ff7fa850af2a284061bf9b088cb622b899cf74f4a5f7d885dc3d881"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/model-small-files/README.md",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/model-small-files/README.md",
+          "sha256": "7fa4d4e39537a43a7d6cc6f62873eb014b2f8bc3da2142111ba2ad29d4984794"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/model-small-files/chat_template.jinja",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/model-small-files/chat_template.jinja",
+          "sha256": "172c7450a66b9b3644538888ffa24d02047e535e9d1f911564460203fbf7e8e8"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/model-small-files/config.json",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/model-small-files/config.json",
+          "sha256": "af3810295de6b08232776b74110ed482fa0183f4aeaec586ff4f7593910951cb"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/model-small-files/configuration_kimi_vl.py",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/model-small-files/configuration_kimi_vl.py",
+          "sha256": "d30462b89993b9fef138db983d3884bbc39750effadf2efe67f404d28ee40e5b"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/model-small-files/generation_config.json",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/model-small-files/generation_config.json",
+          "sha256": "da26dd1916774784790db2b83336bad62d0917356743478ba6eb0c425c53eac5"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/model-small-files/image_processing_kimi_vl.py",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/model-small-files/image_processing_kimi_vl.py",
+          "sha256": "bb58551e088f3bb0027b1886ca5ff42776c485acec1a9aafe91553ff76926870"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/model-small-files/model.safetensors.index.json",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/model-small-files/model.safetensors.index.json",
+          "sha256": "178ba3a15cb12f6ceac42aecfe665a8f041d47e948220d75b073088957efedd8"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/model-small-files/modeling_kimi_vl.py",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/model-small-files/modeling_kimi_vl.py",
+          "sha256": "74e8f18afa5bf8f580ef5be5f15b51506f1e4f604df5a84f508a7796b8947c0b"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/model-small-files/preprocessor_config.json",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/model-small-files/preprocessor_config.json",
+          "sha256": "d968a7d7f83f82c3b0e1061079dcdbefd6f2c75b7ee4240cce995afaeae1f622"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/model-small-files/processing_kimi_vl.py",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/model-small-files/processing_kimi_vl.py",
+          "sha256": "f8e64816baed0a92d85d0a987b587028ad55a0779f3ace8c5b68db705dc61561"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/model-small-files/tokenization_moonshot.py",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/model-small-files/tokenization_moonshot.py",
+          "sha256": "0ae85e29c37689fefe41b8bfdb7aebd9a0152defedbf37fae0f8413000512029"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/model-small-files/tokenizer_config.json",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/model-small-files/tokenizer_config.json",
+          "sha256": "d7861718cab22c7962e14b4693b4009dd526115cd392dc779069a8173be95703"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/modelscope-metadata.json",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/modelscope-metadata.json",
+          "sha256": "c380b4a2fd408839a4dd7e8cd0bea6122d3302e3ddad6f265e8c3f89160566f9"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/source-review.json",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/source-review.json",
+          "sha256": "52258756f21ebcc3b52e1aae695b627f3fc8f97f29fd6ee50187cdd920b2df76"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/validation-001/validation.json",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/validation-001/validation.json",
+          "sha256": "23d103c7395c94be5d8749c2b7facf44e3e58d4a18d3ed7ced6795b4e897aa13"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/validation-001/windows.stderr.log",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/validation-001/windows.stderr.log",
+          "sha256": "a75eccc4471f8699902f01f75498f103aef51cc055543d1407a29e4de4c04f66"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/validation-001/windows.stdout.log",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/validation-001/windows.stdout.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/validation-001/wsl.stderr.log",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/validation-001/wsl.stderr.log",
+          "sha256": "9b78a2a38649efc9eab52511305a44d181604ec87ac23b5fe6ddb4e99e3c0b6c"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/validation-001/wsl.stdout.log",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/validation-001/wsl.stdout.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/validation-002/validation.json",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/validation-002/validation.json",
+          "sha256": "2c9c31478f1bdd7fc5bb70b023b05dff28cfcf16488026df1b59be4f406b439e"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/validation-002/windows.stderr.log",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/validation-002/windows.stderr.log",
+          "sha256": "e1de6ba14153ac42b68e1c6dce6bae7cd565b732ec0165d8d17c8d37c9c743bf"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/validation-002/windows.stdout.log",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/validation-002/windows.stdout.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/validation-002/wsl.stderr.log",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/validation-002/wsl.stderr.log",
+          "sha256": "ada9a92475c9fc62590ddf62e326843e01b322e367a89fb6a31090ae07964fb3"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/validation-002/wsl.stdout.log",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/validation-002/wsl.stdout.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/validation-003/validation.json",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/validation-003/validation.json",
+          "sha256": "2bd7db5c3a2c0dce1df52f13103be23a541d8f8563ff2a9e2538def840b188f2"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/validation-003/wsl.stderr.log",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/validation-003/wsl.stderr.log",
+          "sha256": "932bbbb04be95fa1c5f9d57e6b2cf09606345997496dd949d2ba3999579525e6"
+        },
+        {
+          "path": "evidence/kimi-vl-preparation-20261023/validation-003/wsl.stdout.log",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/evidence/kimi-vl-preparation-20261023/validation-003/wsl.stdout.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "evidence/session005/kimi-final-001-audit.json",
+          "source": "evidence/session005/kimi-final-001-audit.json",
+          "sha256": "5c86429335a196866b4440075e7bb7153d2f483f92d325dca3ab099c3c31cb1b"
+        },
+        {
+          "path": "evidence/session005/kimi-pilot-shared-export-001-audit.json",
+          "source": "evidence/session005/kimi-pilot-shared-export-001-audit.json",
+          "sha256": "d76313a6a7e2875bbc3db86ffd170e9c0b62cebb27900391f306a19d1d2f26b3"
+        },
+        {
+          "path": "evidence/session005/remote-kimi-final-001.local-verification.json",
+          "source": "evidence/session005/remote-kimi-final-001.local-verification.json",
+          "sha256": "2f82117d7f989d0d480dc2491da7ff1b7181665a864b35bfe844cff61e2c2fee"
+        },
+        {
+          "path": "scripts/download_candidate_models_20261023.py",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/scripts/download_candidate_models_20261023.py",
+          "sha256": "c7365bb68795679669cb41cb91768317bf7e93ad2c6447c1713ee17b91e646e0",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-kimi-final-001",
+            "source": "/root/private_data/guoxin-kimi-tools-005/scripts/download_candidate_models_20261023.py"
+          }
+        },
+        {
+          "path": "scripts/download_kimi_vl_005.py",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/scripts/download_kimi_vl_005.py",
+          "sha256": "9042548641ef5fe4a47e5d8abaa15c5084583cf57ed8517d60048141cb30b149",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-kimi-final-001",
+            "source": "/root/private_data/guoxin-kimi-tools-005/scripts/download_kimi_vl_005.py"
+          }
+        },
+        {
+          "path": "scripts/kimi_cpu_preflight_005.py",
+          "source": "scripts/kimi_cpu_preflight_005.py",
+          "sha256": "8bcd3320f68008a66cba2bc6cbb8a6cd1b8c79c22a9b1bda58d7ab572a154f1b"
+        },
+        {
+          "path": "scripts/kimi_vl_runtime_005.py",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/scripts/kimi_vl_runtime_005.py",
+          "sha256": "9794c1e1ef918a5a07bebc20746768291df81f15103428a987f4398ff378ffc1",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-kimi-final-001",
+            "source": "/root/private_data/guoxin-kimi-tools-005/scripts/kimi_vl_runtime_005.py"
+          }
+        },
+        {
+          "path": "scripts/recon2reason_runtime.py",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/scripts/recon2reason_runtime.py",
+          "sha256": "0edc33da22c07a804c93047f918a4a39a58af90997390c49695d8b39a891d85b",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-kimi-final-001",
+            "source": "/root/private_data/guoxin-kimi-tools-005/scripts/recon2reason_runtime.py"
+          }
+        },
+        {
+          "path": "scripts/recon2reason_smoke.py",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/scripts/recon2reason_smoke.py",
+          "sha256": "21d2f90e7a1df414cb260f029a5e42a677cc06867e1222f537487b53b8a1fe2d",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-kimi-final-001",
+            "source": "/root/private_data/guoxin-kimi-tools-005/scripts/recon2reason_smoke.py"
+          }
+        },
+        {
+          "path": "tasks/kimi-vl-bw-vllm/COPYRIGHT-SCOPE.txt",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/tasks/kimi-vl-bw-vllm/COPYRIGHT-SCOPE.txt",
+          "sha256": "dbe9d6d2f9f068c14f1ce44ed2e870d44248286defb25a020d07889e92cbfb1c"
+        },
+        {
+          "path": "tasks/kimi-vl-bw-vllm/LICENSE_upstream",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/tasks/kimi-vl-bw-vllm/LICENSE_upstream",
+          "sha256": "f0c89806155f93f4ea5cb9e81ef70aad1a7729240132df9706db9584024547db"
+        },
+        {
+          "path": "tasks/kimi-vl-bw-vllm/README.md",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/tasks/kimi-vl-bw-vllm/README.md",
+          "sha256": "e9d8453fef26a812e2bb4a02fde7641232faabf68d9ce7d0f10b34f30d630988"
+        },
+        {
+          "path": "tasks/kimi-vl-bw-vllm/README_origin.md",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/tasks/kimi-vl-bw-vllm/README_origin.md",
+          "sha256": "7fa4d4e39537a43a7d6cc6f62873eb014b2f8bc3da2142111ba2ad29d4984794"
+        },
+        {
+          "path": "tasks/kimi-vl-bw-vllm/bench.sh",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/tasks/kimi-vl-bw-vllm/bench.sh",
+          "sha256": "743a164b1f139080e2eb2d5b9d2d5e8b520f7537b1c30bdf0e89ff3393d00198",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-kimi-final-001",
+            "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/bench.sh"
+          }
+        },
+        {
+          "path": "tasks/kimi-vl-bw-vllm/download-sources.json",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/tasks/kimi-vl-bw-vllm/download-sources.json",
+          "sha256": "f8e06c48281584c608e3106222cb9dbb1be68e2ddeed3bd16d0edfbb69cc61ad"
+        },
+        {
+          "path": "tasks/kimi-vl-bw-vllm/env.sh",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/tasks/kimi-vl-bw-vllm/env.sh",
+          "sha256": "cee4173ecc53bbed55ed93aa9d3e8fdb02e039b5cec14992ab38ff418b97ab62",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-kimi-final-001",
+            "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/env.sh"
+          }
+        },
+        {
+          "path": "tasks/kimi-vl-bw-vllm/env_check.sh",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/tasks/kimi-vl-bw-vllm/env_check.sh",
+          "sha256": "f4559981600739e2257609592dd85cfbedbbe9f49481cb3224d3661dd48308f4",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-kimi-final-001",
+            "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/env_check.sh"
+          }
+        },
+        {
+          "path": "tasks/kimi-vl-bw-vllm/fixtures/blue.png",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/tasks/kimi-vl-bw-vllm/fixtures/blue.png",
+          "sha256": "13588c097bf637a09c571e441392c40f406b81ca0a50e30b3ee2f336585fec2f"
+        },
+        {
+          "path": "tasks/kimi-vl-bw-vllm/fixtures/manifest.json",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/tasks/kimi-vl-bw-vllm/fixtures/manifest.json",
+          "sha256": "698fd5ab6159dd0b10d60671d71ee55d9a7d78cde4db61950391f77e91c7c76c"
+        },
+        {
+          "path": "tasks/kimi-vl-bw-vllm/fixtures/red.png",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/tasks/kimi-vl-bw-vllm/fixtures/red.png",
+          "sha256": "d51437c5bb459fb25f47a9e52e650b3f815d1d9900ec63b651f338e6e73c7165"
+        },
+        {
+          "path": "tasks/kimi-vl-bw-vllm/model-lock.json",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/tasks/kimi-vl-bw-vllm/model-lock.json",
+          "sha256": "82c20d751fcffa171359c55480dd2ad140bccc470d647335e219f54824f5e918"
+        },
+        {
+          "path": "tasks/kimi-vl-bw-vllm/pilot.sh",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/tasks/kimi-vl-bw-vllm/pilot.sh",
+          "sha256": "250de21b161adebcad18663d8306bcf4f1c9343da8095448510ef09b0022dee1",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-kimi-final-001",
+            "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/pilot.sh"
+          }
+        },
+        {
+          "path": "tasks/kimi-vl-bw-vllm/preflight.sh",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/tasks/kimi-vl-bw-vllm/preflight.sh",
+          "sha256": "cf0ae1368703477ebbc06595b27af4129c171e0067e04845d5df78ee50aecd67",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-kimi-final-001",
+            "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/preflight.sh"
+          }
+        },
+        {
+          "path": "tasks/kimi-vl-bw-vllm/run.sh",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/tasks/kimi-vl-bw-vllm/run.sh",
+          "sha256": "ef4c7659b7283c826f0c72366c019c46c5f9f095f780d38c846167e99db0b27b",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-kimi-final-001",
+            "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/run.sh"
+          }
+        },
+        {
+          "path": "tasks/kimi-vl-bw-vllm/smoke.sh",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/tasks/kimi-vl-bw-vllm/smoke.sh",
+          "sha256": "726fa28ba495944cc5b103db22b39a166e79a1d50695c726adcca2632ee8f2cb",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-kimi-final-001",
+            "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/smoke.sh"
+          }
+        },
+        {
+          "path": "tasks/kimi-vl-bw-vllm/source-review-approved.json",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/tasks/kimi-vl-bw-vllm/source-review-approved.json",
+          "sha256": "714eda86ce7928a27c07c587acff19596002e4f238975229d7a00bb6ddda9433"
+        },
+        {
+          "path": "tasks/kimi-vl-bw-vllm/stop.sh",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/tasks/kimi-vl-bw-vllm/stop.sh",
+          "sha256": "c4e5497f12fbe5c5702f2f2c41128f98cdd909f5eeafe6c0ab976f3606ddf666",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-kimi-final-001",
+            "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/stop.sh"
+          }
+        },
+        {
+          "path": "tasks/kimi-vl-bw-vllm/task.json",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/tasks/kimi-vl-bw-vllm/task.json",
+          "sha256": "8626c70a91a57a92454a4180b6b601bbb615978727512128b5dcd62a2e5a1fde"
+        },
+        {
+          "path": "tasks/kimi-vl-bw-vllm/upstream-lock.json",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/tasks/kimi-vl-bw-vllm/upstream-lock.json",
+          "sha256": "5e743cda25cb2e4c87f748eead2bfdfaacd3bf2ea847e359a6b02d3c8bae478e"
+        },
+        {
+          "path": "tasks/kimi-vl-bw-vllm/upstream-source.zip",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/tasks/kimi-vl-bw-vllm/upstream-source.zip",
+          "sha256": "7fa511c12f6e63c02cea28723346ea5e32293cb63604b777ef5f349ee6f2a781"
+        },
+        {
+          "path": "tasks/kimi-vl-bw-vllm/verify.py",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/tasks/kimi-vl-bw-vllm/verify.py",
+          "sha256": "2fb282d62b9e48da50b7723f437af1e94c80d884390deea61284c90f433df608",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-kimi-final-001",
+            "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/verify.py"
+          }
+        },
+        {
+          "path": "tasks/kimi-vl-bw-vllm/verify.sh",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/tasks/kimi-vl-bw-vllm/verify.sh",
+          "sha256": "ac174130cf5a5c269a2ab15e76421497a84891c441599665c65746cd7eb4fc1d",
+          "source_binding": {
+            "package_prefix": "evidence/session005/remote-kimi-final-001",
+            "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/verify.sh"
+          }
+        },
+        {
+          "path": "tests/test_kimi_cpu_preflight_005.py",
+          "source": "tests/test_kimi_cpu_preflight_005.py",
+          "sha256": "88725e7e95249733157e68a55d97e95c55b09f2a55f319b1c229ea471ce2de6b"
+        },
+        {
+          "path": "tests/test_kimi_vl_preparation_005.py",
+          "source": "dist/session005-delivery-source/kimi-vl-bw-vllm/tests/test_kimi_vl_preparation_005.py",
+          "sha256": "8e0786bd6ee7fe56e70c9c2b51750f8f21b14cad3936b8fb57b74a09e3aee878"
+        }
+      ],
+      "approved_source_archives": {
+        "tasks/kimi-vl-bw-vllm/upstream-source.zip": "7fa511c12f6e63c02cea28723346ea5e32293cb63604b777ef5f349ee6f2a781",
+        "dist/session005-kimi-cpu-002.zip": "27dcfad4c472690eeb80b8e1933dcd2d8c45310c6f7c8b243e3d595a04bc35ef"
+      }
+    }
+  ]
+}

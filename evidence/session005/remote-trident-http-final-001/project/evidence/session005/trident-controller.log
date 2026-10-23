@@ -1,0 +1,10 @@
+{
+  "output": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/evidence/session005/trident-http-retry002",
+  "exit_code": 2,
+  "functional_HTTP_passed": true,
+  "cleanup_verified": false,
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "official_embedding_evaluator_bridge_implemented": false,
+  "submission_ready": false
+}

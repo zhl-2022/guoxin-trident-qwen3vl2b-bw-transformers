@@ -1,0 +1,39 @@
+{
+  "HTTP_calls": 5,
+  "query_vectors": 1,
+  "document_vectors": 4,
+  "dimensions": [
+    2048,
+    2048,
+    2048,
+    2048,
+    2048
+  ],
+  "cosine_dot_scores": [
+    0.8738650784711609,
+    0.7526463319888547,
+    0.7866230580349918,
+    0.7910106371015895
+  ],
+  "ranked_document_indices": [
+    0,
+    3,
+    2,
+    1
+  ],
+  "offline_reference_rank": [
+    0,
+    3,
+    2,
+    1
+  ],
+  "rank_matches_offline_reference": true,
+  "max_abs_vector_difference_from_offline_development_reference": 0.0,
+  "reference_worker_result_sha256": "7de46591cf782cbb50ac6d670f822868f766097b44854d568a2b13f83eec3044",
+  "reference_is_publisher_TF_or_official_baseline": false,
+  "scope": "Fixed synthetic development case only",
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "official_embedding_evaluator_bridge_implemented": false,
+  "submission_ready": false
+}

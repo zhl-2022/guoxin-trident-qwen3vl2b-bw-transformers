@@ -2,7 +2,7 @@
   "schema_version": 1,
   "slug": "trident-qwen3vl2b-bw-transformers",
   "track": "T02",
-  "status": "vllm_offline_GPU_development_verified_HTTP_pending",
+  "status": "session005_execution_attempt_archived_not_officially_evaluated",
   "model_id": "openbmb/Trident-Qwen3VL-2B",
   "architecture": "Qwen3VLForEmbedding",
   "framework": "vllm",
@@ -134,5 +134,20 @@
     "env_check.sh": "metadata_inventory",
     "HTTP_gpu_verified": false
   },
-  "official_embedding_evaluator_bridge_implemented": false
+  "official_embedding_evaluator_bridge_implemented": false,
+  "status_before_session005_delivery": "vllm_offline_GPU_development_verified_HTTP_pending",
+  "session005_delivery": {
+    "generated_metadata_only": true,
+    "execution_attempt": {
+      "path": "evidence/session005/remote-trident-http-final-001/project/evidence/session005/trident-http-runtime-001/state.json",
+      "sha256": "ca07477314550ebe1b0fb42d737f628fa6006d31f3d00023352b30df52c3f0c9",
+      "run_id": "1b62c9a782bf40ec923a16edc132e8ad",
+      "terminal_status": "stopped",
+      "config_path": "evidence/session005/remote-trident-http-final-001/project/evidence/session005/trident-http-runtime-001/config-1b62c9a782bf40ec923a16edc132e8ad.json",
+      "config_sha256": "120431b6c4e752fe3d91fc92e6f63a5b05ac1b0f60a58653e84cad6077b3f61e",
+      "scope": "Actual supervised process attempt only; does not certify GPU inference, functional or official success"
+    },
+    "original_task_payload": "provenance/session005/canonical-task-before-delivery-metadata.json",
+    "actual_runtime_configs_remain_in_verified_remote_archive": true
+  }
 }

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "revision": "398eede0903cd983a2bfa0cc634e9ac1d843f375",
+  "reviewed_utc": "2026-10-23T13:05:05.151404+00:00",
+  "static_review_approved": true,
+  "reviewed_python_sha256": {
+    "configuration_kimi_vl.py": "d30462b89993b9fef138db983d3884bbc39750effadf2efe67f404d28ee40e5b",
+    "image_processing_kimi_vl.py": "bb58551e088f3bb0027b1886ca5ff42776c485acec1a9aafe91553ff76926870",
+    "modeling_kimi_vl.py": "74e8f18afa5bf8f580ef5be5f15b51506f1e4f604df5a84f508a7796b8947c0b",
+    "processing_kimi_vl.py": "f8e64816baed0a92d85d0a987b587028ad55a0779f3ace8c5b68db705dc61561",
+    "tokenization_moonshot.py": "0ae85e29c37689fefe41b8bfdb7aebd9a0152defedbf37fae0f8413000512029"
+  },
+  "review_scope": "Fixed publisher Python source AST/import inventory and manual targeted review; not execution/compatibility certification",
+  "reviewed_behavior": [
+    "Configuration classes only map publisher model architecture, not overrides",
+    "Processor expands fixed image placeholders using grid sizes and tokenizer; image preprocessing uses PIL/numpy/torch/torchvision",
+    "Tokenizer asserts local vocab_file exists before tiktoken.load; save_vocabulary only copies to explicitly provided output",
+    "Modeling uses standard Torch/Transformers classes and conditional FlashAttention imports; no forced backend added by this task",
+    "No explicit network installer/shell/subprocess/eval/exec calls found in the exact five Python files"
+  ],
+  "runtime_compatibility_verified": false,
+  "GPU_verified": false,
+  "upstream_license": "Model card/repository MIT; per-file Apache-2.0 copyright/license headers retained"
+}

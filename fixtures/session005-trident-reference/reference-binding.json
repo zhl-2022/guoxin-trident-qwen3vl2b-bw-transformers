@@ -1,0 +1,16 @@
+{
+  "source": "session004 final-source-sealed offline native vLLM development pilot; not a publisher TF or official baseline",
+  "worker_result_origin": "evidence/session004/remote-final-001/candidates/results/trident-vllm-pooling-001/worker-result.json",
+  "worker_result_sha256": "7de46591cf782cbb50ac6d670f822868f766097b44854d568a2b13f83eec3044",
+  "fixture_sha256": "89f0eb20b4873ef0d4ee436b96120d9e564bed9b64832f70ccef9843d7005e46",
+  "offline_rank": [
+    0,
+    3,
+    2,
+    1
+  ],
+  "model_revision": "a5aedf8733f2107ab75b42214c78496d85759077",
+  "executed_probe_sha256": "2b4030517bd55056595b4caa34506c5f8573d6c3149b81aa81c507a10061ede7",
+  "final_export_manifest_sha256": "eb5ab4603f1f557d4d07d9d8b76e24865a8aa518d6a4713981453c5f2aca15c0",
+  "numerical_reference_is_official_or_publisher_TF": false
+}

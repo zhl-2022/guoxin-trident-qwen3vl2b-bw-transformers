@@ -1,0 +1,44 @@
+{
+  "python": "/root/private_data/guoxin-candidates/envs/trident-001/bin/python",
+  "prefix": "/root/private_data/guoxin-candidates/envs/trident-001",
+  "packages": {
+    "torch": {
+      "version": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "1ff8f9902a18a1d281da47bfa9b330da299e1ec30a4065fb70155fd1cf44f6aa"
+    },
+    "torchvision": {
+      "version": "0.25.0+das.opt1.dtk2604.torch2100.20260325.g860505",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "8a2c56baa18ee01d92f325bbff46e3fc205c38d136c13426db615ffd0a762209"
+    },
+    "vllm": {
+      "version": "0.18.1+das.fa71803.dtk2604",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "ec95e9ad078cd5dcc71a11f9d914f4f09fdf16f1f1588673d44f1009570d4618"
+    },
+    "vllm-hcu": {
+      "version": "0.18.1+das.dtk2604",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "7c77a094e805cef0f8650e6b21b53bf12fddbcdee4ec3d867fea86416d7749a6"
+    },
+    "transformers": {
+      "version": "5.5.0",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "b051d07991d6d7019a5eb5bf06fe364a61f75bf675de369c698061dbf613cdae"
+    },
+    "qwen-vl-utils": {
+      "version": "0.0.14",
+      "root": "/root/private_data/guoxin-candidates/envs/trident-001/lib/python3.10/site-packages",
+      "metadata_sha256": "c2b08fb2a7704facf04d47f1af11fd4443eb8cfe15fd1d65acf035b0fdeb9a21"
+    },
+    "Pillow": {
+      "version": "12.1.1",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "17ff1f2d2adbc1ee618e97f149a81caaf4c3293d5a687227b6289199e70f2d17"
+    }
+  },
+  "metadata_only": true,
+  "torch_module_already_imported": false,
+  "package_installation_performed": false
+}

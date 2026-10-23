@@ -1,0 +1,41 @@
+{
+  "utc": "2026-10-23T14:14:43.667526+00:00",
+  "supersedes": "validation-001.json; added absolute material env binding before external cwd",
+  "scope": "Post-GPU session005 overlay; CPU execution contract only",
+  "Win_passed": 12,
+  "Win_skipped": 1,
+  "WSL_passed": 13,
+  "WSL_shell_syntax_passed": true,
+  "files": [
+    {
+      "path": "scripts/trident_official_bridge_005.py",
+      "size": 12507,
+      "sha256": "f01fc60b702de2002c9b31cc83c5a7c676bcbeed92f47506cb4596ffe6c24ca5"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/verify005.sh",
+      "size": 238,
+      "sha256": "d9649c869471613f6fac72571f97e1a4d06f9f970f9e983bdd133938330ad122"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/bench005.sh",
+      "size": 237,
+      "sha256": "e11fc76980f00781daf47a3954c9c8d215e94de57cffb6ed0f54d842df896163"
+    },
+    {
+      "path": "tasks/trident-qwen3vl2b-bw-transformers/OFFICIAL-BRIDGE-005.md",
+      "size": 5776,
+      "sha256": "cc9f71d5f3a61100363c1e12ec641c888b9fdcfc0582db1cd59c7dc39eff63f0"
+    },
+    {
+      "path": "tests/test_trident_official_bridge_005.py",
+      "size": 7655,
+      "sha256": "814f5987baad027ff91f1cc42907b9f30dce8882ed15f229f27841c27643354f"
+    }
+  ],
+  "actual_HTTP_GPU_source_modified": false,
+  "new_bridge_actual_HTTP_producer_source_seal_matched": false,
+  "official_accuracy_verified": false,
+  "official_performance_accepted": false,
+  "official_schema_interpretation_implemented": false
+}

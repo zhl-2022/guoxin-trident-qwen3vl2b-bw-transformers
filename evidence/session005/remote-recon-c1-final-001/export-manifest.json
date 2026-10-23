@@ -1,0 +1,1656 @@
+{
+  "approved_runtime_symlink_mappings_after": [],
+  "approved_runtime_symlink_mappings_before": [],
+  "approved_runtime_symlinks_unchanged": true,
+  "candidate_report_root": "/root/private_data/guoxin-candidates",
+  "capture_semantics": "Live non-atomic capture. Individual reads fail on mutation. Before/after state and stable actual source hashes are separate evidence, not success/acceptance.",
+  "evaluation_status": "not_assessed_by_exporter",
+  "files": [
+    {
+      "archive_path": "export-snapshots/before/kimi-vl-bw-vllm/state.json",
+      "captured_utc": "2026-10-23T14:27:50.971364+00:00",
+      "crc32": "5d8526dd",
+      "sha256": "0aee07c996659d81c15abbf61b314ff211bdbb76c639299d0d664df017123efe",
+      "size": 1374,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/runtime/state.json",
+      "source_mtime_ns": 1792765482000000000
+    },
+    {
+      "archive_path": "candidate-download-reports/checkpoint-transfer-6d5b349c4c58441086617115252f83f4.json",
+      "captured_utc": "2026-10-23T14:27:50.972094+00:00",
+      "crc32": "6518e1f2",
+      "sha256": "f6eb4f36133853497674b62b9620178a947a6e8ffabde3debbb553bc5bd2bce5",
+      "size": 2776,
+      "source": "/root/private_data/guoxin-candidates/checkpoint-transfer-6d5b349c4c58441086617115252f83f4.json",
+      "source_mtime_ns": 1792763384000000000
+    },
+    {
+      "archive_path": "candidate-download-reports/checkpoint-transfer-e2e1346358184c7fbff2338fb9f3ef41.json",
+      "captured_utc": "2026-10-23T14:27:50.972662+00:00",
+      "crc32": "82e3a0b3",
+      "sha256": "edaf3db6a46a2f38ff9127c7909b130b1d420b013bb1839dc78cc49751609fdb",
+      "size": 4688,
+      "source": "/root/private_data/guoxin-candidates/checkpoint-transfer-e2e1346358184c7fbff2338fb9f3ef41.json",
+      "source_mtime_ns": 1792764461000000000
+    },
+    {
+      "archive_path": "extra/000-task.json",
+      "captured_utc": "2026-10-23T14:27:50.975019+00:00",
+      "crc32": "c8cd0138",
+      "sha256": "3b1b9ef4f725aa4cab4d8c0008e36a47771567b00e81f202a5e76a7a589dffd0",
+      "size": 21838,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/tasks/recon2reason-bw-vllm/task.json",
+      "source_mtime_ns": 1792763239000000000
+    },
+    {
+      "archive_path": "extra/001-kimi-download-005-resume002.log",
+      "captured_utc": "2026-10-23T14:27:50.975845+00:00",
+      "crc32": "154afdbc",
+      "sha256": "764094fdaefb68c6ea50745fd592e086fa9e9de441dcaeacf9434aeebced7edf",
+      "size": 4036,
+      "source": "/root/kimi-download-005-resume002.log",
+      "source_mtime_ns": 1792764461778265966
+    },
+    {
+      "archive_path": "extra/002-kimi-download-resume002-start.json",
+      "captured_utc": "2026-10-23T14:27:50.976121+00:00",
+      "crc32": "34c90d97",
+      "sha256": "6ce584224b74c2d5a874f356f080922680779fdc31e22ad1ff4d79d2127b042c",
+      "size": 469,
+      "source": "/root/kimi-download-resume002-start.json",
+      "source_mtime_ns": 1792763453422838950
+    },
+    {
+      "archive_path": "extra/003-kimi-cpu-preflight-001.log",
+      "captured_utc": "2026-10-23T14:27:50.976321+00:00",
+      "crc32": "6fc307f0",
+      "sha256": "9250f3b24336df0c06e3362bb6ca59a84f67698bf7a6871a92271c6d98c7a33e",
+      "size": 226,
+      "source": "/root/kimi-cpu-preflight-001.log",
+      "source_mtime_ns": 1792764771894374463
+    },
+    {
+      "archive_path": "extra/004-kimi-cpu-preflight-002.log",
+      "captured_utc": "2026-10-23T14:27:50.976559+00:00",
+      "crc32": "a02f05ea",
+      "sha256": "8ef6f59e408e5e871a6b889d1bc4991e1bde43aa8c38dcc75be745aae2fe94f6",
+      "size": 12228,
+      "source": "/root/kimi-cpu-preflight-002.log",
+      "source_mtime_ns": 1792765213600825795
+    },
+    {
+      "archive_path": "extra/005-kimi-cpu-preflight-003.log",
+      "captured_utc": "2026-10-23T14:27:50.977011+00:00",
+      "crc32": "7664cc64",
+      "sha256": "10e70356fd8e1eea39993233189e1dcad04d29275da8cf5f393d47cda06b3579",
+      "size": 12021,
+      "source": "/root/kimi-cpu-preflight-003.log",
+      "source_mtime_ns": 1792765559632465383
+    },
+    {
+      "archive_path": "extra/006-kimi-download-005.log",
+      "captured_utc": "2026-10-23T14:27:50.977421+00:00",
+      "crc32": "956e5a13",
+      "sha256": "04f1154436fa5b79a33290ad4cf21496164f671838ad307e95be90ed07788fbd",
+      "size": 2244,
+      "source": "/root/kimi-download-005.log",
+      "source_mtime_ns": 1792763384779691241
+    },
+    {
+      "archive_path": "extra/007-kimi-checkpoint-verification-005.json",
+      "captured_utc": "2026-10-23T14:27:50.977658+00:00",
+      "crc32": "abc35bf0",
+      "sha256": "8cc2fc591c72d7cd915096b88614c82c15f80fe17a63890cab3bab823eceba0e",
+      "size": 4308,
+      "source": "/root/kimi-checkpoint-verification-005.json",
+      "source_mtime_ns": 1792764832593612777
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-checkpoint-verification-A-001.json",
+      "captured_utc": "2026-10-23T14:27:50.980126+00:00",
+      "crc32": "cdaa3ed4",
+      "sha256": "0b0a487100e3b5a77c85056d11e4a38041e9955d95a6b1ede21679cbf7a84994",
+      "size": 4286,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-checkpoint-verification-A-001.json",
+      "source_mtime_ns": 1792765240000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/README.md",
+      "captured_utc": "2026-10-23T14:27:50.980824+00:00",
+      "crc32": "3f76244d",
+      "sha256": "7fa4d4e39537a43a7d6cc6f62873eb014b2f8bc3da2142111ba2ad29d4984794",
+      "size": 14619,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/README.md",
+      "source_mtime_ns": 1792765205000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/config.json",
+      "captured_utc": "2026-10-23T14:27:50.981770+00:00",
+      "crc32": "1ae8cbb6",
+      "sha256": "af3810295de6b08232776b74110ed482fa0183f4aeaec586ff4f7593910951cb",
+      "size": 2005,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/config.json",
+      "source_mtime_ns": 1792765206000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/generation_config.json",
+      "captured_utc": "2026-10-23T14:27:50.982728+00:00",
+      "crc32": "556de5c0",
+      "sha256": "da26dd1916774784790db2b83336bad62d0917356743478ba6eb0c425c53eac5",
+      "size": 149,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/generation_config.json",
+      "source_mtime_ns": 1792765206000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/model.safetensors.index.json",
+      "captured_utc": "2026-10-23T14:27:50.985008+00:00",
+      "crc32": "13fdd32c",
+      "sha256": "178ba3a15cb12f6ceac42aecfe665a8f041d47e948220d75b073088957efedd8",
+      "size": 588207,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/model.safetensors.index.json",
+      "source_mtime_ns": 1792765206000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/preprocessor_config.json",
+      "captured_utc": "2026-10-23T14:27:50.992842+00:00",
+      "crc32": "0168ada4",
+      "sha256": "d968a7d7f83f82c3b0e1061079dcdbefd6f2c75b7ee4240cce995afaeae1f622",
+      "size": 401,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/preprocessor_config.json",
+      "source_mtime_ns": 1792765206000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/tokenizer_config.json",
+      "captured_utc": "2026-10-23T14:27:50.994128+00:00",
+      "crc32": "1417c808",
+      "sha256": "d7861718cab22c7962e14b4693b4009dd526115cd392dc779069a8173be95703",
+      "size": 3857,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/tokenizer_config.json",
+      "source_mtime_ns": 1792765206000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-002/result.json",
+      "captured_utc": "2026-10-23T14:27:50.994717+00:00",
+      "crc32": "1898e9ed",
+      "sha256": "1a103cd9527e9a10c1baacf6ce42e02335467f96ce04d535780a8656e0375bcb",
+      "size": 12195,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-002/result.json",
+      "source_mtime_ns": 1792765211000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/README.md",
+      "captured_utc": "2026-10-23T14:27:50.995448+00:00",
+      "crc32": "3f76244d",
+      "sha256": "7fa4d4e39537a43a7d6cc6f62873eb014b2f8bc3da2142111ba2ad29d4984794",
+      "size": 14619,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/README.md",
+      "source_mtime_ns": 1792765555000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/config.json",
+      "captured_utc": "2026-10-23T14:27:50.996375+00:00",
+      "crc32": "1ae8cbb6",
+      "sha256": "af3810295de6b08232776b74110ed482fa0183f4aeaec586ff4f7593910951cb",
+      "size": 2005,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/config.json",
+      "source_mtime_ns": 1792765555000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/generation_config.json",
+      "captured_utc": "2026-10-23T14:27:50.997314+00:00",
+      "crc32": "556de5c0",
+      "sha256": "da26dd1916774784790db2b83336bad62d0917356743478ba6eb0c425c53eac5",
+      "size": 149,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/generation_config.json",
+      "source_mtime_ns": 1792765555000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/model.safetensors.index.json",
+      "captured_utc": "2026-10-23T14:27:50.999560+00:00",
+      "crc32": "13fdd32c",
+      "sha256": "178ba3a15cb12f6ceac42aecfe665a8f041d47e948220d75b073088957efedd8",
+      "size": 588207,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/model.safetensors.index.json",
+      "source_mtime_ns": 1792765555000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/preprocessor_config.json",
+      "captured_utc": "2026-10-23T14:27:51.007405+00:00",
+      "crc32": "0168ada4",
+      "sha256": "d968a7d7f83f82c3b0e1061079dcdbefd6f2c75b7ee4240cce995afaeae1f622",
+      "size": 401,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/preprocessor_config.json",
+      "source_mtime_ns": 1792765555000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/tokenizer_config.json",
+      "captured_utc": "2026-10-23T14:27:51.213415+00:00",
+      "crc32": "1417c808",
+      "sha256": "d7861718cab22c7962e14b4693b4009dd526115cd392dc779069a8173be95703",
+      "size": 3857,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/tokenizer_config.json",
+      "source_mtime_ns": 1792765555000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-003/result.json",
+      "captured_utc": "2026-10-23T14:27:51.214094+00:00",
+      "crc32": "b7e7846c",
+      "sha256": "c7c86bee9ff518731cd2a3f091af115beb81fa61b4da0aa03e2db9211561f61d",
+      "size": 12020,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-003/result.json",
+      "source_mtime_ns": 1792765559000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-upload-repair-002.json",
+      "captured_utc": "2026-10-23T14:27:51.214888+00:00",
+      "crc32": "f4d0b914",
+      "sha256": "e303b6836ce1cd29b278c4110c518913eb6087227604019e2b9df1d8513e123c",
+      "size": 414,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-upload-repair-002.json",
+      "source_mtime_ns": 1792765204000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-pilot-A-001-start.json",
+      "captured_utc": "2026-10-23T14:27:51.217680+00:00",
+      "crc32": "9403a326",
+      "sha256": "334398eb59964e55d482143f5acbc1dcd39d832a540216ea5b5b87446871b5f2",
+      "size": 548,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-pilot-A-001-start.json",
+      "source_mtime_ns": 1792765240000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-pilot-A-001.log",
+      "captured_utc": "2026-10-23T14:27:51.220053+00:00",
+      "crc32": "59774b39",
+      "sha256": "92e43ddd48b777bab1ad8474024873025d12d2340d06d75062ab874bb007c557",
+      "size": 151,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-pilot-A-001.log",
+      "source_mtime_ns": 1792765483000000000
+    },
+    {
+      "archive_path": "kimi-tools/kimi-upload-manifest-005.json",
+      "captured_utc": "2026-10-23T14:27:51.220454+00:00",
+      "crc32": "9f83094a",
+      "sha256": "f7e77ae4a475b3d1aad9bab3aedb60136902f21db9f88e5302ad0d3e7d8891f3",
+      "size": 11369,
+      "source": "/root/private_data/guoxin-kimi-tools-005/kimi-upload-manifest-005.json",
+      "source_mtime_ns": 1792761579000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/download-sources.json",
+      "captured_utc": "2026-10-23T14:27:51.222866+00:00",
+      "crc32": "d8d4157b",
+      "sha256": "f8e06c48281584c608e3106222cb9dbb1be68e2ddeed3bd16d0edfbb69cc61ad",
+      "size": 24955,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/download-sources.json",
+      "source_mtime_ns": 1792761580000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/model-lock.json",
+      "captured_utc": "2026-10-23T14:27:51.224220+00:00",
+      "crc32": "9be036a8",
+      "sha256": "82c20d751fcffa171359c55480dd2ad140bccc470d647335e219f54824f5e918",
+      "size": 5786,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/model-lock.json",
+      "source_mtime_ns": 1792761581000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/config.json",
+      "captured_utc": "2026-10-23T14:27:51.226700+00:00",
+      "crc32": "c65d196d",
+      "sha256": "db2fffa4b085ebd65790b1db2c8989e253841501254a2c939edb7acea766cbcc",
+      "size": 1683,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/config.json",
+      "source_mtime_ns": 1792765483000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/env.log",
+      "captured_utc": "2026-10-23T14:27:51.228713+00:00",
+      "crc32": "cdef5a8d",
+      "sha256": "3a8524ac7da6d1946fd247e7fed5782321846033354e5d82dbf6b3a63bc38178",
+      "size": 3355,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/env.log",
+      "source_mtime_ns": 1792765459000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/pilot-result.json",
+      "captured_utc": "2026-10-23T14:27:51.230661+00:00",
+      "crc32": "ca061a8f",
+      "sha256": "3c80f0fc613940f9251837363170fda59508f3774efc3f0e5ca1a97f31fa8923",
+      "size": 2614,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/pilot-result.json",
+      "source_mtime_ns": 1792765483000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/run-id.txt",
+      "captured_utc": "2026-10-23T14:27:51.232659+00:00",
+      "crc32": "3d168a13",
+      "sha256": "60f242cff2e9804525c6dc5df4acea092c01d61848c95f35c7c75d57d9620c2b",
+      "size": 33,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/run-id.txt",
+      "source_mtime_ns": 1792765241000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/server.log",
+      "captured_utc": "2026-10-23T14:27:51.234947+00:00",
+      "crc32": "06772ae4",
+      "sha256": "33ede16e7124b71bcd41a88d3c75fd8f388e21dc78d7d17f1e377c4ce33a0a54",
+      "size": 16338,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/server.log",
+      "source_mtime_ns": 1792765483000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/smoke.log",
+      "captured_utc": "2026-10-23T14:27:51.237280+00:00",
+      "crc32": "712f1b0f",
+      "sha256": "f50b811ab893a2cd8f017a7a537b28e20f952fddcfab83a9c7a83af5b7d78a2e",
+      "size": 8899,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/smoke.log",
+      "source_mtime_ns": 1792765471000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/start.log",
+      "captured_utc": "2026-10-23T14:27:51.239330+00:00",
+      "crc32": "238e3519",
+      "sha256": "edb862b50097b8c86c496868ad992909359c9d3707523b20ca7c0dd90c38c7f9",
+      "size": 1330,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/start.log",
+      "source_mtime_ns": 1792765440000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/state.json",
+      "captured_utc": "2026-10-23T14:27:51.241529+00:00",
+      "crc32": "5d8526dd",
+      "sha256": "0aee07c996659d81c15abbf61b314ff211bdbb76c639299d0d664df017123efe",
+      "size": 1374,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/state.json",
+      "source_mtime_ns": 1792765483000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/stop.log",
+      "captured_utc": "2026-10-23T14:27:51.243322+00:00",
+      "crc32": "e5b9bdbf",
+      "sha256": "f876dd5029a62e13517e28fa6e32b074ea9cf830a09182054467451c7c866cb1",
+      "size": 67,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/stop.log",
+      "source_mtime_ns": 1792765482000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/supervisor.log",
+      "captured_utc": "2026-10-23T14:27:51.245343+00:00",
+      "crc32": "c4a61f74",
+      "sha256": "fae44d4d0eeabe0dff0f91fbc413537c3ad0d28ec8ccaa222ca9b02355249a65",
+      "size": 2342,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/pilot-evidence/3f9dcea419780e535594e16d1df6b2b5/supervisor.log",
+      "source_mtime_ns": 1792765483000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/runtime/config-3f9dcea419780e535594e16d1df6b2b5.json",
+      "captured_utc": "2026-10-23T14:27:51.248115+00:00",
+      "crc32": "c65d196d",
+      "sha256": "db2fffa4b085ebd65790b1db2c8989e253841501254a2c939edb7acea766cbcc",
+      "size": 1683,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/runtime/config-3f9dcea419780e535594e16d1df6b2b5.json",
+      "source_mtime_ns": 1792765293000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/runtime/server.log",
+      "captured_utc": "2026-10-23T14:27:51.250437+00:00",
+      "crc32": "06772ae4",
+      "sha256": "33ede16e7124b71bcd41a88d3c75fd8f388e21dc78d7d17f1e377c4ce33a0a54",
+      "size": 16338,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/runtime/server.log",
+      "source_mtime_ns": 1792765476000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/runtime/state.json",
+      "captured_utc": "2026-10-23T14:27:51.251192+00:00",
+      "crc32": "5d8526dd",
+      "sha256": "0aee07c996659d81c15abbf61b314ff211bdbb76c639299d0d664df017123efe",
+      "size": 1374,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/runtime/state.json",
+      "source_mtime_ns": 1792765482000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/runtime/supervisor.log",
+      "captured_utc": "2026-10-23T14:27:51.253229+00:00",
+      "crc32": "c4a61f74",
+      "sha256": "fae44d4d0eeabe0dff0f91fbc413537c3ad0d28ec8ccaa222ca9b02355249a65",
+      "size": 2342,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/runtime/supervisor.log",
+      "source_mtime_ns": 1792765482000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/smoke.log",
+      "captured_utc": "2026-10-23T14:27:51.255419+00:00",
+      "crc32": "712f1b0f",
+      "sha256": "f50b811ab893a2cd8f017a7a537b28e20f952fddcfab83a9c7a83af5b7d78a2e",
+      "size": 8899,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/smoke.log",
+      "source_mtime_ns": 1792765471000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/source-review-approved.json",
+      "captured_utc": "2026-10-23T14:27:51.256192+00:00",
+      "crc32": "307f5e43",
+      "sha256": "714eda86ce7928a27c07c587acff19596002e4f238975229d7a00bb6ddda9433",
+      "size": 1634,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/source-review-approved.json",
+      "source_mtime_ns": 1792761581000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/task.json",
+      "captured_utc": "2026-10-23T14:27:51.256919+00:00",
+      "crc32": "23a293f0",
+      "sha256": "8626c70a91a57a92454a4180b6b601bbb615978727512128b5dcd62a2e5a1fde",
+      "size": 1762,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/task.json",
+      "source_mtime_ns": 1792761581000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/upstream-lock.json",
+      "captured_utc": "2026-10-23T14:27:51.257345+00:00",
+      "crc32": "5385d831",
+      "sha256": "5e743cda25cb2e4c87f748eead2bfdfaacd3bf2ea847e359a6b02d3c8bae478e",
+      "size": 3881,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/upstream-lock.json",
+      "source_mtime_ns": 1792761581000000000
+    },
+    {
+      "archive_path": "kimi-tools/unpack-ready-005.json",
+      "captured_utc": "2026-10-23T14:27:51.258276+00:00",
+      "crc32": "8dd01f46",
+      "sha256": "9d39da1dbd0e6f19a5015974ecd741fda0e5b9acd44dbaf8bcc52443ab638d45",
+      "size": 523,
+      "source": "/root/private_data/guoxin-kimi-tools-005/unpack-ready-005.json",
+      "source_mtime_ns": 1792761582000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/bench-controller.log",
+      "captured_utc": "2026-10-23T14:27:51.258667+00:00",
+      "crc32": "99156ca3",
+      "sha256": "6fa1916f6e94e85303797de60853486ccf43786a79de553ea55b88783cdbbdf8",
+      "size": 381,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/bench-controller.log",
+      "source_mtime_ns": 1792765253000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/independent-cleanup.json",
+      "captured_utc": "2026-10-23T14:27:51.259136+00:00",
+      "crc32": "5c5952fb",
+      "sha256": "5adc50a5bb9990e99d222812a3d181711e5f2ea6ee579d82617bf071ee10eabf",
+      "size": 2174,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/independent-cleanup.json",
+      "source_mtime_ns": 1792765265000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/launch.log",
+      "captured_utc": "2026-10-23T14:27:51.259653+00:00",
+      "crc32": "57b6b4ee",
+      "sha256": "c012fe5a6b9dd87da0704067219eabf5bce0cb7de9ab425fd9f178b056585e2c",
+      "size": 1305,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/launch.log",
+      "source_mtime_ns": 1792763459000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/archive-manifest.json",
+      "captured_utc": "2026-10-23T14:27:51.260171+00:00",
+      "crc32": "89ed8237",
+      "sha256": "97a1f5802ac02c00e46cd2629722ebc02b34c51dfd84da49752dd49f428b6cb4",
+      "size": 4530,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/archive-manifest.json",
+      "source_mtime_ns": 1792765253000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/client-identity.log",
+      "captured_utc": "2026-10-23T14:27:51.260682+00:00",
+      "crc32": "f9a98551",
+      "sha256": "cb19fd4213b934cc18fd6011831e6a82fb99abefa36d5dc74b4b876af63d9a66",
+      "size": 594,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/client-identity.log",
+      "source_mtime_ns": 1792763460000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/native/round1_16384_1024_c1.jsonl",
+      "captured_utc": "2026-10-23T14:27:51.261152+00:00",
+      "crc32": "3880d845",
+      "sha256": "7c38970642f376f3f3d43361ebbeffa2eee7d2b20d2123d01ca061eee6b10b9e",
+      "size": 23035,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/native/round1_16384_1024_c1.jsonl",
+      "source_mtime_ns": 1792764772000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/native/round1_4096_1024_c1.jsonl",
+      "captured_utc": "2026-10-23T14:27:51.262451+00:00",
+      "crc32": "67fefbf2",
+      "sha256": "c62319476c812b0b87265c928b9c2ce073821f77095a9e9f490a8fc4d6b6c658",
+      "size": 21473,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/native/round1_4096_1024_c1.jsonl",
+      "source_mtime_ns": 1792763874000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/native/round2_16384_1024_c1.jsonl",
+      "captured_utc": "2026-10-23T14:27:51.264263+00:00",
+      "crc32": "b137f13f",
+      "sha256": "a9f3c997eda351b180c5ea9b4f35b8c3bcc9d3190016bb8210b2238e578aaae9",
+      "size": 21192,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/native/round2_16384_1024_c1.jsonl",
+      "source_mtime_ns": 1792765248000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/native/round2_4096_1024_c1.jsonl",
+      "captured_utc": "2026-10-23T14:27:51.265495+00:00",
+      "crc32": "1d321076",
+      "sha256": "a531036b43195af6453088d5236a20e548d1b250b9c6aa98d8e32e318f7a6997",
+      "size": 20835,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/native/round2_4096_1024_c1.jsonl",
+      "source_mtime_ns": 1792764295000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/round1.jsonl",
+      "captured_utc": "2026-10-23T14:27:51.266682+00:00",
+      "crc32": "ef87cd4f",
+      "sha256": "f6370292cdfac0ff7483773d38c97af796519be0e43bec7473d60cc32ef5ea9a",
+      "size": 4530,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/round1.jsonl",
+      "source_mtime_ns": 1792765253000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/round1_16384_1024_c1.log",
+      "captured_utc": "2026-10-23T14:27:51.267170+00:00",
+      "crc32": "618d316a",
+      "sha256": "d418a78c223d7b48027f493928fe43604306ec02f6700744462e451d09cba837",
+      "size": 7656,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/round1_16384_1024_c1.log",
+      "source_mtime_ns": 1792764776000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/round1_4096_1024_c1.log",
+      "captured_utc": "2026-10-23T14:27:51.267743+00:00",
+      "crc32": "e489a3fa",
+      "sha256": "63574e2ba9637b13e9369204402ae70d09831bee86b1b7fa953560e33cba11b8",
+      "size": 7651,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/round1_4096_1024_c1.log",
+      "source_mtime_ns": 1792763877000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/round2.jsonl",
+      "captured_utc": "2026-10-23T14:27:51.268302+00:00",
+      "crc32": "c8b3582d",
+      "sha256": "b64f377dc78b17ded3dd1b89790398fce62757592e2109a32e835cd74b80aae8",
+      "size": 4527,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/round2.jsonl",
+      "source_mtime_ns": 1792765253000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/round2_16384_1024_c1.log",
+      "captured_utc": "2026-10-23T14:27:51.268881+00:00",
+      "crc32": "b2699ade",
+      "sha256": "6b38b2ff2e58889d42717d6d529b12c00b487c9bf83404c408d2d4cb38e699d0",
+      "size": 7656,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/round2_16384_1024_c1.log",
+      "source_mtime_ns": 1792765250000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/round2_4096_1024_c1.log",
+      "captured_utc": "2026-10-23T14:27:51.269448+00:00",
+      "crc32": "3e35238b",
+      "sha256": "84e33f3f1dad7ec8d7e5d569975d6d7c892b5a118dc31ff4a72a10d38e788612",
+      "size": 7651,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/round2_4096_1024_c1.log",
+      "source_mtime_ns": 1792764299000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/run.json",
+      "captured_utc": "2026-10-23T14:27:51.270038+00:00",
+      "crc32": "ac5af026",
+      "sha256": "1a63e0b1fb16878d62457729fbcb3650c2b43f7327f3c56f7b5bc75431356cea",
+      "size": 21707,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/run.json",
+      "source_mtime_ns": 1792765253000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/runtime/after/config-c78f8f7f9b24488a9d0d529a5ad28f0f.json",
+      "captured_utc": "2026-10-23T14:27:51.270840+00:00",
+      "crc32": "99379179",
+      "sha256": "1859ef01da445be2374aae9fbe477455171167a996239172980d86e4430d0878",
+      "size": 1478,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/runtime/after/config-c78f8f7f9b24488a9d0d529a5ad28f0f.json",
+      "source_mtime_ns": 1792765252000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/runtime/after/server.log",
+      "captured_utc": "2026-10-23T14:27:51.271426+00:00",
+      "crc32": "614a104c",
+      "sha256": "5497a66697b4fc7a27127662dc74a6c670832aa23127ea313e82094f5dc8887c",
+      "size": 62429,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/runtime/after/server.log",
+      "source_mtime_ns": 1792765252000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/runtime/after/state.json",
+      "captured_utc": "2026-10-23T14:27:51.272670+00:00",
+      "crc32": "3278800d",
+      "sha256": "c9bdf60c20219f36f5080b10e201eb0b310d0c795c02f7a88327e08ca3c819bb",
+      "size": 1236,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/runtime/after/state.json",
+      "source_mtime_ns": 1792765252000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/runtime/after/supervisor.log",
+      "captured_utc": "2026-10-23T14:27:51.273117+00:00",
+      "crc32": "28f06cb8",
+      "sha256": "a27899042a4537bf2486e28b0477222fcfaf16711e3cf18eff2c2df89fe9e47c",
+      "size": 1097,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/runtime/after/supervisor.log",
+      "source_mtime_ns": 1792765253000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/runtime/before/config-c78f8f7f9b24488a9d0d529a5ad28f0f.json",
+      "captured_utc": "2026-10-23T14:27:51.273556+00:00",
+      "crc32": "99379179",
+      "sha256": "1859ef01da445be2374aae9fbe477455171167a996239172980d86e4430d0878",
+      "size": 1478,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/runtime/before/config-c78f8f7f9b24488a9d0d529a5ad28f0f.json",
+      "source_mtime_ns": 1792763460000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/runtime/before/server.log",
+      "captured_utc": "2026-10-23T14:27:51.274021+00:00",
+      "crc32": "1509a784",
+      "sha256": "da01b47da20bad569138bb9fae8c446aa66de9b2a7c4af1add4b19c82bcb5d94",
+      "size": 13938,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/runtime/before/server.log",
+      "source_mtime_ns": 1792763460000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/runtime/before/state.json",
+      "captured_utc": "2026-10-23T14:27:51.274724+00:00",
+      "crc32": "3278800d",
+      "sha256": "c9bdf60c20219f36f5080b10e201eb0b310d0c795c02f7a88327e08ca3c819bb",
+      "size": 1236,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/runtime/before/state.json",
+      "source_mtime_ns": 1792763460000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/runtime/before/supervisor.log",
+      "captured_utc": "2026-10-23T14:27:51.275184+00:00",
+      "crc32": "28f06cb8",
+      "sha256": "a27899042a4537bf2486e28b0477222fcfaf16711e3cf18eff2c2df89fe9e47c",
+      "size": 1097,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/runtime/before/supervisor.log",
+      "source_mtime_ns": 1792763460000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/summary.md",
+      "captured_utc": "2026-10-23T14:27:51.277893+00:00",
+      "crc32": "6c55c61c",
+      "sha256": "741f1ebf4690804e58b7ed3ea4ae4fc5c4441aa7b389aa8b7026a11dcf8467db",
+      "size": 920,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/summary.md",
+      "source_mtime_ns": 1792765253000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/metrics-after-client.txt",
+      "captured_utc": "2026-10-23T14:27:51.278582+00:00",
+      "crc32": "e1a749fc",
+      "sha256": "e396c1f93085e765936f4d6ca3b5d1c5e473a8ef084981c1803149d74ae4070c",
+      "size": 81580,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/metrics-after-client.txt",
+      "source_mtime_ns": 1792765253000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/metrics-after-client.txt.identity.json",
+      "captured_utc": "2026-10-23T14:27:51.280042+00:00",
+      "crc32": "b01c5919",
+      "sha256": "42fd4c430aa3316a55c6c44a2c95a471cad1474fa79e2cccce8c9c8a0a4d1acb",
+      "size": 267,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/metrics-after-client.txt.identity.json",
+      "source_mtime_ns": 1792765253000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/metrics-before-client.txt",
+      "captured_utc": "2026-10-23T14:27:51.280764+00:00",
+      "crc32": "a31a4241",
+      "sha256": "2124a9083e5ea8479f2ef7e85ff6e549428a35125b8c092e521717a01a9f7d1a",
+      "size": 79036,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/metrics-before-client.txt",
+      "source_mtime_ns": 1792763460000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/metrics-before-client.txt.identity.json",
+      "captured_utc": "2026-10-23T14:27:51.282148+00:00",
+      "crc32": "5fcba97b",
+      "sha256": "c22160d3d5e4e43635f14f4866da63f06a7f765340aacd623ea89631ce58c4e3",
+      "size": 267,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/metrics-before-client.txt.identity.json",
+      "source_mtime_ns": 1792763460000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/run-final.json",
+      "captured_utc": "2026-10-23T14:27:51.282627+00:00",
+      "crc32": "eff5fbf2",
+      "sha256": "9d59aa75942ff7be996bb172f950e82c8007048fb928ed1a3e4bf87fdb2a0f2e",
+      "size": 3081,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/run-final.json",
+      "source_mtime_ns": 1792765265000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/run-start.json",
+      "captured_utc": "2026-10-23T14:27:51.283164+00:00",
+      "crc32": "bf119b95",
+      "sha256": "fcb479c447c437d7098bd74e1a602c9ed735b88fb0af06329b49bb238a82db82",
+      "size": 741,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/run-start.json",
+      "source_mtime_ns": 1792763335000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/runtime-after-stop/config-c78f8f7f9b24488a9d0d529a5ad28f0f.json",
+      "captured_utc": "2026-10-23T14:27:51.283655+00:00",
+      "crc32": "99379179",
+      "sha256": "1859ef01da445be2374aae9fbe477455171167a996239172980d86e4430d0878",
+      "size": 1478,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/runtime-after-stop/config-c78f8f7f9b24488a9d0d529a5ad28f0f.json",
+      "source_mtime_ns": 1792765265000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/runtime-after-stop/server.log",
+      "captured_utc": "2026-10-23T14:27:51.284310+00:00",
+      "crc32": "4626c205",
+      "sha256": "b565a53db7474f911937b2c17ec90ca02aeff4c57bb0a982b00a96572172355f",
+      "size": 63236,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/runtime-after-stop/server.log",
+      "source_mtime_ns": 1792765265000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/runtime-after-stop/state.json",
+      "captured_utc": "2026-10-23T14:27:51.285676+00:00",
+      "crc32": "411e493c",
+      "sha256": "5144f42920d57da812dd926aae84344b77dfb049bd1a1230b92a59ee02724281",
+      "size": 1350,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/runtime-after-stop/state.json",
+      "source_mtime_ns": 1792765265000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/runtime-after-stop/supervisor.log",
+      "captured_utc": "2026-10-23T14:27:51.286188+00:00",
+      "crc32": "7fd8facb",
+      "sha256": "c3b4fb26eba4e1af52159d323904a7554f2802684b93ed0efe6d5655f5cf34fa",
+      "size": 2332,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/runtime-after-stop/supervisor.log",
+      "source_mtime_ns": 1792765265000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/source-manifest.json",
+      "captured_utc": "2026-10-23T14:27:51.286692+00:00",
+      "crc32": "c9484795",
+      "sha256": "a565ddadf959a71ac8b0cdc2a1d9052cbb89e263ab59cf4a31571266ce764ac0",
+      "size": 1905,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/source-manifest.json",
+      "source_mtime_ns": 1792763335000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/stop.log",
+      "captured_utc": "2026-10-23T14:27:51.287192+00:00",
+      "crc32": "e5b9bdbf",
+      "sha256": "f876dd5029a62e13517e28fa6e32b074ea9cf830a09182054467451c7c866cb1",
+      "size": 67,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/stop.log",
+      "source_mtime_ns": 1792765264000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-controller.log",
+      "captured_utc": "2026-10-23T14:27:51.287540+00:00",
+      "crc32": "931721bb",
+      "sha256": "e656147339be30a72f73e1284425994f1b837c4c9f414a4b374c2f1b9d893240",
+      "size": 367,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-controller.log",
+      "source_mtime_ns": 1792765265000000000
+    },
+    {
+      "archive_path": "export-snapshots/after/kimi-vl-bw-vllm/state.json",
+      "captured_utc": "2026-10-23T14:27:51.288953+00:00",
+      "crc32": "5d8526dd",
+      "sha256": "0aee07c996659d81c15abbf61b314ff211bdbb76c639299d0d664df017123efe",
+      "size": 1374,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/runtime/state.json",
+      "source_mtime_ns": 1792765482000000000
+    }
+  ],
+  "finished_utc": "2026-10-23T14:27:52.990308+00:00",
+  "kimi_tools": "/root/private_data/guoxin-kimi-tools-005",
+  "limits": {
+    "max_selected_files": 10000,
+    "per_file_bytes": 52428800,
+    "total_uncompressed_bytes": 209715200
+  },
+  "missing_optional_roots": [
+    "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/tasks/trident-qwen3vl2b-bw-transformers",
+    "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/results"
+  ],
+  "model_venv_cache_trees_traversed": false,
+  "payload_uncompressed_bytes": 1911766,
+  "project": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1",
+  "schema": "hg-session005-evidence-export-v1",
+  "script_hashes_after": [
+    {
+      "archive_path": "external-script-hashes/000-export_session005_results_001.py",
+      "captured_utc": "2026-10-23T14:27:51.289278+00:00",
+      "crc32": "0db09f85",
+      "sha256": "fe9c797f4feae200ef04aa36b2020d3bf4df0c73da44274cbcef0a247fce6848",
+      "size": 21487,
+      "source": "/root/export_session005_results_001.py",
+      "source_mtime_ns": 1792761628700959493
+    },
+    {
+      "archive_path": "external-script-hashes/001-session005-recon-c1.install.py",
+      "captured_utc": "2026-10-23T14:27:51.289385+00:00",
+      "crc32": "161c971a",
+      "sha256": "2e26c7af652067c80e23f5aa2841bc9708b3c7c11ebc295b7fb0cc3fa968a312",
+      "size": 3086,
+      "source": "/root/session005-recon-c1.install.py",
+      "source_mtime_ns": 1792763226185660377
+    },
+    {
+      "archive_path": "external-script-hashes/002-env.sh",
+      "captured_utc": "2026-10-23T14:27:51.289695+00:00",
+      "crc32": "8edd978d",
+      "sha256": "390c12d84c18163245e1fb994099bea5205a3a287ca44b69fad5afacff46d8aa",
+      "size": 2779,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/tasks/recon2reason-bw-vllm/env.sh",
+      "source_mtime_ns": 1792763239000000000
+    },
+    {
+      "archive_path": "external-script-hashes/003-run.sh",
+      "captured_utc": "2026-10-23T14:27:51.290004+00:00",
+      "crc32": "cf3f61ad",
+      "sha256": "8ab5a4d53e6d317a67ab902ec3ca78332e1cb458d21765295be27f05b5f97a69",
+      "size": 231,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/tasks/recon2reason-bw-vllm/run.sh",
+      "source_mtime_ns": 1792763239000000000
+    },
+    {
+      "archive_path": "external-script-hashes/004-stop.sh",
+      "captured_utc": "2026-10-23T14:27:51.290274+00:00",
+      "crc32": "2237dbab",
+      "sha256": "d3e0b15a5bc42ca3d62a2215582ec61c47c1364f7b398898ab800a7396f4bc2c",
+      "size": 229,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/tasks/recon2reason-bw-vllm/stop.sh",
+      "source_mtime_ns": 1792763239000000000
+    },
+    {
+      "archive_path": "external-script-hashes/005-kimi_cpu_preflight_005.py",
+      "captured_utc": "2026-10-23T14:27:51.290407+00:00",
+      "crc32": "2c9798aa",
+      "sha256": "035ce1c6db966813a7a35c28c1005653e5fd77d2f75f53c822eae99a7ca2f387",
+      "size": 10729,
+      "source": "/root/kimi_cpu_preflight_005.py",
+      "source_mtime_ns": 1792764580092781292
+    },
+    {
+      "archive_path": "external-script-hashes/006-kimi_cpu_preflight_005_002.py",
+      "captured_utc": "2026-10-23T14:27:51.290692+00:00",
+      "crc32": "d0cea4e0",
+      "sha256": "7843e652be4d2d8bb22921db846f9e232cf28a735e65ec235da8031d0f2a676d",
+      "size": 10723,
+      "source": "/root/private_data/kimi_cpu_preflight_005_002.py",
+      "source_mtime_ns": 1792765204000000000
+    },
+    {
+      "archive_path": "external-script-hashes/007-kimi_cpu_preflight_005_003.py",
+      "captured_utc": "2026-10-23T14:27:51.290823+00:00",
+      "crc32": "63e3ca7c",
+      "sha256": "24f804a58f164b2ae2d83c89d7b221a768d1ca00012c4824be000292c79f6fe3",
+      "size": 11342,
+      "source": "/root/kimi_cpu_preflight_005_003.py",
+      "source_mtime_ns": 1792765553888537763
+    },
+    {
+      "archive_path": "external-script-hashes/008-session005-trident-http.install.py",
+      "captured_utc": "2026-10-23T14:27:51.290929+00:00",
+      "crc32": "230cdb61",
+      "sha256": "9c0493938745a6698eabf98d6a1d0d123638c9507042302ce600d90825796e28",
+      "size": 3125,
+      "source": "/root/session005-trident-http.install.py",
+      "source_mtime_ns": 1792761137975141086
+    },
+    {
+      "archive_path": "external-script-hashes/009-unpack_kimi_cpu_005_002.py",
+      "captured_utc": "2026-10-23T14:27:51.291037+00:00",
+      "crc32": "dc418c88",
+      "sha256": "229912a44f3966b89fe0c9d311deb611bee31c90cfb31def6e660d7db025d92d",
+      "size": 4097,
+      "source": "/root/unpack_kimi_cpu_005_002.py",
+      "source_mtime_ns": 1792761379372094500
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/configuration_kimi_vl.py",
+      "captured_utc": "2026-10-23T14:27:51.291375+00:00",
+      "crc32": "cdcaaf3c",
+      "sha256": "d30462b89993b9fef138db983d3884bbc39750effadf2efe67f404d28ee40e5b",
+      "size": 13151,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/configuration_kimi_vl.py",
+      "source_mtime_ns": 1792765206000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/image_processing_kimi_vl.py",
+      "captured_utc": "2026-10-23T14:27:51.291659+00:00",
+      "crc32": "ef58dea7",
+      "sha256": "bb58551e088f3bb0027b1886ca5ff42776c485acec1a9aafe91553ff76926870",
+      "size": 4680,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/image_processing_kimi_vl.py",
+      "source_mtime_ns": 1792765206000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/modeling_kimi_vl.py",
+      "captured_utc": "2026-10-23T14:27:51.292193+00:00",
+      "crc32": "9479bb54",
+      "sha256": "74e8f18afa5bf8f580ef5be5f15b51506f1e4f604df5a84f508a7796b8947c0b",
+      "size": 105649,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/modeling_kimi_vl.py",
+      "source_mtime_ns": 1792765206000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/processing_kimi_vl.py",
+      "captured_utc": "2026-10-23T14:27:51.292548+00:00",
+      "crc32": "d5bd7137",
+      "sha256": "f8e64816baed0a92d85d0a987b587028ad55a0779f3ace8c5b68db705dc61561",
+      "size": 7537,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/processing_kimi_vl.py",
+      "source_mtime_ns": 1792765206000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/tokenization_moonshot.py",
+      "captured_utc": "2026-10-23T14:27:51.292856+00:00",
+      "crc32": "ac330742",
+      "sha256": "0ae85e29c37689fefe41b8bfdb7aebd9a0152defedbf37fae0f8413000512029",
+      "size": 10958,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/tokenization_moonshot.py",
+      "source_mtime_ns": 1792765206000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/configuration_kimi_vl.py",
+      "captured_utc": "2026-10-23T14:27:51.293159+00:00",
+      "crc32": "cdcaaf3c",
+      "sha256": "d30462b89993b9fef138db983d3884bbc39750effadf2efe67f404d28ee40e5b",
+      "size": 13151,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/configuration_kimi_vl.py",
+      "source_mtime_ns": 1792765555000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/image_processing_kimi_vl.py",
+      "captured_utc": "2026-10-23T14:27:51.293440+00:00",
+      "crc32": "ef58dea7",
+      "sha256": "bb58551e088f3bb0027b1886ca5ff42776c485acec1a9aafe91553ff76926870",
+      "size": 4680,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/image_processing_kimi_vl.py",
+      "source_mtime_ns": 1792765555000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/modeling_kimi_vl.py",
+      "captured_utc": "2026-10-23T14:27:51.293962+00:00",
+      "crc32": "9479bb54",
+      "sha256": "74e8f18afa5bf8f580ef5be5f15b51506f1e4f604df5a84f508a7796b8947c0b",
+      "size": 105649,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/modeling_kimi_vl.py",
+      "source_mtime_ns": 1792765555000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/processing_kimi_vl.py",
+      "captured_utc": "2026-10-23T14:27:51.294267+00:00",
+      "crc32": "d5bd7137",
+      "sha256": "f8e64816baed0a92d85d0a987b587028ad55a0779f3ace8c5b68db705dc61561",
+      "size": 7537,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/processing_kimi_vl.py",
+      "source_mtime_ns": 1792765555000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/tokenization_moonshot.py",
+      "captured_utc": "2026-10-23T14:27:51.294568+00:00",
+      "crc32": "ac330742",
+      "sha256": "0ae85e29c37689fefe41b8bfdb7aebd9a0152defedbf37fae0f8413000512029",
+      "size": 10958,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/tokenization_moonshot.py",
+      "source_mtime_ns": 1792765555000000000
+    },
+    {
+      "archive_path": "kimi-tools/scripts-hashes/download_candidate_models_20261023.py",
+      "captured_utc": "2026-10-23T14:27:51.294846+00:00",
+      "crc32": "46176e88",
+      "sha256": "c7365bb68795679669cb41cb91768317bf7e93ad2c6447c1713ee17b91e646e0",
+      "size": 13592,
+      "source": "/root/private_data/guoxin-kimi-tools-005/scripts/download_candidate_models_20261023.py",
+      "source_mtime_ns": 1792761579000000000
+    },
+    {
+      "archive_path": "kimi-tools/scripts-hashes/download_kimi_vl_005.py",
+      "captured_utc": "2026-10-23T14:27:51.295107+00:00",
+      "crc32": "71831e13",
+      "sha256": "9042548641ef5fe4a47e5d8abaa15c5084583cf57ed8517d60048141cb30b149",
+      "size": 8582,
+      "source": "/root/private_data/guoxin-kimi-tools-005/scripts/download_kimi_vl_005.py",
+      "source_mtime_ns": 1792761579000000000
+    },
+    {
+      "archive_path": "kimi-tools/scripts-hashes/kimi_vl_runtime_005.py",
+      "captured_utc": "2026-10-23T14:27:51.295368+00:00",
+      "crc32": "c8dcbe8b",
+      "sha256": "9794c1e1ef918a5a07bebc20746768291df81f15103428a987f4398ff378ffc1",
+      "size": 9057,
+      "source": "/root/private_data/guoxin-kimi-tools-005/scripts/kimi_vl_runtime_005.py",
+      "source_mtime_ns": 1792761580000000000
+    },
+    {
+      "archive_path": "kimi-tools/scripts-hashes/recon2reason_runtime.py",
+      "captured_utc": "2026-10-23T14:27:51.295689+00:00",
+      "crc32": "669cac50",
+      "sha256": "0edc33da22c07a804c93047f918a4a39a58af90997390c49695d8b39a891d85b",
+      "size": 34890,
+      "source": "/root/private_data/guoxin-kimi-tools-005/scripts/recon2reason_runtime.py",
+      "source_mtime_ns": 1792761580000000000
+    },
+    {
+      "archive_path": "kimi-tools/scripts-hashes/recon2reason_smoke.py",
+      "captured_utc": "2026-10-23T14:27:51.295957+00:00",
+      "crc32": "27922cab",
+      "sha256": "21d2f90e7a1df414cb260f029a5e42a677cc06867e1222f537487b53b8a1fe2d",
+      "size": 10802,
+      "source": "/root/private_data/guoxin-kimi-tools-005/scripts/recon2reason_smoke.py",
+      "source_mtime_ns": 1792761580000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/bench.sh",
+      "captured_utc": "2026-10-23T14:27:51.296210+00:00",
+      "crc32": "b5246d4b",
+      "sha256": "743a164b1f139080e2eb2d5b9d2d5e8b520f7537b1c30bdf0e89ff3393d00198",
+      "size": 229,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/bench.sh",
+      "source_mtime_ns": 1792761580000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/env.sh",
+      "captured_utc": "2026-10-23T14:27:51.296466+00:00",
+      "crc32": "94c307e6",
+      "sha256": "cee4173ecc53bbed55ed93aa9d3e8fdb02e039b5cec14992ab38ff418b97ab62",
+      "size": 1920,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/env.sh",
+      "source_mtime_ns": 1792761580000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/env_check.sh",
+      "captured_utc": "2026-10-23T14:27:51.296728+00:00",
+      "crc32": "bc48e550",
+      "sha256": "f4559981600739e2257609592dd85cfbedbbe9f49481cb3224d3661dd48308f4",
+      "size": 227,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/env_check.sh",
+      "source_mtime_ns": 1792761580000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/pilot.sh",
+      "captured_utc": "2026-10-23T14:27:51.296994+00:00",
+      "crc32": "36e803c9",
+      "sha256": "250de21b161adebcad18663d8306bcf4f1c9343da8095448510ef09b0022dee1",
+      "size": 2525,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/pilot.sh",
+      "source_mtime_ns": 1792761581000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/preflight.sh",
+      "captured_utc": "2026-10-23T14:27:51.297240+00:00",
+      "crc32": "b306f31c",
+      "sha256": "cf0ae1368703477ebbc06595b27af4129c171e0067e04845d5df78ee50aecd67",
+      "size": 233,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/preflight.sh",
+      "source_mtime_ns": 1792761581000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/run.sh",
+      "captured_utc": "2026-10-23T14:27:51.297512+00:00",
+      "crc32": "fb20510e",
+      "sha256": "ef4c7659b7283c826f0c72366c019c46c5f9f095f780d38c846167e99db0b27b",
+      "size": 230,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/run.sh",
+      "source_mtime_ns": 1792761581000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/smoke.sh",
+      "captured_utc": "2026-10-23T14:27:51.297790+00:00",
+      "crc32": "d1749266",
+      "sha256": "726fa28ba495944cc5b103db22b39a166e79a1d50695c726adcca2632ee8f2cb",
+      "size": 589,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/smoke.sh",
+      "source_mtime_ns": 1792761581000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/stop.sh",
+      "captured_utc": "2026-10-23T14:27:51.298040+00:00",
+      "crc32": "7aed3bef",
+      "sha256": "c4e5497f12fbe5c5702f2f2c41128f98cdd909f5eeafe6c0ab976f3606ddf666",
+      "size": 228,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/stop.sh",
+      "source_mtime_ns": 1792761581000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/verify.py",
+      "captured_utc": "2026-10-23T14:27:51.298285+00:00",
+      "crc32": "4716f943",
+      "sha256": "2fb282d62b9e48da50b7723f437af1e94c80d884390deea61284c90f433df608",
+      "size": 245,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/verify.py",
+      "source_mtime_ns": 1792761581000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/verify.sh",
+      "captured_utc": "2026-10-23T14:27:51.298532+00:00",
+      "crc32": "e967ad9a",
+      "sha256": "ac174130cf5a5c269a2ab15e76421497a84891c441599665c65746cd7eb4fc1d",
+      "size": 230,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/verify.sh",
+      "source_mtime_ns": 1792761581000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/sources/t02_sglang_bench.py",
+      "captured_utc": "2026-10-23T14:27:51.298876+00:00",
+      "crc32": "c6abb6e3",
+      "sha256": "ff8eef852e19f336e99884cc031353627ca304c6a7534c22375116758a850000",
+      "size": 22546,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/sources/t02_sglang_bench.py",
+      "source_mtime_ns": 1792763460000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/sources/upstream-sglang/__init__.py",
+      "captured_utc": "2026-10-23T14:27:51.299202+00:00",
+      "crc32": "d2a83fd4",
+      "sha256": "ffda05a78218ed47a7fad82a86c8a1068ac6549cb0ddecf9959fe8752034b9c8",
+      "size": 2820,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/sources/upstream-sglang/__init__.py",
+      "source_mtime_ns": 1792763460000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/sources/upstream-sglang/bench_serving.py",
+      "captured_utc": "2026-10-23T14:27:51.299745+00:00",
+      "crc32": "264d8316",
+      "sha256": "129e40b9e361be192306a9df56df41507f0397d5768696db3a9b994421daa259",
+      "size": 90674,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/sources/upstream-sglang/bench_serving.py",
+      "source_mtime_ns": 1792763460000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/sources/upstream-sglang/benchmark/datasets/common.py",
+      "captured_utc": "2026-10-23T14:27:51.300081+00:00",
+      "crc32": "d40bfac5",
+      "sha256": "5f00c71b31cfcc3e446eed7ce0774650c2b684f46f80cc091e995d8504900b08",
+      "size": 3150,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/sources/upstream-sglang/benchmark/datasets/common.py",
+      "source_mtime_ns": 1792763460000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/sources/upstream-sglang/benchmark/datasets/image.py",
+      "captured_utc": "2026-10-23T14:27:51.300442+00:00",
+      "crc32": "58bb366e",
+      "sha256": "8a9a1c8cd9f1818b76b06c01aedf7283de999a84baf115f00c46caf52ed3003c",
+      "size": 10610,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/sources/upstream-sglang/benchmark/datasets/image.py",
+      "source_mtime_ns": 1792763460000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/sources/upstream-sglang/benchmark/utils.py",
+      "captured_utc": "2026-10-23T14:27:51.300850+00:00",
+      "crc32": "52932f8e",
+      "sha256": "437c615343bb4d2d006e62278fbe579022618c71d5c6f5e33581e768a9aaf2c0",
+      "size": 4935,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/sources/upstream-sglang/benchmark/utils.py",
+      "source_mtime_ns": 1792763460000000000
+    },
+    {
+      "archive_path": "project/scripts-hashes/recon2reason_runtime.py",
+      "captured_utc": "2026-10-23T14:27:51.301179+00:00",
+      "crc32": "669cac50",
+      "sha256": "0edc33da22c07a804c93047f918a4a39a58af90997390c49695d8b39a891d85b",
+      "size": 34890,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/scripts/recon2reason_runtime.py",
+      "source_mtime_ns": 1792763239000000000
+    },
+    {
+      "archive_path": "project/scripts-hashes/session005_recon_c1.py",
+      "captured_utc": "2026-10-23T14:27:51.301446+00:00",
+      "crc32": "b7491db1",
+      "sha256": "43fd29e52c008f16c5e0e24dd9c7db07e2c730b33b92b1802feb0854c6280d3c",
+      "size": 10182,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/scripts/session005_recon_c1.py",
+      "source_mtime_ns": 1792763239000000000
+    },
+    {
+      "archive_path": "project/scripts-hashes/t02_sglang_bench.py",
+      "captured_utc": "2026-10-23T14:27:51.301751+00:00",
+      "crc32": "c6abb6e3",
+      "sha256": "ff8eef852e19f336e99884cc031353627ca304c6a7534c22375116758a850000",
+      "size": 22546,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/scripts/t02_sglang_bench.py",
+      "source_mtime_ns": 1792763239000000000
+    }
+  ],
+  "script_hashes_before": [
+    {
+      "archive_path": "external-script-hashes/000-export_session005_results_001.py",
+      "captured_utc": "2026-10-23T14:27:50.973014+00:00",
+      "crc32": "0db09f85",
+      "sha256": "fe9c797f4feae200ef04aa36b2020d3bf4df0c73da44274cbcef0a247fce6848",
+      "size": 21487,
+      "source": "/root/export_session005_results_001.py",
+      "source_mtime_ns": 1792761628700959493
+    },
+    {
+      "archive_path": "external-script-hashes/001-session005-recon-c1.install.py",
+      "captured_utc": "2026-10-23T14:27:50.973128+00:00",
+      "crc32": "161c971a",
+      "sha256": "2e26c7af652067c80e23f5aa2841bc9708b3c7c11ebc295b7fb0cc3fa968a312",
+      "size": 3086,
+      "source": "/root/session005-recon-c1.install.py",
+      "source_mtime_ns": 1792763226185660377
+    },
+    {
+      "archive_path": "external-script-hashes/002-env.sh",
+      "captured_utc": "2026-10-23T14:27:50.973409+00:00",
+      "crc32": "8edd978d",
+      "sha256": "390c12d84c18163245e1fb994099bea5205a3a287ca44b69fad5afacff46d8aa",
+      "size": 2779,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/tasks/recon2reason-bw-vllm/env.sh",
+      "source_mtime_ns": 1792763239000000000
+    },
+    {
+      "archive_path": "external-script-hashes/003-run.sh",
+      "captured_utc": "2026-10-23T14:27:50.973671+00:00",
+      "crc32": "cf3f61ad",
+      "sha256": "8ab5a4d53e6d317a67ab902ec3ca78332e1cb458d21765295be27f05b5f97a69",
+      "size": 231,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/tasks/recon2reason-bw-vllm/run.sh",
+      "source_mtime_ns": 1792763239000000000
+    },
+    {
+      "archive_path": "external-script-hashes/004-stop.sh",
+      "captured_utc": "2026-10-23T14:27:50.973948+00:00",
+      "crc32": "2237dbab",
+      "sha256": "d3e0b15a5bc42ca3d62a2215582ec61c47c1364f7b398898ab800a7396f4bc2c",
+      "size": 229,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/tasks/recon2reason-bw-vllm/stop.sh",
+      "source_mtime_ns": 1792763239000000000
+    },
+    {
+      "archive_path": "external-script-hashes/005-kimi_cpu_preflight_005.py",
+      "captured_utc": "2026-10-23T14:27:50.974077+00:00",
+      "crc32": "2c9798aa",
+      "sha256": "035ce1c6db966813a7a35c28c1005653e5fd77d2f75f53c822eae99a7ca2f387",
+      "size": 10729,
+      "source": "/root/kimi_cpu_preflight_005.py",
+      "source_mtime_ns": 1792764580092781292
+    },
+    {
+      "archive_path": "external-script-hashes/006-kimi_cpu_preflight_005_002.py",
+      "captured_utc": "2026-10-23T14:27:50.974347+00:00",
+      "crc32": "d0cea4e0",
+      "sha256": "7843e652be4d2d8bb22921db846f9e232cf28a735e65ec235da8031d0f2a676d",
+      "size": 10723,
+      "source": "/root/private_data/kimi_cpu_preflight_005_002.py",
+      "source_mtime_ns": 1792765204000000000
+    },
+    {
+      "archive_path": "external-script-hashes/007-kimi_cpu_preflight_005_003.py",
+      "captured_utc": "2026-10-23T14:27:50.974476+00:00",
+      "crc32": "63e3ca7c",
+      "sha256": "24f804a58f164b2ae2d83c89d7b221a768d1ca00012c4824be000292c79f6fe3",
+      "size": 11342,
+      "source": "/root/kimi_cpu_preflight_005_003.py",
+      "source_mtime_ns": 1792765553888537763
+    },
+    {
+      "archive_path": "external-script-hashes/008-session005-trident-http.install.py",
+      "captured_utc": "2026-10-23T14:27:50.974579+00:00",
+      "crc32": "230cdb61",
+      "sha256": "9c0493938745a6698eabf98d6a1d0d123638c9507042302ce600d90825796e28",
+      "size": 3125,
+      "source": "/root/session005-trident-http.install.py",
+      "source_mtime_ns": 1792761137975141086
+    },
+    {
+      "archive_path": "external-script-hashes/009-unpack_kimi_cpu_005_002.py",
+      "captured_utc": "2026-10-23T14:27:50.974687+00:00",
+      "crc32": "dc418c88",
+      "sha256": "229912a44f3966b89fe0c9d311deb611bee31c90cfb31def6e660d7db025d92d",
+      "size": 4097,
+      "source": "/root/unpack_kimi_cpu_005_002.py",
+      "source_mtime_ns": 1792761379372094500
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/configuration_kimi_vl.py",
+      "captured_utc": "2026-10-23T14:27:50.982344+00:00",
+      "crc32": "cdcaaf3c",
+      "sha256": "d30462b89993b9fef138db983d3884bbc39750effadf2efe67f404d28ee40e5b",
+      "size": 13151,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/configuration_kimi_vl.py",
+      "source_mtime_ns": 1792765206000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/image_processing_kimi_vl.py",
+      "captured_utc": "2026-10-23T14:27:50.983211+00:00",
+      "crc32": "ef58dea7",
+      "sha256": "bb58551e088f3bb0027b1886ca5ff42776c485acec1a9aafe91553ff76926870",
+      "size": 4680,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/image_processing_kimi_vl.py",
+      "source_mtime_ns": 1792765206000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/modeling_kimi_vl.py",
+      "captured_utc": "2026-10-23T14:27:50.992354+00:00",
+      "crc32": "9479bb54",
+      "sha256": "74e8f18afa5bf8f580ef5be5f15b51506f1e4f604df5a84f508a7796b8947c0b",
+      "size": 105649,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/modeling_kimi_vl.py",
+      "source_mtime_ns": 1792765206000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/processing_kimi_vl.py",
+      "captured_utc": "2026-10-23T14:27:50.993342+00:00",
+      "crc32": "d5bd7137",
+      "sha256": "f8e64816baed0a92d85d0a987b587028ad55a0779f3ace8c5b68db705dc61561",
+      "size": 7537,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/processing_kimi_vl.py",
+      "source_mtime_ns": 1792765206000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/tokenization_moonshot.py",
+      "captured_utc": "2026-10-23T14:27:50.993749+00:00",
+      "crc32": "ac330742",
+      "sha256": "0ae85e29c37689fefe41b8bfdb7aebd9a0152defedbf37fae0f8413000512029",
+      "size": 10958,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-002/checkpoint-config-only/tokenization_moonshot.py",
+      "source_mtime_ns": 1792765206000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/configuration_kimi_vl.py",
+      "captured_utc": "2026-10-23T14:27:50.996954+00:00",
+      "crc32": "cdcaaf3c",
+      "sha256": "d30462b89993b9fef138db983d3884bbc39750effadf2efe67f404d28ee40e5b",
+      "size": 13151,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/configuration_kimi_vl.py",
+      "source_mtime_ns": 1792765555000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/image_processing_kimi_vl.py",
+      "captured_utc": "2026-10-23T14:27:50.997808+00:00",
+      "crc32": "ef58dea7",
+      "sha256": "bb58551e088f3bb0027b1886ca5ff42776c485acec1a9aafe91553ff76926870",
+      "size": 4680,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/image_processing_kimi_vl.py",
+      "source_mtime_ns": 1792765555000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/modeling_kimi_vl.py",
+      "captured_utc": "2026-10-23T14:27:51.006967+00:00",
+      "crc32": "9479bb54",
+      "sha256": "74e8f18afa5bf8f580ef5be5f15b51506f1e4f604df5a84f508a7796b8947c0b",
+      "size": 105649,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/modeling_kimi_vl.py",
+      "source_mtime_ns": 1792765555000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/processing_kimi_vl.py",
+      "captured_utc": "2026-10-23T14:27:51.007980+00:00",
+      "crc32": "d5bd7137",
+      "sha256": "f8e64816baed0a92d85d0a987b587028ad55a0779f3ace8c5b68db705dc61561",
+      "size": 7537,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/processing_kimi_vl.py",
+      "source_mtime_ns": 1792765555000000000
+    },
+    {
+      "archive_path": "kimi-tools/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/tokenization_moonshot.py",
+      "captured_utc": "2026-10-23T14:27:51.212844+00:00",
+      "crc32": "ac330742",
+      "sha256": "0ae85e29c37689fefe41b8bfdb7aebd9a0152defedbf37fae0f8413000512029",
+      "size": 10958,
+      "source": "/root/private_data/guoxin-kimi-tools-005/evidence/session005/kimi-cpu-preflight-003/checkpoint-config-only/tokenization_moonshot.py",
+      "source_mtime_ns": 1792765555000000000
+    },
+    {
+      "archive_path": "kimi-tools/scripts-hashes/download_candidate_models_20261023.py",
+      "captured_utc": "2026-10-23T14:27:51.221131+00:00",
+      "crc32": "46176e88",
+      "sha256": "c7365bb68795679669cb41cb91768317bf7e93ad2c6447c1713ee17b91e646e0",
+      "size": 13592,
+      "source": "/root/private_data/guoxin-kimi-tools-005/scripts/download_candidate_models_20261023.py",
+      "source_mtime_ns": 1792761579000000000
+    },
+    {
+      "archive_path": "kimi-tools/scripts-hashes/download_kimi_vl_005.py",
+      "captured_utc": "2026-10-23T14:27:51.221400+00:00",
+      "crc32": "71831e13",
+      "sha256": "9042548641ef5fe4a47e5d8abaa15c5084583cf57ed8517d60048141cb30b149",
+      "size": 8582,
+      "source": "/root/private_data/guoxin-kimi-tools-005/scripts/download_kimi_vl_005.py",
+      "source_mtime_ns": 1792761579000000000
+    },
+    {
+      "archive_path": "kimi-tools/scripts-hashes/kimi_vl_runtime_005.py",
+      "captured_utc": "2026-10-23T14:27:51.221671+00:00",
+      "crc32": "c8dcbe8b",
+      "sha256": "9794c1e1ef918a5a07bebc20746768291df81f15103428a987f4398ff378ffc1",
+      "size": 9057,
+      "source": "/root/private_data/guoxin-kimi-tools-005/scripts/kimi_vl_runtime_005.py",
+      "source_mtime_ns": 1792761580000000000
+    },
+    {
+      "archive_path": "kimi-tools/scripts-hashes/recon2reason_runtime.py",
+      "captured_utc": "2026-10-23T14:27:51.222001+00:00",
+      "crc32": "669cac50",
+      "sha256": "0edc33da22c07a804c93047f918a4a39a58af90997390c49695d8b39a891d85b",
+      "size": 34890,
+      "source": "/root/private_data/guoxin-kimi-tools-005/scripts/recon2reason_runtime.py",
+      "source_mtime_ns": 1792761580000000000
+    },
+    {
+      "archive_path": "kimi-tools/scripts-hashes/recon2reason_smoke.py",
+      "captured_utc": "2026-10-23T14:27:51.222272+00:00",
+      "crc32": "27922cab",
+      "sha256": "21d2f90e7a1df414cb260f029a5e42a677cc06867e1222f537487b53b8a1fe2d",
+      "size": 10802,
+      "source": "/root/private_data/guoxin-kimi-tools-005/scripts/recon2reason_smoke.py",
+      "source_mtime_ns": 1792761580000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/bench.sh",
+      "captured_utc": "2026-10-23T14:27:51.222547+00:00",
+      "crc32": "b5246d4b",
+      "sha256": "743a164b1f139080e2eb2d5b9d2d5e8b520f7537b1c30bdf0e89ff3393d00198",
+      "size": 229,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/bench.sh",
+      "source_mtime_ns": 1792761580000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/env.sh",
+      "captured_utc": "2026-10-23T14:27:51.223641+00:00",
+      "crc32": "94c307e6",
+      "sha256": "cee4173ecc53bbed55ed93aa9d3e8fdb02e039b5cec14992ab38ff418b97ab62",
+      "size": 1920,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/env.sh",
+      "source_mtime_ns": 1792761580000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/env_check.sh",
+      "captured_utc": "2026-10-23T14:27:51.223904+00:00",
+      "crc32": "bc48e550",
+      "sha256": "f4559981600739e2257609592dd85cfbedbbe9f49481cb3224d3661dd48308f4",
+      "size": 227,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/env_check.sh",
+      "source_mtime_ns": 1792761580000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/pilot.sh",
+      "captured_utc": "2026-10-23T14:27:51.245800+00:00",
+      "crc32": "36e803c9",
+      "sha256": "250de21b161adebcad18663d8306bcf4f1c9343da8095448510ef09b0022dee1",
+      "size": 2525,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/pilot.sh",
+      "source_mtime_ns": 1792761581000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/preflight.sh",
+      "captured_utc": "2026-10-23T14:27:51.246065+00:00",
+      "crc32": "b306f31c",
+      "sha256": "cf0ae1368703477ebbc06595b27af4129c171e0067e04845d5df78ee50aecd67",
+      "size": 233,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/preflight.sh",
+      "source_mtime_ns": 1792761581000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/run.sh",
+      "captured_utc": "2026-10-23T14:27:51.246329+00:00",
+      "crc32": "fb20510e",
+      "sha256": "ef4c7659b7283c826f0c72366c019c46c5f9f095f780d38c846167e99db0b27b",
+      "size": 230,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/run.sh",
+      "source_mtime_ns": 1792761581000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/smoke.sh",
+      "captured_utc": "2026-10-23T14:27:51.255934+00:00",
+      "crc32": "d1749266",
+      "sha256": "726fa28ba495944cc5b103db22b39a166e79a1d50695c726adcca2632ee8f2cb",
+      "size": 589,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/smoke.sh",
+      "source_mtime_ns": 1792761581000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/stop.sh",
+      "captured_utc": "2026-10-23T14:27:51.256651+00:00",
+      "crc32": "7aed3bef",
+      "sha256": "c4e5497f12fbe5c5702f2f2c41128f98cdd909f5eeafe6c0ab976f3606ddf666",
+      "size": 228,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/stop.sh",
+      "source_mtime_ns": 1792761581000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/verify.py",
+      "captured_utc": "2026-10-23T14:27:51.257779+00:00",
+      "crc32": "4716f943",
+      "sha256": "2fb282d62b9e48da50b7723f437af1e94c80d884390deea61284c90f433df608",
+      "size": 245,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/verify.py",
+      "source_mtime_ns": 1792761581000000000
+    },
+    {
+      "archive_path": "kimi-tools/tasks/kimi-vl-bw-vllm/verify.sh",
+      "captured_utc": "2026-10-23T14:27:51.258035+00:00",
+      "crc32": "e967ad9a",
+      "sha256": "ac174130cf5a5c269a2ab15e76421497a84891c441599665c65746cd7eb4fc1d",
+      "size": 230,
+      "source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/verify.sh",
+      "source_mtime_ns": 1792761581000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/sources/t02_sglang_bench.py",
+      "captured_utc": "2026-10-23T14:27:51.275650+00:00",
+      "crc32": "c6abb6e3",
+      "sha256": "ff8eef852e19f336e99884cc031353627ca304c6a7534c22375116758a850000",
+      "size": 22546,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/sources/t02_sglang_bench.py",
+      "source_mtime_ns": 1792763460000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/sources/upstream-sglang/__init__.py",
+      "captured_utc": "2026-10-23T14:27:51.275957+00:00",
+      "crc32": "d2a83fd4",
+      "sha256": "ffda05a78218ed47a7fad82a86c8a1068ac6549cb0ddecf9959fe8752034b9c8",
+      "size": 2820,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/sources/upstream-sglang/__init__.py",
+      "source_mtime_ns": 1792763460000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/sources/upstream-sglang/bench_serving.py",
+      "captured_utc": "2026-10-23T14:27:51.276512+00:00",
+      "crc32": "264d8316",
+      "sha256": "129e40b9e361be192306a9df56df41507f0397d5768696db3a9b994421daa259",
+      "size": 90674,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/sources/upstream-sglang/bench_serving.py",
+      "source_mtime_ns": 1792763460000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/sources/upstream-sglang/benchmark/datasets/common.py",
+      "captured_utc": "2026-10-23T14:27:51.276909+00:00",
+      "crc32": "d40bfac5",
+      "sha256": "5f00c71b31cfcc3e446eed7ce0774650c2b684f46f80cc091e995d8504900b08",
+      "size": 3150,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/sources/upstream-sglang/benchmark/datasets/common.py",
+      "source_mtime_ns": 1792763460000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/sources/upstream-sglang/benchmark/datasets/image.py",
+      "captured_utc": "2026-10-23T14:27:51.277262+00:00",
+      "crc32": "58bb366e",
+      "sha256": "8a9a1c8cd9f1818b76b06c01aedf7283de999a84baf115f00c46caf52ed3003c",
+      "size": 10610,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/sources/upstream-sglang/benchmark/datasets/image.py",
+      "source_mtime_ns": 1792763460000000000
+    },
+    {
+      "archive_path": "project/evidence/session005/recon-c1-001/matrix/sources/upstream-sglang/benchmark/utils.py",
+      "captured_utc": "2026-10-23T14:27:51.277594+00:00",
+      "crc32": "52932f8e",
+      "sha256": "437c615343bb4d2d006e62278fbe579022618c71d5c6f5e33581e768a9aaf2c0",
+      "size": 4935,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/evidence/session005/recon-c1-001/matrix/sources/upstream-sglang/benchmark/utils.py",
+      "source_mtime_ns": 1792763460000000000
+    },
+    {
+      "archive_path": "project/scripts-hashes/recon2reason_runtime.py",
+      "captured_utc": "2026-10-23T14:27:51.287989+00:00",
+      "crc32": "669cac50",
+      "sha256": "0edc33da22c07a804c93047f918a4a39a58af90997390c49695d8b39a891d85b",
+      "size": 34890,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/scripts/recon2reason_runtime.py",
+      "source_mtime_ns": 1792763239000000000
+    },
+    {
+      "archive_path": "project/scripts-hashes/session005_recon_c1.py",
+      "captured_utc": "2026-10-23T14:27:51.288265+00:00",
+      "crc32": "b7491db1",
+      "sha256": "43fd29e52c008f16c5e0e24dd9c7db07e2c730b33b92b1802feb0854c6280d3c",
+      "size": 10182,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/scripts/session005_recon_c1.py",
+      "source_mtime_ns": 1792763239000000000
+    },
+    {
+      "archive_path": "project/scripts-hashes/t02_sglang_bench.py",
+      "captured_utc": "2026-10-23T14:27:51.288593+00:00",
+      "crc32": "c6abb6e3",
+      "sha256": "ff8eef852e19f336e99884cc031353627ca304c6a7534c22375116758a850000",
+      "size": 22546,
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-recon-c1/scripts/t02_sglang_bench.py",
+      "source_mtime_ns": 1792763239000000000
+    }
+  ],
+  "script_hashes_unchanged": true,
+  "source_hashes_are_not_proof_of_execution": true,
+  "started_utc": "2026-10-23T14:27:48.665271+00:00",
+  "state_snapshots": [
+    {
+      "actual_plain_source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/runtime/state.json",
+      "archive_path": "export-snapshots/before/kimi-vl-bw-vllm/state.json",
+      "captured_utc": "2026-10-23T14:27:50.971364+00:00",
+      "phase": "before",
+      "sha256": "0aee07c996659d81c15abbf61b314ff211bdbb76c639299d0d664df017123efe",
+      "source_alias": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/runtime/state.json",
+      "state": "captured",
+      "task": "kimi-vl-bw-vllm"
+    },
+    {
+      "actual_plain_source": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/runtime/state.json",
+      "archive_path": "export-snapshots/after/kimi-vl-bw-vllm/state.json",
+      "captured_utc": "2026-10-23T14:27:51.288953+00:00",
+      "phase": "after",
+      "sha256": "0aee07c996659d81c15abbf61b314ff211bdbb76c639299d0d664df017123efe",
+      "source_alias": "/root/private_data/guoxin-kimi-tools-005/tasks/kimi-vl-bw-vllm/runtime/state.json",
+      "state": "captured",
+      "task": "kimi-vl-bw-vllm"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "utc": "2026-10-23T13:35:30.224805+00:00",
+  "scope": "Session005 intermediate001 authenticated capture; no final/retry002 evidence incorporated",
+  "archive_sha256": "7d071b6bda8863d60461d3f4de5cf23bdea3df041bfa41cae471e4bba85c7bfb",
+  "manifest": {
+    "path": "evidence/session005/remote-intermediate-001/export-manifest.json",
+    "bytes": 41281,
+    "sha256": "f9d9d94de4374fe2150437195f57e48f6dc323b24165e0d2db1b6d02d5902b25"
+  },
+  "local_integrity_verification": "evidence/session005/remote-intermediate-001.local-verification.json",
+  "Trident_attempt001": {
+    "run_id": "40f92c092d064ce8839ea9987bc4c704b",
+    "run_id_hex_length": 33,
+    "started_utc": "2026-10-23T13:19:39.441739+00:00",
+    "ended_utc": "2026-10-23T13:19:44.360343+00:00",
+    "controller_wall_seconds": 4.987841910216957,
+    "launch_wall_seconds": 4.675268379971385,
+    "controller_exit_code": 2,
+    "launch_exit_code": 2,
+    "timed_out": false,
+    "launch_error": "--run-id must contain exactly32 lowercase hexadecimal characters",
+    "failure_class": "invalid_33hex_run_id_rejected_by_real_supervisor_before_model_server_start",
+    "model_server_started": false,
+    "model_GPU_load_started": false,
+    "HTTP_inference_executed": false,
+    "GPU_kernel_failure_supported_by_evidence": false,
+    "cleanup_verified": true,
+    "cleanup_scope": "No state; no signal attempted. A created config without state leaves launch cleanup unverified.",
+    "stop_called": false,
+    "owned_state_existed": false,
+    "owned_config_existed": false,
+    "native_metadata_before_after_equal": true,
+    "actual_source_seals_match_original_frozen001": [
+      {
+        "actual_source": "/root/private_data/guoxin-hackathon-20261023-session005/scripts/session005_trident_http.py",
+        "frozen001_member": "scripts/session005_trident_http.py",
+        "sha256": "be677ad823eb0bedfcaceacaab6b715bb8093e01258010f85dc67e1916c95494",
+        "before_after_seal_matches_frozen001": true,
+        "source_payload_reconstructed": false
+      },
+      {
+        "actual_source": "/root/private_data/guoxin-hackathon-20261023-session005/scripts/trident_embedding_runtime_004.py",
+        "frozen001_member": "scripts/trident_embedding_runtime_004.py",
+        "sha256": "9abdefdc19abb7bee53b17e2f7ff6fffb0d5e6ec8289db86cd6969a148787ed1",
+        "before_after_seal_matches_frozen001": true,
+        "source_payload_reconstructed": false
+      },
+      {
+        "actual_source": "/root/private_data/guoxin-hackathon-20261023-session005/scripts/recon2reason_runtime.py",
+        "frozen001_member": "scripts/recon2reason_runtime.py",
+        "sha256": "0edc33da22c07a804c93047f918a4a39a58af90997390c49695d8b39a891d85b",
+        "before_after_seal_matches_frozen001": true,
+        "source_payload_reconstructed": false
+      }
+    ],
+    "raw_artifacts": {
+      "run-start.json": {
+        "path": "evidence/session005/remote-intermediate-001/project/evidence/session005/trident-http-001/run-start.json",
+        "bytes": 888,
+        "sha256": "eaff9a82a0e1563d49b7bdc0e2f74350775cec8f155100412831295a4819c622"
+      },
+      "run-final.json": {
+        "path": "evidence/session005/remote-intermediate-001/project/evidence/session005/trident-http-001/run-final.json",
+        "bytes": 1220,
+        "sha256": "5cd20c50d2cee124593751c0494dda8678899696c6b5fcbb81de2582e24bdeeb"
+      },
+      "launch.log": {
+        "path": "evidence/session005/remote-intermediate-001/project/evidence/session005/trident-http-001/launch.log",
+        "bytes": 105,
+        "sha256": "9db7e6cbfa555f8d86e32bc7b11ef1c2538e22c4f88249c6e9403f278b624586"
+      },
+      "cleanup.json": {
+        "path": "evidence/session005/remote-intermediate-001/project/evidence/session005/trident-http-001/cleanup.json",
+        "bytes": 324,
+        "sha256": "d2058dbd5c2425e4dcb7ae0646cc09fb92aff2eb06d3b9589ef75dcf7125bad0"
+      },
+      "native-before.json": {
+        "path": "evidence/session005/remote-intermediate-001/project/evidence/session005/trident-http-001/native-before.json",
+        "bytes": 1844,
+        "sha256": "bb92319ac949068cb3c1bd48c106f4ae0eaf6cffb04d8e21ba1c38b78a4fde73"
+      },
+      "native-after.json": {
+        "path": "evidence/session005/remote-intermediate-001/project/evidence/session005/trident-http-001/native-after.json",
+        "bytes": 1844,
+        "sha256": "bb92319ac949068cb3c1bd48c106f4ae0eaf6cffb04d8e21ba1c38b78a4fde73"
+      }
+    }
+  },
+  "Kimi_at_capture": {
+    "status_scope": "download in progress per root observation; snapshot itself shows6 verified small runtime files and a held download lock, no completed full-checkpoint or model-serving result",
+    "download_log": {
+      "path": "evidence/session005/remote-intermediate-001/extra/000-kimi-download-005.log",
+      "bytes": 1247,
+      "sha256": "fd061df4fe48af5df5e82c45aee1cb1bdddefe8a575ffe5180085e5b617bf568"
+    },
+    "download_lock": {
+      "path": "evidence/session005/remote-intermediate-001/candidate-download-reports/download.lock",
+      "bytes": 58,
+      "sha256": "88da05d2b9f347bb890fd890a2e0df1aad0e63b5bcea040ff80a0ea806abca6e"
+    },
+    "verified_file_events": [
+      {
+        "path": "README.md",
+        "size": 14619,
+        "sha256": "7fa4d4e39537a43a7d6cc6f62873eb014b2f8bc3da2142111ba2ad29d4984794",
+        "status": "downloaded_verified"
+      },
+      {
+        "path": "chat_template.jinja",
+        "size": 1032,
+        "sha256": "172c7450a66b9b3644538888ffa24d02047e535e9d1f911564460203fbf7e8e8",
+        "status": "downloaded_verified"
+      },
+      {
+        "path": "config.json",
+        "size": 2005,
+        "sha256": "af3810295de6b08232776b74110ed482fa0183f4aeaec586ff4f7593910951cb",
+        "status": "downloaded_verified"
+      },
+      {
+        "path": "configuration_kimi_vl.py",
+        "size": 13151,
+        "sha256": "d30462b89993b9fef138db983d3884bbc39750effadf2efe67f404d28ee40e5b",
+        "status": "downloaded_verified"
+      },
+      {
+        "path": "generation_config.json",
+        "size": 149,
+        "sha256": "da26dd1916774784790db2b83336bad62d0917356743478ba6eb0c425c53eac5",
+        "status": "downloaded_verified"
+      },
+      {
+        "path": "image_processing_kimi_vl.py",
+        "size": 4680,
+        "sha256": "bb58551e088f3bb0027b1886ca5ff42776c485acec1a9aafe91553ff76926870",
+        "status": "downloaded_verified"
+      }
+    ],
+    "verified_file_event_count": 6,
+    "verified_weight_event_count": 0,
+    "downloaded_weight_bytes_total": null,
+    "full_checkpoint_verification_completed": false,
+    "model_GPU_run_verified": false,
+    "task_runtime_state_captured": false,
+    "pilot_result_present": false,
+    "absence_scope": "not present in selected intermediate001 snapshot; not a claim about later execution"
+  },
+  "source_hash_only": {
+    "stable_before_after_count": 31,
+    "payloads_reconstructed": false,
+    "hashes_alone_prove_execution": false
+  },
+  "runtime_link_mapping_before_after_equal": true,
+  "platform_shutdown_or_final_fee_proven": false,
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "submitted": false,
+  "retry002_status": "not assessed here; await its separate final ZIP"
+}

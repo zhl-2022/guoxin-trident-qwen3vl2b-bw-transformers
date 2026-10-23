@@ -1,0 +1,316 @@
+{
+  "schema_version": 1,
+  "utc": "2026-10-23T13:52:08.122889+00:00",
+  "archive_sha256": "1865af152496f46dc7ff9d26004b6cde16fdd53a070d3d2dcb355e5923fea912",
+  "archive_bytes": 121608,
+  "export_manifest_sha256": "d1d63542eb0bc5489763bb0c7a34b57532a927bd630bbb8afba42fd43bbf1179",
+  "project": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002",
+  "run_id": "1b62c9a782bf40ec923a16edc132e8ad",
+  "all_payloads_rechecked_against_authenticated_manifest": true,
+  "payload_files": 40,
+  "ZIP_entries": 41,
+  "script_seals_before_after_count": 33,
+  "actual_project_source_seals_match_frozen_bundle": [
+    {
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/scripts/recon2reason_runtime.py",
+      "sha256": "0edc33da22c07a804c93047f918a4a39a58af90997390c49695d8b39a891d85b",
+      "size": 34890
+    },
+    {
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/scripts/session005_trident_http_retry002.py",
+      "sha256": "3089e429e4f73591bf6f4852a7e714f6d851a1634dc71e1d2cd843b1923e3065",
+      "size": 13955
+    },
+    {
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/scripts/task_expansion_candidates_20261023.py",
+      "sha256": "8c7ec3978d59e2d8cf69e09fc647b6f2cb5fb1fa7685ee11cdf4e77048dc3bde",
+      "size": 25749
+    },
+    {
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/scripts/trident_embedding_runtime_004.py",
+      "sha256": "9abdefdc19abb7bee53b17e2f7ff6fffb0d5e6ec8289db86cd6969a148787ed1",
+      "size": 6465
+    },
+    {
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/scripts/trident_embedding_smoke_004.py",
+      "sha256": "91f68403a82dc543e44f019cc83e9d28fb35e2c62f87b80ac68959c0d529c3f8",
+      "size": 8457
+    },
+    {
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/scripts/trident_vllm_pooling_probe_20261023.py",
+      "sha256": "2b4030517bd55056595b4caa34506c5f8573d6c3149b81aa81c507a10061ede7",
+      "size": 19452
+    },
+    {
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/tasks/trident-qwen3vl2b-bw-transformers/bench.sh",
+      "sha256": "c9fb1f3f483f8116ccdf010d7c47403d6e0ee092a330279f4acdc35c85444eab",
+      "size": 239
+    },
+    {
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/tasks/trident-qwen3vl2b-bw-transformers/env.sh",
+      "sha256": "a7c5f3d559b416124fb1619f1d42ff7244263e7a6977d08eb01dd02f3324c969",
+      "size": 767
+    },
+    {
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/tasks/trident-qwen3vl2b-bw-transformers/env_check.sh",
+      "sha256": "0833c3feffc0fa5d47fe2495177c848cf5b3461cf41679a7d7543d5d6e35db99",
+      "size": 258
+    },
+    {
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/tasks/trident-qwen3vl2b-bw-transformers/run.sh",
+      "sha256": "0892c2b4d3d278dcefd2e8beae0b8bcf582763eca2d3c394e955b839a0f935a2",
+      "size": 240
+    },
+    {
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/tasks/trident-qwen3vl2b-bw-transformers/smoke.sh",
+      "sha256": "954cbaace02e027ba8f0fea86d2d9dea32a87db1f998441416183af0ce8b3775",
+      "size": 358
+    },
+    {
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/tasks/trident-qwen3vl2b-bw-transformers/stop.sh",
+      "sha256": "7641c15501277d4692a1649fb7c3fd7501892cb9401fe939a2714b37a5061303",
+      "size": 238
+    },
+    {
+      "source": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002/tasks/trident-qwen3vl2b-bw-transformers/verify.sh",
+      "sha256": "9375e588db99388fcf78bc4ff04f3ca73bbac05bd64949bf05f151fe8dc7cdf4",
+      "size": 240
+    }
+  ],
+  "helper_source_seal": {
+    "source": "/root/session005_trident_guarded_cleanup_001.py",
+    "sha256": "8c2dffd12dc089a3b418e6aaef2d67abf1f2df9a50506901ea2b70e9132b58a1",
+    "matches_reviewed_local_alias": true
+  },
+  "source_payloads_reconstructed": false,
+  "source_hash_only_does_not_alone_prove_execution": true,
+  "functional_HTTP_locally_audited_passed": true,
+  "responses": [
+    {
+      "case": "query_text",
+      "raw_response_bytes": 43969,
+      "raw_response_sha256": "0ed7e3b22be7a71a6ef75448ab570de5be028ee1d06c16e03f23fc41b93eb403",
+      "dimension": 2048,
+      "l2_norm": 1.0000000189035905,
+      "usage": {
+        "prompt_tokens": 24,
+        "total_tokens": 24,
+        "completion_tokens": 0,
+        "prompt_tokens_details": null
+      }
+    },
+    {
+      "case": "doc_text",
+      "raw_response_bytes": 44141,
+      "raw_response_sha256": "4ca8e6d1e1eb43eb8d790c3ac8d0e9b0a8b59c20eb2865b3e12d98628647ef21",
+      "dimension": 2048,
+      "l2_norm": 1.000000021152195,
+      "usage": {
+        "prompt_tokens": 23,
+        "total_tokens": 23,
+        "completion_tokens": 0,
+        "prompt_tokens_details": null
+      }
+    },
+    {
+      "case": "doc_negative",
+      "raw_response_bytes": 44166,
+      "raw_response_sha256": "e42103da5ce14e511a0a8789e7ce4c1016f5ad1d879fdda8d41b9c5b238e6a44",
+      "dimension": 2048,
+      "l2_norm": 1.0000000515515661,
+      "usage": {
+        "prompt_tokens": 23,
+        "total_tokens": 23,
+        "completion_tokens": 0,
+        "prompt_tokens_details": null
+      }
+    },
+    {
+      "case": "doc_image",
+      "raw_response_bytes": 44194,
+      "raw_response_sha256": "2d6c8207ba39a620a207cc4e5251c6e27d4b3248fd340564cae27c32fed37872",
+      "dimension": 2048,
+      "l2_norm": 1.0000000284190451,
+      "usage": {
+        "prompt_tokens": 278,
+        "total_tokens": 278,
+        "completion_tokens": 0,
+        "prompt_tokens_details": null
+      }
+    },
+    {
+      "case": "doc_fused",
+      "raw_response_bytes": 44104,
+      "raw_response_sha256": "e80f69464bc6df780bf23d46cb94877d595b7be64a4631a456f061fb3ade18d4",
+      "dimension": 2048,
+      "l2_norm": 1.0000000200295913,
+      "usage": {
+        "prompt_tokens": 281,
+        "total_tokens": 281,
+        "completion_tokens": 0,
+        "prompt_tokens_details": null
+      }
+    }
+  ],
+  "server_log_HTTP200_embedding_POSTs": 5,
+  "source_image_sha256": "89f0eb20b4873ef0d4ee436b96120d9e564bed9b64832f70ccef9843d7005e46",
+  "prepared_images": [
+    {
+      "case": "doc_image",
+      "size": 3186,
+      "sha256": "09a9e518aa1372c0b13ef15fa90883daba320e3c22b32587ff27f42022a6174c"
+    },
+    {
+      "case": "doc_fused",
+      "size": 3186,
+      "sha256": "09a9e518aa1372c0b13ef15fa90883daba320e3c22b32587ff27f42022a6174c"
+    }
+  ],
+  "cosine_dot_scores": [
+    0.8738650784711599,
+    0.7526463319888547,
+    0.7866230580349913,
+    0.791010637101589
+  ],
+  "score_recomputation_abs_differences": [
+    9.992007221626409e-16,
+    0.0,
+    4.440892098500626e-16,
+    4.440892098500626e-16
+  ],
+  "score_recomputation_tolerance": 1e-12,
+  "score_recomputation_boundary": "Python versions may use different summation algorithms; ranking and vector element equality are checked separately",
+  "ranked_document_indices": [
+    0,
+    3,
+    2,
+    1
+  ],
+  "rank_matches_offline_development_reference": true,
+  "max_abs_vector_difference_from_offline_development_reference": 0.0,
+  "reference_worker_result_sha256": "7de46591cf782cbb50ac6d670f822868f766097b44854d568a2b13f83eec3044",
+  "reference_is_publisher_TF_or_official_baseline": false,
+  "actual_HTTP_prompt_token_ids_captured": false,
+  "native_metadata_before_after_equal": true,
+  "native_packages": {
+    "torch": {
+      "version": "2.10.0+das.opt1.dtk2604.20260325.g6b060a",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "1ff8f9902a18a1d281da47bfa9b330da299e1ec30a4065fb70155fd1cf44f6aa"
+    },
+    "torchvision": {
+      "version": "0.25.0+das.opt1.dtk2604.torch2100.20260325.g860505",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "8a2c56baa18ee01d92f325bbff46e3fc205c38d136c13426db615ffd0a762209"
+    },
+    "vllm": {
+      "version": "0.18.1+das.fa71803.dtk2604",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "ec95e9ad078cd5dcc71a11f9d914f4f09fdf16f1f1588673d44f1009570d4618"
+    },
+    "vllm-hcu": {
+      "version": "0.18.1+das.dtk2604",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "7c77a094e805cef0f8650e6b21b53bf12fddbcdee4ec3d867fea86416d7749a6"
+    },
+    "transformers": {
+      "version": "5.5.0",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "b051d07991d6d7019a5eb5bf06fe364a61f75bf675de369c698061dbf613cdae"
+    },
+    "qwen-vl-utils": {
+      "version": "0.0.14",
+      "root": "/root/private_data/guoxin-candidates/envs/trident-001/lib/python3.10/site-packages",
+      "metadata_sha256": "c2b08fb2a7704facf04d47f1af11fd4443eb8cfe15fd1d65acf035b0fdeb9a21"
+    },
+    "Pillow": {
+      "version": "12.1.1",
+      "root": "/usr/local/lib/python3.10/dist-packages",
+      "metadata_sha256": "17ff1f2d2adbc1ee618e97f149a81caaf4c3293d5a687227b6289199e70f2d17"
+    }
+  },
+  "runtime_full_checkpoint_hash_gate_in_sealed_source_precedes_successful_launch": true,
+  "standalone_per_file_session005_checkpoint_hash_result_captured": false,
+  "controller": {
+    "started_utc": "2026-10-23T13:28:25.228793+00:00",
+    "ended_utc": "2026-10-23T13:31:06.236911+00:00",
+    "wall_seconds": 161.28149762004614,
+    "launch_wall_seconds": 126.89444461092353,
+    "smoke_wall_seconds": 32.612301100976765,
+    "exit_code": 2,
+    "original_cleanup_verified": false,
+    "original_stop_exit_code": 2
+  },
+  "independent_guarded_cleanup": {
+    "locally_audited_passed": true,
+    "helper_sha256": "8c2dffd12dc089a3b418e6aaef2d67abf1f2df9a50506901ea2b70e9132b58a1",
+    "started_utc": "2026-10-23T13:46:48.952932+00:00",
+    "supervisor_pid": 281,
+    "supervisor_token": "278950610",
+    "server_pid": 282,
+    "server_token": "278950641",
+    "both_owned_processes_observed_gone": true,
+    "port_30119_observed_closed": true,
+    "state_ended_utc": "2026-10-23T13:46:57.300601+00:00",
+    "state_status": "stopped",
+    "state_reason": "stop requested"
+  },
+  "evidence": [
+    {
+      "path": "evidence/session005/remote-trident-http-final-001/project/evidence/session005/trident-http-retry002/run-final.json",
+      "size": 2117,
+      "sha256": "e2115bb3d56f059bac35d37d5fcbd81e5f7bf828d26db2e207fe08372beab011"
+    },
+    {
+      "path": "evidence/session005/remote-trident-http-final-001/project/evidence/session005/trident-http-retry002/smoke.jsonl",
+      "size": 234081,
+      "sha256": "ddbaadac71266f96c75b02ab28b099f78241682c2f9a8b3709a54bd5600103e8"
+    },
+    {
+      "path": "evidence/session005/remote-trident-http-final-001/project/evidence/session005/trident-http-retry002/embedding-comparison.json",
+      "size": 889,
+      "sha256": "5eaf9586116ed1d2e0147134895fa1ec0e700976a8bac97a9805df9836596bf7"
+    },
+    {
+      "path": "evidence/session005/remote-trident-http-final-001/project/evidence/session005/trident-http-retry002/cleanup.json",
+      "size": 2770,
+      "sha256": "e6109d7cfed2f63b9a206d545eb9768adcf033d1241d247114198a086558894a"
+    },
+    {
+      "path": "evidence/session005/remote-trident-http-final-001/project/evidence/session005/trident-http-retry002/native-before.json",
+      "size": 1844,
+      "sha256": "bb92319ac949068cb3c1bd48c106f4ae0eaf6cffb04d8e21ba1c38b78a4fde73"
+    },
+    {
+      "path": "evidence/session005/remote-trident-http-final-001/project/evidence/session005/trident-http-retry002/native-after.json",
+      "size": 1844,
+      "sha256": "bb92319ac949068cb3c1bd48c106f4ae0eaf6cffb04d8e21ba1c38b78a4fde73"
+    },
+    {
+      "path": "evidence/session005/remote-trident-http-final-001/project/evidence/session005/trident-http-runtime-001/server.log",
+      "size": 15707,
+      "sha256": "d71e515dfe4641e043c101562af3e00e60b124d4e63b373b1fd6088b68bf394a"
+    },
+    {
+      "path": "evidence/session005/remote-trident-http-final-001/project/evidence/session005/trident-http-runtime-001/state.json",
+      "size": 1807,
+      "sha256": "ca07477314550ebe1b0fb42d737f628fa6006d31f3d00023352b30df52c3f0c9"
+    },
+    {
+      "path": "evidence/session005/remote-trident-http-final-001/project/evidence/session005/trident-guarded-cleanup-executed-001.json",
+      "size": 4887,
+      "sha256": "58c9a0aa1a3b28fde9cf90a2c1bc48b0e7468255e5f552ee54d4251b8e1b5e11"
+    }
+  ],
+  "limits": [
+    "Fixed five synthetic development requests, no official qrels or precision threshold",
+    "No publisher Transformers vector comparison or formal embedding benchmark",
+    "Native package METADATA identities are preserved; this is not a full binary tree attestation",
+    "Live non-atomic capture. Individual reads fail on mutation. Before/after state and stable actual source hashes are separate evidence, not success/acceptance."
+  ],
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "official_embedding_evaluator_bridge_implemented": false,
+  "submission_ready": false,
+  "contest_submission_performed": false
+}

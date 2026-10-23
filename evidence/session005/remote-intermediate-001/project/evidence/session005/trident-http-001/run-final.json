@@ -1,0 +1,35 @@
+{
+  "started_utc": "2026-10-23T13:19:39.441739+00:00",
+  "run_id": "40f92c092d064ce8839ea9987bc4c704b",
+  "steps": [
+    {
+      "argv": [
+        "/root/private_data/guoxin-candidates/envs/trident-001/bin/python",
+        "/root/private_data/guoxin-hackathon-20261023-session005/scripts/trident_embedding_runtime_004.py",
+        "launch",
+        "--task-dir",
+        "/root/private_data/guoxin-hackathon-20261023-session005/tasks/trident-qwen3vl2b-bw-transformers",
+        "--run-id",
+        "40f92c092d064ce8839ea9987bc4c704b"
+      ],
+      "exit_code": 2,
+      "timed_out": false,
+      "child_reaped": true,
+      "wall_seconds": 4.675268379971385,
+      "log_sha256": "9db7e6cbfa555f8d86e32bc7b11ef1c2538e22c4f88249c6e9403f278b624586"
+    }
+  ],
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "official_embedding_evaluator_bridge_implemented": false,
+  "submission_ready": false,
+  "error": {
+    "type": "ValueError",
+    "message": "Bounded launch/checkpoint preflight failed; see launch.log"
+  },
+  "cleanup_verified": true,
+  "native_metadata_unchanged": true,
+  "ended_utc": "2026-10-23T13:19:44.360343+00:00",
+  "wall_seconds": 4.987841910216957,
+  "exit_code": 2
+}

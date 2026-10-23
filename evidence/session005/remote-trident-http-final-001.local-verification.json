@@ -1,0 +1,267 @@
+{
+  "schema_version": 1,
+  "utc": "2026-10-23T13:49:41.714190+00:00",
+  "archive": "E:\\hg20261019\\dist\\hg-session005-trident-http-final-001.zip",
+  "archive_bytes": 121608,
+  "archive_sha256": "1865af152496f46dc7ff9d26004b6cde16fdd53a070d3d2dcb355e5923fea912",
+  "manifest_sha256": "d1d63542eb0bc5489763bb0c7a34b57532a927bd630bbb8afba42fd43bbf1179",
+  "schema": "hg-session005-evidence-export-v1",
+  "project": "/root/private_data/guoxin-hackathon-20261023-session005-trident-retry002",
+  "kimi_tools": "/root/private_data/guoxin-kimi-tools-005",
+  "destination": "E:\\hg20261019\\evidence\\session005\\remote-trident-http-final-001",
+  "ZIP_entries": 41,
+  "payload_files": 40,
+  "all_paths_sizes_SHA_CRC_and_readback_verified": true,
+  "payload_identities": [
+    {
+      "path": "export-snapshots/before/trident-qwen3vl2b-bw-transformers/state.json",
+      "size": 1807,
+      "sha256": "ca07477314550ebe1b0fb42d737f628fa6006d31f3d00023352b30df52c3f0c9",
+      "crc32": "c3386813"
+    },
+    {
+      "path": "candidate-download-reports/download.lock",
+      "size": 58,
+      "sha256": "88da05d2b9f347bb890fd890a2e0df1aad0e63b5bcea040ff80a0ea806abca6e",
+      "crc32": "0882b8dd"
+    },
+    {
+      "path": "extra/000-kimi-download-005.log",
+      "size": 2155,
+      "sha256": "2e65cf62e8047b7e5c18b0792d9c55e15ec421bd46fccc5bcbc0b4bf108b88ac",
+      "crc32": "af050a33"
+    },
+    {
+      "path": "kimi-tools/kimi-upload-manifest-005.json",
+      "size": 11369,
+      "sha256": "f7e77ae4a475b3d1aad9bab3aedb60136902f21db9f88e5302ad0d3e7d8891f3",
+      "crc32": "9f83094a"
+    },
+    {
+      "path": "kimi-tools/tasks/kimi-vl-bw-vllm/download-sources.json",
+      "size": 24955,
+      "sha256": "f8e06c48281584c608e3106222cb9dbb1be68e2ddeed3bd16d0edfbb69cc61ad",
+      "crc32": "d8d4157b"
+    },
+    {
+      "path": "kimi-tools/tasks/kimi-vl-bw-vllm/model-lock.json",
+      "size": 5786,
+      "sha256": "82c20d751fcffa171359c55480dd2ad140bccc470d647335e219f54824f5e918",
+      "crc32": "9be036a8"
+    },
+    {
+      "path": "kimi-tools/tasks/kimi-vl-bw-vllm/source-review-approved.json",
+      "size": 1634,
+      "sha256": "714eda86ce7928a27c07c587acff19596002e4f238975229d7a00bb6ddda9433",
+      "crc32": "307f5e43"
+    },
+    {
+      "path": "kimi-tools/tasks/kimi-vl-bw-vllm/task.json",
+      "size": 1762,
+      "sha256": "8626c70a91a57a92454a4180b6b601bbb615978727512128b5dcd62a2e5a1fde",
+      "crc32": "23a293f0"
+    },
+    {
+      "path": "kimi-tools/tasks/kimi-vl-bw-vllm/upstream-lock.json",
+      "size": 3881,
+      "sha256": "5e743cda25cb2e4c87f748eead2bfdfaacd3bf2ea847e359a6b02d3c8bae478e",
+      "crc32": "5385d831"
+    },
+    {
+      "path": "kimi-tools/unpack-ready-005.json",
+      "size": 523,
+      "sha256": "9d39da1dbd0e6f19a5015974ecd741fda0e5b9acd44dbaf8bcc52443ab638d45",
+      "crc32": "8dd01f46"
+    },
+    {
+      "path": "project/evidence/session005/trident-controller.log",
+      "size": 384,
+      "sha256": "c51f436ed785737dd1d0c931af0e07326109f6e45d43652d544ce6a96a68ae6d",
+      "crc32": "872a7984"
+    },
+    {
+      "path": "project/evidence/session005/trident-guarded-cleanup-executed-001.json",
+      "size": 4887,
+      "sha256": "58c9a0aa1a3b28fde9cf90a2c1bc48b0e7468255e5f552ee54d4251b8e1b5e11",
+      "crc32": "20fd9669"
+    },
+    {
+      "path": "project/evidence/session005/trident-guarded-cleanup-plan-001.json",
+      "size": 2845,
+      "sha256": "0a8ae35cb7e85889ba12096e3c238a0f9500933c23846bf1cf8c1acbf9df67d0",
+      "crc32": "6b79c387"
+    },
+    {
+      "path": "project/evidence/session005/trident-http-preflight-retry002/native-before.json",
+      "size": 1844,
+      "sha256": "bb92319ac949068cb3c1bd48c106f4ae0eaf6cffb04d8e21ba1c38b78a4fde73",
+      "crc32": "ccc1db4a"
+    },
+    {
+      "path": "project/evidence/session005/trident-http-preflight-retry002/preflight-result.json",
+      "size": 348,
+      "sha256": "7e6b2173e672cd85ebe7c3a5cb471d70cddf2b5403a7169697defffb9b5af7bd",
+      "crc32": "0a85dcc8"
+    },
+    {
+      "path": "project/evidence/session005/trident-http-preflight-retry002/run-start.json",
+      "size": 921,
+      "sha256": "a693fd6fa8d532e0a2c6e53485ae2be1ae96573db3c9510d64b51c408592f158",
+      "crc32": "53598b37"
+    },
+    {
+      "path": "project/evidence/session005/trident-http-retry002/cleanup.json",
+      "size": 2770,
+      "sha256": "e6109d7cfed2f63b9a206d545eb9768adcf033d1241d247114198a086558894a",
+      "crc32": "0d7c66af"
+    },
+    {
+      "path": "project/evidence/session005/trident-http-retry002/embedding-comparison.json",
+      "size": 889,
+      "sha256": "5eaf9586116ed1d2e0147134895fa1ec0e700976a8bac97a9805df9836596bf7",
+      "crc32": "2313d150"
+    },
+    {
+      "path": "project/evidence/session005/trident-http-retry002/launch.log",
+      "size": 1763,
+      "sha256": "160e73bc5585eb9b6d5858d1c4303d92e01d800608d5db6bf4fb9c7581d7715b",
+      "crc32": "e1db9c98"
+    },
+    {
+      "path": "project/evidence/session005/trident-http-retry002/native-after.json",
+      "size": 1844,
+      "sha256": "bb92319ac949068cb3c1bd48c106f4ae0eaf6cffb04d8e21ba1c38b78a4fde73",
+      "crc32": "ccc1db4a"
+    },
+    {
+      "path": "project/evidence/session005/trident-http-retry002/native-before.json",
+      "size": 1844,
+      "sha256": "bb92319ac949068cb3c1bd48c106f4ae0eaf6cffb04d8e21ba1c38b78a4fde73",
+      "crc32": "ccc1db4a"
+    },
+    {
+      "path": "project/evidence/session005/trident-http-retry002/run-final.json",
+      "size": 2117,
+      "sha256": "e2115bb3d56f059bac35d37d5fcbd81e5f7bf828d26db2e207fe08372beab011",
+      "crc32": "5865564c"
+    },
+    {
+      "path": "project/evidence/session005/trident-http-retry002/run-start.json",
+      "size": 921,
+      "sha256": "144c333d3f9ec0714f6d834a579873e9cb09a3ae8099022d947aa86b619bbffb",
+      "crc32": "03645c0c"
+    },
+    {
+      "path": "project/evidence/session005/trident-http-retry002/smoke-client.log",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "crc32": "00000000"
+    },
+    {
+      "path": "project/evidence/session005/trident-http-retry002/smoke.jsonl",
+      "size": 234081,
+      "sha256": "ddbaadac71266f96c75b02ab28b099f78241682c2f9a8b3709a54bd5600103e8",
+      "crc32": "05a2e33e"
+    },
+    {
+      "path": "project/evidence/session005/trident-http-retry002/stop.log",
+      "size": 88,
+      "sha256": "3c71c1ed6b253a9dd975502fab7c7b47762cdc77b23380249330572d4f0ca0f6",
+      "crc32": "d764eb49"
+    },
+    {
+      "path": "project/evidence/session005/trident-http-runtime-001/config-1b62c9a782bf40ec923a16edc132e8ad.json",
+      "size": 1923,
+      "sha256": "120431b6c4e752fe3d91fc92e6f63a5b05ac1b0f60a58653e84cad6077b3f61e",
+      "crc32": "46eeb207"
+    },
+    {
+      "path": "project/evidence/session005/trident-http-runtime-001/control.lock",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "crc32": "00000000"
+    },
+    {
+      "path": "project/evidence/session005/trident-http-runtime-001/server.log",
+      "size": 15707,
+      "sha256": "d71e515dfe4641e043c101562af3e00e60b124d4e63b373b1fd6088b68bf394a",
+      "crc32": "52fb2a5b"
+    },
+    {
+      "path": "project/evidence/session005/trident-http-runtime-001/service.lock",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "crc32": "00000000"
+    },
+    {
+      "path": "project/evidence/session005/trident-http-runtime-001/state.json",
+      "size": 1807,
+      "sha256": "ca07477314550ebe1b0fb42d737f628fa6006d31f3d00023352b30df52c3f0c9",
+      "crc32": "c3386813"
+    },
+    {
+      "path": "project/evidence/session005/trident-http-runtime-001/supervisor.log",
+      "size": 3112,
+      "sha256": "6d785540374109f9a24cb7be4ff27129e71d3965203abbc8464057b72acf5222",
+      "crc32": "501e94ad"
+    },
+    {
+      "path": "project/session005-trident-http-manifest.json",
+      "size": 5081,
+      "sha256": "6c888030447e5f1f81c13308628ac45d52fdc59a0b5db00e837641855aeb69a7",
+      "crc32": "99c42280"
+    },
+    {
+      "path": "project/tasks/trident-qwen3vl2b-bw-transformers/model-lock.json",
+      "size": 2009,
+      "sha256": "9655dc89230e6d0f3e82c8061342142ab29455d396a5645ac195f53ddca46aba",
+      "crc32": "ded74e24"
+    },
+    {
+      "path": "project/tasks/trident-qwen3vl2b-bw-transformers/requests.example.json",
+      "size": 311,
+      "sha256": "af2c1ce0cde3f09c59a661052c65c4ca9190756b51db02ddfb4b0fc94675f430",
+      "crc32": "07cc613b"
+    },
+    {
+      "path": "project/tasks/trident-qwen3vl2b-bw-transformers/runtime.json",
+      "size": 5381,
+      "sha256": "590455db23ea05be05fe6f5d1f6b52f1619e594b1529917b63acce904a420d24",
+      "crc32": "7bf45a08"
+    },
+    {
+      "path": "project/tasks/trident-qwen3vl2b-bw-transformers/service-profile.json",
+      "size": 1541,
+      "sha256": "9bf47acecce23af624e69ba58177fb29c11fdd0014fa90fa5300af818c2f384b",
+      "crc32": "995e8c1a"
+    },
+    {
+      "path": "project/tasks/trident-qwen3vl2b-bw-transformers/task.json",
+      "size": 5917,
+      "sha256": "139778f1efec127194c2c49f0b81b864784786e54c347c32f6c7c16b22cdf289",
+      "crc32": "63ec28bf"
+    },
+    {
+      "path": "project/tasks/trident-qwen3vl2b-bw-transformers/upstream-lock.json",
+      "size": 12341,
+      "sha256": "3207be7c1b7d38b62f214c783d711899ea6569cb1d68feb4baad716aee670003",
+      "crc32": "845da378"
+    },
+    {
+      "path": "export-snapshots/after/trident-qwen3vl2b-bw-transformers/state.json",
+      "size": 1807,
+      "sha256": "ca07477314550ebe1b0fb42d737f628fa6006d31f3d00023352b30df52c3f0c9",
+      "crc32": "c3386813"
+    }
+  ],
+  "source_hash_only_identities_before_after_match": true,
+  "source_hash_count": 33,
+  "source_payloads_reconstructed": false,
+  "symlink_aliases_recreated": false,
+  "runtime_mappings_preserved_as_metadata": true,
+  "capture_semantics": "Live non-atomic capture. Individual reads fail on mutation. Before/after state and stable actual source hashes are separate evidence, not success/acceptance.",
+  "evaluation_status": "not_assessed_by_local_integrity_verifier",
+  "official_accuracy_verified": false,
+  "official_performance_verified": false,
+  "contest_submission_performed": false
+}
