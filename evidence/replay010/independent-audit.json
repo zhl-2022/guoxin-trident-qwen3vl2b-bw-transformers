@@ -1,0 +1,19 @@
+{
+  "UTC": "2026-10-26T20:47:14.411857+00:00",
+  "passed": true,
+  "files_verified_against_result_archive": 28,
+  "queries": 1250,
+  "documents": 1509,
+  "raw_http_embeddings_checked": 2759,
+  "all_rankings_recomputed": true,
+  "ndcg10_percent": 69.85892360489554,
+  "publisher_baseline_percent": 70.19,
+  "threshold_percent": 68.19,
+  "numeric_comparison_pass": true,
+  "max_vector_norm_error": 1.1920928955078125e-07,
+  "performance_requests_checked": 96,
+  "service_stopped": true,
+  "archive_sha256": "799827793d8887a8c5732dad58783d002c8d4e4ade7f95e8b8f93c3fb00a9a55",
+  "official_acceptance": false,
+  "submitted": false
+}

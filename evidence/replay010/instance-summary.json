@@ -1,0 +1,82 @@
+{
+  "started_utc": "2026-10-26T20:09:34.937352+00:00",
+  "hostname": "crdnotebook-2114808632296972290-ac3p4mowhz-24051",
+  "source_image_id": "2114587646006431746",
+  "source_sha256": "aaa617c4e2e8810ab69ad153bfe11123f6bebd0fac3c2eb0751ecc26ab11fae2",
+  "models": {
+    "asr": {
+      "run_id": "3c9dc9b919ef4d71a0021f4c29cdc1ab",
+      "phases": {
+        "environment": 0,
+        "selfcheck": 0,
+        "launch": 0,
+        "smoke": 0,
+        "stream": 0,
+        "full_evaluation": 0,
+        "benchmark": 0,
+        "stop": 0
+      },
+      "archive_sha256": "99ee93e0768198ddfcf39958e471da385274a8304ce7d75351f69ba038c52076",
+      "repository_manifest_verified": 1075,
+      "full_evaluation_exit": 0,
+      "service_stopped": true,
+      "accuracy_result": {
+        "sample_count": 2620,
+        "completed": 2620,
+        "failed_ids": [],
+        "complete": true,
+        "micro_word_error_rate_percent": 1.6387877873536123,
+        "edit_counts": {
+          "substitutions": 656,
+          "deletions": 144,
+          "insertions": 69,
+          "reference_words": 53027
+        },
+        "publisher_baseline_percent": 1.63,
+        "relative_degradation_allowance": 0.02,
+        "limit_percent": 1.6625999999999999,
+        "numeric_comparison_pass": true,
+        "normalization": "OpenAI Whisper EnglishTextNormalizer, exact vendored source hashes in execution manifest",
+        "publisher_normalization_implementation_published": false,
+        "official_acceptance": false,
+        "dataset_scope": "complete LibriSpeech test-clean (2620 utterances)",
+        "publisher_source": "https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md",
+        "evaluation_wall_seconds": 790.9817192447372,
+        "inference_audio_seconds": 19452.480625000026,
+        "submission_ready": false
+      },
+      "ended_utc": "2026-10-26T20:25:40.889785+00:00"
+    },
+    "trident": {
+      "run_id": "0570f2e01eff435fa1e4768a6d997fd5",
+      "phases": {
+        "environment": 0,
+        "selfcheck": 0,
+        "launch": 0,
+        "smoke": 0,
+        "full_evaluation": 0,
+        "stop": 0
+      },
+      "archive_sha256": "c2baa3ca66c590dba2bd0f6da29af63abcf83c7a92b50e5e2f0128cedabba422",
+      "repository_manifest_verified": 1147,
+      "full_evaluation_exit": 0,
+      "service_stopped": true,
+      "accuracy_result": {
+        "complete": true,
+        "queries": 1250,
+        "documents": 1509,
+        "ndcg10_percent": 69.85892360489542,
+        "publisher_baseline_percent": 70.19,
+        "absolute_tolerance_percentage_points": 2,
+        "numeric_comparison_pass": true,
+        "wall_seconds": 205.79768013115972,
+        "official_acceptance": false,
+        "submission_ready": false,
+        "scope": "complete Origin image corpus and all queries; no Mix claim"
+      },
+      "ended_utc": "2026-10-26T20:31:47.540796+00:00"
+    }
+  },
+  "submitted": false,
+  "ended_utc": "2026-10-26T20:31:55.923907+00:00"
+}

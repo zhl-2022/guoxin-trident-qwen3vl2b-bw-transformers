@@ -1,0 +1,19 @@
+{
+  "outer_bytes": 47408003,
+  "outer_sha256": "01709ab829dd4e29c1aada8286e9b89aaeeb10f294ccf4c7678e8f494d9023b5",
+  "zip_crc_pass": true,
+  "results": [
+    {
+      "model": "asr",
+      "file": "session010-delivery-replay-asr.zip",
+      "bytes": 974839,
+      "sha256": "3022ed69ff7d99c638cdc4f3d0eff36f8b2ba29b3f61e74fc29384b6200dfce6"
+    },
+    {
+      "model": "trident",
+      "file": "session010-delivery-replay-trident.zip",
+      "bytes": 46519096,
+      "sha256": "799827793d8887a8c5732dad58783d002c8d4e4ade7f95e8b8f93c3fb00a9a55"
+    }
+  ]
+}

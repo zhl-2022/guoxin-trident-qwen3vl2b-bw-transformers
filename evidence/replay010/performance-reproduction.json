@@ -1,0 +1,19 @@
+{
+  "within_20_percent": true,
+  "comparisons": [
+    {
+      "concurrency": 1,
+      "primary_round": 2,
+      "previous": 12.911729728316672,
+      "replay": 12.961984339609641,
+      "change_percent": 0.3892167227041332
+    },
+    {
+      "concurrency": 4,
+      "primary_round": 2,
+      "previous": 30.61667717111632,
+      "replay": 29.80338831542325,
+      "change_percent": -2.6563589874485927
+    }
+  ]
+}

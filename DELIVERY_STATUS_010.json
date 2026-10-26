@@ -1,0 +1,36 @@
+{
+  "schema": "technical-delivery010",
+  "UTC": "2026-10-26T21:06:03.681540+00:00",
+  "model": "Trident-Qwen3VL-2B",
+  "track": "T02",
+  "publisher_numeric_comparison_pass": true,
+  "independent_full_result_audit_pass": true,
+  "fresh_image_full_replay_pass": true,
+  "technical_submission_materials_complete": true,
+  "image_id": "2114587646006431746",
+  "fresh_instance": "crdnotebook-2114808632296972290-ac3p4mowhz-24051",
+  "repository_private": true,
+  "reviewer_account_access_verified": false,
+  "official_acceptance": false,
+  "submitted": false,
+  "sourcefind_project_url": "https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-trident-qwen3vl2b-bw-transformers-session010",
+  "input_archive_sha256": "c2baa3ca66c590dba2bd0f6da29af63abcf83c7a92b50e5e2f0128cedabba422",
+  "new_result_archive_sha256": "799827793d8887a8c5732dad58783d002c8d4e4ade7f95e8b8f93c3fb00a9a55",
+  "performance_reproduction": [
+    {
+      "concurrency": 1,
+      "primary_round": 2,
+      "previous": 12.911729728316672,
+      "replay": 12.961984339609641,
+      "change_percent": 0.3892167227041332
+    },
+    {
+      "concurrency": 4,
+      "primary_round": 2,
+      "previous": 30.61667717111632,
+      "replay": 29.80338831542325,
+      "change_percent": -2.6563589874485927
+    }
+  ],
+  "covered_dataset": "完整 ChartQA Origin：1,250 query、1,509 document image，共 2,759 个 embedding 请求"
+}
