@@ -1,0 +1,32 @@
+{
+  "model": "OpenBMB/Trident-Qwen3VL-2B",
+  "UTC": "2026-10-26T00:49:21.122965+00:00",
+  "local_accuracy_computed": false,
+  "submission_ready": false,
+  "revision": "a5aedf8733f2107ab75b42214c78496d85759077",
+  "card_url": "https://huggingface.co/OpenBMB/Trident-Qwen3VL-2B/resolve/a5aedf8733f2107ab75b42214c78496d85759077/README.md",
+  "model_card_sha256": "c23b59ea7acf37ddc65956b3f52cb63d59b74149811b5944f6f430fa8639d59c",
+  "metadata_sha256": "23f4bd3ebd2ad72408d10e117338bd613902d52d974e090d94079c77830fe690",
+  "card": "evidence/session009/publishers/OpenBMB--Trident-Qwen3VL-2B/README.md",
+  "links": [
+    "https://arxiv.org/abs/2610.11816",
+    "https://chaos-in-texts.github.io/",
+    "https://github.com/OpenBMB/Trident",
+    "https://github.com/OpenBMB/Trident.git",
+    "https://github.com/OpenBMB/Trident/blob/main/LICENSE",
+    "https://github.com/huggingface/peft",
+    "https://huggingface.co/OpenBMB/Trident-Qwen3VL-2B",
+    "https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct",
+    "https://huggingface.co/datasets/OpenBMB/Trident-Eval",
+    "https://huggingface.co/datasets/OpenBMB/Trident-Train",
+    "https://img.shields.io/badge/%F0%9F%94%B1%20Project%20Page-chaos--in--texts-5b3fd1.svg",
+    "https://img.shields.io/badge/%F0%9F%A4%97%20Data-Trident--Eval-orange.svg",
+    "https://img.shields.io/badge/%F0%9F%A4%97%20Data-Trident--Train-orange.svg",
+    "https://img.shields.io/badge/%F0%9F%A4%97%20Model-Trident--Qwen3VL--2B-yellow.svg",
+    "https://img.shields.io/badge/GitHub-OpenBMB%2FTrident-blue.svg",
+    "https://img.shields.io/badge/arXiv-2610.11816-b31b1b.svg",
+    "https://img.shields.io/badge/license-MIT-green.svg"
+  ],
+  "evaluation_files": [],
+  "status": "fetched"
+}

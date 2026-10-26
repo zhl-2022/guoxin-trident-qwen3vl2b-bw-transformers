@@ -1,0 +1,49 @@
+{
+  "rounds": [
+    {
+      "concurrency": 1,
+      "round": 1,
+      "requests": 24,
+      "success": 24,
+      "failed": 0,
+      "wall_seconds": 2.7799702449701726,
+      "vectors_per_second": 8.63318592831108,
+      "latency_p50_seconds": 0.15937658888287842,
+      "latency_p95_nearest_rank_seconds": 0.18105061911046505
+    },
+    {
+      "concurrency": 1,
+      "round": 2,
+      "requests": 24,
+      "success": 24,
+      "failed": 0,
+      "wall_seconds": 1.8587749670259655,
+      "vectors_per_second": 12.911729728316672,
+      "latency_p50_seconds": 0.09483462851494551,
+      "latency_p95_nearest_rank_seconds": 0.12061671493574977
+    },
+    {
+      "concurrency": 4,
+      "round": 1,
+      "requests": 24,
+      "success": 24,
+      "failed": 0,
+      "wall_seconds": 0.8056963938288391,
+      "vectors_per_second": 29.787895519734104,
+      "latency_p50_seconds": 0.12360032857395709,
+      "latency_p95_nearest_rank_seconds": 0.18675230303779244
+    },
+    {
+      "concurrency": 4,
+      "round": 2,
+      "requests": 24,
+      "success": 24,
+      "failed": 0,
+      "wall_seconds": 0.7838865029625595,
+      "vectors_per_second": 30.61667717111632,
+      "latency_p50_seconds": 0.11460249242372811,
+      "latency_p95_nearest_rank_seconds": 0.20638656802475452
+    }
+  ],
+  "all_successful": true
+}

@@ -1,0 +1,1 @@
+{"name": "BW", "torch": "2.10.0", "hip": "6.3.26093", "packages": {"vllm": "0.18.1+das.fa71803.dtk2604", "vllm-hcu": "0.18.1+das.dtk2604", "transformers": "5.5.0", "soundfile": "0.13.1", "regex": "2026.2.19", "more-itertools": "8.10.0"}, "bf16_matmul": true}

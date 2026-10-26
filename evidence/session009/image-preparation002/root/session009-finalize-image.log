@@ -1,0 +1,11 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "/root/finalize_image.py", line 106, in <module>
+    if __name__=='__main__':main()
+  File "/root/finalize_image.py", line 102, in main
+    z.write(path,str(path).lstrip('/'))
+  File "/usr/lib/python3.10/zipfile.py", line 1754, in write
+    zinfo = ZipInfo.from_file(filename, arcname,
+  File "/usr/lib/python3.10/zipfile.py", line 507, in from_file
+    st = os.stat(filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/root/session009-trident-stage-timing.json'

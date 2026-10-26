@@ -1,0 +1,31 @@
+{
+  "UTC": "2026-10-26T04:40:12.007069+00:00",
+  "run_id": "cf7d646021f9430babdd509f3fbdba6f",
+  "phases": {
+    "launch": 0,
+    "evaluation": 0,
+    "stop": 0
+  },
+  "submitted": false,
+  "source_files": {
+    "evaluate_trident.py": "0dc39ae64c7fb636c62acc6cca6d1bbcb078b6545dfef457c3909562d69652e4",
+    "run_trident_experiment002.py": "5b37bd1b34c45cda5df2a49041fee06192b0219522de5713fc4d90529a283c12"
+  },
+  "service_stopped": true,
+  "ended_utc": "2026-10-26T04:45:52.893465+00:00",
+  "official_acceptance": false,
+  "submission_ready": false,
+  "accuracy_result": {
+    "complete": true,
+    "queries": 1250,
+    "documents": 1509,
+    "ndcg10_percent": 69.93019829891405,
+    "publisher_baseline_percent": 70.19,
+    "absolute_tolerance_percentage_points": 2,
+    "numeric_comparison_pass": true,
+    "wall_seconds": 231.998005351983,
+    "official_acceptance": false,
+    "submission_ready": false,
+    "scope": "complete Origin image corpus and all queries; no Mix claim"
+  }
+}

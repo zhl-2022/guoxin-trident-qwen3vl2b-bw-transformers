@@ -1,0 +1,118 @@
+- banner:
+  - link:
+    - /url: https://www.scnet.cn/ui/mall/
+  - generic: 控制台
+  - link "文件管理":
+    - /url: "#/e-file"
+    - generic: 文件管理
+  - link "命令行「E-Shell」":
+    - /url: "#/space/shell?cache=true"
+    - generic: 命令行「E-Shell」
+  - link:
+    - /url: /ui/mall/goods/cart
+  - button "费用":
+    - generic: 费用
+  - link "客户端":
+    - /url: /ui/mall/client/download
+    - generic: 客户端
+  - button "支持":
+    - generic: 支持
+  - superscript: "22"
+  - button "切换语言":
+  - button "A ac3p4mowhz ":
+    - generic: A
+    - text: ac3p4mowhz
+    - generic: 
+- navigation:
+  - generic: 容器服务
+  - menubar:
+    - menuitem "容器实例":
+      - link "容器实例":
+        - /url: "#/container-service/container-group"
+        - generic: 容器实例
+    - menuitem "镜像管理" [expanded]:
+      - generic: 镜像管理
+      - text: 
+    - menuitem "文件管理":
+      - link "文件管理":
+        - /url: "#/e-file"
+        - generic: 文件管理
+  - menubar:
+    - menuitem "AI社区":
+      - link "AI社区":
+        - /url: /ui/aihub
+        - generic: AI社区
+    - menuitem "帮助手册":
+      - link "帮助手册":
+        - /url: /help/docs/mainsite/container-service/
+        - generic: 帮助手册
+  - generic: 收起侧边
+- main:
+  - navigation "Breadcrumb":
+    - link "容器服务"
+    - generic: 
+    - link "镜像管理"
+    - generic: 
+    - link "我的镜像"
+    - generic: 
+    - link "镜像详情"
+    - text: 
+  - generic: 镜像：guoxin-publisher-eval-bw009
+  - generic: 基础信息
+  - table:
+    - rowgroup:
+      - 'row "适配加速卡 : DCU 创建时间 : 2026-10-26 13:19:17"':
+        - 'cell "适配加速卡 : DCU"':
+          - generic: "适配加速卡 :"
+          - generic: DCU
+        - 'cell "创建时间 : 2026-10-26 13:19:17"':
+          - generic: "创建时间 :"
+          - generic: 2026-10-26 13:19:17
+    - rowgroup:
+      - 'row "镜像简介 : --"':
+        - 'cell "镜像简介 : --"':
+          - generic: "镜像简介 :"
+          - generic: "--"
+  - tablist:
+    - tab "版本" [selected]
+    - tab "镜像介绍"
+  - tabpanel "版本":
+    - button "新增版本"
+    - textbox "请输入关键字搜索"
+    - generic: dtk2604-vllm018-asr-trident-20261026
+    - generic: 2026-10-26 13:19:17
+    - button
+    - generic: 暂无描述
+    - list:
+      - text: 框架： PyTorch2.9.0
+      - text: Python版本： py3.10
+      - text: DTK： dtk26.04
+      - text: 操作系统： Ubuntu22.04
+      - text: 开发工具：
+      - generic: 
+      - text: Jupyter
+      - generic: 
+      - text: SSH
+      - text: 镜像大小： 64.35GB
+    - generic: 使用区域：
+    - generic: 
+    - generic: 华中一区【A区】
+    - button "跨区域同步"
+    - generic: 共 1 条
+    - textbox "请选择": 10条/页
+    - generic: 
+    - button "" [disabled]:
+      - generic: 
+    - list:
+      - listitem: "1"
+    - button "" [disabled]:
+      - generic: 
+    - text: 前往
+    - spinbutton: "1"
+    - text: 页
+    - generic: 
+    - generic: 
+    - generic: 
+- text:  
+- generic: 
+- text: 

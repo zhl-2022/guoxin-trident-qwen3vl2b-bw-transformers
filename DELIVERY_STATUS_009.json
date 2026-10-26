@@ -1,0 +1,28 @@
+{
+  "model": "Trident-Qwen3VL-2B",
+  "track": "T02",
+  "parent_commit": "669f6acecc730eeaea44aadb0434787bba9b03a4",
+  "original_archive_sha256": "1dc4793e4dbc265ff657b095c0f808f3736e76c0b84991b14b2546e6fb8c7eef",
+  "publisher_comparison_pass": true,
+  "independent_audit_pass": true,
+  "image_saved": true,
+  "image": "guoxin-publisher-eval-bw009:dtk2604-vllm018-asr-trident-20261026",
+  "image_url": "https://www.scnet.cn/ui/console/index.html#/image-management/detail/2114587646006431746",
+  "new_root_wrappers_GPU_replayed": false,
+  "fresh_saved_image_instance_replay": false,
+  "judge_access_verified": false,
+  "sourcefind_updated_this_revision": false,
+  "official_acceptance": false,
+  "submission_ready": false,
+  "submitted": false,
+  "raw_archives": [
+    {
+      "file": "evidence/session009/session009-trident001-results.zip",
+      "sha256": "c6dee5b3ba3596176452ee1890d17562d1868e47a78908457979d5b597abda98"
+    },
+    {
+      "file": "evidence/session009/session009-trident002-results.zip",
+      "sha256": "9f7b02d4f30023a1c2ced8cb081203f9a2255dbbf0cd68e3b49213830f0f5803"
+    }
+  ]
+}

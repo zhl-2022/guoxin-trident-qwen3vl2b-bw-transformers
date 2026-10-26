@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
-_TASK_REPOSITORY_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-source "$_TASK_REPOSITORY_ROOT/tasks/trident-qwen3vl2b-bw-transformers/env.sh"
-unset _TASK_REPOSITORY_ROOT
+export IMAGE_ROOT="/opt/guoxin-trident009"
+export PROJECT="$IMAGE_ROOT/project"
+export TASK="$PROJECT/tasks/trident-qwen3vl2b-bw-transformers"
+export PYTHON_BIN="$IMAGE_ROOT/venv/bin/python"
+export DATA_DIR="$IMAGE_ROOT/data"
+export HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 HF_DATASETS_OFFLINE=1
+export PYTHONPATH="$PROJECT/scripts${PYTHONPATH:+:$PYTHONPATH}"
+export TRIDENT_MODEL_PATH="$IMAGE_ROOT/model" TRIDENT_PYTHON_BIN="$PYTHON_BIN" TRIDENT_PORT=30119
+export TRIDENT_MEM_FRAC=0.45 TRIDENT_LOAD_TIMEOUT=600 TRIDENT_MAX_RUNTIME_SECONDS=5400
