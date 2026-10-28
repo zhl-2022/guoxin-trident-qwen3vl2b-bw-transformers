@@ -1,0 +1,29 @@
+{
+  "updated_utc": "2026-10-28T15:24:36.862998+00:00",
+  "model": "trident",
+  "source_parent_commit": "82ebb6b15840ca2b1c2526e4169acd500af0a1ba",
+  "branch": "codex/submission-ready037-final",
+  "material_revision_prepared": true,
+  "material_changes": {
+    "verify_result.json": {
+      "old_sha256": "754c729265276c5542c0dbce35c904e08628612b28cc74c6c68bbd3273adbbb9",
+      "new_sha256": "535fa0a4a87d1321b98223634358d0dbb85e58d10127afae371ea00293b6da1c"
+    },
+    "README.md": {
+      "old_sha256": "ae55f51d2330e19d4c1bf4eea8710bf74242c5d2ec9caaa04336b98b9743022f",
+      "new_sha256": "eafc4f1824690e668f150a7d2c04382194305e0fd955901489d7f17cd5dbcd8d"
+    }
+  },
+  "all_prior_tracked_paths_retained": true,
+  "all_prior_changed_files_preserved_byte_for_byte": true,
+  "all_existing_Python_and_shell_bytes_unchanged": true,
+  "SourceFind_project_url": "https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-trident-qwen3vl2b-bw-transformers-session010",
+  "image_id": "2114587646006431746",
+  "image_url": "https://www.scnet.cn/ui/console/index.html?#/image-management/detail/2114587646006431746",
+  "image_tag": "dtk2604-vllm018-asr-trident-20261026",
+  "new_SourceFind_revision_verified": false,
+  "reviewer_access_method_closed": false,
+  "submission_ready": false,
+  "submitted": false,
+  "new_GPU_model_requests_in_material_assembly": 0
+}

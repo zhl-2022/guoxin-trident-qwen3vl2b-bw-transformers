@@ -1,0 +1,49 @@
+{
+  "rounds": [
+    {
+      "concurrency": 1,
+      "round": 1,
+      "requests": 24,
+      "success": 24,
+      "failed": 0,
+      "wall_seconds": 2.7492935098707676,
+      "vectors_per_second": 8.729515387801623,
+      "latency_p50_seconds": 0.1503035209607333,
+      "latency_p95_nearest_rank_seconds": 0.19136703992262483
+    },
+    {
+      "concurrency": 1,
+      "round": 2,
+      "requests": 24,
+      "success": 24,
+      "failed": 0,
+      "wall_seconds": 1.8515683533623815,
+      "vectors_per_second": 12.961984339609641,
+      "latency_p50_seconds": 0.09326343960128725,
+      "latency_p95_nearest_rank_seconds": 0.12025907915085554
+    },
+    {
+      "concurrency": 4,
+      "round": 1,
+      "requests": 24,
+      "success": 24,
+      "failed": 0,
+      "wall_seconds": 0.7857754318974912,
+      "vectors_per_second": 30.54307760939379,
+      "latency_p50_seconds": 0.1279953522607684,
+      "latency_p95_nearest_rank_seconds": 0.18210350768640637
+    },
+    {
+      "concurrency": 4,
+      "round": 2,
+      "requests": 24,
+      "success": 24,
+      "failed": 0,
+      "wall_seconds": 0.805277565959841,
+      "vectors_per_second": 29.80338831542325,
+      "latency_p50_seconds": 0.131171751068905,
+      "latency_p95_nearest_rank_seconds": 0.18573574116453528
+    }
+  ],
+  "all_successful": true
+}

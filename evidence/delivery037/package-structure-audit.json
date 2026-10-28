@@ -1,0 +1,374 @@
+{
+  "audited_utc": "2026-10-28T14:57:07.577571+00:00",
+  "scope": "Read-only local package structure, original/replay result binding and CRC/SHA; no new GPU requests, submissions, permissions or image saves.",
+  "packages": [
+    {
+      "model": "ASR",
+      "archive": "dist/session010-qwen3-asr-bw-vllm-submission.zip",
+      "archive_bytes": 15475093,
+      "archive_sha256": "d3f3a8d7618ea056745cd016d831adc67e289fe1c5a129b6d4465bb04f453288",
+      "archive_sha_matches_frozen_manifest": true,
+      "archive_crc_first_bad_member": null,
+      "report": "deliverables/submission010/asr-technical-report.md",
+      "report_sha256": "55fd3e38749a4881b9e0fe8869569d00c257a0a9555984fcd8d2474525a90016",
+      "report_equals_archived_README": true,
+      "required_root_entries": {
+        "README.md": true,
+        "env.sh": true,
+        "env_check.sh": true,
+        "run.sh": true,
+        "smoke.sh": true,
+        "verify.py": true,
+        "bench.sh": true
+      },
+      "chapter_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "unreplaced_template_placeholders": [],
+      "report_has_SourceFind_URL": true,
+      "report_has_SCNet_image_detail_URL": true,
+      "raw_root_verify": {
+        "sample_count": 2620,
+        "completed": 2620,
+        "failed_ids": [],
+        "complete": true,
+        "micro_word_error_rate_percent": 1.6387877873536123,
+        "edit_counts": {
+          "substitutions": 656,
+          "deletions": 142,
+          "insertions": 71,
+          "reference_words": 53027
+        },
+        "publisher_baseline_percent": 1.63,
+        "relative_degradation_allowance": 0.02,
+        "limit_percent": 1.6625999999999999,
+        "numeric_comparison_pass": true,
+        "normalization": "OpenAI Whisper EnglishTextNormalizer, exact vendored source hashes in execution manifest",
+        "publisher_normalization_implementation_published": false,
+        "official_acceptance": false,
+        "dataset_scope": "complete LibriSpeech test-clean (2620 utterances)",
+        "publisher_source": "https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md",
+        "evaluation_wall_seconds": 835.9061825778335,
+        "inference_audio_seconds": 19452.480625000026,
+        "submission_ready": false
+      },
+      "notes": [
+        "Original and replay results are both genuine and retained; submission entry points should identify the current replay unambiguously."
+      ],
+      "nested_replay_archive": "evidence/replay010/results.zip",
+      "nested_replay_crc_first_bad_member": null,
+      "nested_replay_verify": {
+        "sample_count": 2620,
+        "completed": 2620,
+        "failed_ids": [],
+        "complete": true,
+        "micro_word_error_rate_percent": 1.6387877873536123,
+        "edit_counts": {
+          "substitutions": 656,
+          "deletions": 144,
+          "insertions": 69,
+          "reference_words": 53027
+        },
+        "publisher_baseline_percent": 1.63,
+        "relative_degradation_allowance": 0.02,
+        "limit_percent": 1.6625999999999999,
+        "numeric_comparison_pass": true,
+        "normalization": "OpenAI Whisper EnglishTextNormalizer, exact vendored source hashes in execution manifest",
+        "publisher_normalization_implementation_published": false,
+        "official_acceptance": false,
+        "dataset_scope": "complete LibriSpeech test-clean (2620 utterances)",
+        "publisher_source": "https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md",
+        "evaluation_wall_seconds": 790.9817192447372,
+        "inference_audio_seconds": 19452.480625000026,
+        "submission_ready": false
+      },
+      "nested_replay_logs": {
+        "environment.log": true,
+        "smoke.log": true,
+        "launch.log": true,
+        "stop.log": true,
+        "runtime/server.log": true
+      },
+      "root_vs_current_replay_different_fields": [
+        "edit_counts"
+      ]
+    },
+    {
+      "model": "Trident",
+      "archive": "dist/session010-trident-qwen3vl2b-bw-transformers-submission.zip",
+      "archive_bytes": 139074699,
+      "archive_sha256": "7d41a5b55154b22624151798bb3cd6c4acf3164576ab247588cb421027d6ddfd",
+      "archive_sha_matches_frozen_manifest": true,
+      "archive_crc_first_bad_member": null,
+      "report": "deliverables/submission010/trident-technical-report.md",
+      "report_sha256": "ae55f51d2330e19d4c1bf4eea8710bf74242c5d2ec9caaa04336b98b9743022f",
+      "report_equals_archived_README": true,
+      "required_root_entries": {
+        "README.md": true,
+        "env.sh": true,
+        "env_check.sh": true,
+        "run.sh": true,
+        "smoke.sh": true,
+        "verify.py": true,
+        "bench.sh": true
+      },
+      "chapter_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "unreplaced_template_placeholders": [],
+      "report_has_SourceFind_URL": true,
+      "report_has_SCNet_image_detail_URL": true,
+      "raw_root_verify": {
+        "complete": true,
+        "queries": 1250,
+        "documents": 1509,
+        "ndcg10_percent": 69.93019829891405,
+        "publisher_baseline_percent": 70.19,
+        "absolute_tolerance_percentage_points": 2,
+        "numeric_comparison_pass": true,
+        "wall_seconds": 231.998005351983,
+        "official_acceptance": false,
+        "submission_ready": false,
+        "scope": "complete Origin image corpus and all queries; no Mix claim"
+      },
+      "notes": [
+        "Original and replay results are both genuine and retained; submission entry points should identify the current replay unambiguously."
+      ],
+      "nested_replay_archive": "evidence/replay010/results.zip",
+      "nested_replay_crc_first_bad_member": null,
+      "nested_replay_verify": {
+        "complete": true,
+        "queries": 1250,
+        "documents": 1509,
+        "ndcg10_percent": 69.85892360489542,
+        "publisher_baseline_percent": 70.19,
+        "absolute_tolerance_percentage_points": 2,
+        "numeric_comparison_pass": true,
+        "wall_seconds": 205.79768013115972,
+        "official_acceptance": false,
+        "submission_ready": false,
+        "scope": "complete Origin image corpus and all queries; no Mix claim"
+      },
+      "nested_replay_logs": {
+        "environment.log": true,
+        "smoke.log": true,
+        "launch.log": true,
+        "stop.log": true,
+        "runtime/server.log": true
+      },
+      "root_vs_current_replay_different_fields": [
+        "ndcg10_percent"
+      ]
+    },
+    {
+      "model": "Kimi",
+      "archive": "dist/session021-kimi-bw-vllm-env-submission.zip",
+      "archive_bytes": 27374736,
+      "archive_sha256": "87e9000fb4c3a02a83a43c6a4545fc727f88cbbdd0cce5dff6fb390ffb2ba99b",
+      "archive_sha_matches_frozen_manifest": true,
+      "archive_crc_first_bad_member": null,
+      "report": "deliverables/submission021/kimi-env-technical-report.md",
+      "report_sha256": "65e17b2dfeec04191635e4d4325e2994f5d2066cd669cbb6509d36d34b99ffd7",
+      "report_equals_archived_README": true,
+      "required_root_entries": {
+        "README.md": true,
+        "env.sh": true,
+        "env_check.sh": true,
+        "run.sh": true,
+        "smoke.sh": true,
+        "verify.py": true,
+        "bench.sh": true
+      },
+      "chapter_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "unreplaced_template_placeholders": [],
+      "report_has_SourceFind_URL": true,
+      "report_has_SCNet_image_detail_URL": true,
+      "raw_root_verify": {
+        "started_utc": "2026-10-27T21:57:30.586398+00:00",
+        "rows": 1000,
+        "model_revision": "398eede0903cd983a2bfa0cc634e9ac1d843f375",
+        "scorer_sha256": "27e6bc94e8a0b51d2ee401694fc7b80bcd8a36c51d324fbf4a37cce4b7c9764d",
+        "samples_sha256": "303fae6ff39f3716846cfafd34c6b62f9cb3bd66630f86034e71c6c7ebb42e6f",
+        "annotations_sha256": "b2dc45f48eb5f3b7807d7063d15aad57f8d589f79ecb8f1f22dafd66fa1c2412",
+        "script_sha256": "99e0d89d2f0d7f18e8a9ef8348cb9583f57f1e1723763dad009d229de77313b6",
+        "publisher_baseline": 867,
+        "threshold": 847,
+        "complete": true,
+        "rescore_only": false,
+        "numeric_pass": true,
+        "submitted": false,
+        "labels_sent_to_model": false,
+        "generation_complete": true,
+        "score": {
+          "Text Recognition": 237,
+          "Scene Text-centric VQA": 186,
+          "Doc-oriented VQA": 179,
+          "Key Information Extraction": 167,
+          "Handwritten Mathematical Expression Recognition": 92,
+          "Final Score": 861,
+          "Final Score Norm": 86.1
+        },
+        "budget_exhausted": 0,
+        "ended_utc": "2026-10-27T22:03:31.440735+00:00"
+      },
+      "notes": [
+        "The report preserves MMMU900=52.3333333 below the publisher-comparison threshold55; OCRBench pass alone does not establish the current T02 OCRBench+MMMU requirement."
+      ]
+    },
+    {
+      "model": "Robo",
+      "archive": "dist/session030-robobrain-bw-vllm-submission.zip",
+      "archive_bytes": 249363874,
+      "archive_sha256": "4ac22b944c704010fee70578a6356f7ded6374cc84d27ffa0b0cbd75d363698a",
+      "archive_sha_matches_frozen_manifest": true,
+      "archive_crc_first_bad_member": null,
+      "report": "deliverables/submission030/robo-technical-report.md",
+      "report_sha256": "8757efd712bc6466fe2d426f21b189945871d5aaf4d1163498692fe8f1540ae0",
+      "report_equals_archived_README": true,
+      "required_root_entries": {
+        "README.md": true,
+        "env.sh": true,
+        "env_check.sh": true,
+        "run.sh": true,
+        "smoke.sh": true,
+        "verify.py": true,
+        "bench.sh": true
+      },
+      "chapter_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "unreplaced_template_placeholders": [],
+      "report_has_SourceFind_URL": false,
+      "report_has_SCNet_image_detail_URL": false,
+      "raw_root_verify": {
+        "complete": true,
+        "sample_count": 200,
+        "split_counts": {
+          "location": 100,
+          "placement": 100
+        },
+        "excluded": 0,
+        "score_percent": 65.0,
+        "split_scores_percent": {
+          "location": 67.0,
+          "placement": 63.0
+        },
+        "publisher_baseline_percent": 60.5,
+        "absolute_threshold_percent": 58.5,
+        "relative_threshold_percent": 59.29,
+        "numeric_pass": true,
+        "stricter_relative_pass": true,
+        "coordinate_clipping": false,
+        "parse_exceptions_counted_as_zero": [],
+        "length_finishes": 0,
+        "official_acceptance": false,
+        "submitted": false
+      },
+      "notes": [
+        "Actual final platform URLs exist in external manifests, but this archived report contains no direct final SourceFind/image-detail URLs."
+      ]
+    },
+    {
+      "model": "AuK",
+      "archive": "dist/session032-auk-bw-sgomni-submission.zip",
+      "archive_bytes": 313308144,
+      "archive_sha256": "69804ca1471ae34c77402cd81ebdd045d23f479846a713917559b7bc5eec18ee",
+      "archive_sha_matches_frozen_manifest": true,
+      "archive_crc_first_bad_member": null,
+      "report": "deliverables/submission032/auk-technical-report.md",
+      "report_sha256": "8acd7cd2ab276e9c7ebb2607fad0f346aa2fa4ce1c51755538f8bdfa55bcd56e",
+      "report_equals_archived_README": true,
+      "required_root_entries": {
+        "README.md": true,
+        "env.sh": true,
+        "env_check.sh": true,
+        "run.sh": true,
+        "smoke.sh": true,
+        "verify.py": true,
+        "bench.sh": true
+      },
+      "chapter_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "unreplaced_template_placeholders": [],
+      "report_has_SourceFind_URL": false,
+      "report_has_SCNet_image_detail_URL": false,
+      "raw_root_verify": {
+        "verification_scope": "Preserved complete3x400 formal numeric comparison plus a separate fixed100 GPU root reproduction.",
+        "formal_complete_runs": 3,
+        "formal_samples_per_run": 400,
+        "formal_audio_total": 1200,
+        "excluded": 0,
+        "CER_percent_mean": 5.957622968852493,
+        "CER_upper": 6.0282,
+        "SIM_mean": 0.780468952814738,
+        "SIM_lower": 0.76636,
+        "formal_numeric_pass": true,
+        "root_replay_completed": true,
+        "root_subset_samples": 100,
+        "root_subset_CER_percent": 7.528599692985805,
+        "previous_identical100_CER_percent": 7.484441580310172,
+        "root_subset_publisher_full_split_comparison_applicable": false,
+        "root_same_actual_model_config": true,
+        "performance_measured_requests": 96,
+        "independent_audits": [
+          "publisher032/auk-full1200-independent-audit.json",
+          "publisher032/auk-performance96-independent-audit.json",
+          "publisher032/auk-root100-independent-audit.json",
+          "publisher032/auk-root100-CER-independent-audit.json"
+        ],
+        "technical_delivery_complete": false,
+        "official_acceptance": false,
+        "submitted": false
+      },
+      "notes": [
+        "Actual final platform URLs exist in external manifests, but this archived report contains no direct final SourceFind/image-detail URLs."
+      ]
+    }
+  ],
+  "all_frozen_archive_SHA_match": true,
+  "all_archive_CRC_pass": true,
+  "all_reports_equal_README": true,
+  "all_required_root_entry_scripts_present": true,
+  "all_eight_chapters_present": true,
+  "all_no_template_placeholders": true,
+  "official_acceptance_inferred": false,
+  "all_five_only_await_submission": false
+}

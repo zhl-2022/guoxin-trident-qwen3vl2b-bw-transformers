@@ -1,0 +1,13 @@
+{
+  "complete": true,
+  "queries": 1250,
+  "documents": 1509,
+  "ndcg10_percent": 69.93019829891405,
+  "publisher_baseline_percent": 70.19,
+  "absolute_tolerance_percentage_points": 2,
+  "numeric_comparison_pass": true,
+  "wall_seconds": 231.998005351983,
+  "official_acceptance": false,
+  "submission_ready": false,
+  "scope": "complete Origin image corpus and all queries; no Mix claim"
+}

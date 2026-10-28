@@ -1,0 +1,41 @@
+{
+  "recorded_utc": "2026-10-28T14:59:26.730931+00:00",
+  "actual_browser_read": true,
+  "browser": "2",
+  "rules_tab": "11",
+  "rules_url": "https://bvjoh3z2qoz.feishu.cn/wiki/OkLBws6uWiG1Q0kpHLKcxXLmnif",
+  "visible_modified_labels": [
+    "今天修改",
+    "最近修改: 6小时前"
+  ],
+  "sections_read": [
+    "T01/T02/T03/T04",
+    "评审口径",
+    "六、提交技术报告",
+    "八章表格可见原图"
+  ],
+  "official_exemption_exact_visible_text": "部分模型没有官方精度数据的，可以不做，如Recon2Reason-Reasoning-4B、RoboBrain2.5-8B-NV模型",
+  "exemption_applies_to_accuracy_not_performance_or_reproduction": true,
+  "T02_OCRBench_plus_MMMU_still_visible": true,
+  "T01_flexible_official_accuracy_dataset_note_visible": true,
+  "T03_image_performance_1024_by_1024_note_visible": true,
+  "clean_environment_one_command_replay_required": true,
+  "new_Notebook_as_required_method_found": false,
+  "separate_cross_account_test_report_required_found": false,
+  "submission_form_current_text": "暂不支持填写",
+  "submission_form_reloaded": true,
+  "blank_loading_page_not_treated_as_closed": true,
+  "form_fields_source": "evidence/session008/live-final-submission-form-dom.txt",
+  "form_fields_are_historical_until_reopen": true,
+  "other_cloud_doc_title": "超算互联网 × 光合开发者社区国芯国模黑客松参赛名单",
+  "other_cloud_doc_url": "https://bvjoh3z2qoz.feishu.cn/wiki/F02Ewd1xTiT9EAkc73dcmFd3nkh",
+  "other_cloud_doc_is_extra_technical_template": false,
+  "provided_template_sha256": "b151143f6fa38c87e301cfc9335a94d17fcd49c7113a53fe05f89c04b45f349f",
+  "provided_template_equals_archived_official_download": true,
+  "web_reader_attempts_failed_but_browser_primary_source_read_succeeded": true,
+  "no_GPU_model_requests": true,
+  "no_permissions_changed": true,
+  "no_final_submission": true,
+  "no_quota_query_or_application": true,
+  "source_evidence_kind": "Visible browser AX text and screenshots observed in tool outputs; this JSON is a fact/excerpt record, not a byte-for-byte page export."
+}

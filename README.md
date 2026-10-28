@@ -6,6 +6,21 @@ T02 · 已完成发布基线数值对照、完整原始证据独立复算，以�
 
 代码：[光合 session010](https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-trident-qwen3vl2b-bw-transformers-session010)。镜像：[guoxin-publisher-eval-bw009](https://www.scnet.cn/ui/console/index.html#/image-management/detail/2114587646006431746)，版本 `dtk2604-vllm018-asr-trident-20261026`。模型固定 revision：`a5aedf8733f2107ab75b42214c78496d85759077`。源码、上游许可、失败轮次和原始报告均保留。
 
+### 最终提交材料绑定（Session037）
+
+原有全部资料保留；本次整理不重新采样、不改变推理或判分源码。实际发布版本和评审获取状态由 `CURRENT_SUBMISSION_STATE037.json` 及外部提交清单记录；尚未完成的门禁不写成通过。
+
+| 项目 | 固定引用 |
+| --- | --- |
+| 光合代码项目 | [项目入口](https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-trident-qwen3vl2b-bw-transformers-session010) |
+| SCNet镜像 | [实际镜像详情](https://www.scnet.cn/ui/console/index.html?#/image-management/detail/2114587646006431746) |
+| 固定镜像tag | `dtk2604-vllm018-asr-trident-20261026` |
+| 已实测前版代码 | `82ebb6b15840ca2b1c2526e4169acd500af0a1ba` |
+| 本次材料分支 | `codex/submission-ready037-final`，以外部清单的完整commit为准 |
+
+本次报告采用新实例replay010原件作为主结果：根 `verify_result.json`、`env.log`、`smoke.log` 与 `bench/` 已从保留的 `evidence/replay010/results.zip` 原字节整理。历史顶层文件在 `provenance/submission-before037/`，旧完整ZIP和旧commit均保留。原性能请求文件仍为 `bench/c1-round1.jsonl` 等四份，第二轮统计见 `bench/summary.json`；它们是语音/检索专用接口实测，不冒充文本生成六档。
+
+
 ## 2. 验证环境
 
 华中一区 A 区，BW 64 GB × 1、15 CPU、59 GB 内存；DTK 26.04、Ubuntu 22.04、Python 3.10。新实例实测 Torch 2.10.0、HIP 6.3.26093、vLLM 0.18.1+das.fa71803.dtk2604、Transformers 5.5.0。平台镜像继承的 PyTorch 2.9.0 标签不代表实际运行版本。
@@ -71,6 +86,6 @@ bash stop.sh --run-id "$RUN_ID"
 
 - 每个模型单独投递本报告及对应光合、镜像链接；当前没有最终赛事提交回执，也没有主办方验收回执。
 - 两项代码库保持私有；账号内可访问与评审账号已授权是不同事实，评审访问尚未独立验证。
-- 新实例完整复现已完成，服务已停止；本轮平台全部实例也已关机，证据见 `evidence/replay010/all-gpu-stopped.png`。
+- 新实例完整复现已完成，服务已停止；2026-10-26该轮平台全部实例也已关机，证据见 `evidence/replay010/all-gpu-stopped.png`。
 - 新编代码继续保留版权说明；上游许可保留，不擅自替换许可证。
 - 原始 session009 资料以历史版本保存在 `provenance/frozen009/`；本报告及 `publisher-delivery-manifest010.json` 是本轮材料入口。
