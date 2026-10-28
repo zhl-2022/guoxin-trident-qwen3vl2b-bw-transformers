@@ -1,0 +1,67 @@
+{
+  "scope": "Primary current image replay; exact original bytes duplicated for a stable report entry",
+  "files": [
+    {
+      "path": "bench/c1-round1.jsonl",
+      "bytes": 1117147,
+      "sha256": "104b0578c06c6535d2dc67714e9b620281155f7a2a591d6073351268686bcfab"
+    },
+    {
+      "path": "bench/c1-round2.jsonl",
+      "bytes": 1117028,
+      "sha256": "4da0bf92db54c9698232de1f60632ae973703fb2c654d49deb3bb0a52cee95fc"
+    },
+    {
+      "path": "bench/c4-round1.jsonl",
+      "bytes": 1117529,
+      "sha256": "5756f0562a207090bf9d58a220aeb096c939a574aea2c78cc625a48b2c25c5c0"
+    },
+    {
+      "path": "bench/c4-round2.jsonl",
+      "bytes": 1117289,
+      "sha256": "39e926b63c6b8cb35b3a955d29f151daf445d1ba2adf9182b68adea33a08be5f"
+    },
+    {
+      "path": "bench/protocol.json",
+      "bytes": 1157,
+      "sha256": "e795908299ea9fbd99b44682b78784ccd86e7b908a78f3322998c3ac99200a89"
+    },
+    {
+      "path": "bench/summary.json",
+      "bytes": 1314,
+      "sha256": "61fe4477c57124edce7d3af2de93eb318d776416e28ec866d70cd8eb9aa0e8c3"
+    },
+    {
+      "path": "env.log",
+      "bytes": 142,
+      "sha256": "4a42191da0c0036d001863ebc275f3860c9616f4a61b5ff87fc71aeea2fda30c"
+    },
+    {
+      "path": "launch.log",
+      "bytes": 1654,
+      "sha256": "a542652af19fe0f2ae8a59130ce9e70fcc479ed20aaaabd9c0e48b6dd7fb4353"
+    },
+    {
+      "path": "runtime/server.log",
+      "bytes": 797239,
+      "sha256": "4b6d7f1b4e43561f4a1629d6a7aeb4369c6ddb6f439558a35d6ae1431d834b35"
+    },
+    {
+      "path": "smoke.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "stop.log",
+      "bytes": 67,
+      "sha256": "f876dd5029a62e13517e28fa6e32b074ea9cf830a09182054467451c7c866cb1"
+    },
+    {
+      "path": "verify_result.json",
+      "bytes": 392,
+      "sha256": "535fa0a4a87d1321b98223634358d0dbb85e58d10127afae371ea00293b6da1c"
+    }
+  ],
+  "original_carrier": "../results.zip",
+  "GPU_requests": 0
+}
