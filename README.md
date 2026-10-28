@@ -4,7 +4,7 @@
 
 T02 · 已完成发布基线数值对照、完整原始证据独立复算，以及从已保存镜像新建实例的完整复现。技术投递材料已整理；主办方验收和最终赛事表单提交尚未发生。
 
-代码：[光合 session010](https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-trident-qwen3vl2b-bw-transformers-session010)。镜像：[guoxin-publisher-eval-bw009](https://www.scnet.cn/ui/console/index.html#/image-management/detail/2114587646006431746)，版本 `dtk2604-vllm018-asr-trident-20261026`。模型固定 revision：`a5aedf8733f2107ab75b42214c78496d85759077`。源码、上游许可、失败轮次和原始报告均保留。
+代码：[光合 session010](https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-trident-qwen3vl2b-bw-vllm-final-session037)。镜像：[guoxin-publisher-eval-bw009](https://www.scnet.cn/ui/console/index.html#/image-management/detail/2114587646006431746)，版本 `dtk2604-vllm018-asr-trident-20261026`。模型固定 revision：`a5aedf8733f2107ab75b42214c78496d85759077`。源码、上游许可、失败轮次和原始报告均保留。
 
 ### 最终提交材料绑定（Session037）
 
@@ -12,7 +12,7 @@ T02 · 已完成发布基线数值对照、完整原始证据独立复算，以�
 
 | 项目 | 固定引用 |
 | --- | --- |
-| 光合代码项目 | [项目入口](https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-trident-qwen3vl2b-bw-transformers-session010) |
+| 光合代码项目 | [项目入口](https://developer.sourcefind.cn/codes/ghu_30ebea88e/guoxin-trident-qwen3vl2b-bw-vllm-final-session037) |
 | SCNet镜像 | [实际镜像详情](https://www.scnet.cn/ui/console/index.html?#/image-management/detail/2114587646006431746) |
 | 固定镜像tag | `dtk2604-vllm018-asr-trident-20261026` |
 | 已实测前版代码 | `82ebb6b15840ca2b1c2526e4169acd500af0a1ba` |
@@ -20,6 +20,13 @@ T02 · 已完成发布基线数值对照、完整原始证据独立复算，以�
 
 本次报告采用新实例replay010原件作为主结果：根 `verify_result.json`、`env.log`、`smoke.log` 与 `bench/` 已从保留的 `evidence/replay010/results.zip` 原字节整理。历史顶层文件在 `provenance/submission-before037/`，旧完整ZIP和旧commit均保留。原性能请求文件仍为 `bench/c1-round1.jsonl` 等四份，第二轮统计见 `bench/summary.json`；它们是语音/检索专用接口实测，不冒充文本生成六档。
 
+
+
+本次新增提交材料版本的运行步骤以当前仓库为准。镜像仍是已经真实复现过的固定运行环境；从光合下载当前分支的源码，核对提交清单中的完整commit后，在新目录解压并运行根入口。镜像内旧项目目录保留历史版本，不将其旧README冒充当前报告。推理源码、模型、实际运行参数和原始测试结果均保持；本次只补主结果入口和交付说明，不重新保存镜像。
+
+**主结果与历史结果。**顶层`verify_result.json`、`env.log`和`bench/`引用同一新实例复现轮；逐文件原始结果位于`evidence/replay010/current/`，原完整载体仍在`evidence/replay010/results.zip`。被替换的旧顶层文件原字节保存在`provenance/submission-before037/`。旧的范围清单和历史报告只说明各自生成时的快照；当前精确文件集合以本版`publisher-delivery-manifest010.json`及外部037提交清单为准。
+
+**平台获取。**光合链接须实际导入成功并回读本版commit后才作为正式代码地址。SCNet镜像保持原ID/tag及华中一区A区，使用已报名账号的镜像管理可选择该固定版本。评审权限按赛事实际指定的共享方式提供；本报告不声称私有资产已经公开，也不把另行跨账号测试报告列为官方必交附件。
 
 ## 2. 验证环境
 

@@ -1,6 +1,7 @@
 {
-  "schema": "delivery010",
-  "UTC": "2026-10-26T21:12:50.516551+00:00",
+  "schema": "delivery037",
+  "UTC": "2026-10-28T15:42:57.831270+00:00",
+  "scope": "Exact current Git files except this manifest; prior manifests retained under provenance",
   "files": [
     {
       "path": ".gitattributes",
@@ -18,14 +19,19 @@
       "sha256": "fa71287711d371e999ef1d867bba0c06508b3374ba0be3e09a538922771dbd24"
     },
     {
+      "path": "CURRENT_SUBMISSION_STATE037.json",
+      "bytes": 1565,
+      "sha256": "320140e693f2d94de48f15db6404561dcc2f6689b01330bc2c8398f7f0d78a88"
+    },
+    {
       "path": "DELIVERY_STATUS_010.json",
       "bytes": 1395,
       "sha256": "82020a3917844fbcb7f4fcfd9825e3c775505d0da050eff051bcea4bb70b6f30"
     },
     {
       "path": "README.md",
-      "bytes": 5750,
-      "sha256": "ae55f51d2330e19d4c1bf4eea8710bf74242c5d2ec9caaa04336b98b9743022f"
+      "bytes": 8497,
+      "sha256": "eb6c026ba1a2698377925b5fdb9eb00744b87e3ca37dbc6856803653a9c25205"
     },
     {
       "path": "README_origin.md",
@@ -41,6 +47,36 @@
       "path": "bench.sh",
       "bytes": 423,
       "sha256": "cdb5a275d0a6043ae896ed7bdf50387ea97b0f3fbca8c57feea2ce0fd7f15f1c"
+    },
+    {
+      "path": "bench/c1-round1.jsonl",
+      "bytes": 1117147,
+      "sha256": "104b0578c06c6535d2dc67714e9b620281155f7a2a591d6073351268686bcfab"
+    },
+    {
+      "path": "bench/c1-round2.jsonl",
+      "bytes": 1117028,
+      "sha256": "4da0bf92db54c9698232de1f60632ae973703fb2c654d49deb3bb0a52cee95fc"
+    },
+    {
+      "path": "bench/c4-round1.jsonl",
+      "bytes": 1117529,
+      "sha256": "5756f0562a207090bf9d58a220aeb096c939a574aea2c78cc625a48b2c25c5c0"
+    },
+    {
+      "path": "bench/c4-round2.jsonl",
+      "bytes": 1117289,
+      "sha256": "39e926b63c6b8cb35b3a955d29f151daf445d1ba2adf9182b68adea33a08be5f"
+    },
+    {
+      "path": "bench/protocol.json",
+      "bytes": 1157,
+      "sha256": "e795908299ea9fbd99b44682b78784ccd86e7b908a78f3322998c3ac99200a89"
+    },
+    {
+      "path": "bench/summary.json",
+      "bytes": 1314,
+      "sha256": "61fe4477c57124edce7d3af2de93eb318d776416e28ec866d70cd8eb9aa0e8c3"
     },
     {
       "path": "bench009/summary.json",
@@ -171,6 +207,11 @@
       "path": "docs/trident-vllm-pooling-20261023.md",
       "bytes": 8767,
       "sha256": "cc1b2f3d9f575c8d6513f15f7c5a1a7d244d8569583335a9acde79baaf5c2b73"
+    },
+    {
+      "path": "env.log",
+      "bytes": 142,
+      "sha256": "4a42191da0c0036d001863ebc275f3860c9616f4a61b5ff87fc71aeea2fda30c"
     },
     {
       "path": "env.sh",
@@ -341,6 +382,16 @@
       "path": "evidence/community-metadata-003.json",
       "bytes": 20458,
       "sha256": "88b5293c3f67007c27e21366c2241a609d2c692fb020303312f3ab3967f4909a"
+    },
+    {
+      "path": "evidence/delivery037/live-official-rules-observation.json",
+      "bytes": 2111,
+      "sha256": "bbdb3888dfe68c692b9160cbd8ffdb4c41411f91e730486870511fa12f365377"
+    },
+    {
+      "path": "evidence/delivery037/package-structure-audit.json",
+      "bytes": 13799,
+      "sha256": "9ccf7b99021e52ad04e0240c534e9d7fee55b347edd58b570d063269dcaa0428"
     },
     {
       "path": "evidence/final-delivery-closure-003.json",
@@ -4623,6 +4674,11 @@
       "sha256": "d51437c5bb459fb25f47a9e52e650b3f815d1d9900ec63b651f338e6e73c7165"
     },
     {
+      "path": "launch.log",
+      "bytes": 1654,
+      "sha256": "a542652af19fe0f2ae8a59130ce9e70fcc479ed20aaaabd9c0e48b6dd7fb4353"
+    },
+    {
       "path": "provenance/frozen009/DELIVERY_STATUS_009.json",
       "bytes": 1102,
       "sha256": "aaacd8922994e6c6288a210abf838d82ceaefac2da466f2e99ced98f94cf9593"
@@ -4651,6 +4707,26 @@
       "path": "provenance/session005/canonical-task-before-delivery-metadata.json",
       "bytes": 5917,
       "sha256": "139778f1efec127194c2c49f0b81b864784786e54c347c32f6c7c16b22cdf289"
+    },
+    {
+      "path": "provenance/submission-before037/README-pre-final-index037.md",
+      "bytes": 7058,
+      "sha256": "eafc4f1824690e668f150a7d2c04382194305e0fd955901489d7f17cd5dbcd8d"
+    },
+    {
+      "path": "provenance/submission-before037/README.md",
+      "bytes": 5750,
+      "sha256": "ae55f51d2330e19d4c1bf4eea8710bf74242c5d2ec9caaa04336b98b9743022f"
+    },
+    {
+      "path": "provenance/submission-before037/publisher-delivery-manifest010.json",
+      "bytes": 246510,
+      "sha256": "435b639aa0779d4d200c7ad2b46d35b682864b35fb3020188ab301db60c25669"
+    },
+    {
+      "path": "provenance/submission-before037/verify_result.json",
+      "bytes": 390,
+      "sha256": "754c729265276c5542c0dbce35c904e08628612b28cc74c6c68bbd3273adbbb9"
     },
     {
       "path": "pyproject.toml",
@@ -4953,6 +5029,11 @@
       "sha256": "ba6a94283fa63418948c466eac7fc8949a56cf244eb6f9c3be8dcd78ef673dd1"
     },
     {
+      "path": "smoke.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
       "path": "smoke.sh",
       "bytes": 173,
       "sha256": "9efbc156ec095a3b84c1cffd30af6bd6534db45674ae5e7fdc80c501ef10259c"
@@ -4981,6 +5062,11 @@
       "path": "src/guoxin/runtime.py",
       "bytes": 4579,
       "sha256": "79006a5c295e1b829c330f25ee23e57def0faaae5be4a8c41ac484bd45b497f6"
+    },
+    {
+      "path": "stop.log",
+      "bytes": 67,
+      "sha256": "f876dd5029a62e13517e28fa6e32b074ea9cf830a09182054467451c7c866cb1"
     },
     {
       "path": "stop.sh",
@@ -5789,13 +5875,15 @@
     },
     {
       "path": "verify_result.json",
-      "bytes": 390,
-      "sha256": "754c729265276c5542c0dbce35c904e08628612b28cc74c6c68bbd3273adbbb9"
+      "bytes": 392,
+      "sha256": "535fa0a4a87d1321b98223634358d0dbb85e58d10127afae371ea00293b6da1c"
     },
     {
       "path": "国芯国模黑客松-技术报告模板.md",
       "bytes": 14427,
       "sha256": "b151143f6fa38c87e301cfc9335a94d17fcd49c7113a53fe05f89c04b45f349f"
     }
-  ]
+  ],
+  "model_weights_in_code_package": false,
+  "submitted": false
 }
